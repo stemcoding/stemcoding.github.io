@@ -1,41 +1,4 @@
 <HTML>
-  
-  <div id="smart-button-container">
-      <div style="text-align: center;">
-        <div id="paypal-button-container"></div>
-      </div>
-    </div>
-  <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
-  <script>
-    function initPayPalButton() {
-      paypal.Buttons({
-        style: {
-          shape: 'rect',
-          color: 'gold',
-          layout: 'vertical',
-          label: 'paypal',
-          
-        },
-
-        createOrder: function(data, actions) {
-          return actions.order.create({
-            purchase_units: [{"description":"Annual fee for teacher use of stemcoding.herokuapp.com","amount":{"currency_code":"USD","value":21.4,"breakdown":{"item_total":{"currency_code":"USD","value":20},"shipping":{"currency_code":"USD","value":0},"tax_total":{"currency_code":"USD","value":1.4}}}}]
-          });
-        },
-
-        onApprove: function(data, actions) {
-          return actions.order.capture().then(function(details) {
-            alert('Transaction completed by ' + details.payer.name.given_name + '!');
-          });
-        },
-
-        onError: function(err) {
-          console.log(err);
-        }
-      }).render('#paypal-button-container');
-    }
-    initPayPalButton();
-  </script>
 
 <H1>STEMcoding Education Ohio</H1>
 
@@ -52,6 +15,8 @@
 <p>STEMcoding Education Ohio is led by Dr. Chris Orban and Dr. Richelle Teeling-Smith. The organization has been formed to encourage more science and math teachers to integrate computer science and data science into their classrooms and to facilitate that work.
 
 <p>STEMcoding Education Ohio runs a website to help teachers which is hosted at <a href="http://stemcoding.herokuapp.com">http://stemcoding.herokuapp.com</a> This site (a.k.a. the "STEMcoding learning management system" or STEMcoding LMS) runs on code that was developed at Ohio State University. We received permission to use this code to set up the site through a licensing agreement with Ohio State University that was finalized in July 2020. 
+
+<p>The annual fee for teacher use of the site is $20 plus tax. Student use is free. To avoid students purchasing teacher access, please send us an e-mail at <a href="mailto:chris.m.orban@gmail.com">chris.m.orban@gmail.com</a> so we can confirm your status as an educator (broadly defined) before sending you an invoice.
   
 <p>STEMcoding Education Ohio is unrelated to a group called "STEMcoding lab" in Pittsburg and we have chosen the title of our non-profit to help distinguish the organizations.
 
