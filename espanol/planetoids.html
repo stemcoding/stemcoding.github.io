@@ -1,0 +1,449 @@
+<HTML>
+<head>
+<title>Planetoids!</title>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+</head>
+
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+    <script>
+    var clipboard = new Clipboard('.btn');
+
+    clipboard.on('success', function(e) {
+        console.log(e);
+    });
+
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+    </script>
+
+
+<H1>
+Planetoids pre-survey!
+<p>
+<mark><a href="assessments/planetoids/planetoidsquiz_pre.html">
+  Si esta es su primera actividad de codificación STEM, realice esta encuesta previa sobre sus antecedentes
+  ¡Responda esta encuesta previa antes de comenzar este ejercicio!</a></mark>
+</h1>
+
+<H1>El juego de los planetoides</H1>
+
+<p>Este laboratorio lo guiará a través de la codificación de una implementación basada en la web de los asteroides de los videojuegos clásicos. Deberá llevar su computadora portátil al laboratorio o usar las computadoras disponibles. Desafortunadamente, las tabletas probablemente no funcionarán muy bien a menos que tenga un teclado externo.
+
+<p>Este ejemplo utilizará un lenguaje de programación que es muy similar a la programación C y C ++. (Nota: si está familiarizado con C o C ++, la principal diferencia que verá es que no hay una función main () y, en cambio, la función draw () cumple esta función).
+
+<p>  In the classic game of Asteroids, there is a little ship that flies around in space, very far away from stars and planets so that the gravitational acceleration is zero.
+
+<p><H3>Paso 1. Juega con una versión unidimensional de Asteroides
+
+</h3>
+
+<p><a href="https://editor.p5js.org/ChrisOrban/sketches/t40RIIWh2" target="_blank">Haga clic aquí para abrir una versión 1D del juego de asteroides</a>
+
+<p><H4><mark>Muy importante: ¡Regístrese para obtener una cuenta! Luego haga clic en "Duplicar" para que pueda tener su propia versión del código.</mark></H4>
+
+<!--
+<p>Press play in the code editor to run the code. <a href="planetoidsd1d_v1/planetoids.html">Right now the program should behave like this</a>.
+  -->
+
+<p>
+En la esquina superior izquierda, presione <img src="https://www.asc.ohio-state.edu/orban.14/physics_coding/play_button.png">
+y verá algo como esto:
+
+<center>
+<p><img height=700 width=700 src="planetoids_initial.png">
+</center>
+
+<p>Empuje la flecha hacia arriba para ver la aceleración del cohete. Desafortunadamente, en este momento, la nave solo puede acelerar en una dirección. Cambiaremos esto paso a paso para hacer que el comportamiento sea más similar al clásico juego de asteroides. Si el ejemplo no funciona, dígaselo al instructor.
+<p>  Después de presionar las cuatro teclas de flecha, notará que hay un par de objetivos que aún no se han completado:
+  <center>
+    <p><img width=840 height=254 src="planetoids_wrong.png">
+      </center>
+
+<p>Si el programa puede detectar que algo anda mal con su código, mostrará una <img width=15 height=15 src="https://www.asc.ohio-state.edu/orban.14/stemcoding/red_x.png"> roja  junto a ese objetivo.
+
+
+<p>Si el programa puede detectar que ha completado el objetivo, mostrará una marca de verificación <img width=15 height=15 src="https://www.asc.ohio-state.edu/orban.14/stemcoding/check_mark.png"> verde junto a ese objetivo.
+
+<p>Pero el programa no es muy inteligente y si no puede decir si ha completado el objetivo, indicará un signo de interrogación <img width=15 height=15 src="https://www.asc.ohio-state.edu/orban.14/stemcoding/question_mark.png"> como este   junto a ese objetivo.
+
+
+<p>Al final de esta actividad, su objetivo es tener marcas de verificación verdes junto a todos los objetivos como este:
+
+ <div align="center">
+<p><img width=680 height=254 src="planetoids_finished.png">
+  </div>
+
+<p>¡Los pasos a continuación lo ayudarán a lograr todos estos objetivos!
+
+
+<P><H3>Paso 2. ¡Mira el código!</H3>
+
+<p>Este es el código que se usa para mover la nave en la versión de una dimensión (1D). Eche un vistazo de cerca al código e intente tener una idea de lo que hace cada parte:
+
+<pre>
+function draw() {
+
+    //
+Actualizar velocidades
+    vx += deltaVx;
+
+    // Actualizar ubicación
+    x += vx*dt;
+
+    //
+la velocidad no cambia si no hay fuerzas
+    deltaVx = 0;
+
+    if (keyIsDown(LEFT_ARROW)) {
+        theta += 0.0;
+    }
+    if (keyIsDown(RIGHT_ARROW)) {
+        theta += 0.0;
+    }
+    if (keyIsDown(UP_ARROW)) {
+        // Rockets on!
+        accelx = Fthrust*cos(theta)/mass;
+        deltaVx = accelx*dt;
+    }
+    if (keyIsDown(DOWN_ARROW)) {
+        // Do nothing
+    }
+    if (keyIsDown(32)){ //spacebar
+       // Do nothing!
+    }
+
+    // Dibujar barco y otras cosas
+    display();
+
+} // end draw()   NO AÑADA NINGÚN CÓDIGO DESPUÉS DE ESTA LÍNEA!!!
+</pre>
+
+<p>¿Alguna idea sobre lo que esto significa y lo que hace cada parte?
+
+<p><H3>Paso 3. ¡Edita el código fuente para que el barco gire!</H3>
+
+<p>
+¡Después de hacer <b><mark>clic en duplicar!</mark></b> para asegurarse de que está trabajando en su propia versión del código, cambie estas líneas de código:
+
+
+<pre>
+    if (keyIsDown(LEFT_ARROW)) {
+        theta += 0.0;
+    } else if (keyIsDown(RIGHT_ARROW)) {
+        theta += -0.0;
+</pre>
+
+para verse así:
+
+<pre>
+    if (keyIsDown(LEFT_ARROW)) {
+        theta += 0.1;
+    } else if (keyIsDown(RIGHT_ARROW)) {
+        theta += -0.1;
+</pre>
+
+<p>El juego de los asteroides ahora está configurado de modo que solo el componente x del empuje sea lo que acelere la nave. Observe que permitir que la nave gire significa que podemos acelerar y desacelerar la nave porque podemos girar el cohete y aplicar una fuerza opuesta al vector de velocidad. ¡Nuestro juego de asteroides ya es mucho más divertido! For reference, <a href="planetoids1d_v2/planetoids.html">the game should now behave like this</a>.
+
+<p><H3>Paso 4. Habilite los viajes espaciales multidimensionales (es decir, deje que la nave se mueva también en la dirección y)</H4>
+</H3>
+
+<p>Ahora tome el código que ha escrito y modifícalo para que la nave pueda moverse en la dirección y. Se necesitarán algunos cambios diferentes para que funcione.
+
+<p><H4>Paso 4a. Cambiar la sección "Actualizar ubicación"</H4>
+
+<p>Mira la sección "Actualizar ubicación". Ahora mismo se ve así:
+
+  <pre>
+  // Actualizar ubicación
+  x += vx*dt;
+  </pre>
+
+  <p>
+  Como puede ver, solo se actualiza la posición <code>x</code>. La posición <code>y</code> no se actualiza. Cambie la sección "Actualizar ubicación" a esto:
+
+  <pre>
+  //
+  Actualizar ubicación
+  x += vx*dt;
+  y += vy*dt;
+  </pre>
+
+<p><H4>Paso 4.b. Cambiar la sección "Actualizar velocidades"</H4>
+
+<p>Si hizo el paso 4a correctamente, ahora podemos actualizar tanto la posición x como la posición y, ¡pero solo si vx y vy no son cero! Esto solo sucederá si cambiamos la sección "Velocidades de actualización" para que tanto vx como vy se actualicen.
+<p>Cambia esto:
+
+<pre>
+\\ Actualizar velocidades
+vx += deltaVx;
+</pre>
+
+<p>a esto:
+<pre>
+\\ Actualizar velocidades
+vx += deltaVx;
+vy += deltaVy;
+</pre>
+
+<p><H4>Paso 4.c. Los objetos en movimiento se mueven en línea recta a menos que actúen sobre ellos una fuerza</H3>
+
+<p>Newton se dio cuenta de que los objetos se mueven en línea recta con velocidad constante si no hay fuerzas que actúan sobre el objeto. Para nuestro programa de computadora, debemos asegurarnos de que la velocidad solo cambie cuando presionamos los botones del teclado. Si no presionamos ningún botón, entonces el cambio en la velocidad (Δvx y Δvy) debe ser cero.
+<p>Esta es la lógica detrás de esta parte del código:
+
+<pre>
+    //
+la velocidad no cambia si no hay fuerzas
+    deltaVx = 0;
+</pre>
+
+<p>Cambie esto para asegurarse de que <code>deltaVy</code> también esté configurado en cero:
+
+<pre>
+    // la velocidad no cambia si no hay fuerzas
+    deltaVx = 0;
+    deltaVy = 0;
+</pre>
+
+<p>Este es un paso importante porque si haces el siguiente paso correctamente, pero te olvidas de hacerlo, la nave se acelerará incontrolablemente.
+
+<p><H4>Paso 4.d. Asegúrese de que la aceleración funcione en la dirección y</H4>
+
+<p>Si ha realizado todos los pasos hasta este punto correctamente, la nave aún no se moverá en la dirección y porque no le hemos dicho a la nave cómo acelerar en la dirección y cuando los propulsores están encendidos. ¡En ninguna parte del programa establecemos deltaVy igual a nada excepto cero!
+<p>Mire de cerca esta parte del código:
+
+<pre>
+    if (keyIsDown(UP_ARROW)) {
+        // Rockets on!
+        accelx = Fthrust*cos(theta)/mass;
+        deltaVx = accelx*dt;
+    }
+</pre>
+
+<p>Deberá cambiar esto a algo como esto:
+
+<pre>
+    if (keyIsDown(UP_ARROW)) {
+        // Rockets on!
+        accelx = Fthrust*cos(theta)/mass;
+        deltaVx = accelx*dt;
+        accely = <mark>????</mark>
+        deltaVy = accely*dt;
+    }
+</pre>
+
+<p>Es tu trabajo reemplazar el <mark>????</mark> con algo que realmente dé la aceleración correcta en la dirección y. (Sugerencia: es muy similar al código para <code>accelx</code> , pero la función trigonométrica puede ser diferente. ¿Debería usar coseno, seno o tangente para la función trigonométrica? Si no está seguro, pruebe una y vea qué sucede).
+
+<p><H3>Paso 5. ¡Compruebe que todo funciona como se esperaba!</H5>
+
+<p>Si realiza todos estos cambios, <a href="planetoids2d/planetoids.html">¡su código debería comportarse así!</a> ¡Tu nave debería moverse en dos dimensiones!
+
+<p><b>Posible trampa:</b> ¿Qué función trigonométrica usó para determinar la aceleración del componente y?
+
+
+<p><H3>Paso 6. Agrega código para mostrar la ruta del barco.</H3>
+
+<p>Después de <code>display();</code>  puedes agregar este código y mostrará la ruta del barco:
+
+<pre>
+    for( i = 0; i < xhistory.length ; i+= 1) {
+     drawPoint(xhistory[i],yhistory[i]);
+    }
+</pre>
+
+<button class="btn" data-clipboard-text="    for( i = 0; i < xhistory.length ; i+= 1) {
+     drawPoint(xhistory[i],yhistory[i]);
+    }">
+    Copy code to clipboard
+</button>
+<p> ¿El camino se ve irregular o con más curvas? (Si completó los ejercicios de "mover el blob" o "acelerar el blob", puede comparar / contrastar con esas trayectorias). ¡Comente esto en el archivo questions.js cuando envíe su código!
+<p><H3>Paso 7. Dale al barco una velocidad inicial.</H3>
+
+<p>Cambia la nave para que venga por la izquierda con una velocidad inicial. Modifique el comienzo del código a esto:
+
+<pre>
+x = 0;
+y = 250;
+
+vx = 25;
+vy = 0;
+</pre>
+
+<p>y solo por diversión, cambia el ángulo del barco para que apunte hacia arriba:
+
+<pre>
+theta = 3.141/2;
+</pre>
+
+<p>Como puede ver, el ángulo se cambia de 0 a π / 2 radianes. Si se convierte a grados, sería 90 grados.  <a href="http://www.asc.ohio-state.edu/orban.14/processing_fall2016/intro/angle.html">Esto debería hacer que el barco apunte hacia arriba (haga clic aquí si tiene curiosidad por saber por qué).</a>
+
+<p><H3>Paso 8. Encienda los propulsores y observe de cerca la trayectoria del barco.</H3>
+
+<p>Deje que el barco se desvíe un poco y luego encienda los propulsores. ¿Cómo se ve la trayectoria (la curva)?
+
+<p><b><mark>¡Juega con el barco durante 2-3 minutos! Cambia la velocidad inicial, la posición y el ángulo del barco. ¡Mira qué pasa! </mark></b>
+
+<p><H3>Paso 9. ¡Agrega planetoides a tu código!</H3>
+
+<p>Cerca del comienzo de su código, agregue esta línea:
+
+<pre>
+draw_planetoids = true;
+</pre>
+
+<button class="btn" data-clipboard-text="draw_planetoids = true;">
+    Copy code to clipboard
+</button>
+
+<p>Si agrega esto a su código, el programa debería comportarse así
+
+<p><b>Nota:</b> más tarde puedes apagar los planetoides con este código:
+
+<pre>
+draw_planetoids = false;
+</pre>
+
+<button class="btn" data-clipboard-text="draw_planetoids = false;">
+    Copy code to clipboard
+</button>
+
+<p>Si lo desea, puede volver a establecer la velocidad inicial a cero <code>vx = 0;  vy = 0;</code>  y la posición inicial a <code> x = 375; y = 250;</code>
+
+  <!--
+  If your code behaves as expected, then take all your modifications to the 1D code and <a href="http://alpha.editor.p5js.org/ChrisOrban/sketches/SkDeoJukf" target="_blank">add them to this version of the code which includes planetoids!</a>
+
+<p><mark><b>Change the values for the <code>mass</code> until you find the best combination to fly around and avoid the planetoids!</b></mark>
+  -->
+<p><H3>Paso 10. ¡Encuentra el mejor valor de la masa del barco para sobrevivir!</H3>
+
+<p>Cambie el valor de la <code>mass</code> hasta que encuentre la mejor opción para sobrevivir más tiempo en el campo de asteroides. <mark><b>¿Qué valor de <code>mass</code> crees que es el mejor?</b></mark>
+
+<p><b>Opcional:</b> si desea realizar un seguimiento de cuánto tiempo ha transcurrido antes de morir, puede agregar este código al principio:
+
+<pre>
+    t = 0;
+</pre>
+<button class="btn" data-clipboard-text="t = 0;">
+    Copy code to clipboard
+</button>
+
+<p>y luego ponga este código <b>after</b> the <code>display();</code> función pero antes del final de la función de dibujo:
+
+
+  <pre>
+     t += dt;
+     drawText('time = ',0.75*width,0.75*height);
+     drawText(t,0.85*width,0.75*height);
+</pre>
+<button class="btn" data-clipboard-text="     t += dt;
+     drawText('time = ',0.75*width,0.75*height);
+     drawText(t,0.85*width,0.75*height);">
+    Copy code to clipboard
+</button>
+
+<p><H3><mark>¡En este punto, debería tener todas las marcas de verificación verdes! ¡Hurra!</mark></H3>
+
+<p><H2>Desafíos: ¡Elige uno!</H2>
+
+<p><H3>Opción: agregar propulsores inversos</H3>
+
+<p>Este es uno de los desafíos más fáciles. Observe que su código tiene una sección para cuando presione la flecha hacia abajo:
+
+<pre>
+    if (keyIsDown(DOWN_ARROW)) {
+        // Do nothing
+    }
+</pre>
+
+<p>Donde dice "No hacer nada", ¿cómo agregaría código para encender los propulsores en reversa?
+
+<p>Sugerencia: desea acelerar en la dirección opuesta a la aceleración que obtiene cuando se encienden los propulsores.
+
+<!--
+<p><H3>Option: Add asteroids to the game</H3>
+
+<p>It's not much of an asteroids game without asteroids! Add asteroids to the code which drift at random directions using the ellipse function
+
+<pre>
+drawEllipse(x_asteroid,y_asteroid,width_asteroid,height_asteroid);
+</pre>
+
+<p>Place this just after where it says display(); Then make sure these variables are initialized at the beginning of the program like this:
+
+<pre>
+x_asteroid=200;
+y_asteroid=200;
+width_asteroid=50;
+height_asteroid=50;
+</pre>
+
+<p>It is up to you to make the asteroid move in a random direction with some constant velocity.
+
+<p>Note: to calculate a random direction use the random function to generate a fraction between -1 and 1. For example:
+
+<pre>
+random_number = random(-1,1);
+</pre>
+-->
+<p><H3>Opción: agregar un proyectil al juego </H3>
+
+<p>Puede agregar otra declaración if para verificar si ha presionado la barra espaciadora:
+
+<pre>
+    if (keyIsDown(32)) { // spacebar
+      // Do nothing
+    }
+</pre>
+
+<p>¿Cómo modificarías el código para que la barra espaciadora dispara un proyectil desde el morro de la nave? Agregue dos nuevas variables flotantes llamadas xprojectile e yprojectile al comienzo del programa y use la función "drawPoint" para mostrar la posición del proyectil:
+
+<pre>
+drawPoint(xprojectile,yprojectile);
+</pre>
+
+<p>Consejo: coloque esta función justo después de display (); para que se dibuje cada vez, pero establezcan xprojectile y y proyectil en cero inicialmente para que el punto se dibuje en la esquina superior izquierda de la cuadrícula y no pueda verlo. Cuando se presiona la barra espaciadora, establezca el xprojectile y el yprojectile a la posición de la nave. Eso al menos pondrá un punto en la pantalla donde está el barco. ¿Cómo lo harías mover?
+<p><h3><mark>¡Cómo obtener todo el crédito en esta tarea!</mark></h3>
+
+<p><b>0. Realice la encuesta previa</b>
+
+<p>Asegúrese de realizar la <a href="assessments/planetoids/planetoidsquiz_pre.html">encuesta previa al comienzo de la actividad</a> para contarnos sobre usted y si desea que sus respuestas se utilicen en el proyecto de investigación.
+
+<p><b> 1. Complete los pasos 1 a 4 y asegúrese absolutamente de que el barco pueda girar y moverse en dos dimensiones</b>
+
+<p>Si realiza todos estos cambios, <a href="planetoids2d/planetoids.html">¡su código debería comportarse así!</a>
+
+<p><b>2. Agrega código para seguir la ruta del barco (Paso 6)</b>
+
+<p>La mayoría de la gente elige los propulsores inversos, que probablemente sean los más fáciles
+
+<p><b>3. Completa uno de los desafíos.</b>
+
+<p>
+La mayoría de la gente elige los propulsores inversos, que probablemente sea el más fácil
+
+<p><b>4. ¡Encuentra el mejor valor de la masa del barco para sobrevivir!</b>
+
+<p>
+Esto requiere modificar <a href="http://alpha.editor.p5js.org/ChrisOrban/sketches/S1UesXHWZ" target="_blank">una versión del código que incluye planetoides.</a>
+
+<p><b>5. Envíe su código antes de la fecha límite y realice la encuesta posterior.</b>
+
+<p>Habla con tu profesor sobre dónde enviar el código.
+
+<p><H1>Último paso: ¡haz una prueba!</H1>
+
+<H1>
+<mark><a href="assessments/planetoids/planetoidsquiz_post.html">POR FAVOR, REALICE LA ENCUESTA POST-ENCUESTA DE PLANETOIDES !!!!!!! Mira lo grande que es la fuente para este enlace !!! ¡Parece importante! Haga clic aquí para realizar la encuesta posterior a Planetoides y decirnos cómo fue el ejercicio.</a></mark>
+</h1>
+
+
+</body>
+</html>
