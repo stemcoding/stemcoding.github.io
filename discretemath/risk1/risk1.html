@@ -1,0 +1,396 @@
+<HTML>
+<title>Probability: The Game of Risk (Part 1)</title>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<p><H1>Probability: The Game of Risk (Part 1)</H1>
+
+<p>The game of risk is a board game where you try to take over the world. Whenever one player attacks another player the winner is decided by rolling dice. In this activity we will think about different situations in the game and how likely (or unlikely) it is that the attacking player will win.
+
+ 
+<div align="center">
+  <p><img width=569 height=365 src="risk_board.jpg">
+</div>
+
+<p>An interesting thing about these games is that there may be an average probability of winning for different situations but when you roll the dice you always get something different and it is only after many many dice rolls that the average probability is reached. 
+
+  
+<p><H2>Step 1. One dice roll</H2>
+
+<p><a href="https://editor.p5js.org/ChrisOrban/sketches/ZC4m0Kjps">Click here to open a code that will make one dice roll per second</a>
+
+<p>In the top left corner, press <img src="https://www.asc.ohio-state.edu/orban.14/physics_coding/play_button.png"> to run the code and after about 10 seconds the output will look like this:
+
+  
+  <div align="center">
+    <p><img width=659 height=600 src="risk_v0.png">
+      </div> 
+
+  <p><H3>Important: Create an Account or Sign In, then click Duplicate</H3>
+
+<p>To save your work you need to create an account by clicking <b>Sign Up</b> in <b>the top right corner</b> of the screen. If you have already created an account, click "Log In" and put in your login information
+
+<p>A non-profit arts group called <a href="http://processingfoundation.org">The Processing Foundation</a> runs this site. They are nice people and they will not send you a bunch of emails for registering.
+
+<p>Before moving on, in the top left click <b><span style="background-color:yellow;">click File --> Duplicate</span></b> so that the code you are working with is on your account!
+
+
+<p><H3>Objectives</H3>
+
+<p>If the program can detect that something is wrong with your code it will show a red <img width=15 height=15 src="https://www.asc.ohio-state.edu/orban.14/stemcoding/red_x.png"> next to that objective.
+
+<p>If the program can detect that you have completed the objective it will show a green check mark <img width=15 height=15 src="https://www.asc.ohio-state.edu/orban.14/stemcoding/check_mark.png"> next to that objective.
+
+<p>But the program is not very smart and if it can't tell whether you have completed the objective it will indicate a question mark like this <img width=15 height=15 src="https://www.asc.ohio-state.edu/orban.14/stemcoding/question_mark.png"> next to that objective.
+
+<p>By the end of this activity your goal is to have green check marks next to all the objectives like this:
+
+  <div align="center">
+<p><img width=762 height=150 src="risk_final.png">
+</div>
+  
+<p>The directions below will help you meet all these goals.
+    
+<p><H2>Step 2. Look at the code</H2>
+
+<p>Here is the code:
+
+  <pre>
+Ntrials = 0;
+Nwin = 0.0;
+
+function draw() { 
+  clearscreen(240,240,240); // light gray
+  display();
+  
+  diceval1 = random([1,2,3,4,5,6]);
+ 
+  drawText('Dice1 value = '+diceval1,0.05*width,0.1*height);
+  
+  Ntrials += 1.0; 
+  
+  if (1 > 0) { // Note: 1 > 0 is always true
+     Nwin += 1.0;
+  }
+  winfrac = Nwin/Ntrials;
+  
+  graph1.addPoint(100*winfrac);
+  graph1.display();
+  drawText('Ntrials = ' + Ntrials,0.25*width,0.2*height);
+  
+  graph2.addPoint(50.0); // expected value
+  graph2.display();
+  
+} // DO NOT ADD ANY CODE AFTER THIS LINE!!!
+</pre>
+
+<p><a href="v0/index.html">Here is what the program will do when you run it</a> Right now the program is not very interesting because the "win" condition is 1 > 0 which is always true. As a result the probability of winning (<code>100*winfrac</code>) is 100%
+
+<p><b>Note:</b> If you were wondering why it says <code>diceval1</code> instead of just <code>diceval</code> it is because later we will add a second  dice and we will use the variable <code>diceval2</code> for the value of the second dice
+
+<p><H2>Step 3. Modify the if statement</H2>
+
+<p>The if statement in the code looks like this:
+
+<pre>
+  if (1 > 0) { // Note: 1 > 0 is always true
+     Nwin += 1.0;
+  }
+</pre>
+
+<p>Change this to
+
+<pre>
+  if (diceval1 > ???) { 
+     Nwin += 1.0;
+  }
+</pre>
+
+<p>and replace <b><span style="background-color:yellow;">???</span></b> with an integer number between 1 and 5.
+
+<p><span style="background:yellow;"><b>Why would it be a bad idea to set ??? to 6</b></span>
+  
+<p>At this point <a href="v1/index.html">your code should behave similar to this</a>. Your results will depend on what integer number you pick for the <b><span style="background-color:yellow;">???</span></b>
+
+<p><H2>Step 4. Increase the frame rate</H2>
+
+<p>If you are feeling like the code is a bit slow you can increase the frame rate using this code:
+
+<pre>
+frameRate(60);
+</pre>
+
+<button class="btn" data-clipboard-text="frameRate(60);">
+    Copy code to clipboard                                                     
+</button>  
+
+<p><b>Paste this code somewhere INSIDE of the curly brackets of the draw() function</b>
+
+<p>Increasing the frame rate is the same thing as increasing the number of dice rolls per second. Initially the program is configured to roll the dice once per second. The code above will change this to 60 dice rolls per second.
+
+<p>You may wonder if it is possible to do more than 60 dice rolls a second. It turns out that if you increase 60 to something larger you will find that the program doesn't really go any faster.
+  
+<p>At this point <a href="v2/index.html">your code should behave similar to this</a>
+
+<p><b>Note:</b> Your results will depend on what you put for the ??? in the if statement in Step 3. Don't worry if your program behaves differently than the example, especially after many trials.
+
+<P><b>Note:</b> If you feel like 60 dice rolls a second is too fast you can feel free to decrease that number something less. It is not absolutely necessary to run the program as fast as it can go.
+  
+<p><span style="background:yellow;"><b>Run the program a few times!</b></span> and notice that sometimes the measured win percentage starts at 100% and moves to lower values and sometimes it starts at 0% and moves to higher values.  <span style="background:yellow;"><b>Why is this?</b></span>
+  
+<p><H2>Step 5. Think about the win percentage</H2>
+
+<p>Our next goal is to achieve this objective:
+
+<div align="center">
+<p><img width=670 height=30 src="matchexpectation.png">
+</div>
+
+<p>To do this we will need to think about how many times that we roll a dice that dice value will be greater than the ??? that we put in the code where ??? is an integer between 1 and 5.
+
+<p>Once we have thought carefully about the probability that <code>diceval1 > ???</code> then we will need to modify this part of the code:
+
+<pre>
+  graph2.addPoint(50.0); // expected value
+  graph2.display();
+</pre>
+
+<p>All you need to do is change 50.0 to whatever percentage that you think that diceval1 <b><i>should</i></b> be greater than the integer between 1 to 5 that you chose.
+
+<p><H3>Step 5a. Think about the dice roll</H3>
+
+<p>If the dice is working correctly (and is not a "weighted" dice) then you are equally likely to roll a 1, 2, 3, 4,  5 or 6. This idea was an important part of "That was Totally Random (Part 2)" because this is what it means for something to be totally random. If for example the number 6 appeared more frequently than the other numbers and this kept happening after many trials then you would say the dice is not totally random.
+
+<p>Earlier in "That was Totally Random (Part 2)" it mentions that if you have a random process that has six possible outcomes (and in our case these outcomes are rolling 1,2,3,4,5 or 6) then all of these probabilities must add up to 1.
+  
+  $$ p_1 + p_2 + p_3 + p_4 + p_5 + p_6 = 1 $$
+
+<p>This is a little bit like saying that 100% of the time you will role a 1, 2, 3, 4, 5 or 6.
+
+<p>If the dice is totally random then the probability of rolling a 1, 2, 3, 4, 5 or 6 will be equal:
+
+  $$ p_1 = p_2 = p_3 = p_4 = p_5 = p_6 $$
+
+<p><span style="background:yellow;"><b>Combine these two equations and calculate the values of $p_1$, $p_2$, $p_3$, $p_4$, $p_5$, and $p_6$</b></span>
+
+
+<p><H3>Step 5b. Think about the if statement</H3>
+
+<p>Earlier in Step 3 you modified the if statement in the program:
+
+<pre>
+  if (diceval1 > ???) 
+</pre>  
+
+<p>and you replaced the ??? with an integer between 1 and 5. Let's think about the different possibilities for whether diceval1 > ??? is true or false. The good news is that there are only six possibilities because diceval1 has to be 1, 2, 3, 4, 5 or 6.
+
+<p><span style="background:yellow;"><b>Fill out the table below</b></span> by selecting true or false in the middle column and writing down your value for $p_1$, $p_2$, $p_3$, $p_4$, $p_5$, and $p_6$ from Step 5a in the right column.
+
+<p><b>Note:</b> Your table will look different from other people's table if they chose a different value for the ??? in the if statement
+
+<div align="center">
+<table style="border: 1px solid black; text-align: center;">
+  <tbody>
+    <tr>
+<th style="border: 1px solid black;">diceval1</th>
+<th style="border: 1px solid black;">diceval1 > ???</th>
+<th style="border: 1px solid black;">probability</th>
+</tr>
+<tr>
+<th style="border: 1px solid black;">1</th>
+<th style="border: 1px solid black;">true/false?</th>
+<th style="border: 1px solid black;">$p_1$</th>
+</tr>
+<tr>
+<th style="border: 1px solid black;">2</th>
+<th style="border: 1px solid black;">true/false?</th>
+<th style="border: 1px solid black;">$p_2$</th>
+</tr>
+<tr>
+<th style="border: 1px solid black;">3</th>
+<th style="border: 1px solid black;">true/false?</th>
+<th style="border: 1px solid black;">$p_3$</th>
+</tr>
+<tr>
+<th style="border: 1px solid black;">4</th>
+<th style="border: 1px solid black;">true/false?</th>
+<th style="border: 1px solid black;">$p_4$</th>
+</tr>
+<tr>
+<th style="border: 1px solid black;">5</th>
+<th style="border: 1px solid black;">true/false?</th>
+<th style="border: 1px solid black;">$p_5$</th>
+</tr>
+<tr>
+<th style="border: 1px solid black;">6</th>
+<th style="border: 1px solid black;">true/false?</th>
+<th style="border: 1px solid black;">$p_6$</th>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p><span style="background:yellow;"><b>Question: Is 3 > 3 true or false?</b></span>
+
+<p><H3>Step 5c. Put it all together</H3>
+
+<p>Now look at your table and notice which rows have the second column being true. What we really want to know is what percentage of the time that <code>diceval1 > ???</code> is true.
+
+<p>The third column is really important for this part. For example, if you set ??? to 0 (even though we told you to set it at 1 at the lowest) then the middle column would all be true and the statement <code>diceval1 > 0</code> would be true 100% of the time. Notice that if you added all the rows of the third column you would get $p_1 + p_2 + p_3 + p_4 + p_5 + p_6$ which is equal to 1.0. Multiply by 100 and you would get 100%. 
+
+<p>If you choose an integer between 1 and 5 for the ??? then you will get at least one false statement in the middle column. Add up the probabilities (third column) for all the true statements in the second column. Take that number and multiply by 100 to get a percentage. <span style="background:yellow;"><b>What is that percentage?</b></span>
+
+<p><H2>Step 6. Put the expected win percentage in the code</H2>
+
+<p>This step involves this part of the program:
+
+<pre>
+  graph2.addPoint(50.0); // expected value
+  graph2.display();
+</pre>
+
+<p>Replace the 50.0 with the percentage you calculated in Step 5.   
+
+<p>Over time the measured percentage and the expected percentage should get closer and closer to each other <a href="v3/index.html">similar to this example</a>
+
+<p>If your expected percentage is correct then eventually you will get a check mark for this objective:
+
+  <div align="center">
+    <p><img width=726  height=30 src="risk_match.png">
+      </div>
+
+<p>If the measured percentage and the expected percentage don't get closer and closer to each other then you should go back and see if you made a mistake on calculating your expected percentage.
+
+<p><H2>Step 7. The game of risk</H2>
+
+<p>The simplest scenario in the game of risk is when one player attacks another player and each player only has one army. According to the rules, the attacking player gets one dice and the defending player gets one dice. Whoever rolls the highest value will win the battle. If there is a tie, then the defender wins the battle.
+
+<p><b>Step 7a. Add a second dice to the program</b>
+
+<p>Our program only has one dice. Go ahead and add another dice with this code:
+
+<pre>
+  diceval2 = random([1,2,3,4,5,6]); 
+  drawText('Dice2 value = ' + diceval2,0.55*width,0.1*height);
+</pre>
+
+
+<button class="btn" data-clipboard-text="  diceval2 = random([1,2,3,4,5,6]); 
+  drawText('Dice2 value = ' + diceval2,0.55*width,0.9*height);">
+    Copy to the clipboard
+</button>
+
+<p>Let's think of diceval1 as the attacking dice, and diceval2 as the defending dice.
+
+<p><b>Step 6b. Modify the if statement</b>
+
+<p>Now modify the if statement so it looks like this:
+
+<pre>
+  if (diceval1 > diceval2) {
+    Nwin += 1.0;
+  }
+</pre>
+  
+<p>Now modify the if statement so that if diceval1 is larger than diceval2 then it will be a "win", but if diceval1 is less than diceval2 or if they are equal it will not be a win.
+
+<p><a href="v4/index.html">After you add the second dice and modify the if statement your code should behave like this</a>
+
+<p>Now we need to change the expected win percentage for this new situation so we can get back the check mark for the "Measured win percentage agrees with expectation"
+
+<p><H2>Step 7. Think about the combinations</H2>
+
+<p>When you roll two, six-sided dice there will be $6^2 = 36$ combinations. Unless the dice are weighted (in other words if someone is cheating) all 36 combinations are equally likely to occur. The question is how many of these combinations result in the attacking dice winning. 
+
+<p><b>Note:</b> Remember that if the dice are the same value then the defender wins! Tie goes to the defender!
+
+<p><b><mark>Fill in this table for whether the attacker or defender wins. Write A if the attacker wins and D if the defender wins</mark></b>
+
+  <div align="center">
+<p><img width=520  height=500   src="dice1v1.png">
+</div>
+  
+<p><b><span style="background:yellow;">Of the 36 combinations how many of these would the attacking die win? What percentage is this?</span></b> 
+
+<p><b>Step 6d. Show this probability in the code</b>
+
+<p>Take the number of combinations where the attacker wins and divide it by 36 to get the win fraction. Then multiply by 100 to get the win percentage. Then modify this line of code:
+
+<pre>
+  graph2.addPoint(50);
+  graph2.display();
+</pre>
+
+<p>So that instead of showing the 50% probability as a horizontal line it shows whatever percentage you just determined.
+
+<p><a href="v5/index.html">If you make this change your code should behave like this</a>
+
+  <p><span style="background-color:yellow;"><b>At this point you should have all green checks! Yay!</b></span>
+
+<p><H2>Step 7. Should you attack?</H2>
+
+<p>Based on what you found, if it is your turn in the game and you can potentially use one dice (one army) to attack one dice (one army) are you more likely to win or to lose?
+
+<p>Part of the rules of the game of Risk is that if you capture at least one territory during your turn then you get a card that can be useful later. Why do you think the designers of the game added this rule?
+
+<p><H2>Challenges</H2>
+
+<p>For both these challenges, you will want to disable the objectives that appear below the screen (which could give confusing results). Add this code anywhere in your draw function:
+
+<pre>
+showmilestones = false;
+</pre>
+
+<button class="btn" data-clipboard-text="showmilestones = false;">
+    Copy to the clipboard
+</button>
+
+<p><H3>Challenge #1. Two dice vs. one dice</H3>
+
+<p>You can increase your probability of winning by attacking the one die (one army)  with two dice instead of one. If the defending dice is greater than or equal to the larger of the two attacking dice, then the defender wins. But if the defending dice is less than the larger of the two attacking dice, then it is a win for the attacker.
+
+<p><b>Note:</b> In the real game, you can do two dice versus one dice, lose the first round and then do 1v1 and potentially win. Here we will just consider this first round. In the real game, if you lose the first round of 2 vs 1, you will probably be reluctant to do 1 vs 1 because the probability of winning is less than 50%.
+
+<p>Modify your code so that there are two attacking dice (<code>diceval1</code> and <code>diceval2</code>)  and one defending dice (<code>diceval3</code>).
+
+<p>Here is some code you can use:
+
+<pre>
+  diceval3 = random([1,2,3,4,5,6]); 
+  drawText('Dice3 value = ' + diceval2,0.2*width,0.1*height);">
+</pre>
+
+<button class="btn" data-clipboard-text="  diceval3 = random([1,2,3,4,5,6]); 
+  drawText('Dice3 value = ' + diceval2,0.2*width,0.1*height);">
+    Copy to the clipboard
+</button>  
+
+<p><b>Advice #1: The function max(val1,val2) will return the larger of the two values </b>
+
+<p><b>Advice #2:</b> Set the horizontal line back to 50%. We want to know if two dice vs one dice is more than 50% likely to win.
+
+<p><a href="v6/index.html">If you do this correctly your code should behave like this</a>
+
+<p>In this link we have re-labeled dice 1 and dice 2 as attacking die and dice 3 is the defending dice.
+
+<p><H3>Challenge #2: Think about the combinations!</H3>
+
+<p>With two dice there were $6^2 = 36$ combinations. How many combinations are there with three dice?  How many of these have the attacking dice winning? What does the win percentage work out to?
+
+<p>Change the expected win percentage in the code to see if it matches up with the measured win percentage
+
+<p><H3>Challenge #3: Three dice vs. one dice</H3>
+
+<p>Modify the code so that there are three attacking dice and one defending dice. What is the probability of winning now? 
+
+<p><b>Advice:</b> With four dice involved this becomes nearly impossible to map out by hand, but  <a href="https://web.stanford.edu/~guertin/risk.notes.html">if you want you can look at this nerdy write up about the probabilities in Risk to double check your answer.</a>
+
+<p>Now that you know the probability of winning an attack with one two and three dice versus one dice defending, do you have any thoughts on how you might play the game differently? Attack less? Attack more? Use more dice to attack? Less dice? Is the 3rd dice worth it? In a complex game like this there are no definitively right answers to this question but think about what you've learned might affect the way you play the game.
+
+
+
+
