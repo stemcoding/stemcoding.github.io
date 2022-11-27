@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<!-- saved from url=(0080)https://datacarpentry.org/spreadsheet-ecology-lesson/03-dates-as-data/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="last-modified" content="2022-10-20 23:23:54 +0000">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- meta "search-domain" used for google site search function google_search() -->
+    <meta name="search-domain" value="https://datacarpentry.org/spreadsheet-ecology-lesson">
+    <style class="anchorjs"></style><link rel="stylesheet" type="text/css" href="./index4_files/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./index4_files/bootstrap-theme.css">
+    <link rel="stylesheet" type="text/css" href="./index4_files/lesson.css">
+    <link rel="stylesheet" type="text/css" href="./index4_files/syntax.css">
+    
+    <link rel="license" href="https://datacarpentry.org/spreadsheet-ecology-lesson/03-dates-as-data/index.html#license-info">
+
+    
+
+
+
+    <!-- Favicons for everyone -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/favicon-196x196.png" sizes="196x196">
+    <link rel="icon" type="image/png" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/favicon-128.png" sizes="128x128">
+    <meta name="application-name" content="Data Carpentry - Data Organization in Spreadsheets for Ecologists">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="/spreadsheet-ecology-lesson/assets/favicons/dc/mstile-144x144.png">
+    <meta name="msapplication-square70x70logo" content="/spreadsheet-ecology-lesson/assets/favicons/dc/mstile-70x70.png">
+    <meta name="msapplication-square150x150logo" content="/spreadsheet-ecology-lesson/assets/favicons/dc/mstile-150x150.png">
+    <meta name="msapplication-wide310x150logo" content="/spreadsheet-ecology-lesson/assets/favicons/dc/mstile-310x150.png">
+    <meta name="msapplication-square310x310logo" content="/spreadsheet-ecology-lesson/assets/favicons/dc/mstile-310x310.png">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+  <title>
+  Dates as data – Data Organization in Spreadsheets for Ecologists
+  </title>  
+
+  </head>
+  <body data-new-gr-c-s-check-loaded="14.1085.0" data-gr-ext-installed="">
+
+    
+
+
+
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      
+      
+      <a href="http://datacarpentry.org/" class="pull-left">
+        <img class="navbar-logo" src="./index4_files/dc-icon-black.svg" alt="Data Carpentry logo">
+      </a>
+      
+
+      
+      <a class="navbar-brand" href="https://datacarpentry.org/spreadsheet-ecology-lesson/">Home</a>
+
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+
+	
+        <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/CODE_OF_CONDUCT.html">Code of Conduct</a></li>
+
+        
+	
+        <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/setup.html">Setup</a></li>
+
+        
+        
+        <li class="dropdown">
+          <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Episodes <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            
+            
+            <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/00-intro/index.html">Introduction</a></li>
+            
+            
+            <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/01-format-data/index.html">Formatting data tables in Spreadsheets</a></li>
+            
+            
+            <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/index.html">Formatting problems</a></li>
+            
+            
+            <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/03-dates-as-data/index.html">Dates as data</a></li>
+            
+            
+            <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/04-quality-control/index.html">Quality control</a></li>
+            
+            
+            <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/05-exporting-data/index.html">Exporting data</a></li>
+            
+	    <li role="separator" class="divider"></li>
+            <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/aio/index.html">All in one page (Beta)</a></li>
+          </ul>
+        </li>
+        
+	
+
+	
+	
+        <li class="dropdown">
+          <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Extras <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/reference.html">Reference</a></li>
+            
+            
+            
+              <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/about/index.html">About</a></li>
+            
+            
+            
+            
+              <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/datamanagement/index.html">Data Management Tips</a></li>
+            
+            
+            
+            
+              <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/discuss/index.html">Discussion</a></li>
+            
+            
+            
+            
+              <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/figures/index.html">Figures</a></li>
+            
+            
+            
+            
+              <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/guide/index.html">Instructor Notes</a></li>
+            
+            
+          </ul>
+        </li>
+	
+
+	
+        <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/LICENSE.html">License</a></li>
+	
+	<li><a href="https://github.com/datacarpentry/spreadsheet-ecology-lesson/edit/gh-pages/_episodes/03-dates-as-data.md" data-checker-ignore="">Improve this page <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a></li>
+	
+      </ul>
+      <form class="navbar-form navbar-right" role="search" id="search" onsubmit="google_search(); return false;">
+        <div class="form-group">
+          <input type="text" id="google-search" placeholder="Search..." aria-label="Google site search">
+        </div>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+  <div class="col-xs-1">
+    <h3 class="text-left" id="previous-episode">
+      
+      <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/index.html"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span><span class="sr-only">previous episode</span></a>
+      
+    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/03-dates-as-data/index.html#previous-episode" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+  </div>
+  <div class="col-xs-10">
+    
+    <h3 class="maintitle" id="data-organization-in-spreadsheets-for-ecologists"><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/">Data Organization in Spreadsheets for Ecologists</a><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/03-dates-as-data/index.html#data-organization-in-spreadsheets-for-ecologists" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+    
+  </div>
+  <div class="col-xs-1">
+    <h3 class="text-right" id="next-episode">
+      
+      <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/04-quality-control/index.html"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span><span class="sr-only">next episode</span></a>
+      
+    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/03-dates-as-data/index.html#next-episode" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+  </div>
+</div>
+
+<article>
+<div class="row">
+  <div class="col-md-1">
+  </div>
+  <div class="col-md-10">
+    <h1 class="maintitle">Dates as data</h1>
+  </div>
+  <div class="col-md-1">
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<blockquote class="objectives">
+  <h2 id="overview">Overview<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/03-dates-as-data/index.html#overview" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+  <div class="row">
+    <div class="col-md-3">
+      <strong>Teaching:</strong> 10 min
+      <br>
+      <strong>Exercises:</strong> 3 min
+    </div>
+    <div class="col-md-9">
+      <strong>Questions</strong>
+      <ul>
+	
+	<li><p>What are good approaches for handling dates in spreadsheets?</p>
+</li>
+	
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3">
+    </div>
+    <div class="col-md-9">
+      <strong>Objectives</strong>
+      <ul>
+	
+	<li><p>Describe how dates are stored and formatted in spreadsheets.</p>
+</li>
+	
+	<li><p>Describe the advantages of alternative date formatting in spreadsheets.</p>
+</li>
+	
+	<li><p>Demonstrate best practices for entering dates in spreadsheets.</p>
+</li>
+	
+      </ul>
+    </div>
+  </div>
+
+</blockquote>
+
+<p>Dates in spreadsheets can be a problem. For one thing, dates 
+are stored in a single column. While this seems the
+most natural way to record dates, it actually is not best
+practice. A spreadsheet application will display the dates in a
+seemingly correct way (to a human observer) but how it actually handles
+and stores the dates may be problematic.</p>
+
+<p>In particular, please remember that DATE functions that are valid for a given
+spreadsheet program (be it LibreOffice Calc, Microsoft Excel, OpenOffice,
+Gnumeric, etc.) DATE functions are usually guaranteed to be compatible only within the same
+family of products. Most of the images of spreadsheets in this lesson come 
+from Microsoft Excel, run on a Mac or on Windows.
+Regardless of your spreadsheet, if you will later need to export the data and 
+<strong><em>need to conserve the timestamps</em></strong>, you are better off handling them using one of the solutions discussed below.</p>
+
+<p>One of the big problems with Excel is it can <a href="https://nsaunders.wordpress.com/2012/10/22/gene-name-errors-and-excel-lessons-not-learned/">turn things that aren’t dates into dates</a>, 
+for example gene/protein names or identifiers like MAR1, DEC1, OCT4 will be changed to dates, and you cannot retreive the 
+original name or identifier (except manually). So if you avoid the date format overall, it’s easier to work with these types of data. 
+When you must work with dates, here is how to do it efficiently.</p>
+
+<blockquote class="challenge">
+  <h2 id="exercise">Exercise<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/03-dates-as-data/index.html#exercise" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+  <p>Challenge: pulling month, day and year out of dates</p>
+
+  <ul>
+    <li>Let’s create a tab called <code class="language-plaintext highlighter-rouge">dates</code> in our data spreadsheet and copy the ‘plot 3’ table from the <code class="language-plaintext highlighter-rouge">2014</code> tab (that contains the problematic dates).</li>
+    <li>Let’s extract month, day and year from the dates in the <code class="language-plaintext highlighter-rouge">Date collected</code> column into new columns. For this we 
+can use the following built-in Excel functions:</li>
+  </ul>
+
+  <p><code class="language-plaintext highlighter-rouge">YEAR()</code></p>
+
+  <p><code class="language-plaintext highlighter-rouge">MONTH()</code></p>
+
+  <p><code class="language-plaintext highlighter-rouge">DAY()</code></p>
+
+  <p>(Make sure the new columns are formatted as a number and not as a date.)</p>
+
+  <p>You can see that even though we expected the year to be 2014, the year is actually 2015. What happened here is that the field assistant who collected the data for year 2014 initially forgot to include their data for ‘plot 3’ in this dataset. They came back in 2015 to add the missing data into the dataset and entered the dates for ‘plot 3’ without the year. Excel automatically interpreted the year as 2015 - the year the data was entered into the spreadsheet and not the year the data was collected. Thereby, the spreadsheet program introduced an error in the dataset without the field assistant realising.</p>
+
+  
+</blockquote>
+
+<blockquote class="challenge">
+  <h2 id="exercise-1">Exercise<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/03-dates-as-data/index.html#exercise-1" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+  <p>Challenge: pulling hour, minute and second out of the current time</p>
+
+  <p>Current time and date are best retrieved using the functions <code class="language-plaintext highlighter-rouge">NOW()</code>, which
+returns the current date and time, and <code class="language-plaintext highlighter-rouge">TODAY()</code>, which returns the current
+date. The results will be formatted according to your computer’s settings.</p>
+
+  <p>1) Extract the year, month and day from the current date and time string
+returned by the <code class="language-plaintext highlighter-rouge">NOW()</code> function.<br>
+2) Calculate the current time using <code class="language-plaintext highlighter-rouge">NOW()-TODAY()</code>. <br>
+3) Extract the hour, minute and second from the current time using
+functions <code class="language-plaintext highlighter-rouge">HOUR()</code>, <code class="language-plaintext highlighter-rouge">MINUTE()</code> and <code class="language-plaintext highlighter-rouge">SECOND()</code>.<br>
+4) Press <code class="language-plaintext highlighter-rouge">F9</code> to force the spreadsheet to recalculate the <code class="language-plaintext highlighter-rouge">NOW()</code> function,
+and check that it has been updated.</p>
+  
+</blockquote>
+
+<h2 id="preferred-date-format">Preferred date format<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/03-dates-as-data/index.html#preferred-date-format" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<p>It is much safer to store dates with <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/03-dates-as-data/index.html#day">YEAR, MONTH, DAY</a> in separate columns or as <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/03-dates-as-data/index.html#doy">YEAR and DAY-OF-YEAR</a> in separate columns.</p>
+
+<p><strong>Note</strong>: Excel is unable to parse dates from before 1899-12-31, and will thus leave these untouched.  If you’re mixing historic data
+from before and after this date, Excel will translate only the post-1900 dates into its internal format, thus resulting in mixed data.
+If you’re working with historic data, be extremely careful with your dates!</p>
+
+<p>Excel also entertains a second date system, the 1904 date system, as the default in Excel for Macintosh. This system will assign a
+different serial number than the <a href="https://support.microsoft.com/en-us/help/214330/differences-between-the-1900-and-the-1904-date-system-in-excel">1900 date system</a>. Because of this,
+<a href="http://uc3.cdlib.org/2014/04/09/abandon-all-hope-ye-who-enter-dates-in-excel/">dates must be checked for accuracy when exporting data from Excel</a> (look for dates that are ~4 years off).</p>
+
+<h2 id="date-formats-in-spreadsheets">Date formats in spreadsheets<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/03-dates-as-data/index.html#date-formats-in-spreadsheets" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<p>Spreadsheet programs have numerous “useful features” which allow them to handle dates in a variety of ways.</p>
+
+<p><img src="./index4_files/5_excel_dates_1.jpg" alt="Many formats, many ambiguities"></p>
+
+<p>But these “features” often allow ambiguity to creep into your data. Ideally, data should be as unambiguous as possible.</p>
+
+<h3 id="dates-stored-as-integers">Dates stored as integers<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/03-dates-as-data/index.html#dates-stored-as-integers" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+
+<p>The first thing you need to know is that Excel stores dates as numbers - see the last column in the above figure. Essentially, it counts the days from a default of December 31, 1899, and thus stores July 2, 2014 as  the serial number 41822.</p>
+
+<p>(But wait. That’s the default on my version of Excel. We’ll get into how this can introduce problems down the line later in this lesson. )</p>
+
+<p>This serial number thing can actually be useful in some circumstances. By using
+the above functions we can easily add days, months or years to a given date.
+Say you had a sampling plan where you needed to sample every thirty seven days.
+In another cell, you could type:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>=B2+37
+</code></pre></div></div>
+
+<p>And it would return</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>8-Aug
+</code></pre></div></div>
+
+<p>because it understands the date as a number <code class="language-plaintext highlighter-rouge">41822</code>, and <code class="language-plaintext highlighter-rouge">41822 + 37 = 41859</code>
+which Excel interprets as August 8, 2014. It retains the format (for the most
+part) of the cell that is being operated upon, (unless you did some sort of
+formatting to the cell before, and then all bets are off). Month and year
+rollovers are internally tracked and applied.</p>
+
+<p><strong>Note</strong>
+Adding years and months and days is slightly trickier because we need to make
+sure that we are adding the amount to the correct entity.</p>
+
+<ul>
+  <li>First we extract the single entities (day, month or year)</li>
+  <li>We can then add values to do that</li>
+  <li>Finally the complete date string is reconstructed using the <code class="language-plaintext highlighter-rouge">DATE()</code> function.</li>
+</ul>
+
+<p>As for dates, times are handled in a similar way; seconds can be directly
+added but to add hour and minutes we need to make sure that we are adding
+the quantities to the correct entities.</p>
+
+<p>Which brings us to the many different ways Excel provides in how it displays dates. If you refer to the figure above, you’ll see that
+there are many ways that ambiguity creeps into your data depending on the format you chose when you enter your data, and if you’re not
+fully aware of which format you’re using, you can end up actually entering your data in a way that Excel will badly misinterpret and 
+you will end up with errors in your data that will be extremely difficult to track down and troubleshoot.</p>
+
+<blockquote class="challenge">
+  <h2 id="exercise-2">Exercise<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/03-dates-as-data/index.html#exercise-2" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+  <p>What happens to the dates in the <code class="language-plaintext highlighter-rouge">dates</code> tab of our workbook if we save this sheet in Excel (in <code class="language-plaintext highlighter-rouge">csv</code> format) and then open the file in a plain text editor (like TextEdit or Notepad)? What happens to the dates if we then open the <code class="language-plaintext highlighter-rouge">csv</code> file in Excel?</p>
+  
+</blockquote>
+
+<p><strong>Note</strong><br>
+You will notice that when exporting into a text-based format (such as CSV), Excel will export its internal date integer instead of a useful value (that is, the dates will be represented as integer numbers). This can potentially lead to problems if you use other software to manipulate the file.</p>
+
+<h3 id="advantages-of-alternative-date-formatting">Advantages of Alternative Date Formatting<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/03-dates-as-data/index.html#advantages-of-alternative-date-formatting" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+
+<h3 id="-storing-dates-as-year-month-day"><a name="day"></a> Storing dates as YEAR, MONTH, DAY<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/03-dates-as-data/index.html#-storing-dates-as-year-month-day" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+
+<p>Storing dates in YEAR, MONTH, DAY format helps remove this ambiguity. Let’s look at this issue a bit closer.</p>
+
+<p>For instance this is a spreadsheet representing insect counts that were taken every few days over the summer, and things went something like this:</p>
+
+<p><img src="./index4_files/6_excel_dates_2.jpg" alt="So, so ambiguous, it&#39;s even confusing Excel"></p>
+
+<p>If Excel was to be believed, this person had been collecting bugs <strong>in the future</strong>. Now, we have no doubt this person is highly capable,
+but I believe time travel was beyond even their grasp.</p>
+
+<p>Entering dates in one cell is helpful but due to the fact that the spreadsheet programs may interpret and save the data in different ways
+(doing that somewhat behind the scenes), there is a better practice.</p>
+
+<p>In dealing with dates in spreadsheets, separate date data into separate fields (day, month, year), which will eliminate any chance of
+ambiguity.</p>
+
+<h3 id="-storing-dates-as-year-day-of-year"><a name="doy"></a> Storing dates as YEAR, DAY-OF-YEAR<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/03-dates-as-data/index.html#-storing-dates-as-year-day-of-year" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+
+<p>There is also another option. You can also store dates as year and day of year (DOY). Why? Because depending on your
+question, this might be what’s useful to you, and there is practically no possibility for ambiguity creeping in.</p>
+
+<p>Statistical models often incorporate year as a factor, or a categorical variable, rather than a numeric variable, to account for 
+year-to-year variation, and DOY can be used to measure the passage of time within a year.</p>
+
+<p>So, can you convert all your dates into DOY format? Well, in Excel, here’s a useful guide:</p>
+
+<p><img src="./index4_files/7_excel_dates_3.jpg" alt="Kill that ambiguity before it bites you!"></p>
+
+<h3 id="-storing-dates-as-a-single-string"><a name="str"></a> Storing dates as a single string<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/03-dates-as-data/index.html#-storing-dates-as-a-single-string" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+
+<p>Another alternative could be to convert the date string
+into a single string using the <code class="language-plaintext highlighter-rouge">YYYYMMDD</code> format.
+For example the date <code class="language-plaintext highlighter-rouge">March 24, 2015</code> would become <code class="language-plaintext highlighter-rouge">20150324</code>.
+This option also works for datetimes using the <code class="language-plaintext highlighter-rouge">YYYYMMDDhhmmss</code> format.
+So the datetime <code class="language-plaintext highlighter-rouge">March 24, 2015 17:25:35</code> would
+become <code class="language-plaintext highlighter-rouge">20150324172535</code>, where:</p>
+
+<p>YYYY:   the full year, i.e. 2015<br>
+MM:     the month, i.e. 03<br>
+DD:     the day of month, i.e. 24<br>
+hh:     hour of day, i.e. 17<br>
+mm:     minutes, i.e. 25<br>
+ss:     seconds, i.e. 35</p>
+
+<p>Such strings will be correctly sorted in ascending or descending order, and by
+knowing the format they can then be correctly processed by the receiving
+software.</p>
+
+
+
+
+
+<blockquote class="keypoints">
+  <h2 id="key-points">Key Points<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/03-dates-as-data/index.html#key-points" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+  <ul>
+    
+    <li><p>Treating dates as multiple pieces of data rather than one makes them easier to handle.</p>
+</li>
+    
+  </ul>
+</blockquote>
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+  <div class="col-xs-1">
+    <h3 class="text-left" id="previous-episode-1">
+      
+      <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/index.html"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span><span class="sr-only">previous episode</span></a>
+      
+    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/03-dates-as-data/index.html#previous-episode-1" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+  </div>
+  <div class="col-xs-10">
+    
+  </div>
+  <div class="col-xs-1">
+    <h3 class="text-right" id="next-episode-1">
+      
+      <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/04-quality-control/index.html"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span><span class="sr-only">next episode</span></a>
+      
+    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/03-dates-as-data/index.html#next-episode-1" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+  </div>
+</div>
+
+
+      
+      
+
+
+
+
+
+
+<footer>
+  <div class="row">
+    <div class="col-md-6 license" id="license-info" align="left">
+	
+	Licensed under <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/03-dates-as-data/index.html">CC-BY 4.0</a> 2018–2022
+	by <a href="https://carpentries.org/">The Carpentries</a>
+        <br>
+        Licensed under <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/03-dates-as-data/index.html">CC-BY 4.0</a> 2016–2018
+	by <a href="http://datacarpentry.org/">Data Carpentry</a>
+	
+    </div>
+    <div class="col-md-6 help-links" align="right">
+	
+	<a href="https://github.com/datacarpentry/spreadsheet-ecology-lesson/edit/gh-pages/_episodes/03-dates-as-data.md" data-checker-ignore="">Edit on GitHub</a>
+	
+	/
+	<a href="https://github.com/datacarpentry/spreadsheet-ecology-lesson/blob/gh-pages/CONTRIBUTING.md" data-checker-ignore="">Contributing</a>
+	/
+	<a href="https://github.com/datacarpentry/spreadsheet-ecology-lesson/">Source</a>
+	/
+	<a href="https://github.com/datacarpentry/spreadsheet-ecology-lesson/blob/gh-pages/CITATION" data-checker-ignore="">Cite</a>
+	/
+	<a href="mailto:team@carpentries.org">Contact</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12" align="center">
+      Using <a href="https://github.com/carpentries/styles/">The Carpentries style</a>
+      version <a href="https://github.com/carpentries/styles/releases/tag/v9.5.3">9.5.3</a>.
+    </div>
+  </div>
+</footer>
+
+      
+    </div>
+    
+<script async="" src="./index4_files/matomo.js.download"></script><script src="./index4_files/jquery.min.js.download"></script>
+<script src="./index4_files/bootstrap.min.js.download"></script>
+<script src="./index4_files/lesson.js.download"></script>
+
+
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(["setDomains", ["*.lessons.carpentries.org","*.datacarpentry.github.io","*.datacarpentry.org","*.librarycarpentry.github.io","*.librarycarpentry.org","*.swcarpentry.github.io"]]);
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["disableCookies"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://carpentries.matomo.cloud/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src='//cdn.matomo.cloud/carpentries.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+<script src="./index4_files/anchor.min.js.download"></script>
+<script>
+    anchors.add();
+</script>
+
+  
+
+<div id="speechify-global-notifications"></div><div id="speechify-summarization-fullscreen-mode" style="position: fixed; inset: 0px; overflow: auto; background: white; z-index: 1999; display: none;"></div><div id="speechify-screenshot-mode" style="position: fixed; top: 0px; right: 0px; width: 100%; min-height: 100%; z-index: 9999; display: none;"></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
