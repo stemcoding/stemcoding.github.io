@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<!-- saved from url=(0081)https://datacarpentry.org/spreadsheet-ecology-lesson/05-exporting-data/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="last-modified" content="2022-10-20 23:23:54 +0000">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- meta "search-domain" used for google site search function google_search() -->
+    <meta name="search-domain" value="https://datacarpentry.org/spreadsheet-ecology-lesson">
+    <style class="anchorjs"></style><link rel="stylesheet" type="text/css" href="./index6_files/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./index6_files/bootstrap-theme.css">
+    <link rel="stylesheet" type="text/css" href="./index6_files/lesson.css">
+    <link rel="stylesheet" type="text/css" href="./index6_files/syntax.css">
+    
+    <link rel="license" href="https://datacarpentry.org/spreadsheet-ecology-lesson/05-exporting-data/index.html#license-info">
+
+    
+
+
+
+    <!-- Favicons for everyone -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/favicon-196x196.png" sizes="196x196">
+    <link rel="icon" type="image/png" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/favicon-128.png" sizes="128x128">
+    <meta name="application-name" content="Data Carpentry - Data Organization in Spreadsheets for Ecologists">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="/spreadsheet-ecology-lesson/assets/favicons/dc/mstile-144x144.png">
+    <meta name="msapplication-square70x70logo" content="/spreadsheet-ecology-lesson/assets/favicons/dc/mstile-70x70.png">
+    <meta name="msapplication-square150x150logo" content="/spreadsheet-ecology-lesson/assets/favicons/dc/mstile-150x150.png">
+    <meta name="msapplication-wide310x150logo" content="/spreadsheet-ecology-lesson/assets/favicons/dc/mstile-310x150.png">
+    <meta name="msapplication-square310x310logo" content="/spreadsheet-ecology-lesson/assets/favicons/dc/mstile-310x310.png">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+  <title>
+  Exporting data – Data Organization in Spreadsheets for Ecologists
+  </title>  
+
+  </head>
+  <body data-new-gr-c-s-check-loaded="14.1085.0" data-gr-ext-installed="">
+
+    
+
+
+
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      
+      
+      <a href="http://datacarpentry.org/" class="pull-left">
+        <img class="navbar-logo" src="./index6_files/dc-icon-black.svg" alt="Data Carpentry logo">
+      </a>
+      
+
+      
+      <a class="navbar-brand" href="https://datacarpentry.org/spreadsheet-ecology-lesson/">Home</a>
+
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+
+	
+        <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/CODE_OF_CONDUCT.html">Code of Conduct</a></li>
+
+        
+	
+        <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/setup.html">Setup</a></li>
+
+        
+        
+        <li class="dropdown">
+          <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Episodes <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            
+            
+            <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/00-intro/index.html">Introduction</a></li>
+            
+            
+            <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/01-format-data/index.html">Formatting data tables in Spreadsheets</a></li>
+            
+            
+            <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/index.html">Formatting problems</a></li>
+            
+            
+            <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/03-dates-as-data/index.html">Dates as data</a></li>
+            
+            
+            <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/04-quality-control/index.html">Quality control</a></li>
+            
+            
+            <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/05-exporting-data/index.html">Exporting data</a></li>
+            
+	    <li role="separator" class="divider"></li>
+            <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/aio/index.html">All in one page (Beta)</a></li>
+          </ul>
+        </li>
+        
+	
+
+	
+	
+        <li class="dropdown">
+          <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Extras <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/reference.html">Reference</a></li>
+            
+            
+            
+              <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/about/index.html">About</a></li>
+            
+            
+            
+            
+              <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/datamanagement/index.html">Data Management Tips</a></li>
+            
+            
+            
+            
+              <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/discuss/index.html">Discussion</a></li>
+            
+            
+            
+            
+              <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/figures/index.html">Figures</a></li>
+            
+            
+            
+            
+              <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/guide/index.html">Instructor Notes</a></li>
+            
+            
+          </ul>
+        </li>
+	
+
+	
+        <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/LICENSE.html">License</a></li>
+	
+	<li><a href="https://github.com/datacarpentry/spreadsheet-ecology-lesson/edit/gh-pages/_episodes/05-exporting-data.md" data-checker-ignore="">Improve this page <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a></li>
+	
+      </ul>
+      <form class="navbar-form navbar-right" role="search" id="search" onsubmit="google_search(); return false;">
+        <div class="form-group">
+          <input type="text" id="google-search" placeholder="Search..." aria-label="Google site search">
+        </div>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+  <div class="col-xs-1">
+    <h3 class="text-left" id="previous-episode">
+      
+      <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/04-quality-control/index.html"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span><span class="sr-only">previous episode</span></a>
+      
+    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/05-exporting-data/index.html#previous-episode" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+  </div>
+  <div class="col-xs-10">
+    
+    <h3 class="maintitle" id="data-organization-in-spreadsheets-for-ecologists"><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/">Data Organization in Spreadsheets for Ecologists</a><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/05-exporting-data/index.html#data-organization-in-spreadsheets-for-ecologists" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+    
+  </div>
+  <div class="col-xs-1">
+    <h3 class="text-right" id="lesson-home">
+      
+      <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span><span class="sr-only">lesson home</span></a>
+      
+    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/05-exporting-data/index.html#lesson-home" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+  </div>
+</div>
+
+<article>
+<div class="row">
+  <div class="col-md-1">
+  </div>
+  <div class="col-md-10">
+    <h1 class="maintitle">Exporting data</h1>
+  </div>
+  <div class="col-md-1">
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<blockquote class="objectives">
+  <h2 id="overview">Overview<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/05-exporting-data/index.html#overview" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+  <div class="row">
+    <div class="col-md-3">
+      <strong>Teaching:</strong> 10 min
+      <br>
+      <strong>Exercises:</strong> 0 min
+    </div>
+    <div class="col-md-9">
+      <strong>Questions</strong>
+      <ul>
+	
+	<li><p>How can we export data from spreadsheets in a way that is useful for downstream applications?</p>
+</li>
+	
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3">
+    </div>
+    <div class="col-md-9">
+      <strong>Objectives</strong>
+      <ul>
+	
+	<li><p>Store spreadsheet data in universal file formats.</p>
+</li>
+	
+	<li><p>Export data from a spreadsheet to a CSV file.</p>
+</li>
+	
+      </ul>
+    </div>
+  </div>
+
+</blockquote>
+
+<p>Storing the data you’re going to work with for your analyses in Excel
+default file format (<code class="language-plaintext highlighter-rouge">*.xls</code> or <code class="language-plaintext highlighter-rouge">*.xlsx</code> - depending on the Excel
+version) isn’t a good idea. Why?</p>
+
+<ul>
+  <li>
+    <p>Because it is a proprietary format, and it is possible that in
+the future, technology won’t exist (or will become sufficiently
+rare) to make it inconvenient, if not impossible, to open the file.</p>
+  </li>
+  <li>
+    <p>Other spreadsheet software may not be able to open files
+saved in a proprietary Excel format.</p>
+  </li>
+  <li>
+    <p>Different versions of Excel may handle data
+differently, leading to inconsistencies.</p>
+  </li>
+  <li>
+    <p>The above points also apply to other formats such as open data formats used by LibreOffice / Open Office. These formats are not static and do not get parsed the same way by different software packages.</p>
+  </li>
+</ul>
+
+<p>As an example of inconsistencies in data storage, do you remember how we talked about how Excel stores dates earlier? It turns out that 
+there are multiple defaults for different versions of the software, and you can switch between them all. So, say you’re
+compiling Excel-stored data from multiple sources. There are dates in each file - Excel interprets them as their own internally consistent
+serial numbers. When you combine the data, Excel will take the serial number from the place you’re importing it from, and interpret it
+using the rule set for the version of Excel you’re using. Essentially, you could be adding errors to your data, and it wouldn’t
+necessarily be flagged by any data cleaning methods if your ranges overlap.</p>
+
+<p>Storing data in a universal, open, and static format will help deal with this problem. Try tab-delimited (tab separated values
+or TSV) or comma-delimited (comma separated values or CSV). CSV files are plain text files where the columns are separated by commas,
+hence ‘comma separated values’ or CSV. The advantage of a CSV file over an Excel/SPSS/etc. file is that we can open and read a CSV file
+using just about any software, including plain text editors like TextEdit or NotePad. 
+Data in a CSV file can also be easily imported into other formats and
+environments, such as SQLite and R. We’re not tied to a certain version of a certain expensive program when we work with CSV files, so
+it’s a
+good format to work with for maximum portability and endurance. Most spreadsheet programs can save to delimited text formats like CSV
+easily, although they may give you a warning during the file export.</p>
+
+<p>To save a file you have opened in Excel in CSV format:</p>
+
+<ol>
+  <li>From the top menu select ‘File’ and ‘Save as’.</li>
+  <li>In the ‘Format’ field, from the list, select ‘Comma Separated Values’ (<code class="language-plaintext highlighter-rouge">*.csv</code>).</li>
+  <li>Double check the file name and the location where you want to save it and hit ‘Save’.</li>
+</ol>
+
+<p>An important note for backwards compatibility: you can open CSV files in Excel!</p>
+
+<p><img src="./index6_files/excel-to-csv.png" alt="Saving an Excel file to CSV"></p>
+
+<h2 id="a-note-on-cross-platform-operability">A Note on Cross-platform Operability<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/05-exporting-data/index.html#a-note-on-cross-platform-operability" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<p>By default, most coding and statistical environments expect UNIX-style line endings (ASCII <code class="language-plaintext highlighter-rouge">LF</code> character) as representing line breaks.  However, Windows uses an alternate line ending signifier (ASCII <code class="language-plaintext highlighter-rouge">CR LF</code> characters) by default for legacy compatibility with Teletype-based systems.</p>
+
+<p>As such, when exporting to CSV using Excel, your data in text format will look like this:</p>
+
+<blockquote>
+  <p>data1,data2<cr><lf>1,2<cr><lf>4,5<cr><lf></lf></cr></lf></cr></lf></cr></p>
+</blockquote>
+
+<p>When opening your CSV file in Excel again, it will parse it as follows:</p>
+
+<p><img width="307" alt="screen shot 2017-03-31 at 7 15 07 pm" src="./index6_files/db4a5786-1643-11e7-931a-ca2c72336878.png"></p>
+
+<p>However, if you open your CSV file on a different system that does not parse the <code class="language-plaintext highlighter-rouge">CR</code> character it will interpret your CSV file differently:</p>
+
+<p>Your data in text format then look like this:</p>
+
+<blockquote>
+  <p>data1<br>
+data2<cr><br>
+1<br>
+2<cr><br>
+…</cr></cr></p>
+</blockquote>
+
+<p>You will then see a weird character or possibly the string <code class="language-plaintext highlighter-rouge">CR</code> or <code class="language-plaintext highlighter-rouge">\r</code>:</p>
+
+<p><img width="308" alt="screen shot 2017-03-31 at 7 26 42 pm" src="./index6_files/a990327c-1645-11e7-90b5-35a44e90f8d9.png"></p>
+
+<p>thus causing terrible things to happen to your data.  For example, <code class="language-plaintext highlighter-rouge">2\r</code> is not a valid integer, and thus will throw an error (if you’re lucky) when you attempt to operate on it in R or Python.  Note that this happens on Excel for OSX as well as Windows, due to legacy Windows compatibility.</p>
+
+<p>There are a handful of solutions for enforcing uniform UNIX-style line endings on your exported CSV files:</p>
+
+<p>
+  <p>When exporting from Excel, save as a “Windows comma separated (.csv)” file</p>
+  
+</p>
+
+<h4 id="a-note-on-r-and-xlsx">A note on R and <code class="language-plaintext highlighter-rouge">.xlsx</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/05-exporting-data/index.html#a-note-on-r-and-xlsx" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+
+<p>There are R packages that can read <code class="language-plaintext highlighter-rouge">.xls</code> or <code class="language-plaintext highlighter-rouge">.xlsx</code> files (as well as
+Google spreadsheets). It is even possible to access different
+worksheets in the <code class="language-plaintext highlighter-rouge">.xlsx</code> documents.</p>
+
+<p><strong>But</strong></p>
+
+<ul>
+  <li>some of these only work on Windows</li>
+  <li>this equates to replacing a (simple but manual) export to <code class="language-plaintext highlighter-rouge">csv</code> with
+additional complexity/dependencies in the data analysis R code</li>
+  <li>data formatting best practice still apply</li>
+  <li>Is there really a good reason why <code class="language-plaintext highlighter-rouge">csv</code> (or similar) is not adequate?</li>
+</ul>
+
+<h4 id="caveats-on-commas">Caveats on commas<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/05-exporting-data/index.html#caveats-on-commas" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+
+<p>In some datasets, the data values themselves may include commas (,). This is particularly true in countries that 
+use commas as decimal separators. In that case, the software which you use (including Excel)
+will most likely incorrectly display the data in columns. This is because the commas which are a part of the data values will be
+interpreted as delimiters.</p>
+
+<p>If you are working with data that contains commas, you likely will need to use another delimiter when working in a spreadsheet. In this
+case, consider using tabs as your delimiter and working with TSV files. TSV files can be exported from spreadsheet
+programs in the same way as CSV files. For more of a discussion on data formats and potential issues with commas within datasets see <a href="http://www.datacarpentry.org/spreadsheet-ecology-lesson/discuss/">the discussion page</a>.</p>
+
+
+
+
+
+<blockquote class="keypoints">
+  <h2 id="key-points">Key Points<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/05-exporting-data/index.html#key-points" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+  <ul>
+    
+    <li><p>Data stored in common spreadsheet formats will often not be read correctly into data analysis software, introducing errors into your data.</p>
+</li>
+    
+    <li><p>Exporting data from spreadsheets to formats like CSV or TSV puts it in a format that can be used consistently by most programs.</p>
+</li>
+    
+  </ul>
+</blockquote>
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+  <div class="col-xs-1">
+    <h3 class="text-left" id="previous-episode-1">
+      
+      <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/04-quality-control/index.html"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span><span class="sr-only">previous episode</span></a>
+      
+    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/05-exporting-data/index.html#previous-episode-1" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+  </div>
+  <div class="col-xs-10">
+    
+  </div>
+  <div class="col-xs-1">
+    <h3 class="text-right" id="lesson-home-1">
+      
+      <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span><span class="sr-only">lesson home</span></a>
+      
+    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/05-exporting-data/index.html#lesson-home-1" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+  </div>
+</div>
+
+
+      
+      
+
+
+
+
+
+
+<footer>
+  <div class="row">
+    <div class="col-md-6 license" id="license-info" align="left">
+	
+	Licensed under <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/05-exporting-data/index.html">CC-BY 4.0</a> 2018–2022
+	by <a href="https://carpentries.org/">The Carpentries</a>
+        <br>
+        Licensed under <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/05-exporting-data/index.html">CC-BY 4.0</a> 2016–2018
+	by <a href="http://datacarpentry.org/">Data Carpentry</a>
+	
+    </div>
+    <div class="col-md-6 help-links" align="right">
+	
+	<a href="https://github.com/datacarpentry/spreadsheet-ecology-lesson/edit/gh-pages/_episodes/05-exporting-data.md" data-checker-ignore="">Edit on GitHub</a>
+	
+	/
+	<a href="https://github.com/datacarpentry/spreadsheet-ecology-lesson/blob/gh-pages/CONTRIBUTING.md" data-checker-ignore="">Contributing</a>
+	/
+	<a href="https://github.com/datacarpentry/spreadsheet-ecology-lesson/">Source</a>
+	/
+	<a href="https://github.com/datacarpentry/spreadsheet-ecology-lesson/blob/gh-pages/CITATION" data-checker-ignore="">Cite</a>
+	/
+	<a href="mailto:team@carpentries.org">Contact</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12" align="center">
+      Using <a href="https://github.com/carpentries/styles/">The Carpentries style</a>
+      version <a href="https://github.com/carpentries/styles/releases/tag/v9.5.3">9.5.3</a>.
+    </div>
+  </div>
+</footer>
+
+      
+    </div>
+    
+<script async="" src="./index6_files/matomo.js.download"></script><script src="./index6_files/jquery.min.js.download"></script>
+<script src="./index6_files/bootstrap.min.js.download"></script>
+<script src="./index6_files/lesson.js.download"></script>
+
+
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(["setDomains", ["*.lessons.carpentries.org","*.datacarpentry.github.io","*.datacarpentry.org","*.librarycarpentry.github.io","*.librarycarpentry.org","*.swcarpentry.github.io"]]);
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["disableCookies"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://carpentries.matomo.cloud/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src='//cdn.matomo.cloud/carpentries.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+<script src="./index6_files/anchor.min.js.download"></script>
+<script>
+    anchors.add();
+</script>
+
+  
+
+<div id="speechify-global-notifications"></div><div id="speechify-summarization-fullscreen-mode" style="position: fixed; inset: 0px; overflow: auto; background: white; z-index: 1999; display: none;"></div><div id="speechify-screenshot-mode" style="position: fixed; top: 0px; right: 0px; width: 100%; min-height: 100%; z-index: 9999; display: none;"></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
