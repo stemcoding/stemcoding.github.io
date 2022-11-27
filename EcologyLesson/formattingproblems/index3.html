@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<!-- saved from url=(0082)https://datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="last-modified" content="2022-10-20 23:23:54 +0000">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- meta "search-domain" used for google site search function google_search() -->
+    <meta name="search-domain" value="https://datacarpentry.org/spreadsheet-ecology-lesson">
+    <style class="anchorjs"></style><link rel="stylesheet" type="text/css" href="./index3_files/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./index3_files/bootstrap-theme.css">
+    <link rel="stylesheet" type="text/css" href="./index3_files/lesson.css">
+    <link rel="stylesheet" type="text/css" href="./index3_files/syntax.css">
+    
+    <link rel="license" href="https://datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/index.html#license-info">
+
+    
+
+
+
+    <!-- Favicons for everyone -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/favicon-196x196.png" sizes="196x196">
+    <link rel="icon" type="image/png" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/favicon-128.png" sizes="128x128">
+    <meta name="application-name" content="Data Carpentry - Data Organization in Spreadsheets for Ecologists">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="/spreadsheet-ecology-lesson/assets/favicons/dc/mstile-144x144.png">
+    <meta name="msapplication-square70x70logo" content="/spreadsheet-ecology-lesson/assets/favicons/dc/mstile-70x70.png">
+    <meta name="msapplication-square150x150logo" content="/spreadsheet-ecology-lesson/assets/favicons/dc/mstile-150x150.png">
+    <meta name="msapplication-wide310x150logo" content="/spreadsheet-ecology-lesson/assets/favicons/dc/mstile-310x150.png">
+    <meta name="msapplication-square310x310logo" content="/spreadsheet-ecology-lesson/assets/favicons/dc/mstile-310x310.png">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+  <title>
+  Formatting problems – Data Organization in Spreadsheets for Ecologists
+  </title>  
+
+  </head>
+  <body data-new-gr-c-s-check-loaded="14.1085.0" data-gr-ext-installed="">
+
+    
+
+
+
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      
+      
+      <a href="http://datacarpentry.org/" class="pull-left">
+        <img class="navbar-logo" src="./index3_files/dc-icon-black.svg" alt="Data Carpentry logo">
+      </a>
+      
+
+      
+      <a class="navbar-brand" href="https://datacarpentry.org/spreadsheet-ecology-lesson/">Home</a>
+
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+
+	
+        <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/CODE_OF_CONDUCT.html">Code of Conduct</a></li>
+
+        
+	
+        <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/setup.html">Setup</a></li>
+
+        
+        
+        <li class="dropdown">
+          <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Episodes <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            
+            
+            <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/00-intro/index.html">Introduction</a></li>
+            
+            
+            <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/01-format-data/index.html">Formatting data tables in Spreadsheets</a></li>
+            
+            
+            <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/index.html">Formatting problems</a></li>
+            
+            
+            <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/03-dates-as-data/index.html">Dates as data</a></li>
+            
+            
+            <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/04-quality-control/index.html">Quality control</a></li>
+            
+            
+            <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/05-exporting-data/index.html">Exporting data</a></li>
+            
+	    <li role="separator" class="divider"></li>
+            <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/aio/index.html">All in one page (Beta)</a></li>
+          </ul>
+        </li>
+        
+	
+
+	
+	
+        <li class="dropdown">
+          <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Extras <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/reference.html">Reference</a></li>
+            
+            
+            
+              <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/about/index.html">About</a></li>
+            
+            
+            
+            
+              <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/datamanagement/index.html">Data Management Tips</a></li>
+            
+            
+            
+            
+              <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/discuss/index.html">Discussion</a></li>
+            
+            
+            
+            
+              <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/figures/index.html">Figures</a></li>
+            
+            
+            
+            
+              <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/guide/index.html">Instructor Notes</a></li>
+            
+            
+          </ul>
+        </li>
+	
+
+	
+        <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/LICENSE.html">License</a></li>
+	
+	<li><a href="https://github.com/datacarpentry/spreadsheet-ecology-lesson/edit/gh-pages/_episodes/02-common-mistakes.md" data-checker-ignore="">Improve this page <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a></li>
+	
+      </ul>
+      <form class="navbar-form navbar-right" role="search" id="search" onsubmit="google_search(); return false;">
+        <div class="form-group">
+          <input type="text" id="google-search" placeholder="Search..." aria-label="Google site search">
+        </div>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+  <div class="col-xs-1">
+    <h3 class="text-left" id="previous-episode">
+      
+      <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/01-format-data/index.html"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span><span class="sr-only">previous episode</span></a>
+      
+    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/index.html#previous-episode" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+  </div>
+  <div class="col-xs-10">
+    
+    <h3 class="maintitle" id="data-organization-in-spreadsheets-for-ecologists"><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/">Data Organization in Spreadsheets for Ecologists</a><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/index.html#data-organization-in-spreadsheets-for-ecologists" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+    
+  </div>
+  <div class="col-xs-1">
+    <h3 class="text-right" id="next-episode">
+      
+      <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/03-dates-as-data/index.html"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span><span class="sr-only">next episode</span></a>
+      
+    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/index.html#next-episode" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+  </div>
+</div>
+
+<article>
+<div class="row">
+  <div class="col-md-1">
+  </div>
+  <div class="col-md-10">
+    <h1 class="maintitle">Formatting problems</h1>
+  </div>
+  <div class="col-md-1">
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<blockquote class="objectives">
+  <h2 id="overview">Overview<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/index.html#overview" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+  <div class="row">
+    <div class="col-md-3">
+      <strong>Teaching:</strong> 20 min
+      <br>
+      <strong>Exercises:</strong> 0 min
+    </div>
+    <div class="col-md-9">
+      <strong>Questions</strong>
+      <ul>
+	
+	<li><p>What are some common challenges with formatting data in spreadsheets and how can we avoid them?</p>
+</li>
+	
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3">
+    </div>
+    <div class="col-md-9">
+      <strong>Objectives</strong>
+      <ul>
+	
+	<li><p>Recognize and resolve common spreadsheet formatting problems.</p>
+</li>
+	
+      </ul>
+    </div>
+  </div>
+
+</blockquote>
+
+<h2 id="common-spreadsheet-errors">Common Spreadsheet Errors<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/index.html#common-spreadsheet-errors" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<p>This episode is meant to be used as a reference for discussion as learners identify issues with the messy dataset discussed in the
+previous episode.</p>
+
+<p>There are a few potential errors to be on the lookout for in your own data as well as data from collaborators or the Internet. If you are aware of the errors and the possible negative effect on downstream data analysis and result interpretation, it might motivate yourself and your project members to try and avoid them. Making small changes to the way you format your data in spreadsheets can have a great impact on efficiency and reliability when it comes to data cleaning and analysis.</p>
+
+<ul>
+  <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/index.html#tables">Using multiple tables</a></li>
+  <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/index.html#tabs">Using multiple tabs</a></li>
+  <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/index.html#zeros">Not filling in zeros</a></li>
+  <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/index.html#null">Using problematic null values</a></li>
+  <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/index.html#formatting">Using formatting to convey information</a></li>
+  <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/index.html#formatting_pretty">Using formatting to make the data sheet look pretty</a></li>
+  <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/index.html#units">Placing comments or units in cells</a></li>
+  <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/index.html#info">Entering more than one piece of information in a cell</a></li>
+  <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/index.html#field_name">Using problematic field names</a></li>
+  <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/index.html#special">Using special characters in data</a></li>
+  <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/index.html#metadata">Inclusion of metadata in data table</a></li>
+  <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/03-dates-as-data/">Date formatting</a></li>
+</ul>
+
+<h2 id="-using-multiple-tables"><a name="tables"></a> Using multiple tables<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/index.html#-using-multiple-tables" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<p>A common strategy is creating multiple data tables within
+one spreadsheet. This confuses the computer, so don’t do this!
+When you create multiple tables within one
+spreadsheet, you’re drawing false associations between things for the computer,
+which sees each row as an observation. You’re also potentially using the same
+field name in multiple places, which will make it harder to clean your data up
+into a usable form. The example below depicts the problem:</p>
+
+<p><img src="./index3_files/2_datasheet_example.jpg" alt="multiple tabs"></p>
+
+<p>In the example above, the computer will see (for example) row 4 and assume that all columns A-AF 
+refer to the same sample. This row actually represents four distinct samples 
+(sample 1 for each of four different collection dates - May 29th, June 12th, June 19th, and June 26th), 
+as well as some calculated summary statistics (an average (avr) and standard error of measurement (SEM)) for two of those samples. Other rows are similarly problematic.</p>
+
+<h2 id="-using-multiple-tabs"><a name="tabs"></a> Using multiple tabs<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/index.html#-using-multiple-tabs" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<p>But what about workbook tabs? That seems like an easy way to organize data, right? Well, yes and no. When you create extra tabs, you fail to allow the computer to see connections in the data that are there (you have to introduce spreadsheet application-specific functions or scripting to ensure this connection). Say, for instance, you make a separate tab for each day you take a measurement.</p>
+
+<p>This isn’t good practice for two reasons:
+1) you are more likely to accidentally add inconsistencies to your data if each time you take a measurement, you start recording data in a new tab, and
+2) even if you manage to prevent all inconsistencies from creeping in, you will add an extra step for yourself before you analyze the
+data because you will have to combine these data into a single datatable. You will have to explicitly tell the computer how to combine
+tabs - and if the tabs are inconsistently formatted, you might even have to do it manually.</p>
+
+<p>The next time you’re entering data, and you go to create another tab or table, ask yourself if you could avoid adding this tab by adding another column to your original spreadsheet. We used multiple tabs in our example of a messy data file, but now you’ve seen how you can reorganize your data to consolidate across tabs.</p>
+
+<p>Your data sheet might get very long over the course of the experiment. This makes it harder to enter data if you can’t see your headers
+at the top of the spreadsheet. But don’t repeat your header row. These can easily get mixed into the data, 
+leading to problems down the road.</p>
+
+<p>Instead you can freeze the column headers so that they remain visible even when you have a spreadsheet with many rows.</p>
+
+<p><a href="https://support.office.com/en-ca/article/Freeze-column-headings-for-easy-scrolling-57ccce0c-cf85-4725-9579-c5d13106ca6a">Documentation on how to freeze column headers in MS Excel</a></p>
+
+<h2 id="-not-filling-in-zeros"><a name="zeros"></a> Not filling in zeros<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/index.html#-not-filling-in-zeros" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<p>It might be that when you’re measuring something, it’s
+usually a zero, say the number of times a rabbit
+is observed in the survey. Why bother
+writing in the number zero in that column, when it’s mostly zeros?</p>
+
+<p>However, there’s a difference between a zero and a blank cell in a spreadsheet. To the computer, a zero is actually data. You measured
+or counted it. A blank cell means that it wasn’t measured and the computer will interpret it as an unknown value (otherwise known as a
+null value).</p>
+
+<p>The spreadsheets or statistical programs will likely mis-interpret blank cells that you intend to be zeros. By not entering the value of
+your observation, you are telling your computer to represent that data as unknown or missing (null). This can cause problems with 
+subsequent calculations or analyses. For example, the average of a set of numbers which includes a single null value is always null
+(because the computer can’t guess the value of the missing observations). Because of this, it’s very important to record zeros as zeros and truly missing data as nulls.</p>
+
+<h2 id="-using-problematic-null-values"><a name="null"></a> Using problematic null values<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/index.html#-using-problematic-null-values" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+<p><strong>Example</strong>: using -999 or other numerical values (or zero) to represent missing data.</p>
+
+<p><strong>Solutions</strong>:</p>
+
+<p>There are a few reasons why null values get represented differently within a dataset.
+Sometimes confusing null values are automatically recorded from the measuring device. If that’s the case, there’s not much you can do, but it can be addressed in data cleaning with a tool like <a href="http://www.datacarpentry.org/OpenRefine-ecology-lesson/">OpenRefine</a> before analysis. Other times different null values are used to convey different reasons why the data isn’t there. This is important information to capture, but is in effect using one column to capture two pieces of information. Like for <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/index.html#formatting">using formatting to convey information</a> it would be good here to create a new column like ‘data_missing’ and use that column to capture the different reasons.</p>
+
+<p>Whatever the reason, it’s a problem if unknown or missing data is recorded as -999, 999, or 0.
+Many statistical programs will not recognize
+that these are intended to represent missing (null) values. How these values are interpreted will depend on the software you use to
+analyze your data. It is essential to use a clearly defined and consistent null indicator.
+Blanks (most applications) and NA (for R) are good choices. White et al, 2013, explain good choices for indicating null values for different software applications in their article:
+<a href="https://peerj.com/preprints/7/">Nine simple ways to make it easier to (re)use your data.</a> </p>
+
+<p><img src="./index3_files/3_white_table_1.jpg" alt="White et al."></p>
+
+<h2 id="-using-formatting-to-convey-information"><a name="formatting"></a> Using formatting to convey information<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/index.html#-using-formatting-to-convey-information" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<p><strong>Example</strong>: highlighting cells, rows or columns that should be excluded from an analysis, leaving blank rows to indicate separations in data.</p>
+
+<p><img src="./index3_files/formatting.png" alt="formatting"></p>
+
+<p><strong>Solution</strong>: create a new field to encode which data should be excluded.</p>
+
+<p><img src="./index3_files/good_formatting.png" alt="good formatting"></p>
+
+<h2 id="-using-formatting-to-make-the-data-sheet-look-pretty"><a name="formatting_pretty"></a> Using formatting to make the data sheet look pretty<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/index.html#-using-formatting-to-make-the-data-sheet-look-pretty" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<p><strong>Example</strong>: merging cells.</p>
+
+<p><strong>Solution</strong>: If you’re not careful, formatting a worksheet to be more aesthetically pleasing can compromise your computer’s ability to
+see associations in the data. Merged cells will make your data unreadable by statistics software. Consider restructuring your data in
+such a way that you will not need to merge cells to organize your data.</p>
+
+<h2 id="-placing-comments-or-units-in-cells"><a name="units"></a> Placing comments or units in cells<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/index.html#-placing-comments-or-units-in-cells" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<p><strong>Example</strong>: Your data was collected, in part, by a summer student who you later found out was mis-identifying some of your species, some
+of the time. You want a way to note these data are suspect.</p>
+
+<p><strong>Solution</strong>: Most analysis software can’t see Excel or LibreOffice comments, and would be confused by comments placed within your data
+cells. As described above for formatting, create another field if you need to add notes to cells. Similarly, don’t include units in
+cells: ideally, all the measurements you place in one column should be in the same unit, but if for some reason they aren’t, create
+another field and specify the units the cell is in.</p>
+
+<h2 id="-entering-more-than-one-piece-of-information-in-a-cell"><a name="info"></a> Entering more than one piece of information in a cell<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/index.html#-entering-more-than-one-piece-of-information-in-a-cell" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<p><strong>Example</strong>: You find one male, and one female of the same species. You enter this as 1M, 1F.</p>
+
+<p><strong>Solution</strong>: Don’t include more than one piece of information in a cell. This will limit the ways in which you can analyze your data. 
+If you need both these measurements, design your data sheet to include this information. For example, include one column for number of
+individuals and a separate column for sex.</p>
+
+<h2 id="-using-problematic-field-names"><a name="field_name"></a> Using problematic field names<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/index.html#-using-problematic-field-names" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+<p>Choose descriptive field names, but be careful not to include spaces, numbers, or special characters of any kind. Spaces can be
+misinterpreted by parsers that use whitespace as delimiters and some programs don’t like field names that are text strings that start
+with numbers.</p>
+
+<p>Underscores (<code class="language-plaintext highlighter-rouge">_</code>) are a good alternative to spaces. Consider writing names in camel case (like this: ExampleFileName) to improve
+readability. Remember that abbreviations that make sense at the moment may not be so obvious in 6 months, but don’t overdo it with names
+that are excessively long. Including the units in the field names avoids confusion and enables others to readily interpret your fields.</p>
+
+<p><strong>Examples</strong></p>
+
+<br><br><br><table align="left" style="width =50%; border: 1px solid black;" class="table table-striped">
+<tbody><tr>
+	<td> <b>Good Name</b></td> 
+	<td> <b>Good Alternative </b> </td>
+	<td> <b>Avoid </b></td>
+</tr>
+<tr>
+	<td> Max_temp_C</td>
+	<td> MaxTemp </td>
+	<td> Maximum Temp (°C) </td>
+</tr>
+<tr>
+	<td> Precipitation_mm</td>
+	<td> Precipitation</td>
+	<td> precmm </td>
+</tr>	
+<tr>
+	<td> Mean_year_growth</td>
+	<td> MeanYearGrowth </td>
+	<td> Mean growth/year</td>	
+</tr>	
+<tr>
+	<td> sex </td>
+	<td> sex </td>	
+	<td> M/F </td>
+</tr>
+<tr>	
+	<td> weight </td>
+	<td> weight </td>	
+	<td> w.</td>	
+</tr>
+<tr>	
+	<td> cell_type </td>
+	<td> CellType </td>
+	<td> Cell Type </td>
+</tr>
+<tr>
+	<td> Observation_01 </td>
+	<td> first_observation</td>
+	<td> 1st Obs</td>
+</tr>
+</tbody></table>
+
+<h2 id="-using-special-characters-in-data"><a name="special"></a> Using special characters in data<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/index.html#-using-special-characters-in-data" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<p><strong>Example</strong>: You treat your spreadsheet program as a word processor when writing notes, for example copying data directly from Word or
+other applications.</p>
+
+<p><strong>Solution</strong>: This is a common strategy. For example, when writing longer text in a cell, people often include line breaks, em-dashes,
+etc in their spreadsheet.  Also, when copying data in from applications such as Word, formatting and fancy non-standard characters (such
+as left- and right-aligned quotation marks) are included.  When exporting this data into a coding/statistical environment or into a
+relational database, dangerous things may occur, such as lines being cut in half and encoding errors being thrown.</p>
+
+<p>General best practice is to avoid adding characters such as newlines, tabs, and vertical tabs.  In other words, treat a text cell as if
+it were a simple web form that can only contain text and spaces.</p>
+
+<h2 id="-inclusion-of-metadata-in-data-table"><a name="metadata"></a> Inclusion of metadata in data table<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/index.html#-inclusion-of-metadata-in-data-table" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<p><strong>Example</strong>: You add a legend at the top or bottom of your data table explaining column meaning, units, exceptions, etc.</p>
+
+<p><strong>Solution</strong>: Recording data about your data (“metadata”) is essential. You may be on intimate terms with your dataset while you are 
+collecting and analysing it, but the chances that you will still remember that the variable “sglmemgp” means single member of group, for
+example, or the exact algorithm you used to transform a variable or create a derived one, after a few months, a year, or more are slim.</p>
+
+<p>As well, there are many reasons other people may want to examine or use your data - to understand your findings, to verify your findings,
+to review your submitted publication, to replicate your results, to design a similar study, or even to archive your data for access and 
+re-use by others. While digital data by definition are machine-readable, understanding their meaning is a job for human beings. The 
+importance of documenting your data during the collection and analysis phase of your research cannot be overestimated, especially if your
+research is going to be part of the scholarly record.</p>
+
+<p>However, metadata should not be contained in the data file itself. Unlike a table in a paper or a supplemental file, metadata (in the 
+form of legends) should not be included in a data file since this information is not data, and including it can disrupt how computer 
+programs interpret your data file. Rather, metadata should be stored as a separate file in the same directory as your data file, 
+preferably in plain text format with a name that clearly associates it with your data file. Because metadata files are free text format,
+they also allow you to encode comments, units, information about how null values are encoded, etc. that are important to document but can
+disrupt the formatting of your data file.</p>
+
+<p>Additionally, file or database level metadata describes how files that make up the dataset relate to each other; what format are they are 
+in; and whether they supercede or are superceded by previous files. A folder-level readme.txt file is the classic way of accounting for 
+all the files and folders in a project.</p>
+
+<p>(Text on metadata adapted from the online course Research Data <a href="http://datalib.edina.ac.uk/mantra">MANTRA</a> by EDINA and Data Library, University of Edinburgh. MANTRA is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.)</p>
+
+
+
+
+
+<blockquote class="keypoints">
+  <h2 id="key-points">Key Points<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/index.html#key-points" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+  <ul>
+    
+    <li><p>Avoid using multiple tables within one spreadsheet.</p>
+</li>
+    
+    <li><p>Avoid spreading data across multiple tabs.</p>
+</li>
+    
+    <li><p>Record zeros as zeros.</p>
+</li>
+    
+    <li><p>Use an appropriate null value to record missing data.</p>
+</li>
+    
+    <li><p>Don’t use formatting to convey information or to make your spreadsheet look pretty.</p>
+</li>
+    
+    <li><p>Place comments in a separate column.</p>
+</li>
+    
+    <li><p>Record units in column headers.</p>
+</li>
+    
+    <li><p>Include only one piece of information in a cell.</p>
+</li>
+    
+    <li><p>Avoid spaces, numbers and special characters in column headers.</p>
+</li>
+    
+    <li><p>Avoid special characters in your data.</p>
+</li>
+    
+    <li><p>Record metadata in a separate plain text file.</p>
+</li>
+    
+  </ul>
+</blockquote>
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+  <div class="col-xs-1">
+    <h3 class="text-left" id="previous-episode-1">
+      
+      <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/01-format-data/index.html"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span><span class="sr-only">previous episode</span></a>
+      
+    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/index.html#previous-episode-1" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+  </div>
+  <div class="col-xs-10">
+    
+  </div>
+  <div class="col-xs-1">
+    <h3 class="text-right" id="next-episode-1">
+      
+      <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/03-dates-as-data/index.html"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span><span class="sr-only">next episode</span></a>
+      
+    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/index.html#next-episode-1" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+  </div>
+</div>
+
+
+      
+      
+
+
+
+
+
+
+<footer>
+  <div class="row">
+    <div class="col-md-6 license" id="license-info" align="left">
+	
+	Licensed under <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/index.html">CC-BY 4.0</a> 2018–2022
+	by <a href="https://carpentries.org/">The Carpentries</a>
+        <br>
+        Licensed under <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/index.html">CC-BY 4.0</a> 2016–2018
+	by <a href="http://datacarpentry.org/">Data Carpentry</a>
+	
+    </div>
+    <div class="col-md-6 help-links" align="right">
+	
+	<a href="https://github.com/datacarpentry/spreadsheet-ecology-lesson/edit/gh-pages/_episodes/02-common-mistakes.md" data-checker-ignore="">Edit on GitHub</a>
+	
+	/
+	<a href="https://github.com/datacarpentry/spreadsheet-ecology-lesson/blob/gh-pages/CONTRIBUTING.md" data-checker-ignore="">Contributing</a>
+	/
+	<a href="https://github.com/datacarpentry/spreadsheet-ecology-lesson/">Source</a>
+	/
+	<a href="https://github.com/datacarpentry/spreadsheet-ecology-lesson/blob/gh-pages/CITATION" data-checker-ignore="">Cite</a>
+	/
+	<a href="mailto:team@carpentries.org">Contact</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12" align="center">
+      Using <a href="https://github.com/carpentries/styles/">The Carpentries style</a>
+      version <a href="https://github.com/carpentries/styles/releases/tag/v9.5.3">9.5.3</a>.
+    </div>
+  </div>
+</footer>
+
+      
+    </div>
+    
+<script async="" src="./index3_files/matomo.js.download"></script><script src="./index3_files/jquery.min.js.download"></script>
+<script src="./index3_files/bootstrap.min.js.download"></script>
+<script src="./index3_files/lesson.js.download"></script>
+
+
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(["setDomains", ["*.lessons.carpentries.org","*.datacarpentry.github.io","*.datacarpentry.org","*.librarycarpentry.github.io","*.librarycarpentry.org","*.swcarpentry.github.io"]]);
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["disableCookies"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://carpentries.matomo.cloud/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src='//cdn.matomo.cloud/carpentries.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+<script src="./index3_files/anchor.min.js.download"></script>
+<script>
+    anchors.add();
+</script>
+
+  
+
+<div id="speechify-global-notifications"></div><div id="speechify-summarization-fullscreen-mode" style="position: fixed; inset: 0px; overflow: auto; background: white; z-index: 1999; display: none;"></div><div id="speechify-screenshot-mode" style="position: fixed; top: 0px; right: 0px; width: 100%; min-height: 100%; z-index: 9999; display: none;"></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
