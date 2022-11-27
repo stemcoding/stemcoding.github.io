@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<!-- saved from url=(0082)https://datacarpentry.org/spreadsheet-ecology-lesson/04-quality-control/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="last-modified" content="2022-10-20 23:23:54 +0000">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- meta "search-domain" used for google site search function google_search() -->
+    <meta name="search-domain" value="https://datacarpentry.org/spreadsheet-ecology-lesson">
+    <style class="anchorjs"></style><link rel="stylesheet" type="text/css" href="./index5_files/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./index5_files/bootstrap-theme.css">
+    <link rel="stylesheet" type="text/css" href="./index5_files/lesson.css">
+    <link rel="stylesheet" type="text/css" href="./index5_files/syntax.css">
+    
+    <link rel="license" href="https://datacarpentry.org/spreadsheet-ecology-lesson/04-quality-control/index.html#license-info">
+
+    
+
+
+
+    <!-- Favicons for everyone -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/favicon-196x196.png" sizes="196x196">
+    <link rel="icon" type="image/png" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/favicon-128.png" sizes="128x128">
+    <meta name="application-name" content="Data Carpentry - Data Organization in Spreadsheets for Ecologists">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="/spreadsheet-ecology-lesson/assets/favicons/dc/mstile-144x144.png">
+    <meta name="msapplication-square70x70logo" content="/spreadsheet-ecology-lesson/assets/favicons/dc/mstile-70x70.png">
+    <meta name="msapplication-square150x150logo" content="/spreadsheet-ecology-lesson/assets/favicons/dc/mstile-150x150.png">
+    <meta name="msapplication-wide310x150logo" content="/spreadsheet-ecology-lesson/assets/favicons/dc/mstile-310x150.png">
+    <meta name="msapplication-square310x310logo" content="/spreadsheet-ecology-lesson/assets/favicons/dc/mstile-310x310.png">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+  <title>
+  Quality control – Data Organization in Spreadsheets for Ecologists
+  </title>  
+
+  </head>
+  <body data-new-gr-c-s-check-loaded="14.1085.0" data-gr-ext-installed="">
+
+    
+
+
+
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      
+      
+      <a href="http://datacarpentry.org/" class="pull-left">
+        <img class="navbar-logo" src="./index5_files/dc-icon-black.svg" alt="Data Carpentry logo">
+      </a>
+      
+
+      
+      <a class="navbar-brand" href="https://datacarpentry.org/spreadsheet-ecology-lesson/">Home</a>
+
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+
+	
+        <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/CODE_OF_CONDUCT.html">Code of Conduct</a></li>
+
+        
+	
+        <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/setup.html">Setup</a></li>
+
+        
+        
+        <li class="dropdown">
+          <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Episodes <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            
+            
+            <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/00-intro/index.html">Introduction</a></li>
+            
+            
+            <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/01-format-data/index.html">Formatting data tables in Spreadsheets</a></li>
+            
+            
+            <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/index.html">Formatting problems</a></li>
+            
+            
+            <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/03-dates-as-data/index.html">Dates as data</a></li>
+            
+            
+            <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/04-quality-control/index.html">Quality control</a></li>
+            
+            
+            <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/05-exporting-data/index.html">Exporting data</a></li>
+            
+	    <li role="separator" class="divider"></li>
+            <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/aio/index.html">All in one page (Beta)</a></li>
+          </ul>
+        </li>
+        
+	
+
+	
+	
+        <li class="dropdown">
+          <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Extras <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/reference.html">Reference</a></li>
+            
+            
+            
+              <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/about/index.html">About</a></li>
+            
+            
+            
+            
+              <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/datamanagement/index.html">Data Management Tips</a></li>
+            
+            
+            
+            
+              <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/discuss/index.html">Discussion</a></li>
+            
+            
+            
+            
+              <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/figures/index.html">Figures</a></li>
+            
+            
+            
+            
+              <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/guide/index.html">Instructor Notes</a></li>
+            
+            
+          </ul>
+        </li>
+	
+
+	
+        <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/LICENSE.html">License</a></li>
+	
+	<li><a href="https://github.com/datacarpentry/spreadsheet-ecology-lesson/edit/gh-pages/_episodes/04-quality-control.md" data-checker-ignore="">Improve this page <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a></li>
+	
+      </ul>
+      <form class="navbar-form navbar-right" role="search" id="search" onsubmit="google_search(); return false;">
+        <div class="form-group">
+          <input type="text" id="google-search" placeholder="Search..." aria-label="Google site search">
+        </div>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+  <div class="col-xs-1">
+    <h3 class="text-left" id="previous-episode">
+      
+      <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/03-dates-as-data/index.html"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span><span class="sr-only">previous episode</span></a>
+      
+    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/04-quality-control/index.html#previous-episode" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+  </div>
+  <div class="col-xs-10">
+    
+    <h3 class="maintitle" id="data-organization-in-spreadsheets-for-ecologists"><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/">Data Organization in Spreadsheets for Ecologists</a><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/04-quality-control/index.html#data-organization-in-spreadsheets-for-ecologists" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+    
+  </div>
+  <div class="col-xs-1">
+    <h3 class="text-right" id="next-episode">
+      
+      <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/05-exporting-data/index.html"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span><span class="sr-only">next episode</span></a>
+      
+    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/04-quality-control/index.html#next-episode" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+  </div>
+</div>
+
+<article>
+<div class="row">
+  <div class="col-md-1">
+  </div>
+  <div class="col-md-10">
+    <h1 class="maintitle">Quality control</h1>
+  </div>
+  <div class="col-md-1">
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<blockquote class="objectives">
+  <h2 id="overview">Overview<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/04-quality-control/index.html#overview" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+  <div class="row">
+    <div class="col-md-3">
+      <strong>Teaching:</strong> 20 min
+      <br>
+      <strong>Exercises:</strong> 0 min
+    </div>
+    <div class="col-md-9">
+      <strong>Questions</strong>
+      <ul>
+	
+	<li><p>How can we carry out basic quality control and quality assurance in spreadsheets?</p>
+</li>
+	
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3">
+    </div>
+    <div class="col-md-9">
+      <strong>Objectives</strong>
+      <ul>
+	
+	<li><p>Apply quality control techniques to identify errors in spreadsheets and limit incorrect data entry.</p>
+</li>
+	
+      </ul>
+    </div>
+  </div>
+
+</blockquote>
+
+<p>When you have a well-structured data table, you can use several simple
+techniques within your spreadsheet to ensure the data you enter is
+free of errors. These approaches include techniques that are
+implemented prior to entering data (quality assurance) and
+techniques that are used after entering data to check for errors
+(quality control).</p>
+
+<h1 id="quality-assurance">Quality Assurance</h1>
+
+<p>Quality assurance stops bad data from ever being entered by checking to see if
+values are valid during data entry. For example, if research is being conducted
+at sites A, B, and C, then the value V (which is right next to B on the
+keyboard) should never be entered. Likewise if one of the kinds of data being
+collected is a count, only integers greater than or equal to zero should be
+allowed.</p>
+
+<p>To control the kind of data entered into a spreadsheet we use Data Validation
+(Excel) or Validity (Libre Office Calc), to set the values that can be entered
+in each data column.</p>
+
+<p>1. Select the cells or column you want to validate</p>
+
+<p>2. On the <code class="language-plaintext highlighter-rouge">Data</code> tab select <code class="language-plaintext highlighter-rouge">Data Validation</code></p>
+
+<p><img src="./index5_files/data_validation.png" alt="Image of Data Validation button on Data tab"></p>
+
+<p>3. In the <code class="language-plaintext highlighter-rouge">Allow</code> box select the kind of data that should be in the
+   column. Options include whole numbers, decimals, lists of items, dates, and
+   other values.</p>
+
+<p><img src="./index5_files/data_validation_window.png" alt="Image of Data Validation window"></p>
+
+<p>4. After selecting an item enter any additional details. For example, if you’ve
+   chosen a list of values, enter a comma-delimited or semi-colon list of allowable
+   values in the <code class="language-plaintext highlighter-rouge">Source</code> box.</p>
+
+<p>Let’s try this out by setting the plot column in our spreadsheet to only allow
+plot values that are integers between 1 and 24.</p>
+
+<ol>
+  <li>Select the <code class="language-plaintext highlighter-rouge">plot_id</code> column</li>
+  <li>On the <code class="language-plaintext highlighter-rouge">Data</code> tab select <code class="language-plaintext highlighter-rouge">Data Validation</code></li>
+  <li>In the <code class="language-plaintext highlighter-rouge">Allow</code> box select <code class="language-plaintext highlighter-rouge">Whole number</code></li>
+  <li>Set the minimum and maximum values to 1 and 24.</li>
+</ol>
+
+<p><img src="./index5_files/plot_validation.png" alt="Image of Data Validation window for validating plot values"></p>
+
+<p>Now let’s try entering a new value in the plot column that isn’t a valid
+plot. The spreadsheet stops us from entering the wrong value and asks us if we
+would like to try again.</p>
+
+<p><img src="./index5_files/invalid_value.png" alt="Image of error when trying to enter invalid data"></p>
+
+<p>You can also customize the resulting message to be more informative by entering
+your own message in the <code class="language-plaintext highlighter-rouge">Input Message</code> tab</p>
+
+<p><img src="./index5_files/input_message.png" alt="Image of Input Message tab"></p>
+
+<p>or allow invalid data to result in a warning rather than an error by modifying the <code class="language-plaintext highlighter-rouge">Style</code>
+option on the <code class="language-plaintext highlighter-rouge">Error Alert</code> tab.</p>
+
+<p><img src="./index5_files/error_alert.png" alt="Image of Error Alert tab"></p>
+
+<p>Quality assurance can make data entry easier as well as more robust. For
+example, if you use a list of options to restrict data entry, the spreadsheet
+will provide you with a drop-downlist of the available items. So, instead of
+trying to remember how to spell <em>Dipodomys spectabilis</em>, you can select the
+right option from the list.</p>
+
+<p><img src="./index5_files/drop_down_list2.png" alt="Image of drop-down menu"></p>
+
+<h1 id="quality-control">Quality Control</h1>
+
+<p>Tip: <em>Before doing any quality control operations, save your original file with the formulas and a name indicating it is the original
+data. Create a separate file with appropriate naming and versioning, and ensure your data is stored as values and not as formulas. 
+Because formulas refer to other cells, and you may be moving cells around, you may compromise the integrity of your data if you do not
+take this step!</em></p>
+
+<p>readMe (README) files: As you start manipulating your data files, create a readMe document / text file to keep track of your files and
+document your manipulations so that they may be easily understood and replicated, either by your future self or by an independent
+researcher. Your readMe file should document all of the files in your data set (including documentation), describe their content and
+format, and lay out the organizing principles of folders and subfolders. For each of the separate files listed, it is a good idea to
+document the manipulations or analyses that were carried out on those data. 
+<a href="https://data.research.cornell.edu/content/readme">Cornell University’s Research Data Management Service Group</a> provides detailed
+guidelines for how to write a good readMe file, along with an adaptable template.</p>
+
+<h2 id="sorting">Sorting<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/04-quality-control/index.html#sorting" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+<p>Bad values often sort to the bottom or top of the column. For example, if your data should be numeric, then alphabetical and null data
+will group at the ends of the sorted data. Sort your data by each field, one at a time. Scan through each column, but pay the most
+attention to the top and the bottom of a column. 
+If your dataset is well-structured and does not contain formulas, sorting should never affect the integrity of your dataset.</p>
+
+<p><strong>Remember</strong> to expand your sort in order to prevent data corruption. Expanding your sort ensures that the all the data in one row move together instead of only sorting a single column in isolation. Sorting by only a single column will scramble your data - a single row will no longer represent an individual observation.</p>
+
+<blockquote class="challenge">
+  <h2 id="exercise">Exercise<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/04-quality-control/index.html#exercise" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+  <p>We’ve combined all of the tables from the messy data into a single table in a single tab. Download this semi-cleaned data file to your computer: <a href="https://github.com/datacarpentry/spreadsheet-ecology-lesson/blob/gh-pages/data/survey_sorting_exercise.xlsx?raw=true">survey_sorting_exercise</a></p>
+
+  <p>Once downloaded, sort the <code class="language-plaintext highlighter-rouge">Weight_grams</code> column in your spreadsheet program from <code class="language-plaintext highlighter-rouge">Largest to Smallest</code>.</p>
+
+  <p>What do you notice?</p>
+
+  
+</blockquote>
+
+<h2 id="conditional-formatting">Conditional formatting<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/04-quality-control/index.html#conditional-formatting" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+<p>Conditional formatting basically can do something like color code your values by some
+criteria or lowest to highest. This makes it easy to scan your data for outliers.</p>
+
+<p>Conditional formatting should be used with caution, but it can be a great way to flag inconsistent values when entering data.</p>
+
+<blockquote class="challenge">
+  <h2 id="exercise-1">Exercise<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/04-quality-control/index.html#exercise-1" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+  <ol>
+    <li>Make sure the Weight_grams column is highlighted.</li>
+    <li>In the main Excel menu bar, click <code class="language-plaintext highlighter-rouge">Home</code> &gt; <code class="language-plaintext highlighter-rouge">Conditional Formatting...</code> choose a formatting rule.</li>
+    <li>Apply any <code class="language-plaintext highlighter-rouge">2-Color Scale</code> formatting rule.</li>
+    <li>Now we can scan through and different colors will stand out. Do you notice any strange values?</li>
+  </ol>
+
+  
+</blockquote>
+
+<p>It is nice to be able to do these scans in spreadsheets, but we also can do these
+checks in a programming language like R, or in OpenRefine or SQL.</p>
+
+
+
+
+
+<blockquote class="keypoints">
+  <h2 id="key-points">Key Points<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/04-quality-control/index.html#key-points" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+  <ul>
+    
+    <li><p>Always copy your original spreadsheet file and work with a copy so you don’t affect the raw data.</p>
+</li>
+    
+    <li><p>Use data validation to prevent accidentally entering invalid data.</p>
+</li>
+    
+    <li><p>Use sorting to check for invalid data.</p>
+</li>
+    
+    <li><p>Use conditional formatting (cautiously) to check for invalid data.</p>
+</li>
+    
+  </ul>
+</blockquote>
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+  <div class="col-xs-1">
+    <h3 class="text-left" id="previous-episode-1">
+      
+      <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/03-dates-as-data/index.html"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span><span class="sr-only">previous episode</span></a>
+      
+    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/04-quality-control/index.html#previous-episode-1" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+  </div>
+  <div class="col-xs-10">
+    
+  </div>
+  <div class="col-xs-1">
+    <h3 class="text-right" id="next-episode-1">
+      
+      <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/05-exporting-data/index.html"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span><span class="sr-only">next episode</span></a>
+      
+    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/04-quality-control/index.html#next-episode-1" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+  </div>
+</div>
+
+
+      
+      
+
+
+
+
+
+
+<footer>
+  <div class="row">
+    <div class="col-md-6 license" id="license-info" align="left">
+	
+	Licensed under <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/04-quality-control/index.html">CC-BY 4.0</a> 2018–2022
+	by <a href="https://carpentries.org/">The Carpentries</a>
+        <br>
+        Licensed under <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/04-quality-control/index.html">CC-BY 4.0</a> 2016–2018
+	by <a href="http://datacarpentry.org/">Data Carpentry</a>
+	
+    </div>
+    <div class="col-md-6 help-links" align="right">
+	
+	<a href="https://github.com/datacarpentry/spreadsheet-ecology-lesson/edit/gh-pages/_episodes/04-quality-control.md" data-checker-ignore="">Edit on GitHub</a>
+	
+	/
+	<a href="https://github.com/datacarpentry/spreadsheet-ecology-lesson/blob/gh-pages/CONTRIBUTING.md" data-checker-ignore="">Contributing</a>
+	/
+	<a href="https://github.com/datacarpentry/spreadsheet-ecology-lesson/">Source</a>
+	/
+	<a href="https://github.com/datacarpentry/spreadsheet-ecology-lesson/blob/gh-pages/CITATION" data-checker-ignore="">Cite</a>
+	/
+	<a href="mailto:team@carpentries.org">Contact</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12" align="center">
+      Using <a href="https://github.com/carpentries/styles/">The Carpentries style</a>
+      version <a href="https://github.com/carpentries/styles/releases/tag/v9.5.3">9.5.3</a>.
+    </div>
+  </div>
+</footer>
+
+      
+    </div>
+    
+<script async="" src="./index5_files/matomo.js.download"></script><script src="./index5_files/jquery.min.js.download"></script>
+<script src="./index5_files/bootstrap.min.js.download"></script>
+<script src="./index5_files/lesson.js.download"></script>
+
+
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(["setDomains", ["*.lessons.carpentries.org","*.datacarpentry.github.io","*.datacarpentry.org","*.librarycarpentry.github.io","*.librarycarpentry.org","*.swcarpentry.github.io"]]);
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["disableCookies"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://carpentries.matomo.cloud/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src='//cdn.matomo.cloud/carpentries.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+<script src="./index5_files/anchor.min.js.download"></script>
+<script>
+    anchors.add();
+</script>
+
+  
+
+<div id="speechify-global-notifications"></div><div id="speechify-summarization-fullscreen-mode" style="position: fixed; inset: 0px; overflow: auto; background: white; z-index: 1999; display: none;"></div><div id="speechify-screenshot-mode" style="position: fixed; top: 0px; right: 0px; width: 100%; min-height: 100%; z-index: 9999; display: none;"></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
