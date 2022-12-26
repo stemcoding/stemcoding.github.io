@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)https://datacarpentry.org/spreadsheet-ecology-lesson/guide/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="last-modified" content="2022-12-05 17:18:46 +0000">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- meta "search-domain" used for google site search function google_search() -->
+    <meta name="search-domain" value="https://datacarpentry.org/spreadsheet-ecology-lesson">
+    <style class="anchorjs"></style><link rel="stylesheet" type="text/css" href="./instructor_notes_files/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./instructor_notes_files/bootstrap-theme.css">
+    <link rel="stylesheet" type="text/css" href="./instructor_notes_files/lesson.css">
+    <link rel="stylesheet" type="text/css" href="./instructor_notes_files/syntax.css">
+    
+    <link rel="license" href="https://datacarpentry.org/spreadsheet-ecology-lesson/guide/#license-info">
+
+    
+
+
+
+    <!-- Favicons for everyone -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/favicon-196x196.png" sizes="196x196">
+    <link rel="icon" type="image/png" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="https://datacarpentry.org/spreadsheet-ecology-lesson/assets/favicons/dc/favicon-128.png" sizes="128x128">
+    <meta name="application-name" content="Data Carpentry - Data Organization in Spreadsheets for Ecologists">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="/spreadsheet-ecology-lesson/assets/favicons/dc/mstile-144x144.png">
+    <meta name="msapplication-square70x70logo" content="/spreadsheet-ecology-lesson/assets/favicons/dc/mstile-70x70.png">
+    <meta name="msapplication-square150x150logo" content="/spreadsheet-ecology-lesson/assets/favicons/dc/mstile-150x150.png">
+    <meta name="msapplication-wide310x150logo" content="/spreadsheet-ecology-lesson/assets/favicons/dc/mstile-310x150.png">
+    <meta name="msapplication-square310x310logo" content="/spreadsheet-ecology-lesson/assets/favicons/dc/mstile-310x310.png">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+  <title>
+  Instructor Notes – Data Organization in Spreadsheets for Ecologists
+  </title>  
+
+  </head>
+  <body data-new-gr-c-s-check-loaded="14.1091.0" data-gr-ext-installed="">
+
+    
+
+
+
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      
+      
+      <a href="http://datacarpentry.org/" class="pull-left">
+        <img class="navbar-logo" src="./instructor_notes_files/dc-icon-black.svg" alt="Data Carpentry logo">
+      </a>
+      
+
+      
+      <a class="navbar-brand" href="https://datacarpentry.org/spreadsheet-ecology-lesson/">Home</a>
+
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+
+	
+        <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/CODE_OF_CONDUCT.html">Code of Conduct</a></li>
+
+        
+	
+        <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/setup.html">Setup</a></li>
+
+        
+        
+        <li class="dropdown">
+          <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Episodes <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            
+            
+            <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/00-intro/index.html">Introduction</a></li>
+            
+            
+            <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/01-format-data/index.html">Formatting data tables in Spreadsheets</a></li>
+            
+            
+            <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/index.html">Formatting problems</a></li>
+            
+            
+            <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/03-dates-as-data/index.html">Dates as data</a></li>
+            
+            
+            <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/04-quality-control/index.html">Quality control</a></li>
+            
+            
+            <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/05-exporting-data/index.html">Exporting data</a></li>
+            
+	    <li role="separator" class="divider"></li>
+            <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/aio/index.html">All in one page (Beta)</a></li>
+          </ul>
+        </li>
+        
+	
+
+	
+	
+        <li class="dropdown">
+          <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Extras <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/reference.html">Reference</a></li>
+            
+            
+            
+              <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/about/index.html">About</a></li>
+            
+            
+            
+            
+              <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/datamanagement/index.html">Data Management Tips</a></li>
+            
+            
+            
+            
+              <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/discuss/index.html">Discussion</a></li>
+            
+            
+            
+            
+              <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/figures/index.html">Figures</a></li>
+            
+            
+            
+            
+              <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/guide/index.html">Instructor Notes</a></li>
+            
+            
+          </ul>
+        </li>
+	
+
+	
+        <li><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/LICENSE.html">License</a></li>
+	
+	<li><a href="https://github.com/datacarpentry/spreadsheet-ecology-lesson/edit/gh-pages/_extras/guide.md" data-checker-ignore="">Improve this page <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a></li>
+	
+      </ul>
+      <form class="navbar-form navbar-right" role="search" id="search" onsubmit="google_search(); return false;">
+        <div class="form-group">
+          <input type="text" id="google-search" placeholder="Search..." aria-label="Google site search">
+        </div>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+<h1 class="maintitle"><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/">Data Organization in Spreadsheets for Ecologists</a>: Instructor Notes</h1>
+
+
+
+<article>
+<h2 id="instructor-notes">Instructor notes<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/guide/#instructor-notes" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<h2 id="lesson-motivation-and-learning-objectives">Lesson motivation and learning objectives<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/guide/#lesson-motivation-and-learning-objectives" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<p>The purpose of this lesson is <em>not</em> to teach how to do data analysis in spreadsheets,
+but to teach good data organization and how to do some data cleaning and 
+quality control in a spreadsheet program.</p>
+
+<h2 id="lesson-design">Lesson design<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/guide/#lesson-design" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<h4 id="introduction"><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/00-intro/">Introduction</a><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/guide/#introduction" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+
+<ul>
+  <li>Introduce that we’re teaching data organization, and that we’re using
+spreadsheets, because most people do data entry in spreadsheets or 
+have data in spreadsheets.</li>
+  <li>Emphasize that we are teaching good practice in data organization and that
+this is the foundation of their research practice. Without organized and clean
+data, it will be difficult for them to apply the things we’re teaching in the
+rest of the workshop to their data.</li>
+  <li>Much of their lives as a researcher will be spent on this ‘data wrangling’ stage, but
+some of it can be prevented with good strategies for data collection up front.</li>
+  <li>Tell that we’re not teaching data analysis or plotting in spreadsheets, because it’s
+very manual and also not reproducible. That’s why we’re teaching SQL, R, Python!</li>
+  <li>Now let’s talk about spreadsheets, and when we say spreadsheets, we mean any program that
+does spreadsheets like Excel, LibreOffice, OpenOffice. Most learners are probably using Excel.</li>
+  <li>Ask the audience any things they’ve accidentally done in spreadsheets. Talk about an example of your own, like that you accidentally sorted only a single column and not the rest
+of the data in the spreadsheet. What are the pain points!?</li>
+  <li>As people answer highlight some of these issues with spreadsheets</li>
+</ul>
+
+<h4 id="formatting-data"><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/01-format-data/">Formatting data</a><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/guide/#formatting-data" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+
+<ul>
+  <li>Go through the point about keeping track of your steps and keeping raw data raw</li>
+  <li>Go through the cardinal rule of spreadsheets about columns, rows and cells</li>
+  <li>Hand them a messy data file and have them pair up and work together to clean up the data.
+<em>Give them 15 minutes to do this.</em></li>
+  <li>Ask for what people did to clean the data. As they bring up different points you can
+refer to them in the 02-common-mistakes.md file, or expand a bit on the point they brought up.
+If you are just teaching the lesson, it would be good to familiarize yourself with 
+the set of mistakes in 02-common-mistakes. All these mistakes are present in the messy
+dataset.</li>
+  <li>If you get a response where they’ve fixed the date, you can pause and go to the
+03-dates-as-data.md lesson. Or you can say you’ll come back to dates at the end. 
+There’s an exercise in that file about how to change the
+date into three columns using Excel’s built in MONTH, DAY, YEAR functions. Have them
+run through that exercise.</li>
+</ul>
+
+<h4 id="common-formatting-problems"><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/">Common formatting problems</a><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/guide/#common-formatting-problems" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+
+<ul>
+  <li><strong>Don’t go through this chapter</strong> except to refer to as responses to the exercise in
+the previous chapter.</li>
+</ul>
+
+<h4 id="dates-as-data"><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/03-dates-as-data/">Dates as data</a><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/guide/#dates-as-data" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+
+<ul>
+  <li>Do the exercise and make the point about dates either in response to a learner bringing
+up date as an issue during the responses, or at the end of the response time.</li>
+</ul>
+
+<h4 id="quality-control"><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/04-quality-control/">Quality control</a><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/guide/#quality-control" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p><em>This lesson is optional</em></p>
+
+<p>The challenge with this lesson is that the instructor’s version of the spreadsheet software is going to look different than about half the room’s. It makes
+it challenging to show where you can find menu options and navigate through.</p>
+
+<p>Instead discuss the concepts of quality control, and how things like sorting can help you find outliers in your data.</p>
+
+<h4 id="exporting-data"><a href="https://datacarpentry.org/spreadsheet-ecology-lesson/05-exporting-data/">Exporting data</a><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/guide/#exporting-data" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+
+<ul>
+  <li>Have the students export their cleaned data as CSV. Reiterate again the need for
+data in this format for the other tools we’ll be using.</li>
+</ul>
+
+<h4 id="concluding-points">Concluding points<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/guide/#concluding-points" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+
+<ul>
+  <li>Now your data is organized so that a computer can read and understand it. This
+let’s you use the full power of the computer for your analyses as we’ll see in the
+rest of the workshop.</li>
+  <li>While your data is now neatly organized, it still might have errors or missing data
+or other problems. It’s like you put all your data in the right drawers, but the
+drawers might still be messy. The next lesson is going to teach you OpenRefine which 
+is great for data cleaning and for some of the quality control that we touched on 
+in this lesson. It also has the advantage that it automatically keeps track of the
+steps you take.</li>
+</ul>
+
+<h2 id="technical-tips-and-tricks">Technical tips and tricks<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/guide/#technical-tips-and-tricks" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<p>Provide information on setting up your environment for learners to view your 
+live coding (increasing text size, changing text color, etc), as well as 
+general recommendations for working with coding tools to best suit the 
+learning environment.</p>
+
+<h2 id="common-problems">Common problems<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/guide/#common-problems" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<h4 id="excel-looks-and-acts-different-on-different-operating-systems">Excel looks and acts different on different operating systems<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/guide/#excel-looks-and-acts-different-on-different-operating-systems" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+
+<p>The main challenge with this lesson is that Excel looks very different and how you
+do things is even different between Mac and PC, and between different versions of
+Excel. So, the presenter’s environment will only be the same as some of the learners.</p>
+
+<p>We need better notes and screenshots of how things work on both Mac and PC. But we
+likely won’t be able to cover all the different versions of Excel.</p>
+
+<p>If you have a helper who has experience with the other OS than you, it would be good
+to prep them to help with this lesson and tell how people to do things in the other OS.</p>
+
+<h4 id="people-are-not-interactive-or-responsive-on-the-exercise">People are not interactive or responsive on the Exercise<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://datacarpentry.org/spreadsheet-ecology-lesson/guide/#people-are-not-interactive-or-responsive-on-the-exercise" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+
+<p>This lesson depends on people working on the exercise and responding with things
+that are fixed. If your audience is reluctant to participate, start out with
+some things on your own, or ask a helper for their answers. This generally gets
+even a reluctant audience started.</p>
+
+
+</article>
+
+      
+      
+
+
+
+
+
+
+<footer>
+  <div class="row">
+    <div class="col-md-6 license" id="license-info" align="left">
+	
+	Licensed under <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/guide/">CC-BY 4.0</a> 2018–2022
+	by <a href="https://carpentries.org/">The Carpentries</a>
+        <br>
+        Licensed under <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/guide/">CC-BY 4.0</a> 2016–2018
+	by <a href="http://datacarpentry.org/">Data Carpentry</a>
+	
+    </div>
+    <div class="col-md-6 help-links" align="right">
+	
+	<a href="https://github.com/datacarpentry/spreadsheet-ecology-lesson/edit/gh-pages/_extras/guide.md" data-checker-ignore="">Edit on GitHub</a>
+	
+	/
+	<a href="https://github.com/datacarpentry/spreadsheet-ecology-lesson/blob/gh-pages/CONTRIBUTING.md" data-checker-ignore="">Contributing</a>
+	/
+	<a href="https://github.com/datacarpentry/spreadsheet-ecology-lesson/">Source</a>
+	/
+	<a href="https://github.com/datacarpentry/spreadsheet-ecology-lesson/blob/gh-pages/CITATION" data-checker-ignore="">Cite</a>
+	/
+	<a href="mailto:team@carpentries.org">Contact</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12" align="center">
+      Using <a href="https://github.com/carpentries/styles/">The Carpentries style</a>
+      version <a href="https://github.com/carpentries/styles/releases/tag/v9.5.3">9.5.3</a>.
+    </div>
+  </div>
+</footer>
+
+      
+    </div>
+    
+<script async="" src="./instructor_notes_files/matomo.js.download"></script><script src="./instructor_notes_files/jquery.min.js.download"></script>
+<script src="./instructor_notes_files/bootstrap.min.js.download"></script>
+<script src="./instructor_notes_files/lesson.js.download"></script>
+
+
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(["setDomains", ["*.lessons.carpentries.org","*.datacarpentry.github.io","*.datacarpentry.org","*.librarycarpentry.github.io","*.librarycarpentry.org","*.swcarpentry.github.io"]]);
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["disableCookies"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://carpentries.matomo.cloud/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src='//cdn.matomo.cloud/carpentries.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+<script src="./instructor_notes_files/anchor.min.js.download"></script>
+<script>
+    anchors.add();
+</script>
+
+  
+
+<div id="speechify-global-notifications"></div><div id="speechify-summarization-fullscreen-mode" style="position: fixed; inset: 0px; overflow: auto; background: white; z-index: 1999; display: none;"></div><div id="speechify-screenshot-mode" style="position: fixed; top: 0px; right: 0px; width: 100%; min-height: 100%; z-index: 2147483640; display: none;"></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
