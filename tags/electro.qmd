@@ -1,0 +1,5 @@
+---
+title: "Electromagnetism"
+---
+
+[![Electromagnetism Units](../img/electro.png)](../projects/electro.qmd)

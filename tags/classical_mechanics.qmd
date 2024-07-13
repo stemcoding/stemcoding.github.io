@@ -1,0 +1,9 @@
+---
+title: "Classical Mechanics"
+---
+
+| |  |  |
+|----------|----------|----------|
+| [![Apollo Moon Landing](../img/apollo.png)](../projects/apollo.qmd)   | [![Angry Birds](../img/birds.png)](../projects/birds.qmd)   | [![Birds Launch](../img/birdslaunch.png)](../projects/birdslauncher.qmd)   |
+| [![Black](../img/black.png)](../projects/black.qmd)   | [![Bonk](../img/bonk.png)](../projects/bonk.qmd)  |   |
+

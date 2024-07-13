@@ -1,0 +1,4 @@
+- source: project
+  quarto-pub:
+    - id: c9c9f4b0-65f0-4b96-b6d6-f55e83337ae9
+      url: 'https://juliebutler.quarto.pub/stemcoding'

@@ -1,0 +1,7 @@
+---
+title: "Astronomy"
+---
+
+| | |
+|--|--|
+|[![Black](../img/black.png)](../projects/black.qmd) |[![Exo](../img/exo.png)](../projects/exo.qmd)|

@@ -1,0 +1,12 @@
+---
+title: "STEMcoding"
+---
+
+**Browse by Subject**: [Astronomy](tags/astronomy.qmd). [Classical Mechanics](tags/classical_mechanics.qmd), [Data Science](tags/data_science.qmd), [Discrete Math](tags/discrete_math.qmd), [Electromagnetism](tags/electro.qmd), [Environmental Science](tags/enviro.qmd), [Math](tags/math.qmd), [Physics](tags/physics.qmd)
+
+
+| |  |  |
+|----------|----------|----------|
+| [![Apollo Moon Landing](img/apollo.png)](projects/apollo.qmd)   | [![Angry Birds](img/birds.png)](projects/birds.qmd)   | [![Birds Launch](img/birdslaunch.png)](projects/birdslauncher.qmd)   |
+| [![Black](img/black.png)](projects/black.qmd)   | [![Bonk](img/bonk.png)](projects/bonk.qmd)  | [![Earth Day](img/earth.png)](projects/earth.qmd)   |
+| [![Electro](img/electro.png)](projects/electro.qmd)    | [![Exo](img/exo.png)](projects/exo.qmd)   |    |

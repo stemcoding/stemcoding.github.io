@@ -1,0 +1,24 @@
+---
+title: "Bonk.io Clone"
+---
+
+**Tags**: [Classical Mechanics](../tags/classical_mechanics.qmd), [Physics](../tags/physics.qmd)
+
+## Activity Introduction
+
+One of the most popular and entertaining .io games out there right now is bonk.io If you've not played it you should definitely check it out. The game is pretty simple. You're a little ball and you bounce off the ground and various objects. You have some ability to affect your motion, but if you get bounced by some object or some other player so that you fly off the board you lose the game. It's a little bit like sumo wrestling that way.
+
+Here is the (video) game plan: (1) Add gravity to the pong game. (2) Add horizontal forces that are controlled by the left and right arrow keys. (3) Optional Challenge #1: Add a game over, (4) Optional challenge #2: Add vertical forces (besides gravity) that are controlled by the up and down arrow keys. (5) Have fun!
+
+## Links to Activity
+
+* [Instructions for Bonk.io Clone](https://www.asc.ohio-state.edu/orban.14/stemcoding/milestones/bonk/bonk.html)
+* [Code Editor for Bonk.io Clone](https://editor.p5js.org/ChrisOrban/sketches/Ry5_oND6h)
+
+## Related YouTube Videos
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VVe1qIldD7k?si=2_ePsYJDw7qjseuY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1-1eSnq73PQ?si=a6VATDwrf7Kv3-av" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KSIewu97Yxs?si=_OUlhmFF86usGYAc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

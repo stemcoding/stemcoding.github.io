@@ -1,0 +1,39 @@
+---
+title: "Earth Day"
+---
+
+**Tags**: [Data Science](../tags/data_science.qmd), [Environmental Science](../tags/enviro.qmd)
+
+## Activity Introduction
+
+Climate change is a problem affecting the whole world, and it is one of the most pressing issues today. Scientists estimate that the average global temperature has increased by about 1.4 degrees Fahrenheit. This may not seem like a big change, but we will see how this shift affects the number of freezing days (< 32 °F) each year.
+
+We are going to estimate the impact of global warming at your location using a simple cosine function and some climate data.
+
+Today we will:
+
+* Collect climate data from your location
+* Use JavaScript to model global warming in your location
+* Download the data in a spreadsheet
+
+## Links to Activity
+* [Instructions for Earth Day](https://www.asc.ohio-state.edu/orban.14/stemcoding/earthday/earthday.html?_gl=1*eiox2q*_gcl_au*NzYxNTY2MTAzLjE3MTk5NDI3NDQ.*_ga*NjIzMjU3ODAzLjE3MTk5NDI3NDM.*_ga_09WC99HMPE*MTcxOTk0Mjc0My4xLjAuMTcxOTk0Mjc0My42MC4wLjA.#)
+* [Code Editor for Earth Day](https://editor.p5js.org/bscheib99/sketches/LTT_bC2Fc)
+
+## Related YouTube Videos
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2N1x2PEAq6g?si=mrBqIWnfhkFTucvM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cbRKffGS2dg?si=cG0VOC6Y9ZhraO68" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Rw7ATO24jtE?si=F8oJ3XYBNAIt1E1A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jkvQMAq_XY8?si=KXXFVwpvI9ORpf0F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kcKQdHU_amM?si=WHUhwa-kZJm30yfH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3HhtcRH-W-c?si=GTBVG5ZsbQ-VNTBx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mOz7KUDxXhg?si=N1oOKpPs9lPUpyOx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NDXZ4lwf60I?si=7tJG58vn3aUq8Z2f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

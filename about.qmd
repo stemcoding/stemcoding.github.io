@@ -1,0 +1,11 @@
+---
+title: "About"
+---
+
+![](img/STEMcoding_icon.png)
+
+The STEMcoding project is an initiatve at Ohio State University that collaborates with teachers and researchers across the US
+
+Note: if you were looking for the non-profit STEMcoding Education Ohio you can find it at [stemcodingohio.github.io](stemcodingohio.github.io)
+
+
