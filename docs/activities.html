@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>STEMcoding – About</title>
+<title>STEMcoding – STEMcoding Activities</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -66,7 +68,65 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -93,11 +153,11 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./activities.html"> 
+    <a class="nav-link active" href="./activities.html" aria-current="page"> 
 <span class="menu-text">STEMcoding Activities</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
+    <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
@@ -116,15 +176,15 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    </div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(8)</span></div><div class="category" data-category="Advanced HS">Advanced HS <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Algebra">Algebra <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Astronomy">Astronomy <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Data Science">Data Science <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Environmental Science">Environmental Science <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Intro HS">Intro HS <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Javascript">Javascript <span class="quarto-category-count">(7)</span></div><div class="category" data-category="Physical Science">Physical Science <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Physics">Physics <span class="quarto-category-count">(7)</span></div><div class="category" data-category="Spreadsheets">Spreadsheets <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Trigonometry">Trigonometry <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Trogonometry">Trogonometry <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About</h1>
+<h1 class="title">STEMcoding Activities</h1>
 </div>
 
 
@@ -141,13 +201,308 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><img src="img/STEMcoding_icon.png" class="img-fluid"></p>
-<p>The STEMcoding project is an initiatve at Ohio State University that collaborates with teachers and researchers across the US</p>
-<p>Note: if you were looking for the non-profit STEMcoding Education Ohio you can find it at <a href="stemcodingohio.github.io">stemcodingohio.github.io</a></p>
 
 
 
-</main> <!-- /main -->
+
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="Intro HS,Physical Science,Physics,Javascript" data-listing-file-modified-sort="1721400528983" data-listing-reading-time-sort="1" data-listing-word-count-sort="125">
+<a href="./projects/apollo.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./img/apollo.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Apollo Moon Landing
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Intro HS'); return false;">
+Intro HS
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Physical Science'); return false;">
+Physical Science
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Physics'); return false;">
+Physics
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Javascript'); return false;">
+Javascript
+</div>
+</div>
+<div class="card-text listing-description">
+If you have finished tinkering with Accelerate the blob you can continue with this lab where we will now add gravity to the game! The goal is to gently land the the little…
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="Advanced HS,Physics,Javascript,Trigonometry" data-listing-file-modified-sort="1721400490053" data-listing-reading-time-sort="2" data-listing-word-count-sort="329">
+<a href="./projects/birds.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./img/birds.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Bellicose Birds
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Advanced HS'); return false;">
+Advanced HS
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Physics'); return false;">
+Physics
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Javascript'); return false;">
+Javascript
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Trigonometry'); return false;">
+Trigonometry
+</div>
+</div>
+<div class="card-text listing-description">
+If you have finished tinkering with the Lunar descent lab you can continue with this lab where we will configure the game to shoot a bird-shaped projectile. We call this…
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="Intro HS,Physical Science,Physics,Algebra,Javascript" data-listing-file-modified-sort="1721400545650" data-listing-reading-time-sort="1" data-listing-word-count-sort="183">
+<a href="./projects/birdslauncher.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./img/birdslaunch.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Bird Launcher
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Intro HS'); return false;">
+Intro HS
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Physical Science'); return false;">
+Physical Science
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Physics'); return false;">
+Physics
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Algebra'); return false;">
+Algebra
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Javascript'); return false;">
+Javascript
+</div>
+</div>
+<div class="card-text listing-description">
+If you have finished the Apollo moon landing activity, you can continue with this lab where we will configure the game to shoot a bird-shaped projectile.
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="Intro HS,Physical Science,Physics,Javascript" data-listing-file-modified-sort="1721400444968" data-listing-reading-time-sort="2" data-listing-word-count-sort="203">
+<a href="./projects/bonk.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./img/bonk.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Bonk.io Clone
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Intro HS'); return false;">
+Intro HS
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Physical Science'); return false;">
+Physical Science
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Physics'); return false;">
+Physics
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Javascript'); return false;">
+Javascript
+</div>
+</div>
+<div class="card-text listing-description">
+One of the most popular and entertaining .io games out there right now is bonk.io If you’ve not played it you should definitely check it out. The game is pretty simple.…
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="Advanced HS,Trigonometry,Environmental Science,Data Science,Spreadsheets,Javascript" data-listing-file-modified-sort="1721400517716" data-listing-reading-time-sort="2" data-listing-word-count-sort="246">
+<a href="./projects/earth.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./img/earth.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Earth Day
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Advanced HS'); return false;">
+Advanced HS
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Trigonometry'); return false;">
+Trigonometry
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Environmental Science'); return false;">
+Environmental Science
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Data Science'); return false;">
+Data Science
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Spreadsheets'); return false;">
+Spreadsheets
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Javascript'); return false;">
+Javascript
+</div>
+</div>
+<div class="card-text listing-description">
+Climate change is a problem affecting the whole world, and it is one of the most pressing issues today. Scientists estimate that the average global temperature has increased…
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="5" data-categories="Physics" data-listing-file-modified-sort="1721400504580" data-listing-reading-time-sort="2" data-listing-word-count-sort="314">
+<a href="./projects/electro.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./img/electro.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Electromagnetism: Unit System
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Physics'); return false;">
+Physics
+</div>
+</div>
+<div class="card-text listing-description">
+In this course we typically think in meters. In the programming labs, the x and y variables are actually in pixel units and the width of the screen is 750 pixels. For…
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="6" data-categories="Advanced HS,Astronomy,Physics,Javascript,Trogonometry" data-listing-file-modified-sort="1721400462298" data-listing-reading-time-sort="2" data-listing-word-count-sort="305">
+<a href="./projects/black.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./img/black.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Escape Velocity and Newtonian Black Holes
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Advanced HS'); return false;">
+Advanced HS
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Astronomy'); return false;">
+Astronomy
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Physics'); return false;">
+Physics
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Javascript'); return false;">
+Javascript
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Trogonometry'); return false;">
+Trogonometry
+</div>
+</div>
+<div class="card-text listing-description">
+Hopefully you completed the Slingshot with Gravity! coding activity. That activity explores the behavior of objects like planets or comets interacting with a massive object…
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="7" data-categories="Advanced HS,Astronomy,Physics,Javascript" data-listing-file-modified-sort="1721400613663" data-listing-reading-time-sort="2" data-listing-word-count-sort="335">
+<a href="./projects/exo.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./img/exo.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Exoplanets
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Advanced HS'); return false;">
+Advanced HS
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Astronomy'); return false;">
+Astronomy
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Physics'); return false;">
+Physics
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Javascript'); return false;">
+Javascript
+</div>
+</div>
+<div class="card-text listing-description">
+Hopefully you completed the Slingshot with Gravity! coding activity. (If you completed the Escape Velocity / Newtonian Black Holes activity that’s great, but it’s NOT a…
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

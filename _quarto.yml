@@ -8,9 +8,13 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - activities.qmd
       - about.qmd
       - href: people.qmd
         text: People
+    tools:
+      - icon: github
+        href: https://github.com/stemcoding        
 
 format:
   html:

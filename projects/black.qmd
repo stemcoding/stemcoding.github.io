@@ -1,8 +1,15 @@
 ---
 title: "Escape Velocity and Newtonian Black Holes"
+image: ../img/black.png
+categories:
+  - Advanced HS
+  - Astronomy
+  - Physics
+  - Javascript
+  - Trogonometry
 ---
 
-**Tags**: **Tags**: [Astronomy](../tags/astronomy.qmd), [Classical Mechanics](../tags/classical_mechanics.qmd), [Physics](../tags/physics.qmd)
+![](../img/black.png)
 
 ## Activity Introduction
 

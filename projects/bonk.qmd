@@ -1,8 +1,14 @@
 ---
 title: "Bonk.io Clone"
+image: ../img/bonk.png
+categories:
+  - Intro HS
+  - Physical Science
+  - Physics
+  - Javascript
 ---
 
-**Tags**: [Classical Mechanics](../tags/classical_mechanics.qmd), [Physics](../tags/physics.qmd)
+![](../img/bonk.png)
 
 ## Activity Introduction
 

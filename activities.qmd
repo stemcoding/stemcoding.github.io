@@ -1,0 +1,9 @@
+---
+title: "STEMcoding Activities"
+listing:
+  contents:
+    - "projects/*.qmd"
+  # (additional metadata excluded for brevity)
+  categories: true
+  type: grid
+---

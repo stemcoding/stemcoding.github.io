@@ -1,8 +1,16 @@
 ---
 title: "Earth Day"
+image: ../img/earth.png
+categories:
+  - Advanced HS
+  - Trigonometry
+  - Environmental Science
+  - Data Science
+  - Spreadsheets
+  - Javascript
 ---
 
-**Tags**: [Data Science](../tags/data_science.qmd), [Environmental Science](../tags/enviro.qmd)
+![](../img/earth.png)
 
 ## Activity Introduction
 

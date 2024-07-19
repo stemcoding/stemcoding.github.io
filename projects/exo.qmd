@@ -1,8 +1,14 @@
 ---
 title: "Exoplanets"
+image: ../img/exo.png
+categories:
+  - Advanced HS
+  - Astronomy
+  - Physics
+  - Javascript
 ---
 
-**Tags**: [Astronomy](../tags/astronomy.qmd), [Physics](../tags/physics.qmd)
+![](../img/exo.png)
 
 ## Activity Introduction
 

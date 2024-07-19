@@ -1,8 +1,14 @@
 ---
 title: "Apollo Moon Landing"
+image: ../img/apollo.png
+categories:
+  - Intro HS
+  - Physical Science
+  - Physics
+  - Javascript
 ---
 
-**Tags**: [Classical Mechanics](../tags/classical_mechanics.qmd), [Physics](../tags/physics.qmd)
+![](../img/apollo.png)
 
 ## Activity Introduction
 

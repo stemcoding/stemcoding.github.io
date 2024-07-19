@@ -1,8 +1,15 @@
 ---
 title: "Bird Launcher"
+image: ../img/birdslaunch.png
+categories:
+  - Intro HS
+  - Physical Science
+  - Physics
+  - Algebra
+  - Javascript
 ---
 
-**Tags**: [Classical Mechanics](../tags/classical_mechanics.qmd), [Physics](../tags/physics.qmd)
+![](../img/birdslaunch.png)
 
 ## Activity Introduction
 

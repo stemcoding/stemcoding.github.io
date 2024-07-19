@@ -2,8 +2,6 @@
 title: "STEMcoding"
 ---
 
-**Browse by Subject**: [Astronomy](tags/astronomy.qmd). [Classical Mechanics](tags/classical_mechanics.qmd), [Data Science](tags/data_science.qmd), [Discrete Math](tags/discrete_math.qmd), [Electromagnetism](tags/electro.qmd), [Environmental Science](tags/enviro.qmd), [Math](tags/math.qmd), [Physics](tags/physics.qmd)
-
 
 | |  |  |
 |----------|----------|----------|

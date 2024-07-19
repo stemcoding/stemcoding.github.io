@@ -1,8 +1,14 @@
 ---
 title: "Bellicose Birds"
+image: ../img/birds.png
+categories:
+  - Advanced HS
+  - Physics
+  - Javascript
+  - Trigonometry 
 ---
 
-**Tags**: [Classical Mechanics](../tags/classical_mechanics.qmd), [Physics](../tags/physics.qmd)
+![](../img/birds.png)
 
 ## Activity Introduction
 
