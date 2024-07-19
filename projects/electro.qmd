@@ -1,5 +1,4 @@
 ---
-title: "Electromagnetism: Unit System"
 image: ../img/electro.png
 categories:
   - Physics

@@ -1,5 +1,4 @@
 ---
-title: "Bonk.io Clone"
 image: ../img/bonk.png
 categories:
   - Intro HS

@@ -1,5 +1,4 @@
 ---
-title: "Bird Launcher"
 image: ../img/birdslaunch.png
 categories:
   - Intro HS

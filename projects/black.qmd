@@ -1,12 +1,11 @@
 ---
-title: "Escape Velocity and Newtonian Black Holes"
 image: ../img/black.png
 categories:
   - Advanced HS
   - Astronomy
   - Physics
   - Javascript
-  - Trogonometry
+  - Trigonometry
 ---
 
 ![](../img/black.png)

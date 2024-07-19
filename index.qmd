@@ -1,7 +1,8 @@
 ---
-title: "STEMcoding"
 ---
 
+
+## Featured STEMcoding Activites
 
 | |  |  |
 |----------|----------|----------|

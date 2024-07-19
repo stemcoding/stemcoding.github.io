@@ -1,5 +1,4 @@
 ---
-title: "Bellicose Birds"
 image: ../img/birds.png
 categories:
   - Advanced HS

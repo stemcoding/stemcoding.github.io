@@ -1,5 +1,4 @@
 ---
-title: "Earth Day"
 image: ../img/earth.png
 categories:
   - Advanced HS

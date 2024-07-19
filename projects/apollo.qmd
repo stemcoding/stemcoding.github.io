@@ -1,5 +1,4 @@
 ---
-title: "Apollo Moon Landing"
 image: ../img/apollo.png
 categories:
   - Intro HS
