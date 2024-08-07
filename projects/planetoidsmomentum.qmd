@@ -1,0 +1,18 @@
+---
+title: "Planetoids with Momentum"
+image: ../img/planetoidsmomentum.png
+categories:
+  - Middle School
+  - Intro HS
+  - Physical Science
+  - Javascript
+---
+
+In a typical college physics course you will at some point encounter the idea of conservation of momentum. Momentum conservation is very important! In situations where two objects collide, we often don't know the force or acceleration as a function of time, but we do know the initial velocities. If we know the type of collision that occurs, it turns out that the initial velocities and the masses of the objects are all we need to figure out the final velocities.
+
+## Links to Activity
+* [Instructions for Planetoids with Momentum](https://www.asc.ohio-state.edu/orban.14//physics_coding/momentum.html)
+* [Code Editor for Planetoids with Momentum](https://editor.p5js.org/ChrisOrban/sketches/r1k7EV6rQ)
+
+## Planetoids Momentum Playlist
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=YblHBon_dPV-KwlN&amp;list=PLISRe8GegO8TFJSfluDVaaxtdr3KzCh9Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

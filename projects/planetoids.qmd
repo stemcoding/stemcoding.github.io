@@ -11,6 +11,6 @@ categories:
 This lab will guide you through coding up a web-based implementation of the classic video game asteroids.
 
 ## Links to Activity
-* [Instructions ofr Planetoids](https://www.asc.ohio-state.edu/orban.14/stemcoding/milestones/planetoids/planetoids.html)
+* [Instructions for Planetoids](https://www.asc.ohio-state.edu/orban.14/stemcoding/milestones/planetoids/planetoids.html)
 * [Code Editor for Planetoids](https://editor.p5js.org/ChrisOrban/sketches/t40RIIWh2)
 

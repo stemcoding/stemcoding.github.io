@@ -6,15 +6,17 @@ website:
   title: "STEMcoding"
   navbar:
     left:
-      - href: index.qmd
-        text: Home
       - activities.qmd
       - about.qmd
       - href: people.qmd
         text: People
     tools:
       - icon: github
-        href: https://github.com/stemcoding        
+        href: https://github.com/stemcoding
+      - icon: youtube
+        href: https://www.youtube.com/@STEMcoding
+      - icon: discord
+        href: https://discord.gg/bsWgqcqwCE        
 
 format:
   html:
