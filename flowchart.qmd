@@ -1,5 +1,9 @@
 ---
-title: "Activities Flowchart"
+title: "Activities Flowcharts"
+format:
+  html:
+    mermaid:
+      theme: forest
 ---
 
 ## Lunar Descent

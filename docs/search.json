@@ -289,35 +289,35 @@
   {
     "objectID": "flowchart.html",
     "href": "flowchart.html",
-    "title": "Activities Flowchart",
+    "title": "Activities Flowcharts",
     "section": "",
     "text": "flowchart LR\n  A[Lunar Descent] --&gt; B[Bellicose Birds]"
   },
   {
     "objectID": "flowchart.html#lunar-descent",
     "href": "flowchart.html#lunar-descent",
-    "title": "Activities Flowchart",
+    "title": "Activities Flowcharts",
     "section": "",
     "text": "flowchart LR\n  A[Lunar Descent] --&gt; B[Bellicose Birds]"
   },
   {
     "objectID": "flowchart.html#move-the-blob",
     "href": "flowchart.html#move-the-blob",
-    "title": "Activities Flowchart",
+    "title": "Activities Flowcharts",
     "section": "Move the Blob",
     "text": "Move the Blob\n\n\n\n\n\nflowchart LR\n  A[Move the Blob] --&gt; B[Accelerate the Blob]\n  B --&gt; C[Apollo Moon Landing]\n  C --&gt; D[Bird Launcher]"
   },
   {
     "objectID": "flowchart.html#pong",
     "href": "flowchart.html#pong",
-    "title": "Activities Flowchart",
+    "title": "Activities Flowcharts",
     "section": "Pong",
     "text": "Pong\n\n\n\n\n\nflowchart LR\n  A[Pong] --&gt; B[Bonk.io Clone]"
   },
   {
     "objectID": "flowchart.html#slingshot-with-gravity",
     "href": "flowchart.html#slingshot-with-gravity",
-    "title": "Activities Flowchart",
+    "title": "Activities Flowcharts",
     "section": "Slingshot with Gravity!",
     "text": "Slingshot with Gravity!\n\n\n\n\n\nflowchart LR\n  A[Slingshot with Gravity!] --&gt; B[Escape Velocity and Newtonian Black Holes]\n  A --&gt; C[Exoplanets]"
   }
