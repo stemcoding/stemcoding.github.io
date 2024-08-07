@@ -6,12 +6,6 @@ format:
       theme: forest
 ---
 
-## Lunar Descent
-```{mermaid}
-flowchart LR
-  A[Lunar Descent] --> B[Bellicose Birds]
-```
-
 ## Move the Blob
 ```{mermaid}
 flowchart LR
