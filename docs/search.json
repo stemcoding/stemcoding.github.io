@@ -4,217 +4,7 @@
     "href": "activities.html",
     "title": "STEMcoding Activities",
     "section": "",
-    "text": "Activity Introduction\n\n\n\nIntro HS\n\n\nPhysical Science\n\n\nPhysics\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nActivity Introduction\n\n\n\nAdvanced HS\n\n\nPhysics\n\n\nJavascript\n\n\nTrigonometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nActivity Introduction\n\n\n\nIntro HS\n\n\nPhysical Science\n\n\nPhysics\n\n\nAlgebra\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nActivity Introduction\n\n\n\nAdvanced HS\n\n\nAstronomy\n\n\nPhysics\n\n\nJavascript\n\n\nTrigonometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nActivity Introduction\n\n\n\nIntro HS\n\n\nPhysical Science\n\n\nPhysics\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nActivity Introduction\n\n\n\nAdvanced HS\n\n\nTrigonometry\n\n\nEnvironmental Science\n\n\nData Science\n\n\nSpreadsheets\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nActivity Introduction\n\n\n\nPhysics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nActivity Introduction\n\n\n\nAdvanced HS\n\n\nAstronomy\n\n\nPhysics\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMove the Blob\n\n\n\nMiddle School\n\n\nIntro HS\n\n\nPhysical Science\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "The STEMcoding project is an initiatve at Ohio State University that collaborates with teachers and researchers across the US\nNote: if you were looking for the non-profit STEMcoding Education Ohio you can find it at stemcodingohio.github.io"
-  },
-  {
-    "objectID": "tags/enviro.html",
-    "href": "tags/enviro.html",
-    "title": "Environmental Science",
-    "section": "",
-    "text": "Earth Day"
-  },
-  {
-    "objectID": "tags/data_science.html",
-    "href": "tags/data_science.html",
-    "title": "Data Science",
-    "section": "",
-    "text": "Earth Day"
-  },
-  {
-    "objectID": "projects/apollo.html#activity-introduction",
-    "href": "projects/apollo.html#activity-introduction",
-    "title": "STEMcoding",
-    "section": "Activity Introduction",
-    "text": "Activity Introduction\nIf you have finished tinkering with Accelerate the blob you can continue with this lab where we will now add gravity to the game! The goal is to gently land the the little blob on the ground. Just for fun we will use the moon’s gravity instead of earth’s gravity. The result will be a lot like the Apollo moon landing."
-  },
-  {
-    "objectID": "projects/apollo.html#links-to-activity",
-    "href": "projects/apollo.html#links-to-activity",
-    "title": "STEMcoding",
-    "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Apollo Moon Landing\nApollo Moon Landing Code Editor"
-  },
-  {
-    "objectID": "projects/apollo.html#related-youtube-videos",
-    "href": "projects/apollo.html#related-youtube-videos",
-    "title": "STEMcoding",
-    "section": "Related YouTube Videos",
-    "text": "Related YouTube Videos"
-  },
-  {
-    "objectID": "projects/birdslauncher.html#activity-introduction",
-    "href": "projects/birdslauncher.html#activity-introduction",
-    "title": "STEMcoding",
-    "section": "Activity Introduction",
-    "text": "Activity Introduction\nIf you have finished the Apollo moon landing activity, you can continue with this lab where we will configure the game to shoot a bird-shaped projectile.\nFrom a physics perspective, bird launcher is essentially the same as Apollo moon landing except that there is no rocket thrust. Later on in this exercise it will be helpful to remember the equations for the \\(x(t)\\) and \\(y(t)\\) of a projectile that is launched into the air at \\(t = 0\\)\n\\[x(t)=x_0+v_{0_x}t\\]\n\\[y(t)=y_0+v_{0_y}t+\\frac{1}{2}gt^2\\]\nwhere \\(g=−9.8\\) instead of \\(−1.63\\) because we will be on the earth instead of the moon. Remember that there is no acceleration in the x direction, which is why the equation for x(t) is a bit simpler than the equation for \\(y(t)\\)"
-  },
-  {
-    "objectID": "projects/birdslauncher.html#links-to-activity",
-    "href": "projects/birdslauncher.html#links-to-activity",
-    "title": "STEMcoding",
-    "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for the Bird Launcher\nCode Editor for the Bird Launcher"
-  },
-  {
-    "objectID": "projects/birdslauncher.html#related-youtube-videos",
-    "href": "projects/birdslauncher.html#related-youtube-videos",
-    "title": "STEMcoding",
-    "section": "Related YouTube Videos",
-    "text": "Related YouTube Videos"
-  },
-  {
-    "objectID": "projects/birds.html#activity-introduction",
-    "href": "projects/birds.html#activity-introduction",
-    "title": "STEMcoding",
-    "section": "Activity Introduction",
-    "text": "Activity Introduction\nIf you have finished tinkering with the Lunar descent lab you can continue with this lab where we will configure the game to shoot a bird-shaped projectile. We call this game Bellicose Birds.\nFrom a physics perspective, bellicose birds is essentially the same as lunar descent except that there is no rocket thrust. The kinematic equations look like this: \\[\\sum F_{\\rm{net},x} = 0 = m \\, a_x\\] \\[\\sum F_{\\rm{net},y} = - m g = m \\, a_y\\] \\[ \\Delta v_x = a_x \\Delta t\\] \\[ \\Delta v_y = a_y \\Delta t\\] \\[ v_x = v_{x0} + \\Delta v_x\\] \\[ v_y = v_{y0} + \\Delta v_y\\] \\[ x = x_0 + v_x \\cdot \\Delta t \\] \\[ y = y_0 + v_y \\cdot \\Delta t \\]\nThe computer program we will work with here computes these equations over and over again, updating \\(v_x\\), \\(v_y\\), \\(x\\) and \\(y\\) depending on whether the thrust is turned on or off. If the thrust is turned off then \\(a_x = 0\\) and \\(\\Delta v_x = 0\\) and the ship just continues with the same \\(v_x\\) velocity. With the thrust off the \\(v_y\\) velocity will continue to change with time due to gravity, \\(\\Delta v_y = -g \\, \\Delta t\\)."
-  },
-  {
-    "objectID": "projects/birds.html#links-to-activity",
-    "href": "projects/birds.html#links-to-activity",
-    "title": "STEMcoding",
-    "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Bellicose Birds\nCode Editor for Bellicose Birds"
-  },
-  {
-    "objectID": "projects/birds.html#related-youtube-videos",
-    "href": "projects/birds.html#related-youtube-videos",
-    "title": "STEMcoding",
-    "section": "Related YouTube Videos",
-    "text": "Related YouTube Videos"
-  },
-  {
-    "objectID": "projects/black.html#activity-introduction",
-    "href": "projects/black.html#activity-introduction",
-    "title": "STEMcoding",
-    "section": "Activity Introduction",
-    "text": "Activity Introduction\nHopefully you completed the Slingshot with Gravity! coding activity. That activity explores the behavior of objects like planets or comets interacting with a massive object like the sun. An interesting part of that activity is showing that the gravitational force between two objects is inversely proportional to the distance squared. We found that this must be true:\n$$F_{grav}=\nand we have this formula instead of something proportional to \\(1/r^n\\) because the planets are observed to have elliptical orbits and as the coding activity shows you only get elliptical orbits if n=2.\nIn this activity we are going to keep using this formula and we are going to explore some of the consequenses of it. In particular, we want to know how fast you have to be going to escape the earth’s gravitational field. We are also going to think about energy conservation and what it means for an object to be gravitationally “bound” by a massive orbit or not. These are all topics we dind’t get to in the Slingshot with Gravity activity."
-  },
-  {
-    "objectID": "projects/black.html#links-to-activity",
-    "href": "projects/black.html#links-to-activity",
-    "title": "STEMcoding",
-    "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Escape Velocity and Newtonain Black Holes\nCode Editor for Escape Velocity and Newtonian Black Holes"
-  },
-  {
-    "objectID": "projects/black.html#related-youtube-videos",
-    "href": "projects/black.html#related-youtube-videos",
-    "title": "STEMcoding",
-    "section": "Related YouTube Videos",
-    "text": "Related YouTube Videos"
-  },
-  {
-    "objectID": "projects/exo.html#activity-introduction",
-    "href": "projects/exo.html#activity-introduction",
-    "title": "STEMcoding",
-    "section": "Activity Introduction",
-    "text": "Activity Introduction\nHopefully you completed the Slingshot with Gravity! coding activity. (If you completed the Escape Velocity / Newtonian Black Holes activity that’s great, but it’s NOT a requirement for working on this activity.) The Slingshot with Gravity! activity explores the behavior of objects like planets or comets interacting with a massive object like the sun. An interesting part of that activity is showing that the gravitational force between two objects is inversely proportional to the distance squared. We found that this must be true:\n\\[F_{grav}=\\frac{GMm}{r^2}\\]\nand we have this formula instead of something proportional to \\(1/r^n\\) because the planets are observed to have elliptical orbits and as the coding activity shows you only get elliptical orbits if n=2.\nIn THIS activity we are going to keep using this formula but instead of keeping one object fixed (the sun) and letting the other move around it we are going to let BOTH objects move and see what happens.\nLetting both objects move is important, because many of the extra-solar planets (a.k.a. exoplanets) that we know about we only discovered because of the motion of the star that they are orbiting! So we will talk about the little white circle as a planet orbiting the sun instead of being something much smaller, like a comet or a satellite."
-  },
-  {
-    "objectID": "projects/exo.html#links-to-activity",
-    "href": "projects/exo.html#links-to-activity",
-    "title": "STEMcoding",
-    "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Exoplanets\nCode for Exoplanets"
-  },
-  {
-    "objectID": "projects/exo.html#related-youtube-videos",
-    "href": "projects/exo.html#related-youtube-videos",
-    "title": "STEMcoding",
-    "section": "Related YouTube Videos",
-    "text": "Related YouTube Videos"
-  },
-  {
-    "objectID": "projects/earth.html#activity-introduction",
-    "href": "projects/earth.html#activity-introduction",
-    "title": "STEMcoding",
-    "section": "Activity Introduction",
-    "text": "Activity Introduction\nClimate change is a problem affecting the whole world, and it is one of the most pressing issues today. Scientists estimate that the average global temperature has increased by about 1.4 degrees Fahrenheit. This may not seem like a big change, but we will see how this shift affects the number of freezing days (&lt; 32 °F) each year.\nWe are going to estimate the impact of global warming at your location using a simple cosine function and some climate data.\nToday we will:\n\nCollect climate data from your location\nUse JavaScript to model global warming in your location\nDownload the data in a spreadsheet"
-  },
-  {
-    "objectID": "projects/earth.html#links-to-activity",
-    "href": "projects/earth.html#links-to-activity",
-    "title": "STEMcoding",
-    "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Earth Day\nCode Editor for Earth Day"
-  },
-  {
-    "objectID": "projects/earth.html#related-youtube-videos",
-    "href": "projects/earth.html#related-youtube-videos",
-    "title": "STEMcoding",
-    "section": "Related YouTube Videos",
-    "text": "Related YouTube Videos"
-  },
-  {
-    "objectID": "projects/bonk.html#activity-introduction",
-    "href": "projects/bonk.html#activity-introduction",
-    "title": "STEMcoding",
-    "section": "Activity Introduction",
-    "text": "Activity Introduction\nOne of the most popular and entertaining .io games out there right now is bonk.io If you’ve not played it you should definitely check it out. The game is pretty simple. You’re a little ball and you bounce off the ground and various objects. You have some ability to affect your motion, but if you get bounced by some object or some other player so that you fly off the board you lose the game. It’s a little bit like sumo wrestling that way.\nHere is the (video) game plan: (1) Add gravity to the pong game. (2) Add horizontal forces that are controlled by the left and right arrow keys. (3) Optional Challenge #1: Add a game over, (4) Optional challenge #2: Add vertical forces (besides gravity) that are controlled by the up and down arrow keys. (5) Have fun!"
-  },
-  {
-    "objectID": "projects/bonk.html#links-to-activity",
-    "href": "projects/bonk.html#links-to-activity",
-    "title": "STEMcoding",
-    "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Bonk.io Clone\nCode Editor for Bonk.io Clone"
-  },
-  {
-    "objectID": "projects/bonk.html#related-youtube-videos",
-    "href": "projects/bonk.html#related-youtube-videos",
-    "title": "STEMcoding",
-    "section": "Related YouTube Videos",
-    "text": "Related YouTube Videos"
-  },
-  {
-    "objectID": "projects/movetheblob.html#links-to-activity",
-    "href": "projects/movetheblob.html#links-to-activity",
-    "title": "Move the Blob",
-    "section": "Links to Activity",
-    "text": "Links to Activity"
-  },
-  {
-    "objectID": "projects/movetheblob.html#related-youtube-videos",
-    "href": "projects/movetheblob.html#related-youtube-videos",
-    "title": "Move the Blob",
-    "section": "Related YouTube Videos",
-    "text": "Related YouTube Videos"
-  },
-  {
-    "objectID": "projects/electro.html#activity-introduction",
-    "href": "projects/electro.html#activity-introduction",
-    "title": "STEMcoding",
-    "section": "Activity Introduction",
-    "text": "Activity Introduction\nIn this course we typically think in meters. In the programming labs, the x and y variables are actually in pixel units and the width of the screen is 750 pixels. For example, if the position of the object (x) is less than zero or larger than 750, the object will move off of the screen. Typically the height of the screen is 500. If the vertical position of the object (y) is less than zero or larger than 500 the object will move off the screen.\nHow do we relate pixels to the typical meter units that we use in class? We have some options!\nWe could figure out how large each pixel actually is on your screen in meters and then multiply the x and y positions by this size. This involves a lot of multiplying and a lot of confusion about whether we are talking about meters or pixels. For example, we would have to multiply all the velocities by the pixel size to change the units from pixels per second to meters per second, and the same thing for the acceleration (to change it from pixels per second2 to meters per second2). Everyone’s screen will have a slightly different pixel size. What a mess!\nThe simpler thing is to just think of pixels as meters and talk about velocities as meters per second and accelerations as meters per second squared. There is no harm in doing this! It just means that the screen (with the particle being accelerated between two plates) is showing something that is much larger than what actually appears on the screen. Since the screen is 750 pixels across, this means that you are looking down on something that is really 7.5 soccer fields across. This is a little bit weird to imagine but it is a lot simpler than the alternative."
-  },
-  {
-    "objectID": "projects/electro.html#links-to-activity",
-    "href": "projects/electro.html#links-to-activity",
-    "title": "STEMcoding",
-    "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Electromagnetism: Unit System"
-  },
-  {
-    "objectID": "index.html#featured-stemcoding-activites",
-    "href": "index.html#featured-stemcoding-activites",
-    "title": "STEMcoding",
-    "section": "Featured STEMcoding Activites",
-    "text": "Featured STEMcoding Activites"
-  },
-  {
-    "objectID": "tags/electro.html",
-    "href": "tags/electro.html",
-    "title": "Electromagnetism",
-    "section": "",
-    "text": "Electromagnetism Units"
+    "text": "View a flowchart of all STEMcoding activities here.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAccelerate the Blob\n\n\n\nMiddle School\n\n\nIntro HS\n\n\nPhysical Science\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nApollo Moon Landing\n\n\n\nIntro HS\n\n\nPhysical Science\n\n\nPhysics\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBellicose Birds\n\n\n\nAdvanced HS\n\n\nPhysics\n\n\nJavascript\n\n\nTrigonometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBird Launcher\n\n\n\nIntro HS\n\n\nPhysical Science\n\n\nPhysics\n\n\nAlgebra\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBonk.io Clone\n\n\n\nIntro HS\n\n\nPhysical Science\n\n\nPhysics\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEarth Day\n\n\n\nAdvanced HS\n\n\nTrigonometry\n\n\nEnvironmental Science\n\n\nData Science\n\n\nSpreadsheets\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nElectromagnetism: Unit System\n\n\n\nPhysics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEscape Velocity and Newtonian Black Holes\n\n\n\nAdvanced HS\n\n\nAstronomy\n\n\nPhysics\n\n\nJavascript\n\n\nTrigonometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExoplanets\n\n\n\nAdvanced HS\n\n\nAstronomy\n\n\nPhysics\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMove the Blob\n\n\n\nMiddle School\n\n\nIntro HS\n\n\nPhysical Science\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPong\n\n\n\nMiddle School\n\n\nIntro HS\n\n\nPhysical Science\n\n\nPhysics\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "people.html",
@@ -236,5 +26,299 @@
     "title": "Meet the STEMcoding Team!",
     "section": "Former Team Members",
     "text": "Former Team Members\n\nLilith Daemon\nNash Brecht\nBrian Gainer\nJoe Griffith\nVictoria Hartmann\nJacob Moore\nChris Porter\nRichelle Teeling-Smith\nDemetrius Tuggle"
+  },
+  {
+    "objectID": "tags/electro.html",
+    "href": "tags/electro.html",
+    "title": "Electromagnetism",
+    "section": "",
+    "text": "Electromagnetism Units"
+  },
+  {
+    "objectID": "index.html#featured-stemcoding-activites",
+    "href": "index.html#featured-stemcoding-activites",
+    "title": "STEMcoding",
+    "section": "Featured STEMcoding Activites",
+    "text": "Featured STEMcoding Activites"
+  },
+  {
+    "objectID": "projects/electro.html",
+    "href": "projects/electro.html",
+    "title": "Electromagnetism: Unit System",
+    "section": "",
+    "text": "There are three issues that deserve mention: the length units (pretty simple), force units, and the electric field units (which is related to the force units)."
+  },
+  {
+    "objectID": "projects/electro.html#links-to-activity",
+    "href": "projects/electro.html#links-to-activity",
+    "title": "Electromagnetism: Unit System",
+    "section": "Links to Activity",
+    "text": "Links to Activity\n\nInstructions for Electromagnetism: Unit System"
+  },
+  {
+    "objectID": "projects/birdslauncher.html",
+    "href": "projects/birdslauncher.html",
+    "title": "Bird Launcher",
+    "section": "",
+    "text": "If you have finished the Apollo moon landing activity, you can continue with this lab where we will configure the game to shoot a bird-shaped projectile."
+  },
+  {
+    "objectID": "projects/birdslauncher.html#links-to-activity",
+    "href": "projects/birdslauncher.html#links-to-activity",
+    "title": "Bird Launcher",
+    "section": "Links to Activity",
+    "text": "Links to Activity\n\nInstructions for the Bird Launcher\nCode Editor for the Bird Launcher"
+  },
+  {
+    "objectID": "projects/birdslauncher.html#bird-launcher-playlist",
+    "href": "projects/birdslauncher.html#bird-launcher-playlist",
+    "title": "Bird Launcher",
+    "section": "Bird Launcher Playlist",
+    "text": "Bird Launcher Playlist"
+  },
+  {
+    "objectID": "projects/birds.html",
+    "href": "projects/birds.html",
+    "title": "Bellicose Birds",
+    "section": "",
+    "text": "We will configure the game to shoot a bird-shaped projectile. We call this game Bellicose Birds."
+  },
+  {
+    "objectID": "projects/birds.html#links-to-activity",
+    "href": "projects/birds.html#links-to-activity",
+    "title": "Bellicose Birds",
+    "section": "Links to Activity",
+    "text": "Links to Activity\n\nInstructions for Bellicose Birds\nCode Editor for Bellicose Birds"
+  },
+  {
+    "objectID": "projects/birds.html#bellicose-birds-playlist",
+    "href": "projects/birds.html#bellicose-birds-playlist",
+    "title": "Bellicose Birds",
+    "section": "Bellicose Birds Playlist",
+    "text": "Bellicose Birds Playlist"
+  },
+  {
+    "objectID": "projects/black.html",
+    "href": "projects/black.html",
+    "title": "Escape Velocity and Newtonian Black Holes",
+    "section": "",
+    "text": "That activity explores the behavior of objects like planets or comets interacting with a massive object like the sun."
+  },
+  {
+    "objectID": "projects/black.html#links-to-activity",
+    "href": "projects/black.html#links-to-activity",
+    "title": "Escape Velocity and Newtonian Black Holes",
+    "section": "Links to Activity",
+    "text": "Links to Activity\n\nInstructions for Escape Velocity and Newtonain Black Holes\nCode Editor for Escape Velocity and Newtonian Black Holes"
+  },
+  {
+    "objectID": "projects/black.html#escape-velocity-and-black-holes-playlist",
+    "href": "projects/black.html#escape-velocity-and-black-holes-playlist",
+    "title": "Escape Velocity and Newtonian Black Holes",
+    "section": "Escape Velocity and Black Holes Playlist",
+    "text": "Escape Velocity and Black Holes Playlist"
+  },
+  {
+    "objectID": "projects/acceleratetheblob.html",
+    "href": "projects/acceleratetheblob.html",
+    "title": "Accelerate the Blob",
+    "section": "",
+    "text": "In real life, objects accelerate up to a particlar velocity. This exercise will show you how to modify the move the blob exercise so that the blob accelerates in response to the arrow keys, instead of the arrow keys directly controlling the velocity."
+  },
+  {
+    "objectID": "projects/acceleratetheblob.html#links-to-activity",
+    "href": "projects/acceleratetheblob.html#links-to-activity",
+    "title": "Accelerate the Blob",
+    "section": "Links to Activity",
+    "text": "Links to Activity\n\nInstructions for Accelerate the Blob\nCode Editor for Accelerate the Blob"
+  },
+  {
+    "objectID": "projects/acceleratetheblob.html#accelerate-the-blob-videos",
+    "href": "projects/acceleratetheblob.html#accelerate-the-blob-videos",
+    "title": "Accelerate the Blob",
+    "section": "Accelerate the Blob Videos",
+    "text": "Accelerate the Blob Videos"
+  },
+  {
+    "objectID": "projects/exo.html",
+    "href": "projects/exo.html",
+    "title": "Exoplanets",
+    "section": "",
+    "text": "As an extention ot the Slingshot with Gravity! activity, instead of keeping one object fixed (the sun) and letting the other move around it we are going to let BOTH objects move and see what happens. Letting both objects move is important, because many of the extra-solar planets (a.k.a. exoplanets) that we know about we only discovered because of the motion of the star that they are orbiting! So we will talk about the little white circle as a planet orbiting the sun instead of being something much smaller, like a comet or a satellite."
+  },
+  {
+    "objectID": "projects/exo.html#links-to-activity",
+    "href": "projects/exo.html#links-to-activity",
+    "title": "Exoplanets",
+    "section": "Links to Activity",
+    "text": "Links to Activity\n\nInstructions for Exoplanets\nCode for Exoplanets"
+  },
+  {
+    "objectID": "projects/exo.html#exoplanets-playlist",
+    "href": "projects/exo.html#exoplanets-playlist",
+    "title": "Exoplanets",
+    "section": "Exoplanets Playlist",
+    "text": "Exoplanets Playlist"
+  },
+  {
+    "objectID": "projects/earth.html",
+    "href": "projects/earth.html",
+    "title": "Earth Day",
+    "section": "",
+    "text": "We are going to estimate the impact of global warming at your location using a simple cosine function and some climate data."
+  },
+  {
+    "objectID": "projects/earth.html#links-to-activity",
+    "href": "projects/earth.html#links-to-activity",
+    "title": "Earth Day",
+    "section": "Links to Activity",
+    "text": "Links to Activity\n\nInstructions for Earth Day\nCode Editor for Earth Day"
+  },
+  {
+    "objectID": "projects/earth.html#earth-day-playlist",
+    "href": "projects/earth.html#earth-day-playlist",
+    "title": "Earth Day",
+    "section": "Earth Day Playlist",
+    "text": "Earth Day Playlist"
+  },
+  {
+    "objectID": "projects/bonk.html",
+    "href": "projects/bonk.html",
+    "title": "Bonk.io Clone",
+    "section": "",
+    "text": "One of the most popular and entertaining .io games out there right now is bonk.io If you’ve not played it you should definitely check it out. The game is pretty simple. You’re a little ball and you bounce off the ground and various objects. You have some ability to affect your motion, but if you get bounced by some object or some other player so that you fly off the board you lose the game. It’s a little bit like sumo wrestling that way."
+  },
+  {
+    "objectID": "projects/bonk.html#links-to-activity",
+    "href": "projects/bonk.html#links-to-activity",
+    "title": "Bonk.io Clone",
+    "section": "Links to Activity",
+    "text": "Links to Activity\n\nInstructions for Bonk.io Clone\nCode Editor for Bonk.io Clone"
+  },
+  {
+    "objectID": "projects/bonk.html#pong-and-bonk.io-playlist",
+    "href": "projects/bonk.html#pong-and-bonk.io-playlist",
+    "title": "Bonk.io Clone",
+    "section": "Pong and Bonk.io Playlist",
+    "text": "Pong and Bonk.io Playlist"
+  },
+  {
+    "objectID": "projects/movetheblob.html",
+    "href": "projects/movetheblob.html",
+    "title": "Move the Blob",
+    "section": "",
+    "text": "On the internet there are some fun games where you control a circle-looking-thing that you can move around and interact (and potentially destroy or absorb!) other circle-looking things controlled by other people. Two games that come to mind are diep.io and agar.io. There are plenty of others like them out there"
+  },
+  {
+    "objectID": "projects/movetheblob.html#links-to-activity",
+    "href": "projects/movetheblob.html#links-to-activity",
+    "title": "Move the Blob",
+    "section": "Links to Activity",
+    "text": "Links to Activity\n\nInstructions for Move the Blob\nCode Editor for Move the Blob"
+  },
+  {
+    "objectID": "projects/movetheblob.html#move-the-blob-video",
+    "href": "projects/movetheblob.html#move-the-blob-video",
+    "title": "Move the Blob",
+    "section": "Move the Blob Video",
+    "text": "Move the Blob Video\n\n&lt;p&gt;&lt;/iframe&lt;/p&gt;\n&lt;div id=\"quarto-navigation-envelope\" class=\"hidden\"&gt;\n&lt;p&gt;&lt;span class=\"hidden\" data-render-id=\"quarto-int-sidebar-title\"&gt;STEMcoding&lt;/span&gt; &lt;span class=\"hidden\" data-render-id=\"quarto-int-navbar-title\"&gt;STEMcoding&lt;/span&gt; &lt;span class=\"hidden\" data-render-id=\"quarto-int-navbar:Home\"&gt;Home&lt;/span&gt; &lt;span class=\"hidden\" data-render-id=\"quarto-int-navbar:/index.html\"&gt;/index.html&lt;/span&gt; &lt;span class=\"hidden\" data-render-id=\"quarto-int-navbar:STEMcoding Activities\"&gt;STEMcoding Activities&lt;/span&gt; &lt;span class=\"hidden\" data-render-id=\"quarto-int-navbar:/activities.html\"&gt;/activities.html&lt;/span&gt; &lt;span class=\"hidden\" data-render-id=\"quarto-int-navbar:About\"&gt;About&lt;/span&gt; &lt;span class=\"hidden\" data-render-id=\"quarto-int-navbar:/about.html\"&gt;/about.html&lt;/span&gt; &lt;span class=\"hidden\" data-render-id=\"quarto-int-navbar:People\"&gt;People&lt;/span&gt; &lt;span class=\"hidden\" data-render-id=\"quarto-int-navbar:/people.html\"&gt;/people.html&lt;/span&gt; &lt;span class=\"hidden\" data-render-id=\"quarto-navbar-tools:https://github.com/stemcoding\"&gt;https://github.com/stemcoding&lt;/span&gt;&lt;/p&gt;\n&lt;/div&gt;\n&lt;div id=\"quarto-meta-markdown\" class=\"hidden\"&gt;\n&lt;p&gt;&lt;span class=\"hidden\" data-render-id=\"quarto-metatitle\"&gt;STEMcoding - Move the Blob&lt;/span&gt; &lt;span class=\"hidden\" data-render-id=\"quarto-twittercardtitle\"&gt;STEMcoding - Move the Blob&lt;/span&gt; &lt;span class=\"hidden\" data-render-id=\"quarto-ogcardtitle\"&gt;STEMcoding - Move the Blob&lt;/span&gt; &lt;span class=\"hidden\" data-render-id=\"quarto-metasitename\"&gt;STEMcoding&lt;/span&gt; &lt;span class=\"hidden\" data-render-id=\"quarto-twittercarddesc\"&gt;&lt;/span&gt; &lt;span class=\"hidden\" data-render-id=\"quarto-ogcardddesc\"&gt;&lt;/span&gt;&lt;/p&gt;\n&lt;/div&gt;\n&lt;/section&gt;\n\n&lt;/main&gt; &lt;!-- /main --&gt;\n&lt;script id = \"quarto-html-after-body\" type=\"application/javascript\"&gt;\nwindow.document.addEventListener(\"DOMContentLoaded\", function (event) {\n  const toggleBodyColorMode = (bsSheetEl) =&gt; {\n    const mode = bsSheetEl.getAttribute(\"data-mode\");\n    const bodyEl = window.document.querySelector(\"body\");\n    if (mode === \"dark\") {\n      bodyEl.classList.add(\"quarto-dark\");\n      bodyEl.classList.remove(\"quarto-light\");\n    } else {\n      bodyEl.classList.add(\"quarto-light\");\n      bodyEl.classList.remove(\"quarto-dark\");\n    }\n  }\n  const toggleBodyColorPrimary = () =&gt; {\n    const bsSheetEl = window.document.querySelector(\"link#quarto-bootstrap\");\n    if (bsSheetEl) {\n      toggleBodyColorMode(bsSheetEl);\n    }\n  }\n  toggleBodyColorPrimary();  \n  const icon = \"\";\n  const anchorJS = new window.AnchorJS();\n  anchorJS.options = {\n    placement: 'right',\n    icon: icon\n  };\n  anchorJS.add('.anchored');\n  const isCodeAnnotation = (el) =&gt; {\n    for (const clz of el.classList) {\n      if (clz.startsWith('code-annotation-')) {                     \n        return true;\n      }\n    }\n    return false;\n  }\n  const onCopySuccess = function(e) {\n    // button target\n    const button = e.trigger;\n    // don't keep focus\n    button.blur();\n    // flash \"checked\"\n    button.classList.add('code-copy-button-checked');\n    var currentTitle = button.getAttribute(\"title\");\n    button.setAttribute(\"title\", \"Copied!\");\n    let tooltip;\n    if (window.bootstrap) {\n      button.setAttribute(\"data-bs-toggle\", \"tooltip\");\n      button.setAttribute(\"data-bs-placement\", \"left\");\n      button.setAttribute(\"data-bs-title\", \"Copied!\");\n      tooltip = new bootstrap.Tooltip(button, \n        { trigger: \"manual\", \n          customClass: \"code-copy-button-tooltip\",\n          offset: [0, -8]});\n      tooltip.show();    \n    }\n    setTimeout(function() {\n      if (tooltip) {\n        tooltip.hide();\n        button.removeAttribute(\"data-bs-title\");\n        button.removeAttribute(\"data-bs-toggle\");\n        button.removeAttribute(\"data-bs-placement\");\n      }\n      button.setAttribute(\"title\", currentTitle);\n      button.classList.remove('code-copy-button-checked');\n    }, 1000);\n    // clear code selection\n    e.clearSelection();\n  }\n  const getTextToCopy = function(trigger) {\n      const codeEl = trigger.previousElementSibling.cloneNode(true);\n      for (const childEl of codeEl.children) {\n        if (isCodeAnnotation(childEl)) {\n          childEl.remove();\n        }\n      }\n      return codeEl.innerText;\n  }\n  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {\n    text: getTextToCopy\n  });\n  clipboard.on('success', onCopySuccess);\n  if (window.document.getElementById('quarto-embedded-source-code-modal')) {\n    // For code content inside modals, clipBoardJS needs to be initialized with a container option\n    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)\n    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {\n      text: getTextToCopy,\n      container: window.document.getElementById('quarto-embedded-source-code-modal')\n    });\n    clipboardModal.on('success', onCopySuccess);\n  }\n    var localhostRegex = new RegExp(/^(?:http|https):\\/\\/localhost\\:?[0-9]*\\//);\n    var mailtoRegex = new RegExp(/^mailto:/);\n      var filterRegex = new RegExp('/' + window.location.host + '/');\n    var isInternal = (href) =&gt; {\n        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);\n    }\n    // Inspect non-navigation links and adorn them if external\n \tvar links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');\n    for (var i=0; i&lt;links.length; i++) {\n      const link = links[i];\n      if (!isInternal(link.href)) {\n        // undo the damage that might have been done by quarto-nav.js in the case of\n        // links that we want to consider external\n        if (link.dataset.originalHref !== undefined) {\n          link.href = link.dataset.originalHref;\n        }\n      }\n    }\n  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {\n    const config = {\n      allowHTML: true,\n      maxWidth: 500,\n      delay: 100,\n      arrow: false,\n      appendTo: function(el) {\n          return el.parentElement;\n      },\n      interactive: true,\n      interactiveBorder: 10,\n      theme: 'quarto',\n      placement: 'bottom-start',\n    };\n    if (contentFn) {\n      config.content = contentFn;\n    }\n    if (onTriggerFn) {\n      config.onTrigger = onTriggerFn;\n    }\n    if (onUntriggerFn) {\n      config.onUntrigger = onUntriggerFn;\n    }\n    window.tippy(el, config); \n  }\n  const noterefs = window.document.querySelectorAll('a[role=\"doc-noteref\"]');\n  for (var i=0; i&lt;noterefs.length; i++) {\n    const ref = noterefs[i];\n    tippyHover(ref, function() {\n      // use id or data attribute instead here\n      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');\n      try { href = new URL(href).hash; } catch {}\n      const id = href.replace(/^#\\/?/, \"\");\n      const note = window.document.getElementById(id);\n      if (note) {\n        return note.innerHTML;\n      } else {\n        return \"\";\n      }\n    });\n  }\n  const xrefs = window.document.querySelectorAll('a.quarto-xref');\n  const processXRef = (id, note) =&gt; {\n    // Strip column container classes\n    const stripColumnClz = (el) =&gt; {\n      el.classList.remove(\"page-full\", \"page-columns\");\n      if (el.children) {\n        for (const child of el.children) {\n          stripColumnClz(child);\n        }\n      }\n    }\n    stripColumnClz(note)\n    if (id === null || id.startsWith('sec-')) {\n      // Special case sections, only their first couple elements\n      const container = document.createElement(\"div\");\n      if (note.children && note.children.length &gt; 2) {\n        container.appendChild(note.children[0].cloneNode(true));\n        for (let i = 1; i &lt; note.children.length; i++) {\n          const child = note.children[i];\n          if (child.tagName === \"P\" && child.innerText === \"\") {\n            continue;\n          } else {\n            container.appendChild(child.cloneNode(true));\n            break;\n          }\n        }\n        if (window.Quarto?.typesetMath) {\n          window.Quarto.typesetMath(container);\n        }\n        return container.innerHTML\n      } else {\n        if (window.Quarto?.typesetMath) {\n          window.Quarto.typesetMath(note);\n        }\n        return note.innerHTML;\n      }\n    } else {\n      // Remove any anchor links if they are present\n      const anchorLink = note.querySelector('a.anchorjs-link');\n      if (anchorLink) {\n        anchorLink.remove();\n      }\n      if (window.Quarto?.typesetMath) {\n        window.Quarto.typesetMath(note);\n      }\n      // TODO in 1.5, we should make sure this works without a callout special case\n      if (note.classList.contains(\"callout\")) {\n        return note.outerHTML;\n      } else {\n        return note.innerHTML;\n      }\n    }\n  }\n  for (var i=0; i&lt;xrefs.length; i++) {\n    const xref = xrefs[i];\n    tippyHover(xref, undefined, function(instance) {\n      instance.disable();\n      let url = xref.getAttribute('href');\n      let hash = undefined; \n      if (url.startsWith('#')) {\n        hash = url;\n      } else {\n        try { hash = new URL(url).hash; } catch {}\n      }\n      if (hash) {\n        const id = hash.replace(/^#\\/?/, \"\");\n        const note = window.document.getElementById(id);\n        if (note !== null) {\n          try {\n            const html = processXRef(id, note.cloneNode(true));\n            instance.setContent(html);\n          } finally {\n            instance.enable();\n            instance.show();\n          }\n        } else {\n          // See if we can fetch this\n          fetch(url.split('#')[0])\n          .then(res =&gt; res.text())\n          .then(html =&gt; {\n            const parser = new DOMParser();\n            const htmlDoc = parser.parseFromString(html, \"text/html\");\n            const note = htmlDoc.getElementById(id);\n            if (note !== null) {\n              const html = processXRef(id, note);\n              instance.setContent(html);\n            } \n          }).finally(() =&gt; {\n            instance.enable();\n            instance.show();\n          });\n        }\n      } else {\n        // See if we can fetch a full url (with no hash to target)\n        // This is a special case and we should probably do some content thinning / targeting\n        fetch(url)\n        .then(res =&gt; res.text())\n        .then(html =&gt; {\n          const parser = new DOMParser();\n          const htmlDoc = parser.parseFromString(html, \"text/html\");\n          const note = htmlDoc.querySelector('main.content');\n          if (note !== null) {\n            // This should only happen for chapter cross references\n            // (since there is no id in the URL)\n            // remove the first header\n            if (note.children.length &gt; 0 && note.children[0].tagName === \"HEADER\") {\n              note.children[0].remove();\n            }\n            const html = processXRef(null, note);\n            instance.setContent(html);\n          } \n        }).finally(() =&gt; {\n          instance.enable();\n          instance.show();\n        });\n      }\n    }, function(instance) {\n    });\n  }\n      let selectedAnnoteEl;\n      const selectorForAnnotation = ( cell, annotation) =&gt; {\n        let cellAttr = 'data-code-cell=\"' + cell + '\"';\n        let lineAttr = 'data-code-annotation=\"' +  annotation + '\"';\n        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';\n        return selector;\n      }\n      const selectCodeLines = (annoteEl) =&gt; {\n        const doc = window.document;\n        const targetCell = annoteEl.getAttribute(\"data-target-cell\");\n        const targetAnnotation = annoteEl.getAttribute(\"data-target-annotation\");\n        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));\n        const lines = annoteSpan.getAttribute(\"data-code-lines\").split(\",\");\n        const lineIds = lines.map((line) =&gt; {\n          return targetCell + \"-\" + line;\n        })\n        let top = null;\n        let height = null;\n        let parent = null;\n        if (lineIds.length &gt; 0) {\n            //compute the position of the single el (top and bottom and make a div)\n            const el = window.document.getElementById(lineIds[0]);\n            top = el.offsetTop;\n            height = el.offsetHeight;\n            parent = el.parentElement.parentElement;\n          if (lineIds.length &gt; 1) {\n            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);\n            const bottom = lastEl.offsetTop + lastEl.offsetHeight;\n            height = bottom - top;\n          }\n          if (top !== null && height !== null && parent !== null) {\n            // cook up a div (if necessary) and position it \n            let div = window.document.getElementById(\"code-annotation-line-highlight\");\n            if (div === null) {\n              div = window.document.createElement(\"div\");\n              div.setAttribute(\"id\", \"code-annotation-line-highlight\");\n              div.style.position = 'absolute';\n              parent.appendChild(div);\n            }\n            div.style.top = top - 2 + \"px\";\n            div.style.height = height + 4 + \"px\";\n            div.style.left = 0;\n            let gutterDiv = window.document.getElementById(\"code-annotation-line-highlight-gutter\");\n            if (gutterDiv === null) {\n              gutterDiv = window.document.createElement(\"div\");\n              gutterDiv.setAttribute(\"id\", \"code-annotation-line-highlight-gutter\");\n              gutterDiv.style.position = 'absolute';\n              const codeCell = window.document.getElementById(targetCell);\n              const gutter = codeCell.querySelector('.code-annotation-gutter');\n              gutter.appendChild(gutterDiv);\n            }\n            gutterDiv.style.top = top - 2 + \"px\";\n            gutterDiv.style.height = height + 4 + \"px\";\n          }\n          selectedAnnoteEl = annoteEl;\n        }\n      };\n      const unselectCodeLines = () =&gt; {\n        const elementsIds = [\"code-annotation-line-highlight\", \"code-annotation-line-highlight-gutter\"];\n        elementsIds.forEach((elId) =&gt; {\n          const div = window.document.getElementById(elId);\n          if (div) {\n            div.remove();\n          }\n        });\n        selectedAnnoteEl = undefined;\n      };\n        // Handle positioning of the toggle\n    window.addEventListener(\n      \"resize\",\n      throttle(() =&gt; {\n        elRect = undefined;\n        if (selectedAnnoteEl) {\n          selectCodeLines(selectedAnnoteEl);\n        }\n      }, 10)\n    );\n    function throttle(fn, ms) {\n    let throttle = false;\n    let timer;\n      return (...args) =&gt; {\n        if(!throttle) { // first call gets through\n            fn.apply(this, args);\n            throttle = true;\n        } else { // all the others get throttled\n            if(timer) clearTimeout(timer); // cancel #2\n            timer = setTimeout(() =&gt; {\n              fn.apply(this, args);\n              timer = throttle = false;\n            }, ms);\n        }\n      };\n    }\n      // Attach click handler to the DT\n      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');\n      for (const annoteDlNode of annoteDls) {\n        annoteDlNode.addEventListener('click', (event) =&gt; {\n          const clickedEl = event.target;\n          if (clickedEl !== selectedAnnoteEl) {\n            unselectCodeLines();\n            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');\n            if (activeEl) {\n              activeEl.classList.remove('code-annotation-active');\n            }\n            selectCodeLines(clickedEl);\n            clickedEl.classList.add('code-annotation-active');\n          } else {\n            // Unselect the line\n            unselectCodeLines();\n            clickedEl.classList.remove('code-annotation-active');\n          }\n        });\n      }\n  const findCites = (el) =&gt; {\n    const parentEl = el.parentElement;\n    if (parentEl) {\n      const cites = parentEl.dataset.cites;\n      if (cites) {\n        return {\n          el,\n          cites: cites.split(' ')\n        };\n      } else {\n        return findCites(el.parentElement)\n      }\n    } else {\n      return undefined;\n    }\n  };\n  var bibliorefs = window.document.querySelectorAll('a[role=\"doc-biblioref\"]');\n  for (var i=0; i&lt;bibliorefs.length; i++) {\n    const ref = bibliorefs[i];\n    const citeInfo = findCites(ref);\n    if (citeInfo) {\n      tippyHover(citeInfo.el, function() {\n        var popup = window.document.createElement('div');\n        citeInfo.cites.forEach(function(cite) {\n          var citeDiv = window.document.createElement('div');\n          citeDiv.classList.add('hanging-indent');\n          citeDiv.classList.add('csl-entry');\n          var biblioDiv = window.document.getElementById('ref-' + cite);\n          if (biblioDiv) {\n            citeDiv.innerHTML = biblioDiv.innerHTML;\n          }\n          popup.appendChild(citeDiv);\n        });\n        return popup.innerHTML;\n      });\n    }\n  }\n});\n&lt;/script&gt;\n&lt;/div&gt; &lt;!-- /content --&gt;\n\n&lt;/body&gt;\n\n&lt;/html&gt;"
+  },
+  {
+    "objectID": "projects/pong.html",
+    "href": "projects/pong.html",
+    "title": "Pong",
+    "section": "",
+    "text": "In the classic game of Pong, there is a little ball that bounces around off various walls and objects. Importantly, the ball changes direction when it bounces but it never really slows down in speed. This is a big hint that the collisions that the ball is experiencing are elastic collisions."
+  },
+  {
+    "objectID": "projects/pong.html#links-to-activity",
+    "href": "projects/pong.html#links-to-activity",
+    "title": "Pong",
+    "section": "Links to Activity",
+    "text": "Links to Activity\n\nInstructions for Pong\nCode Editor for Pong"
+  },
+  {
+    "objectID": "projects/pong.html#pong-and-bonk.io-playlist",
+    "href": "projects/pong.html#pong-and-bonk.io-playlist",
+    "title": "Pong",
+    "section": "Pong and Bonk.io Playlist",
+    "text": "Pong and Bonk.io Playlist"
+  },
+  {
+    "objectID": "projects/apollo.html",
+    "href": "projects/apollo.html",
+    "title": "Apollo Moon Landing",
+    "section": "",
+    "text": "The goal is to gently land the the little blob on the ground. Just for fun we will use the moon’s gravity instead of earth’s gravity. The result will be a lot like the Apollo moon landing."
+  },
+  {
+    "objectID": "projects/apollo.html#links-to-activity",
+    "href": "projects/apollo.html#links-to-activity",
+    "title": "Apollo Moon Landing",
+    "section": "Links to Activity",
+    "text": "Links to Activity\n\nInstructions for Apollo Moon Landing\nApollo Moon Landing Code Editor"
+  },
+  {
+    "objectID": "projects/apollo.html#apollo-moon-landing-playlist",
+    "href": "projects/apollo.html#apollo-moon-landing-playlist",
+    "title": "Apollo Moon Landing",
+    "section": "Apollo Moon Landing Playlist",
+    "text": "Apollo Moon Landing Playlist"
+  },
+  {
+    "objectID": "tags/data_science.html",
+    "href": "tags/data_science.html",
+    "title": "Data Science",
+    "section": "",
+    "text": "Earth Day"
+  },
+  {
+    "objectID": "tags/enviro.html",
+    "href": "tags/enviro.html",
+    "title": "Environmental Science",
+    "section": "",
+    "text": "Earth Day"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "The STEMcoding project is an initiatve at Ohio State University that collaborates with teachers and researchers across the US\nNote: if you were looking for the non-profit STEMcoding Education Ohio you can find it at stemcodingohio.github.io"
+  },
+  {
+    "objectID": "flowchart.html",
+    "href": "flowchart.html",
+    "title": "Activities Flowchart",
+    "section": "",
+    "text": "flowchart LR\n  A[Lunar Descent] --&gt; B[Bellicose Birds]"
+  },
+  {
+    "objectID": "flowchart.html#lunar-descent",
+    "href": "flowchart.html#lunar-descent",
+    "title": "Activities Flowchart",
+    "section": "",
+    "text": "flowchart LR\n  A[Lunar Descent] --&gt; B[Bellicose Birds]"
+  },
+  {
+    "objectID": "flowchart.html#move-the-blob",
+    "href": "flowchart.html#move-the-blob",
+    "title": "Activities Flowchart",
+    "section": "Move the Blob",
+    "text": "Move the Blob\n\n\n\n\n\nflowchart LR\n  A[Move the Blob] --&gt; B[Accelerate the Blob]\n  B --&gt; C[Apollo Moon Landing]\n  C --&gt; D[Bird Launcher]"
+  },
+  {
+    "objectID": "flowchart.html#pong",
+    "href": "flowchart.html#pong",
+    "title": "Activities Flowchart",
+    "section": "Pong",
+    "text": "Pong\n\n\n\n\n\nflowchart LR\n  A[Pong] --&gt; B[Bonk.io Clone]"
+  },
+  {
+    "objectID": "flowchart.html#slingshot-with-gravity",
+    "href": "flowchart.html#slingshot-with-gravity",
+    "title": "Activities Flowchart",
+    "section": "Slingshot with Gravity!",
+    "text": "Slingshot with Gravity!\n\n\n\n\n\nflowchart LR\n  A[Slingshot with Gravity!] --&gt; B[Escape Velocity and Newtonian Black Holes]\n  A --&gt; C[Exoplanets]"
   }
 ]

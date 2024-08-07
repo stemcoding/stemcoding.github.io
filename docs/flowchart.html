@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>STEMcoding – Move the Blob</title>
+<title>STEMcoding – Activities Flowchart</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,22 +23,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,9 +66,12 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -78,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">STEMcoding</span>
     </a>
   </div>
@@ -89,19 +92,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../activities.html"> 
+    <a class="nav-link" href="./activities.html"> 
 <span class="menu-text">STEMcoding Activities</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../about.html"> 
+    <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../people.html"> 
+    <a class="nav-link" href="./people.html"> 
 <span class="menu-text">People</span></a>
   </li>  
 </ul>
@@ -121,8 +124,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#links-to-activity" id="toc-links-to-activity" class="nav-link active" data-scroll-target="#links-to-activity">Links to Activity</a></li>
-  <li><a href="#move-the-blob-video" id="toc-move-the-blob-video" class="nav-link" data-scroll-target="#move-the-blob-video">Move the Blob Video</a></li>
+  <li><a href="#lunar-descent" id="toc-lunar-descent" class="nav-link active" data-scroll-target="#lunar-descent">Lunar Descent</a></li>
+  <li><a href="#move-the-blob" id="toc-move-the-blob" class="nav-link" data-scroll-target="#move-the-blob">Move the Blob</a></li>
+  <li><a href="#pong" id="toc-pong" class="nav-link" data-scroll-target="#pong">Pong</a></li>
+  <li><a href="#slingshot-with-gravity" id="toc-slingshot-with-gravity" class="nav-link" data-scroll-target="#slingshot-with-gravity">Slingshot with Gravity!</a></li>
   </ul>
 </nav>
     </div>
@@ -131,14 +136,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Move the Blob</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">Middle School</div>
-    <div class="quarto-category">Intro HS</div>
-    <div class="quarto-category">Physical Science</div>
-    <div class="quarto-category">Javascript</div>
-  </div>
-  </div>
+<h1 class="title">Activities Flowchart</h1>
+</div>
 
 
 
@@ -154,28 +153,78 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>On the internet there are some fun games where you control a circle-looking-thing that you can move around and interact (and potentially destroy or absorb!) other circle-looking things controlled by other people. Two games that come to mind are diep.io and agar.io. There are plenty of others like them out there</p>
-<section id="links-to-activity" class="level2">
-<h2 class="anchored" data-anchor-id="links-to-activity">Links to Activity</h2>
-<ul>
-<li><a href="https://www.asc.ohio-state.edu/orban.14/stemcoding/milestones/movetheblob/movetheblob.html">Instructions for Move the Blob</a></li>
-<li><a href="https://editor.p5js.org/ChrisOrban/sketches/-TgnUQjvN">Code Editor for Move the Blob</a></li>
-</ul>
+<section id="lunar-descent" class="level2">
+<h2 class="anchored" data-anchor-id="lunar-descent">Lunar Descent</h2>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+  A[Lunar Descent] --&gt; B[Bellicose Birds]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 </section>
-<section id="move-the-blob-video" class="level2">
-<h2 class="anchored" data-anchor-id="move-the-blob-video">Move the Blob Video</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1Lt6IYGx9WA?si=p3QrcFjCO-sxl8ep" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-<p>&lt;/iframe</p>
-<div id="quarto-navigation-envelope" class="hidden">
-<p><span class="hidden" data-render-id="quarto-int-sidebar-title">STEMcoding</span> <span class="hidden" data-render-id="quarto-int-navbar-title">STEMcoding</span> <span class="hidden" data-render-id="quarto-int-navbar:Home">Home</span> <span class="hidden" data-render-id="quarto-int-navbar:/index.html">/index.html</span> <span class="hidden" data-render-id="quarto-int-navbar:STEMcoding Activities">STEMcoding Activities</span> <span class="hidden" data-render-id="quarto-int-navbar:/activities.html">/activities.html</span> <span class="hidden" data-render-id="quarto-int-navbar:About">About</span> <span class="hidden" data-render-id="quarto-int-navbar:/about.html">/about.html</span> <span class="hidden" data-render-id="quarto-int-navbar:People">People</span> <span class="hidden" data-render-id="quarto-int-navbar:/people.html">/people.html</span> <span class="hidden" data-render-id="quarto-navbar-tools:https://github.com/stemcoding">https://github.com/stemcoding</span></p>
+<section id="move-the-blob" class="level2">
+<h2 class="anchored" data-anchor-id="move-the-blob">Move the Blob</h2>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+  A[Move the Blob] --&gt; B[Accelerate the Blob]
+  B --&gt; C[Apollo Moon Landing]
+  C --&gt; D[Bird Launcher]
+</pre>
 </div>
-<div id="quarto-meta-markdown" class="hidden">
-<p><span class="hidden" data-render-id="quarto-metatitle">STEMcoding - Move the Blob</span> <span class="hidden" data-render-id="quarto-twittercardtitle">STEMcoding - Move the Blob</span> <span class="hidden" data-render-id="quarto-ogcardtitle">STEMcoding - Move the Blob</span> <span class="hidden" data-render-id="quarto-metasitename">STEMcoding</span> <span class="hidden" data-render-id="quarto-twittercarddesc"></span> <span class="hidden" data-render-id="quarto-ogcardddesc"></span></p>
+<p></p></figure><p></p>
 </div>
+</div>
+</div>
+</section>
+<section id="pong" class="level2">
+<h2 class="anchored" data-anchor-id="pong">Pong</h2>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+  A[Pong] --&gt; B[Bonk.io Clone]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="slingshot-with-gravity" class="level2">
+<h2 class="anchored" data-anchor-id="slingshot-with-gravity">Slingshot with Gravity!</h2>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+  A[Slingshot with Gravity!] --&gt; B[Escape Velocity and Newtonian Black Holes]
+  A --&gt; C[Exoplanets]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+
+
 </section>
 
 </main> <!-- /main -->
-<script id = "quarto-html-after-body" type="application/javascript">
+<script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -597,7 +646,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 </div> <!-- /content -->
 
-</body>
 
-</html>
-</iframe></section></main></div></body></html>
+
+
+</body></html>

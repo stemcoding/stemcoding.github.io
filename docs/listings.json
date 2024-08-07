@@ -2,15 +2,17 @@
   {
     "listing": "/activities.html",
     "items": [
+      "/projects/acceleratetheblob.html",
       "/projects/apollo.html",
       "/projects/birds.html",
       "/projects/birdslauncher.html",
-      "/projects/black.html",
       "/projects/bonk.html",
       "/projects/earth.html",
       "/projects/electro.html",
+      "/projects/black.html",
       "/projects/exo.html",
-      "/projects/movetheblob.html"
+      "/projects/movetheblob.html",
+      "/projects/pong.html"
     ]
   }
 ]

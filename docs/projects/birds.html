@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>STEMcoding – birds</title>
+<title>STEMcoding – Bellicose Birds</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -67,35 +67,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -150,9 +121,8 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#activity-introduction" id="toc-activity-introduction" class="nav-link active" data-scroll-target="#activity-introduction">Activity Introduction</a></li>
-  <li><a href="#links-to-activity" id="toc-links-to-activity" class="nav-link" data-scroll-target="#links-to-activity">Links to Activity</a></li>
-  <li><a href="#related-youtube-videos" id="toc-related-youtube-videos" class="nav-link" data-scroll-target="#related-youtube-videos">Related YouTube Videos</a></li>
+  <li><a href="#links-to-activity" id="toc-links-to-activity" class="nav-link active" data-scroll-target="#links-to-activity">Links to Activity</a></li>
+  <li><a href="#bellicose-birds-playlist" id="toc-bellicose-birds-playlist" class="nav-link" data-scroll-target="#bellicose-birds-playlist">Bellicose Birds Playlist</a></li>
   </ul>
 </nav>
     </div>
@@ -161,6 +131,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
+<h1 class="title">Bellicose Birds</h1>
   <div class="quarto-categories">
     <div class="quarto-category">Advanced HS</div>
     <div class="quarto-category">Physics</div>
@@ -184,12 +155,7 @@ window.Quarto = {
 
 
 <p><img src="../img/birds.png" class="img-fluid"></p>
-<section id="activity-introduction" class="level2">
-<h2 class="anchored" data-anchor-id="activity-introduction">Activity Introduction</h2>
-<p>If you have finished tinkering with the Lunar descent lab you can continue with this lab where we will configure the game to shoot a bird-shaped projectile. We call this game Bellicose Birds.</p>
-<p>From a physics perspective, bellicose birds is essentially the same as lunar descent except that there is no rocket thrust. The kinematic equations look like this: <span class="math display">\[\sum F_{\rm{net},x} = 0 = m \, a_x\]</span> <span class="math display">\[\sum F_{\rm{net},y} = - m g = m \, a_y\]</span> <span class="math display">\[ \Delta v_x = a_x \Delta t\]</span> <span class="math display">\[ \Delta v_y = a_y \Delta t\]</span> <span class="math display">\[ v_x = v_{x0} + \Delta v_x\]</span> <span class="math display">\[ v_y = v_{y0} + \Delta v_y\]</span> <span class="math display">\[ x = x_0 + v_x \cdot \Delta t \]</span> <span class="math display">\[ y = y_0 + v_y \cdot \Delta t \]</span></p>
-<p>The computer program we will work with here computes these equations over and over again, updating <span class="math inline">\(v_x\)</span>, <span class="math inline">\(v_y\)</span>, <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> depending on whether the thrust is turned on or off. If the thrust is turned off then <span class="math inline">\(a_x = 0\)</span> and <span class="math inline">\(\Delta v_x = 0\)</span> and the ship just continues with the same <span class="math inline">\(v_x\)</span> velocity. With the thrust off the <span class="math inline">\(v_y\)</span> velocity will continue to change with time due to gravity, <span class="math inline">\(\Delta v_y = -g \, \Delta t\)</span>.</p>
-</section>
+<p>We will configure the game to shoot a bird-shaped projectile. We call this game Bellicose Birds.</p>
 <section id="links-to-activity" class="level2">
 <h2 class="anchored" data-anchor-id="links-to-activity">Links to Activity</h2>
 <ul>
@@ -197,21 +163,9 @@ window.Quarto = {
 <li><a href="https://editor.p5js.org/ChrisOrban/sketches/ry2WnfTFl">Code Editor for Bellicose Birds</a></li>
 </ul>
 </section>
-<section id="related-youtube-videos" class="level2">
-<h2 class="anchored" data-anchor-id="related-youtube-videos">Related YouTube Videos</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/id2G0i5xCQo?si=VYb58b4Eugurv1B7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-</iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/oQqbYm3gozk?si=Ou0KSRyUl8DGEv2Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-</iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kIW96ZoWRG4?si=xNixrio-b5IeRpol" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-</iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_RUaXW0tk34?si=yfelWyU5znWtDiLE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-</iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mkc7ee7rvi0?si=HwuZlXTcELmRzFHV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-</iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WTWB1yArjSo?si=N4uigmJO-_jB7M55" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-</iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/k1Qh80lgyZk?si=zY5H1HwSvSjKSziF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
+<section id="bellicose-birds-playlist" class="level2">
+<h2 class="anchored" data-anchor-id="bellicose-birds-playlist">Bellicose Birds Playlist</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=D7_84MF2yjiqhvfY&amp;list=PLISRe8GegO8RgZIw-tyoptdQufcJX3Juh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
 </iframe>
 
 

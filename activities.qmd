@@ -7,3 +7,5 @@ listing:
   categories: true
   type: grid
 ---
+
+[View a flowchart of all STEMcoding activities here.](flowchart.qmd)

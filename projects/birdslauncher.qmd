@@ -1,4 +1,5 @@
 ---
+title: "Bird Launcher"
 image: ../img/birdslaunch.png
 categories:
   - Intro HS
@@ -10,28 +11,11 @@ categories:
 
 ![](../img/birdslaunch.png)
 
-## Activity Introduction
-
 If you have finished the Apollo moon landing activity, you can continue with this lab where we will configure the game to shoot a bird-shaped projectile.
-
-From a physics perspective, bird launcher is essentially the same as Apollo moon landing except that there is no rocket thrust. Later on in this exercise it will be helpful to remember the equations for the $x(t)$ and $y(t)$ of a projectile that is launched into the air at $t = 0$
-
-$$x(t)=x_0+v_{0_x}t$$
-
-$$y(t)=y_0+v_{0_y}t+\frac{1}{2}gt^2$$
-
-where $g=−9.8$ instead of $−1.63$ because we will be on the earth instead of the moon. Remember that there is no acceleration in the x direction, which is why the equation for x(t) is a bit simpler than the equation for $y(t)$
-
-
 
 ## Links to Activity
 * [Instructions for the Bird Launcher](https://www.asc.ohio-state.edu/orban.14/stemcoding/milestones/birdlauncher/birdlauncher.html)
 * [Code Editor for the Bird Launcher](https://editor.p5js.org/ChrisOrban/sketches/RJa82iYV7)
 
-## Related YouTube Videos
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gQI_OeCklSI?si=NlrTK1kNToTLUYkh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_1eiHFKOJlg?si=xcHS23Mv42phqDTz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ukWh0DQISLo?si=OUtMj0AxZFrblNA1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+## Bird Launcher Playlist
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=k6gU7s_jlwTrM8vb&amp;list=PLISRe8GegO8TLm45xuYLIwzFHdZcFGjV4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

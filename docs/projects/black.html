@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>STEMcoding – black</title>
+<title>STEMcoding – Escape Velocity and Newtonian Black Holes</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -67,35 +67,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -150,9 +121,8 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#activity-introduction" id="toc-activity-introduction" class="nav-link active" data-scroll-target="#activity-introduction">Activity Introduction</a></li>
-  <li><a href="#links-to-activity" id="toc-links-to-activity" class="nav-link" data-scroll-target="#links-to-activity">Links to Activity</a></li>
-  <li><a href="#related-youtube-videos" id="toc-related-youtube-videos" class="nav-link" data-scroll-target="#related-youtube-videos">Related YouTube Videos</a></li>
+  <li><a href="#links-to-activity" id="toc-links-to-activity" class="nav-link active" data-scroll-target="#links-to-activity">Links to Activity</a></li>
+  <li><a href="#escape-velocity-and-black-holes-playlist" id="toc-escape-velocity-and-black-holes-playlist" class="nav-link" data-scroll-target="#escape-velocity-and-black-holes-playlist">Escape Velocity and Black Holes Playlist</a></li>
   </ul>
 </nav>
     </div>
@@ -161,6 +131,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
+<h1 class="title">Escape Velocity and Newtonian Black Holes</h1>
   <div class="quarto-categories">
     <div class="quarto-category">Advanced HS</div>
     <div class="quarto-category">Astronomy</div>
@@ -185,13 +156,7 @@ window.Quarto = {
 
 
 <p><img src="../img/black.png" class="img-fluid"></p>
-<section id="activity-introduction" class="level2">
-<h2 class="anchored" data-anchor-id="activity-introduction">Activity Introduction</h2>
-<p>Hopefully you completed the Slingshot with Gravity! coding activity. That activity explores the behavior of objects like planets or comets interacting with a massive object like the sun. An interesting part of that activity is showing that the gravitational force between two objects is inversely proportional to the distance squared. We found that this must be true:</p>
-<p>$$F_{grav}=</p>
-<p>and we have this formula instead of something proportional to <span class="math inline">\(1/r^n\)</span> because the planets are observed to have elliptical orbits and as the coding activity shows you only get elliptical orbits if n=2.</p>
-<p>In this activity we are going to keep using this formula and we are going to explore some of the consequenses of it. In particular, we want to know how fast you have to be going to escape the earth’s gravitational field. We are also going to think about energy conservation and what it means for an object to be gravitationally “bound” by a massive orbit or not. These are all topics we dind’t get to in the Slingshot with Gravity activity.</p>
-</section>
+<p>That activity explores the behavior of objects like planets or comets interacting with a massive object like the sun.</p>
 <section id="links-to-activity" class="level2">
 <h2 class="anchored" data-anchor-id="links-to-activity">Links to Activity</h2>
 <ul>
@@ -199,21 +164,9 @@ window.Quarto = {
 <li><a href="https://editor.p5js.org/ChrisOrban/sketches/pPex7l8Ls">Code Editor for Escape Velocity and Newtonian Black Holes</a></li>
 </ul>
 </section>
-<section id="related-youtube-videos" class="level2">
-<h2 class="anchored" data-anchor-id="related-youtube-videos">Related YouTube Videos</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/FTQuPEt6CUQ?si=yfyEq6fXTVp0-KU-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-</iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mTuFS2AjxxA?si=Gg1Z8S-0xY1HGzUL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-</iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_tfkbsvIYLg?si=a94rQyPky2GtemoN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-</iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2np7ohl2exI?si=dJp7OUtgqvkNQWTG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-</iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mvBmG4vVYmE?si=Sa34xIS7nv2X70kk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-</iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/j8Ye2tVifxY?si=u8MGgVS0AW1Gp7fe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-</iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mFw8Dh2ngyM?si=BMeE5Bs1r4gv_AMe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
+<section id="escape-velocity-and-black-holes-playlist" class="level2">
+<h2 class="anchored" data-anchor-id="escape-velocity-and-black-holes-playlist">Escape Velocity and Black Holes Playlist</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=KXKFqxtGA6XlsUiI&amp;list=PLISRe8GegO8Ts-zQ82J22q4s9bZOTMvFw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
 </iframe>
 
 

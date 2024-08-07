@@ -1,0 +1,30 @@
+---
+title: "Activities Flowchart"
+---
+
+## Lunar Descent
+```{mermaid}
+flowchart LR
+  A[Lunar Descent] --> B[Bellicose Birds]
+```
+
+## Move the Blob
+```{mermaid}
+flowchart LR
+  A[Move the Blob] --> B[Accelerate the Blob]
+  B --> C[Apollo Moon Landing]
+  C --> D[Bird Launcher]
+```
+
+## Pong
+```{mermaid}
+flowchart LR
+  A[Pong] --> B[Bonk.io Clone]
+```
+
+## Slingshot with Gravity!
+```{mermaid}
+flowchart LR
+  A[Slingshot with Gravity!] --> B[Escape Velocity and Newtonian Black Holes]
+  A --> C[Exoplanets]
+```

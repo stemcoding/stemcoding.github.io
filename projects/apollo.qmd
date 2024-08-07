@@ -1,4 +1,5 @@
 ---
+title: "Apollo Moon Landing"
 image: ../img/apollo.png
 categories:
   - Intro HS
@@ -9,18 +10,12 @@ categories:
 
 ![](../img/apollo.png)
 
-## Activity Introduction
-
-If you have finished tinkering with Accelerate the blob you can continue with this lab where we will now add gravity to the game! The goal is to gently land the the little blob on the ground. Just for fun we will use the moon's gravity instead of earth's gravity. The result will be a lot like the Apollo moon landing.
+The goal is to gently land the the little blob on the ground. Just for fun we will use the moon's gravity instead of earth's gravity. The result will be a lot like the Apollo moon landing.
 
 ## Links to Activity
 * [Instructions for Apollo Moon Landing](https://www.asc.ohio-state.edu/orban.14/stemcoding/milestones/apollo/apollo.html)
 * [Apollo Moon Landing Code Editor](https://editor.p5js.org/ChrisOrban/sketches/tSbtQVQYz)
 
-## Related YouTube Videos
+## Apollo Moon Landing Playlist
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_Tky-sjjJSU?si=DoB1JvddRx4A2KK8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/f5OY_Vs_6ug?si=4SKdKrg-iHzfNch7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/K_VMlNMD_uE?si=-L11yZh8OcTdjg1E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=Fw1s7iuAEvBHrseV&amp;list=PLISRe8GegO8Spqb0pEAdUfPKmxmMwauYT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

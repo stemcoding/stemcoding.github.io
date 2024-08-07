@@ -1,4 +1,5 @@
 ---
+title: "Escape Velocity and Newtonian Black Holes"
 image: ../img/black.png
 categories:
   - Advanced HS
@@ -10,32 +11,12 @@ categories:
 
 ![](../img/black.png)
 
-## Activity Introduction
-
-Hopefully you completed the Slingshot with Gravity! coding activity. That activity explores the behavior of objects like planets or comets interacting with a massive object like the sun. An interesting part of that activity is showing that the gravitational force between two objects is inversely proportional to the distance squared. We found that this must be true:
-
-$$F_{grav}=\frac{GMm}{r^2}
-
-and we have this formula instead of something proportional to $1/r^n$ because the planets are observed to have elliptical orbits and as the coding activity shows you only get elliptical orbits if n=2.
-
-In this activity we are going to keep using this formula and we are going to explore some of the consequenses of it. In particular, we want to know how fast you have to be going to escape the earth's gravitational field. We are also going to think about energy conservation and what it means for an object to be gravitationally "bound" by a massive orbit or not. These are all topics we dind't get to in the Slingshot with Gravity activity.
+That activity explores the behavior of objects like planets or comets interacting with a massive object like the sun.
 
 ## Links to Activity
 * [Instructions for Escape Velocity and Newtonain Black Holes](https://www.asc.ohio-state.edu/orban.14/stemcoding/escape/escape.html)
 * [Code Editor for Escape Velocity and Newtonian Black Holes](https://editor.p5js.org/ChrisOrban/sketches/pPex7l8Ls)
 
-## Related YouTube Videos
+## Escape Velocity and Black Holes Playlist
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/FTQuPEt6CUQ?si=yfyEq6fXTVp0-KU-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mTuFS2AjxxA?si=Gg1Z8S-0xY1HGzUL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_tfkbsvIYLg?si=a94rQyPky2GtemoN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2np7ohl2exI?si=dJp7OUtgqvkNQWTG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mvBmG4vVYmE?si=Sa34xIS7nv2X70kk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/j8Ye2tVifxY?si=u8MGgVS0AW1Gp7fe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mFw8Dh2ngyM?si=BMeE5Bs1r4gv_AMe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=KXKFqxtGA6XlsUiI&amp;list=PLISRe8GegO8Ts-zQ82J22q4s9bZOTMvFw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
