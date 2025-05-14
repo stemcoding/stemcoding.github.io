@@ -4,6 +4,10 @@
 ## Latest Video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Y95pgziN2qk?si=FbAiBhJaMXlYgrS_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+## Latest Updates from Mastadon!
+
+<iframe allowfullscreen sandbox="allow-top-navigation allow-scripts allow-popups allow-popups-to-escape-sandbox" width="560" height="300" src="https://mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Fmastodon.social%2Fusers%2Fstemcoding&theme=light&size=100&header=false&replies=false&boosts=true"></iframe>
+
 
 ## Featured STEMcoding Activites
 
