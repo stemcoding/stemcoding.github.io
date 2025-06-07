@@ -1,0 +1,15 @@
+---
+title: "Particle Accelerator with Potential"
+image: ../img/particleacceleratorpotential.png
+categories:
+  - Middle School
+  - Intro HS
+  - Physical Science
+  - Physics
+  - Electromagnetism
+  - Javascript
+---
+
+## Links to Activity
+
+## Particle Accelerator with Potential Playlist

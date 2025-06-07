@@ -1,0 +1,14 @@
+---
+title: "Repulsion Between Two Charges"
+image: ../img/repulsion.png
+categories:
+  - Intro HS
+  - Advanced HS
+  - Physics
+  - Electromagnetism
+  - Javascript
+---
+
+## Links to Activity
+
+## Repulsion Between Two Charges Playlist

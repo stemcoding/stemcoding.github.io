@@ -14,5 +14,5 @@ In a typical college physics course you will at some point encounter the idea of
 * [Instructions for Planetoids with Momentum](https://www.asc.ohio-state.edu/orban.14//physics_coding/momentum.html)
 * [Code Editor for Planetoids with Momentum](https://editor.p5js.org/ChrisOrban/sketches/r1k7EV6rQ)
 
-## Planetoids Momentum Playlist
+## Planetoids with Momentum Playlist
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=YblHBon_dPV-KwlN&amp;list=PLISRe8GegO8TFJSfluDVaaxtdr3KzCh9Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

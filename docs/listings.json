@@ -13,9 +13,16 @@
       "/projects/exo.html",
       "/projects/lunar.html",
       "/projects/movetheblob.html",
+      "/projects/nightsky.html",
+      "/projects/eccentricity.html",
+      "/projects/keplers.html",
       "/projects/planetoids.html",
       "/projects/planetoidsmomentum.html",
-      "/projects/pong.html"
+      "/projects/planetoidstorque.html",
+      "/projects/planetoidsspring.html",
+      "/projects/pong.html",
+      "/projects/projectmercury.html",
+      "/projects/slingshotgravity.html"
     ]
   }
 ]

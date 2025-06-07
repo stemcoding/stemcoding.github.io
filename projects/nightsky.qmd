@@ -1,0 +1,13 @@
+---
+title: "Night Sky Simulator"
+image: ../img/nightsky.png
+categories:
+  - Advanced HS
+  - Astronomy
+  - Spreadsheets
+  - Javascript
+---
+
+## Links to Activity
+
+## Night Sky Simulator Playlist
