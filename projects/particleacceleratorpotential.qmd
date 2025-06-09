@@ -10,6 +10,8 @@ categories:
   - Javascript
 ---
 
-## Links to Activity
+This programming lab is a continuation of the [accelerator programming lab](particleacclerator.qmd) where a proton is accelerated from the electric field between two charged plates. The only difference between the earlier programming lab and this programming labis that we are going to think about the potential difference between the two charged plates.
 
-## Particle Accelerator with Potential Playlist
+## Links to Activity
+* [Instructions for Particle Accelerator with Potential](https://www.asc.ohio-state.edu/orban.14/physics_coding/potential.html)
+* [Particle Accelerator with Potential Code Editor](https://editor.p5js.org/ChrisOrban/sketches/SJXOX6YyM)

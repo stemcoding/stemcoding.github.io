@@ -1,0 +1,21 @@
+---
+title: "Pi Day Part 1"
+image: ../img/piday1.png
+categories:
+    - JavaScript
+    - Math
+    - Geometry
+    - Middle School
+    - Intro HS
+---
+
+You are trapped on a deserted island by a psychopath who is keeping you there until you can determine the digits of π out to many decimal places. All you have is the p5.js web editor! What to do!? (FYI: Try not to think about giving up and just enjoying the island.)
+
+## Links to Activity
+
+* [Instructions for Pi Day Part 1](https://www.asc.ohio-state.edu/orban.14/math_coding/pi_graphical2/index.html)
+* [Pi Day Part 1 Code Editor](http://alpha.editor.p5js.org/ChrisOrban/sketches/S1AGU0FCG)
+
+## Pi Day Part 1 Playlist
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=18UJXcDyV8YigxAv&amp;list=PLISRe8GegO8TbpZK2qvOi6y0kphRI-3xw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

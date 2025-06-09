@@ -14,3 +14,5 @@ This lab will guide you through coding up a web-based implementation of the clas
 * [Instructions for Planetoids](https://www.asc.ohio-state.edu/orban.14/stemcoding/milestones/planetoids/planetoids.html)
 * [Code Editor for Planetoids](https://editor.p5js.org/ChrisOrban/sketches/t40RIIWh2)
 
+## Planetoids Playlist
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=Yp30h3RY1lxlDQaN&amp;list=PLISRe8GegO8TCeE9nkk8zUtxiNY9fLDQI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

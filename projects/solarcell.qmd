@@ -1,0 +1,12 @@
+---
+title: "Solar Cell Data Analysis"
+image: ../img/solarcell.png
+categories:
+    - Intro HS
+    - Data Science
+    - Spreadsheets
+---
+
+## Links to Activity
+
+## Solar Cell Data Analysis Playlist

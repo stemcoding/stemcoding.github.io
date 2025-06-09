@@ -9,6 +9,16 @@ categories:
   - Trigonometry
 ---
 
+This activity involves taking the code at the end of the Slingshot with Gravity exercise and doing some experiments with that code to learn more about the special properties of objects that are experiencing the gravitational pull from a central object. This central object can be a star or a black hole or a neutron star, etc. and the object in orbit can be a comet or an asteroid or a space capsule or even a whole planet. Usually this topic is connected to discussions of the motion of planets around a star.
+
+Kepler made a number of important discoveries about the motion of the planets in the solar system.  In the Slingshot with Gravity activity we created a code that demonstrated that 1/r2 forces like gravity naturally produce elliptical orbits. Hopefully you played around with that code to try to see if you could make orbits other than an ellipse. It turns out that as long as the object does not have enough kinetic energy to totally escape the gravitational field of the star it will produce some kind of elliptical orbit. Not only will the trajectory be an ellipse, the object will follow this same path every time it moves around the star. This result is often referred to as Kepler's first law. Kepler was an astronomer who looked closely at the orbits of planets like Venus and Mars.
+
+In this activity we will consider Kepler's second law. Kepler's second law has to do with how quickly the planet moves in its elliptical orbit. Kepler showed that the area that the planet "sweeps out" over some interval of time is the same regardless what part of the orbit the planet is in. If you've never heard of Kepler's laws the sentence you just read about planets sweeping things out will probably not make much sense
+
 ## Links to Activity
+* [Instructions for Ortbital Motion: Kepler's Second Law](https://editor.p5js.org/ChrisOrban/sketches/ugz2ZhrdR)
+*[Orbital Motion: Kepler's Second Law Code Editor](https://editor.p5js.org/ChrisOrban/sketches/ugz2ZhrdR)
 
 ## Orbital Motion: Kepler's Second Law Playlist
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=oaXriQtjc21qyUaq&amp;list=PLISRe8GegO8QEuOfiPRqylsNeJhmJYDWw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

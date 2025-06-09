@@ -1,0 +1,12 @@
+---
+title: "Good Figures vs. Bad Figures"
+image: ../img/.png
+categories:
+  - All Ages
+  - Data Science
+---
+
+## Links to Activity
+
+## Good Figures vs. Bad Figures Playlist
+

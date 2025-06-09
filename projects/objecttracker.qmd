@@ -1,0 +1,35 @@
+---
+title: "Object Tracker"
+image: ../img/objecttracker.png
+categories:
+    - Intro HS
+    - Advanced HS
+    - Math
+    - Physics
+    - Physical Science
+    - Spreadsheets
+    - JavaScript
+
+---
+
+Now you can record your own direct measurement videos and analyze them with p5.js.
+
+Note: The STEMcoding Object Tracker works best in chrome and edge!
+
+It can work in other browsers (safari, firefox, etc.) but it may run slower or not at all due to some memory problems.
+
+## Links to Activity
+
+### Part 1: Track the Object
+* [Instructions for Part 1](https://www.asc.ohio-state.edu/orban.14/stemcoding/datascience/objecttracker/part1/)
+* [Part 1 Code Editor]()
+
+### Part 2: Analyze Height vs. Time
+* [Instructions for Part 2](https://www.asc.ohio-state.edu/orban.14/stemcoding/datascience/objecttracker/part2/)
+
+### Part 2: Analyze Velocity vs. Time
+* [Instructions for Part 3](https://www.asc.ohio-state.edu/orban.14/stemcoding/datascience/objecttracker/part3/)
+
+## Object Tracker Playlist
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=G6MRV-tlbJi2QiFQ&amp;list=PLISRe8GegO8SpJkhkIp3OpC-0bDucCdbd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

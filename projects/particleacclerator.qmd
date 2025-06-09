@@ -10,6 +10,13 @@ categories:
   - Javascript
 ---
 
+In this exercise we will make a simulation of a particle being accelerated between two plates.
+
 ## Links to Activity
 
+* [Instructions for Particle Accelerator](https://www.asc.ohio-state.edu/orban.14/physics_coding/accelerator.html)
+* [Particle Accelerator Code Editor](https://editor.p5js.org/ChrisOrban/sketches/SJXOX6YyM)
+
 ## Particle Accelerator Playlist 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=fVcPguiSdic98UbL&amp;list=PLISRe8GegO8T41mQc5Wzb3TGp_DEpjrXS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

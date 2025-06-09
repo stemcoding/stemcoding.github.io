@@ -8,6 +8,16 @@ categories:
   - Javascript
 ---
 
+![Simulated Night Sky](../img/nightsky.png)
+
+The image above is not an actual picture of the night sky or any real star field (maybe you've already noticed that its a fake!). It is a randomly-generated night sky from a computer program we are going to build. We are going to learn a little bit about stars and then we are going to think about why some stars appear brighter in the sky than others and what it means.
+
+An interesting thing about this activity is that you will be able to download a spreadsheet with the list of randomly generated stars. In the directions here we will use Google sheets to analyze that data but you can use any spreadsheet program you are comfortable with (Excel, Libreoffice, Apple -- Numbers)
+
 ## Links to Activity
+* [Instructions for Night Sky Simulator](https://www.asc.ohio-state.edu/orban.14/stemcoding/stars/stars.html)
+* [Night Sky Simulator Code Editor](https://editor.p5js.org/ChrisOrban/sketches/Wxxt3Czln)
 
 ## Night Sky Simulator Playlist
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=E7B0AFIkx4MZYoXk&amp;list=PLISRe8GegO8RuO9xu7tQ5sebUr0VBPWwU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

@@ -1,0 +1,28 @@
+---
+title: "Air Pressure Versus Height"
+image: ../img/airpressure.png
+categories:
+    - Intro HS
+    - Math
+    - Physical Science
+    - Physics
+    - Atmospheric Science
+    - Data Science
+    - Spreadsheets
+---
+
+
+It turns out nearly all smartphones (iPhones and Android models) and
+nearly all iPads have air pressure sensors (a.k.a. barometers). There are
+a couple of apps you can use to get a pressure reading but the one that
+seems to work best on all platforms is the Arduino Science Journal app. The goal of this activity is to use the air pressure sensor in a smartphone to collect pressure data at different heights and compare the data to known physical models.
+
+## Links to Activity
+Instructions for the activity, both data collection and data analysis, are given in the playlist shown below.
+
+* [Student Worksheet](https://www.asc.ohio-state.edu/orban.14/stemcoding/pressure/barometer_lab.pdf)
+* [Arduino Science Journal app for data collection.](https://www.arduino.cc/education/science-journal)
+
+## Air Pressure Versus Height Playlist
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=5eEP4kuDg8pHe3rV&amp;list=PLISRe8GegO8T-sA9RDNylWGWa7MX8E4s3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

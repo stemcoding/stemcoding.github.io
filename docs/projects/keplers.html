@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.40">
+<meta name="generator" content="quarto-1.4.554">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>STEMcoding – Orbital Motion: Kepler’s Second Law</title>
+<title>STEMcoding - Orbital Motion: Kepler’s Second Law</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -83,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -102,7 +102,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools tools-wide">
+          <div class="quarto-navbar-tools tools-wide">
     <a href="https://github.com/stemcoding" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
     <a href="https://www.youtube.com/@STEMcoding" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-youtube"></i></a>
     <a href="https://discord.gg/bsWgqcqwCE" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-discord"></i></a>
@@ -153,11 +153,19 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>This activity involves taking the code at the end of the Slingshot with Gravity exercise and doing some experiments with that code to learn more about the special properties of objects that are experiencing the gravitational pull from a central object. This central object can be a star or a black hole or a neutron star, etc. and the object in orbit can be a comet or an asteroid or a space capsule or even a whole planet. Usually this topic is connected to discussions of the motion of planets around a star.</p>
+<p>Kepler made a number of important discoveries about the motion of the planets in the solar system. In the Slingshot with Gravity activity we created a code that demonstrated that 1/r2 forces like gravity naturally produce elliptical orbits. Hopefully you played around with that code to try to see if you could make orbits other than an ellipse. It turns out that as long as the object does not have enough kinetic energy to totally escape the gravitational field of the star it will produce some kind of elliptical orbit. Not only will the trajectory be an ellipse, the object will follow this same path every time it moves around the star. This result is often referred to as Kepler’s first law. Kepler was an astronomer who looked closely at the orbits of planets like Venus and Mars.</p>
+<p>In this activity we will consider Kepler’s second law. Kepler’s second law has to do with how quickly the planet moves in its elliptical orbit. Kepler showed that the area that the planet “sweeps out” over some interval of time is the same regardless what part of the orbit the planet is in. If you’ve never heard of Kepler’s laws the sentence you just read about planets sweeping things out will probably not make much sense</p>
 <section id="links-to-activity" class="level2">
 <h2 class="anchored" data-anchor-id="links-to-activity">Links to Activity</h2>
+<ul>
+<li><a href="https://editor.p5js.org/ChrisOrban/sketches/ugz2ZhrdR">Instructions for Ortbital Motion: Kepler’s Second Law</a> *<a href="https://editor.p5js.org/ChrisOrban/sketches/ugz2ZhrdR">Orbital Motion: Kepler’s Second Law Code Editor</a></li>
+</ul>
 </section>
 <section id="orbital-motion-keplers-second-law-playlist" class="level2">
 <h2 class="anchored" data-anchor-id="orbital-motion-keplers-second-law-playlist">Orbital Motion: Kepler’s Second Law Playlist</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=oaXriQtjc21qyUaq&amp;list=PLISRe8GegO8QEuOfiPRqylsNeJhmJYDWw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
+</iframe>
 
 
 </section>
@@ -198,7 +206,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const onCopySuccess = function(e) {
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -230,29 +249,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
   });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
-    });
-    clipboardModal.on('success', onCopySuccess);
-  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -260,7 +257,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {

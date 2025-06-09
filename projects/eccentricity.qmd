@@ -9,5 +9,5 @@ categories:
 ---
 
 ## Links to Activity
-
-## Orbital Motion: Eccentricity Playlist
+* [Instructions for Orbital Motion: Eccentricity](https://www.asc.ohio-state.edu/orban.14/stemcoding/eccentricity/eccentricity.html)
+* [Orbital Motion: Eccentricity Code Editor](https://editor.p5js.org/ChrisOrban/sketches/soYzi8Hsj)

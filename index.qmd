@@ -1,8 +1,10 @@
 ---
+execute:
+  freeze: auto  # re-render only when source changes
 ---
 
 ## Latest Video
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Y95pgziN2qk?si=FbAiBhJaMXlYgrS_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Lf16ZX0JCtQ?si=umf7qsClqwFlw3_H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Latest Updates from Mastadon!
 
