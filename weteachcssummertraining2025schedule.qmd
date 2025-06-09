@@ -1,0 +1,67 @@
+---
+title: "WeTeach_CS 2025 Summer Teacher Training Schedule"
+---
+
+We plan to do the 28 hours of professional development over 8 days with 3.5 hours per day. We will meet weekdays from June 23 - July 2
+
+**Note**: Tentative Schedule does not include periodic breaks.
+
+## Week 1, Monday 
+* Introducing the instructors (Orban – physics, Butler – physics, data science, Zimmerman – math), Introduce the STEMcoding project (15 minutes)
+* Briefly explain expectations and how the workshop will work, stipends, schedule (10 minutes)
+* Group teachers into breakout rooms by discipline and let them introduce each other and what they hope to get out of the course (20 mins) 
+* Big picture talk on data science / data literacy / computational thinking and computer science and “computational” science (15 minutes)
+* Read the first chapter of Effective Data Visualization by Stephanie Evergreen (15 minutes)
+* Zoom breakouts – how do you already implement data literacy into your courses? What could you improve or emphasize? Any thoughts on the “big picture”? (20 min)
+* Introducing the CO2 air quality measurement activity and its connection to public health (15 minutes)
+* In zoom breakouts, use your CO2 sensor to measure CO2 levels in each room of your dwelling as well as outside, record that data in a spreadsheet, and figure out how to configure the “conditional formatting” so the color of each cell reflects the air quality (1 hour)
+* Presentation and activity on “data cleaning” and the “data cycle” (40 min)
+
+## Week 1, Tuesday (Air Pressure)
+* Interactive discussion of data collection with smartphones, useful apps (including Arduino science journal) and sensors built into most smartphones(30 mins)
+* Introduction to Air Pressure versus height Activity (15 mins)
+* Time for Participants to Collect Air Pressure Data Around House (Have Example Data if Unable to) (45 mins)
+* Demonstration of Air Pressure Activity, Graphing, Line Fitting, Extracting Relevant Constants (1.5 hr)
+* Discuss extensions to the air pressure activity including drone and balloon measurements, and how curve fitting relates to artificial intelligence (30 min)
+
+
+## Week 1, Wednesday (Object Tracker)
+* Introduction to Object Tracker Activity, Explanation of Data Collection (30 mins)
+* Time for Participants to collect videos to process (45 mins)
+* Object Tracker Demonstration, Processing Collected Videos, Downloading CSV Files (30 mins)
+Analyzing Object Tracker Data in Excel, Data Cleaning, Extracting Relevant Physical Constants (30 mins)
+* Additional Excel Activity to Practice Data Cleaning, Graphing, Equation Fitting (1.25 hr)
+
+## Week 1, Thursday (Pi Day Activities)
+* Introduction to p5.js, STEMcoding learning management system (30 min)
+* Pi Day Hour of Code Activity (Serial) (1 Hours)
+* Pi Day Activity (Parallel), Introduction to Parallel Computing (1.5 hr)
+* Other STEMcoding resources for connecting math and CS (30 mins)
+
+
+## Week 1, Friday (Environmental / Atmospheric Data Analysis)
+* Solar Cell data analysis (seasonal variation + long term decline) (1 hour)
+* Earth Day Activity (using climate data from your location) (1 hour)
+* Ozone layer healing vs year analysis using NASA data (1 hour)
+* Possibilities with other data sets (Concrete Island effect, Pacific Garbage Patch) (30 minutes)
+
+
+## Week 2, Monday (Physics of Video Games Activities + Hidden Figures activity)
+* Introduction to Activities (30 mins)
+* Introduction to Relevant Equations (30 mins)
+* Move the Blob Demonstration (30 mins)
+* Time for Participants to Experiment with Accelerate the Blob, Apollo Moon Lander (1 hr)
+* Introduction to “Project Mercury” activities that includes calculations relevant to the Hidden Figures movie (1 hr)
+* Wrap up and Possible Extensions on Activities to the Classroom (15 mins)
+
+
+## Week 2, Tuesday (Probability with the random number generator in p5.js)
+* Explain how the random function can take different types of arguments in p5.js (a.k.a. function overloading) (15 min)
+* “That was totally random (part 1)” p5.js activity (30 min)
+* “That was totally random (part 2)” p5.js activity which considers dice throws (1 hour)
+* Game of Risk p5.js activities Part 1 & 2 (105 minutes)
+
+
+## Week 2, Wednesday 
+* Any extra questions about activities covered, or activities we did not have time to go over (1 hour)
+* Zoom breakouts / check ins / individual plans to do more data science and CS in their classes + any extra questions about any activities covered (2.5 hours)

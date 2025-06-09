@@ -10,6 +10,7 @@ website:
       - about.qmd
       - href: people.qmd
         text: People
+      - teachertraining.qmd
     tools:
       - icon: github
         href: https://github.com/stemcoding
