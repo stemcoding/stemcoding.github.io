@@ -12,8 +12,6 @@ website:
         text: People
       - teachertraining.qmd
     tools:
-      - icon: github
-        href: https://github.com/stemcoding
       - icon: youtube
         href: https://www.youtube.com/@STEMcoding
       - icon: discord
