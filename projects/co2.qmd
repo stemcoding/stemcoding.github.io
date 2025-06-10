@@ -1,6 +1,6 @@
 ---
 title: "CO2 Survey"
-image: ../img/.png
+image: ../img/co2.png
 categories:
     - Intro HS
     - Data Science
