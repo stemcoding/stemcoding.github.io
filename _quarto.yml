@@ -3,6 +3,7 @@ project:
   output-dir: docs
 
 website:
+  favicon: img/STEMcoding_favicon.png
   navbar:
     left:
       - text: "<img src='/img/STEMcoding_wide.png' alt='STEMcoding Logo' style='height: 40px; margin-top: -10px;'>"
