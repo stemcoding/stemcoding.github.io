@@ -7,11 +7,14 @@ website:
     left:
       - text: "<img src='/img/STEMcoding_wide.png' alt='STEMcoding Logo' style='height: 40px; margin-top: -10px;'>"
         href: index.qmd
+      - about.qmd    
       - activities.qmd
-      - about.qmd
       - href: people.qmd
         text: People
       - teachertraining.qmd
+      - href: feed.qmd
+        text: Feed
+      - calendar.qmd
     tools:
       - icon: youtube
         href: https://www.youtube.com/STEMcoding

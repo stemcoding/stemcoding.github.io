@@ -1,5 +1,5 @@
 ---
-title: "Teacher Training"
+title: "Training"
 ---
 
 ## WeTeach_CS Summer 2025 Texas Teacher Training
