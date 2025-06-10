@@ -9,10 +9,8 @@ title: "Meet the STEMcoding Team!"
 |----------|----------|
 |  ![Chris Orban](img/orban.jpeg)|  ![Scott Zimmerman](img/zimmerman.jpeg) |
 | **Chris Orban** Prof. of Physics at OSU Marion| **Scott Zimmerman** Prof of Mathematics at OSU Marion|
-| ![Jessica Kulp](img/kulp.jpeg)  | 
-| **Jessica Kulp** Grad student OSU EHE| **Kelsey Badger** Research Data Librarian|
-|  [![Julie Butler](img/butler.png)](https://www.mountunion.edu/dr-julie-butler)   |  |    
-| **Julie Butler** University of Mount Union| |
+| ![Jessica Kulp](img/kulp.jpeg)  | <img width=225 src="img/butler.png">   |  
+| **Jessica Kulp** Grad student OSU EHE | **Julie Butler** University of Mount Union| |
 
 
 ## Former Team Members
