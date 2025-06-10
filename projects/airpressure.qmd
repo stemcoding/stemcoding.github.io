@@ -1,6 +1,6 @@
 ---
 title: "Air Pressure Versus Height"
-image: ../img/airpressure.png
+image: ../img/airpressure2.png
 categories:
     - Intro HS
     - Math
