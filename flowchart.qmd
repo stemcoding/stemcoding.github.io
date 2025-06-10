@@ -6,19 +6,21 @@ format:
       theme: forest
 ---
 
-## Move the Blob
+## Physics of video games (intro level, no trigonometry)
 ```{mermaid}
 flowchart LR
   A[Move the Blob] --> B[Accelerate the Blob]
   B --> C[Apollo Moon Landing]
-  C --> D[Bird Launcher]
+  B --> D[Bird Launcher]
 ```
 
-## Planetoids
+## Physics of video games (some trigonometry)
 ```{mermaid}
 flowchart LR
   A[Planetoids] --> B[Lunar Descent]
   B --> C[Bellicose Birds]
+  C --> D[Planetoids with Momentum]
+  D --> E[Planetoids with a Spring]
 ```
 
 ## Pong
@@ -27,7 +29,7 @@ flowchart LR
   A[Pong] --> B[Bonk.io Clone]
 ```
 
-## Slingshot with Gravity!
+## Astronomy activities
 ```{mermaid}
 flowchart LR
   A[Slingshot with Gravity!] --> B[Escape Velocity and Newtonian Black Holes]
