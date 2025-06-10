@@ -14,6 +14,14 @@ Think back to the momentum exercise. The little ship can collide with a "blob" a
 * [Instructions for Planetoids with a Spring](https://www.asc.ohio-state.edu/orban.14//physics_coding/spring.html)
 * [Planetoids with a Spring Code Editor](https://editor.p5js.org/ChrisOrban/sketches/BJm9lxHC7)
 
+## Learning Objectives
+At the end of this lesson students will...
+
+* Apply Hooke’s Law, Newton’s 2nd Law, and constant acceleration kinematic equations to code a blob on a spring to behave appropriately when it is collided by a spaceship.
+* Evaluate the theoretical half-cycle time of the coded spring.
+* Create a code which accounts for the dampening effect of the spring with time.
+
+
 ## Planetoids with a Spring Playlist
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=1Z5qE-xe6tBU_j0R&amp;list=PLISRe8GegO8Tvk8OGWoVAOYslcdSMFRnV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

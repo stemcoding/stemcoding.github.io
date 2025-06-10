@@ -14,6 +14,13 @@ You may recall the last programming exercise that involved a [particle being acc
 *[Instructions for Magnetic Force](https://www.asc.ohio-state.edu/orban.14/physics_coding/bfield.html)
 *[Magnetic Force Code Editor](https://editor.p5js.org/ChrisOrban/sketches/HJ1UdD9yM)
 
+## Learning Objectives
+At the end of this lesson students will...
+
+* Apply the magnetic force relationship with Newton’s 2nd law to code the trajectory of a moving, positive particle in a magnetic field
+* Understand how changes in charge, mass, and magnetic field direction affect the trajectory of the particle.
+
+
 ## Magnetic Force Playlist
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=-CK4Ytj5WaX5JJj2&amp;list=PLISRe8GegO8ShKCTLUQp2mcF2CQEnlr1M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

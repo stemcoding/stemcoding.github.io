@@ -15,3 +15,11 @@ This programming lab is a continuation of the [accelerator programming lab](part
 ## Links to Activity
 * [Instructions for Particle Accelerator with Potential](https://www.asc.ohio-state.edu/orban.14/physics_coding/potential.html)
 * [Particle Accelerator with Potential Code Editor](https://editor.p5js.org/ChrisOrban/sketches/SJXOX6YyM)
+
+## Learning Objectives
+At the end of this lesson students will...
+
+* Understand that electric potential can appropriately model how electric fields affect charged particles.
+* Understand how a charged particle's motion is affected by the electric potential of a field.
+* Analyze the situation to calculate the final velocity of a particle after experiencing an electric field using electric potential relationships.
+

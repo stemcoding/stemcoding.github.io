@@ -16,6 +16,13 @@ We will configure the game to shoot a bird-shaped projectile. We call this game 
 * [Instructions for Bellicose Birds](https://www.asc.ohio-state.edu/orban.14/physics_p5js/bellicosebirds.html)
 * [Code Editor for Bellicose Birds](https://editor.p5js.org/ChrisOrban/sketches/ry2WnfTFl)
 
+## Learning Objectives
+At the end of this lesson students will...
+
+* Apply kinematic equations to code an 
+object's motion during and after being launched into the air.
+* Evaluate optimal launch angles using the simulation.
+
 ## Bellicose Birds Playlist
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=D7_84MF2yjiqhvfY&amp;list=PLISRe8GegO8RgZIw-tyoptdQufcJX3Juh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

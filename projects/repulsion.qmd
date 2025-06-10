@@ -15,6 +15,13 @@ Ever since scientists realized that the sun is powered by nuclear fusion reactio
 * [Instructions for Repulsion Between Two Charges](https://www.asc.ohio-state.edu/orban.14/physics_coding/repulsion.html)
 * [Repulsion Between Two Charges Code Editor](https://editor.p5js.org/ChrisOrban/sketches/rJWaPwckz)
 
+## Learning Objectives
+At the end of this lesson students will...
+
+* Apply Coulomb’s law to encode the repulsive force experienced by two protons moving along a straight path
+* Evaluate how changing mass and charge affect the repulsive force between two protons.
+
+
 ## Repulsion Between Two Charges Playlist
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=iXXVXwEzBX-69gxH&amp;list=PLISRe8GegO8Rs0kSf2VgOqZSMZxisGX6_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

@@ -14,6 +14,13 @@ This programming lab is unlike the previous ones in that it involves circuits. S
 * [Instructions for RC Circuits](https://www.asc.ohio-state.edu/orban.14//stemcoding/RCcircuit/RCcircuits.html)
 * [RC Circuits Code Editor](https://editor.p5js.org/ChrisOrban/sketches/HkslU7UAQ)
 
+## Learning Objectives
+At the end of this lesson students will...
+
+* Apply Ohm’s law to code a RC circuit so it behaves in a physically accurate way.
+* Evaluate how changing various values of a circuit (Capacitance, resistance) affects the dissipation time of a capacitor.
+
+
 ## RC Circuits Playlist
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=_N2LWXJGdo_KfkeW&amp;list=PLISRe8GegO8RBIvIu_9f9ZuuRpz86sqLC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

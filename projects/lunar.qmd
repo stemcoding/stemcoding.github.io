@@ -14,5 +14,14 @@ If you have finished tinkering with the Planetoids lab you can continue with thi
 * [Instructions for Lunar Descent](https://www.asc.ohio-state.edu/orban.14//physics_coding/lunardescent.html)
 * [Code Editor for Lunar Descent](https://editor.p5js.org/ChrisOrban/sketches/H1a7VQYkf)
 
+## Learning Objecties
+At the end of this lesson students will...
+
+* Apply kinematic equations to code a ships descent through a gravitational field.
+* Apply Newton’s laws of motion to code how an object behaves under different force conditions.
+* Apply gravitational field strength to the base planetoids game.
+* Evaluate the free fall time displayed on the simulation for realism.
+
+
 ## Lunar Descent Playlist
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=-gkt8OpHqP9f9zwU&amp;list=PLISRe8GegO8Q492Lxtg7PyIRPOaCNNhXn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

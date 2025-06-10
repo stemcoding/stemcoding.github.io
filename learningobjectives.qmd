@@ -2,4 +2,104 @@
 title: "Learning Objectives"
 ---
 
-Under Construction!
+## [Accelerate the Blob](projects/acceleratetheblob.qmd)
+At the end of this lesson students will...
+
+* Understand basic p5.js syntax, specifically the difference between “+=” and “=”.
+* Compare and contrast acceleration and velocity pertaining to objects moving along a straight line path.
+* Analyze an object's motion using multiple representations, specifically graphical, pictorial, vector, and algebraic.
+
+## [Bellicose Birds](projects/birds.qmd)
+At the end of this lesson students will...
+
+* Apply kinematic equations to code an 
+object's motion during and after being launched into the air.
+* Evaluate optimal launch angles using the simulation.
+
+
+## [Lunar Descent](projects/lunar.qmd)
+At the end of this lesson students will...
+
+* Apply kinematic equations to code a ships descent through a gravitational field.
+* Apply Newton’s laws of motion to code how an object behaves under different force conditions.
+* Apply gravitational field strength to the base planetoids game.
+* Evaluate the free fall time displayed on the simulation for realism.
+
+## [Magnetic Force](projects/magneticforce.qmd)
+At the end of this lesson students will...
+
+* Apply the magnetic force relationship with Newton’s 2nd law to code the trajectory of a moving, positive particle in a magnetic field
+* Understand how changes in charge, mass, and magnetic field direction affect the trajectory of the particle.
+
+
+
+## [Move The Blob](projects/movetheblob.qmd)
+At the end of this lesson students will...
+
+* Understand basic p5.js syntax, specifically the difference between “+=” and “=”.
+* Explain how position and velocity are related using visual evidence from the game.
+* Create a simple “Move the Blob” game which allows them to move a circle using arrow keys.
+
+## [Particle Accelerator](projects/particleaccelerator.qmd)
+At the end of this lesson students will...
+
+* Explain how force and acceleration are related using visual evidence from the game.
+* Understand how a charged particle's motion is affected by its mass and charge while in an electric field.
+* Analyze the situation to calculate the final velocity of a particle after being immersed in an electric field.
+
+## [Particle Accelerator with Potential](projects/particleacceleratorpotential.qmd)
+At the end of this lesson students will...
+
+* Understand that electric potential can appropriately model how electric fields affect charged particles.
+* Understand how a charged particle's motion is affected by the electric potential of a field.
+* Analyze the situation to calculate the final velocity of a particle after experiencing an electric field using electric potential relationships.
+
+
+## [Planetoids](projects/planetoids.qmd)
+ At the end of this lesson students will...
+
+* Apply kinematic equations to code an object's motion when force is applied
+* Apply Newton’s laws of motion to code how an object behaves under different net force conditions
+* Evaluate how changing mass can optimize spacecraft maneuverability
+
+## [Planetoids with Momentum](projects/planetoidsmomentum.qmd)
+At the end of this lesson students will...
+
+* Apply conservation of momentum equations in 1-D to properly code a perfectly inelastic collision.
+* Apply conservation of momentum equations in 2-D along with basic geometry to properly code a perfectly inelastic collision.
+
+## [Planetoids with a Spring](projects/planetoidsspring/qmd)
+At the end of this lesson students will...
+
+* Apply Hooke’s Law, Newton’s 2nd Law, and constant acceleration kinematic equations to code a blob on a spring to behave appropriately when it is collided by a spaceship.
+* Evaluate the theoretical half-cycle time of the coded spring.
+* Create a code which accounts for the dampening effect of the spring with time.
+
+
+## [Planetoids with Torque](projects/planetoidstorque.qmd)
+At the end of this lesson students will...
+
+* Apply rotational kinematic equations to code an object's motion when force is applied at a distance from a fulcrum
+* Apply Newton’s laws of motion to code how an object behaves under different net torque conditions
+* Evaluate how changing mass, length, and thrust force can optimize spacecraft maneuverability
+
+## [RC Circuots](projects/rc.qmd)
+At the end of this lesson students will...
+
+* Apply Ohm’s law to code a RC circuit so it behaves in a physically accurate way.
+* Evaluate how changing various values of a circuit (Capacitance, resistance) affects the dissipation time of a capacitor.
+
+
+## [Repulsion between Two Charges](projects/repulsion.qmd)
+At the end of this lesson students will...
+
+* Apply Coulomb’s law to encode the repulsive force experienced by two protons moving along a straight path
+* Evaluate how changing mass and charge affect the repulsive force between two protons.
+
+## [Wave Interference](projects/waveinterference.qmd)
+ By the end of this activity students will…
+
+* Understand how wave interference affects the observed volume at various locations in a room.
+* Create a simulation to observe where waves have constructive and destructive interference in a room with two speakers.
+
+

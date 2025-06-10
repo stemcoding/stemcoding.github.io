@@ -14,6 +14,14 @@ In real life, objects accelerate up to a particlar velocity. This exercise will 
 * [Instructions for Accelerate the Blob](https://www.asc.ohio-state.edu/orban.14/stemcoding/milestones/acceleratetheblob/acceleratetheblob.html)
 * [Code Editor for Accelerate the Blob](https://editor.p5js.org/ChrisOrban/sketches/KYCS2HDeH)
 
+## Learning Objectives
+At the end of this lesson students will...
+
+* Understand basic p5.js syntax, specifically the difference between “+=” and “=”.
+* Compare and contrast acceleration and velocity pertaining to objects moving along a straight line path.
+* Analyze an object's motion using multiple representations, specifically graphical, pictorial, vector, and algebraic.
+
+
 ## Accelerate the Blob Videos
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/RWnXEGgey2s?si=H0GEhTmHDNawQgYm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

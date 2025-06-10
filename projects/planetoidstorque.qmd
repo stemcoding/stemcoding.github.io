@@ -14,6 +14,13 @@ In this lab we will make the planetoids game more realistic by allowing the spac
 * [Instructions for Planetoids with Torque](https://www.asc.ohio-state.edu/orban.14//physics_coding/torque.html)
 * [Planetouds with Torque Code Editor](https://editor.p5js.org/ChrisOrban/sketches/BJzCa2fe-)
 
+## Learning Objectives
+At the end of this lesson students will...
+
+* Apply rotational kinematic equations to code an object's motion when force is applied at a distance from a fulcrum
+* Apply Newton’s laws of motion to code how an object behaves under different net torque conditions
+* Evaluate how changing mass, length, and thrust force can optimize spacecraft maneuverability
+
 ## Planetoids with Torque Playlist
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=YlAeGKKTC4Tl9Cab&amp;list=PLISRe8GegO8QrEtBJhPs9NSnU4n_OKFCc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

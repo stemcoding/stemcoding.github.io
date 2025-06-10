@@ -16,6 +16,13 @@ This programming lab is designed to illustrate the idea of wave interference. Th
 * [Instructions for Wave Interferece](https://www.asc.ohio-state.edu/orban.14//physics_coding/sound.html)
 * [Wave Interference Code Editor](https://editor.p5js.org/ChrisOrban/sketches/rkMi3KSQ-)
 
+## Learning Objectives
+ By the end of this activity students will…
+
+* Understand how wave interference affects the observed volume at various locations in a room.
+* Create a simulation to observe where waves have constructive and destructive interference in a room with two speakers.
+
+
 ## Wave Interference Playlist
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=mQm9Y4vDAemK4Vpi&amp;list=PLISRe8GegO8QxeQsjz2tL43svuq16nqct" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
