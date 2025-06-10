@@ -3,9 +3,10 @@ project:
   output-dir: docs
 
 website:
-  title: "STEMcoding"
   navbar:
     left:
+      - text: "<img src='img/STEMcoding_wide.png' alt='STEMcoding Logo' style='height: 40px; margin-top: -10px;'>"
+        href: index.qmd
       - activities.qmd
       - about.qmd
       - href: people.qmd
@@ -13,7 +14,13 @@ website:
       - teachertraining.qmd
     tools:
       - icon: youtube
-        href: https://www.youtube.com/@STEMcoding
+        href: https://www.youtube.com/STEMcoding
+      - icon: instagram
+        href: https://www.instagram.com/stemcoding/  
+      - icon: facebook
+        href: https://www.facebook.com/stemcodingproject
+      - icon: mastodon 
+        href: https://mastodon.social/@STEMcoding
       - icon: discord
         href: https://discord.gg/bsWgqcqwCE        
 
