@@ -1,6 +1,7 @@
 project:
   type: website
   output-dir: docs
+  title: STEMcoding
 
 website:
   favicon: img/stemcoding_favicon_final.png
