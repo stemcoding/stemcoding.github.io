@@ -6,6 +6,7 @@ project:
 website:
   favicon: img/stemcoding_favicon_final.png
   navbar:
+    title: false
     left:
       - text: "<img src='/img/STEMcoding_wide.png' alt='STEMcoding Logo' style='height: 40px; margin-top: -10px;'>"
         href: index.qmd
