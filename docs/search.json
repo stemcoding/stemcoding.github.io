@@ -1,17 +1,17 @@
 [
   {
-    "objectID": "index.html#latest-updates-from-mastodon",
-    "href": "index.html#latest-updates-from-mastodon",
+    "objectID": "index.html",
+    "href": "index.html",
     "title": "STEMcoding",
-    "section": "Latest Updates from Mastodon!",
-    "text": "Latest Updates from Mastodon!"
+    "section": "",
+    "text": "The STEMcoding project is a partnership between faculty members and students at Ohio State University and the University of Mount Union\nThe STEMcoding project exists to re-imagine introductory STEM courses like math and science with computer science and data science in mind. Our activities are used in intro level college courses and high school courses.\nWe love to create activities that each align with relevant math, science and computer science standards. Some of our physical science activities appear on the “model curriculum” examples distributed by the Ohio Department of Education and Workforce. We are also working to create a year-long data science curriculum.\nWe are very proud of the STEMcoding youtube channel! We have released over 100 videos featuring faculty and students at Ohio State University and the University of Mount Union.\n\n\nWe hope you enjoy this site! Check out our Social Media Feed to see what we’ve been up to lately, or our Calendar to see upcoming events and trainings. Please join our Discord to reach out or ask questions!"
   },
   {
-    "objectID": "index.html#featured-stemcoding-activites",
-    "href": "index.html#featured-stemcoding-activites",
+    "objectID": "index.html#welcome-to-the-stemcoding-landing-page",
+    "href": "index.html#welcome-to-the-stemcoding-landing-page",
     "title": "STEMcoding",
-    "section": "Featured STEMcoding Activites",
-    "text": "Featured STEMcoding Activites"
+    "section": "",
+    "text": "The STEMcoding project is a partnership between faculty members and students at Ohio State University and the University of Mount Union\nThe STEMcoding project exists to re-imagine introductory STEM courses like math and science with computer science and data science in mind. Our activities are used in intro level college courses and high school courses.\nWe love to create activities that each align with relevant math, science and computer science standards. Some of our physical science activities appear on the “model curriculum” examples distributed by the Ohio Department of Education and Workforce. We are also working to create a year-long data science curriculum.\nWe are very proud of the STEMcoding youtube channel! We have released over 100 videos featuring faculty and students at Ohio State University and the University of Mount Union.\n\n\nWe hope you enjoy this site! Check out our Social Media Feed to see what we’ve been up to lately, or our Calendar to see upcoming events and trainings. Please join our Discord to reach out or ask questions!"
   },
   {
     "objectID": "people.html",
@@ -789,6 +789,20 @@
     "title": "Training",
     "section": "",
     "text": "Schedule"
+  },
+  {
+    "objectID": "datascience.html",
+    "href": "datascience.html",
+    "title": "Data Science",
+    "section": "",
+    "text": "More info about our data science initiative coming soon!"
+  },
+  {
+    "objectID": "calendar.html",
+    "href": "calendar.html",
+    "title": "Calendar",
+    "section": "",
+    "text": "Would you like to invite us to speak to your group or event? Would you like us to run a workshop? We can do in person or online* as we are able. Email Chris Orban at chris.m.orban@gmail.com to reach out.\n*In online presentations we can do a green screen within zoom. It’s pretty cool."
   },
   {
     "objectID": "standards.html",

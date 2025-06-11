@@ -18,6 +18,7 @@ website:
       - href: feed.qmd
         text: Feed
       - calendar.qmd
+      - datascience.qmd
     tools:
       - icon: youtube
         href: https://www.youtube.com/STEMcoding

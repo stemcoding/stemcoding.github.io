@@ -3,18 +3,16 @@ execute:
   freeze: auto  # re-render only when source changes
 ---
 
-## Latest Video
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Lf16ZX0JCtQ?si=umf7qsClqwFlw3_H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+## Welcome to the STEMcoding Landing Page!
 
-## Latest Updates from Mastodon!
+The STEMcoding project is a partnership between [faculty members and students](people.qmd) at [Ohio State University](http://osu.edu) and the [University of Mount Union](http://mountunion.edu)
 
-<iframe allowfullscreen sandbox="allow-top-navigation allow-scripts allow-popups allow-popups-to-escape-sandbox" width="560" height="300" src="https://mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Fmastodon.social%2Fusers%2Fstemcoding&theme=light&size=100&header=false&replies=false&boosts=true"></iframe>
+The STEMcoding project exists to re-imagine introductory STEM courses like math and science with computer science and data science in mind. Our [activities](activities.qmd) are used in intro level college courses and high school courses.
 
+We love to create activities that <b>*each*</b> align with relevant math, [science](http://go.osu.edu/ngss) <b>*and*</b> computer science standards. Some of our physical science activities appear on the "model curriculum" examples distributed by the Ohio Department of Education and Workforce. We are also working to create a year-long data science curriculum.
 
-## Featured STEMcoding Activites
+We are very proud of the [STEMcoding youtube channel!](http://youtube.com/STEMcoding)  We have released over 100 videos featuring faculty and students at Ohio State University and the University of Mount Union.
 
-| |  |  |
-|----------|----------|----------|
-| [![Apollo Moon Landing](img/apollo.png)](projects/apollo.qmd)   | [![Angry Birds](img/birds.png)](projects/birds.qmd)   | [![Birds Launch](img/birdslaunch.png)](projects/birdslauncher.qmd)   |
-| [![Black](img/black.png)](projects/black.qmd)   | [![Bonk](img/bonk.png)](projects/bonk.qmd)  | [![Earth Day](img/earth.png)](projects/earth.qmd)   |
-| [![Electro](img/electro.png)](projects/electro.qmd)    | [![Exo](img/exo.png)](projects/exo.qmd)   |    |
+<iframe style="display: block; margin-left: auto; margin-right: auto;"  width="560" height="315" src="https://www.youtube.com/embed/Lf16ZX0JCtQ?si=umf7qsClqwFlw3_H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+We hope you enjoy this site! Check out our [Social Media Feed](feed.qmd) to see what we've been up to lately, or our [Calendar](calendar.qmd) to see upcoming events and trainings. Please join our [Discord](https://discord.gg/bsWgqcqwCE) to reach out or ask questions!

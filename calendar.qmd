@@ -2,6 +2,10 @@
 title: "Calendar"
 ---
 
+Would you like to invite us to speak to your group or event? Would you like us to run a workshop? We can do in person or online* as we are able. Email Chris Orban at [chris.m.orban@gmail.com](mailto:chris.m.orban@gmail.com) to reach out.
+
+*In online presentations we can do a green screen within zoom. It's pretty cool.
+
 <iframe style="border: 0;" src="https://calendar.google.com/calendar/embed?src=stemcodingvideos%40gmail.com&amp;ctz=America%2FNew_York" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
 
