@@ -13,6 +13,6 @@ We love to create activities that <b>*each*</b> align with relevant math, [scien
 
 We are very proud of the [STEMcoding youtube channel!](http://youtube.com/STEMcoding)  We have released over 100 videos featuring faculty and students at Ohio State University and the University of Mount Union.
 
-<iframe style="display: block; margin-left: auto; margin-right: auto;"  width="560" height="315" src="https://www.youtube.com/embed/Lf16ZX0JCtQ?si=umf7qsClqwFlw3_H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe style="display: block; margin-left: auto; margin-right: auto;"  width="560" height="315" src="https://www.youtube.com/embed/pqXiZLnXe2U?si=0nSckcTS2osfQXVF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 We hope you enjoy this site! Check out our [Social Media Feed](feed.qmd) to see what we've been up to lately, or our [Calendar](calendar.qmd) to see upcoming events and trainings. Please join our [Discord](https://discord.gg/bsWgqcqwCE) to reach out or ask questions!
