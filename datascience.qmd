@@ -2,7 +2,7 @@
 title: "Data Science"
 ---
 
-<img src="/img/stemcoding_data_science.png" width=500 style="display: block; margin-left: auto; margin-right: auto;" >
+<img src="/img/datascience.jpeg" width=800 style="display: block; margin-left: auto; margin-right: auto;" >
 
 More info about our data science initiative coming soon!
 
