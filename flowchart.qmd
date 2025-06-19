@@ -1,5 +1,5 @@
 ---
-title: "Activities Flowcharts"
+title: "Activity Flowcharts / Prerequisites"
 format:
   html:
     mermaid:
@@ -10,8 +10,21 @@ format:
 ```{mermaid}
 flowchart LR
   A[Move the Blob] --> B[Accelerate the Blob]
+  click A "http://go.osu.edu/movetheblob2" "Move the Blob"
   B --> C[Apollo Moon Landing]
   B --> D[Bird Launcher]
+```
+
+```{mermaid}
+flowchart LR
+  A[Pong] --> B[Bonk.io Clone]
+```
+
+## STEMcoding Object Tracker
+
+```{mermaid}
+flowchart LR
+  A[Object Tracker Part 1. Track the Object] --> B[Object Tracker Part 2. Analyze Height vs Time] --> C[Object Tracker Part 3. Analyze Velocity vs Time]
 ```
 
 ## Physics of video games (some trigonometry)
@@ -23,15 +36,45 @@ flowchart LR
   D --> E[Planetoids with a Spring]
 ```
 
-## Pong
-```{mermaid}
-flowchart LR
-  A[Pong] --> B[Bonk.io Clone]
-```
+Note that Planetoids with Momentum considers perfectly inelastic collisions in 2D. Pong is often paired with Planetoids with Momentum because Pong considers elastic collisions in 2D where a ball collides with a wall.
+
 
 ## Astronomy activities
+
+Slingshot with gravity is a demonstration of Kepler's 1st law (Law of Ellipses). Orbital Motion: Kepler's 2nd law includes a challenge relating to Kepler's 3rd law (Law of Periods)
+
 ```{mermaid}
 flowchart LR
-  A[Slingshot with Gravity!] --> B[Escape Velocity and Newtonian Black Holes]
-  A --> C[Exoplanets]
+  A[Slingshot with Gravity!] --> B[Orbital Motion: Kepler's 2nd law]
+  A --> C[Orbital Motion: Eccentricity]
+  A --> D[Exoplanets!]
 ```
+
+Note: Slingshot with Gravity contains some trigonometry, but the activities that follow it do not
+
+### Project Mercury (Hidden Figures celebration)
+
+Project Mercury (Part 1. Circular Orbit) contains much of the same code as Slingshot with Gravity, but the tasks only involve changing the parameters. The main math concept required is some algebra and taking a square root, so it can be used in less advanced classes. By contrast, Project Mercury (Part 2. Reentry) is significantly more difficult with changes to the code and algebra 2 or pre-calculus level calculations.
+
+```{mermaid}
+flowchart LR
+  A["Project Mercury <br> (Part 1. Circular Orbit)"] --> B["Project Mercury <br>(Part 2. Reentry)"]
+```
+
+### Other Astronomy activities
+
+Escape Velocity / Newtonian Black Holes uses much of the same code as Slingshot with Gravity, but arguably one can skip Slingshot with Gravity and jump into Escape Velocity / Newtonian Black Holes.
+
+Night sky simulator is not a gravity simulation so there are no pre-requisites for that activity other than some familiarity with programming and p5.js
+
+
+## Electromagnetism activities
+
+```{mermaid}
+flowchart LR
+  A[Particle Accelerator] --> B[Particle Accelerator with Potential]
+  B --> C[Point charge repulsion]
+  B --> D[Magnetic forces]
+```
+
+Other electromagnetism labs that do not have prerequisites are RC circuit and Wave Interference

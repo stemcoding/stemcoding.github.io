@@ -781,7 +781,7 @@
     "href": "publications.html",
     "title": "Publications",
     "section": "",
-    "text": "Orban, C. “Blurring the Boundaries between Science, Math, and Computer Science” (2024) Proceedings of the 55th ACM Technical Symposium on Computer Science Education. doi:10.1145/3626253.363558\n\nOrban, C., Zimmerman, S., Kulp, J. T., Boughton, J., Perrico, Z., Rapp, B., Teeling-Smith, R. “Methods to Simplify Object Tracking in Video Data” The Physics Teacher, 61, 576-579 (2023)\n\nOrban, C. and Teeling-Smith, R. ``Computational Thinking in Introductory Physics’’ The Physics Teacher (2020)\n\nOrban, C., Teeling-Smith, R. M., Smith, J. R. H., and Porter, C. D. “A Hybrid Approach for Using Programming Exercises in Introductory Physics”, 2018, American Journal of Physics \n\nOrban, C., Porter, C. D., Brecht, N. K., Teeling-Smith, R. M., Harper, K. A., “A novel approach for using programming exercises in electromagnetism coursework”(Accepted to PERC 2017, in press)"
+    "text": "Orban, C. “Blurring the Boundaries between Science, Math, and Computer Science” (2024) Proceedings of the 55th ACM Technical Symposium on Computer Science Education. doi:10.1145/3626253.363558\n\nOrban, C., Zimmerman, S., Kulp, J. T., Boughton, J., Perrico, Z., Rapp, B., Teeling-Smith, R. “Methods to Simplify Object Tracking in Video Data” The Physics Teacher, 61, 576-579 (2023)\n\nOrban, C. and Teeling-Smith, R. ``Computational Thinking in Introductory Physics’’ The Physics Teacher (2020)\n\nOrban, C., Teeling-Smith, R. M., Smith, J. R. H., and Porter, C. D. “A Hybrid Approach for Using Programming Exercises in Introductory Physics”, 2018, American Journal of Physics \n\nOrban, C., Porter, C. D., Brecht, N. K., Teeling-Smith, R. M., Harper, K. A., “A novel approach for using programming exercises in electromagnetism coursework” PERC 2017"
   },
   {
     "objectID": "activities.html",
@@ -1542,37 +1542,44 @@
   {
     "objectID": "flowchart.html",
     "href": "flowchart.html",
-    "title": "Activities Flowcharts",
+    "title": "Activity Flowcharts / Prerequisites",
     "section": "",
-    "text": "flowchart LR\n  A[Move the Blob] --&gt; B[Accelerate the Blob]\n  B --&gt; C[Apollo Moon Landing]\n  B --&gt; D[Bird Launcher]"
+    "text": "flowchart LR\n  A[Move the Blob] --&gt; B[Accelerate the Blob]\n  click A \"http://go.osu.edu/movetheblob2\" \"Move the Blob\"\n  B --&gt; C[Apollo Moon Landing]\n  B --&gt; D[Bird Launcher]\n\n\n\n\n\n\n\n\n\n\n\nflowchart LR\n  A[Pong] --&gt; B[Bonk.io Clone]"
   },
   {
     "objectID": "flowchart.html#physics-of-video-games-intro-level-no-trigonometry",
     "href": "flowchart.html#physics-of-video-games-intro-level-no-trigonometry",
-    "title": "Activities Flowcharts",
+    "title": "Activity Flowcharts / Prerequisites",
     "section": "",
-    "text": "flowchart LR\n  A[Move the Blob] --&gt; B[Accelerate the Blob]\n  B --&gt; C[Apollo Moon Landing]\n  B --&gt; D[Bird Launcher]"
+    "text": "flowchart LR\n  A[Move the Blob] --&gt; B[Accelerate the Blob]\n  click A \"http://go.osu.edu/movetheblob2\" \"Move the Blob\"\n  B --&gt; C[Apollo Moon Landing]\n  B --&gt; D[Bird Launcher]\n\n\n\n\n\n\n\n\n\n\n\nflowchart LR\n  A[Pong] --&gt; B[Bonk.io Clone]"
+  },
+  {
+    "objectID": "flowchart.html#stemcoding-object-tracker",
+    "href": "flowchart.html#stemcoding-object-tracker",
+    "title": "Activity Flowcharts / Prerequisites",
+    "section": "STEMcoding Object Tracker",
+    "text": "STEMcoding Object Tracker\n\n\n\n\n\nflowchart LR\n  A[Object Tracker Part 1. Track the Object] --&gt; B[Object Tracker Part 2. Analyze Height vs Time] --&gt; C[Object Tracker Part 3. Analyze Velocity vs Time]"
   },
   {
     "objectID": "flowchart.html#physics-of-video-games-some-trigonometry",
     "href": "flowchart.html#physics-of-video-games-some-trigonometry",
-    "title": "Activities Flowcharts",
+    "title": "Activity Flowcharts / Prerequisites",
     "section": "Physics of video games (some trigonometry)",
-    "text": "Physics of video games (some trigonometry)\n\n\n\n\n\nflowchart LR\n  A[Planetoids] --&gt; B[Lunar Descent]\n  B --&gt; C[Bellicose Birds]\n  C --&gt; D[Planetoids with Momentum]\n  D --&gt; E[Planetoids with a Spring]"
-  },
-  {
-    "objectID": "flowchart.html#pong",
-    "href": "flowchart.html#pong",
-    "title": "Activities Flowcharts",
-    "section": "Pong",
-    "text": "Pong\n\n\n\n\n\nflowchart LR\n  A[Pong] --&gt; B[Bonk.io Clone]"
+    "text": "Physics of video games (some trigonometry)\n\n\n\n\n\nflowchart LR\n  A[Planetoids] --&gt; B[Lunar Descent]\n  B --&gt; C[Bellicose Birds]\n  C --&gt; D[Planetoids with Momentum]\n  D --&gt; E[Planetoids with a Spring]\n\n\n\n\n\n\nNote that Planetoids with Momentum considers perfectly inelastic collisions in 2D. Pong is often paired with Planetoids with Momentum because Pong considers elastic collisions in 2D where a ball collides with a wall."
   },
   {
     "objectID": "flowchart.html#astronomy-activities",
     "href": "flowchart.html#astronomy-activities",
-    "title": "Activities Flowcharts",
+    "title": "Activity Flowcharts / Prerequisites",
     "section": "Astronomy activities",
-    "text": "Astronomy activities\n\n\n\n\n\nflowchart LR\n  A[Slingshot with Gravity!] --&gt; B[Escape Velocity and Newtonian Black Holes]\n  A --&gt; C[Exoplanets]"
+    "text": "Astronomy activities\nSlingshot with gravity is a demonstration of Kepler’s 1st law (Law of Ellipses). Orbital Motion: Kepler’s 2nd law includes a challenge relating to Kepler’s 3rd law (Law of Periods)\n\n\n\n\n\nflowchart LR\n  A[Slingshot with Gravity!] --&gt; B[Orbital Motion: Kepler's 2nd law]\n  A --&gt; C[Orbital Motion: Eccentricity]\n  A --&gt; D[Exoplanets!]\n\n\n\n\n\n\nNote: Slingshot with Gravity contains some trigonometry, but the activities that follow it do not\n\nProject Mercury (Hidden Figures celebration)\nProject Mercury (Part 1. Circular Orbit) contains much of the same code as Slingshot with Gravity, but the tasks only involve changing the parameters. The main math concept required is some algebra and taking a square root, so it can be used in less advanced classes. By contrast, Project Mercury (Part 2. Reentry) is significantly more difficult with changes to the code and algebra 2 or pre-calculus level calculations.\n\n\n\n\n\nflowchart LR\n  A[\"Project Mercury &lt;br&gt; (Part 1. Circular Orbit)\"] --&gt; B[\"Project Mercury &lt;br&gt;(Part 2. Reentry)\"]\n\n\n\n\n\n\n\n\nOther Astronomy activities\nEscape Velocity / Newtonian Black Holes uses much of the same code as Slingshot with Gravity, but arguably one can skip Slingshot with Gravity and jump into Escape Velocity / Newtonian Black Holes.\nNight sky simulator is not a gravity simulation so there are no pre-requisites for that activity other than some familiarity with programming and p5.js"
+  },
+  {
+    "objectID": "flowchart.html#electromagnetism-activities",
+    "href": "flowchart.html#electromagnetism-activities",
+    "title": "Activity Flowcharts / Prerequisites",
+    "section": "Electromagnetism activities",
+    "text": "Electromagnetism activities\n\n\n\n\n\nflowchart LR\n  A[Particle Accelerator] --&gt; B[Particle Accelerator with Potential]\n  B --&gt; C[Point charge repulsion]\n  B --&gt; D[Magnetic forces]\n\n\n\n\n\n\nOther electromagnetism labs that do not have prerequisites are RC circuit and Wave Interference"
   },
   {
     "objectID": "tags/data_science.html",
