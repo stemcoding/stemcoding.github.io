@@ -1,0 +1,15 @@
+---
+title: "Publications"
+---
+
+<p><a href="https://doi.org/10.1145/3626253.3635580">Orban, C. “Blurring the Boundaries between Science, Math, and Computer Science” (2024) Proceedings of the 55th ACM Technical Symposium on Computer Science Education. doi:10.1145/3626253.363558</a>
+
+<p><a href="https://arxiv.org/abs/2206.07909">Orban, C., Zimmerman, S., Kulp, J. T., Boughton, J., Perrico, Z., Rapp, B., Teeling-Smith, R. “Methods to Simplify Object Tracking in Video Data” The Physics Teacher, 61, 576-579 (2023)</a>
+
+<p><a href="https://arxiv.org/abs/1907.08079">Orban, C. and Teeling-Smith, R. ``Computational Thinking in Introductory Physics'' The Physics Teacher (2020)</a>
+
+<p><a href="https://doi.org/10.1119/1.5058449">Orban, C., Teeling-Smith, R. M., Smith, J. R. H., and Porter, C. D. "A Hybrid Approach for Using Programming Exercises in Introductory Physics", 2018, American Journal of Physics </a>
+
+<p><a href="https://arxiv.org/abs/1707.00185">Orban, C., Porter, C. D., Brecht, N. K., Teeling-Smith, R. M., Harper, K. A., "A novel approach for using programming exercises in electromagnetism coursework" PERC 2017</a>
+
+
