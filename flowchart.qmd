@@ -45,7 +45,7 @@ Slingshot with gravity is a demonstration of Kepler's 1st law (Law of Ellipses).
 
 ```{mermaid}
 flowchart LR
-  A[Slingshot with Gravity!] --> B[Orbital Motion: Kepler's 2nd law]
+  A[Slingshot with Gravity!] --> B["Orbital Motion: <br>Kepler's 2nd law"]
   A --> C[Orbital Motion: Eccentricity]
   A --> D[Exoplanets!]
 ```
