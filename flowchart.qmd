@@ -10,14 +10,19 @@ format:
 ```{mermaid}
 flowchart LR
   A[Move the Blob] --> B[Accelerate the Blob]
-  click A "http://go.osu.edu/movetheblob2" "Move the Blob"
+  click A "projects/movetheblob.html" "Move the Blob"
   B --> C[Apollo Moon Landing]
+  click C "projects/apollo.html" "Apollo Moon Landing"
   B --> D[Bird Launcher]
+  click B "projects/acceleratetheblob.html" "Accelerate the Blob"
+  click D "projects/birdlauncher.html" "Bird Launcher"
 ```
 
 ```{mermaid}
 flowchart LR
   A[Pong] --> B[Bonk.io Clone]
+  click A "projects/pong.html" "Pong"
+  click B "projects/bonk.html" "Bonk.io"
 ```
 
 ## STEMcoding Object Tracker
@@ -31,9 +36,14 @@ flowchart LR
 ```{mermaid}
 flowchart LR
   A[Planetoids] --> B[Lunar Descent]
+  click A "projects/planetoids.html" "Planetoids"
   B --> C[Bellicose Birds]
+  click B "projects/lunardescent.html" "Lunar Descent"
+  click C "projects/bellicosebirds.html" "Bellicose Birds"
   C --> D[Planetoids with Momentum]
+  click D "projects/momentum.html" "Planetoids with Momentum"
   D --> E[Planetoids with a Spring]
+  click E "projects/spring.html" "Planetoids with a Spring"
 ```
 
 Note that Planetoids with Momentum considers perfectly inelastic collisions in 2D. Pong is often paired with Planetoids with Momentum because Pong considers elastic collisions in 2D where a ball collides with a wall.
@@ -46,8 +56,12 @@ Slingshot with gravity is a demonstration of Kepler's 1st law (Law of Ellipses).
 ```{mermaid}
 flowchart LR
   A[Slingshot with Gravity!] --> B["Orbital Motion: <br>Kepler's 2nd law"]
+  click A "projects/slingshotgravity.html" "Slingshot with Gravity!"
+  click B "projects/keplers.html" "Orbital Motion: Kepler's 2nd law"
   A --> C[Orbital Motion: Eccentricity]
+  click C "projects/eccentricity.html" "Orbital Motion: Eccentricity"
   A --> D[Exoplanets!]
+  click D "projects/exoplanets.html" "Exoplanets!"
 ```
 
 Note: Slingshot with Gravity contains some trigonometry, but the activities that follow it do not
@@ -59,6 +73,8 @@ Project Mercury (Part 1. Circular Orbit) contains much of the same code as Sling
 ```{mermaid}
 flowchart LR
   A["Project Mercury <br> (Part 1. Circular Orbit)"] --> B["Project Mercury <br>(Part 2. Reentry)"]
+  click A "projects/projectmercury.html" "Project Mercury (Part 1. Circular Orbit)"
+  click B "projects/projectmercury.html" "Project Mercury (Part 2. Reentry)"
 ```
 
 ### Other Astronomy activities
@@ -73,8 +89,12 @@ Night sky simulator is not a gravity simulation so there are no pre-requisites f
 ```{mermaid}
 flowchart LR
   A[Particle Accelerator] --> B[Particle Accelerator with Potential]
+  click A "projects/particleaccelerator.html" "Particle Accelerator"
   B --> C[Point charge repulsion]
-  B --> D[Magnetic forces]
+  click B "projects/particleacceleratorpotential.html" "Particle Accelerator with Potential"
+  click C "projects/repulsion.html" "Point charge repulsion"
+  B --> D[Magnetic force]
+  click D "projects/magneticforce.html" "Magnetic Force"
 ```
 
 Other electromagnetism labs that do not have prerequisites are RC circuit and Wave Interference
