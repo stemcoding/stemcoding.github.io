@@ -2,7 +2,11 @@
 title: "Publications"
 ---
 
-<p><a href="https://doi.org/10.1145/3626253.3635580">Orban, C. “Blurring the Boundaries between Science, Math, and Computer Science” (2024) Proceedings of the 55th ACM Technical Symposium on Computer Science Education. doi:10.1145/3626253.363558</a>
+<p><a href="https://dl.acm.org/doi/book/10.1145/3724411">Nutwell, E. and Badger, K. "Public Data in the Public Interest: A Spreadsheet-Based Project for High School Computing", Association for Computing Machinery (2025)</a>
+
+<p><a href="https://doi.org/10.1145/3626253.3635580">Orban, C. “Blurring the Boundaries between Science, Math, and Computer Science” Proceedings of the 55th ACM Technical Symposium on Computer Science Education (2024)</a>
+
+<p><a href="https://dl.acm.org/doi/10.1145/3626253.3635589">Nutwell, E., Badger, K. and Kulp, J. T. "Data for Healthy Communities: A Public Interest Pilot Course Designed to Develop K-12 Data Literacy" Proceedings of the 55th ACM Technical Symposium on Computer Science (2024)</a>
 
 <p><a href="https://arxiv.org/abs/2206.07909">Orban, C., Zimmerman, S., Kulp, J. T., Boughton, J., Perrico, Z., Rapp, B., Teeling-Smith, R. “Methods to Simplify Object Tracking in Video Data” The Physics Teacher, 61, 576-579 (2023)</a>
 
