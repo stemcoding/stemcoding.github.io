@@ -8,7 +8,7 @@ website:
   navbar:
     title: false
     left:
-      - text: "<img src='/img/STEMcoding_wide.png' alt='STEMcoding Logo' style='height: 40px; margin-top: -10px;'>"
+      - text: '<img src="../img/STEMcoding_wide.png" alt="STEMcoding Logo" style="height: 40px; margin-top: -10px;">'
         href: index.qmd
       - about.qmd    
       - activities.qmd

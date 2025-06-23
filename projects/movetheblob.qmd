@@ -25,4 +25,4 @@ At the end of this lesson students will...
 * Create a simple “Move the Blob” game which allows them to move a circle using arrow keys.
 
 ## Move the Blob Video
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1Lt6IYGx9WA?si=p3QrcFjCO-sxl8ep" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1Lt6IYGx9WA?si=p3QrcFjCO-sxl8ep" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
