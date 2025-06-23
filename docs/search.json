@@ -375,7 +375,7 @@
     "href": "projects/planetoidstorque.html",
     "title": "Planetoids with Torque",
     "section": "",
-    "text": "In this lab we will make the planetoids game more realistic by allowing the space craft to spin around as it would if it were really traveling in space. So in addition to a rocket engine that can propel the space craft forward, the ship will have thrusters on the front and back that can provide torque to spin the ship either the clockwise or counter-clockwise direction."
+    "text": "Your browser does not support the video tag.\nIn this lab we will make the planetoids game more realistic by allowing the space craft to spin around as it would if it were really traveling in space. So in addition to a rocket engine that can propel the space craft forward, the ship will have thrusters on the front and back that can provide torque to spin the ship either the clockwise or counter-clockwise direction."
   },
   {
     "objectID": "projects/planetoidstorque.html#links-to-activity",
@@ -1124,7 +1124,7 @@
     "href": "projects/magneticforce.html",
     "title": "Magnetic Force",
     "section": "",
-    "text": "You may recall the last programming exercise that involved a particle being accelerated through two charged plates. In this exercise we will add a magnetic field to the right hand side of the simulation. The particle only experiences this field when it passes into the right-hand side. This example is loosely based on the idea of a “mass spectrometer”. It turns out that if you vaporize a little bit of a sample with some unknown molecules there tends to be alot of molecules that lose ONE electron. Since the molecule has lost an electron it has a +1 charge. The mass of the molecule is essentially the same even if it is missing an electron because electrons make up a very, very small fraction of the mass of atoms. As you will learn about in this lab, the trajectory of the particle in the magnetic field tells us something about the mass of the particle (if you already know q, v, and B for example)."
+    "text": "Your browser does not support the video tag.\nYou may recall the last programming exercise that involved a particle being accelerated through two charged plates. In this exercise we will add a magnetic field to the right hand side of the simulation. The particle only experiences this field when it passes into the right-hand side. This example is loosely based on the idea of a “mass spectrometer”. It turns out that if you vaporize a little bit of a sample with some unknown molecules there tends to be alot of molecules that lose ONE electron. Since the molecule has lost an electron it has a +1 charge. The mass of the molecule is essentially the same even if it is missing an electron because electrons make up a very, very small fraction of the mass of atoms. As you will learn about in this lab, the trajectory of the particle in the magnetic field tells us something about the mass of the particle (if you already know q, v, and B for example)."
   },
   {
     "objectID": "projects/magneticforce.html#links-to-activity",
@@ -1208,7 +1208,7 @@
     "href": "projects/planetoidsspring.html",
     "title": "Planetoids with a Spring",
     "section": "",
-    "text": "Think back to the momentum exercise. The little ship can collide with a “blob” and stick to it. Now imagine that this blob is attached to a spring. Wouldn’t it be interesting if the ship could collide with the blob and then the spring would push and pull both around? This is what we will do in this exercise."
+    "text": "Your browser does not support the video tag.\nThink back to the momentum exercise. The little ship can collide with a “blob” and stick to it. Now imagine that this blob is attached to a spring. Wouldn’t it be interesting if the ship could collide with the blob and then the spring would push and pull both around? This is what we will do in this exercise."
   },
   {
     "objectID": "projects/planetoidsspring.html#links-to-activity",
@@ -1425,7 +1425,7 @@
     "href": "projects/planetoids.html",
     "title": "Planetoids",
     "section": "",
-    "text": "This lab will guide you through coding up a web-based implementation of the classic video game asteroids."
+    "text": "Your browser does not support the video tag.\nThis lab will guide you through coding up a web-based implementation of the classic video game asteroids."
   },
   {
     "objectID": "projects/planetoids.html#links-to-activity",
@@ -1453,7 +1453,7 @@
     "href": "projects/particleaccelerator.html",
     "title": "Particle Accelerator",
     "section": "",
-    "text": "In this exercise we will make a simulation of a particle being accelerated between two plates."
+    "text": "Your browser does not support the video tag.\nIn this exercise we will make a simulation of a particle being accelerated between two plates."
   },
   {
     "objectID": "projects/particleaccelerator.html#links-to-activity",

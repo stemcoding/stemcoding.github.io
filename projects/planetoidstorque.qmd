@@ -8,6 +8,13 @@ categories:
   - Trigonometry
 ---
 
+<div style="margin-bottom: 20px;">
+<video width="720" height="405" controls autoplay muted loop style="max-width: 100%; height: auto;">
+  <source src="../vid/asteroids_torque_movie.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+</div>
+
 In this lab we will make the planetoids game more realistic by allowing the space craft to spin around as it would if it were really traveling in space. So in addition to a rocket engine that can propel the space craft forward, the ship will have thrusters on the front and back that can provide torque to spin the ship either the clockwise or counter-clockwise direction.
 
 ## Links to Activity

@@ -10,6 +10,14 @@ categories:
   - Javascript
 ---
 
+
+<div style="margin-bottom: 20px;">
+<video width="720" height="405" controls autoplay muted loop style="max-width: 100%; height: auto;">
+  <source src="../vid/accelerator_graph.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+</div>
+
 In this exercise we will make a simulation of a particle being accelerated between two plates.
 
 ## Links to Activity
