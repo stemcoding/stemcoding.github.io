@@ -8,8 +8,6 @@ categories:
   - Javascript
 ---
 
-{{< video ../vid/movetheblob.mp4 >}}
-
 On the internet there are some fun games where you control a circle-looking-thing that you can move around and interact (and potentially destroy or absorb!) other circle-looking things controlled by other people. Two games that come to mind are diep.io and agar.io. There are plenty of others like them out there
 
 ## Links to Activity

@@ -8,6 +8,14 @@ categories:
   - Javascript
 ---
 
+
+<div style="margin-bottom: 20px;">
+<video width="800" height="450" controls autoplay muted loop style="max-width: 100%; height: auto;">
+  <source src="../vid/acceleratetheblob.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+</div>
+
 In real life, objects accelerate up to a particlar velocity. This exercise will show you how to modify the move the blob exercise so that the blob accelerates in response to the arrow keys, instead of the arrow keys directly controlling the velocity.
 
 ## Links to Activity
