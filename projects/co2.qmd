@@ -7,6 +7,10 @@ categories:
     - Spreadsheets
 ---
 
+![](../img/co2.png){width=400 fig-align="center"}
+
 ## Links to Activity
 
-## CO2 Survey Playlist
+* [Google Slide Deck](http://go.osu.edu/co2)
+* [Random CO2 data generator with p5.js](https://editor.p5js.org/ChrisOrban/sketches/M0iRTK6_x)
+
