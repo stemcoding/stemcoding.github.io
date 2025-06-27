@@ -5,7 +5,7 @@ categories:
     - Advanced HS
     - Physics
     - Electromagnetism
-    - JavaScript
+    - Javascript
 ---
 
 <div style="margin-bottom: 20px;">

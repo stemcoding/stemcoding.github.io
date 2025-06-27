@@ -5,7 +5,7 @@ categories:
     - Advanced HS
     - Physics
     - Electromagnetism
-    - JavaScript
+    - Javascript
     - Trigonometry
 
 ---

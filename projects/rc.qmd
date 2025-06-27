@@ -2,7 +2,7 @@
 title: "RC Circuits"
 image: ../img/rc.png
 categories:
-    - JavaScript
+    - Javascript
     - Advanced HS
     - Physics
     - Electromagnetism

@@ -8,7 +8,7 @@ categories:
     - Physics
     - Physical Science
     - Spreadsheets
-    - JavaScript
+    - Javascript
 
 ---
 

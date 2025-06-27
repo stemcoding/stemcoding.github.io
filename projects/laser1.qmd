@@ -2,7 +2,7 @@
 title: "Laser Defense Part 1"
 image: ../img/laser1.png
 categories:
-  - JavaScript
+  - Javascript
   - Math
   - Advanced HS
 ---

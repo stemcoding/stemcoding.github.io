@@ -6,7 +6,7 @@ categories:
     - Math
     - Geometry
     - Computer Science
-    - JavaScript
+    - Javascript
 ---
 
 In an [earlier activity](piday1.qmd), you were able to approximate $\pi$ to two or three decimal places; however, it took quite a while for the computer to get to that level of precision.

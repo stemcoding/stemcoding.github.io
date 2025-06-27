@@ -2,7 +2,7 @@
 title: "Pi Day Part 1"
 image: ../img/piday1.png
 categories:
-    - JavaScript
+    - Javascript
     - Math
     - Geometry
     - Middle School
