@@ -11,6 +11,10 @@ categories:
 
 ## Links to Activity
 
+[Solar cell data repository](https://github.com/stemcoding/stemcoding.github.io/tree/master/solar)
+
 [Teacher Guide (PDF)](../docs/solar_cells_teacher_guide.pdf)
 
 [Teacher Guide (MS Word)](../docs/solar_cells_teacher_guide.docx)
+
+[Solar Edge Public Solar Data](https://monitoringpublic.solaredge.com/solaredge-web/p/home/public?locale=en_US)
