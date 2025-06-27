@@ -7,4 +7,4 @@ categories:
 ---
 
 ## Links to Activity
-* [Student Worksheets/Print Outs](https://www.asc.ohio-state.edu/orban.14/STEMcoding_dragon_curve.pdf)
+[Student Worksheets/Print Outs](https://www.asc.ohio-state.edu/orban.14/STEMcoding_dragon_curve.pdf)
