@@ -4,6 +4,7 @@ image: ../img/nightsky.png
 categories:
   - Advanced HS
   - Astronomy
+  - Data Science
   - Spreadsheets
   - Javascript
 ---

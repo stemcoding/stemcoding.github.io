@@ -6,6 +6,6 @@ title: "Data Science"
 
 More info about our data science initiative coming soon!
 
-
+In the mean time check out our [Data Science](activities.html#category=Data\ Science) and [Spreadsheet](activities.html#category=Spreadsheets) activities
 
 
