@@ -7,6 +7,10 @@ categories:
     - Spreadsheets
 ---
 
+![](../img/solarcell.png){width=400 fig-align="center"}
+
 ## Links to Activity
 
-## Solar Cell Data Analysis Playlist
+[Teacher Guide (PDF)](../docs/solar_cells_teacher_guide.pdf)
+
+[Teacher Guide (MS Word)](../docs/solar_cells_teacher_guide.docx)
