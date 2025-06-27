@@ -1,12 +1,20 @@
 ---
 title: "Good Figures vs. Bad Figures"
-image: ../img/.png
+image: ../img/petrol.png
 categories:
   - All Ages
   - Data Science
 ---
 
-## Links to Activity
+![](../img/indian_petrol_delhi.png){width=400 fig-align="center"}
 
-## Good Figures vs. Bad Figures Playlist
+## Central Question:
+
+What makes for a good figure? What makes for a bad figure? 
+
+[Examples of Bad Figures](https://drive.google.com/drive/folders/1R98A9Yb05nGeDlbopWS-5gkxLOhGfCNA?usp=sharing)
+
+[More examples of Bad Figures from viz.wtf](https://viz.wtf/archive)
+
+[Examples of Good Figures](https://drive.google.com/drive/folders/1KnYEHMgyHlh0SMfzkC2VQ6WsyY6TGgqM?usp=sharing)
 
