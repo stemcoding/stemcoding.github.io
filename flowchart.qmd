@@ -83,6 +83,23 @@ Escape Velocity / Newtonian Black Holes uses much of the same code as Slingshot 
 
 Night sky simulator is not a gravity simulation so there are no pre-requisites for that activity other than some familiarity with programming and p5.js
 
+## Math activities
+
+```{mermaid}
+flowchart LR
+  A["Pi day (Part 1)"] --> B["Pi day (Part 2)"]
+  click A "projects/piday1.html" "Pi day (Part 1)"
+  click B "projects/piday2.html" "Pi day (Part 2)"
+  A --> C[Pi day in parallel]
+  click C "projects/pidayparallel.html" "Pi day in parallel"
+```
+
+```{mermaid}
+flowchart LR
+  A[Laser Defense Part 1] --> B[Laser Defense Part 2]
+  click A "projects/laser1.html" "Laser Defense Part 1"
+  click B "projects/laser2.html" "Laser Defense Part 2"
+```
 
 ## Electromagnetism activities
 
@@ -98,3 +115,4 @@ flowchart LR
 ```
 
 Other electromagnetism labs that do not have prerequisites are RC circuit and Wave Interference
+
