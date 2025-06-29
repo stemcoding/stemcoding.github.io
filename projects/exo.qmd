@@ -1,6 +1,6 @@
 ---
 title: "Exoplanets"
-image: ../img/exo.png
+image: ../img/extrasolar2.png
 categories:
   - Advanced HS
   - Astronomy
@@ -8,7 +8,7 @@ categories:
   - Javascript
 ---
 
-![](../img/exo.png)
+![](../img/extrasolar.png){width=300 fig-align="center"}
 
 As an extention ot the Slingshot with Gravity! activity, instead of keeping one object fixed (the sun) and letting the other move around it we are going to let BOTH objects move and see what happens. Letting both objects move is important, because many of the extra-solar planets (a.k.a. exoplanets) that we know about we only discovered because of the motion of the star that they are orbiting! So we will talk about the little white circle as a planet orbiting the sun instead of being something much smaller, like a comet or a satellite.
 
