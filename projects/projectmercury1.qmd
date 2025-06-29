@@ -1,19 +1,18 @@
 ---
-title: "Project Mercury"
-image: ../img/projectmercury.png
+title: "Project Mercury Part 1"
+image: ../img/mercury1.png
 categories:
   - Middle School
-  - Intro HS
-  - Advanced HS
   - Intro HS
   - Physical Science
   - Physics
   - Astronomy
   - Space
-  - Precalculus
-  - Trigonometry
+  - Hidden Figures
   - Javascript
 ---
+
+![](../img/mercury1.png){width=500 fig-align="center"}
 
 Mathematician Katherine Johnson is famous for calculating trajectories of America's first manned space missions for Project Mercury as depicted in the movie Hidden Figures.
 
@@ -27,13 +26,6 @@ The calculation that Katherine Johnson did had to consider many different effect
 * [Instructions for Project Mercury (Part 1)](https://www.asc.ohio-state.edu/orban.14/stemcoding/mercury/mercury.html)
 * [Project Mercury (Part 1) Code Editor](https://editor.p5js.org/ChrisOrban/sketches/Om2uEyfa7)
 
-### Part 2
-* [Instructions for Project Mercury (Part 2)](https://www.asc.ohio-state.edu/orban.14/stemcoding/mercury2/mercury2.html)
-* [Project Mercury (Part 2) Code Editor](https://editor.p5js.org/ChrisOrban/sketches/pP4ZMcY5X)
-
-
 ## Project Mercury Playlist
-
-### Part 1
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=bRpftGjwjuwWQaj_&amp;list=PLISRe8GegO8S-188B7veZ6dYLSqZoXFkG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

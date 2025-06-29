@@ -4,6 +4,7 @@ image: ../img/solarcell.png
 categories:
     - Intro HS
     - Data Science
+    - Sustainability
     - Spreadsheets
 ---
 

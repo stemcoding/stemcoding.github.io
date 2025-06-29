@@ -1,0 +1,33 @@
+---
+title: "Project Mercury Part 2"
+image: ../img/mercury2.png
+categories:
+  - Advanced HS
+  - Physics
+  - Astronomy
+  - Space
+  - Precalculus
+  - Trigonometry
+  - Javascript
+---
+
+## Project Mercury Part 2
+
+Mathematician Katherine Johnson is famous for calculating trajectories of America's first manned space missions for Project Mercury as depicted in the movie Hidden Figures.
+
+The big concern at that point in the history of the space program was accurately predicting where a spacecraft would land in the ocean after re-entering the earth's atmosphere. Any miscalculation could send the mercury capsule hundreds of miles from where the Navy was expecting to recover the spacecraft and the astronaut inside.
+
+The calculation that Katherine Johnson did had to consider many different effects on the trajectory of the mercury capsule. For this activity we are going to keep it simple and start with putting the capsule in a circular orbit. In the second part, we will consider how the mercury capsule comes back to earth. This part of the space mission is referred to as "re-entry".
+
+## Links to Activity
+
+### Part 2
+* [Instructions for Project Mercury (Part 2)](https://www.asc.ohio-state.edu/orban.14/stemcoding/mercury2/mercury2.html)
+* [Project Mercury (Part 2) Code Editor](https://editor.p5js.org/ChrisOrban/sketches/pP4ZMcY5X)
+
+
+## Project Mercury Playlist
+
+### Part 1
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=bRpftGjwjuwWQaj_&amp;list=PLISRe8GegO8S-188B7veZ6dYLSqZoXFkG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

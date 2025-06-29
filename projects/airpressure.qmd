@@ -8,6 +8,7 @@ categories:
     - Physics
     - Atmospheric Science
     - Data Science
+    - Space
     - Spreadsheets
 ---
 
