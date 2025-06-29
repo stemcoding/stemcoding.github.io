@@ -27,8 +27,3 @@ The calculation that Katherine Johnson did had to consider many different effect
 * [Project Mercury (Part 2) Code Editor](https://editor.p5js.org/ChrisOrban/sketches/pP4ZMcY5X)
 
 
-## Project Mercury Playlist
-
-### Part 1
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=bRpftGjwjuwWQaj_&amp;list=PLISRe8GegO8S-188B7veZ6dYLSqZoXFkG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
