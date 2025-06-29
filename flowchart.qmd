@@ -73,8 +73,8 @@ Project Mercury (Part 1. Circular Orbit) contains much of the same code as Sling
 ```{mermaid}
 flowchart LR
   A["Project Mercury <br> (Part 1. Circular Orbit)"] --> B["Project Mercury <br>(Part 2. Reentry)"]
-  click A "projects/projectmercury.html" "Project Mercury (Part 1. Circular Orbit)"
-  click B "projects/projectmercury.html" "Project Mercury (Part 2. Reentry)"
+  click A "projects/projectmercury1.html" "Project Mercury (Part 1. Circular Orbit)"
+  click B "projects/projectmercury2.html" "Project Mercury (Part 2. Reentry)"
 ```
 
 ### Other Astronomy activities
