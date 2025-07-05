@@ -361,7 +361,7 @@
     "href": "projects/piday1.html",
     "title": "Pi Day Part 1",
     "section": "",
-    "text": "You are trapped on a deserted island by a psychopath who is keeping you there until you can determine the digits of π out to many decimal places. All you have is the p5.js web editor! What to do!? (FYI: Try not to think about giving up and just enjoying the island.)"
+    "text": "Calculate the digits of pi with a random number generator and some code!"
   },
   {
     "objectID": "projects/piday1.html#links-to-activity",
