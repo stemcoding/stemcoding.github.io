@@ -1664,5 +1664,12 @@
     "title": "Air Pressure Versus Height: 2. Balloon Data",
     "section": "What do to with the data",
     "text": "What do to with the data\nEarlier in Air Pressure Versus Height: Smartphone data we found that the air pressure decreases linearly with height, but we were only looking at data that was within 100 meters of the ground. Does the pressure versus height trendline continue to be linear above 100 meters? What mathematical function does it look like? Try plotting the pressure axis using a “log” scale."
+  },
+  {
+    "objectID": "projects/co2.html",
+    "href": "projects/co2.html",
+    "title": "CO2 Survey",
+    "section": "",
+    "text": "Use a CO2 sensor to measure air quality in your building"
   }
 ]

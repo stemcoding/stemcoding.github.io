@@ -9,6 +9,8 @@ categories:
 
 ![](../img/co2.png){width=400 fig-align="center"}
 
+Use a CO<sub>2</sub> sensor to measure air quality in your building
+
 ## Links to Activity
 
 * [Google Slide Deck](http://go.osu.edu/co2)
