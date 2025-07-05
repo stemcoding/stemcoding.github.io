@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Air Pressure Versus Height: Smartphone Data – STEMcoding</title>
+<title>Air Pressure Versus Height: Balloon Data – STEMcoding</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -141,8 +141,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#links-to-activity" id="toc-links-to-activity" class="nav-link active" data-scroll-target="#links-to-activity">Links to Activity</a></li>
-  <li><a href="#air-pressure-versus-height-playlist" id="toc-air-pressure-versus-height-playlist" class="nav-link" data-scroll-target="#air-pressure-versus-height-playlist">Air Pressure Versus Height Playlist</a></li>
+  <li><a href="#weather-balloon-data" id="toc-weather-balloon-data" class="nav-link active" data-scroll-target="#weather-balloon-data">Weather Balloon Data</a></li>
+  <li><a href="#how-to-obtain-the-data" id="toc-how-to-obtain-the-data" class="nav-link" data-scroll-target="#how-to-obtain-the-data">How to obtain the data</a></li>
+  <li><a href="#example-data" id="toc-example-data" class="nav-link" data-scroll-target="#example-data">Example data</a></li>
+  <li><a href="#what-do-to-with-the-data" id="toc-what-do-to-with-the-data" class="nav-link" data-scroll-target="#what-do-to-with-the-data">What do to with the data</a></li>
   </ul>
 </nav>
     </div>
@@ -151,9 +153,9 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Air Pressure Versus Height: Smartphone Data</h1>
+<h1 class="title">Air Pressure Versus Height: Balloon Data</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">Intro HS</div>
+    <div class="quarto-category">Advanced HS</div>
     <div class="quarto-category">Math</div>
     <div class="quarto-category">Physical Science</div>
     <div class="quarto-category">Physics</div>
@@ -178,22 +180,105 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Analyze air pressure data from a smartphone or tablet</p>
-<p>It turns out nearly all smartphones (iPhones and Android models) and nearly all iPads have air pressure sensors (a.k.a. barometers). There are a couple of apps you can use to get a pressure reading but the one that seems to work best on all platforms is the Arduino Science Journal app. The goal of this activity is to use the air pressure sensor in a smartphone to collect pressure data at different heights and compare the data to known physical models.</p>
-<section id="links-to-activity" class="level2">
-<h2 class="anchored" data-anchor-id="links-to-activity">Links to Activity</h2>
-<p>Instructions for the activity, both data collection and data analysis, are given in the playlist shown below.</p>
+<p>Analyze air pressure data from weather balloons</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../img/balloon_release3.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="500"></p>
+</figure>
+</div>
+<p><em>Image adapted from National Weather Service Forth Worth <a href="https://www.youtube.com/watch?v=-2-7S4OpbYk">youtube channel</a></em></p>
+<section id="weather-balloon-data" class="level2">
+<h2 class="anchored" data-anchor-id="weather-balloon-data">Weather Balloon Data</h2>
+<p>Earlier in <a href="airpressure.html">Air Pressure Versus Height: Smartphone data</a> we learned how to use smartphones to measure air pressure and how these devices are sensitive enough to detect the pressure change from even small changes in height. You can take measurements from your phone as you go up and down a stairwell. You can even attach your phone <a target="_blank" href="https://doi.org/10.1119/1.4947163">to a drone!</a> This can be used to obtain pressure measurements as high as <a target="_blank" href="https://doi.org/10.1119/1.4947163">about 250 m</a> above the ground, but how would we get pressure measurements from even higher than this? Answer: <a href="https://www.youtube.com/watch?v=-2-7S4OpbYk">Weather balloons</a></p>
+</section>
+<section id="how-to-obtain-the-data" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-obtain-the-data">How to obtain the data</h2>
 <ul>
-<li><a href="https://www.arduino.cc/education/science-journal">Download the Arduino Science Journal app</a></li>
-<li><a href="https://www.asc.ohio-state.edu/orban.14/stemcoding/pressure/barometer_lab.pdf">Student Worksheet</a></li>
-<li><a href="https://www.asc.ohio-state.edu/orban.14/stemcoding/pressure/lin_reg_instructions.pdf">How do a trendline with Google Sheets and Excel</a></li>
-<li><a href="https://www.asc.ohio-state.edu/orban.14/stemcoding/pressure/pressure_sample_data.pdf">Example data (pdf)</a> <a href="https://www.asc.ohio-state.edu/orban.14/stemcoding/pressure/sample_data.csv">Example data (csv)</a></li>
+<li>Weather balloon data from across the world is freely available to analyze thanks to the National Oceanographic and Atmospheric Administration which has <a target="_blank" href="https://www.ncei.noaa.gov/products/weather-balloon/integrated-global-radiosonde-archive">a public database at this link</a></li>
+<li>It is important to figure out the code name for the weather station near you. For example, Wilmington, Ohio is USM00072426 and Amarillo, Texas is USM00072363. To find a weather station near you, look through this <a target="_blank" href="../igra2-station-listUS.txt">list of US station names with recent data</a>. If you can’t find your city there you may be able to find it in the <a target="_blank" href="../igra2-station-list.txt">full list</a> however note that for some cities the latest data available could be decades old which could be a problem because there may not be a height estimate for each pressure reading</li>
+<li>Look for the data for your station on <a href="https://www.ncei.noaa.gov/data/integrated-global-radiosonde-archive/access/data-y2d/">https://www.ncei.noaa.gov/data/integrated-global-radiosonde-archive/access/data-y2d/</a> You will find a zip file with the name of the station (for example: USM00072363-data-beg2025.txt.zip) Download that file and <a href="https://www.youtube.com/watch?v=g-OTYQZTDew">figure out a way to unzip or extract the file</a> so that it looks like USM00072363-data.txt This file contains many ballon measurements at that location. You only need one measurement!</li>
+<li>Here is what one measurement of pressure versus height looks like</li>
+</ul>
+<pre>#USM00072363 2025 01 01 00 2306  324 ncdc-nws ncdc-gts  352331 -1017091
+21     0  89482B 1095    67B  420   120    92    15 
+20     7  89005  1139B   60B  362   138    40    29 
+20    20  88282  1204B   50B  387   129    59    26 
+20    28  87861  1244B   46B  397   125    60    26 
+20    45  86986  1325B   37B  418   117    83    26 
+20   105  85891  1428B   27B  440   110    65    16 
+20   121  85123  1500B   20B  457   104    70    19 
+10   123  85000  1512B   19B  460   103    70    20 
+20   203  82901  1714B    0B  504    90   180    29 
+20   205  82763  1727B   -1B  507    89   185    30 
+20   220  82001  1800B   -8B  527    84   179    14 
+20   245  80633  1934B  -22B  564    75   109    17 
+20   311  78968  2100B  -37B  610    64   136    31 
+20   325  78244  2172B  -43B  633    59   153    26 
+20   355  76772  2322B  -56B  668    52   179    28 
+20   514  72790  2738B  -71B  471    93   241    92 
+20   529  72108  2811B  -70B  449    99   250   111 
+20   543  71538  2873B  -71B  467    94   256   127 
+10   615  70000  3043B  -39B  425   108   273   150 
+20   621  69732  3074B  -39B  411   112   275   151 
+20   645  68604  3202B  -44B  360   127   279   174 
+20   705  67608  3317B  -47B  314   143   273   217 
+20   717  67080  3379B  -49B  306   146   274   225 
+20   745  65870  3522B  -56B  338   133   279   234 
+20   805  65015  3624B  -64B  355   127   279   216 
+20   824  64302  3710B  -70B  363   124   278   212 
+20   845  63357  3823B  -74B  344   129   276   210 
+20   917  61972  3997B  -81B  279   152   271   225 
+20   925  61636  4039B  -84B  283   150   270   230 
+20   953  60378  4200B  -92B  323   134   273   250 
+20   957  60206  4222B  -94B  326   133   274   251 
+20  1037  58461  4447B  -99B  150   216   281   299 
+20  1105  57281  4605B -106B  158   192   283   352 
+20  1125  56540  4705B -113B  124   214   283   377 
+20  1145  55859  4798B -121B  100   232   281   375 
+20  1225  54432  4995B -136B   72   260   284   387 
+20  1305  52862  5217B -146B   13   401   287   365 
+20  1318  52448  5276B -151B   12   402   286   364 
+............Many more lines of data!!!.............
+20  9705   1100 30177B -500B   11   315    32    85 
+20  9725   1079 30305B -499B   11   316    25    96 
+20  9805   1038 30557B -494B   10   319    50    86 
+10  9843   1000 30804B -490B   10   321    43    83 
+20  9845    998 30817B -490B   10   321    42    82 
+20  9905    978 30948B -488B   10   321    51    81 
+20  9945    939 31214B -486B   10   321    34   103 
+20 10005    921 31344B -487B   11   320    28   101 
+20 10025    902 31481B -486B   10   320    30    91 
+20 10105    867 31744B -486B   10   320    49    88 
+20 10125    849 31882B -485B   11   319    36    82 
+20 10127    847 31894B -485B   11   319    35    83 
+20 10147    830 32030B -485B   11   319    22    91 
+20 10221    807 32249B -486B   10   320    20    93 
+30 -9999  -9999  1200 -9999 -9999 -9999    60    26 
+30 -9999  -9999  1500 -9999 -9999 -9999    65    15 
+30 -9999  -9999  1800 -9999 -9999 -9999   185    15 
+30 -9999  -9999  2100 -9999 -9999 -9999   135    36 
+30 -9999  -9999  2400 -9999 -9999 -9999   185    26 
+30 -9999  -9999  2700 -9999 -9999 -9999   235    82 
+30 -9999  -9999  3300 -9999 -9999 -9999   275   216 
+30 -9999  -9999  3600 -9999 -9999 -9999   280   221 
+30 -9999  -9999  3900 -9999 -9999 -9999   270   231 
+30 -9999  -9999  4200 -9999 -9999 -9999   275   247 
+30 -9999  -9999  4500 -9999 -9999 -9999   285   350 
+30 -9999  -9999  4800 -9999 -9999 -9999   280   376 
+</pre>
+<p><b>We need to extract the third and fourth columns in order to plot the pressure versus height</b> but this is a messy dataset that needs to be cleaned! For example, the fourth and fifth column includes the letter B next to the number which would be very confusing for any spreadsheet program to read in. If you are curious what these symbols mean it is explained in <a href="../igra2-data-format.txt">this file</a></p>
+</section>
+<section id="example-data" class="level2">
+<h2 class="anchored" data-anchor-id="example-data">Example data</h2>
+<p>Here are some examples of cleaned data where the extra symbols have been removed and all the lines that contain -9999 have been removed</p>
+<ul>
+<li><a href="../amarillo_TX_balloon_data.txt">Amarillo TX data</a></li>
+<li><a href="../wilmington_OH_balloon_data.txt">Wilmington OH data</a></li>
 </ul>
 </section>
-<section id="air-pressure-versus-height-playlist" class="level2">
-<h2 class="anchored" data-anchor-id="air-pressure-versus-height-playlist">Air Pressure Versus Height Playlist</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=5eEP4kuDg8pHe3rV&amp;list=PLISRe8GegO8T-sA9RDNylWGWa7MX8E4s3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-</iframe>
+<section id="what-do-to-with-the-data" class="level2">
+<h2 class="anchored" data-anchor-id="what-do-to-with-the-data">What do to with the data</h2>
+<p>Earlier in <a href="airpressure.html">Air Pressure Versus Height: Smartphone data</a> we found that the air pressure decreases linearly with height, but we were only looking at data that was within 100 meters of the ground. Does the pressure versus height trendline continue to be linear above 100 meters? What mathematical function does it look like? Try plotting the pressure axis using a “log” scale.</p>
 
 
 </section>

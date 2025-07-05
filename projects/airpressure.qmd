@@ -1,5 +1,5 @@
 ---
-title: "Air Pressure Versus Height"
+title: "Air Pressure Versus Height: Smartphone Data"
 image: ../img/airpressure2.png
 categories:
     - Intro HS
@@ -12,6 +12,7 @@ categories:
     - Spreadsheets
 ---
 
+Analyze air pressure data from a smartphone or tablet
 
 It turns out nearly all smartphones (iPhones and Android models) and
 nearly all iPads have air pressure sensors (a.k.a. barometers). There are

@@ -254,21 +254,21 @@
   {
     "objectID": "projects/airpressure.html",
     "href": "projects/airpressure.html",
-    "title": "Air Pressure Versus Height",
+    "title": "Air Pressure Versus Height: Smartphone Data",
     "section": "",
-    "text": "It turns out nearly all smartphones (iPhones and Android models) and nearly all iPads have air pressure sensors (a.k.a. barometers). There are a couple of apps you can use to get a pressure reading but the one that seems to work best on all platforms is the Arduino Science Journal app. The goal of this activity is to use the air pressure sensor in a smartphone to collect pressure data at different heights and compare the data to known physical models."
+    "text": "Analyze air pressure data from a smartphone or tablet\nIt turns out nearly all smartphones (iPhones and Android models) and nearly all iPads have air pressure sensors (a.k.a. barometers). There are a couple of apps you can use to get a pressure reading but the one that seems to work best on all platforms is the Arduino Science Journal app. The goal of this activity is to use the air pressure sensor in a smartphone to collect pressure data at different heights and compare the data to known physical models."
   },
   {
     "objectID": "projects/airpressure.html#links-to-activity",
     "href": "projects/airpressure.html#links-to-activity",
-    "title": "Air Pressure Versus Height",
+    "title": "Air Pressure Versus Height: Smartphone Data",
     "section": "Links to Activity",
     "text": "Links to Activity\nInstructions for the activity, both data collection and data analysis, are given in the playlist shown below.\n\nDownload the Arduino Science Journal app\nStudent Worksheet\nHow do a trendline with Google Sheets and Excel\nExample data (pdf) Example data (csv)"
   },
   {
     "objectID": "projects/airpressure.html#air-pressure-versus-height-playlist",
     "href": "projects/airpressure.html#air-pressure-versus-height-playlist",
-    "title": "Air Pressure Versus Height",
+    "title": "Air Pressure Versus Height: Smartphone Data",
     "section": "Air Pressure Versus Height Playlist",
     "text": "Air Pressure Versus Height Playlist"
   },
@@ -588,109 +588,473 @@
     "text": "Planetoids with a Spring Playlist"
   },
   {
-    "objectID": "projects/particleacceleratorpotential.html",
-    "href": "projects/particleacceleratorpotential.html",
-    "title": "Particle Accelerator with Potential",
+    "objectID": "projects/balloon.html",
+    "href": "projects/balloon.html",
+    "title": "Air Pressure Versus Height: Balloon Data",
     "section": "",
-    "text": "This programming lab is a continuation of the accelerator programming lab where a proton is accelerated from the electric field between two charged plates. The only difference between the earlier programming lab and this programming labis that we are going to think about the potential difference between the two charged plates."
+    "text": "Analyze air pressure data from weather balloons\nImage adapted from National Weather Service Forth Worth youtube channel"
   },
   {
-    "objectID": "projects/particleacceleratorpotential.html#links-to-activity",
-    "href": "projects/particleacceleratorpotential.html#links-to-activity",
-    "title": "Particle Accelerator with Potential",
+    "objectID": "projects/balloon.html#balloons-are-cool",
+    "href": "projects/balloon.html#balloons-are-cool",
+    "title": "Balloon Data",
+    "section": "",
+    "text": "Balloons are cool dude"
+  },
+  {
+    "objectID": "projects/waveinterference.html",
+    "href": "projects/waveinterference.html",
+    "title": "Wave Interference",
+    "section": "",
+    "text": "This programming lab is designed to illustrate the idea of wave interference. This happens because of the principle of “superposition”. For sound waves, this 20 dollar word just means that if there are two speakers in a large room or open space, the amplitude of the sound waves at a particular point in that room are the sum of the waves of the two speakers."
+  },
+  {
+    "objectID": "projects/waveinterference.html#links-to-activity",
+    "href": "projects/waveinterference.html#links-to-activity",
+    "title": "Wave Interference",
     "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Particle Accelerator with Potential\nParticle Accelerator with Potential Code Editor"
+    "text": "Links to Activity\n\nInstructions for Wave Interferece\nWave Interference Code Editor"
   },
   {
-    "objectID": "projects/particleacceleratorpotential.html#learning-objectives",
-    "href": "projects/particleacceleratorpotential.html#learning-objectives",
-    "title": "Particle Accelerator with Potential",
+    "objectID": "projects/waveinterference.html#learning-objectives",
+    "href": "projects/waveinterference.html#learning-objectives",
+    "title": "Wave Interference",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\nAt the end of this lesson students will…\n\nUnderstand that electric potential can appropriately model how electric fields affect charged particles.\nUnderstand how a charged particle’s motion is affected by the electric potential of a field.\nAnalyze the situation to calculate the final velocity of a particle after experiencing an electric field using electric potential relationships."
+    "text": "Learning Objectives\nBy the end of this activity students will…\n\nUnderstand how wave interference affects the observed volume at various locations in a room.\nCreate a simulation to observe where waves have constructive and destructive interference in a room with two speakers."
   },
   {
-    "objectID": "projects/black.html",
-    "href": "projects/black.html",
-    "title": "Escape Velocity and Newtonian Black Holes",
+    "objectID": "projects/waveinterference.html#wave-interference-playlist",
+    "href": "projects/waveinterference.html#wave-interference-playlist",
+    "title": "Wave Interference",
+    "section": "Wave Interference Playlist",
+    "text": "Wave Interference Playlist"
+  },
+  {
+    "objectID": "projects/piday2.html",
+    "href": "projects/piday2.html",
+    "title": "Pi Day Part 2",
     "section": "",
-    "text": "That activity explores the behavior of objects like planets or comets interacting with a massive object like the sun."
+    "text": "If you completed the Pi day activity and were surprised at how long it took to calculate the digits of π there is good news! There is a better way to calculate the digits of Pi!"
   },
   {
-    "objectID": "projects/black.html#links-to-activity",
-    "href": "projects/black.html#links-to-activity",
-    "title": "Escape Velocity and Newtonian Black Holes",
+    "objectID": "projects/piday2.html#links-to-activity",
+    "href": "projects/piday2.html#links-to-activity",
+    "title": "Pi Day Part 2",
     "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Escape Velocity and Newtonain Black Holes\nCode Editor for Escape Velocity and Newtonian Black Holes"
+    "text": "Links to Activity\n\nInstructions for Pi Day Part 2\nPi Day Part 2 Code Editor"
   },
   {
-    "objectID": "projects/black.html#escape-velocity-and-black-holes-playlist",
-    "href": "projects/black.html#escape-velocity-and-black-holes-playlist",
-    "title": "Escape Velocity and Newtonian Black Holes",
-    "section": "Escape Velocity and Black Holes Playlist",
-    "text": "Escape Velocity and Black Holes Playlist"
+    "objectID": "projects/piday2.html#pi-day-part-2-playlist",
+    "href": "projects/piday2.html#pi-day-part-2-playlist",
+    "title": "Pi Day Part 2",
+    "section": "Pi Day Part 2 Playlist",
+    "text": "Pi Day Part 2 Playlist"
   },
   {
-    "objectID": "projects/fractal.html",
-    "href": "projects/fractal.html",
-    "title": "Fractal Puzzle",
+    "objectID": "projects/electro.html",
+    "href": "projects/electro.html",
+    "title": "Electromagnetism: Unit System",
     "section": "",
-    "text": "Student Worksheets/Print Outs"
+    "text": "There are three issues that deserve mention: the length units (pretty simple), force units, and the electric field units (which is related to the force units)."
   },
   {
-    "objectID": "projects/fractal.html#links-to-activity",
-    "href": "projects/fractal.html#links-to-activity",
-    "title": "Fractal Puzzle",
-    "section": "",
-    "text": "Student Worksheets/Print Outs"
-  },
-  {
-    "objectID": "projects/magneticforce.html",
-    "href": "projects/magneticforce.html",
-    "title": "Magnetic Force",
-    "section": "",
-    "text": "Your browser does not support the video tag.\nYou may recall the last programming exercise that involved a particle being accelerated through two charged plates. In this exercise we will add a magnetic field to the right hand side of the simulation. The particle only experiences this field when it passes into the right-hand side. This example is loosely based on the idea of a “mass spectrometer”. It turns out that if you vaporize a little bit of a sample with some unknown molecules there tends to be alot of molecules that lose ONE electron. Since the molecule has lost an electron it has a +1 charge. The mass of the molecule is essentially the same even if it is missing an electron because electrons make up a very, very small fraction of the mass of atoms. As you will learn about in this lab, the trajectory of the particle in the magnetic field tells us something about the mass of the particle (if you already know q, v, and B for example)."
-  },
-  {
-    "objectID": "projects/magneticforce.html#links-to-activity",
-    "href": "projects/magneticforce.html#links-to-activity",
-    "title": "Magnetic Force",
+    "objectID": "projects/electro.html#links-to-activity",
+    "href": "projects/electro.html#links-to-activity",
+    "title": "Electromagnetism: Unit System",
     "section": "Links to Activity",
-    "text": "Links to Activity\nInstructions for Magnetic Force Magnetic Force Code Editor"
+    "text": "Links to Activity\n\nInstructions for Electromagnetism: Unit System"
   },
   {
-    "objectID": "projects/magneticforce.html#learning-objectives",
-    "href": "projects/magneticforce.html#learning-objectives",
-    "title": "Magnetic Force",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nAt the end of this lesson students will…\n\nApply the magnetic force relationship with Newton’s 2nd law to code the trajectory of a moving, positive particle in a magnetic field\nUnderstand how changes in charge, mass, and magnetic field direction affect the trajectory of the particle."
-  },
-  {
-    "objectID": "projects/magneticforce.html#magnetic-force-playlist",
-    "href": "projects/magneticforce.html#magnetic-force-playlist",
-    "title": "Magnetic Force",
-    "section": "Magnetic Force Playlist",
-    "text": "Magnetic Force Playlist"
-  },
-  {
-    "objectID": "projects/nightsky.html",
-    "href": "projects/nightsky.html",
-    "title": "Night Sky Simulator",
+    "objectID": "projects/earth.html",
+    "href": "projects/earth.html",
+    "title": "Earth Day",
     "section": "",
-    "text": "Simulated Night Sky\nThe image above is not an actual picture of the night sky or any real star field (maybe you’ve already noticed that its a fake!). It is a randomly-generated night sky from a computer program we are going to build. We are going to learn a little bit about stars and then we are going to think about why some stars appear brighter in the sky than others and what it means.\nAn interesting thing about this activity is that you will be able to download a spreadsheet with the list of randomly generated stars. In the directions here we will use Google sheets to analyze that data but you can use any spreadsheet program you are comfortable with (Excel, Libreoffice, Apple – Numbers)"
+    "text": "We are going to estimate the impact of global warming at your location using a simple cosine function and some climate data."
   },
   {
-    "objectID": "projects/nightsky.html#links-to-activity",
-    "href": "projects/nightsky.html#links-to-activity",
-    "title": "Night Sky Simulator",
+    "objectID": "projects/earth.html#links-to-activity",
+    "href": "projects/earth.html#links-to-activity",
+    "title": "Earth Day",
     "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Night Sky Simulator\nNight Sky Simulator Code Editor"
+    "text": "Links to Activity\n\nInstructions for Earth Day\nCode Editor for Earth Day"
   },
   {
-    "objectID": "projects/nightsky.html#night-sky-simulator-playlist",
-    "href": "projects/nightsky.html#night-sky-simulator-playlist",
-    "title": "Night Sky Simulator",
-    "section": "Night Sky Simulator Playlist",
-    "text": "Night Sky Simulator Playlist"
+    "objectID": "projects/earth.html#earth-day-playlist",
+    "href": "projects/earth.html#earth-day-playlist",
+    "title": "Earth Day",
+    "section": "Earth Day Playlist",
+    "text": "Earth Day Playlist"
+  },
+  {
+    "objectID": "EcologyLesson/exporting/index.html",
+    "href": "EcologyLesson/exporting/index.html",
+    "title": "Exporting data",
+    "section": "",
+    "text": "Teaching: 10 min\nExercises: 0 min\nQuestions\n\nHow can we export data from spreadsheets in a way that is useful for downstream applications?\n\nObjectives\n\nStore spreadsheet data in universal file formats.\nExport data from a spreadsheet to a CSV file.\n\n\nStoring the data you’re going to work with for your analyses in Excel default file format (*.xls or *.xlsx - depending on the Excel version) isn’t a good idea. Why?\n\nBecause it is a proprietary format, and it is possible that in the future, technology won’t exist (or will become sufficiently rare) to make it inconvenient, if not impossible, to open the file.\nOther spreadsheet software may not be able to open files saved in a proprietary Excel format.\nDifferent versions of Excel may handle data differently, leading to inconsistencies.\nThe above points also apply to other formats such as open data formats used by LibreOffice / Open Office. These formats are not static and do not get parsed the same way by different software packages.\n\nAs an example of inconsistencies in data storage, do you remember how we talked about how Excel stores dates earlier? It turns out that there are multiple defaults for different versions of the software, and you can switch between them all. So, say you’re compiling Excel-stored data from multiple sources. There are dates in each file - Excel interprets them as their own internally consistent serial numbers. When you combine the data, Excel will take the serial number from the place you’re importing it from, and interpret it using the rule set for the version of Excel you’re using. Essentially, you could be adding errors to your data, and it wouldn’t necessarily be flagged by any data cleaning methods if your ranges overlap.\nStoring data in a universal, open, and static format will help deal with this problem. Try tab-delimited (tab separated values or TSV) or comma-delimited (comma separated values or CSV). CSV files are plain text files where the columns are separated by commas, hence ‘comma separated values’ or CSV. The advantage of a CSV file over an Excel/SPSS/etc. file is that we can open and read a CSV file using just about any software, including plain text editors like TextEdit or NotePad. Data in a CSV file can also be easily imported into other formats and environments, such as SQLite and R. We’re not tied to a certain version of a certain expensive program when we work with CSV files, so it’s a good format to work with for maximum portability and endurance. Most spreadsheet programs can save to delimited text formats like CSV easily, although they may give you a warning during the file export.\nTo save a file you have opened in Excel in CSV format:\n\nFrom the top menu select ‘File’ and ‘Save as’.\nIn the ‘Format’ field, from the list, select ‘Comma Separated Values’ (*.csv).\nDouble check the file name and the location where you want to save it and hit ‘Save’.\n\nAn important note for backwards compatibility: you can open CSV files in Excel!"
+  },
+  {
+    "objectID": "EcologyLesson/exporting/index.html#overview",
+    "href": "EcologyLesson/exporting/index.html#overview",
+    "title": "Exporting data",
+    "section": "",
+    "text": "Teaching: 10 min\nExercises: 0 min\nQuestions\n\nHow can we export data from spreadsheets in a way that is useful for downstream applications?\n\nObjectives\n\nStore spreadsheet data in universal file formats.\nExport data from a spreadsheet to a CSV file.\n\n\nStoring the data you’re going to work with for your analyses in Excel default file format (*.xls or *.xlsx - depending on the Excel version) isn’t a good idea. Why?\n\nBecause it is a proprietary format, and it is possible that in the future, technology won’t exist (or will become sufficiently rare) to make it inconvenient, if not impossible, to open the file.\nOther spreadsheet software may not be able to open files saved in a proprietary Excel format.\nDifferent versions of Excel may handle data differently, leading to inconsistencies.\nThe above points also apply to other formats such as open data formats used by LibreOffice / Open Office. These formats are not static and do not get parsed the same way by different software packages.\n\nAs an example of inconsistencies in data storage, do you remember how we talked about how Excel stores dates earlier? It turns out that there are multiple defaults for different versions of the software, and you can switch between them all. So, say you’re compiling Excel-stored data from multiple sources. There are dates in each file - Excel interprets them as their own internally consistent serial numbers. When you combine the data, Excel will take the serial number from the place you’re importing it from, and interpret it using the rule set for the version of Excel you’re using. Essentially, you could be adding errors to your data, and it wouldn’t necessarily be flagged by any data cleaning methods if your ranges overlap.\nStoring data in a universal, open, and static format will help deal with this problem. Try tab-delimited (tab separated values or TSV) or comma-delimited (comma separated values or CSV). CSV files are plain text files where the columns are separated by commas, hence ‘comma separated values’ or CSV. The advantage of a CSV file over an Excel/SPSS/etc. file is that we can open and read a CSV file using just about any software, including plain text editors like TextEdit or NotePad. Data in a CSV file can also be easily imported into other formats and environments, such as SQLite and R. We’re not tied to a certain version of a certain expensive program when we work with CSV files, so it’s a good format to work with for maximum portability and endurance. Most spreadsheet programs can save to delimited text formats like CSV easily, although they may give you a warning during the file export.\nTo save a file you have opened in Excel in CSV format:\n\nFrom the top menu select ‘File’ and ‘Save as’.\nIn the ‘Format’ field, from the list, select ‘Comma Separated Values’ (*.csv).\nDouble check the file name and the location where you want to save it and hit ‘Save’.\n\nAn important note for backwards compatibility: you can open CSV files in Excel!"
+  },
+  {
+    "objectID": "EcologyLesson/exporting/index.html#a-note-on-cross-platform-operability",
+    "href": "EcologyLesson/exporting/index.html#a-note-on-cross-platform-operability",
+    "title": "Exporting data",
+    "section": "A Note on Cross-platform Operability",
+    "text": "A Note on Cross-platform Operability\nBy default, most coding and statistical environments expect UNIX-style line endings (ASCII LF character) as representing line breaks. However, Windows uses an alternate line ending signifier (ASCII CR LF characters) by default for legacy compatibility with Teletype-based systems.\nAs such, when exporting to CSV using Excel, your data in text format will look like this:\ndata1,data21,24,5\nWhen opening your CSV file in Excel again, it will parse it as follows:\n\nHowever, if you open your CSV file on a different system that does not parse the CR character it will interpret your CSV file differently:\nYour data in text format then look like this:\ndata1\ndata2\n1\n2\n...\nYou will then see a weird character or possibly the string CR or \\r:\n\nthus causing terrible things to happen to your data. For example, 2\\r is not a valid integer, and thus will throw an error (if you’re lucky) when you attempt to operate on it in R or Python. Note that this happens on Excel for OSX as well as Windows, due to legacy Windows compatibility.\nThere are a handful of solutions for enforcing uniform UNIX-style line endings on your exported CSV files:\nWhen exporting from Excel, save as a “Windows comma separated (.csv)” file\n\nA note on R and .xlsx\nThere are R packages that can read .xls or .xlsx files (as well as Google spreadsheets). It is even possible to access different worksheets in the .xlsx documents.\nBut\n\nsome of these only work on Windows\nthis equates to replacing a (simple but manual) export to csv with additional complexity/dependencies in the data analysis R code\ndata formatting best practice still apply\nIs there really a good reason why csv (or similar) is not adequate?\n\n\n\nCaveats on commas\nIn some datasets, the data values themselves may include commas (,). This is particularly true in countries that use commas as decimal separators. In that case, the software which you use (including Excel) will most likely incorrectly display the data in columns. This is because the commas which are a part of the data values will be interpreted as delimiters.\nIf you are working with data that contains commas, you likely will need to use another delimiter when working in a spreadsheet. In this case, consider using tabs as your delimiter and working with TSV files. TSV files can be exported from spreadsheet programs in the same way as CSV files. For more of a discussion on data formats and potential issues with commas within datasets see the discussion page."
+  },
+  {
+    "objectID": "EcologyLesson/exporting/index.html#key-points",
+    "href": "EcologyLesson/exporting/index.html#key-points",
+    "title": "Exporting data",
+    "section": "Key Points",
+    "text": "Key Points\n\nData stored in common spreadsheet formats will often not be read correctly into data analysis software, introducing errors into your data.\nExporting data from spreadsheets to formats like CSV or TSV puts it in a format that can be used consistently by most programs."
+  },
+  {
+    "objectID": "EcologyLesson/Intro/index.html",
+    "href": "EcologyLesson/Intro/index.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "Teaching: 15 min\nExercises: 3 min\nQuestions\n\nWhat are basic principles for using spreadsheets for good data organization?\n\nObjectives\n\nDescribe best practices for organizing data so computers can make the best use of data sets.\n\n\nGood data organization is the foundation of your research project. Most researchers have data or do data entry in spreadsheets. Spreadsheet programs are very useful graphical interfaces for designing data tables and handling very basic data quality control functions."
+  },
+  {
+    "objectID": "EcologyLesson/Intro/index.html#overview",
+    "href": "EcologyLesson/Intro/index.html#overview",
+    "title": "Introduction",
+    "section": "",
+    "text": "Teaching: 15 min\nExercises: 3 min\nQuestions\n\nWhat are basic principles for using spreadsheets for good data organization?\n\nObjectives\n\nDescribe best practices for organizing data so computers can make the best use of data sets.\n\n\nGood data organization is the foundation of your research project. Most researchers have data or do data entry in spreadsheets. Spreadsheet programs are very useful graphical interfaces for designing data tables and handling very basic data quality control functions."
+  },
+  {
+    "objectID": "EcologyLesson/Intro/index.html#spreadsheet-outline",
+    "href": "EcologyLesson/Intro/index.html#spreadsheet-outline",
+    "title": "Introduction",
+    "section": "Spreadsheet outline",
+    "text": "Spreadsheet outline\nAfter this lesson, you will be able to:\nbImplement best practices in data table formatting  Identify and address common formatting mistakes * Understand approaches for handling dates in spreadsheets * Utilize basic quality control features and data manipulation practices * Effectively export data from spreadsheet programs Overall good data practices\nSpreadsheets are good for data entry. Therefore we have a lot of data in spreadsheets. Much of your time as a researcher will be spent in this ‘data wrangling’ stage. It’s not the most fun, but it’s necessary. We’ll teach you how to think about data organization and some practices for more effective data wrangling."
+  },
+  {
+    "objectID": "EcologyLesson/Intro/index.html#what-this-lesson-will-not-teach-you",
+    "href": "EcologyLesson/Intro/index.html#what-this-lesson-will-not-teach-you",
+    "title": "Introduction",
+    "section": "What this lesson will not teach you",
+    "text": "What this lesson will not teach you\n\nHow to do statistics in a spreadsheet\nHow to do plotting in a spreadsheet\nHow to write code in spreadsheet programs\n\nIf you’re looking to do this, a good reference is Head First Excel, published by O’Reilly."
+  },
+  {
+    "objectID": "EcologyLesson/Intro/index.html#why-arent-we-teaching-data-analysis-in-spreadsheets",
+    "href": "EcologyLesson/Intro/index.html#why-arent-we-teaching-data-analysis-in-spreadsheets",
+    "title": "Introduction",
+    "section": "Why aren’t we teaching data analysis in spreadsheets",
+    "text": "Why aren’t we teaching data analysis in spreadsheets\n\nData analysis in spreadsheets usually requires a lot of manual work. If you want to change a parameter or run an analysis with a new data set, you usually have to redo everything by hand. (We do know that you can create macros, but see the next point.)\nIt is also difficult to track or reproduce statistical or plotting analyses done in spreadsheet programs when you want to go back to your work or someone asks for details of your analysis."
+  },
+  {
+    "objectID": "EcologyLesson/Intro/index.html#spreadsheet-programs",
+    "href": "EcologyLesson/Intro/index.html#spreadsheet-programs",
+    "title": "Introduction",
+    "section": "Spreadsheet programs",
+    "text": "Spreadsheet programs\nMany spreadsheet programs are available. Since most participants utilize Excel as their primary spreadsheet program, this lesson will make use of Excel examples.\nFree spreadsheet programs that can also be used are LibreOffice Calc, and even Google Sheets.\nCommands may differ a bit between programs, but the general idea is the same.\nSpreadsheets encompass a lot of the things we need to be able to do as researchers. We can use them for:\n\nData entry\nOrganizing data\nSubsetting and sorting data\nStatistics\nPlotting\n\nWe do a lot of different operations in spreadsheets. What kind of operations do you do in spreadsheets? Which ones do you think spreadsheets are good for?"
+  },
+  {
+    "objectID": "EcologyLesson/Intro/index.html#problems-with-spreadsheets",
+    "href": "EcologyLesson/Intro/index.html#problems-with-spreadsheets",
+    "title": "Introduction",
+    "section": "Problems with Spreadsheets",
+    "text": "Problems with Spreadsheets\nSpreadsheets are good for data entry, but in reality we tend to use spreadsheet programs for much more than data entry. We use them to create data tables for publications, to generate summary statistics, and make figures.\nGenerating tables for publications in a spreadsheet is not optimal - often, when formatting a data table for publication, we’re reporting key summary statistics in a way that is not really meant to be read as data, and often involves special formatting (merging cells, creating borders, making it pretty). Cutting and pasting from a spreadsheet to a document software (like Word) can have unpredictable results. We advise you to create tables within these document software using the document’s own table editing software.\nThe latter two applications, generating statistics and figures, should be used with caution: because of the graphical, drag and drop nature of spreadsheet programs, it can be very difficult, if not impossible, to replicate your steps (much less retrace anyone else’s), particularly if your stats or figures require you to do more complex calculations. Furthermore, in doing calculations in a spreadsheet, it’s easy to accidentally apply a slightly different formula to multiple adjacent cells. When using a command-line based statistics program like R or SAS, it’s practically impossible to apply a calculation to one observation in your data set but not another unless you’re doing it on purpose."
+  },
+  {
+    "objectID": "EcologyLesson/Intro/index.html#using-spreadsheets-for-data-entry-and-cleaning",
+    "href": "EcologyLesson/Intro/index.html#using-spreadsheets-for-data-entry-and-cleaning",
+    "title": "Introduction",
+    "section": "Using Spreadsheets for Data Entry and Cleaning",
+    "text": "Using Spreadsheets for Data Entry and Cleaning\nHowever, there are circumstances where you might want to use a spreadsheet program to produce “quick and dirty” calculations or figures, and data cleaning will help you use some of these features. Data cleaning also puts your data in a better format prior to importation into a statistical analysis program. We will show you how to use some features of spreadsheet programs to check your data quality along the way and produce preliminary summary statistics.\nIn this lesson, we will assume that you are most likely using Excel as your primary spreadsheet program - there are others (gnumeric, Calc from OpenOffice), and their functionality is similar, but Excel seems to be the program most used by biologists and ecologists.\nIn this lesson we’re going to talk about:\n\nFormatting data tables in spreadsheets\nFormatting problems\nDates as data\nQuality control\nExporting data"
+  },
+  {
+    "objectID": "EcologyLesson/Intro/index.html#key-points",
+    "href": "EcologyLesson/Intro/index.html#key-points",
+    "title": "Introduction",
+    "section": "Key Points",
+    "text": "Key Points\n\nGood data organization is the foundation of any research project.\n\nLicensed under CC-BY 4.0 2018–2022 by The Carpentries\nLicensed under CC-BY 4.0 2016–2018 by Data Carpentry"
+  },
+  {
+    "objectID": "EcologyLesson/landing/index.html",
+    "href": "EcologyLesson/landing/index.html",
+    "title": "Data Organization in Spreadsheets for Ecologists",
+    "section": "",
+    "text": "Good data organization is the foundation of any research project. Most researchers have data in spreadsheets, so it’s the place that many research projects start.\nWe organize data in spreadsheets in the ways that we as humans want to work with the data, but computers require that data be organized in particular ways. In order to use tools that make computation more efficient, such as programming languages like R or Python, we need to structure our data the way that computers need the data. Since this is where most research projects start, this is where we want to start too!\nIn this lesson, you will learn:\nIn this lesson, however, you will not learn about data analysis with spreadsheets. Much of your time as a researcher will be spent in the initial ‘data wrangling’ stage, where you need to organize the data to perform a proper analysis later. It’s not the most fun, but it is necessary. In this lesson you will learn how to think about data organization and some practices for more effective data wrangling. With this approach you can better format current data and plan new data collection so less data wrangling is needed."
+  },
+  {
+    "objectID": "EcologyLesson/landing/index.html#getting-started",
+    "href": "EcologyLesson/landing/index.html#getting-started",
+    "title": "Data Organization in Spreadsheets for Ecologists",
+    "section": "Getting Started",
+    "text": "Getting Started\nData Carpentry’s teaching is hands-on, so participants are encouraged to use their own computers to insure the proper setup of tools for an efficient workflow. These lessons assume no prior knowledge of the skills or tools.\nTo get started, follow the directions in the “[Setup](../setuppage/index.qmd]” tab to download data to your computer and follow any installation instructions.\n\nPrerequisites\nThis lesson requires a working copy of spreadsheet software, such as Microsoft Excel or LibreOffice or OpenOffice.org (see more details in “Setup”). To most effectively use these materials, please make sure to install everything before working through this lesson"
+  },
+  {
+    "objectID": "EcologyLesson/landing/index.html#for-instructors",
+    "href": "EcologyLesson/landing/index.html#for-instructors",
+    "title": "Data Organization in Spreadsheets for Ecologists",
+    "section": "For Instructors",
+    "text": "For Instructors\nIf you are teaching this lesson in a workshop, please see the Instructor notes."
+  },
+  {
+    "objectID": "EcologyLesson/landing/index.html#schedule",
+    "href": "EcologyLesson/landing/index.html#schedule",
+    "title": "Data Organization in Spreadsheets for Ecologists",
+    "section": "Schedule",
+    "text": "Schedule\n | Setup | Download files required for the lesson |\n00:00 | 1. Introduction | What are basic principles for using spreadsheets for good data organization? |\n00:18 | 2. Formatting data tables in spreadsheets | How do we format data in spreadsheets for effective data use? |\n00:53 | 3. Formatting problems | What are some common challenges with formatting data in spreadsheets and how can we avoid them? |\n01:13 | 4. Dates as data | What are good approaches for handling dates in spreadsheets? |\n01:26 | 5. Quality Control | How can we carry out basic quality control and quality assurance in spreadsheets? |\n01:46 | 6. Exporting Data | How can we export data from spreadsheets in a way that is useful for downstream applications? |\n01:56 | Finish | |\nThe actual schedule may vary slightly depending on the topics and exercises chosen by the instructor.\nLicensed under CC-BY 4.0 2018–2022 by The Carpentries\nLicensed under CC-BY 4.0 2016–2018 by Data Carpentry"
+  },
+  {
+    "objectID": "EcologyLesson/setuppage/index.html",
+    "href": "EcologyLesson/setuppage/index.html",
+    "title": "Setup",
+    "section": "",
+    "text": "Download this data file to your computer: https://ndownloader.figshare.com/files/2252083"
+  },
+  {
+    "objectID": "EcologyLesson/setuppage/index.html#data",
+    "href": "EcologyLesson/setuppage/index.html#data",
+    "title": "Setup",
+    "section": "",
+    "text": "Download this data file to your computer: https://ndownloader.figshare.com/files/2252083"
+  },
+  {
+    "objectID": "EcologyLesson/setuppage/index.html#about-the-data",
+    "href": "EcologyLesson/setuppage/index.html#about-the-data",
+    "title": "Setup",
+    "section": "About the data",
+    "text": "About the data\nThe data for this lesson is a part of the Data Carpentry Ecology workshop. It is a teaching version of the Portal Database. The data in this lesson is a subset of the teaching version that has been intentionally ‘messed up’ for this lesson.\nThe data for this lesson and the workshop are in the Portal Project Teaching Database available on FigShare, with a CC-BY license available for reuse.\nErnest, M., Brown, J., Valone, T., and White, E.P. (2017). Portal Project Teaching Database. Version 6. Figshare. DOI: 10.6084/m9.figshare.1314459.v6"
+  },
+  {
+    "objectID": "EcologyLesson/setuppage/index.html#software",
+    "href": "EcologyLesson/setuppage/index.html#software",
+    "title": "Setup",
+    "section": "Software",
+    "text": "Software\nTo interact with spreadsheets, we can use LibreOffice, Microsoft Excel, Gnumeric, OpenOffice.org, or other programs. Commands may differ a bit between programs, but the general ideas for thinking about spreadsheets are the same.\nFor this lesson, if you don’t have a spreadsheet program already, you can use LibreOffice. It’s a free, open source spreadsheet program.\n\nWindows\n\nDownload the Installer\n\nInstall LibreOffice by going to the installation page. The version for Windows should automatically be selected. Click Download Version X.X.X (whichever is the most recent version). You will go to a page that asks about a donation, but you don’t need to make one. Your download should begin automatically.\n\nInstall LibreOffice\nOnce the installer is downloaded, double click on it and LibreOffice should install.\n\n\n\nMac OS X\n\nDownload the Installer\n\nInstall LibreOffice by going to the installation page. The version for Mac should automatically be selected. Click Download Version X.X.X (whichever is the most recent version). You will go to a page that asks about a donation, but you don’t need to make one. Your download should begin automatically.\n\nInstall LibreOffice\nOnce the installer is downloaded, double click on it and LibreOffice should install\n\n\n\nLinux\n\nDownload the Installer\n\nInstall LibreOffice by going to the installation page. The version for Linux should automatically be selected. Click Download Version X.X.X (whichever is the most recent version). You will go to a page that asks about a donation, but you don’t need to make one. Your download should begin automatically.\n\nInstall LibreOffice\nOnce the installer is downloaded, double click on it and LibreOffice should install.\n\nLicensed under CC-BY 4.0 2018–2022 by The Carpentries\nLicensed under CC-BY 4.0 2016–2018 by Data Carpentry"
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Nutwell, E. and Badger, K. “Public Data in the Public Interest: A Spreadsheet-Based Project for High School Computing”, Association for Computing Machinery (2025)\n\nOrban, C. “Blurring the Boundaries between Science, Math, and Computer Science” Proceedings of the 55th ACM Technical Symposium on Computer Science Education (2024)\n\nNutwell, E., Badger, K. and Kulp, J. T. “Data for Healthy Communities: A Public Interest Pilot Course Designed to Develop K-12 Data Literacy” Proceedings of the 55th ACM Technical Symposium on Computer Science (2024)\n\nOrban, C., Zimmerman, S., Kulp, J. T., Boughton, J., Perrico, Z., Rapp, B., Teeling-Smith, R. “Methods to Simplify Object Tracking in Video Data” The Physics Teacher, 61, 576-579 (2023)\n\nOrban, C. and Teeling-Smith, R. ``Computational Thinking in Introductory Physics’’ The Physics Teacher (2020)\n\nOrban, C., Teeling-Smith, R. M., Smith, J. R. H., and Porter, C. D. “A Hybrid Approach for Using Programming Exercises in Introductory Physics”, 2018, American Journal of Physics \n\nOrban, C., Porter, C. D., Brecht, N. K., Teeling-Smith, R. M., Harper, K. A., “A novel approach for using programming exercises in electromagnetism coursework” PERC 2017"
+  },
+  {
+    "objectID": "activities.html",
+    "href": "activities.html",
+    "title": "Activities",
+    "section": "",
+    "text": "View a flowchart of all STEMcoding activities here.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAccelerate the Blob\n\n\n\nMiddle School\n\n\nIntro HS\n\n\nPhysical Science\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAir Pressure Versus Height: Balloon Data\n\n\n\nAdvanced HS\n\n\nMath\n\n\nPhysical Science\n\n\nPhysics\n\n\nAtmospheric Science\n\n\nData Science\n\n\nSpace\n\n\nSpreadsheets\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAir Pressure Versus Height: Smartphone Data\n\n\n\nIntro HS\n\n\nMath\n\n\nPhysical Science\n\n\nPhysics\n\n\nAtmospheric Science\n\n\nData Science\n\n\nSpace\n\n\nSpreadsheets\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nApollo Moon Landing\n\n\n\nIntro HS\n\n\nPhysical Science\n\n\nPhysics\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBellicose Birds\n\n\n\nAdvanced HS\n\n\nPhysics\n\n\nJavascript\n\n\nTrigonometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBird Launcher\n\n\n\nIntro HS\n\n\nPhysical Science\n\n\nPhysics\n\n\nAlgebra\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBonk.io Clone\n\n\n\nIntro HS\n\n\nPhysical Science\n\n\nPhysics\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCO2 Survey\n\n\n\nIntro HS\n\n\nData Science\n\n\nSpreadsheets\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nConductor Interactive\n\n\n\nAll Ages\n\n\nPhysics\n\n\nPhysical Science\n\n\nElectromagnetism\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEarth Day\n\n\n\nAdvanced HS\n\n\nTrigonometry\n\n\nEnvironmental Science\n\n\nData Science\n\n\nSpreadsheets\n\n\nSustainability\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nElectromagnetism: Unit System\n\n\n\nPhysics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEscape Velocity and Newtonian Black Holes\n\n\n\nAdvanced HS\n\n\nAstronomy\n\n\nPhysics\n\n\nJavascript\n\n\nTrigonometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExoplanets\n\n\n\nAdvanced HS\n\n\nAstronomy\n\n\nPhysics\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFluid Mechanics Interactive\n\n\n\nAll Ages\n\n\nPhysics\n\n\nPhysical Science\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFractal Puzzle\n\n\n\nAll Ages\n\n\nMath\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGood Figures vs. Bad Figures\n\n\n\nAll Ages\n\n\nData Science\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLaser Defense Part 1\n\n\n\nJavascript\n\n\nMath\n\n\nAdvanced HS\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLaser Defense Part 2\n\n\n\nAdvanced HS\n\n\nMath\n\n\nJavascript\n\n\nTrigonometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLunar Descent\n\n\n\nAdvanced HS\n\n\nPhysics\n\n\nJavascript\n\n\nTrigonometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMagnetic Force\n\n\n\nAdvanced HS\n\n\nPhysics\n\n\nElectromagnetism\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMathematical Flower Activity\n\n\n\nAdvanced HS\n\n\nMath\n\n\nJavascript\n\n\nTrigonometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMove the Blob\n\n\n\nMiddle School\n\n\nIntro HS\n\n\nPhysical Science\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNight Sky Simulator\n\n\n\nAdvanced HS\n\n\nAstronomy\n\n\nData Science\n\n\nSpreadsheets\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nObject Tracker\n\n\n\nIntro HS\n\n\nAdvanced HS\n\n\nMath\n\n\nPhysics\n\n\nPhysical Science\n\n\nData Science\n\n\nSpreadsheets\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOrbital Motion: Eccentricity\n\n\n\nAdvanced HS\n\n\nAstronomy\n\n\nPhysics\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOrbital Motion: Kepler’s Second Law\n\n\n\nAdvanced HS\n\n\nIntro HS\n\n\nPhysics\n\n\nAstronomy\n\n\nTrigonometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nParticle Accelerator\n\n\n\nMiddle School\n\n\nIntro HS\n\n\nPhysical Science\n\n\nPhysics\n\n\nElectromagnetism\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nParticle Accelerator with Potential\n\n\n\nMiddle School\n\n\nIntro HS\n\n\nPhysical Science\n\n\nPhysics\n\n\nElectromagnetism\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPi Day Part 1\n\n\n\nJavascript\n\n\nMath\n\n\nGeometry\n\n\nMiddle School\n\n\nIntro HS\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPi Day Part 2\n\n\n\nAdvanced HS\n\n\nTrigonometry\n\n\nPrecalculus\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPi Day in Parallel\n\n\n\nAdvanced HS\n\n\nMath\n\n\nGeometry\n\n\nComputer Science\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPipe Interactive\n\n\n\nAll Ages\n\n\nPhysics\n\n\nPhysical Science\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPlanetoids\n\n\n\nAdvanced HS\n\n\nPhysics\n\n\nJavascript\n\n\nTrigonometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPlanetoids with Momentum\n\n\n\nMiddle School\n\n\nIntro HS\n\n\nPhysical Science\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPlanetoids with Torque\n\n\n\nAdvanced HS\n\n\nPhysics\n\n\nJavascript\n\n\nTrigonometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPlanetoids with a Spring\n\n\n\nAdvanced HS\n\n\nIntro HS\n\n\nPhysical Science\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPong\n\n\n\nMiddle School\n\n\nIntro HS\n\n\nPhysical Science\n\n\nPhysics\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProject Mercury Part 1\n\n\n\nMiddle School\n\n\nIntro HS\n\n\nPhysical Science\n\n\nPhysics\n\n\nAstronomy\n\n\nSpace\n\n\nHidden Figures\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProject Mercury Part 2\n\n\n\nAdvanced HS\n\n\nPhysics\n\n\nAstronomy\n\n\nSpace\n\n\nPrecalculus\n\n\nTrigonometry\n\n\nHidden Figures\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRC Circuits\n\n\n\nJavascript\n\n\nAdvanced HS\n\n\nPhysics\n\n\nElectromagnetism\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRepulsion Between Two Charges\n\n\n\nIntro HS\n\n\nAdvanced HS\n\n\nPhysics\n\n\nElectromagnetism\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSlingshot With Gravity\n\n\n\nAdvanced HS\n\n\nAstronomy\n\n\nPhysics\n\n\nJavascript\n\n\nTrigonometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSolar Cell Data Analysis\n\n\n\nIntro HS\n\n\nData Science\n\n\nSustainability\n\n\nSpreadsheets\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSolar System Model\n\n\n\nIntro HS\n\n\nData Science\n\n\nSpreadsheets\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWave Interference\n\n\n\nAdvanced HS\n\n\nPhysics\n\n\nElectromagnetism\n\n\nJavascript\n\n\nTrigonometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "standards.html",
+    "href": "standards.html",
+    "title": "Standards",
+    "section": "",
+    "text": "Under Construction!"
+  },
+  {
+    "objectID": "calendar.html",
+    "href": "calendar.html",
+    "title": "Calendar",
+    "section": "",
+    "text": "Would you like to invite us to speak to your group or event? Would you like us to run a workshop? We can do in person or online* as we are able. Email Chris Orban at chris.m.orban@gmail.com to reach out.\n*In online presentations we can do a green screen within zoom. It’s pretty cool."
+  },
+  {
+    "objectID": "datascience.html",
+    "href": "datascience.html",
+    "title": "Data Science",
+    "section": "",
+    "text": "More info about our data science initiative coming soon!\nIn the mean time check out our Data Science and Spreadsheet activities"
+  },
+  {
+    "objectID": "teachertraining.html",
+    "href": "teachertraining.html",
+    "title": "Training",
+    "section": "",
+    "text": "Schedule"
+  },
+  {
+    "objectID": "teachertraining.html#weteach_cs-summer-2025-texas-teacher-training",
+    "href": "teachertraining.html#weteach_cs-summer-2025-texas-teacher-training",
+    "title": "Training",
+    "section": "",
+    "text": "Schedule"
+  },
+  {
+    "objectID": "EcologyLesson/qualitycontrol/index.html",
+    "href": "EcologyLesson/qualitycontrol/index.html",
+    "title": "Quality control",
+    "section": "",
+    "text": "Teaching: 20 min\nExercises: 0 min\nQuestions\n\nHow can we carry out basic quality control and quality assurance in spreadsheets?\n\nObjectives\n\nApply quality control techniques to identify errors in spreadsheets and limit incorrect data entry.\n\n\nWhen you have a well-structured data table, you can use several simple techniques within your spreadsheet to ensure the data you enter is free of errors. These approaches include techniques that are implemented prior to entering data (quality assurance) and techniques that are used after entering data to check for errors (quality control)."
+  },
+  {
+    "objectID": "EcologyLesson/qualitycontrol/index.html#overview",
+    "href": "EcologyLesson/qualitycontrol/index.html#overview",
+    "title": "Quality control",
+    "section": "",
+    "text": "Teaching: 20 min\nExercises: 0 min\nQuestions\n\nHow can we carry out basic quality control and quality assurance in spreadsheets?\n\nObjectives\n\nApply quality control techniques to identify errors in spreadsheets and limit incorrect data entry.\n\n\nWhen you have a well-structured data table, you can use several simple techniques within your spreadsheet to ensure the data you enter is free of errors. These approaches include techniques that are implemented prior to entering data (quality assurance) and techniques that are used after entering data to check for errors (quality control)."
+  },
+  {
+    "objectID": "EcologyLesson/qualitycontrol/index.html#quality-assurance",
+    "href": "EcologyLesson/qualitycontrol/index.html#quality-assurance",
+    "title": "Quality control",
+    "section": "Quality Assurance",
+    "text": "Quality Assurance\nQuality assurance stops bad data from ever being entered by checking to see if values are valid during data entry. For example, if research is being conducted at sites A, B, and C, then the value V (which is right next to B on the keyboard) should never be entered. Likewise if one of the kinds of data being collected is a count, only integers greater than or equal to zero should be allowed.\nTo control the kind of data entered into a spreadsheet we use Data Validation (Excel) or Validity (Libre Office Calc), to set the values that can be entered in each data column.\n\nSelect the cells or column you want to validate\nOn the Data tab select Data Validation\n\n\n\nIn the Allow box select the kind of data that should be in the column. Options include whole numbers, decimals, lists of items, dates, and other values.\n\n\n\nAfter selecting an item enter any additional details. For example, if you’ve chosen a list of values, enter a comma-delimited or semi-colon list of allowable values in the Source box.\n\nLet’s try this out by setting the plot column in our spreadsheet to only allow plot values that are integers between 1 and 24.\n\nSelect the 1plot_id1 column\nOn the Data tab select Data Validation\nIn the Allow box select Whole number\nSet the minimum and maximum values to 1 and 24.\n\n\nNow let’s try entering a new value in the plot column that isn’t a valid plot. The spreadsheet stops us from entering the wrong value and asks us if we would like to try again.\n\nYou can also customize the resulting message to be more informative by entering your own message in the Input Message tab\n\nor allow invalid data to result in a warning rather than an error by modifying the Style option on the Error Alert tab.\n\nQuality assurance can make data entry easier as well as more robust. For example, if you use a list of options to restrict data entry, the spreadsheet will provide you with a drop-downlist of the available items. So, instead of trying to remember how to spell Dipodomys spectabilis, you can select the right option from the list."
+  },
+  {
+    "objectID": "EcologyLesson/qualitycontrol/index.html#quality-control",
+    "href": "EcologyLesson/qualitycontrol/index.html#quality-control",
+    "title": "Quality control",
+    "section": "Quality Control",
+    "text": "Quality Control\nTip: Before doing any quality control operations, save your original file with the formulas and a name indicating it is the original data. Create a separate file with appropriate naming and versioning, and ensure your data is stored as values and not as formulas. Because formulas refer to other cells, and you may be moving cells around, you may compromise the integrity of your data if you do not take this step!\nreadMe (README) files: As you start manipulating your data files, create a readMe document / text file to keep track of your files and document your manipulations so that they may be easily understood and replicated, either by your future self or by an independent researcher. Your readMe file should document all of the files in your data set (including documentation), describe their content and format, and lay out the organizing principles of folders and subfolders. For each of the separate files listed, it is a good idea to document the manipulations or analyses that were carried out on those data. Cornell University’s Research Data Management Service Group provides detailed guidelines for how to write a good readMe file, along with an adaptable template."
+  },
+  {
+    "objectID": "EcologyLesson/qualitycontrol/index.html#sorting",
+    "href": "EcologyLesson/qualitycontrol/index.html#sorting",
+    "title": "Quality control",
+    "section": "Sorting",
+    "text": "Sorting\nBad values often sort to the bottom or top of the column. For example, if your data should be numeric, then alphabetical and null data will group at the ends of the sorted data. Sort your data by each field, one at a time. Scan through each column, but pay the most attention to the top and the bottom of a column. If your dataset is well-structured and does not contain formulas, sorting should never affect the integrity of your dataset.\nRemember to expand your sort in order to prevent data corruption. Expanding your sort ensures that the all the data in one row move together instead of only sorting a single column in isolation. Sorting by only a single column will scramble your data - a single row will no longer represent an individual observation."
+  },
+  {
+    "objectID": "EcologyLesson/qualitycontrol/index.html#exercise",
+    "href": "EcologyLesson/qualitycontrol/index.html#exercise",
+    "title": "Quality control",
+    "section": "Exercise",
+    "text": "Exercise\nWe’ve combined all of the tables from the messy data into a single table in a single tab. Download this semi-cleaned data file to your computer: survey_sorting_exercise\nOnce downloaded, sort the Weight_grams column in your spreadsheet program from Largest to Smallest.\nWhat do you notice?"
+  },
+  {
+    "objectID": "EcologyLesson/qualitycontrol/index.html#conditional-formatting",
+    "href": "EcologyLesson/qualitycontrol/index.html#conditional-formatting",
+    "title": "Quality control",
+    "section": "Conditional formatting",
+    "text": "Conditional formatting\nConditional formatting basically can do something like color code your values by some criteria or lowest to highest. This makes it easy to scan your data for outliers.\nConditional formatting should be used with caution, but it can be a great way to flag inconsistent values when entering data.\n\nExercise\n\nMake sure the Weight_grams column is highlighted.\nIn the main Excel menu bar, click Home &gt; Conditional Formatting... choose a formatting rule.\nApply any 2-Color Scale formatting rule.\nNow we can scan through and different colors will stand out. Do you notice any strange values?\n\nIt is nice to be able to do these scans in spreadsheets, but we also can do these checks in a programming language like R, or in OpenRefine or SQL."
+  },
+  {
+    "objectID": "EcologyLesson/qualitycontrol/index.html#key-points",
+    "href": "EcologyLesson/qualitycontrol/index.html#key-points",
+    "title": "Quality control",
+    "section": "Key Points",
+    "text": "Key Points\n\nAlways copy your original spreadsheet file and work with a copy so you don’t affect the raw data.\nUse data validation to prevent accidentally entering invalid data.\nUse sorting to check for invalid data.\nUse conditional formatting (cautiously) to check for invalid data.\n\nLicensed under CC-BY 4.0 2018–2022 by The Carpentries\nLicensed under CC-BY 4.0 2016–2018 by Data Carpentry"
+  },
+  {
+    "objectID": "EcologyLesson/datesasdata/index.html",
+    "href": "EcologyLesson/datesasdata/index.html",
+    "title": "Dates as data",
+    "section": "",
+    "text": "Teaching: 10 min\nExercises: 3 min\nQuestions\n\nWhat are good approaches for handling dates in spreadsheets?\n\nObjectives\n\nDescribe how dates are stored and formatted in spreadsheets.\nDescribe the advantages of alternative date formatting in spreadsheets.\nDemonstrate best practices for entering dates in spreadsheets.\n\n\nDates in spreadsheets can be a problem. For one thing, dates are stored in a single column. While this seems the most natural way to record dates, it actually is not best practice. A spreadsheet application will display the dates in a seemingly correct way (to a human observer) but how it actually handles and stores the dates may be problematic.\nIn particular, please remember that DATE functions that are valid for a given spreadsheet program (be it LibreOffice Calc, Microsoft Excel, OpenOffice, Gnumeric, etc.) DATE functions are usually guaranteed to be compatible only within the same family of products. Most of the images of spreadsheets in this lesson come from Microsoft Excel, run on a Mac or on Windows. Regardless of your spreadsheet, if you will later need to export the data and need to conserve the timestamps, you are better off handling them using one of the solutions discussed below.\nOne of the big problems with Excel is it can turn things that aren’t dates into dates, for example gene/protein names or identifiers like MAR1, DEC1, OCT4 will be changed to dates, and you cannot retreive the original name or identifier (except manually). So if you avoid the date format overall, it’s easier to work with these types of data. When you must work with dates, here is how to do it efficiently."
+  },
+  {
+    "objectID": "EcologyLesson/datesasdata/index.html#overview",
+    "href": "EcologyLesson/datesasdata/index.html#overview",
+    "title": "Dates as data",
+    "section": "",
+    "text": "Teaching: 10 min\nExercises: 3 min\nQuestions\n\nWhat are good approaches for handling dates in spreadsheets?\n\nObjectives\n\nDescribe how dates are stored and formatted in spreadsheets.\nDescribe the advantages of alternative date formatting in spreadsheets.\nDemonstrate best practices for entering dates in spreadsheets.\n\n\nDates in spreadsheets can be a problem. For one thing, dates are stored in a single column. While this seems the most natural way to record dates, it actually is not best practice. A spreadsheet application will display the dates in a seemingly correct way (to a human observer) but how it actually handles and stores the dates may be problematic.\nIn particular, please remember that DATE functions that are valid for a given spreadsheet program (be it LibreOffice Calc, Microsoft Excel, OpenOffice, Gnumeric, etc.) DATE functions are usually guaranteed to be compatible only within the same family of products. Most of the images of spreadsheets in this lesson come from Microsoft Excel, run on a Mac or on Windows. Regardless of your spreadsheet, if you will later need to export the data and need to conserve the timestamps, you are better off handling them using one of the solutions discussed below.\nOne of the big problems with Excel is it can turn things that aren’t dates into dates, for example gene/protein names or identifiers like MAR1, DEC1, OCT4 will be changed to dates, and you cannot retreive the original name or identifier (except manually). So if you avoid the date format overall, it’s easier to work with these types of data. When you must work with dates, here is how to do it efficiently."
+  },
+  {
+    "objectID": "EcologyLesson/datesasdata/index.html#exercise",
+    "href": "EcologyLesson/datesasdata/index.html#exercise",
+    "title": "Dates as data",
+    "section": "Exercise",
+    "text": "Exercise\nChallenge: pulling month, day and year out of dates\n\nLet’s create a tab called dates in our data spreadsheet and copy the ‘plot 3’ table from the 2014 tab (that contains the problematic dates).\nLet’s extract month, day and year from the dates in the Date collected column into new columns. For this we can use the following built-in Excel functions:\n\nYEAR()\nMONTH()\nDAY()\n(Make sure the new columns are formatted as a number and not as a date.)\nYou can see that even though we expected the year to be 2014, the year is actually 2015. What happened here is that the field assistant who collected the data for year 2014 initially forgot to include their data for ‘plot 3’ in this dataset. They came back in 2015 to add the missing data into the dataset and entered the dates for ‘plot 3’ without the year. Excel automatically interpreted the year as 2015 - the year the data was entered into the spreadsheet and not the year the data was collected. Thereby, the spreadsheet program introduced an error in the dataset without the field assistant realising."
+  },
+  {
+    "objectID": "EcologyLesson/datesasdata/index.html#exercise-1",
+    "href": "EcologyLesson/datesasdata/index.html#exercise-1",
+    "title": "Dates as data",
+    "section": "Exercise",
+    "text": "Exercise\nChallenge: pulling hour, minute and second out of the current time\nCurrent time and date are best retrieved using the functions NOW(), which returns the current date and time, and TODAY(), which returns the current date. The results will be formatted according to your computer’s settings.\n\nExtract the year, month and day from the current date and time string returned by the NOW() function.\nCalculate the current time using NOW()-TODAY().\nExtract the hour, minute and second from the current time using functions HOUR(), MINUTE() and SECOND().\nPress F9 to force the spreadsheet to recalculate the NOW() function, and check that it has been updated."
+  },
+  {
+    "objectID": "EcologyLesson/datesasdata/index.html#preferred-date-format",
+    "href": "EcologyLesson/datesasdata/index.html#preferred-date-format",
+    "title": "Dates as data",
+    "section": "Preferred date format",
+    "text": "Preferred date format\nIt is much safer to store dates with YEAR, MONTH, DAY in separate columns or as YEAR and DAY-OF-YEAR in separate columns.\nNote: Excel is unable to parse dates from before 1899-12-31, and will thus leave these untouched. If you’re mixing historic data from before and after this date, Excel will translate only the post-1900 dates into its internal format, thus resulting in mixed data. If you’re working with historic data, be extremely careful with your dates!\nExcel also entertains a second date system, the 1904 date system, as the default in Excel for Macintosh. This system will assign a different serial number than the 1900 date system. Because of this, dates must be checked for accuracy when exporting data from Excel (look for dates that are ~4 years off)."
+  },
+  {
+    "objectID": "EcologyLesson/datesasdata/index.html#date-formats-in-spreadsheets",
+    "href": "EcologyLesson/datesasdata/index.html#date-formats-in-spreadsheets",
+    "title": "Dates as data",
+    "section": "Date formats in spreadsheets",
+    "text": "Date formats in spreadsheets\nSpreadsheet programs have numerous “useful features” which allow them to handle dates in a variety of ways.\n\n\n\nMany formats, many ambiguities\n\n\nBut these “features” often allow ambiguity to creep into your data. Ideally, data should be as unambiguous as possible."
+  },
+  {
+    "objectID": "EcologyLesson/datesasdata/index.html#dates-stored-as-integers",
+    "href": "EcologyLesson/datesasdata/index.html#dates-stored-as-integers",
+    "title": "Dates as data",
+    "section": "Dates stored as integers",
+    "text": "Dates stored as integers\nThe first thing you need to know is that Excel stores dates as numbers - see the last column in the above figure. Essentially, it counts the days from a default of December 31, 1899, and thus stores July 2, 2014 as the serial number 41822.\n(But wait. That’s the default on my version of Excel. We’ll get into how this can introduce problems down the line later in this lesson. )\nThis serial number thing can actually be useful in some circumstances. By using the above functions we can easily add days, months or years to a given date. Say you had a sampling plan where you needed to sample every thirty seven days. In another cell, you could type:\n=B2+37\nAnd it would return\n8-Aug\nbecause it understands the date as a number 41822, and 41822 + 37 = 41859 which Excel interprets as August 8, 2014. It retains the format (for the most part) of the cell that is being operated upon, (unless you did some sort of formatting to the cell before, and then all bets are off). Month and year rollovers are internally tracked and applied.\nNote Adding years and months and days is slightly trickier because we need to make sure that we are adding the amount to the correct entity.\n\nFirst we extract the single entities (day, month or year)\nWe can then add values to do that\nFinally the complete date string is reconstructed using the DATE() function.\n\nAs for dates, times are handled in a similar way; seconds can be directly added but to add hour and minutes we need to make sure that we are adding the quantities to the correct entities.\nWhich brings us to the many different ways Excel provides in how it displays dates. If you refer to the figure above, you’ll see that there are many ways that ambiguity creeps into your data depending on the format you chose when you enter your data, and if you’re not fully aware of which format you’re using, you can end up actually entering your data in a way that Excel will badly misinterpret and you will end up with errors in your data that will be extremely difficult to track down and troubleshoot.\n\nExercise\nWhat happens to the dates in the dates tab of our workbook if we save this sheet in Excel (in csv format) and then open the file in a plain text editor (like TextEdit or Notepad)? What happens to the dates if we then open the csv file in Excel?\n\nNote\nYou will notice that when exporting into a text-based format (such as CSV), Excel will export its internal date integer instead of a useful value (that is, the dates will be represented as integer numbers). This can potentially lead to problems if you use other software to manipulate the file."
+  },
+  {
+    "objectID": "EcologyLesson/datesasdata/index.html#advantages-of-alternative-date-formatting",
+    "href": "EcologyLesson/datesasdata/index.html#advantages-of-alternative-date-formatting",
+    "title": "Dates as data",
+    "section": "Advantages of Alternative Date Formatting",
+    "text": "Advantages of Alternative Date Formatting\nStoring dates as YEAR, MONTH, DAY\nStoring dates in YEAR, MONTH, DAY format helps remove this ambiguity. Let’s look at this issue a bit closer.\nFor instance this is a spreadsheet representing insect counts that were taken every few days over the summer, and things went something like this:\n\n\n\nSo, so ambiguous, it’s even confusing Excel\n\n\nIf Excel was to be believed, this person had been collecting bugs in the future. Now, we have no doubt this person is highly capable, but I believe time travel was beyond even their grasp.\nEntering dates in one cell is helpful but due to the fact that the spreadsheet programs may interpret and save the data in different ways (doing that somewhat behind the scenes), there is a better practice.\nIn dealing with dates in spreadsheets, separate date data into separate fields (day, month, year), which will eliminate any chance of ambiguity."
+  },
+  {
+    "objectID": "EcologyLesson/datesasdata/index.html#storing-dates-as-year-day-of-year",
+    "href": "EcologyLesson/datesasdata/index.html#storing-dates-as-year-day-of-year",
+    "title": "Dates as data",
+    "section": "Storing dates as YEAR, DAY-OF-YEAR",
+    "text": "Storing dates as YEAR, DAY-OF-YEAR\nThere is also another option. You can also store dates as year and day of year (DOY). Why? Because depending on your question, this might be what’s useful to you, and there is practically no possibility for ambiguity creeping in.\nStatistical models often incorporate year as a factor, or a categorical variable, rather than a numeric variable, to account for year-to-year variation, and DOY can be used to measure the passage of time within a year.\nSo, can you convert all your dates into DOY format? Well, in Excel, here’s a useful guide:\n\n\n\nKill that ambiguity before it bites you!"
+  },
+  {
+    "objectID": "EcologyLesson/datesasdata/index.html#storing-dates-as-a-single-string",
+    "href": "EcologyLesson/datesasdata/index.html#storing-dates-as-a-single-string",
+    "title": "Dates as data",
+    "section": "Storing dates as a single string",
+    "text": "Storing dates as a single string\nAnother alternative could be to convert the date string into a single string using the YYYYMMDD format. For example the date March 24, 2015 would become 20150324. This option also works for datetimes using the YYYYMMDDhhmmss format. So the datetime March 24, 2015 17:25:35 would become 20150324172535, where:\n\nYYYY: the full year, i.e. 2015\nMM: the month, i.e. 03\nDD: the day of month, i.e. 24\nhh: hour of day, i.e. 17\nmm: minutes, i.e. 25\nss: seconds, i.e. 35\n\nSuch strings will be correctly sorted in ascending or descending order, and by knowing the format they can then be correctly processed by the receiving software."
+  },
+  {
+    "objectID": "EcologyLesson/datesasdata/index.html#key-points",
+    "href": "EcologyLesson/datesasdata/index.html#key-points",
+    "title": "Dates as data",
+    "section": "Key Points",
+    "text": "Key Points\n\nTreating dates as multiple pieces of data rather than one makes them easier to handle.\n\nLicensed under CC-BY 4.0 2018–2022 by The Carpentries\nLicensed under CC-BY 4.0 2016–2018 by Data Carpentry"
+  },
+  {
+    "objectID": "EcologyLesson/formattingtables/index.html",
+    "href": "EcologyLesson/formattingtables/index.html",
+    "title": "Formatting data tables in Spreadsheets",
+    "section": "",
+    "text": "Teaching: 15 min\nExercises: 20 min\nQuestions\n\nHow do we format data in spreadsheets for effective data use?\n\nObjectives\n\nDescribe best practices for data entry and formatting in spreadsheets.\nApply best practices to arrange variables and observations in a spreadsheet.\n\n\nThe most common mistake made is treating spreadsheet programs like lab notebooks, that is, relying on context, notes in the margin, spatial layout of data and fields to convey information. As humans, we can (usually) interpret these things, but computers don’t view information the same way, and unless we explain to the computer what every single thing means (and that can be hard!), it will not be able to see how our data fits together.\nUsing the power of computers, we can manage and analyze data in much more effective and faster ways, but to use that power, we have to set up our data for the computer to be able to understand it (and computers are very literal).\nThis is why it’s extremely important to set up well-formatted tables from the outset - before you even start entering data from your very first preliminary experiment. Data organization is the foundation of your research project. It can make it easier or harder to work with your data throughout your analysis, so it’s worth thinking about when you’re doing your data entry or setting up your experiment. You can set things up in different ways in spreadsheets, but some of these choices can limit your ability to work with the data in other programs or have the you-of-6-months-from-now or your collaborator work with the data.\n\n\nThe best layouts/formats (as well as software and interfaces) for data entry and data analysis might be different. It is important to take this into account, and ideally automate the conversion from one to another."
+  },
+  {
+    "objectID": "EcologyLesson/formattingtables/index.html#overview",
+    "href": "EcologyLesson/formattingtables/index.html#overview",
+    "title": "Formatting data tables in Spreadsheets",
+    "section": "",
+    "text": "Teaching: 15 min\nExercises: 20 min\nQuestions\n\nHow do we format data in spreadsheets for effective data use?\n\nObjectives\n\nDescribe best practices for data entry and formatting in spreadsheets.\nApply best practices to arrange variables and observations in a spreadsheet.\n\n\nThe most common mistake made is treating spreadsheet programs like lab notebooks, that is, relying on context, notes in the margin, spatial layout of data and fields to convey information. As humans, we can (usually) interpret these things, but computers don’t view information the same way, and unless we explain to the computer what every single thing means (and that can be hard!), it will not be able to see how our data fits together.\nUsing the power of computers, we can manage and analyze data in much more effective and faster ways, but to use that power, we have to set up our data for the computer to be able to understand it (and computers are very literal).\nThis is why it’s extremely important to set up well-formatted tables from the outset - before you even start entering data from your very first preliminary experiment. Data organization is the foundation of your research project. It can make it easier or harder to work with your data throughout your analysis, so it’s worth thinking about when you’re doing your data entry or setting up your experiment. You can set things up in different ways in spreadsheets, but some of these choices can limit your ability to work with the data in other programs or have the you-of-6-months-from-now or your collaborator work with the data.\n\n\nThe best layouts/formats (as well as software and interfaces) for data entry and data analysis might be different. It is important to take this into account, and ideally automate the conversion from one to another."
+  },
+  {
+    "objectID": "EcologyLesson/formattingtables/index.html#keeping-track-of-your-analyses",
+    "href": "EcologyLesson/formattingtables/index.html#keeping-track-of-your-analyses",
+    "title": "Formatting data tables in Spreadsheets",
+    "section": "Keeping track of your analyses",
+    "text": "Keeping track of your analyses\nWhen you’re working with spreadsheets, during data clean up or analyses, it’s very easy to end up with a spreadsheet that looks very different from the one you started with. In order to be able to reproduce your analyses or figure out what you did when a fellow reseacher or a lead researcher asks for a different analysis, you should\ncreate a new file with your cleaned or analyzed data. Don’t modify the original dataset, or you will never know where you started! keep track of the steps you took in your clean up or analysis. You should track these steps as you would any step in an experiment. We recommend that you do this in a plain text file stored in the same folder as the data file. This might be an example of a spreadsheet setup:\n\nPut these principles in to practice today during your Exercises."
+  },
+  {
+    "objectID": "EcologyLesson/formattingtables/index.html#structuring-data-in-spreadsheets",
+    "href": "EcologyLesson/formattingtables/index.html#structuring-data-in-spreadsheets",
+    "title": "Formatting data tables in Spreadsheets",
+    "section": "Structuring data in spreadsheets",
+    "text": "Structuring data in spreadsheets\nThe cardinal rule of using spreadsheet programs for data is to keep it “tidy”:\nPut all your variables in columns - the thing you’re measuring, like ‘weight’ or ‘temperature’. Put each observation in its own row. Don’t combine multiple pieces of information in one cell. Sometimes it just seems like one thing, but think if that’s the only way you’ll want to be able to use or sort that data. Leave the raw data raw - don’t change it! Export the cleaned data to a text-based format like CSV (comma-separated values) format. This ensures that anyone can use the data, and is required by most data repositories. For instance, we have data from a survey of small mammals in a desert ecosystem. Different people have gone to the field and entered data into a spreadsheet. They keep track of things like species, plot, weight, sex and date collected.\nIf they were to keep track of the data like this:\n\nthe problem is that species and sex are in the same field. So, if they wanted to look at all of one species or look at different weight distributions by sex, it would be hard to do this using this data setup. If instead we put sex and species in different columns, you can see that it would be much easier."
+  },
+  {
+    "objectID": "EcologyLesson/formattingtables/index.html#columns-for-variables-and-rows-for-observations",
+    "href": "EcologyLesson/formattingtables/index.html#columns-for-variables-and-rows-for-observations",
+    "title": "Formatting data tables in Spreadsheets",
+    "section": "Columns for variables and rows for observations",
+    "text": "Columns for variables and rows for observations\nThe rule of thumb, when setting up a datasheet, is columns = variables, rows = observations, cells = data (values).\nSo, instead we should have:\n\n\nDiscussion\nIf not already discussed, introduce the dataset that will be used in this lesson, and in the other ecology lessons, the Portal Project Teaching Dataset.\nThe data used in the ecology lessons are observations of a small mammal community in southern Arizona. This is part of a project studying the effects of rodents and ants on the plant community that has been running for almost 40 years. The rodents are sampled on a series of 24 plots, with different experimental manipulations controlling which rodents are allowed to access which plots.\nThis is a real dataset that has been used in over 100 publications. We’ve simplified it just a little bit for the workshop, but you can download the full dataset and work with it using exactly the same tools we’ll learn about today.\n\n\nExercise\nWe’re going to take a messy version of the survey data and describe how we would clean it up.\n\nDownload the data by clicking here to get it from FigShare.\nOpen up the data in a spreadsheet program.\nYou can see that there are two tabs. Two field assistants conducted the surveys, one in 2013 and one in 2014, and they both kept track of the data in their own way in tabs 2013 and 2014 of the dataset, respectively. Now you’re the person in charge of this project and you want to be able to start analyzing the data.\nWith the person next to you, identify what is wrong with this spreadsheet. Also discuss the steps you would need to take to clean up the 2013 and 2014 tabs, and to put them all together in one spreadsheet.\n\nImportant Do not forget our first piece of advice: to create a new file (or tab) for the cleaned data, never modify your original (raw) data. After you go through this exercise, we’ll discuss as a group what was wrong with this data and how you would fix it.\nThere are excellent references to help you work with data in spreadsheets. These include:\nRegarding R scripting;\nHadley Wickham, Tidy Data, Vol. 59, Issue 10, Sep 2014, Journal of Statistical Software. http://www.jstatsoft.org/v59/i10.\nAppropriately Regarding Data organization in spreadsheets;\nBroman KW, Woo KH. 2018. Data organization in spreadsheets. PeerJ Preprints 6:e3183v2 Data organization in spreadsheets."
+  },
+  {
+    "objectID": "EcologyLesson/formattingtables/index.html#key-points",
+    "href": "EcologyLesson/formattingtables/index.html#key-points",
+    "title": "Formatting data tables in Spreadsheets",
+    "section": "Key Points",
+    "text": "Key Points\n\nNever modify your raw data. Always make a copy before making any changes.\nKeep track of all of the steps you take to clean your data in a plain text file.\nOrganize your data according to tidy data principles.\n\nLicensed under CC-BY 4.0 2018–2022 by The Carpentries\nLicensed under CC-BY 4.0 2016–2018 by Data Carpentry"
   },
   {
     "objectID": "EcologyLesson/formattingproblems/index.html",
@@ -791,459 +1155,109 @@
     "text": "Key Points\n\nAvoid using multiple tables within one spreadsheet.\nAvoid spreading data across multiple tabs.\nRecord zeros as zeros.\nUse an appropriate null value to record missing data.\nDon’t use formatting to convey information or to make your spreadsheet look pretty.\nPlace comments in a separate column.\nRecord units in column headers.\nInclude only one piece of information in a cell.\nAvoid spaces, numbers and special characters in column headers.\nAvoid special characters in your data.\nRecord metadata in a separate plain text file.\n\nLicensed under CC-BY 4.0 2018–2022 by The Carpentries\nLicensed under CC-BY 4.0 2016–2018 by Data Carpentry"
   },
   {
-    "objectID": "EcologyLesson/formattingtables/index.html",
-    "href": "EcologyLesson/formattingtables/index.html",
-    "title": "Formatting data tables in Spreadsheets",
+    "objectID": "projects/nightsky.html",
+    "href": "projects/nightsky.html",
+    "title": "Night Sky Simulator",
     "section": "",
-    "text": "Teaching: 15 min\nExercises: 20 min\nQuestions\n\nHow do we format data in spreadsheets for effective data use?\n\nObjectives\n\nDescribe best practices for data entry and formatting in spreadsheets.\nApply best practices to arrange variables and observations in a spreadsheet.\n\n\nThe most common mistake made is treating spreadsheet programs like lab notebooks, that is, relying on context, notes in the margin, spatial layout of data and fields to convey information. As humans, we can (usually) interpret these things, but computers don’t view information the same way, and unless we explain to the computer what every single thing means (and that can be hard!), it will not be able to see how our data fits together.\nUsing the power of computers, we can manage and analyze data in much more effective and faster ways, but to use that power, we have to set up our data for the computer to be able to understand it (and computers are very literal).\nThis is why it’s extremely important to set up well-formatted tables from the outset - before you even start entering data from your very first preliminary experiment. Data organization is the foundation of your research project. It can make it easier or harder to work with your data throughout your analysis, so it’s worth thinking about when you’re doing your data entry or setting up your experiment. You can set things up in different ways in spreadsheets, but some of these choices can limit your ability to work with the data in other programs or have the you-of-6-months-from-now or your collaborator work with the data.\n\n\nThe best layouts/formats (as well as software and interfaces) for data entry and data analysis might be different. It is important to take this into account, and ideally automate the conversion from one to another."
+    "text": "Simulated Night Sky\nThe image above is not an actual picture of the night sky or any real star field (maybe you’ve already noticed that its a fake!). It is a randomly-generated night sky from a computer program we are going to build. We are going to learn a little bit about stars and then we are going to think about why some stars appear brighter in the sky than others and what it means.\nAn interesting thing about this activity is that you will be able to download a spreadsheet with the list of randomly generated stars. In the directions here we will use Google sheets to analyze that data but you can use any spreadsheet program you are comfortable with (Excel, Libreoffice, Apple – Numbers)"
   },
   {
-    "objectID": "EcologyLesson/formattingtables/index.html#overview",
-    "href": "EcologyLesson/formattingtables/index.html#overview",
-    "title": "Formatting data tables in Spreadsheets",
-    "section": "",
-    "text": "Teaching: 15 min\nExercises: 20 min\nQuestions\n\nHow do we format data in spreadsheets for effective data use?\n\nObjectives\n\nDescribe best practices for data entry and formatting in spreadsheets.\nApply best practices to arrange variables and observations in a spreadsheet.\n\n\nThe most common mistake made is treating spreadsheet programs like lab notebooks, that is, relying on context, notes in the margin, spatial layout of data and fields to convey information. As humans, we can (usually) interpret these things, but computers don’t view information the same way, and unless we explain to the computer what every single thing means (and that can be hard!), it will not be able to see how our data fits together.\nUsing the power of computers, we can manage and analyze data in much more effective and faster ways, but to use that power, we have to set up our data for the computer to be able to understand it (and computers are very literal).\nThis is why it’s extremely important to set up well-formatted tables from the outset - before you even start entering data from your very first preliminary experiment. Data organization is the foundation of your research project. It can make it easier or harder to work with your data throughout your analysis, so it’s worth thinking about when you’re doing your data entry or setting up your experiment. You can set things up in different ways in spreadsheets, but some of these choices can limit your ability to work with the data in other programs or have the you-of-6-months-from-now or your collaborator work with the data.\n\n\nThe best layouts/formats (as well as software and interfaces) for data entry and data analysis might be different. It is important to take this into account, and ideally automate the conversion from one to another."
-  },
-  {
-    "objectID": "EcologyLesson/formattingtables/index.html#keeping-track-of-your-analyses",
-    "href": "EcologyLesson/formattingtables/index.html#keeping-track-of-your-analyses",
-    "title": "Formatting data tables in Spreadsheets",
-    "section": "Keeping track of your analyses",
-    "text": "Keeping track of your analyses\nWhen you’re working with spreadsheets, during data clean up or analyses, it’s very easy to end up with a spreadsheet that looks very different from the one you started with. In order to be able to reproduce your analyses or figure out what you did when a fellow reseacher or a lead researcher asks for a different analysis, you should\ncreate a new file with your cleaned or analyzed data. Don’t modify the original dataset, or you will never know where you started! keep track of the steps you took in your clean up or analysis. You should track these steps as you would any step in an experiment. We recommend that you do this in a plain text file stored in the same folder as the data file. This might be an example of a spreadsheet setup:\n\nPut these principles in to practice today during your Exercises."
-  },
-  {
-    "objectID": "EcologyLesson/formattingtables/index.html#structuring-data-in-spreadsheets",
-    "href": "EcologyLesson/formattingtables/index.html#structuring-data-in-spreadsheets",
-    "title": "Formatting data tables in Spreadsheets",
-    "section": "Structuring data in spreadsheets",
-    "text": "Structuring data in spreadsheets\nThe cardinal rule of using spreadsheet programs for data is to keep it “tidy”:\nPut all your variables in columns - the thing you’re measuring, like ‘weight’ or ‘temperature’. Put each observation in its own row. Don’t combine multiple pieces of information in one cell. Sometimes it just seems like one thing, but think if that’s the only way you’ll want to be able to use or sort that data. Leave the raw data raw - don’t change it! Export the cleaned data to a text-based format like CSV (comma-separated values) format. This ensures that anyone can use the data, and is required by most data repositories. For instance, we have data from a survey of small mammals in a desert ecosystem. Different people have gone to the field and entered data into a spreadsheet. They keep track of things like species, plot, weight, sex and date collected.\nIf they were to keep track of the data like this:\n\nthe problem is that species and sex are in the same field. So, if they wanted to look at all of one species or look at different weight distributions by sex, it would be hard to do this using this data setup. If instead we put sex and species in different columns, you can see that it would be much easier."
-  },
-  {
-    "objectID": "EcologyLesson/formattingtables/index.html#columns-for-variables-and-rows-for-observations",
-    "href": "EcologyLesson/formattingtables/index.html#columns-for-variables-and-rows-for-observations",
-    "title": "Formatting data tables in Spreadsheets",
-    "section": "Columns for variables and rows for observations",
-    "text": "Columns for variables and rows for observations\nThe rule of thumb, when setting up a datasheet, is columns = variables, rows = observations, cells = data (values).\nSo, instead we should have:\n\n\nDiscussion\nIf not already discussed, introduce the dataset that will be used in this lesson, and in the other ecology lessons, the Portal Project Teaching Dataset.\nThe data used in the ecology lessons are observations of a small mammal community in southern Arizona. This is part of a project studying the effects of rodents and ants on the plant community that has been running for almost 40 years. The rodents are sampled on a series of 24 plots, with different experimental manipulations controlling which rodents are allowed to access which plots.\nThis is a real dataset that has been used in over 100 publications. We’ve simplified it just a little bit for the workshop, but you can download the full dataset and work with it using exactly the same tools we’ll learn about today.\n\n\nExercise\nWe’re going to take a messy version of the survey data and describe how we would clean it up.\n\nDownload the data by clicking here to get it from FigShare.\nOpen up the data in a spreadsheet program.\nYou can see that there are two tabs. Two field assistants conducted the surveys, one in 2013 and one in 2014, and they both kept track of the data in their own way in tabs 2013 and 2014 of the dataset, respectively. Now you’re the person in charge of this project and you want to be able to start analyzing the data.\nWith the person next to you, identify what is wrong with this spreadsheet. Also discuss the steps you would need to take to clean up the 2013 and 2014 tabs, and to put them all together in one spreadsheet.\n\nImportant Do not forget our first piece of advice: to create a new file (or tab) for the cleaned data, never modify your original (raw) data. After you go through this exercise, we’ll discuss as a group what was wrong with this data and how you would fix it.\nThere are excellent references to help you work with data in spreadsheets. These include:\nRegarding R scripting;\nHadley Wickham, Tidy Data, Vol. 59, Issue 10, Sep 2014, Journal of Statistical Software. http://www.jstatsoft.org/v59/i10.\nAppropriately Regarding Data organization in spreadsheets;\nBroman KW, Woo KH. 2018. Data organization in spreadsheets. PeerJ Preprints 6:e3183v2 Data organization in spreadsheets."
-  },
-  {
-    "objectID": "EcologyLesson/formattingtables/index.html#key-points",
-    "href": "EcologyLesson/formattingtables/index.html#key-points",
-    "title": "Formatting data tables in Spreadsheets",
-    "section": "Key Points",
-    "text": "Key Points\n\nNever modify your raw data. Always make a copy before making any changes.\nKeep track of all of the steps you take to clean your data in a plain text file.\nOrganize your data according to tidy data principles.\n\nLicensed under CC-BY 4.0 2018–2022 by The Carpentries\nLicensed under CC-BY 4.0 2016–2018 by Data Carpentry"
-  },
-  {
-    "objectID": "EcologyLesson/datesasdata/index.html",
-    "href": "EcologyLesson/datesasdata/index.html",
-    "title": "Dates as data",
-    "section": "",
-    "text": "Teaching: 10 min\nExercises: 3 min\nQuestions\n\nWhat are good approaches for handling dates in spreadsheets?\n\nObjectives\n\nDescribe how dates are stored and formatted in spreadsheets.\nDescribe the advantages of alternative date formatting in spreadsheets.\nDemonstrate best practices for entering dates in spreadsheets.\n\n\nDates in spreadsheets can be a problem. For one thing, dates are stored in a single column. While this seems the most natural way to record dates, it actually is not best practice. A spreadsheet application will display the dates in a seemingly correct way (to a human observer) but how it actually handles and stores the dates may be problematic.\nIn particular, please remember that DATE functions that are valid for a given spreadsheet program (be it LibreOffice Calc, Microsoft Excel, OpenOffice, Gnumeric, etc.) DATE functions are usually guaranteed to be compatible only within the same family of products. Most of the images of spreadsheets in this lesson come from Microsoft Excel, run on a Mac or on Windows. Regardless of your spreadsheet, if you will later need to export the data and need to conserve the timestamps, you are better off handling them using one of the solutions discussed below.\nOne of the big problems with Excel is it can turn things that aren’t dates into dates, for example gene/protein names or identifiers like MAR1, DEC1, OCT4 will be changed to dates, and you cannot retreive the original name or identifier (except manually). So if you avoid the date format overall, it’s easier to work with these types of data. When you must work with dates, here is how to do it efficiently."
-  },
-  {
-    "objectID": "EcologyLesson/datesasdata/index.html#overview",
-    "href": "EcologyLesson/datesasdata/index.html#overview",
-    "title": "Dates as data",
-    "section": "",
-    "text": "Teaching: 10 min\nExercises: 3 min\nQuestions\n\nWhat are good approaches for handling dates in spreadsheets?\n\nObjectives\n\nDescribe how dates are stored and formatted in spreadsheets.\nDescribe the advantages of alternative date formatting in spreadsheets.\nDemonstrate best practices for entering dates in spreadsheets.\n\n\nDates in spreadsheets can be a problem. For one thing, dates are stored in a single column. While this seems the most natural way to record dates, it actually is not best practice. A spreadsheet application will display the dates in a seemingly correct way (to a human observer) but how it actually handles and stores the dates may be problematic.\nIn particular, please remember that DATE functions that are valid for a given spreadsheet program (be it LibreOffice Calc, Microsoft Excel, OpenOffice, Gnumeric, etc.) DATE functions are usually guaranteed to be compatible only within the same family of products. Most of the images of spreadsheets in this lesson come from Microsoft Excel, run on a Mac or on Windows. Regardless of your spreadsheet, if you will later need to export the data and need to conserve the timestamps, you are better off handling them using one of the solutions discussed below.\nOne of the big problems with Excel is it can turn things that aren’t dates into dates, for example gene/protein names or identifiers like MAR1, DEC1, OCT4 will be changed to dates, and you cannot retreive the original name or identifier (except manually). So if you avoid the date format overall, it’s easier to work with these types of data. When you must work with dates, here is how to do it efficiently."
-  },
-  {
-    "objectID": "EcologyLesson/datesasdata/index.html#exercise",
-    "href": "EcologyLesson/datesasdata/index.html#exercise",
-    "title": "Dates as data",
-    "section": "Exercise",
-    "text": "Exercise\nChallenge: pulling month, day and year out of dates\n\nLet’s create a tab called dates in our data spreadsheet and copy the ‘plot 3’ table from the 2014 tab (that contains the problematic dates).\nLet’s extract month, day and year from the dates in the Date collected column into new columns. For this we can use the following built-in Excel functions:\n\nYEAR()\nMONTH()\nDAY()\n(Make sure the new columns are formatted as a number and not as a date.)\nYou can see that even though we expected the year to be 2014, the year is actually 2015. What happened here is that the field assistant who collected the data for year 2014 initially forgot to include their data for ‘plot 3’ in this dataset. They came back in 2015 to add the missing data into the dataset and entered the dates for ‘plot 3’ without the year. Excel automatically interpreted the year as 2015 - the year the data was entered into the spreadsheet and not the year the data was collected. Thereby, the spreadsheet program introduced an error in the dataset without the field assistant realising."
-  },
-  {
-    "objectID": "EcologyLesson/datesasdata/index.html#exercise-1",
-    "href": "EcologyLesson/datesasdata/index.html#exercise-1",
-    "title": "Dates as data",
-    "section": "Exercise",
-    "text": "Exercise\nChallenge: pulling hour, minute and second out of the current time\nCurrent time and date are best retrieved using the functions NOW(), which returns the current date and time, and TODAY(), which returns the current date. The results will be formatted according to your computer’s settings.\n\nExtract the year, month and day from the current date and time string returned by the NOW() function.\nCalculate the current time using NOW()-TODAY().\nExtract the hour, minute and second from the current time using functions HOUR(), MINUTE() and SECOND().\nPress F9 to force the spreadsheet to recalculate the NOW() function, and check that it has been updated."
-  },
-  {
-    "objectID": "EcologyLesson/datesasdata/index.html#preferred-date-format",
-    "href": "EcologyLesson/datesasdata/index.html#preferred-date-format",
-    "title": "Dates as data",
-    "section": "Preferred date format",
-    "text": "Preferred date format\nIt is much safer to store dates with YEAR, MONTH, DAY in separate columns or as YEAR and DAY-OF-YEAR in separate columns.\nNote: Excel is unable to parse dates from before 1899-12-31, and will thus leave these untouched. If you’re mixing historic data from before and after this date, Excel will translate only the post-1900 dates into its internal format, thus resulting in mixed data. If you’re working with historic data, be extremely careful with your dates!\nExcel also entertains a second date system, the 1904 date system, as the default in Excel for Macintosh. This system will assign a different serial number than the 1900 date system. Because of this, dates must be checked for accuracy when exporting data from Excel (look for dates that are ~4 years off)."
-  },
-  {
-    "objectID": "EcologyLesson/datesasdata/index.html#date-formats-in-spreadsheets",
-    "href": "EcologyLesson/datesasdata/index.html#date-formats-in-spreadsheets",
-    "title": "Dates as data",
-    "section": "Date formats in spreadsheets",
-    "text": "Date formats in spreadsheets\nSpreadsheet programs have numerous “useful features” which allow them to handle dates in a variety of ways.\n\n\n\nMany formats, many ambiguities\n\n\nBut these “features” often allow ambiguity to creep into your data. Ideally, data should be as unambiguous as possible."
-  },
-  {
-    "objectID": "EcologyLesson/datesasdata/index.html#dates-stored-as-integers",
-    "href": "EcologyLesson/datesasdata/index.html#dates-stored-as-integers",
-    "title": "Dates as data",
-    "section": "Dates stored as integers",
-    "text": "Dates stored as integers\nThe first thing you need to know is that Excel stores dates as numbers - see the last column in the above figure. Essentially, it counts the days from a default of December 31, 1899, and thus stores July 2, 2014 as the serial number 41822.\n(But wait. That’s the default on my version of Excel. We’ll get into how this can introduce problems down the line later in this lesson. )\nThis serial number thing can actually be useful in some circumstances. By using the above functions we can easily add days, months or years to a given date. Say you had a sampling plan where you needed to sample every thirty seven days. In another cell, you could type:\n=B2+37\nAnd it would return\n8-Aug\nbecause it understands the date as a number 41822, and 41822 + 37 = 41859 which Excel interprets as August 8, 2014. It retains the format (for the most part) of the cell that is being operated upon, (unless you did some sort of formatting to the cell before, and then all bets are off). Month and year rollovers are internally tracked and applied.\nNote Adding years and months and days is slightly trickier because we need to make sure that we are adding the amount to the correct entity.\n\nFirst we extract the single entities (day, month or year)\nWe can then add values to do that\nFinally the complete date string is reconstructed using the DATE() function.\n\nAs for dates, times are handled in a similar way; seconds can be directly added but to add hour and minutes we need to make sure that we are adding the quantities to the correct entities.\nWhich brings us to the many different ways Excel provides in how it displays dates. If you refer to the figure above, you’ll see that there are many ways that ambiguity creeps into your data depending on the format you chose when you enter your data, and if you’re not fully aware of which format you’re using, you can end up actually entering your data in a way that Excel will badly misinterpret and you will end up with errors in your data that will be extremely difficult to track down and troubleshoot.\n\nExercise\nWhat happens to the dates in the dates tab of our workbook if we save this sheet in Excel (in csv format) and then open the file in a plain text editor (like TextEdit or Notepad)? What happens to the dates if we then open the csv file in Excel?\n\nNote\nYou will notice that when exporting into a text-based format (such as CSV), Excel will export its internal date integer instead of a useful value (that is, the dates will be represented as integer numbers). This can potentially lead to problems if you use other software to manipulate the file."
-  },
-  {
-    "objectID": "EcologyLesson/datesasdata/index.html#advantages-of-alternative-date-formatting",
-    "href": "EcologyLesson/datesasdata/index.html#advantages-of-alternative-date-formatting",
-    "title": "Dates as data",
-    "section": "Advantages of Alternative Date Formatting",
-    "text": "Advantages of Alternative Date Formatting\nStoring dates as YEAR, MONTH, DAY\nStoring dates in YEAR, MONTH, DAY format helps remove this ambiguity. Let’s look at this issue a bit closer.\nFor instance this is a spreadsheet representing insect counts that were taken every few days over the summer, and things went something like this:\n\n\n\nSo, so ambiguous, it’s even confusing Excel\n\n\nIf Excel was to be believed, this person had been collecting bugs in the future. Now, we have no doubt this person is highly capable, but I believe time travel was beyond even their grasp.\nEntering dates in one cell is helpful but due to the fact that the spreadsheet programs may interpret and save the data in different ways (doing that somewhat behind the scenes), there is a better practice.\nIn dealing with dates in spreadsheets, separate date data into separate fields (day, month, year), which will eliminate any chance of ambiguity."
-  },
-  {
-    "objectID": "EcologyLesson/datesasdata/index.html#storing-dates-as-year-day-of-year",
-    "href": "EcologyLesson/datesasdata/index.html#storing-dates-as-year-day-of-year",
-    "title": "Dates as data",
-    "section": "Storing dates as YEAR, DAY-OF-YEAR",
-    "text": "Storing dates as YEAR, DAY-OF-YEAR\nThere is also another option. You can also store dates as year and day of year (DOY). Why? Because depending on your question, this might be what’s useful to you, and there is practically no possibility for ambiguity creeping in.\nStatistical models often incorporate year as a factor, or a categorical variable, rather than a numeric variable, to account for year-to-year variation, and DOY can be used to measure the passage of time within a year.\nSo, can you convert all your dates into DOY format? Well, in Excel, here’s a useful guide:\n\n\n\nKill that ambiguity before it bites you!"
-  },
-  {
-    "objectID": "EcologyLesson/datesasdata/index.html#storing-dates-as-a-single-string",
-    "href": "EcologyLesson/datesasdata/index.html#storing-dates-as-a-single-string",
-    "title": "Dates as data",
-    "section": "Storing dates as a single string",
-    "text": "Storing dates as a single string\nAnother alternative could be to convert the date string into a single string using the YYYYMMDD format. For example the date March 24, 2015 would become 20150324. This option also works for datetimes using the YYYYMMDDhhmmss format. So the datetime March 24, 2015 17:25:35 would become 20150324172535, where:\n\nYYYY: the full year, i.e. 2015\nMM: the month, i.e. 03\nDD: the day of month, i.e. 24\nhh: hour of day, i.e. 17\nmm: minutes, i.e. 25\nss: seconds, i.e. 35\n\nSuch strings will be correctly sorted in ascending or descending order, and by knowing the format they can then be correctly processed by the receiving software."
-  },
-  {
-    "objectID": "EcologyLesson/datesasdata/index.html#key-points",
-    "href": "EcologyLesson/datesasdata/index.html#key-points",
-    "title": "Dates as data",
-    "section": "Key Points",
-    "text": "Key Points\n\nTreating dates as multiple pieces of data rather than one makes them easier to handle.\n\nLicensed under CC-BY 4.0 2018–2022 by The Carpentries\nLicensed under CC-BY 4.0 2016–2018 by Data Carpentry"
-  },
-  {
-    "objectID": "EcologyLesson/qualitycontrol/index.html",
-    "href": "EcologyLesson/qualitycontrol/index.html",
-    "title": "Quality control",
-    "section": "",
-    "text": "Teaching: 20 min\nExercises: 0 min\nQuestions\n\nHow can we carry out basic quality control and quality assurance in spreadsheets?\n\nObjectives\n\nApply quality control techniques to identify errors in spreadsheets and limit incorrect data entry.\n\n\nWhen you have a well-structured data table, you can use several simple techniques within your spreadsheet to ensure the data you enter is free of errors. These approaches include techniques that are implemented prior to entering data (quality assurance) and techniques that are used after entering data to check for errors (quality control)."
-  },
-  {
-    "objectID": "EcologyLesson/qualitycontrol/index.html#overview",
-    "href": "EcologyLesson/qualitycontrol/index.html#overview",
-    "title": "Quality control",
-    "section": "",
-    "text": "Teaching: 20 min\nExercises: 0 min\nQuestions\n\nHow can we carry out basic quality control and quality assurance in spreadsheets?\n\nObjectives\n\nApply quality control techniques to identify errors in spreadsheets and limit incorrect data entry.\n\n\nWhen you have a well-structured data table, you can use several simple techniques within your spreadsheet to ensure the data you enter is free of errors. These approaches include techniques that are implemented prior to entering data (quality assurance) and techniques that are used after entering data to check for errors (quality control)."
-  },
-  {
-    "objectID": "EcologyLesson/qualitycontrol/index.html#quality-assurance",
-    "href": "EcologyLesson/qualitycontrol/index.html#quality-assurance",
-    "title": "Quality control",
-    "section": "Quality Assurance",
-    "text": "Quality Assurance\nQuality assurance stops bad data from ever being entered by checking to see if values are valid during data entry. For example, if research is being conducted at sites A, B, and C, then the value V (which is right next to B on the keyboard) should never be entered. Likewise if one of the kinds of data being collected is a count, only integers greater than or equal to zero should be allowed.\nTo control the kind of data entered into a spreadsheet we use Data Validation (Excel) or Validity (Libre Office Calc), to set the values that can be entered in each data column.\n\nSelect the cells or column you want to validate\nOn the Data tab select Data Validation\n\n\n\nIn the Allow box select the kind of data that should be in the column. Options include whole numbers, decimals, lists of items, dates, and other values.\n\n\n\nAfter selecting an item enter any additional details. For example, if you’ve chosen a list of values, enter a comma-delimited or semi-colon list of allowable values in the Source box.\n\nLet’s try this out by setting the plot column in our spreadsheet to only allow plot values that are integers between 1 and 24.\n\nSelect the 1plot_id1 column\nOn the Data tab select Data Validation\nIn the Allow box select Whole number\nSet the minimum and maximum values to 1 and 24.\n\n\nNow let’s try entering a new value in the plot column that isn’t a valid plot. The spreadsheet stops us from entering the wrong value and asks us if we would like to try again.\n\nYou can also customize the resulting message to be more informative by entering your own message in the Input Message tab\n\nor allow invalid data to result in a warning rather than an error by modifying the Style option on the Error Alert tab.\n\nQuality assurance can make data entry easier as well as more robust. For example, if you use a list of options to restrict data entry, the spreadsheet will provide you with a drop-downlist of the available items. So, instead of trying to remember how to spell Dipodomys spectabilis, you can select the right option from the list."
-  },
-  {
-    "objectID": "EcologyLesson/qualitycontrol/index.html#quality-control",
-    "href": "EcologyLesson/qualitycontrol/index.html#quality-control",
-    "title": "Quality control",
-    "section": "Quality Control",
-    "text": "Quality Control\nTip: Before doing any quality control operations, save your original file with the formulas and a name indicating it is the original data. Create a separate file with appropriate naming and versioning, and ensure your data is stored as values and not as formulas. Because formulas refer to other cells, and you may be moving cells around, you may compromise the integrity of your data if you do not take this step!\nreadMe (README) files: As you start manipulating your data files, create a readMe document / text file to keep track of your files and document your manipulations so that they may be easily understood and replicated, either by your future self or by an independent researcher. Your readMe file should document all of the files in your data set (including documentation), describe their content and format, and lay out the organizing principles of folders and subfolders. For each of the separate files listed, it is a good idea to document the manipulations or analyses that were carried out on those data. Cornell University’s Research Data Management Service Group provides detailed guidelines for how to write a good readMe file, along with an adaptable template."
-  },
-  {
-    "objectID": "EcologyLesson/qualitycontrol/index.html#sorting",
-    "href": "EcologyLesson/qualitycontrol/index.html#sorting",
-    "title": "Quality control",
-    "section": "Sorting",
-    "text": "Sorting\nBad values often sort to the bottom or top of the column. For example, if your data should be numeric, then alphabetical and null data will group at the ends of the sorted data. Sort your data by each field, one at a time. Scan through each column, but pay the most attention to the top and the bottom of a column. If your dataset is well-structured and does not contain formulas, sorting should never affect the integrity of your dataset.\nRemember to expand your sort in order to prevent data corruption. Expanding your sort ensures that the all the data in one row move together instead of only sorting a single column in isolation. Sorting by only a single column will scramble your data - a single row will no longer represent an individual observation."
-  },
-  {
-    "objectID": "EcologyLesson/qualitycontrol/index.html#exercise",
-    "href": "EcologyLesson/qualitycontrol/index.html#exercise",
-    "title": "Quality control",
-    "section": "Exercise",
-    "text": "Exercise\nWe’ve combined all of the tables from the messy data into a single table in a single tab. Download this semi-cleaned data file to your computer: survey_sorting_exercise\nOnce downloaded, sort the Weight_grams column in your spreadsheet program from Largest to Smallest.\nWhat do you notice?"
-  },
-  {
-    "objectID": "EcologyLesson/qualitycontrol/index.html#conditional-formatting",
-    "href": "EcologyLesson/qualitycontrol/index.html#conditional-formatting",
-    "title": "Quality control",
-    "section": "Conditional formatting",
-    "text": "Conditional formatting\nConditional formatting basically can do something like color code your values by some criteria or lowest to highest. This makes it easy to scan your data for outliers.\nConditional formatting should be used with caution, but it can be a great way to flag inconsistent values when entering data.\n\nExercise\n\nMake sure the Weight_grams column is highlighted.\nIn the main Excel menu bar, click Home &gt; Conditional Formatting... choose a formatting rule.\nApply any 2-Color Scale formatting rule.\nNow we can scan through and different colors will stand out. Do you notice any strange values?\n\nIt is nice to be able to do these scans in spreadsheets, but we also can do these checks in a programming language like R, or in OpenRefine or SQL."
-  },
-  {
-    "objectID": "EcologyLesson/qualitycontrol/index.html#key-points",
-    "href": "EcologyLesson/qualitycontrol/index.html#key-points",
-    "title": "Quality control",
-    "section": "Key Points",
-    "text": "Key Points\n\nAlways copy your original spreadsheet file and work with a copy so you don’t affect the raw data.\nUse data validation to prevent accidentally entering invalid data.\nUse sorting to check for invalid data.\nUse conditional formatting (cautiously) to check for invalid data.\n\nLicensed under CC-BY 4.0 2018–2022 by The Carpentries\nLicensed under CC-BY 4.0 2016–2018 by Data Carpentry"
-  },
-  {
-    "objectID": "teachertraining.html",
-    "href": "teachertraining.html",
-    "title": "Training",
-    "section": "",
-    "text": "Schedule"
-  },
-  {
-    "objectID": "teachertraining.html#weteach_cs-summer-2025-texas-teacher-training",
-    "href": "teachertraining.html#weteach_cs-summer-2025-texas-teacher-training",
-    "title": "Training",
-    "section": "",
-    "text": "Schedule"
-  },
-  {
-    "objectID": "datascience.html",
-    "href": "datascience.html",
-    "title": "Data Science",
-    "section": "",
-    "text": "More info about our data science initiative coming soon!\nIn the mean time check out our Data Science and Spreadsheet activities"
-  },
-  {
-    "objectID": "calendar.html",
-    "href": "calendar.html",
-    "title": "Calendar",
-    "section": "",
-    "text": "Would you like to invite us to speak to your group or event? Would you like us to run a workshop? We can do in person or online* as we are able. Email Chris Orban at chris.m.orban@gmail.com to reach out.\n*In online presentations we can do a green screen within zoom. It’s pretty cool."
-  },
-  {
-    "objectID": "standards.html",
-    "href": "standards.html",
-    "title": "Standards",
-    "section": "",
-    "text": "Under Construction!"
-  },
-  {
-    "objectID": "activities.html",
-    "href": "activities.html",
-    "title": "Activities",
-    "section": "",
-    "text": "View a flowchart of all STEMcoding activities here.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAccelerate the Blob\n\n\n\nMiddle School\n\n\nIntro HS\n\n\nPhysical Science\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAir Pressure Versus Height\n\n\n\nIntro HS\n\n\nMath\n\n\nPhysical Science\n\n\nPhysics\n\n\nAtmospheric Science\n\n\nData Science\n\n\nSpace\n\n\nSpreadsheets\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nApollo Moon Landing\n\n\n\nIntro HS\n\n\nPhysical Science\n\n\nPhysics\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBellicose Birds\n\n\n\nAdvanced HS\n\n\nPhysics\n\n\nJavascript\n\n\nTrigonometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBird Launcher\n\n\n\nIntro HS\n\n\nPhysical Science\n\n\nPhysics\n\n\nAlgebra\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBonk.io Clone\n\n\n\nIntro HS\n\n\nPhysical Science\n\n\nPhysics\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCO2 Survey\n\n\n\nIntro HS\n\n\nData Science\n\n\nSpreadsheets\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nConductor Interactive\n\n\n\nAll Ages\n\n\nPhysics\n\n\nPhysical Science\n\n\nElectromagnetism\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEarth Day\n\n\n\nAdvanced HS\n\n\nTrigonometry\n\n\nEnvironmental Science\n\n\nData Science\n\n\nSpreadsheets\n\n\nSustainability\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nElectromagnetism: Unit System\n\n\n\nPhysics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEscape Velocity and Newtonian Black Holes\n\n\n\nAdvanced HS\n\n\nAstronomy\n\n\nPhysics\n\n\nJavascript\n\n\nTrigonometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExoplanets\n\n\n\nAdvanced HS\n\n\nAstronomy\n\n\nPhysics\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFluid Mechanics Interactive\n\n\n\nAll Ages\n\n\nPhysics\n\n\nPhysical Science\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFractal Puzzle\n\n\n\nAll Ages\n\n\nMath\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGood Figures vs. Bad Figures\n\n\n\nAll Ages\n\n\nData Science\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLaser Defense Part 1\n\n\n\nJavascript\n\n\nMath\n\n\nAdvanced HS\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLaser Defense Part 2\n\n\n\nAdvanced HS\n\n\nMath\n\n\nJavascript\n\n\nTrigonometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLunar Descent\n\n\n\nAdvanced HS\n\n\nPhysics\n\n\nJavascript\n\n\nTrigonometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMagnetic Force\n\n\n\nAdvanced HS\n\n\nPhysics\n\n\nElectromagnetism\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMathematical Flower Activity\n\n\n\nAdvanced HS\n\n\nMath\n\n\nJavascript\n\n\nTrigonometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMove the Blob\n\n\n\nMiddle School\n\n\nIntro HS\n\n\nPhysical Science\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNight Sky Simulator\n\n\n\nAdvanced HS\n\n\nAstronomy\n\n\nData Science\n\n\nSpreadsheets\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nObject Tracker\n\n\n\nIntro HS\n\n\nAdvanced HS\n\n\nMath\n\n\nPhysics\n\n\nPhysical Science\n\n\nData Science\n\n\nSpreadsheets\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOrbital Motion: Eccentricity\n\n\n\nAdvanced HS\n\n\nAstronomy\n\n\nPhysics\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOrbital Motion: Kepler’s Second Law\n\n\n\nAdvanced HS\n\n\nIntro HS\n\n\nPhysics\n\n\nAstronomy\n\n\nTrigonometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nParticle Accelerator\n\n\n\nMiddle School\n\n\nIntro HS\n\n\nPhysical Science\n\n\nPhysics\n\n\nElectromagnetism\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nParticle Accelerator with Potential\n\n\n\nMiddle School\n\n\nIntro HS\n\n\nPhysical Science\n\n\nPhysics\n\n\nElectromagnetism\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPi Day Part 1\n\n\n\nJavascript\n\n\nMath\n\n\nGeometry\n\n\nMiddle School\n\n\nIntro HS\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPi Day Part 2\n\n\n\nAdvanced HS\n\n\nTrigonometry\n\n\nPrecalculus\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPi Day in Parallel\n\n\n\nAdvanced HS\n\n\nMath\n\n\nGeometry\n\n\nComputer Science\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPipe Interactive\n\n\n\nAll Ages\n\n\nPhysics\n\n\nPhysical Science\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPlanetoids\n\n\n\nAdvanced HS\n\n\nPhysics\n\n\nJavascript\n\n\nTrigonometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPlanetoids with Momentum\n\n\n\nMiddle School\n\n\nIntro HS\n\n\nPhysical Science\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPlanetoids with Torque\n\n\n\nAdvanced HS\n\n\nPhysics\n\n\nJavascript\n\n\nTrigonometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPlanetoids with a Spring\n\n\n\nAdvanced HS\n\n\nIntro HS\n\n\nPhysical Science\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPong\n\n\n\nMiddle School\n\n\nIntro HS\n\n\nPhysical Science\n\n\nPhysics\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProject Mercury Part 1\n\n\n\nMiddle School\n\n\nIntro HS\n\n\nPhysical Science\n\n\nPhysics\n\n\nAstronomy\n\n\nSpace\n\n\nHidden Figures\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProject Mercury Part 2\n\n\n\nAdvanced HS\n\n\nPhysics\n\n\nAstronomy\n\n\nSpace\n\n\nPrecalculus\n\n\nTrigonometry\n\n\nHidden Figures\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRC Circuits\n\n\n\nJavascript\n\n\nAdvanced HS\n\n\nPhysics\n\n\nElectromagnetism\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRepulsion Between Two Charges\n\n\n\nIntro HS\n\n\nAdvanced HS\n\n\nPhysics\n\n\nElectromagnetism\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSlingshot With Gravity\n\n\n\nAdvanced HS\n\n\nAstronomy\n\n\nPhysics\n\n\nJavascript\n\n\nTrigonometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSolar Cell Data Analysis\n\n\n\nIntro HS\n\n\nData Science\n\n\nSustainability\n\n\nSpreadsheets\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSolar System Model\n\n\n\nIntro HS\n\n\nData Science\n\n\nSpreadsheets\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWave Interference\n\n\n\nAdvanced HS\n\n\nPhysics\n\n\nElectromagnetism\n\n\nJavascript\n\n\nTrigonometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "publications.html",
-    "href": "publications.html",
-    "title": "Publications",
-    "section": "",
-    "text": "Nutwell, E. and Badger, K. “Public Data in the Public Interest: A Spreadsheet-Based Project for High School Computing”, Association for Computing Machinery (2025)\n\nOrban, C. “Blurring the Boundaries between Science, Math, and Computer Science” Proceedings of the 55th ACM Technical Symposium on Computer Science Education (2024)\n\nNutwell, E., Badger, K. and Kulp, J. T. “Data for Healthy Communities: A Public Interest Pilot Course Designed to Develop K-12 Data Literacy” Proceedings of the 55th ACM Technical Symposium on Computer Science (2024)\n\nOrban, C., Zimmerman, S., Kulp, J. T., Boughton, J., Perrico, Z., Rapp, B., Teeling-Smith, R. “Methods to Simplify Object Tracking in Video Data” The Physics Teacher, 61, 576-579 (2023)\n\nOrban, C. and Teeling-Smith, R. ``Computational Thinking in Introductory Physics’’ The Physics Teacher (2020)\n\nOrban, C., Teeling-Smith, R. M., Smith, J. R. H., and Porter, C. D. “A Hybrid Approach for Using Programming Exercises in Introductory Physics”, 2018, American Journal of Physics \n\nOrban, C., Porter, C. D., Brecht, N. K., Teeling-Smith, R. M., Harper, K. A., “A novel approach for using programming exercises in electromagnetism coursework” PERC 2017"
-  },
-  {
-    "objectID": "EcologyLesson/setuppage/index.html",
-    "href": "EcologyLesson/setuppage/index.html",
-    "title": "Setup",
-    "section": "",
-    "text": "Download this data file to your computer: https://ndownloader.figshare.com/files/2252083"
-  },
-  {
-    "objectID": "EcologyLesson/setuppage/index.html#data",
-    "href": "EcologyLesson/setuppage/index.html#data",
-    "title": "Setup",
-    "section": "",
-    "text": "Download this data file to your computer: https://ndownloader.figshare.com/files/2252083"
-  },
-  {
-    "objectID": "EcologyLesson/setuppage/index.html#about-the-data",
-    "href": "EcologyLesson/setuppage/index.html#about-the-data",
-    "title": "Setup",
-    "section": "About the data",
-    "text": "About the data\nThe data for this lesson is a part of the Data Carpentry Ecology workshop. It is a teaching version of the Portal Database. The data in this lesson is a subset of the teaching version that has been intentionally ‘messed up’ for this lesson.\nThe data for this lesson and the workshop are in the Portal Project Teaching Database available on FigShare, with a CC-BY license available for reuse.\nErnest, M., Brown, J., Valone, T., and White, E.P. (2017). Portal Project Teaching Database. Version 6. Figshare. DOI: 10.6084/m9.figshare.1314459.v6"
-  },
-  {
-    "objectID": "EcologyLesson/setuppage/index.html#software",
-    "href": "EcologyLesson/setuppage/index.html#software",
-    "title": "Setup",
-    "section": "Software",
-    "text": "Software\nTo interact with spreadsheets, we can use LibreOffice, Microsoft Excel, Gnumeric, OpenOffice.org, or other programs. Commands may differ a bit between programs, but the general ideas for thinking about spreadsheets are the same.\nFor this lesson, if you don’t have a spreadsheet program already, you can use LibreOffice. It’s a free, open source spreadsheet program.\n\nWindows\n\nDownload the Installer\n\nInstall LibreOffice by going to the installation page. The version for Windows should automatically be selected. Click Download Version X.X.X (whichever is the most recent version). You will go to a page that asks about a donation, but you don’t need to make one. Your download should begin automatically.\n\nInstall LibreOffice\nOnce the installer is downloaded, double click on it and LibreOffice should install.\n\n\n\nMac OS X\n\nDownload the Installer\n\nInstall LibreOffice by going to the installation page. The version for Mac should automatically be selected. Click Download Version X.X.X (whichever is the most recent version). You will go to a page that asks about a donation, but you don’t need to make one. Your download should begin automatically.\n\nInstall LibreOffice\nOnce the installer is downloaded, double click on it and LibreOffice should install\n\n\n\nLinux\n\nDownload the Installer\n\nInstall LibreOffice by going to the installation page. The version for Linux should automatically be selected. Click Download Version X.X.X (whichever is the most recent version). You will go to a page that asks about a donation, but you don’t need to make one. Your download should begin automatically.\n\nInstall LibreOffice\nOnce the installer is downloaded, double click on it and LibreOffice should install.\n\nLicensed under CC-BY 4.0 2018–2022 by The Carpentries\nLicensed under CC-BY 4.0 2016–2018 by Data Carpentry"
-  },
-  {
-    "objectID": "EcologyLesson/landing/index.html",
-    "href": "EcologyLesson/landing/index.html",
-    "title": "Data Organization in Spreadsheets for Ecologists",
-    "section": "",
-    "text": "Good data organization is the foundation of any research project. Most researchers have data in spreadsheets, so it’s the place that many research projects start.\nWe organize data in spreadsheets in the ways that we as humans want to work with the data, but computers require that data be organized in particular ways. In order to use tools that make computation more efficient, such as programming languages like R or Python, we need to structure our data the way that computers need the data. Since this is where most research projects start, this is where we want to start too!\nIn this lesson, you will learn:\nIn this lesson, however, you will not learn about data analysis with spreadsheets. Much of your time as a researcher will be spent in the initial ‘data wrangling’ stage, where you need to organize the data to perform a proper analysis later. It’s not the most fun, but it is necessary. In this lesson you will learn how to think about data organization and some practices for more effective data wrangling. With this approach you can better format current data and plan new data collection so less data wrangling is needed."
-  },
-  {
-    "objectID": "EcologyLesson/landing/index.html#getting-started",
-    "href": "EcologyLesson/landing/index.html#getting-started",
-    "title": "Data Organization in Spreadsheets for Ecologists",
-    "section": "Getting Started",
-    "text": "Getting Started\nData Carpentry’s teaching is hands-on, so participants are encouraged to use their own computers to insure the proper setup of tools for an efficient workflow. These lessons assume no prior knowledge of the skills or tools.\nTo get started, follow the directions in the “[Setup](../setuppage/index.qmd]” tab to download data to your computer and follow any installation instructions.\n\nPrerequisites\nThis lesson requires a working copy of spreadsheet software, such as Microsoft Excel or LibreOffice or OpenOffice.org (see more details in “Setup”). To most effectively use these materials, please make sure to install everything before working through this lesson"
-  },
-  {
-    "objectID": "EcologyLesson/landing/index.html#for-instructors",
-    "href": "EcologyLesson/landing/index.html#for-instructors",
-    "title": "Data Organization in Spreadsheets for Ecologists",
-    "section": "For Instructors",
-    "text": "For Instructors\nIf you are teaching this lesson in a workshop, please see the Instructor notes."
-  },
-  {
-    "objectID": "EcologyLesson/landing/index.html#schedule",
-    "href": "EcologyLesson/landing/index.html#schedule",
-    "title": "Data Organization in Spreadsheets for Ecologists",
-    "section": "Schedule",
-    "text": "Schedule\n | Setup | Download files required for the lesson |\n00:00 | 1. Introduction | What are basic principles for using spreadsheets for good data organization? |\n00:18 | 2. Formatting data tables in spreadsheets | How do we format data in spreadsheets for effective data use? |\n00:53 | 3. Formatting problems | What are some common challenges with formatting data in spreadsheets and how can we avoid them? |\n01:13 | 4. Dates as data | What are good approaches for handling dates in spreadsheets? |\n01:26 | 5. Quality Control | How can we carry out basic quality control and quality assurance in spreadsheets? |\n01:46 | 6. Exporting Data | How can we export data from spreadsheets in a way that is useful for downstream applications? |\n01:56 | Finish | |\nThe actual schedule may vary slightly depending on the topics and exercises chosen by the instructor.\nLicensed under CC-BY 4.0 2018–2022 by The Carpentries\nLicensed under CC-BY 4.0 2016–2018 by Data Carpentry"
-  },
-  {
-    "objectID": "EcologyLesson/Intro/index.html",
-    "href": "EcologyLesson/Intro/index.html",
-    "title": "Introduction",
-    "section": "",
-    "text": "Teaching: 15 min\nExercises: 3 min\nQuestions\n\nWhat are basic principles for using spreadsheets for good data organization?\n\nObjectives\n\nDescribe best practices for organizing data so computers can make the best use of data sets.\n\n\nGood data organization is the foundation of your research project. Most researchers have data or do data entry in spreadsheets. Spreadsheet programs are very useful graphical interfaces for designing data tables and handling very basic data quality control functions."
-  },
-  {
-    "objectID": "EcologyLesson/Intro/index.html#overview",
-    "href": "EcologyLesson/Intro/index.html#overview",
-    "title": "Introduction",
-    "section": "",
-    "text": "Teaching: 15 min\nExercises: 3 min\nQuestions\n\nWhat are basic principles for using spreadsheets for good data organization?\n\nObjectives\n\nDescribe best practices for organizing data so computers can make the best use of data sets.\n\n\nGood data organization is the foundation of your research project. Most researchers have data or do data entry in spreadsheets. Spreadsheet programs are very useful graphical interfaces for designing data tables and handling very basic data quality control functions."
-  },
-  {
-    "objectID": "EcologyLesson/Intro/index.html#spreadsheet-outline",
-    "href": "EcologyLesson/Intro/index.html#spreadsheet-outline",
-    "title": "Introduction",
-    "section": "Spreadsheet outline",
-    "text": "Spreadsheet outline\nAfter this lesson, you will be able to:\nbImplement best practices in data table formatting  Identify and address common formatting mistakes * Understand approaches for handling dates in spreadsheets * Utilize basic quality control features and data manipulation practices * Effectively export data from spreadsheet programs Overall good data practices\nSpreadsheets are good for data entry. Therefore we have a lot of data in spreadsheets. Much of your time as a researcher will be spent in this ‘data wrangling’ stage. It’s not the most fun, but it’s necessary. We’ll teach you how to think about data organization and some practices for more effective data wrangling."
-  },
-  {
-    "objectID": "EcologyLesson/Intro/index.html#what-this-lesson-will-not-teach-you",
-    "href": "EcologyLesson/Intro/index.html#what-this-lesson-will-not-teach-you",
-    "title": "Introduction",
-    "section": "What this lesson will not teach you",
-    "text": "What this lesson will not teach you\n\nHow to do statistics in a spreadsheet\nHow to do plotting in a spreadsheet\nHow to write code in spreadsheet programs\n\nIf you’re looking to do this, a good reference is Head First Excel, published by O’Reilly."
-  },
-  {
-    "objectID": "EcologyLesson/Intro/index.html#why-arent-we-teaching-data-analysis-in-spreadsheets",
-    "href": "EcologyLesson/Intro/index.html#why-arent-we-teaching-data-analysis-in-spreadsheets",
-    "title": "Introduction",
-    "section": "Why aren’t we teaching data analysis in spreadsheets",
-    "text": "Why aren’t we teaching data analysis in spreadsheets\n\nData analysis in spreadsheets usually requires a lot of manual work. If you want to change a parameter or run an analysis with a new data set, you usually have to redo everything by hand. (We do know that you can create macros, but see the next point.)\nIt is also difficult to track or reproduce statistical or plotting analyses done in spreadsheet programs when you want to go back to your work or someone asks for details of your analysis."
-  },
-  {
-    "objectID": "EcologyLesson/Intro/index.html#spreadsheet-programs",
-    "href": "EcologyLesson/Intro/index.html#spreadsheet-programs",
-    "title": "Introduction",
-    "section": "Spreadsheet programs",
-    "text": "Spreadsheet programs\nMany spreadsheet programs are available. Since most participants utilize Excel as their primary spreadsheet program, this lesson will make use of Excel examples.\nFree spreadsheet programs that can also be used are LibreOffice Calc, and even Google Sheets.\nCommands may differ a bit between programs, but the general idea is the same.\nSpreadsheets encompass a lot of the things we need to be able to do as researchers. We can use them for:\n\nData entry\nOrganizing data\nSubsetting and sorting data\nStatistics\nPlotting\n\nWe do a lot of different operations in spreadsheets. What kind of operations do you do in spreadsheets? Which ones do you think spreadsheets are good for?"
-  },
-  {
-    "objectID": "EcologyLesson/Intro/index.html#problems-with-spreadsheets",
-    "href": "EcologyLesson/Intro/index.html#problems-with-spreadsheets",
-    "title": "Introduction",
-    "section": "Problems with Spreadsheets",
-    "text": "Problems with Spreadsheets\nSpreadsheets are good for data entry, but in reality we tend to use spreadsheet programs for much more than data entry. We use them to create data tables for publications, to generate summary statistics, and make figures.\nGenerating tables for publications in a spreadsheet is not optimal - often, when formatting a data table for publication, we’re reporting key summary statistics in a way that is not really meant to be read as data, and often involves special formatting (merging cells, creating borders, making it pretty). Cutting and pasting from a spreadsheet to a document software (like Word) can have unpredictable results. We advise you to create tables within these document software using the document’s own table editing software.\nThe latter two applications, generating statistics and figures, should be used with caution: because of the graphical, drag and drop nature of spreadsheet programs, it can be very difficult, if not impossible, to replicate your steps (much less retrace anyone else’s), particularly if your stats or figures require you to do more complex calculations. Furthermore, in doing calculations in a spreadsheet, it’s easy to accidentally apply a slightly different formula to multiple adjacent cells. When using a command-line based statistics program like R or SAS, it’s practically impossible to apply a calculation to one observation in your data set but not another unless you’re doing it on purpose."
-  },
-  {
-    "objectID": "EcologyLesson/Intro/index.html#using-spreadsheets-for-data-entry-and-cleaning",
-    "href": "EcologyLesson/Intro/index.html#using-spreadsheets-for-data-entry-and-cleaning",
-    "title": "Introduction",
-    "section": "Using Spreadsheets for Data Entry and Cleaning",
-    "text": "Using Spreadsheets for Data Entry and Cleaning\nHowever, there are circumstances where you might want to use a spreadsheet program to produce “quick and dirty” calculations or figures, and data cleaning will help you use some of these features. Data cleaning also puts your data in a better format prior to importation into a statistical analysis program. We will show you how to use some features of spreadsheet programs to check your data quality along the way and produce preliminary summary statistics.\nIn this lesson, we will assume that you are most likely using Excel as your primary spreadsheet program - there are others (gnumeric, Calc from OpenOffice), and their functionality is similar, but Excel seems to be the program most used by biologists and ecologists.\nIn this lesson we’re going to talk about:\n\nFormatting data tables in spreadsheets\nFormatting problems\nDates as data\nQuality control\nExporting data"
-  },
-  {
-    "objectID": "EcologyLesson/Intro/index.html#key-points",
-    "href": "EcologyLesson/Intro/index.html#key-points",
-    "title": "Introduction",
-    "section": "Key Points",
-    "text": "Key Points\n\nGood data organization is the foundation of any research project.\n\nLicensed under CC-BY 4.0 2018–2022 by The Carpentries\nLicensed under CC-BY 4.0 2016–2018 by Data Carpentry"
-  },
-  {
-    "objectID": "EcologyLesson/exporting/index.html",
-    "href": "EcologyLesson/exporting/index.html",
-    "title": "Exporting data",
-    "section": "",
-    "text": "Teaching: 10 min\nExercises: 0 min\nQuestions\n\nHow can we export data from spreadsheets in a way that is useful for downstream applications?\n\nObjectives\n\nStore spreadsheet data in universal file formats.\nExport data from a spreadsheet to a CSV file.\n\n\nStoring the data you’re going to work with for your analyses in Excel default file format (*.xls or *.xlsx - depending on the Excel version) isn’t a good idea. Why?\n\nBecause it is a proprietary format, and it is possible that in the future, technology won’t exist (or will become sufficiently rare) to make it inconvenient, if not impossible, to open the file.\nOther spreadsheet software may not be able to open files saved in a proprietary Excel format.\nDifferent versions of Excel may handle data differently, leading to inconsistencies.\nThe above points also apply to other formats such as open data formats used by LibreOffice / Open Office. These formats are not static and do not get parsed the same way by different software packages.\n\nAs an example of inconsistencies in data storage, do you remember how we talked about how Excel stores dates earlier? It turns out that there are multiple defaults for different versions of the software, and you can switch between them all. So, say you’re compiling Excel-stored data from multiple sources. There are dates in each file - Excel interprets them as their own internally consistent serial numbers. When you combine the data, Excel will take the serial number from the place you’re importing it from, and interpret it using the rule set for the version of Excel you’re using. Essentially, you could be adding errors to your data, and it wouldn’t necessarily be flagged by any data cleaning methods if your ranges overlap.\nStoring data in a universal, open, and static format will help deal with this problem. Try tab-delimited (tab separated values or TSV) or comma-delimited (comma separated values or CSV). CSV files are plain text files where the columns are separated by commas, hence ‘comma separated values’ or CSV. The advantage of a CSV file over an Excel/SPSS/etc. file is that we can open and read a CSV file using just about any software, including plain text editors like TextEdit or NotePad. Data in a CSV file can also be easily imported into other formats and environments, such as SQLite and R. We’re not tied to a certain version of a certain expensive program when we work with CSV files, so it’s a good format to work with for maximum portability and endurance. Most spreadsheet programs can save to delimited text formats like CSV easily, although they may give you a warning during the file export.\nTo save a file you have opened in Excel in CSV format:\n\nFrom the top menu select ‘File’ and ‘Save as’.\nIn the ‘Format’ field, from the list, select ‘Comma Separated Values’ (*.csv).\nDouble check the file name and the location where you want to save it and hit ‘Save’.\n\nAn important note for backwards compatibility: you can open CSV files in Excel!"
-  },
-  {
-    "objectID": "EcologyLesson/exporting/index.html#overview",
-    "href": "EcologyLesson/exporting/index.html#overview",
-    "title": "Exporting data",
-    "section": "",
-    "text": "Teaching: 10 min\nExercises: 0 min\nQuestions\n\nHow can we export data from spreadsheets in a way that is useful for downstream applications?\n\nObjectives\n\nStore spreadsheet data in universal file formats.\nExport data from a spreadsheet to a CSV file.\n\n\nStoring the data you’re going to work with for your analyses in Excel default file format (*.xls or *.xlsx - depending on the Excel version) isn’t a good idea. Why?\n\nBecause it is a proprietary format, and it is possible that in the future, technology won’t exist (or will become sufficiently rare) to make it inconvenient, if not impossible, to open the file.\nOther spreadsheet software may not be able to open files saved in a proprietary Excel format.\nDifferent versions of Excel may handle data differently, leading to inconsistencies.\nThe above points also apply to other formats such as open data formats used by LibreOffice / Open Office. These formats are not static and do not get parsed the same way by different software packages.\n\nAs an example of inconsistencies in data storage, do you remember how we talked about how Excel stores dates earlier? It turns out that there are multiple defaults for different versions of the software, and you can switch between them all. So, say you’re compiling Excel-stored data from multiple sources. There are dates in each file - Excel interprets them as their own internally consistent serial numbers. When you combine the data, Excel will take the serial number from the place you’re importing it from, and interpret it using the rule set for the version of Excel you’re using. Essentially, you could be adding errors to your data, and it wouldn’t necessarily be flagged by any data cleaning methods if your ranges overlap.\nStoring data in a universal, open, and static format will help deal with this problem. Try tab-delimited (tab separated values or TSV) or comma-delimited (comma separated values or CSV). CSV files are plain text files where the columns are separated by commas, hence ‘comma separated values’ or CSV. The advantage of a CSV file over an Excel/SPSS/etc. file is that we can open and read a CSV file using just about any software, including plain text editors like TextEdit or NotePad. Data in a CSV file can also be easily imported into other formats and environments, such as SQLite and R. We’re not tied to a certain version of a certain expensive program when we work with CSV files, so it’s a good format to work with for maximum portability and endurance. Most spreadsheet programs can save to delimited text formats like CSV easily, although they may give you a warning during the file export.\nTo save a file you have opened in Excel in CSV format:\n\nFrom the top menu select ‘File’ and ‘Save as’.\nIn the ‘Format’ field, from the list, select ‘Comma Separated Values’ (*.csv).\nDouble check the file name and the location where you want to save it and hit ‘Save’.\n\nAn important note for backwards compatibility: you can open CSV files in Excel!"
-  },
-  {
-    "objectID": "EcologyLesson/exporting/index.html#a-note-on-cross-platform-operability",
-    "href": "EcologyLesson/exporting/index.html#a-note-on-cross-platform-operability",
-    "title": "Exporting data",
-    "section": "A Note on Cross-platform Operability",
-    "text": "A Note on Cross-platform Operability\nBy default, most coding and statistical environments expect UNIX-style line endings (ASCII LF character) as representing line breaks. However, Windows uses an alternate line ending signifier (ASCII CR LF characters) by default for legacy compatibility with Teletype-based systems.\nAs such, when exporting to CSV using Excel, your data in text format will look like this:\ndata1,data21,24,5\nWhen opening your CSV file in Excel again, it will parse it as follows:\n\nHowever, if you open your CSV file on a different system that does not parse the CR character it will interpret your CSV file differently:\nYour data in text format then look like this:\ndata1\ndata2\n1\n2\n...\nYou will then see a weird character or possibly the string CR or \\r:\n\nthus causing terrible things to happen to your data. For example, 2\\r is not a valid integer, and thus will throw an error (if you’re lucky) when you attempt to operate on it in R or Python. Note that this happens on Excel for OSX as well as Windows, due to legacy Windows compatibility.\nThere are a handful of solutions for enforcing uniform UNIX-style line endings on your exported CSV files:\nWhen exporting from Excel, save as a “Windows comma separated (.csv)” file\n\nA note on R and .xlsx\nThere are R packages that can read .xls or .xlsx files (as well as Google spreadsheets). It is even possible to access different worksheets in the .xlsx documents.\nBut\n\nsome of these only work on Windows\nthis equates to replacing a (simple but manual) export to csv with additional complexity/dependencies in the data analysis R code\ndata formatting best practice still apply\nIs there really a good reason why csv (or similar) is not adequate?\n\n\n\nCaveats on commas\nIn some datasets, the data values themselves may include commas (,). This is particularly true in countries that use commas as decimal separators. In that case, the software which you use (including Excel) will most likely incorrectly display the data in columns. This is because the commas which are a part of the data values will be interpreted as delimiters.\nIf you are working with data that contains commas, you likely will need to use another delimiter when working in a spreadsheet. In this case, consider using tabs as your delimiter and working with TSV files. TSV files can be exported from spreadsheet programs in the same way as CSV files. For more of a discussion on data formats and potential issues with commas within datasets see the discussion page."
-  },
-  {
-    "objectID": "EcologyLesson/exporting/index.html#key-points",
-    "href": "EcologyLesson/exporting/index.html#key-points",
-    "title": "Exporting data",
-    "section": "Key Points",
-    "text": "Key Points\n\nData stored in common spreadsheet formats will often not be read correctly into data analysis software, introducing errors into your data.\nExporting data from spreadsheets to formats like CSV or TSV puts it in a format that can be used consistently by most programs."
-  },
-  {
-    "objectID": "projects/earth.html",
-    "href": "projects/earth.html",
-    "title": "Earth Day",
-    "section": "",
-    "text": "We are going to estimate the impact of global warming at your location using a simple cosine function and some climate data."
-  },
-  {
-    "objectID": "projects/earth.html#links-to-activity",
-    "href": "projects/earth.html#links-to-activity",
-    "title": "Earth Day",
+    "objectID": "projects/nightsky.html#links-to-activity",
+    "href": "projects/nightsky.html#links-to-activity",
+    "title": "Night Sky Simulator",
     "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Earth Day\nCode Editor for Earth Day"
+    "text": "Links to Activity\n\nInstructions for Night Sky Simulator\nNight Sky Simulator Code Editor"
   },
   {
-    "objectID": "projects/earth.html#earth-day-playlist",
-    "href": "projects/earth.html#earth-day-playlist",
-    "title": "Earth Day",
-    "section": "Earth Day Playlist",
-    "text": "Earth Day Playlist"
+    "objectID": "projects/nightsky.html#night-sky-simulator-playlist",
+    "href": "projects/nightsky.html#night-sky-simulator-playlist",
+    "title": "Night Sky Simulator",
+    "section": "Night Sky Simulator Playlist",
+    "text": "Night Sky Simulator Playlist"
   },
   {
-    "objectID": "projects/electro.html",
-    "href": "projects/electro.html",
-    "title": "Electromagnetism: Unit System",
+    "objectID": "projects/magneticforce.html",
+    "href": "projects/magneticforce.html",
+    "title": "Magnetic Force",
     "section": "",
-    "text": "There are three issues that deserve mention: the length units (pretty simple), force units, and the electric field units (which is related to the force units)."
+    "text": "Your browser does not support the video tag.\nYou may recall the last programming exercise that involved a particle being accelerated through two charged plates. In this exercise we will add a magnetic field to the right hand side of the simulation. The particle only experiences this field when it passes into the right-hand side. This example is loosely based on the idea of a “mass spectrometer”. It turns out that if you vaporize a little bit of a sample with some unknown molecules there tends to be alot of molecules that lose ONE electron. Since the molecule has lost an electron it has a +1 charge. The mass of the molecule is essentially the same even if it is missing an electron because electrons make up a very, very small fraction of the mass of atoms. As you will learn about in this lab, the trajectory of the particle in the magnetic field tells us something about the mass of the particle (if you already know q, v, and B for example)."
   },
   {
-    "objectID": "projects/electro.html#links-to-activity",
-    "href": "projects/electro.html#links-to-activity",
-    "title": "Electromagnetism: Unit System",
+    "objectID": "projects/magneticforce.html#links-to-activity",
+    "href": "projects/magneticforce.html#links-to-activity",
+    "title": "Magnetic Force",
     "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Electromagnetism: Unit System"
+    "text": "Links to Activity\nInstructions for Magnetic Force Magnetic Force Code Editor"
   },
   {
-    "objectID": "projects/piday2.html",
-    "href": "projects/piday2.html",
-    "title": "Pi Day Part 2",
-    "section": "",
-    "text": "If you completed the Pi day activity and were surprised at how long it took to calculate the digits of π there is good news! There is a better way to calculate the digits of Pi!"
-  },
-  {
-    "objectID": "projects/piday2.html#links-to-activity",
-    "href": "projects/piday2.html#links-to-activity",
-    "title": "Pi Day Part 2",
-    "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Pi Day Part 2\nPi Day Part 2 Code Editor"
-  },
-  {
-    "objectID": "projects/piday2.html#pi-day-part-2-playlist",
-    "href": "projects/piday2.html#pi-day-part-2-playlist",
-    "title": "Pi Day Part 2",
-    "section": "Pi Day Part 2 Playlist",
-    "text": "Pi Day Part 2 Playlist"
-  },
-  {
-    "objectID": "projects/waveinterference.html",
-    "href": "projects/waveinterference.html",
-    "title": "Wave Interference",
-    "section": "",
-    "text": "This programming lab is designed to illustrate the idea of wave interference. This happens because of the principle of “superposition”. For sound waves, this 20 dollar word just means that if there are two speakers in a large room or open space, the amplitude of the sound waves at a particular point in that room are the sum of the waves of the two speakers."
-  },
-  {
-    "objectID": "projects/waveinterference.html#links-to-activity",
-    "href": "projects/waveinterference.html#links-to-activity",
-    "title": "Wave Interference",
-    "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Wave Interferece\nWave Interference Code Editor"
-  },
-  {
-    "objectID": "projects/waveinterference.html#learning-objectives",
-    "href": "projects/waveinterference.html#learning-objectives",
-    "title": "Wave Interference",
+    "objectID": "projects/magneticforce.html#learning-objectives",
+    "href": "projects/magneticforce.html#learning-objectives",
+    "title": "Magnetic Force",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\nBy the end of this activity students will…\n\nUnderstand how wave interference affects the observed volume at various locations in a room.\nCreate a simulation to observe where waves have constructive and destructive interference in a room with two speakers."
+    "text": "Learning Objectives\nAt the end of this lesson students will…\n\nApply the magnetic force relationship with Newton’s 2nd law to code the trajectory of a moving, positive particle in a magnetic field\nUnderstand how changes in charge, mass, and magnetic field direction affect the trajectory of the particle."
   },
   {
-    "objectID": "projects/waveinterference.html#wave-interference-playlist",
-    "href": "projects/waveinterference.html#wave-interference-playlist",
-    "title": "Wave Interference",
-    "section": "Wave Interference Playlist",
-    "text": "Wave Interference Playlist"
+    "objectID": "projects/magneticforce.html#magnetic-force-playlist",
+    "href": "projects/magneticforce.html#magnetic-force-playlist",
+    "title": "Magnetic Force",
+    "section": "Magnetic Force Playlist",
+    "text": "Magnetic Force Playlist"
+  },
+  {
+    "objectID": "projects/fractal.html",
+    "href": "projects/fractal.html",
+    "title": "Fractal Puzzle",
+    "section": "",
+    "text": "Student Worksheets/Print Outs"
+  },
+  {
+    "objectID": "projects/fractal.html#links-to-activity",
+    "href": "projects/fractal.html#links-to-activity",
+    "title": "Fractal Puzzle",
+    "section": "",
+    "text": "Student Worksheets/Print Outs"
+  },
+  {
+    "objectID": "projects/black.html",
+    "href": "projects/black.html",
+    "title": "Escape Velocity and Newtonian Black Holes",
+    "section": "",
+    "text": "That activity explores the behavior of objects like planets or comets interacting with a massive object like the sun."
+  },
+  {
+    "objectID": "projects/black.html#links-to-activity",
+    "href": "projects/black.html#links-to-activity",
+    "title": "Escape Velocity and Newtonian Black Holes",
+    "section": "Links to Activity",
+    "text": "Links to Activity\n\nInstructions for Escape Velocity and Newtonain Black Holes\nCode Editor for Escape Velocity and Newtonian Black Holes"
+  },
+  {
+    "objectID": "projects/black.html#escape-velocity-and-black-holes-playlist",
+    "href": "projects/black.html#escape-velocity-and-black-holes-playlist",
+    "title": "Escape Velocity and Newtonian Black Holes",
+    "section": "Escape Velocity and Black Holes Playlist",
+    "text": "Escape Velocity and Black Holes Playlist"
+  },
+  {
+    "objectID": "projects/particleacceleratorpotential.html",
+    "href": "projects/particleacceleratorpotential.html",
+    "title": "Particle Accelerator with Potential",
+    "section": "",
+    "text": "This programming lab is a continuation of the accelerator programming lab where a proton is accelerated from the electric field between two charged plates. The only difference between the earlier programming lab and this programming labis that we are going to think about the potential difference between the two charged plates."
+  },
+  {
+    "objectID": "projects/particleacceleratorpotential.html#links-to-activity",
+    "href": "projects/particleacceleratorpotential.html#links-to-activity",
+    "title": "Particle Accelerator with Potential",
+    "section": "Links to Activity",
+    "text": "Links to Activity\n\nInstructions for Particle Accelerator with Potential\nParticle Accelerator with Potential Code Editor"
+  },
+  {
+    "objectID": "projects/particleacceleratorpotential.html#learning-objectives",
+    "href": "projects/particleacceleratorpotential.html#learning-objectives",
+    "title": "Particle Accelerator with Potential",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAt the end of this lesson students will…\n\nUnderstand that electric potential can appropriately model how electric fields affect charged particles.\nUnderstand how a charged particle’s motion is affected by the electric potential of a field.\nAnalyze the situation to calculate the final velocity of a particle after experiencing an electric field using electric potential relationships."
   },
   {
     "objectID": "projects/bonk.html",
@@ -1370,13 +1384,6 @@
     "title": "Project Mercury Part 2",
     "section": "Links to Activity",
     "text": "Links to Activity\n\nPart 2\n\nInstructions for Project Mercury (Part 2)\nProject Mercury (Part 2) Code Editor"
-  },
-  {
-    "objectID": "projects/projectmercury2.html#project-mercury-playlist",
-    "href": "projects/projectmercury2.html#project-mercury-playlist",
-    "title": "Project Mercury Part 2",
-    "section": "Project Mercury Playlist",
-    "text": "Project Mercury Playlist\n\nPart 1"
   },
   {
     "objectID": "projects/laser2.html",
@@ -1622,5 +1629,40 @@
     "title": "About",
     "section": "",
     "text": "The “STEMcoding project” is an initiatve at Ohio State University and the University of Mount Union that collaborates with teachers and researchers across the US\nSome of the professors associated with the STEMcoding project help to lead “STEMcoding Education Ohio” which is a 501c3 non-profit. The primary function of this non-profit is to run and maintain stemcoding.herokuapp.com which is a learning management system that can be used in high schools in the US. The site stemcoding.herokuapp.com is not affiliated with or managed by Ohio State University or the University of Mount Union.\nFor more information about STEMcoding Education Ohio, email stemcodingohio@gmail.com"
+  },
+  {
+    "objectID": "projects/balloon.html#weather-balloon-data",
+    "href": "projects/balloon.html#weather-balloon-data",
+    "title": "Air Pressure Versus Height: Balloon Data",
+    "section": "Weather Balloon Data",
+    "text": "Weather Balloon Data\nEarlier in Air Pressure Versus Height: Smartphone data we learned how to use smartphones to measure air pressure and how these devices are sensitive enough to detect the pressure change from even small changes in height. You can take measurements from your phone as you go up and down a stairwell. You can even attach your phone to a drone! This can be used to obtain pressure measurements as high as about 250 m above the ground, but how would we get pressure measurements from even higher than this? Answer: Weather balloons"
+  },
+  {
+    "objectID": "projects/balloon.html#useful-links",
+    "href": "projects/balloon.html#useful-links",
+    "title": "Air Pressure Versus Height: Balloon Data",
+    "section": "Useful links",
+    "text": "Useful links\n\nWeather balloon data from across the world is available from the National Oceanographic and Atmospheric Administration at this link\nIt is important to figure out the code name for the weather station near you. For example, Wilmington, Ohio is USM00072426 and Amarillo, Texas is USM00072363. To find a weather station near you, look through this &lt;a target=“_blank” href=“https://www.ncei.noaa.gov/data/integrated-global-radiosonde-archive/doc/igra2-station-list.txt”“&gt;list of station names\nLook for the data for your station on https://www.ncei.noaa.gov/data/integrated-global-radiosonde-archive/access/data-por/ You will find a zip file with the name of the station (for example: USM00072426-data.txt.zip)"
+  },
+  {
+    "objectID": "projects/balloon.html#how-to-obtain-the-data",
+    "href": "projects/balloon.html#how-to-obtain-the-data",
+    "title": "Air Pressure Versus Height: Balloon Data",
+    "section": "How to obtain the data",
+    "text": "How to obtain the data\n\nWeather balloon data from across the world is freely available to analyze thanks to the National Oceanographic and Atmospheric Administration which has a public database at this link\nIt is important to figure out the code name for the weather station near you. For example, Wilmington, Ohio is USM00072426 and Amarillo, Texas is USM00072363. To find a weather station near you, look through this list of US station names with recent data. If you can’t find your city there you may be able to find it in the full list however note that for some cities the latest data available could be decades old which could be a problem because there may not be a height estimate for each pressure reading\nLook for the data for your station on https://www.ncei.noaa.gov/data/integrated-global-radiosonde-archive/access/data-y2d/ You will find a zip file with the name of the station (for example: USM00072363-data-beg2025.txt.zip) Download that file and figure out a way to unzip or extract the file so that it looks like USM00072363-data.txt This file contains many ballon measurements at that location. You only need one measurement!\nHere is what one measurement of pressure versus height looks like\n\n#USM00072363 2025 01 01 00 2306  324 ncdc-nws ncdc-gts  352331 -1017091\n21     0  89482B 1095    67B  420   120    92    15 \n20     7  89005  1139B   60B  362   138    40    29 \n20    20  88282  1204B   50B  387   129    59    26 \n20    28  87861  1244B   46B  397   125    60    26 \n20    45  86986  1325B   37B  418   117    83    26 \n20   105  85891  1428B   27B  440   110    65    16 \n20   121  85123  1500B   20B  457   104    70    19 \n10   123  85000  1512B   19B  460   103    70    20 \n20   203  82901  1714B    0B  504    90   180    29 \n20   205  82763  1727B   -1B  507    89   185    30 \n20   220  82001  1800B   -8B  527    84   179    14 \n20   245  80633  1934B  -22B  564    75   109    17 \n20   311  78968  2100B  -37B  610    64   136    31 \n20   325  78244  2172B  -43B  633    59   153    26 \n20   355  76772  2322B  -56B  668    52   179    28 \n20   514  72790  2738B  -71B  471    93   241    92 \n20   529  72108  2811B  -70B  449    99   250   111 \n20   543  71538  2873B  -71B  467    94   256   127 \n10   615  70000  3043B  -39B  425   108   273   150 \n20   621  69732  3074B  -39B  411   112   275   151 \n20   645  68604  3202B  -44B  360   127   279   174 \n20   705  67608  3317B  -47B  314   143   273   217 \n20   717  67080  3379B  -49B  306   146   274   225 \n20   745  65870  3522B  -56B  338   133   279   234 \n20   805  65015  3624B  -64B  355   127   279   216 \n20   824  64302  3710B  -70B  363   124   278   212 \n20   845  63357  3823B  -74B  344   129   276   210 \n20   917  61972  3997B  -81B  279   152   271   225 \n20   925  61636  4039B  -84B  283   150   270   230 \n20   953  60378  4200B  -92B  323   134   273   250 \n20   957  60206  4222B  -94B  326   133   274   251 \n20  1037  58461  4447B  -99B  150   216   281   299 \n20  1105  57281  4605B -106B  158   192   283   352 \n20  1125  56540  4705B -113B  124   214   283   377 \n20  1145  55859  4798B -121B  100   232   281   375 \n20  1225  54432  4995B -136B   72   260   284   387 \n20  1305  52862  5217B -146B   13   401   287   365 \n20  1318  52448  5276B -151B   12   402   286   364 \n............Many more lines of data!!!.............\n20  9705   1100 30177B -500B   11   315    32    85 \n20  9725   1079 30305B -499B   11   316    25    96 \n20  9805   1038 30557B -494B   10   319    50    86 \n10  9843   1000 30804B -490B   10   321    43    83 \n20  9845    998 30817B -490B   10   321    42    82 \n20  9905    978 30948B -488B   10   321    51    81 \n20  9945    939 31214B -486B   10   321    34   103 \n20 10005    921 31344B -487B   11   320    28   101 \n20 10025    902 31481B -486B   10   320    30    91 \n20 10105    867 31744B -486B   10   320    49    88 \n20 10125    849 31882B -485B   11   319    36    82 \n20 10127    847 31894B -485B   11   319    35    83 \n20 10147    830 32030B -485B   11   319    22    91 \n20 10221    807 32249B -486B   10   320    20    93 \n30 -9999  -9999  1200 -9999 -9999 -9999    60    26 \n30 -9999  -9999  1500 -9999 -9999 -9999    65    15 \n30 -9999  -9999  1800 -9999 -9999 -9999   185    15 \n30 -9999  -9999  2100 -9999 -9999 -9999   135    36 \n30 -9999  -9999  2400 -9999 -9999 -9999   185    26 \n30 -9999  -9999  2700 -9999 -9999 -9999   235    82 \n30 -9999  -9999  3300 -9999 -9999 -9999   275   216 \n30 -9999  -9999  3600 -9999 -9999 -9999   280   221 \n30 -9999  -9999  3900 -9999 -9999 -9999   270   231 \n30 -9999  -9999  4200 -9999 -9999 -9999   275   247 \n30 -9999  -9999  4500 -9999 -9999 -9999   285   350 \n30 -9999  -9999  4800 -9999 -9999 -9999   280   376 \n\nWe need to extract the third and fourth columns in order to plot the pressure versus height but this is a messy dataset that needs to be cleaned! For example, the fourth and fifth column includes the letter B next to the number which would be very confusing for any spreadsheet program to read in. If you are curious what these symbols mean it is explained in this file"
+  },
+  {
+    "objectID": "projects/balloon.html#example-data",
+    "href": "projects/balloon.html#example-data",
+    "title": "Air Pressure Versus Height: Balloon Data",
+    "section": "Example data",
+    "text": "Example data\nHere are some examples of cleaned data where the extra symbols have been removed and all the lines that contain -9999 have been removed\n\nAmarillo TX data\nWilmington OH data"
+  },
+  {
+    "objectID": "projects/balloon.html#what-do-to-with-the-data",
+    "href": "projects/balloon.html#what-do-to-with-the-data",
+    "title": "Air Pressure Versus Height: Balloon Data",
+    "section": "What do to with the data",
+    "text": "What do to with the data\nEarlier in Air Pressure Versus Height: Smartphone data we found that the air pressure decreases linearly with height, but we were only looking at data that was within 100 meters of the ground. Does the pressure versus height trendline continue to be linear above 100 meters? What mathematical function does it look like? Try plotting the pressure axis using a “log” scale."
   }
 ]
