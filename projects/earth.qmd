@@ -1,6 +1,6 @@
 ---
 title: "Earth Day"
-image: ../img/earth3.jpg
+image: ../img/earth.jpg
 categories:
   - Advanced HS
   - Trigonometry
