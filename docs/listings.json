@@ -3,8 +3,8 @@
     "listing": "/activities.html",
     "items": [
       "/projects/acceleratetheblob.html",
-      "/projects/balloon.html",
       "/projects/airpressure.html",
+      "/projects/balloon.html",
       "/projects/apollo.html",
       "/projects/birds.html",
       "/projects/birdslauncher.html",
