@@ -2,9 +2,8 @@
 title: "Planetoids with Momentum"
 image: ../img/planetoidsmomentum.png
 categories:
-  - Middle School
-  - Intro HS
-  - Physical Science
+  - Physics
+  - Advanced HS
   - Javascript
 ---
 
