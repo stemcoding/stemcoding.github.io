@@ -1,5 +1,5 @@
 ---
-title: "Air Pressure Versus Height: Smartphone Data"
+title: "Air Pressure Versus Height: 1. Smartphone Data"
 image: ../img/airpressure2.png
 categories:
     - Intro HS

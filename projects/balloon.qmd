@@ -1,5 +1,5 @@
 ---
-title: "Air Pressure Versus Height: Balloon Data"
+title: "Air Pressure Versus Height: 2. Balloon Data"
 image: ../img/balloon_release3.png
 categories:
     - Advanced HS
