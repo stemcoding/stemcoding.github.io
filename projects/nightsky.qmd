@@ -1,6 +1,6 @@
 ---
 title: "Night Sky Simulator"
-image: ../img/nightsky.png
+image: ../img/dense_starfield.png
 categories:
   - Advanced HS
   - Astronomy
@@ -9,7 +9,7 @@ categories:
   - Javascript
 ---
 
-![Simulated Night Sky](../img/nightsky.png)
+![Simulated Night Sky](../img/dense_starfield.png){width=300}
 
 The image above is not an actual picture of the night sky or any real star field (maybe you've already noticed that its a fake!). It is a randomly-generated night sky from a computer program we are going to build. We are going to learn a little bit about stars and then we are going to think about why some stars appear brighter in the sky than others and what it means.
 
