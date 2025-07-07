@@ -221,7 +221,7 @@
     "href": "projects/birdslauncher.html",
     "title": "Bird Launcher",
     "section": "",
-    "text": "If you have finished the Apollo moon landing activity, you can continue with this lab where we will configure the game to shoot a bird-shaped projectile."
+    "text": "Create an angry birds game where the arrow keys control the launch velocity"
   },
   {
     "objectID": "projects/birdslauncher.html#links-to-activity",
@@ -277,7 +277,7 @@
     "href": "projects/particleaccelerator.html",
     "title": "Particle Accelerator",
     "section": "",
-    "text": "Your browser does not support the video tag.\nIn this exercise we will make a simulation of a particle being accelerated between two plates."
+    "text": "Your browser does not support the video tag.\nIn this exercise we will make a simulation of a charged particle being accelerated between two plates."
   },
   {
     "objectID": "projects/particleaccelerator.html#links-to-activity",
@@ -406,6 +406,13 @@
     "text": "Repulsion Between Two Charges Playlist"
   },
   {
+    "objectID": "projects/co2.html",
+    "href": "projects/co2.html",
+    "title": "CO2 Survey",
+    "section": "",
+    "text": "Use a CO2 sensor to measure air quality in your building"
+  },
+  {
     "objectID": "projects/co2.html#links-to-activity",
     "href": "projects/co2.html#links-to-activity",
     "title": "CO2 Survey",
@@ -455,6 +462,20 @@
     "text": "Orbital Motion: Kepler’s Second Law Playlist"
   },
   {
+    "objectID": "projects/conductor.html",
+    "href": "projects/conductor.html",
+    "title": "Conductor Interactive",
+    "section": "",
+    "text": "How do electrons move inside of a conductor? Play with a web interactive to find out!"
+  },
+  {
+    "objectID": "projects/conductor.html#links-to-activity",
+    "href": "projects/conductor.html#links-to-activity",
+    "title": "Conductor Interactive",
+    "section": "Links to Activity",
+    "text": "Links to Activity"
+  },
+  {
     "objectID": "projects/conductor.html#conductor-interactive-video",
     "href": "projects/conductor.html#conductor-interactive-video",
     "title": "Conductor Interactive",
@@ -466,7 +487,7 @@
     "href": "projects/birds.html",
     "title": "Bellicose Birds",
     "section": "",
-    "text": "We will configure the game to shoot a bird-shaped projectile. We call this game Bellicose Birds."
+    "text": "Create an angry birds game where the arrow keys control the launch angle"
   },
   {
     "objectID": "projects/birds.html#links-to-activity",
@@ -490,179 +511,130 @@
     "text": "Bellicose Birds Playlist"
   },
   {
-    "objectID": "projects/acceleratetheblob.html",
-    "href": "projects/acceleratetheblob.html",
-    "title": "Accelerate the Blob",
+    "objectID": "projects/pong.html",
+    "href": "projects/pong.html",
+    "title": "Pong",
     "section": "",
-    "text": "Your browser does not support the video tag.\nIn real life, objects accelerate up to a particlar velocity. This exercise will show you how to modify the move the blob exercise so that the blob accelerates in response to the arrow keys, instead of the arrow keys directly controlling the velocity."
+    "text": "In the classic game of Pong, there is a little ball that bounces around off various walls and objects. Importantly, the ball changes direction when it bounces but it never really slows down in speed. This is a big hint that the collisions that the ball is experiencing are elastic collisions."
   },
   {
-    "objectID": "projects/acceleratetheblob.html#links-to-activity",
-    "href": "projects/acceleratetheblob.html#links-to-activity",
-    "title": "Accelerate the Blob",
+    "objectID": "projects/pong.html#links-to-activity",
+    "href": "projects/pong.html#links-to-activity",
+    "title": "Pong",
     "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Accelerate the Blob\nCode Editor for Accelerate the Blob"
+    "text": "Links to Activity\n\nInstructions for Pong\nCode Editor for Pong"
   },
   {
-    "objectID": "projects/acceleratetheblob.html#learning-objectives",
-    "href": "projects/acceleratetheblob.html#learning-objectives",
-    "title": "Accelerate the Blob",
+    "objectID": "projects/pong.html#pong-and-bonk.io-playlist",
+    "href": "projects/pong.html#pong-and-bonk.io-playlist",
+    "title": "Pong",
+    "section": "Pong and Bonk.io Playlist",
+    "text": "Pong and Bonk.io Playlist"
+  },
+  {
+    "objectID": "projects/projectmercury1.html",
+    "href": "projects/projectmercury1.html",
+    "title": "Project Mercury Part 1",
+    "section": "",
+    "text": "Mathematician Katherine Johnson is famous for calculating trajectories of America’s first manned space missions for Project Mercury as depicted in the movie Hidden Figures.\nThe big concern at that point in the history of the space program was accurately predicting where a spacecraft would land in the ocean after re-entering the earth’s atmosphere. Any miscalculation could send the mercury capsule hundreds of miles from where the Navy was expecting to recover the spacecraft and the astronaut inside.\nThe calculation that Katherine Johnson did had to consider many different effects on the trajectory of the mercury capsule. For this activity we are going to keep it simple and start with putting the capsule in a circular orbit. In the second part, we will consider how the mercury capsule comes back to earth. This part of the space mission is referred to as “re-entry”."
+  },
+  {
+    "objectID": "projects/projectmercury1.html#links-to-activity",
+    "href": "projects/projectmercury1.html#links-to-activity",
+    "title": "Project Mercury Part 1",
+    "section": "Links to Activity",
+    "text": "Links to Activity\n\nPart 1\n\nInstructions for Project Mercury (Part 1)\nProject Mercury (Part 1) Code Editor"
+  },
+  {
+    "objectID": "projects/projectmercury1.html#project-mercury-playlist",
+    "href": "projects/projectmercury1.html#project-mercury-playlist",
+    "title": "Project Mercury Part 1",
+    "section": "Project Mercury Playlist",
+    "text": "Project Mercury Playlist"
+  },
+  {
+    "objectID": "projects/figures.html#central-question",
+    "href": "projects/figures.html#central-question",
+    "title": "Good Figures vs. Bad Figures",
+    "section": "Central Question:",
+    "text": "Central Question:\nWhat makes for a good figure? What makes for a bad figure? Let’s look at some examples and discuss\nExamples of Bad Figures\nMore examples of Bad Figures from viz.wtf\nExamples of Good Figures"
+  },
+  {
+    "objectID": "projects/bonk.html",
+    "href": "projects/bonk.html",
+    "title": "Bonk.io Clone",
+    "section": "",
+    "text": "If you liked the Pong activity you’ll love this activity which is based on a real game called Bonk.io\nOne of the most popular and entertaining .io games out there right now is bonk.io If you’ve not played it you should definitely check it out. The game is pretty simple. You’re a little ball and you bounce off the ground and various objects. You have some ability to affect your motion, but if you get bounced by some object or some other player so that you fly off the board you lose the game. It’s a little bit like sumo wrestling that way."
+  },
+  {
+    "objectID": "projects/bonk.html#links-to-activity",
+    "href": "projects/bonk.html#links-to-activity",
+    "title": "Bonk.io Clone",
+    "section": "Links to Activity",
+    "text": "Links to Activity\n\nInstructions for Bonk.io Clone\nCode Editor for Bonk.io Clone"
+  },
+  {
+    "objectID": "projects/bonk.html#pong-and-bonk.io-playlist",
+    "href": "projects/bonk.html#pong-and-bonk.io-playlist",
+    "title": "Bonk.io Clone",
+    "section": "Pong and Bonk.io Playlist",
+    "text": "Pong and Bonk.io Playlist"
+  },
+  {
+    "objectID": "projects/particleacceleratorpotential.html",
+    "href": "projects/particleacceleratorpotential.html",
+    "title": "Particle Accelerator with Potential",
+    "section": "",
+    "text": "After completing Particle Accelerator, check out this activity where we consider what happens if the “Electric Potential” is kept the same even as we change the Electric field and the separation between the plates"
+  },
+  {
+    "objectID": "projects/particleacceleratorpotential.html#links-to-activity",
+    "href": "projects/particleacceleratorpotential.html#links-to-activity",
+    "title": "Particle Accelerator with Potential",
+    "section": "Links to Activity",
+    "text": "Links to Activity\n\nInstructions for Particle Accelerator with Potential\nParticle Accelerator with Potential Code Editor"
+  },
+  {
+    "objectID": "projects/particleacceleratorpotential.html#learning-objectives",
+    "href": "projects/particleacceleratorpotential.html#learning-objectives",
+    "title": "Particle Accelerator with Potential",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\nAt the end of this lesson students will…\n\nUnderstand basic p5.js syntax, specifically the difference between “+=” and “=”.\nCompare and contrast acceleration and velocity pertaining to objects moving along a straight line path.\nAnalyze an object’s motion using multiple representations, specifically graphical, pictorial, vector, and algebraic."
+    "text": "Learning Objectives\nAt the end of this lesson students will…\n\nUnderstand that electric potential can appropriately model how electric fields affect charged particles.\nUnderstand how a charged particle’s motion is affected by the electric potential of a field.\nAnalyze the situation to calculate the final velocity of a particle after experiencing an electric field using electric potential relationships."
   },
   {
-    "objectID": "projects/acceleratetheblob.html#accelerate-the-blob-videos",
-    "href": "projects/acceleratetheblob.html#accelerate-the-blob-videos",
-    "title": "Accelerate the Blob",
-    "section": "Accelerate the Blob Videos",
-    "text": "Accelerate the Blob Videos"
-  },
-  {
-    "objectID": "projects/apollo.html",
-    "href": "projects/apollo.html",
-    "title": "Apollo Moon Landing",
+    "objectID": "projects/black.html",
+    "href": "projects/black.html",
+    "title": "Escape Velocity and Newtonian Black Holes",
     "section": "",
-    "text": "Your browser does not support the video tag.\nLand a rocket on the moon, but be careful not to land too hard!"
+    "text": "That activity explores the behavior of objects like planets or comets interacting with a massive object like the sun."
   },
   {
-    "objectID": "projects/apollo.html#links-to-activity",
-    "href": "projects/apollo.html#links-to-activity",
-    "title": "Apollo Moon Landing",
+    "objectID": "projects/black.html#links-to-activity",
+    "href": "projects/black.html#links-to-activity",
+    "title": "Escape Velocity and Newtonian Black Holes",
     "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Apollo Moon Landing\nApollo Moon Landing Code Editor"
+    "text": "Links to Activity\n\nInstructions for Escape Velocity and Newtonain Black Holes\nCode Editor for Escape Velocity and Newtonian Black Holes"
   },
   {
-    "objectID": "projects/apollo.html#apollo-moon-landing-playlist",
-    "href": "projects/apollo.html#apollo-moon-landing-playlist",
-    "title": "Apollo Moon Landing",
-    "section": "Apollo Moon Landing Playlist",
-    "text": "Apollo Moon Landing Playlist"
+    "objectID": "projects/black.html#escape-velocity-and-black-holes-playlist",
+    "href": "projects/black.html#escape-velocity-and-black-holes-playlist",
+    "title": "Escape Velocity and Newtonian Black Holes",
+    "section": "Escape Velocity and Black Holes Playlist",
+    "text": "Escape Velocity and Black Holes Playlist"
   },
   {
-    "objectID": "projects/objecttracker.html",
-    "href": "projects/objecttracker.html",
-    "title": "Object Tracker",
+    "objectID": "projects/fractal.html",
+    "href": "projects/fractal.html",
+    "title": "Fractal Puzzle",
     "section": "",
-    "text": "Now you can record your own direct measurement videos and analyze them with p5.js.\nNote: The STEMcoding Object Tracker works best in chrome and edge!\nIt can work in other browsers (safari, firefox, etc.) but it may run slower or not at all due to some memory problems."
+    "text": "Download a pdf of a fractal puzzle, print it out on a regular office printer and see if you can put it together!"
   },
   {
-    "objectID": "projects/objecttracker.html#links-to-activity",
-    "href": "projects/objecttracker.html#links-to-activity",
-    "title": "Object Tracker",
+    "objectID": "projects/fractal.html#links-to-activity",
+    "href": "projects/fractal.html#links-to-activity",
+    "title": "Fractal Puzzle",
     "section": "Links to Activity",
-    "text": "Links to Activity\n\nPart 1: Track the Object\n\nInstructions for Part 1\nPart 1 Code Editor\n\n\n\nPart 2: Analyze Height vs. Time\n\nInstructions for Part 2\n\n\n\nPart 2: Analyze Velocity vs. Time\n\nInstructions for Part 3"
-  },
-  {
-    "objectID": "projects/objecttracker.html#object-tracker-playlist",
-    "href": "projects/objecttracker.html#object-tracker-playlist",
-    "title": "Object Tracker",
-    "section": "Object Tracker Playlist",
-    "text": "Object Tracker Playlist"
-  },
-  {
-    "objectID": "projects/planetoidsspring.html",
-    "href": "projects/planetoidsspring.html",
-    "title": "Planetoids with a Spring",
-    "section": "",
-    "text": "Your browser does not support the video tag.\nThink back to the momentum exercise. The little ship can collide with a “blob” and stick to it. Now imagine that this blob is attached to a spring. Wouldn’t it be interesting if the ship could collide with the blob and then the spring would push and pull both around? This is what we will do in this exercise."
-  },
-  {
-    "objectID": "projects/planetoidsspring.html#links-to-activity",
-    "href": "projects/planetoidsspring.html#links-to-activity",
-    "title": "Planetoids with a Spring",
-    "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Planetoids with a Spring\nPlanetoids with a Spring Code Editor"
-  },
-  {
-    "objectID": "projects/planetoidsspring.html#learning-objectives",
-    "href": "projects/planetoidsspring.html#learning-objectives",
-    "title": "Planetoids with a Spring",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nAt the end of this lesson students will…\n\nApply Hooke’s Law, Newton’s 2nd Law, and constant acceleration kinematic equations to code a blob on a spring to behave appropriately when it is collided by a spaceship.\nEvaluate the theoretical half-cycle time of the coded spring.\nCreate a code which accounts for the dampening effect of the spring with time."
-  },
-  {
-    "objectID": "projects/planetoidsspring.html#planetoids-with-a-spring-playlist",
-    "href": "projects/planetoidsspring.html#planetoids-with-a-spring-playlist",
-    "title": "Planetoids with a Spring",
-    "section": "Planetoids with a Spring Playlist",
-    "text": "Planetoids with a Spring Playlist"
-  },
-  {
-    "objectID": "projects/balloon.html",
-    "href": "projects/balloon.html",
-    "title": "Air Pressure Versus Height: 2. Balloon Data",
-    "section": "",
-    "text": "Analyze air pressure data from weather balloons\nImage adapted from National Weather Service Forth Worth youtube channel"
-  },
-  {
-    "objectID": "projects/balloon.html#balloons-are-cool",
-    "href": "projects/balloon.html#balloons-are-cool",
-    "title": "Balloon Data",
-    "section": "",
-    "text": "Balloons are cool dude"
-  },
-  {
-    "objectID": "projects/waveinterference.html",
-    "href": "projects/waveinterference.html",
-    "title": "Wave Interference",
-    "section": "",
-    "text": "This programming lab is designed to illustrate the idea of wave interference. This happens because of the principle of “superposition”. For sound waves, this 20 dollar word just means that if there are two speakers in a large room or open space, the amplitude of the sound waves at a particular point in that room are the sum of the waves of the two speakers."
-  },
-  {
-    "objectID": "projects/waveinterference.html#links-to-activity",
-    "href": "projects/waveinterference.html#links-to-activity",
-    "title": "Wave Interference",
-    "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Wave Interferece\nWave Interference Code Editor"
-  },
-  {
-    "objectID": "projects/waveinterference.html#learning-objectives",
-    "href": "projects/waveinterference.html#learning-objectives",
-    "title": "Wave Interference",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nBy the end of this activity students will…\n\nUnderstand how wave interference affects the observed volume at various locations in a room.\nCreate a simulation to observe where waves have constructive and destructive interference in a room with two speakers."
-  },
-  {
-    "objectID": "projects/waveinterference.html#wave-interference-playlist",
-    "href": "projects/waveinterference.html#wave-interference-playlist",
-    "title": "Wave Interference",
-    "section": "Wave Interference Playlist",
-    "text": "Wave Interference Playlist"
-  },
-  {
-    "objectID": "projects/piday2.html",
-    "href": "projects/piday2.html",
-    "title": "Pi Day Part 2",
-    "section": "",
-    "text": "If you completed the Pi day activity and were surprised at how long it took to calculate the digits of π there is good news! There is a better way to calculate the digits of Pi!"
-  },
-  {
-    "objectID": "projects/piday2.html#links-to-activity",
-    "href": "projects/piday2.html#links-to-activity",
-    "title": "Pi Day Part 2",
-    "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Pi Day Part 2\nPi Day Part 2 Code Editor"
-  },
-  {
-    "objectID": "projects/piday2.html#pi-day-part-2-playlist",
-    "href": "projects/piday2.html#pi-day-part-2-playlist",
-    "title": "Pi Day Part 2",
-    "section": "Pi Day Part 2 Playlist",
-    "text": "Pi Day Part 2 Playlist"
-  },
-  {
-    "objectID": "projects/electro.html",
-    "href": "projects/electro.html",
-    "title": "Electromagnetism: Unit System",
-    "section": "",
-    "text": "There are three issues that deserve mention: the length units (pretty simple), force units, and the electric field units (which is related to the force units)."
-  },
-  {
-    "objectID": "projects/electro.html#links-to-activity",
-    "href": "projects/electro.html#links-to-activity",
-    "title": "Electromagnetism: Unit System",
-    "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Electromagnetism: Unit System"
+    "text": "Links to Activity\nStudent Worksheets/Print Outs"
   },
   {
     "objectID": "projects/earth.html",
@@ -844,7 +816,7 @@
     "href": "activities.html",
     "title": "Activities",
     "section": "",
-    "text": "View a flowchart of all STEMcoding activities here.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAccelerate the Blob\n\n\n\nMiddle School\n\n\nIntro HS\n\n\nPhysical Science\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAir Pressure Versus Height: 1. Smartphone Data\n\n\n\nIntro HS\n\n\nMath\n\n\nPhysical Science\n\n\nPhysics\n\n\nAtmospheric Science\n\n\nData Science\n\n\nSpace\n\n\nSpreadsheets\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAir Pressure Versus Height: 2. Balloon Data\n\n\n\nAdvanced HS\n\n\nMath\n\n\nPhysical Science\n\n\nPhysics\n\n\nAtmospheric Science\n\n\nData Science\n\n\nSpace\n\n\nSpreadsheets\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nApollo Moon Landing\n\n\n\nIntro HS\n\n\nPhysical Science\n\n\nPhysics\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBellicose Birds\n\n\n\nAdvanced HS\n\n\nPhysics\n\n\nJavascript\n\n\nTrigonometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBird Launcher\n\n\n\nIntro HS\n\n\nPhysical Science\n\n\nPhysics\n\n\nAlgebra\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBonk.io Clone\n\n\n\nIntro HS\n\n\nPhysical Science\n\n\nPhysics\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCO2 Survey\n\n\n\nIntro HS\n\n\nData Science\n\n\nSpreadsheets\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nConductor Interactive\n\n\n\nAll Ages\n\n\nPhysics\n\n\nPhysical Science\n\n\nElectromagnetism\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEarth Day\n\n\n\nAdvanced HS\n\n\nTrigonometry\n\n\nEnvironmental Science\n\n\nData Science\n\n\nSpreadsheets\n\n\nSustainability\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nElectromagnetism: Unit System\n\n\n\nPhysics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEscape Velocity and Newtonian Black Holes\n\n\n\nAdvanced HS\n\n\nAstronomy\n\n\nPhysics\n\n\nJavascript\n\n\nTrigonometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExoplanets\n\n\n\nAdvanced HS\n\n\nAstronomy\n\n\nPhysics\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFluid Mechanics Interactive\n\n\n\nAll Ages\n\n\nPhysics\n\n\nPhysical Science\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFractal Puzzle\n\n\n\nAll Ages\n\n\nMath\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGood Figures vs. Bad Figures\n\n\n\nAll Ages\n\n\nData Science\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLaser Defense Part 1\n\n\n\nJavascript\n\n\nMath\n\n\nAdvanced HS\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLaser Defense Part 2\n\n\n\nAdvanced HS\n\n\nMath\n\n\nJavascript\n\n\nTrigonometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLunar Descent\n\n\n\nAdvanced HS\n\n\nPhysics\n\n\nJavascript\n\n\nTrigonometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMagnetic Force\n\n\n\nAdvanced HS\n\n\nPhysics\n\n\nElectromagnetism\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMathematical Flower Activity\n\n\n\nAdvanced HS\n\n\nMath\n\n\nJavascript\n\n\nTrigonometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMove the Blob\n\n\n\nMiddle School\n\n\nIntro HS\n\n\nPhysical Science\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNight Sky Simulator\n\n\n\nAdvanced HS\n\n\nAstronomy\n\n\nData Science\n\n\nSpreadsheets\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nObject Tracker\n\n\n\nIntro HS\n\n\nAdvanced HS\n\n\nMath\n\n\nPhysics\n\n\nPhysical Science\n\n\nData Science\n\n\nSpreadsheets\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOrbital Motion: Eccentricity\n\n\n\nAdvanced HS\n\n\nAstronomy\n\n\nPhysics\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOrbital Motion: Kepler’s Second Law\n\n\n\nAdvanced HS\n\n\nIntro HS\n\n\nPhysics\n\n\nAstronomy\n\n\nTrigonometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nParticle Accelerator\n\n\n\nMiddle School\n\n\nIntro HS\n\n\nPhysical Science\n\n\nPhysics\n\n\nElectromagnetism\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nParticle Accelerator with Potential\n\n\n\nMiddle School\n\n\nIntro HS\n\n\nPhysical Science\n\n\nPhysics\n\n\nElectromagnetism\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPi Day Part 1\n\n\n\nJavascript\n\n\nMath\n\n\nGeometry\n\n\nMiddle School\n\n\nIntro HS\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPi Day Part 2\n\n\n\nAdvanced HS\n\n\nTrigonometry\n\n\nPrecalculus\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPi Day in Parallel\n\n\n\nAdvanced HS\n\n\nMath\n\n\nGeometry\n\n\nComputer Science\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPipe Interactive\n\n\n\nAll Ages\n\n\nPhysics\n\n\nPhysical Science\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPlanetoids\n\n\n\nAdvanced HS\n\n\nPhysics\n\n\nJavascript\n\n\nTrigonometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPlanetoids with Momentum\n\n\n\nPhysics\n\n\nAdvanced HS\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPlanetoids with Torque\n\n\n\nAdvanced HS\n\n\nPhysics\n\n\nJavascript\n\n\nTrigonometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPlanetoids with a Spring\n\n\n\nAdvanced HS\n\n\nIntro HS\n\n\nPhysical Science\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPong\n\n\n\nMiddle School\n\n\nIntro HS\n\n\nPhysical Science\n\n\nPhysics\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProject Mercury Part 1\n\n\n\nMiddle School\n\n\nIntro HS\n\n\nPhysical Science\n\n\nPhysics\n\n\nAstronomy\n\n\nSpace\n\n\nHidden Figures\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProject Mercury Part 2\n\n\n\nAdvanced HS\n\n\nPhysics\n\n\nAstronomy\n\n\nSpace\n\n\nPrecalculus\n\n\nTrigonometry\n\n\nHidden Figures\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRC Circuits\n\n\n\nJavascript\n\n\nAdvanced HS\n\n\nPhysics\n\n\nElectromagnetism\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRepulsion Between Two Charges\n\n\n\nIntro HS\n\n\nAdvanced HS\n\n\nPhysics\n\n\nElectromagnetism\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSlingshot With Gravity\n\n\n\nAdvanced HS\n\n\nAstronomy\n\n\nPhysics\n\n\nJavascript\n\n\nTrigonometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSolar Cell Data Analysis\n\n\n\nIntro HS\n\n\nData Science\n\n\nSustainability\n\n\nSpreadsheets\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSolar System Model\n\n\n\nIntro HS\n\n\nData Science\n\n\nSpreadsheets\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWave Interference\n\n\n\nAdvanced HS\n\n\nPhysics\n\n\nElectromagnetism\n\n\nJavascript\n\n\nTrigonometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "View a flowchart of all STEMcoding activities here.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAccelerate the Blob\n\n\n\nMiddle School\n\n\nIntro HS\n\n\nPhysical Science\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAir Pressure Versus Height: 1. Smartphone Data\n\n\n\nIntro HS\n\n\nMath\n\n\nPhysical Science\n\n\nPhysics\n\n\nAtmospheric Science\n\n\nData Science\n\n\nSpace\n\n\nSpreadsheets\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAir Pressure Versus Height: 2. Balloon Data\n\n\n\nAdvanced HS\n\n\nMath\n\n\nPhysical Science\n\n\nPhysics\n\n\nAtmospheric Science\n\n\nData Science\n\n\nSpace\n\n\nSpreadsheets\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nApollo Moon Landing\n\n\n\nIntro HS\n\n\nPhysical Science\n\n\nPhysics\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBellicose Birds\n\n\n\nAdvanced HS\n\n\nPhysics\n\n\nJavascript\n\n\nTrigonometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBird Launcher\n\n\n\nIntro HS\n\n\nPhysical Science\n\n\nPhysics\n\n\nAlgebra\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBonk.io Clone\n\n\n\nIntro HS\n\n\nPhysical Science\n\n\nPhysics\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCO2 Survey\n\n\n\nIntro HS\n\n\nData Science\n\n\nSpreadsheets\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nConductor Interactive\n\n\n\nAll Ages\n\n\nPhysics\n\n\nPhysical Science\n\n\nElectromagnetism\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEarth Day\n\n\n\nAdvanced HS\n\n\nTrigonometry\n\n\nEnvironmental Science\n\n\nData Science\n\n\nSpreadsheets\n\n\nSustainability\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEscape Velocity and Newtonian Black Holes\n\n\n\nAdvanced HS\n\n\nAstronomy\n\n\nPhysics\n\n\nJavascript\n\n\nTrigonometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExoplanets\n\n\n\nAdvanced HS\n\n\nAstronomy\n\n\nPhysics\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFluid Mechanics Interactive\n\n\n\nAll Ages\n\n\nPhysics\n\n\nPhysical Science\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFractal Puzzle\n\n\n\nAll Ages\n\n\nMath\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGood Figures vs. Bad Figures\n\n\n\nAll Ages\n\n\nData Science\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLaser Defense Part 1\n\n\n\nJavascript\n\n\nMath\n\n\nAdvanced HS\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLaser Defense Part 2\n\n\n\nAdvanced HS\n\n\nMath\n\n\nJavascript\n\n\nTrigonometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLunar Descent\n\n\n\nAdvanced HS\n\n\nPhysics\n\n\nJavascript\n\n\nTrigonometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMagnetic Force\n\n\n\nAdvanced HS\n\n\nPhysics\n\n\nElectromagnetism\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMathematical Flower Activity\n\n\n\nAdvanced HS\n\n\nMath\n\n\nJavascript\n\n\nTrigonometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMove the Blob\n\n\n\nMiddle School\n\n\nIntro HS\n\n\nPhysical Science\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNight Sky Simulator\n\n\n\nAdvanced HS\n\n\nAstronomy\n\n\nData Science\n\n\nSpreadsheets\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nObject Tracker\n\n\n\nIntro HS\n\n\nAdvanced HS\n\n\nMath\n\n\nPhysics\n\n\nPhysical Science\n\n\nData Science\n\n\nSpreadsheets\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOrbital Motion: Eccentricity\n\n\n\nAdvanced HS\n\n\nAstronomy\n\n\nPhysics\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOrbital Motion: Kepler’s Second Law\n\n\n\nAdvanced HS\n\n\nIntro HS\n\n\nPhysics\n\n\nAstronomy\n\n\nTrigonometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nParticle Accelerator\n\n\n\nMiddle School\n\n\nIntro HS\n\n\nPhysical Science\n\n\nPhysics\n\n\nElectromagnetism\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nParticle Accelerator with Potential\n\n\n\nMiddle School\n\n\nIntro HS\n\n\nPhysical Science\n\n\nPhysics\n\n\nElectromagnetism\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPi Day Part 1\n\n\n\nJavascript\n\n\nMath\n\n\nGeometry\n\n\nMiddle School\n\n\nIntro HS\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPi Day Part 2\n\n\n\nAdvanced HS\n\n\nTrigonometry\n\n\nPrecalculus\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPi Day in Parallel\n\n\n\nAdvanced HS\n\n\nMath\n\n\nGeometry\n\n\nComputer Science\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPlanetoids\n\n\n\nAdvanced HS\n\n\nPhysics\n\n\nJavascript\n\n\nTrigonometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPlanetoids with Momentum\n\n\n\nPhysics\n\n\nAdvanced HS\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPlanetoids with Torque\n\n\n\nAdvanced HS\n\n\nPhysics\n\n\nJavascript\n\n\nTrigonometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPlanetoids with a Spring\n\n\n\nAdvanced HS\n\n\nIntro HS\n\n\nPhysical Science\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPong\n\n\n\nMiddle School\n\n\nIntro HS\n\n\nPhysical Science\n\n\nPhysics\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProject Mercury Part 1\n\n\n\nMiddle School\n\n\nIntro HS\n\n\nPhysical Science\n\n\nPhysics\n\n\nAstronomy\n\n\nSpace\n\n\nHidden Figures\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProject Mercury Part 2\n\n\n\nAdvanced HS\n\n\nPhysics\n\n\nAstronomy\n\n\nSpace\n\n\nPrecalculus\n\n\nTrigonometry\n\n\nHidden Figures\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRC Circuits\n\n\n\nJavascript\n\n\nAdvanced HS\n\n\nPhysics\n\n\nElectromagnetism\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRepulsion Between Two Charges\n\n\n\nIntro HS\n\n\nAdvanced HS\n\n\nPhysics\n\n\nElectromagnetism\n\n\nJavascript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSlingshot With Gravity\n\n\n\nAdvanced HS\n\n\nAstronomy\n\n\nPhysics\n\n\nJavascript\n\n\nTrigonometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSolar Cell Data Analysis\n\n\n\nIntro HS\n\n\nData Science\n\n\nSustainability\n\n\nSpreadsheets\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSolar System Model\n\n\n\nIntro HS\n\n\nData Science\n\n\nSpreadsheets\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWave Interference\n\n\n\nAdvanced HS\n\n\nPhysics\n\n\nElectromagnetism\n\n\nJavascript\n\n\nTrigonometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "standards.html",
@@ -1159,7 +1131,7 @@
     "href": "projects/nightsky.html",
     "title": "Night Sky Simulator",
     "section": "",
-    "text": "Simulated Night Sky\nThe image above is not an actual picture of the night sky or any real star field (maybe you’ve already noticed that its a fake!). It is a randomly-generated night sky from a computer program we are going to build. We are going to learn a little bit about stars and then we are going to think about why some stars appear brighter in the sky than others and what it means.\nAn interesting thing about this activity is that you will be able to download a spreadsheet with the list of randomly generated stars. In the directions here we will use Google sheets to analyze that data but you can use any spreadsheet program you are comfortable with (Excel, Libreoffice, Apple – Numbers)"
+    "text": "Use some basic facts and equations about stars to randomly generate a realistic-looking starfield\nThe image above is not an actual picture of the night sky or any real star field (maybe you’ve already noticed that its a fake!). It is a randomly-generated night sky from a computer program we are going to build. We are going to learn a little bit about stars and then we are going to think about why some stars appear brighter in the sky than others and what it means.\nAn interesting thing about this activity is that you will be able to download a spreadsheet with the list of randomly generated stars. In the directions here we will use Google sheets to analyze that data but you can use any spreadsheet program you are comfortable with (Excel, Libreoffice, Apple – Numbers)"
   },
   {
     "objectID": "projects/nightsky.html#links-to-activity",
@@ -1204,137 +1176,186 @@
     "text": "Magnetic Force Playlist"
   },
   {
-    "objectID": "projects/fractal.html",
-    "href": "projects/fractal.html",
-    "title": "Fractal Puzzle",
+    "objectID": "projects/piday2.html",
+    "href": "projects/piday2.html",
+    "title": "Pi Day Part 2",
     "section": "",
-    "text": "Student Worksheets/Print Outs"
+    "text": "If you completed the Pi day activity and were surprised at how long it took to calculate the digits of π there is good news! There is a better way to calculate the digits of Pi!"
   },
   {
-    "objectID": "projects/fractal.html#links-to-activity",
-    "href": "projects/fractal.html#links-to-activity",
-    "title": "Fractal Puzzle",
-    "section": "",
-    "text": "Student Worksheets/Print Outs"
-  },
-  {
-    "objectID": "projects/black.html",
-    "href": "projects/black.html",
-    "title": "Escape Velocity and Newtonian Black Holes",
-    "section": "",
-    "text": "That activity explores the behavior of objects like planets or comets interacting with a massive object like the sun."
-  },
-  {
-    "objectID": "projects/black.html#links-to-activity",
-    "href": "projects/black.html#links-to-activity",
-    "title": "Escape Velocity and Newtonian Black Holes",
+    "objectID": "projects/piday2.html#links-to-activity",
+    "href": "projects/piday2.html#links-to-activity",
+    "title": "Pi Day Part 2",
     "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Escape Velocity and Newtonain Black Holes\nCode Editor for Escape Velocity and Newtonian Black Holes"
+    "text": "Links to Activity\n\nInstructions for Pi Day Part 2\nPi Day Part 2 Code Editor"
   },
   {
-    "objectID": "projects/black.html#escape-velocity-and-black-holes-playlist",
-    "href": "projects/black.html#escape-velocity-and-black-holes-playlist",
-    "title": "Escape Velocity and Newtonian Black Holes",
-    "section": "Escape Velocity and Black Holes Playlist",
-    "text": "Escape Velocity and Black Holes Playlist"
+    "objectID": "projects/piday2.html#pi-day-part-2-playlist",
+    "href": "projects/piday2.html#pi-day-part-2-playlist",
+    "title": "Pi Day Part 2",
+    "section": "Pi Day Part 2 Playlist",
+    "text": "Pi Day Part 2 Playlist"
   },
   {
-    "objectID": "projects/particleacceleratorpotential.html",
-    "href": "projects/particleacceleratorpotential.html",
-    "title": "Particle Accelerator with Potential",
+    "objectID": "projects/waveinterference.html",
+    "href": "projects/waveinterference.html",
+    "title": "Wave Interference",
     "section": "",
-    "text": "This programming lab is a continuation of the accelerator programming lab where a proton is accelerated from the electric field between two charged plates. The only difference between the earlier programming lab and this programming labis that we are going to think about the potential difference between the two charged plates."
+    "text": "This programming lab is designed to illustrate the idea of wave interference. This happens because of the principle of “superposition”. For sound waves, this 20 dollar word just means that if there are two speakers in a large room or open space, the amplitude of the sound waves at a particular point in that room are the sum of the waves of the two speakers."
   },
   {
-    "objectID": "projects/particleacceleratorpotential.html#links-to-activity",
-    "href": "projects/particleacceleratorpotential.html#links-to-activity",
-    "title": "Particle Accelerator with Potential",
+    "objectID": "projects/waveinterference.html#links-to-activity",
+    "href": "projects/waveinterference.html#links-to-activity",
+    "title": "Wave Interference",
     "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Particle Accelerator with Potential\nParticle Accelerator with Potential Code Editor"
+    "text": "Links to Activity\n\nInstructions for Wave Interferece\nWave Interference Code Editor"
   },
   {
-    "objectID": "projects/particleacceleratorpotential.html#learning-objectives",
-    "href": "projects/particleacceleratorpotential.html#learning-objectives",
-    "title": "Particle Accelerator with Potential",
+    "objectID": "projects/waveinterference.html#learning-objectives",
+    "href": "projects/waveinterference.html#learning-objectives",
+    "title": "Wave Interference",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\nAt the end of this lesson students will…\n\nUnderstand that electric potential can appropriately model how electric fields affect charged particles.\nUnderstand how a charged particle’s motion is affected by the electric potential of a field.\nAnalyze the situation to calculate the final velocity of a particle after experiencing an electric field using electric potential relationships."
+    "text": "Learning Objectives\nBy the end of this activity students will…\n\nUnderstand how wave interference affects the observed volume at various locations in a room.\nCreate a simulation to observe where waves have constructive and destructive interference in a room with two speakers."
   },
   {
-    "objectID": "projects/bonk.html",
-    "href": "projects/bonk.html",
-    "title": "Bonk.io Clone",
+    "objectID": "projects/waveinterference.html#wave-interference-playlist",
+    "href": "projects/waveinterference.html#wave-interference-playlist",
+    "title": "Wave Interference",
+    "section": "Wave Interference Playlist",
+    "text": "Wave Interference Playlist"
+  },
+  {
+    "objectID": "projects/balloon.html",
+    "href": "projects/balloon.html",
+    "title": "Air Pressure Versus Height: 2. Balloon Data",
     "section": "",
-    "text": "One of the most popular and entertaining .io games out there right now is bonk.io If you’ve not played it you should definitely check it out. The game is pretty simple. You’re a little ball and you bounce off the ground and various objects. You have some ability to affect your motion, but if you get bounced by some object or some other player so that you fly off the board you lose the game. It’s a little bit like sumo wrestling that way."
+    "text": "Analyze air pressure data from weather balloons\nImage adapted from National Weather Service Forth Worth youtube channel"
   },
   {
-    "objectID": "projects/bonk.html#links-to-activity",
-    "href": "projects/bonk.html#links-to-activity",
-    "title": "Bonk.io Clone",
-    "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Bonk.io Clone\nCode Editor for Bonk.io Clone"
+    "objectID": "projects/balloon.html#weather-balloon-data",
+    "href": "projects/balloon.html#weather-balloon-data",
+    "title": "Air Pressure Versus Height: 2. Balloon Data",
+    "section": "Weather Balloon Data",
+    "text": "Weather Balloon Data\nEarlier in Air Pressure Versus Height: Smartphone data we learned how to use smartphones to measure air pressure and how these devices are sensitive enough to detect the pressure change from even small changes in height. You can take measurements from your phone as you go up and down a stairwell. You can even attach your phone to a drone! This can be used to obtain pressure measurements as high as about 250 m above the ground, but how would we get pressure measurements from even higher than this? Answer: Weather balloons"
   },
   {
-    "objectID": "projects/bonk.html#pong-and-bonk.io-playlist",
-    "href": "projects/bonk.html#pong-and-bonk.io-playlist",
-    "title": "Bonk.io Clone",
-    "section": "Pong and Bonk.io Playlist",
-    "text": "Pong and Bonk.io Playlist"
+    "objectID": "projects/balloon.html#how-to-obtain-the-data",
+    "href": "projects/balloon.html#how-to-obtain-the-data",
+    "title": "Air Pressure Versus Height: 2. Balloon Data",
+    "section": "How to obtain the data",
+    "text": "How to obtain the data\n\nWeather balloon data from across the world is freely available to analyze thanks to the National Oceanographic and Atmospheric Administration which has a public database at this link\nIt is important to figure out the code name for the weather station near you. For example, Wilmington, Ohio is USM00072426 and Amarillo, Texas is USM00072363. To find a weather station near you, look through this list of US station names with recent data. If you can’t find your city there you may be able to find it in the full list however note that for some cities the latest data available could be decades old which could be a problem because there may not be a height estimate for each pressure reading\nLook for the data for your station on https://www.ncei.noaa.gov/data/integrated-global-radiosonde-archive/access/data-y2d/ You will find a zip file with the name of the station (for example: USM00072363-data-beg2025.txt.zip) Download that file and figure out a way to unzip or extract the file so that it looks like USM00072363-data.txt This file contains many ballon measurements at that location. You only need one measurement!\nHere is what one measurement of pressure versus height looks like\n\n#USM00072363 2025 01 01 00 2306  324 ncdc-nws ncdc-gts  352331 -1017091\n21     0  89482B 1095    67B  420   120    92    15 \n20     7  89005  1139B   60B  362   138    40    29 \n20    20  88282  1204B   50B  387   129    59    26 \n20    28  87861  1244B   46B  397   125    60    26 \n20    45  86986  1325B   37B  418   117    83    26 \n20   105  85891  1428B   27B  440   110    65    16 \n20   121  85123  1500B   20B  457   104    70    19 \n10   123  85000  1512B   19B  460   103    70    20 \n20   203  82901  1714B    0B  504    90   180    29 \n20   205  82763  1727B   -1B  507    89   185    30 \n20   220  82001  1800B   -8B  527    84   179    14 \n20   245  80633  1934B  -22B  564    75   109    17 \n20   311  78968  2100B  -37B  610    64   136    31 \n20   325  78244  2172B  -43B  633    59   153    26 \n20   355  76772  2322B  -56B  668    52   179    28 \n20   514  72790  2738B  -71B  471    93   241    92 \n20   529  72108  2811B  -70B  449    99   250   111 \n20   543  71538  2873B  -71B  467    94   256   127 \n10   615  70000  3043B  -39B  425   108   273   150 \n20   621  69732  3074B  -39B  411   112   275   151 \n20   645  68604  3202B  -44B  360   127   279   174 \n20   705  67608  3317B  -47B  314   143   273   217 \n20   717  67080  3379B  -49B  306   146   274   225 \n20   745  65870  3522B  -56B  338   133   279   234 \n20   805  65015  3624B  -64B  355   127   279   216 \n20   824  64302  3710B  -70B  363   124   278   212 \n20   845  63357  3823B  -74B  344   129   276   210 \n20   917  61972  3997B  -81B  279   152   271   225 \n20   925  61636  4039B  -84B  283   150   270   230 \n20   953  60378  4200B  -92B  323   134   273   250 \n20   957  60206  4222B  -94B  326   133   274   251 \n20  1037  58461  4447B  -99B  150   216   281   299 \n20  1105  57281  4605B -106B  158   192   283   352 \n20  1125  56540  4705B -113B  124   214   283   377 \n20  1145  55859  4798B -121B  100   232   281   375 \n20  1225  54432  4995B -136B   72   260   284   387 \n20  1305  52862  5217B -146B   13   401   287   365 \n20  1318  52448  5276B -151B   12   402   286   364 \n............Many more lines of data!!!.............\n20  9705   1100 30177B -500B   11   315    32    85 \n20  9725   1079 30305B -499B   11   316    25    96 \n20  9805   1038 30557B -494B   10   319    50    86 \n10  9843   1000 30804B -490B   10   321    43    83 \n20  9845    998 30817B -490B   10   321    42    82 \n20  9905    978 30948B -488B   10   321    51    81 \n20  9945    939 31214B -486B   10   321    34   103 \n20 10005    921 31344B -487B   11   320    28   101 \n20 10025    902 31481B -486B   10   320    30    91 \n20 10105    867 31744B -486B   10   320    49    88 \n20 10125    849 31882B -485B   11   319    36    82 \n20 10127    847 31894B -485B   11   319    35    83 \n20 10147    830 32030B -485B   11   319    22    91 \n20 10221    807 32249B -486B   10   320    20    93 \n30 -9999  -9999  1200 -9999 -9999 -9999    60    26 \n30 -9999  -9999  1500 -9999 -9999 -9999    65    15 \n30 -9999  -9999  1800 -9999 -9999 -9999   185    15 \n30 -9999  -9999  2100 -9999 -9999 -9999   135    36 \n30 -9999  -9999  2400 -9999 -9999 -9999   185    26 \n30 -9999  -9999  2700 -9999 -9999 -9999   235    82 \n30 -9999  -9999  3300 -9999 -9999 -9999   275   216 \n30 -9999  -9999  3600 -9999 -9999 -9999   280   221 \n30 -9999  -9999  3900 -9999 -9999 -9999   270   231 \n30 -9999  -9999  4200 -9999 -9999 -9999   275   247 \n30 -9999  -9999  4500 -9999 -9999 -9999   285   350 \n30 -9999  -9999  4800 -9999 -9999 -9999   280   376 \n\nWe need to extract the third and fourth columns in order to plot the pressure versus height but this is a messy dataset that needs to be cleaned! For example, the fourth and fifth column includes the letter B next to the number which would be very confusing for any spreadsheet program to read in. If you are curious what these symbols mean it is explained in this file"
   },
   {
-    "objectID": "projects/figures.html#central-question",
-    "href": "projects/figures.html#central-question",
-    "title": "Good Figures vs. Bad Figures",
-    "section": "Central Question:",
-    "text": "Central Question:\nWhat makes for a good figure? What makes for a bad figure?\nExamples of Bad Figures\nMore examples of Bad Figures from viz.wtf\nExamples of Good Figures"
+    "objectID": "projects/balloon.html#example-data",
+    "href": "projects/balloon.html#example-data",
+    "title": "Air Pressure Versus Height: 2. Balloon Data",
+    "section": "Example data",
+    "text": "Example data\nHere are some examples of cleaned data where the extra symbols have been removed and all the lines that contain -9999 have been removed\n\nAmarillo TX data\nWilmington OH data"
   },
   {
-    "objectID": "projects/projectmercury1.html",
-    "href": "projects/projectmercury1.html",
-    "title": "Project Mercury Part 1",
+    "objectID": "projects/balloon.html#what-do-to-with-the-data",
+    "href": "projects/balloon.html#what-do-to-with-the-data",
+    "title": "Air Pressure Versus Height: 2. Balloon Data",
+    "section": "What do to with the data",
+    "text": "What do to with the data\nEarlier in Air Pressure Versus Height: Smartphone data we found that the air pressure decreases linearly with height, but we were only looking at data that was within 100 meters of the ground. Does the pressure versus height trendline continue to be linear above 100 meters? What mathematical function does it look like? Try plotting the pressure axis using a “log” scale."
+  },
+  {
+    "objectID": "projects/planetoidsspring.html",
+    "href": "projects/planetoidsspring.html",
+    "title": "Planetoids with a Spring",
     "section": "",
-    "text": "Mathematician Katherine Johnson is famous for calculating trajectories of America’s first manned space missions for Project Mercury as depicted in the movie Hidden Figures.\nThe big concern at that point in the history of the space program was accurately predicting where a spacecraft would land in the ocean after re-entering the earth’s atmosphere. Any miscalculation could send the mercury capsule hundreds of miles from where the Navy was expecting to recover the spacecraft and the astronaut inside.\nThe calculation that Katherine Johnson did had to consider many different effects on the trajectory of the mercury capsule. For this activity we are going to keep it simple and start with putting the capsule in a circular orbit. In the second part, we will consider how the mercury capsule comes back to earth. This part of the space mission is referred to as “re-entry”."
+    "text": "Your browser does not support the video tag.\nThink back to the momentum exercise. The little ship can collide with a “blob” and stick to it. Now imagine that this blob is attached to a spring. Wouldn’t it be interesting if the ship could collide with the blob and then the spring would push and pull both around? This is what we will do in this exercise."
   },
   {
-    "objectID": "projects/projectmercury1.html#links-to-activity",
-    "href": "projects/projectmercury1.html#links-to-activity",
-    "title": "Project Mercury Part 1",
+    "objectID": "projects/planetoidsspring.html#links-to-activity",
+    "href": "projects/planetoidsspring.html#links-to-activity",
+    "title": "Planetoids with a Spring",
     "section": "Links to Activity",
-    "text": "Links to Activity\n\nPart 1\n\nInstructions for Project Mercury (Part 1)\nProject Mercury (Part 1) Code Editor"
+    "text": "Links to Activity\n\nInstructions for Planetoids with a Spring\nPlanetoids with a Spring Code Editor"
   },
   {
-    "objectID": "projects/projectmercury1.html#project-mercury-playlist",
-    "href": "projects/projectmercury1.html#project-mercury-playlist",
-    "title": "Project Mercury Part 1",
-    "section": "Project Mercury Playlist",
-    "text": "Project Mercury Playlist"
+    "objectID": "projects/planetoidsspring.html#learning-objectives",
+    "href": "projects/planetoidsspring.html#learning-objectives",
+    "title": "Planetoids with a Spring",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAt the end of this lesson students will…\n\nApply Hooke’s Law, Newton’s 2nd Law, and constant acceleration kinematic equations to code a blob on a spring to behave appropriately when it is collided by a spaceship.\nEvaluate the theoretical half-cycle time of the coded spring.\nCreate a code which accounts for the dampening effect of the spring with time."
   },
   {
-    "objectID": "projects/pong.html",
-    "href": "projects/pong.html",
-    "title": "Pong",
+    "objectID": "projects/planetoidsspring.html#planetoids-with-a-spring-playlist",
+    "href": "projects/planetoidsspring.html#planetoids-with-a-spring-playlist",
+    "title": "Planetoids with a Spring",
+    "section": "Planetoids with a Spring Playlist",
+    "text": "Planetoids with a Spring Playlist"
+  },
+  {
+    "objectID": "projects/objecttracker.html",
+    "href": "projects/objecttracker.html",
+    "title": "Object Tracker",
     "section": "",
-    "text": "In the classic game of Pong, there is a little ball that bounces around off various walls and objects. Importantly, the ball changes direction when it bounces but it never really slows down in speed. This is a big hint that the collisions that the ball is experiencing are elastic collisions."
+    "text": "Now you can record your own direct measurement videos and analyze them with p5.js.\nNote: The STEMcoding Object Tracker works best in chrome and edge!\nIt can work in other browsers (safari, firefox, etc.) but it may run slower or not at all due to some memory problems."
   },
   {
-    "objectID": "projects/pong.html#links-to-activity",
-    "href": "projects/pong.html#links-to-activity",
-    "title": "Pong",
+    "objectID": "projects/objecttracker.html#links-to-activity",
+    "href": "projects/objecttracker.html#links-to-activity",
+    "title": "Object Tracker",
     "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Pong\nCode Editor for Pong"
+    "text": "Links to Activity\n\nPart 1: Track the Object\n\nInstructions for Part 1\nPart 1 Code Editor\n\n\n\nPart 2: Analyze Height vs. Time\n\nInstructions for Part 2\n\n\n\nPart 2: Analyze Velocity vs. Time\n\nInstructions for Part 3"
   },
   {
-    "objectID": "projects/pong.html#pong-and-bonk.io-playlist",
-    "href": "projects/pong.html#pong-and-bonk.io-playlist",
-    "title": "Pong",
-    "section": "Pong and Bonk.io Playlist",
-    "text": "Pong and Bonk.io Playlist"
+    "objectID": "projects/objecttracker.html#object-tracker-playlist",
+    "href": "projects/objecttracker.html#object-tracker-playlist",
+    "title": "Object Tracker",
+    "section": "Object Tracker Playlist",
+    "text": "Object Tracker Playlist"
   },
   {
-    "objectID": "projects/pipe.html#pipe-interactive-video",
-    "href": "projects/pipe.html#pipe-interactive-video",
-    "title": "Pipe Interactive",
-    "section": "Pipe Interactive Video",
-    "text": "Pipe Interactive Video"
+    "objectID": "projects/apollo.html",
+    "href": "projects/apollo.html",
+    "title": "Apollo Moon Landing",
+    "section": "",
+    "text": "Your browser does not support the video tag.\nLand a rocket on the moon, but be careful not to land too hard!"
+  },
+  {
+    "objectID": "projects/apollo.html#links-to-activity",
+    "href": "projects/apollo.html#links-to-activity",
+    "title": "Apollo Moon Landing",
+    "section": "Links to Activity",
+    "text": "Links to Activity\n\nInstructions for Apollo Moon Landing\nApollo Moon Landing Code Editor"
+  },
+  {
+    "objectID": "projects/apollo.html#apollo-moon-landing-playlist",
+    "href": "projects/apollo.html#apollo-moon-landing-playlist",
+    "title": "Apollo Moon Landing",
+    "section": "Apollo Moon Landing Playlist",
+    "text": "Apollo Moon Landing Playlist"
+  },
+  {
+    "objectID": "projects/acceleratetheblob.html",
+    "href": "projects/acceleratetheblob.html",
+    "title": "Accelerate the Blob",
+    "section": "",
+    "text": "Your browser does not support the video tag.\nCreate a simple game where an object can accelerate in the x and y directions depending on which arrow keys that are pressed\nIn real life, objects accelerate up to a particlar velocity. This exercise will show you how to modify the move the blob exercise so that the blob accelerates in response to the arrow keys, instead of the arrow keys directly controlling the velocity."
+  },
+  {
+    "objectID": "projects/acceleratetheblob.html#links-to-activity",
+    "href": "projects/acceleratetheblob.html#links-to-activity",
+    "title": "Accelerate the Blob",
+    "section": "Links to Activity",
+    "text": "Links to Activity\n\nInstructions for Accelerate the Blob\nCode Editor for Accelerate the Blob"
+  },
+  {
+    "objectID": "projects/acceleratetheblob.html#learning-objectives",
+    "href": "projects/acceleratetheblob.html#learning-objectives",
+    "title": "Accelerate the Blob",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAt the end of this lesson students will…\n\nUnderstand basic p5.js syntax, specifically the difference between “+=” and “=”.\nCompare and contrast acceleration and velocity pertaining to objects moving along a straight line path.\nAnalyze an object’s motion using multiple representations, specifically graphical, pictorial, vector, and algebraic."
+  },
+  {
+    "objectID": "projects/acceleratetheblob.html#accelerate-the-blob-videos",
+    "href": "projects/acceleratetheblob.html#accelerate-the-blob-videos",
+    "title": "Accelerate the Blob",
+    "section": "Accelerate the Blob Videos",
+    "text": "Accelerate the Blob Videos"
   },
   {
     "objectID": "projects/lunar.html",
@@ -1390,7 +1411,7 @@
     "href": "projects/laser2.html",
     "title": "Laser Defense Part 2",
     "section": "",
-    "text": "Hopefully you completed Laser Defense (The Basic Game) and were able to add a laser to a simple code to damage an incoming drone. In this activity we are going to add code to catch the drone after it falls (explained in a moment). We are also going to add code to automate the targeting of the drone.\nAirport security is really happy with what you’ve done. The only problem is that when the drones hit the ground they are so mangled that it is hard to figure out who owns it or where it came from. They designed a rolling platform with a net to catch the drone before it can hit the ground. That is going to be a new challenge for the game. Ideally, there would be an automated system to catch the falling drone, so that is something to think about.\nThe other change in this activity is that we are going to use the arrow keys to change the angle of the laser instead of the x,y position of the focus. This is a bit more realistic. This also makes the game a bit harder. Later in the activity we will add code to automatically aim the laser at the drone so it is easier to damage the drones that are encroaching on our airspace."
+    "text": "Use your knowledge of programming, linear functions and trigonometry to protect an airport from drones. Similar to an old Atari game called missile command\nHopefully you completed Laser Defense (The Basic Game) and were able to add a laser to a simple code to damage an incoming drone. In this activity we are going to add code to catch the drone after it falls (explained in a moment). We are also going to add code to automate the targeting of the drone.\nAirport security is really happy with what you’ve done. The only problem is that when the drones hit the ground they are so mangled that it is hard to figure out who owns it or where it came from. They designed a rolling platform with a net to catch the drone before it can hit the ground. That is going to be a new challenge for the game. Ideally, there would be an automated system to catch the falling drone, so that is something to think about.\nThe other change in this activity is that we are going to use the arrow keys to change the angle of the laser instead of the x,y position of the focus. This is a bit more realistic. This also makes the game a bit harder. Later in the activity we will add code to automatically aim the laser at the drone so it is easier to damage the drones that are encroaching on our airspace."
   },
   {
     "objectID": "projects/laser2.html#links-to-activity",
@@ -1432,7 +1453,7 @@
     "href": "projects/laser1.html",
     "title": "Laser Defense Part 1",
     "section": "",
-    "text": "Drones have become cheaper and cheaper which is increasingly a problem at airports because people sometimes fly them in the airspace near the planes. If a plane wre to run into a drone, bad things could happen\nThere are not a ton of choices to take down drones that wander into the air space of an airport. One could try to snare the drone with a net, but that can be complicated. One could try to shoot it down with a machine gun, but the bullets that miss eventually land somewhere.\nA promising option is to use a laser to shoot down the drone. Right now the technology is primarily used by the military but eventually it will be something that civilian airports can use.\nIn this activity we will consider drones that are moving in a straight line ner an air port. We will need to aim a laser system at the drone and get the focusing of the laser right to shoot down the drone. If we are pointing in the right direction, but the focal point is off then the intensity of the light won’t be high enough to damage the drone. This is a real effect."
+    "text": "Use your knowledge of programming and linear functions to protect an airport from drones. Similar to an old Atari game galled missle command.\nDrones have become cheaper and cheaper which is increasingly a problem at airports because people sometimes fly them in the airspace near the planes. If a plane wre to run into a drone, bad things could happen\nThere are not a ton of choices to take down drones that wander into the air space of an airport. One could try to snare the drone with a net, but that can be complicated. One could try to shoot it down with a machine gun, but the bullets that miss eventually land somewhere.\nA promising option is to use a laser to shoot down the drone. Right now the technology is primarily used by the military but eventually it will be something that civilian airports can use.\nIn this activity we will consider drones that are moving in a straight line ner an air port. We will need to aim a laser system at the drone and get the focusing of the laser right to shoot down the drone. If we are pointing in the right direction, but the focal point is off then the intensity of the light won’t be high enough to damage the drone. This is a real effect."
   },
   {
     "objectID": "projects/laser1.html#links-to-activity",
@@ -1509,7 +1530,7 @@
     "href": "projects/exo.html",
     "title": "Exoplanets",
     "section": "",
-    "text": "As an extention ot the Slingshot with Gravity! activity, instead of keeping one object fixed (the sun) and letting the other move around it we are going to let BOTH objects move and see what happens. Letting both objects move is important, because many of the extra-solar planets (a.k.a. exoplanets) that we know about we only discovered because of the motion of the star that they are orbiting! So we will talk about the little white circle as a planet orbiting the sun instead of being something much smaller, like a comet or a satellite."
+    "text": "Planets exert a gravitational tug on the star that they orbit. Let’s study how this happens!\nAs an extention ot the Slingshot with Gravity! activity, instead of keeping one object fixed (the sun) and letting the other move around it we are going to let BOTH objects move and see what happens. Letting both objects move is important, because many of the extra-solar planets (a.k.a. exoplanets) that we know about we only discovered because of the motion of the star that they are orbiting! So we will talk about the little white circle as a planet orbiting the sun instead of being something much smaller, like a comet or a satellite."
   },
   {
     "objectID": "projects/exo.html#links-to-activity",
@@ -1524,6 +1545,20 @@
     "title": "Exoplanets",
     "section": "Exoplanets Playlist",
     "text": "Exoplanets Playlist"
+  },
+  {
+    "objectID": "projects/fluidmechanics.html",
+    "href": "projects/fluidmechanics.html",
+    "title": "Fluid Mechanics Interactive",
+    "section": "",
+    "text": "Fluids (which includes liquids and gases) are made up of particles which can be atoms or molecules. Play with a web interactive to see how interacting particles become a fluid"
+  },
+  {
+    "objectID": "projects/fluidmechanics.html#links-to-activity",
+    "href": "projects/fluidmechanics.html#links-to-activity",
+    "title": "Fluid Mechanics Interactive",
+    "section": "Links to Activity",
+    "text": "Links to Activity\n\nLink to the pipe interactive\nLink to the fluid with gravity interactive"
   },
   {
     "objectID": "projects/fluidmechanics.html#fluid-mechanics-interactive-video",
@@ -1551,7 +1586,7 @@
     "href": "projects/flower.html",
     "title": "Mathematical Flower Activity",
     "section": "",
-    "text": "Maybe it’s valentines day. Maybe it’s finally spring! Maybe you are a terrible gardener and incapable of growing flowers. Let’s make our own flowers using mathematical functions."
+    "text": "Let’s make our own flowers using mathematical functions and polar coordinates\nGreatly inspired by an episode of the Coding Train by Dan Shiffman"
   },
   {
     "objectID": "projects/flower.html#links-to-activity",
@@ -1629,47 +1664,5 @@
     "title": "About",
     "section": "",
     "text": "The “STEMcoding project” is an initiatve at Ohio State University and the University of Mount Union that collaborates with teachers and researchers across the US\nSome of the professors associated with the STEMcoding project help to lead “STEMcoding Education Ohio” which is a 501c3 non-profit. The primary function of this non-profit is to run and maintain stemcoding.herokuapp.com which is a learning management system that can be used in high schools in the US. The site stemcoding.herokuapp.com is not affiliated with or managed by Ohio State University or the University of Mount Union.\nFor more information about STEMcoding Education Ohio, email stemcodingohio@gmail.com"
-  },
-  {
-    "objectID": "projects/balloon.html#weather-balloon-data",
-    "href": "projects/balloon.html#weather-balloon-data",
-    "title": "Air Pressure Versus Height: 2. Balloon Data",
-    "section": "Weather Balloon Data",
-    "text": "Weather Balloon Data\nEarlier in Air Pressure Versus Height: Smartphone data we learned how to use smartphones to measure air pressure and how these devices are sensitive enough to detect the pressure change from even small changes in height. You can take measurements from your phone as you go up and down a stairwell. You can even attach your phone to a drone! This can be used to obtain pressure measurements as high as about 250 m above the ground, but how would we get pressure measurements from even higher than this? Answer: Weather balloons"
-  },
-  {
-    "objectID": "projects/balloon.html#useful-links",
-    "href": "projects/balloon.html#useful-links",
-    "title": "Air Pressure Versus Height: Balloon Data",
-    "section": "Useful links",
-    "text": "Useful links\n\nWeather balloon data from across the world is available from the National Oceanographic and Atmospheric Administration at this link\nIt is important to figure out the code name for the weather station near you. For example, Wilmington, Ohio is USM00072426 and Amarillo, Texas is USM00072363. To find a weather station near you, look through this &lt;a target=“_blank” href=“https://www.ncei.noaa.gov/data/integrated-global-radiosonde-archive/doc/igra2-station-list.txt”“&gt;list of station names\nLook for the data for your station on https://www.ncei.noaa.gov/data/integrated-global-radiosonde-archive/access/data-por/ You will find a zip file with the name of the station (for example: USM00072426-data.txt.zip)"
-  },
-  {
-    "objectID": "projects/balloon.html#how-to-obtain-the-data",
-    "href": "projects/balloon.html#how-to-obtain-the-data",
-    "title": "Air Pressure Versus Height: 2. Balloon Data",
-    "section": "How to obtain the data",
-    "text": "How to obtain the data\n\nWeather balloon data from across the world is freely available to analyze thanks to the National Oceanographic and Atmospheric Administration which has a public database at this link\nIt is important to figure out the code name for the weather station near you. For example, Wilmington, Ohio is USM00072426 and Amarillo, Texas is USM00072363. To find a weather station near you, look through this list of US station names with recent data. If you can’t find your city there you may be able to find it in the full list however note that for some cities the latest data available could be decades old which could be a problem because there may not be a height estimate for each pressure reading\nLook for the data for your station on https://www.ncei.noaa.gov/data/integrated-global-radiosonde-archive/access/data-y2d/ You will find a zip file with the name of the station (for example: USM00072363-data-beg2025.txt.zip) Download that file and figure out a way to unzip or extract the file so that it looks like USM00072363-data.txt This file contains many ballon measurements at that location. You only need one measurement!\nHere is what one measurement of pressure versus height looks like\n\n#USM00072363 2025 01 01 00 2306  324 ncdc-nws ncdc-gts  352331 -1017091\n21     0  89482B 1095    67B  420   120    92    15 \n20     7  89005  1139B   60B  362   138    40    29 \n20    20  88282  1204B   50B  387   129    59    26 \n20    28  87861  1244B   46B  397   125    60    26 \n20    45  86986  1325B   37B  418   117    83    26 \n20   105  85891  1428B   27B  440   110    65    16 \n20   121  85123  1500B   20B  457   104    70    19 \n10   123  85000  1512B   19B  460   103    70    20 \n20   203  82901  1714B    0B  504    90   180    29 \n20   205  82763  1727B   -1B  507    89   185    30 \n20   220  82001  1800B   -8B  527    84   179    14 \n20   245  80633  1934B  -22B  564    75   109    17 \n20   311  78968  2100B  -37B  610    64   136    31 \n20   325  78244  2172B  -43B  633    59   153    26 \n20   355  76772  2322B  -56B  668    52   179    28 \n20   514  72790  2738B  -71B  471    93   241    92 \n20   529  72108  2811B  -70B  449    99   250   111 \n20   543  71538  2873B  -71B  467    94   256   127 \n10   615  70000  3043B  -39B  425   108   273   150 \n20   621  69732  3074B  -39B  411   112   275   151 \n20   645  68604  3202B  -44B  360   127   279   174 \n20   705  67608  3317B  -47B  314   143   273   217 \n20   717  67080  3379B  -49B  306   146   274   225 \n20   745  65870  3522B  -56B  338   133   279   234 \n20   805  65015  3624B  -64B  355   127   279   216 \n20   824  64302  3710B  -70B  363   124   278   212 \n20   845  63357  3823B  -74B  344   129   276   210 \n20   917  61972  3997B  -81B  279   152   271   225 \n20   925  61636  4039B  -84B  283   150   270   230 \n20   953  60378  4200B  -92B  323   134   273   250 \n20   957  60206  4222B  -94B  326   133   274   251 \n20  1037  58461  4447B  -99B  150   216   281   299 \n20  1105  57281  4605B -106B  158   192   283   352 \n20  1125  56540  4705B -113B  124   214   283   377 \n20  1145  55859  4798B -121B  100   232   281   375 \n20  1225  54432  4995B -136B   72   260   284   387 \n20  1305  52862  5217B -146B   13   401   287   365 \n20  1318  52448  5276B -151B   12   402   286   364 \n............Many more lines of data!!!.............\n20  9705   1100 30177B -500B   11   315    32    85 \n20  9725   1079 30305B -499B   11   316    25    96 \n20  9805   1038 30557B -494B   10   319    50    86 \n10  9843   1000 30804B -490B   10   321    43    83 \n20  9845    998 30817B -490B   10   321    42    82 \n20  9905    978 30948B -488B   10   321    51    81 \n20  9945    939 31214B -486B   10   321    34   103 \n20 10005    921 31344B -487B   11   320    28   101 \n20 10025    902 31481B -486B   10   320    30    91 \n20 10105    867 31744B -486B   10   320    49    88 \n20 10125    849 31882B -485B   11   319    36    82 \n20 10127    847 31894B -485B   11   319    35    83 \n20 10147    830 32030B -485B   11   319    22    91 \n20 10221    807 32249B -486B   10   320    20    93 \n30 -9999  -9999  1200 -9999 -9999 -9999    60    26 \n30 -9999  -9999  1500 -9999 -9999 -9999    65    15 \n30 -9999  -9999  1800 -9999 -9999 -9999   185    15 \n30 -9999  -9999  2100 -9999 -9999 -9999   135    36 \n30 -9999  -9999  2400 -9999 -9999 -9999   185    26 \n30 -9999  -9999  2700 -9999 -9999 -9999   235    82 \n30 -9999  -9999  3300 -9999 -9999 -9999   275   216 \n30 -9999  -9999  3600 -9999 -9999 -9999   280   221 \n30 -9999  -9999  3900 -9999 -9999 -9999   270   231 \n30 -9999  -9999  4200 -9999 -9999 -9999   275   247 \n30 -9999  -9999  4500 -9999 -9999 -9999   285   350 \n30 -9999  -9999  4800 -9999 -9999 -9999   280   376 \n\nWe need to extract the third and fourth columns in order to plot the pressure versus height but this is a messy dataset that needs to be cleaned! For example, the fourth and fifth column includes the letter B next to the number which would be very confusing for any spreadsheet program to read in. If you are curious what these symbols mean it is explained in this file"
-  },
-  {
-    "objectID": "projects/balloon.html#example-data",
-    "href": "projects/balloon.html#example-data",
-    "title": "Air Pressure Versus Height: 2. Balloon Data",
-    "section": "Example data",
-    "text": "Example data\nHere are some examples of cleaned data where the extra symbols have been removed and all the lines that contain -9999 have been removed\n\nAmarillo TX data\nWilmington OH data"
-  },
-  {
-    "objectID": "projects/balloon.html#what-do-to-with-the-data",
-    "href": "projects/balloon.html#what-do-to-with-the-data",
-    "title": "Air Pressure Versus Height: 2. Balloon Data",
-    "section": "What do to with the data",
-    "text": "What do to with the data\nEarlier in Air Pressure Versus Height: Smartphone data we found that the air pressure decreases linearly with height, but we were only looking at data that was within 100 meters of the ground. Does the pressure versus height trendline continue to be linear above 100 meters? What mathematical function does it look like? Try plotting the pressure axis using a “log” scale."
-  },
-  {
-    "objectID": "projects/co2.html",
-    "href": "projects/co2.html",
-    "title": "CO2 Survey",
-    "section": "",
-    "text": "Use a CO2 sensor to measure air quality in your building"
   }
 ]

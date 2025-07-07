@@ -9,6 +9,8 @@ categories:
 
 ---
 
+How do electrons move inside of a conductor? Play with a web interactive to find out!
+
 ## Links to Activity
 
 ## Conductor Interactive Video

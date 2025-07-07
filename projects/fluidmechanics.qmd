@@ -8,7 +8,12 @@ categories:
 
 ---
 
+Fluids (which includes liquids and gases) are made up of particles which can be atoms or molecules. Play with a web interactive to see how interacting particles become a fluid
+
 ## Links to Activity
+
+* [Link to the pipe interactive](http://go.osu.edu/pipe)
+* [Link to the fluid with gravity interactive](http://go.osu.edu/fluidgrav)
 
 ## Fluid Mechanics Interactive Video
 

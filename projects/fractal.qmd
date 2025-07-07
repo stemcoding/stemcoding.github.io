@@ -6,5 +6,7 @@ categories:
     - Math
 ---
 
+Download a pdf of a fractal puzzle, print it out on a regular office printer and see if you can put it together!
+
 ## Links to Activity
 [Student Worksheets/Print Outs](https://www.asc.ohio-state.edu/orban.14/STEMcoding_dragon_curve.pdf)

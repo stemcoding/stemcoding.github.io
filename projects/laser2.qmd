@@ -8,6 +8,8 @@ categories:
     - Trigonometry
 ---
 
+Use your knowledge of programming, linear functions and trigonometry to protect an airport from drones. Similar to an old Atari game called missile command
+
 Hopefully you completed [Laser Defense (The Basic Game)](laser1.qmd) and were able to add a laser to a simple code to damage an incoming drone. In this activity we are going to add code to catch the drone after it falls (explained in a moment). We are also going to add code to automate the targeting of the drone.
 
 Airport security is really happy with what you've done. The only problem is that when the drones hit the ground they are so mangled that it is hard to figure out who owns it or where it came from. They designed a rolling platform with a net to catch the drone before it can hit the ground. That is going to be a new challenge for the game. Ideally, there would be an automated system to catch the falling drone, so that is something to think about.

@@ -10,7 +10,7 @@ categories:
 
 ![](../img/birds.png)
 
-We will configure the game to shoot a bird-shaped projectile. We call this game Bellicose Birds.
+Create an angry birds game where the arrow keys control the launch angle
 
 ## Links to Activity
 * [Instructions for Bellicose Birds](https://www.asc.ohio-state.edu/orban.14/physics_p5js/bellicosebirds.html)
