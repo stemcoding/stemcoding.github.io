@@ -1,6 +1,6 @@
 ---
 title: "Bird Launcher"
-image: ../img/birdslaunch.png
+image: ../img/birdlauncher.png
 categories:
   - Intro HS
   - Physical Science
@@ -9,7 +9,7 @@ categories:
   - Javascript
 ---
 
-![](../img/birdslaunch.png)
+![](../img/birdlauncher.png){width=500 fig-align=center}
 
 Create an angry birds game where the arrow keys control the launch velocity
 

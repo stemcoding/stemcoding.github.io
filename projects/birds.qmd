@@ -1,6 +1,6 @@
 ---
 title: "Bellicose Birds"
-image: ../img/birds.png
+image: ../img/bellicose.png
 categories:
   - Advanced HS
   - Physics
@@ -8,7 +8,7 @@ categories:
   - Trigonometry 
 ---
 
-![](../img/birds.png)
+![](../img/bellicose.png){width=400 fig-align=center}
 
 Create an angry birds game where the arrow keys control the launch angle
 
