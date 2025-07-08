@@ -1,6 +1,6 @@
 ---
 title: "Bonk.io Clone"
-image: ../img/bonk.png
+image: ../img/bonkio.png
 categories:
   - Intro HS
   - Physical Science
@@ -8,7 +8,7 @@ categories:
   - Javascript
 ---
 
-![](../img/bonk.png)
+![](../img/bonkio.png){width=550 fig-align="center"}
 
 If you liked the Pong activity you'll love this activity which is based on a real game called Bonk.io
 
