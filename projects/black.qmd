@@ -1,6 +1,6 @@
 ---
 title: "Escape Velocity and Newtonian Black Holes"
-image: ../img/black.png
+image: ../img/blackhole.png
 categories:
   - Advanced HS
   - Astronomy
@@ -9,7 +9,7 @@ categories:
   - Trigonometry
 ---
 
-![](../img/black.png)
+![](../img/blackhole.png){width=500 fig-align=center}
 
 That activity explores the behavior of objects like planets or comets interacting with a massive object like the sun.
 
