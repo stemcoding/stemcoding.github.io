@@ -8,6 +8,8 @@ categories:
   - Javascript
 ---
 
+![](../img/eccentricity.png){width=600 fig-align=center}
+
 Learn how to measure the eccentricity of an orbit from a gravity simulation
 
 ## Links to Activity
