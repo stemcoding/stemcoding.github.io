@@ -13,8 +13,8 @@ Calculate the digits of pi with a random number generator and some code!
 
 ## Links to Activity
 
-* [Instructions for Pi Day Part 1](https://www.asc.ohio-state.edu/orban.14/math_coding/pi_graphical2/index.html)
-* [Pi Day Part 1 Code Editor](http://alpha.editor.p5js.org/ChrisOrban/sketches/S1AGU0FCG)
+* [Instructions for Pi Day Part 1](https://www.asc.ohio-state.edu/orban.14/math_coding/pi_graphical3/index.html)
+* [Pi Day Part 1 Code Editor](https://editor.p5js.org/chris.m.orban/sketches/8-Lv1T5y_)
 
 ## Pi Day Part 1 Playlist
 
