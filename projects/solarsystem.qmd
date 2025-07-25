@@ -1,12 +1,15 @@
 ---
 title: "Solar System Model"
-image: ../img/.png
+image: ../img/inner_planets.png
 categories:
     - Intro HS
+    - Astronomy
+    - Space
     - Data Science
     - Spreadsheets
 ---
 
+![](../img/solar_system_wide.jpg){width=600 fig-align=center}
+
 ## Links to Activity
 
-## Solar System Model Playlist
