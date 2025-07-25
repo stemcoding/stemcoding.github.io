@@ -25,8 +25,7 @@ We hope you enjoy this site! Check out our [Social Media Feed](feed.qmd) to see 
 <br>
 <br>
 <br>
-<br>
-<br>
+
 
 <iframe allowfullscreen sandbox="allow-top-navigation allow-scripts allow-popups allow-popups-to-escape-sandbox" src="https://mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Fmastodon.social%2Fusers%2Fstemcoding&theme=light&size=100&header=false&replies=false&boosts=true" style="width: 100%; height: 800px; border: 1px solid #ccc; border-radius: 8px;"></iframe>
 </div>
