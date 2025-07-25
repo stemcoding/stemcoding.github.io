@@ -1,1 +1,30 @@
 /* css styles */
+
+/* Make the margin sidebar wider */
+#quarto-margin-sidebar {
+    width: 400px !important;
+    min-width: 400px !important;
+}
+
+/* Adjust the main content area to accommodate wider sidebar */
+.page-columns .page-full {
+    grid-template-columns: 1fr 400px !important;
+}
+
+/* For larger screens, make it even wider */
+@media (min-width: 1400px) {
+    #quarto-margin-sidebar {
+        width: 500px !important;
+        min-width: 500px !important;
+    }
+    
+    .page-columns .page-full {
+        grid-template-columns: 1fr 500px !important;
+    }
+}
+
+/* Ensure the iframe fits nicely in the wider sidebar */
+.margin-sidebar-content iframe {
+    width: 100% !important;
+    max-width: none !important;
+}

@@ -160,6 +160,24 @@ ul.task-list li input[type="checkbox"] {
 <iframe style="display: block; margin-left: auto; margin-right: auto;" width="560" height="315" src="https://www.youtube.com/embed/pqXiZLnXe2U?si=0nSckcTS2osfQXVF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
 </iframe>
 <p>We hope you enjoy this site! Check out our <a href="./feed.html">Social Media Feed</a> to see what we’ve been up to lately, or our <a href="./calendar.html">Calendar</a> to see upcoming events and trainings. Please join our <a href="https://discord.gg/bsWgqcqwCE">Discord</a> to reach out or ask questions!</p>
+<div class="margin-sidebar-content">
+<p>Social Media Feed <iframe allowfullscreen="" sandbox="allow-top-navigation allow-scripts allow-popups allow-popups-to-escape-sandbox" src="https://mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Fmastodon.social%2Fusers%2Fstemcoding&amp;theme=light&amp;size=100&amp;header=false&amp;replies=false&amp;boosts=true" style="width: 100%; height: 800px; border: 1px solid #ccc; border-radius: 8px;"></iframe></p>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Find the margin sidebar
+    const marginSidebar = document.getElementById('quarto-margin-sidebar');
+    const socialFeedDiv = document.querySelector('.margin-sidebar-content');
+    
+    if (marginSidebar && socialFeedDiv) {
+        // Move the social feed div to the margin sidebar
+        marginSidebar.appendChild(socialFeedDiv);
+        // Remove it from the main content
+        socialFeedDiv.remove();
+        marginSidebar.appendChild(socialFeedDiv);
+    }
+});
+</script>
 
 
 </section>

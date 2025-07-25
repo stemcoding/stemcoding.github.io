@@ -37,6 +37,14 @@ format:
     theme: cosmo
     css: styles.css
     toc: true
+    sidebar:
+      - id: main-sidebar
+        contents:
+          - section: "On this page"
+            contents: auto
+          - section: "Social Feed"
+            contents: |
+              <iframe allowfullscreen sandbox="allow-top-navigation allow-scripts allow-popups allow-popups-to-escape-sandbox" width="100%" height="400" src="https://mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Fmastodon.social%2Fusers%2Fstemcoding&theme=light&size=100&header=false&replies=false&boosts=true" style="border: 1px solid #ccc; border-radius: 8px;"></iframe>
 
 
 
