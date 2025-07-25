@@ -15,8 +15,8 @@
 /* For larger screens, make it even wider */
 @media (min-width: 1400px) {
     #quarto-margin-sidebar {
-        width: 500px !important;
-        min-width: 500px !important;
+        width: 400px !important;
+        min-width: 400px !important;
         overflow: hidden !important; /* Hide scrollbars */
     }
     
