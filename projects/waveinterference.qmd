@@ -1,6 +1,6 @@
 ---
 title: "Wave Interference"
-image: ../img/waveinterference.png
+image: ../img/interference4.png
 categories:
     - Advanced HS
     - Physics
@@ -9,6 +9,14 @@ categories:
     - Trigonometry
 
 ---
+
+<div style="margin-bottom: 20px; text-align:center;">
+<video  height="300" controls autoplay muted loop style="max-width: 100%; height: auto;">
+  <source src="../vid/interference.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+</div>
+
 
 This programming lab is designed to illustrate the idea of wave interference. This happens because of the principle of "superposition". For sound waves, this 20 dollar word just means that if there are two speakers in a large room or open space, the amplitude of the sound waves at a particular point in that room are the sum of the waves of the two speakers.
 
