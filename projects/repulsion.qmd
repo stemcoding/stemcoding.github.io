@@ -9,6 +9,16 @@ categories:
   - Javascript
 ---
 
+<div style="margin-bottom: 20px;">
+<center>
+<video  controls autoplay muted loop style="max-width: 75%; height: auto;">
+  <source src="../vid/repulsion.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+</center>
+</div>
+
+
 Ever since scientists realized that the sun is powered by nuclear fusion reactions, people have been thinking about causing these reactions to occur in the laboratory in order to create a clean and abundant energy source. For at least five decades, this dream has been frustrated by a repulsive problem.
 
 ## Links to Activity
