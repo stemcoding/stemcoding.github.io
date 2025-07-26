@@ -1,12 +1,16 @@
 ---
 title: "RC Circuits"
-image: ../img/rc.png
+image: ../img/RCcircuit.png
 categories:
     - Javascript
     - Advanced HS
     - Physics
     - Electromagnetism
 ---
+
+<center>
+<img width=75% src="../img/RCcircuit.png">
+</center>
 
 This programming lab is unlike the previous ones in that it involves circuits. Specifically it involves circuits with a battery, a capacitor and one or two resistors.
 
