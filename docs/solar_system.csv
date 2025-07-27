@@ -1,0 +1,13 @@
+Name,Distance (m),Model distances (m),Data from https://nssdc.gsfc.nasa.gov/planetary/factsheet/planet_table_ratio.html
+Sun,0,,
+Mercury,57894375961,,Scale (this should be a number larger than 1):
+Venus,108159260516,,1
+Earth,149597870700,,
+Mars,227388763464,,Step 1. Decide on how big your solar system model will be
+Jupiter,777908927640,,"for example: football field, basketball court, classroom, etc."
+Saturn,1431651622599,,
+Uranus,2867791181319,,Step 2. Configure column C so that it takes the value in Column B
+Neptune,4514863737726,,and divides it by the scale
+Pluto,5906123935236,,
+,,,Step 3. Change the scale to make sure that the model distance
+,,,to Pluto is roughly the same as the size of your solar system model
