@@ -31,6 +31,6 @@ An important spreadsheet skill is to [multiply the values in a particular column
 
 ## Optional Extensions
 
-1. Ask the students to go and construct the model solar system. For example, use chalk to mark the planets on a sidewalk, or different sized balls on a basketball court or some other sports field, or go smaller with making the  solar system model in a hallway or inside the classroom, or mark the planets on a meter stick, etc.
+* Ask the students to go and construct the model solar system. For example, use chalk to mark the planets on a sidewalk, or different sized balls on a basketball court or some other sports field, or go smaller with making the  solar system model in a hallway or inside the classroom, or mark the planets on a meter stick, etc.
 
-2. Take the project a step further and use the same scale to determine the diameter of the balls in the model. You can find the diameter of each planet from [these](https://nssdc.gsfc.nasa.gov/planetary/factsheet/)  [links](https://nssdc.gsfc.nasa.gov/planetary/factsheet/planet_table_ratio.html). Which sized balls should be used for which planets? 
+* Take the project a step further and use the same scale to determine the diameter of the balls in the model. You can find the diameter of each planet from [these](https://nssdc.gsfc.nasa.gov/planetary/factsheet/)  [links](https://nssdc.gsfc.nasa.gov/planetary/factsheet/planet_table_ratio.html). Which sized balls should be used for which planets? 
