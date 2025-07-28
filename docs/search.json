@@ -1435,11 +1435,25 @@
     "text": "Conductor Interactive Video"
   },
   {
-    "objectID": "projects/solarsystem.html#links-to-activity",
-    "href": "projects/solarsystem.html#links-to-activity",
+    "objectID": "projects/solarsystem.html",
+    "href": "projects/solarsystem.html",
     "title": "Solar System Model",
-    "section": "Links to Activity",
-    "text": "Links to Activity\nDownload a CSV file with the planets and their distances to the sun"
+    "section": "",
+    "text": "Use a spreadsheet to design a model solar system"
+  },
+  {
+    "objectID": "projects/solarsystem.html#instructions",
+    "href": "projects/solarsystem.html#instructions",
+    "title": "Solar System Model",
+    "section": "Instructions",
+    "text": "Instructions\nAn important spreadsheet skill is to multiply the values in a particular column by a constant and have the result appear in the next column. Using $ in a spreadsheet can be helpful for this as discussed in the link. A situation where this is required is if you are making a scale model.\nImagine that your town or school has asked you to design a solar system model.\nStep 1. Decide how big your solar system model will be. For example, you can choose a football field, basketball court, classroom, a long straight sidewalk, etc. Each group should choose something different.\nDownload this CSV file with the planets and their distances to the sun and open it in a spreadsheet program\nNote: This CSV file uses solar system data from this NASA website\nStep 2. Configure columnn C in the spreadsheet so that it takes the distance in column B and divides it by the scale (Advice: This youtube video that was mentioned earlier is helpful for this task )\nStep 3. Change the scale to make sure that the model distance to Pluto is roughly the same as your solar system model (Advice: the scale should be much larger than 1)"
+  },
+  {
+    "objectID": "projects/solarsystem.html#optional-extensions",
+    "href": "projects/solarsystem.html#optional-extensions",
+    "title": "Solar System Model",
+    "section": "Optional Extensions",
+    "text": "Optional Extensions\n\nAsk the students to go and construct the model solar system. For example, use chalk to mark the planets on a sidewalk, or different sized balls on a basketball court or some other sports field, or go smaller with making the solar system model in a hallway or inside the classroom, or mark the planets on a meter stick, etc.\nTake the project a step further and use the same scale to determine the diameter of the balls in the model. You can find the diameter of each planet from these links. Which sized balls should be used for which planets?"
   },
   {
     "objectID": "projects/projectmercury2.html",
@@ -1713,40 +1727,5 @@
     "title": "About",
     "section": "",
     "text": "The “STEMcoding project” is an initiatve at Ohio State University and the University of Mount Union that collaborates with teachers and researchers across the US\nSome of the professors associated with the STEMcoding project help to lead “STEMcoding Education Ohio” which is a 501c3 non-profit. The primary function of this non-profit is to run and maintain stemcoding.herokuapp.com which is a learning management system that can be used in high schools in the US. The site stemcoding.herokuapp.com is not affiliated with or managed by Ohio State University or the University of Mount Union.\nFor more information about STEMcoding Education Ohio, email stemcodingohio@gmail.com"
-  },
-  {
-    "objectID": "projects/solarsystem.html",
-    "href": "projects/solarsystem.html",
-    "title": "Solar System Model",
-    "section": "",
-    "text": "Use a spreadsheet to design a model solar system"
-  },
-  {
-    "objectID": "projects/solarsystem.html#description",
-    "href": "projects/solarsystem.html#description",
-    "title": "Solar System Model",
-    "section": "Description",
-    "text": "Description\nAn important spreadsheet skill is to multiply the values in a particular column by a constant and have the result appear in the next column A situation where this is required is if you are making a scale model.\nImagine that your town or school has asked you to design a solar system model.\nStep 1. Decide how big your solar system model will be. For example, you can choose a football field, basketball court, classroom, a long straight sidewalk, etc. Each group should choose something different.\nDownload this CSV file with the planets and their distances to the sun and open it in a spreadsheet program\nStep 2. Configure columnn C in the spreadsheet so that it takes the distance in column B and divides it by the scale (Advice: This youtube video that was mentioned earlier is helpful for this task )\nStep 3. Change the scale to make sure that the model distance to Pluto is roughly the same as your solar system model (Advice: the scale should be much larger than 1)"
-  },
-  {
-    "objectID": "projects/solarsystem.html#links",
-    "href": "projects/solarsystem.html#links",
-    "title": "Solar System Model",
-    "section": "Links",
-    "text": "Links\nDownload a CSV file with the planets and their distances to the sun"
-  },
-  {
-    "objectID": "projects/solarsystem.html#instructions",
-    "href": "projects/solarsystem.html#instructions",
-    "title": "Solar System Model",
-    "section": "Instructions",
-    "text": "Instructions\nAn important spreadsheet skill is to multiply the values in a particular column by a constant and have the result appear in the next column. Using $ in a spreadsheet can be helpful for this as discussed in the link. A situation where this is required is if you are making a scale model.\nImagine that your town or school has asked you to design a solar system model.\nStep 1. Decide how big your solar system model will be. For example, you can choose a football field, basketball court, classroom, a long straight sidewalk, etc. Each group should choose something different.\nDownload this CSV file with the planets and their distances to the sun and open it in a spreadsheet program\nNote: This CSV file uses solar system data from this NASA website\nStep 2. Configure columnn C in the spreadsheet so that it takes the distance in column B and divides it by the scale (Advice: This youtube video that was mentioned earlier is helpful for this task )\nStep 3. Change the scale to make sure that the model distance to Pluto is roughly the same as your solar system model (Advice: the scale should be much larger than 1)"
-  },
-  {
-    "objectID": "projects/solarsystem.html#optional-extensions",
-    "href": "projects/solarsystem.html#optional-extensions",
-    "title": "Solar System Model",
-    "section": "Optional Extensions",
-    "text": "Optional Extensions\n\nAsk the students to go and construct the model solar system. For example, use chalk to mark the planets on a sidewalk, or different sized balls on a basketball court or some other sports field, or go smaller with making the solar system model in a hallway or inside the classroom, or mark the planets on a meter stick, etc.\nTake the project a step further and use the same scale to determine the diameter of the balls in the model. You can find the diameter of each planet from these links. Which sized balls should be used for which planets?"
   }
 ]

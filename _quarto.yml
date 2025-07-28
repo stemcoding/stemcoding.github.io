@@ -14,7 +14,6 @@ website:
       - activities.qmd
       - href: people.qmd
         text: People
-      - teachertraining.qmd
       - href: feed.qmd
         text: Feed
       - calendar.qmd
