@@ -3,6 +3,7 @@ title: "CO2 Survey"
 image: ../img/co2.png
 categories:
     - Intro HS
+    - Public Health
     - Data Science
     - Spreadsheets
 ---
