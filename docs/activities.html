@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.40">
+<meta name="generator" content="quarto-1.8.26">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -33,15 +33,17 @@ ul.task-list li input[type="checkbox"] {
 <link href="./img/stemcoding_favicon_final.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-listing/list.min.js"></script>
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-3ed3a85e8781f68cd9162943f395acec.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-784cc24b6735f4fbd54fe98f47f34423.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -114,7 +116,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -133,7 +135,7 @@ window.Quarto = {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -225,7 +227,7 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="TWlkZGxlJTIwU2Nob29sJTJDSW50cm8lMjBIUyUyQ1BoeXNpY2FsJTIwU2NpZW5jZSUyQ0phdmFzY3JpcHQ=" data-listing-file-modified-sort="1751868188128" data-listing-reading-time-sort="1" data-listing-word-count-sort="185">
+<div class="g-col-1" data-index="0" data-categories="TWlkZGxlJTIwU2Nob29sJTJDSW50cm8lMjBIUyUyQ1BoeXNpY2FsJTIwU2NpZW5jZSUyQ0phdmFzY3JpcHQ=" data-listing-file-modified-sort="1764294279616" data-listing-reading-time-sort="1" data-listing-word-count-sort="185">
 <a href="./projects/acceleratetheblob.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -236,20 +238,17 @@ window.Quarto = {
 Accelerate the Blob
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('TWlkZGxlJTIwU2Nob29s'); return false;">
-Middle School
+
+<div class="listing-category" onclick="window.quartoListingCategory('TWlkZGxlJTIwU2Nob29s'); return false;">Middle School</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW50cm8lMjBIUw=='); return false;">Intro HS</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljYWwlMjBTY2llbmNl'); return false;">Physical Science</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">Javascript</div>
+
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('SW50cm8lMjBIUw=='); return false;">
-Intro HS
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljYWwlMjBTY2llbmNl'); return false;">
-Physical Science
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">
-Javascript
-</div>
-</div>
-<div class="card-text listing-description">
+<div class="card-text listing-description delink">
 Create a simple game where an object can accelerate in the x and y directions depending on which arrow keys that are pressed
 </div>
 <div class="card-attribution card-text-small start">
@@ -258,10 +257,9 @@ Create a simple game where an object can accelerate in the x and y directions de
 </div>
 </div>
 </div>
+</div></a>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="SW50cm8lMjBIUyUyQ01hdGglMkNQaHlzaWNhbCUyMFNjaWVuY2UlMkNQaHlzaWNzJTJDQXRtb3NwaGVyaWMlMjBTY2llbmNlJTJDRGF0YSUyMFNjaWVuY2UlMkNTcGFjZSUyQ1NwcmVhZHNoZWV0cw==" data-listing-file-modified-sort="1751701265842" data-listing-reading-time-sort="1" data-listing-word-count-sort="146">
+<div class="g-col-1" data-index="1" data-categories="SW50cm8lMjBIUyUyQ01hdGglMkNQaHlzaWNhbCUyMFNjaWVuY2UlMkNQaHlzaWNzJTJDQXRtb3NwaGVyaWMlMjBTY2llbmNlJTJDRGF0YSUyMFNjaWVuY2UlMkNTcGFjZSUyQ1NwcmVhZHNoZWV0cw==" data-listing-file-modified-sort="1764294279617" data-listing-reading-time-sort="1" data-listing-word-count-sort="146">
 <a href="./projects/airpressure.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -272,32 +270,25 @@ Create a simple game where an object can accelerate in the x and y directions de
 Air Pressure Versus Height: 1. Smartphone Data
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('SW50cm8lMjBIUw=='); return false;">
-Intro HS
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW50cm8lMjBIUw=='); return false;">Intro HS</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('TWF0aA=='); return false;">Math</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljYWwlMjBTY2llbmNl'); return false;">Physical Science</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">Physics</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QXRtb3NwaGVyaWMlMjBTY2llbmNl'); return false;">Atmospheric Science</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFNjaWVuY2U='); return false;">Data Science</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U3BhY2U='); return false;">Space</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U3ByZWFkc2hlZXRz'); return false;">Spreadsheets</div>
+
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('TWF0aA=='); return false;">
-Math
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljYWwlMjBTY2llbmNl'); return false;">
-Physical Science
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">
-Physics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('QXRtb3NwaGVyaWMlMjBTY2llbmNl'); return false;">
-Atmospheric Science
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFNjaWVuY2U='); return false;">
-Data Science
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('U3BhY2U='); return false;">
-Space
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('U3ByZWFkc2hlZXRz'); return false;">
-Spreadsheets
-</div>
-</div>
-<div class="card-text listing-description">
+<div class="card-text listing-description delink">
 Analyze air pressure data from a smartphone or tablet
 </div>
 <div class="card-attribution card-text-small start">
@@ -306,10 +297,9 @@ Analyze air pressure data from a smartphone or tablet
 </div>
 </div>
 </div>
+</div></a>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="QWR2YW5jZWQlMjBIUyUyQ01hdGglMkNQaHlzaWNhbCUyMFNjaWVuY2UlMkNQaHlzaWNzJTJDQXRtb3NwaGVyaWMlMjBTY2llbmNlJTJDRGF0YSUyMFNjaWVuY2UlMkNTcGFjZSUyQ1NwcmVhZHNoZWV0cw==" data-listing-file-modified-sort="1751702954041" data-listing-reading-time-sort="10" data-listing-word-count-sort="1839">
+<div class="g-col-1" data-index="2" data-categories="QWR2YW5jZWQlMjBIUyUyQ01hdGglMkNQaHlzaWNhbCUyMFNjaWVuY2UlMkNQaHlzaWNzJTJDQXRtb3NwaGVyaWMlMjBTY2llbmNlJTJDRGF0YSUyMFNjaWVuY2UlMkNTcGFjZSUyQ1NwcmVhZHNoZWV0cw==" data-listing-file-modified-sort="1764294279617" data-listing-reading-time-sort="10" data-listing-word-count-sort="1839">
 <a href="./projects/balloon.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -320,32 +310,25 @@ Analyze air pressure data from a smartphone or tablet
 Air Pressure Versus Height: 2. Balloon Data
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">
-Advanced HS
+
+<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">Advanced HS</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('TWF0aA=='); return false;">Math</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljYWwlMjBTY2llbmNl'); return false;">Physical Science</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">Physics</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QXRtb3NwaGVyaWMlMjBTY2llbmNl'); return false;">Atmospheric Science</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFNjaWVuY2U='); return false;">Data Science</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U3BhY2U='); return false;">Space</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U3ByZWFkc2hlZXRz'); return false;">Spreadsheets</div>
+
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('TWF0aA=='); return false;">
-Math
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljYWwlMjBTY2llbmNl'); return false;">
-Physical Science
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">
-Physics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('QXRtb3NwaGVyaWMlMjBTY2llbmNl'); return false;">
-Atmospheric Science
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFNjaWVuY2U='); return false;">
-Data Science
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('U3BhY2U='); return false;">
-Space
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('U3ByZWFkc2hlZXRz'); return false;">
-Spreadsheets
-</div>
-</div>
-<div class="card-text listing-description">
+<div class="card-text listing-description delink">
 Analyze air pressure data from weather balloons
 </div>
 <div class="card-attribution card-text-small start">
@@ -354,10 +337,9 @@ Analyze air pressure data from weather balloons
 </div>
 </div>
 </div>
+</div></a>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="SW50cm8lMjBIUyUyQ1BoeXNpY2FsJTIwU2NpZW5jZSUyQ1BoeXNpY3MlMkNKYXZhc2NyaXB0" data-listing-file-modified-sort="1751701863153" data-listing-reading-time-sort="1" data-listing-word-count-sort="69">
+<div class="g-col-1" data-index="3" data-categories="SW50cm8lMjBIUyUyQ1BoeXNpY2FsJTIwU2NpZW5jZSUyQ1BoeXNpY3MlMkNKYXZhc2NyaXB0" data-listing-file-modified-sort="1764294279617" data-listing-reading-time-sort="1" data-listing-word-count-sort="69">
 <a href="./projects/apollo.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -368,20 +350,17 @@ Analyze air pressure data from weather balloons
 Apollo Moon Landing
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('SW50cm8lMjBIUw=='); return false;">
-Intro HS
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW50cm8lMjBIUw=='); return false;">Intro HS</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljYWwlMjBTY2llbmNl'); return false;">Physical Science</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">Physics</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">Javascript</div>
+
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljYWwlMjBTY2llbmNl'); return false;">
-Physical Science
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">
-Physics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">
-Javascript
-</div>
-</div>
-<div class="card-text listing-description">
+<div class="card-text listing-description delink">
 Land a rocket on the moon, but be careful not to land too hard!
 </div>
 <div class="card-attribution card-text-small start">
@@ -390,10 +369,9 @@ Land a rocket on the moon, but be careful not to land too hard!
 </div>
 </div>
 </div>
+</div></a>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="QWR2YW5jZWQlMjBIUyUyQ1BoeXNpY3MlMkNKYXZhc2NyaXB0JTJDVHJpZ29ub21ldHJ5" data-listing-file-modified-sort="1751946763851" data-listing-reading-time-sort="1" data-listing-word-count-sort="74">
+<div class="g-col-1" data-index="4" data-categories="QWR2YW5jZWQlMjBIUyUyQ1BoeXNpY3MlMkNKYXZhc2NyaXB0JTJDVHJpZ29ub21ldHJ5" data-listing-file-modified-sort="1764294279617" data-listing-reading-time-sort="1" data-listing-word-count-sort="74">
 <a href="./projects/birds.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -404,20 +382,17 @@ Land a rocket on the moon, but be careful not to land too hard!
 Bellicose Birds
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">
-Advanced HS
+
+<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">Advanced HS</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">Physics</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">Javascript</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('VHJpZ29ub21ldHJ5'); return false;">Trigonometry</div>
+
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">
-Physics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">
-Javascript
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('VHJpZ29ub21ldHJ5'); return false;">
-Trigonometry
-</div>
-</div>
-<div class="card-text listing-description">
+<div class="card-text listing-description delink">
 Create an angry birds game where the arrow keys control the launch angle
 </div>
 <div class="card-attribution card-text-small start">
@@ -426,10 +401,9 @@ Create an angry birds game where the arrow keys control the launch angle
 </div>
 </div>
 </div>
+</div></a>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="5" data-categories="SW50cm8lMjBIUyUyQ1BoeXNpY2FsJTIwU2NpZW5jZSUyQ1BoeXNpY3MlMkNBbGdlYnJhJTJDSmF2YXNjcmlwdA==" data-listing-file-modified-sort="1751947439819" data-listing-reading-time-sort="1" data-listing-word-count-sort="44">
+<div class="g-col-1" data-index="5" data-categories="SW50cm8lMjBIUyUyQ1BoeXNpY2FsJTIwU2NpZW5jZSUyQ1BoeXNpY3MlMkNBbGdlYnJhJTJDSmF2YXNjcmlwdA==" data-listing-file-modified-sort="1764294279617" data-listing-reading-time-sort="1" data-listing-word-count-sort="44">
 <a href="./projects/birdslauncher.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -440,23 +414,19 @@ Create an angry birds game where the arrow keys control the launch angle
 Bird Launcher
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('SW50cm8lMjBIUw=='); return false;">
-Intro HS
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW50cm8lMjBIUw=='); return false;">Intro HS</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljYWwlMjBTY2llbmNl'); return false;">Physical Science</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">Physics</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QWxnZWJyYQ=='); return false;">Algebra</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">Javascript</div>
+
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljYWwlMjBTY2llbmNl'); return false;">
-Physical Science
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">
-Physics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('QWxnZWJyYQ=='); return false;">
-Algebra
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">
-Javascript
-</div>
-</div>
-<div class="card-text listing-description">
+<div class="card-text listing-description delink">
 Create an angry birds game where the arrow keys control the launch velocity
 </div>
 <div class="card-attribution card-text-small start">
@@ -465,10 +435,9 @@ Create an angry birds game where the arrow keys control the launch velocity
 </div>
 </div>
 </div>
+</div></a>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="6" data-categories="SW50cm8lMjBIUyUyQ1BoeXNpY2FsJTIwU2NpZW5jZSUyQ1BoeXNpY3MlMkNKYXZhc2NyaXB0" data-listing-file-modified-sort="1751944842197" data-listing-reading-time-sort="1" data-listing-word-count-sort="132">
+<div class="g-col-1" data-index="6" data-categories="SW50cm8lMjBIUyUyQ1BoeXNpY2FsJTIwU2NpZW5jZSUyQ1BoeXNpY3MlMkNKYXZhc2NyaXB0" data-listing-file-modified-sort="1764294279617" data-listing-reading-time-sort="1" data-listing-word-count-sort="132">
 <a href="./projects/bonk.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -479,20 +448,17 @@ Create an angry birds game where the arrow keys control the launch velocity
 Bonk.io Clone
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('SW50cm8lMjBIUw=='); return false;">
-Intro HS
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW50cm8lMjBIUw=='); return false;">Intro HS</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljYWwlMjBTY2llbmNl'); return false;">Physical Science</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">Physics</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">Javascript</div>
+
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljYWwlMjBTY2llbmNl'); return false;">
-Physical Science
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">
-Physics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">
-Javascript
-</div>
-</div>
-<div class="card-text listing-description">
+<div class="card-text listing-description delink">
 If you liked the Pong activity you’ll love this activity which is based on a real game called Bonk.io
 </div>
 <div class="card-attribution card-text-small start">
@@ -501,10 +467,9 @@ If you liked the Pong activity you’ll love this activity which is based on a r
 </div>
 </div>
 </div>
+</div></a>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="7" data-categories="SW50cm8lMjBIUyUyQ0RhdGElMjBTY2llbmNlJTJDU3ByZWFkc2hlZXRz" data-listing-file-modified-sort="1751702825098" data-listing-reading-time-sort="1" data-listing-word-count-sort="21">
+<div class="g-col-1" data-index="7" data-categories="SW50cm8lMjBIUyUyQ0RhdGElMjBTY2llbmNlJTJDU3ByZWFkc2hlZXRz" data-listing-file-modified-sort="1764294279617" data-listing-reading-time-sort="1" data-listing-word-count-sort="21">
 <a href="./projects/co2.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -515,17 +480,15 @@ If you liked the Pong activity you’ll love this activity which is based on a r
 CO2 Survey
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('SW50cm8lMjBIUw=='); return false;">
-Intro HS
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW50cm8lMjBIUw=='); return false;">Intro HS</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFNjaWVuY2U='); return false;">Data Science</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U3ByZWFkc2hlZXRz'); return false;">Spreadsheets</div>
+
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFNjaWVuY2U='); return false;">
-Data Science
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('U3ByZWFkc2hlZXRz'); return false;">
-Spreadsheets
-</div>
-</div>
-<div class="card-text listing-description">
+<div class="card-text listing-description delink">
 Use a CO<sub>2</sub> sensor to measure air quality in your building
 </div>
 <div class="card-attribution card-text-small start">
@@ -534,10 +497,9 @@ Use a CO<sub>2</sub> sensor to measure air quality in your building
 </div>
 </div>
 </div>
+</div></a>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="8" data-categories="QWxsJTIwQWdlcyUyQ1BoeXNpY3MlMkNQaHlzaWNhbCUyMFNjaWVuY2UlMkNFbGVjdHJvbWFnbmV0aXNt" data-listing-file-modified-sort="1751868529142" data-listing-reading-time-sort="1" data-listing-word-count-sort="35">
+<div class="g-col-1" data-index="8" data-categories="QWxsJTIwQWdlcyUyQ1BoeXNpY3MlMkNQaHlzaWNhbCUyMFNjaWVuY2UlMkNFbGVjdHJvbWFnbmV0aXNt" data-listing-file-modified-sort="1764294279617" data-listing-reading-time-sort="1" data-listing-word-count-sort="35">
 <a href="./projects/conductor.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -548,20 +510,17 @@ Use a CO<sub>2</sub> sensor to measure air quality in your building
 Conductor Interactive
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('QWxsJTIwQWdlcw=='); return false;">
-All Ages
+
+<div class="listing-category" onclick="window.quartoListingCategory('QWxsJTIwQWdlcw=='); return false;">All Ages</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">Physics</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljYWwlMjBTY2llbmNl'); return false;">Physical Science</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RWxlY3Ryb21hZ25ldGlzbQ=='); return false;">Electromagnetism</div>
+
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">
-Physics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljYWwlMjBTY2llbmNl'); return false;">
-Physical Science
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('RWxlY3Ryb21hZ25ldGlzbQ=='); return false;">
-Electromagnetism
-</div>
-</div>
-<div class="card-text listing-description">
+<div class="card-text listing-description delink">
 How do electrons move inside of a conductor? Play with a web interactive to find out!
 </div>
 <div class="card-attribution card-text-small start">
@@ -570,10 +529,9 @@ How do electrons move inside of a conductor? Play with a web interactive to find
 </div>
 </div>
 </div>
+</div></a>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="9" data-categories="QWR2YW5jZWQlMjBIUyUyQ1RyaWdvbm9tZXRyeSUyQ0Vudmlyb25tZW50YWwlMjBTY2llbmNlJTJDRGF0YSUyMFNjaWVuY2UlMkNTcHJlYWRzaGVldHMlMkNTdXN0YWluYWJpbGl0eSUyQ0phdmFzY3JpcHQ=" data-listing-file-modified-sort="1751702765239" data-listing-reading-time-sort="1" data-listing-word-count-sort="50">
+<div class="g-col-1" data-index="9" data-categories="QWR2YW5jZWQlMjBIUyUyQ1RyaWdvbm9tZXRyeSUyQ0Vudmlyb25tZW50YWwlMjBTY2llbmNlJTJDRGF0YSUyMFNjaWVuY2UlMkNTcHJlYWRzaGVldHMlMkNTdXN0YWluYWJpbGl0eSUyQ0phdmFzY3JpcHQ=" data-listing-file-modified-sort="1764294279617" data-listing-reading-time-sort="1" data-listing-word-count-sort="50">
 <a href="./projects/earth.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -584,29 +542,23 @@ How do electrons move inside of a conductor? Play with a web interactive to find
 Earth Day
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">
-Advanced HS
+
+<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">Advanced HS</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('VHJpZ29ub21ldHJ5'); return false;">Trigonometry</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RW52aXJvbm1lbnRhbCUyMFNjaWVuY2U='); return false;">Environmental Science</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFNjaWVuY2U='); return false;">Data Science</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U3ByZWFkc2hlZXRz'); return false;">Spreadsheets</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U3VzdGFpbmFiaWxpdHk='); return false;">Sustainability</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">Javascript</div>
+
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('VHJpZ29ub21ldHJ5'); return false;">
-Trigonometry
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('RW52aXJvbm1lbnRhbCUyMFNjaWVuY2U='); return false;">
-Environmental Science
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFNjaWVuY2U='); return false;">
-Data Science
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('U3ByZWFkc2hlZXRz'); return false;">
-Spreadsheets
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('U3VzdGFpbmFiaWxpdHk='); return false;">
-Sustainability
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">
-Javascript
-</div>
-</div>
-<div class="card-text listing-description">
+<div class="card-text listing-description delink">
 We are going to estimate the impact of global warming at your location using a simple cosine function and some climate data.
 </div>
 <div class="card-attribution card-text-small start">
@@ -615,10 +567,9 @@ We are going to estimate the impact of global warming at your location using a s
 </div>
 </div>
 </div>
+</div></a>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="10" data-categories="QWR2YW5jZWQlMjBIUyUyQ0FzdHJvbm9teSUyQ1BoeXNpY3MlMkNKYXZhc2NyaXB0JTJDVHJpZ29ub21ldHJ5" data-listing-file-modified-sort="1751948515384" data-listing-reading-time-sort="1" data-listing-word-count-sort="59">
+<div class="g-col-1" data-index="10" data-categories="QWR2YW5jZWQlMjBIUyUyQ0FzdHJvbm9teSUyQ1BoeXNpY3MlMkNKYXZhc2NyaXB0JTJDVHJpZ29ub21ldHJ5" data-listing-file-modified-sort="1764294279617" data-listing-reading-time-sort="1" data-listing-word-count-sort="59">
 <a href="./projects/black.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -629,23 +580,19 @@ We are going to estimate the impact of global warming at your location using a s
 Escape Velocity and Newtonian Black Holes
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">
-Advanced HS
+
+<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">Advanced HS</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QXN0cm9ub215'); return false;">Astronomy</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">Physics</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">Javascript</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('VHJpZ29ub21ldHJ5'); return false;">Trigonometry</div>
+
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('QXN0cm9ub215'); return false;">
-Astronomy
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">
-Physics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">
-Javascript
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('VHJpZ29ub21ldHJ5'); return false;">
-Trigonometry
-</div>
-</div>
-<div class="card-text listing-description">
+<div class="card-text listing-description delink">
 That activity explores the behavior of objects like planets or comets interacting with a massive object like the sun.
 </div>
 <div class="card-attribution card-text-small start">
@@ -654,10 +601,9 @@ That activity explores the behavior of objects like planets or comets interactin
 </div>
 </div>
 </div>
+</div></a>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="11" data-categories="QWR2YW5jZWQlMjBIUyUyQ0FzdHJvbm9teSUyQ1BoeXNpY3MlMkNKYXZhc2NyaXB0" data-listing-file-modified-sort="1751870670243" data-listing-reading-time-sort="1" data-listing-word-count-sort="135">
+<div class="g-col-1" data-index="11" data-categories="QWR2YW5jZWQlMjBIUyUyQ0FzdHJvbm9teSUyQ1BoeXNpY3MlMkNKYXZhc2NyaXB0" data-listing-file-modified-sort="1764294279617" data-listing-reading-time-sort="1" data-listing-word-count-sort="135">
 <a href="./projects/exo.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -668,20 +614,17 @@ That activity explores the behavior of objects like planets or comets interactin
 Exoplanets
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">
-Advanced HS
+
+<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">Advanced HS</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QXN0cm9ub215'); return false;">Astronomy</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">Physics</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">Javascript</div>
+
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('QXN0cm9ub215'); return false;">
-Astronomy
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">
-Physics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">
-Javascript
-</div>
-</div>
-<div class="card-text listing-description">
+<div class="card-text listing-description delink">
 Planets exert a gravitational tug on the star that they orbit. Let’s study how this happens!
 </div>
 <div class="card-attribution card-text-small start">
@@ -690,10 +633,9 @@ Planets exert a gravitational tug on the star that they orbit. Let’s study how
 </div>
 </div>
 </div>
+</div></a>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="12" data-categories="QWxsJTIwQWdlcyUyQ1BoeXNpY3MlMkNQaHlzaWNhbCUyMFNjaWVuY2U=" data-listing-file-modified-sort="1751869479231" data-listing-reading-time-sort="1" data-listing-word-count-sort="62">
+<div class="g-col-1" data-index="12" data-categories="QWxsJTIwQWdlcyUyQ1BoeXNpY3MlMkNQaHlzaWNhbCUyMFNjaWVuY2U=" data-listing-file-modified-sort="1764294279617" data-listing-reading-time-sort="1" data-listing-word-count-sort="62">
 <a href="./projects/fluidmechanics.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -704,17 +646,15 @@ Planets exert a gravitational tug on the star that they orbit. Let’s study how
 Fluid Mechanics Interactive
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('QWxsJTIwQWdlcw=='); return false;">
-All Ages
+
+<div class="listing-category" onclick="window.quartoListingCategory('QWxsJTIwQWdlcw=='); return false;">All Ages</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">Physics</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljYWwlMjBTY2llbmNl'); return false;">Physical Science</div>
+
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">
-Physics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljYWwlMjBTY2llbmNl'); return false;">
-Physical Science
-</div>
-</div>
-<div class="card-text listing-description">
+<div class="card-text listing-description delink">
 Fluids (which includes liquids and gases) are made up of particles which can be atoms or molecules. Play with a web interactive to see how interacting particles become a fluid
 </div>
 <div class="card-attribution card-text-small start">
@@ -723,10 +663,9 @@ Fluids (which includes liquids and gases) are made up of particles which can be 
 </div>
 </div>
 </div>
+</div></a>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="13" data-categories="QWxsJTIwQWdlcyUyQ01hdGg=" data-listing-file-modified-sort="1751945264930" data-listing-reading-time-sort="1" data-listing-word-count-sort="37">
+<div class="g-col-1" data-index="13" data-categories="QWxsJTIwQWdlcyUyQ01hdGg=" data-listing-file-modified-sort="1764294279617" data-listing-reading-time-sort="1" data-listing-word-count-sort="37">
 <a href="./projects/fractal.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -737,14 +676,13 @@ Fluids (which includes liquids and gases) are made up of particles which can be 
 Fractal Puzzle
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('QWxsJTIwQWdlcw=='); return false;">
-All Ages
+
+<div class="listing-category" onclick="window.quartoListingCategory('QWxsJTIwQWdlcw=='); return false;">All Ages</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('TWF0aA=='); return false;">Math</div>
+
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('TWF0aA=='); return false;">
-Math
-</div>
-</div>
-<div class="card-text listing-description">
+<div class="card-text listing-description delink">
 Download a pdf of a fractal puzzle, print it out on a regular office printer and see if you can put it together!
 </div>
 <div class="card-attribution card-text-small start">
@@ -753,10 +691,9 @@ Download a pdf of a fractal puzzle, print it out on a regular office printer and
 </div>
 </div>
 </div>
+</div></a>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="14" data-categories="QWxsJTIwQWdlcyUyQ0RhdGElMjBTY2llbmNl" data-listing-file-modified-sort="1751868578917" data-listing-reading-time-sort="1" data-listing-word-count-sort="32">
+<div class="g-col-1" data-index="14" data-categories="QWxsJTIwQWdlcyUyQ0RhdGElMjBTY2llbmNl" data-listing-file-modified-sort="1764294279617" data-listing-reading-time-sort="1" data-listing-word-count-sort="32">
 <a href="./projects/figures.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -767,14 +704,13 @@ Download a pdf of a fractal puzzle, print it out on a regular office printer and
 Good Figures vs.&nbsp;Bad Figures
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('QWxsJTIwQWdlcw=='); return false;">
-All Ages
+
+<div class="listing-category" onclick="window.quartoListingCategory('QWxsJTIwQWdlcw=='); return false;">All Ages</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFNjaWVuY2U='); return false;">Data Science</div>
+
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFNjaWVuY2U='); return false;">
-Data Science
-</div>
-</div>
-<div class="card-text listing-description">
+<div class="card-text listing-description delink">
 What makes for a good figure? What makes for a bad figure? Let’s look at some examples and discuss
 </div>
 <div class="card-attribution card-text-small start">
@@ -783,10 +719,9 @@ What makes for a good figure? What makes for a bad figure? Let’s look at some 
 </div>
 </div>
 </div>
+</div></a>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="15" data-categories="SmF2YXNjcmlwdCUyQ01hdGglMkNBZHZhbmNlZCUyMEhT" data-listing-file-modified-sort="1751869694826" data-listing-reading-time-sort="2" data-listing-word-count-sort="231">
+<div class="g-col-1" data-index="15" data-categories="SmF2YXNjcmlwdCUyQ01hdGglMkNBZHZhbmNlZCUyMEhT" data-listing-file-modified-sort="1764294279617" data-listing-reading-time-sort="2" data-listing-word-count-sort="231">
 <a href="./projects/laser1.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -797,17 +732,15 @@ What makes for a good figure? What makes for a bad figure? Let’s look at some 
 Laser Defense Part 1
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">
-Javascript
+
+<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">Javascript</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('TWF0aA=='); return false;">Math</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">Advanced HS</div>
+
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('TWF0aA=='); return false;">
-Math
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">
-Advanced HS
-</div>
-</div>
-<div class="card-text listing-description">
+<div class="card-text listing-description delink">
 Use your knowledge of programming and linear functions to protect an airport from drones. Similar to an old Atari game galled missle command.
 </div>
 <div class="card-attribution card-text-small start">
@@ -816,10 +749,9 @@ Use your knowledge of programming and linear functions to protect an airport fro
 </div>
 </div>
 </div>
+</div></a>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="16" data-categories="QWR2YW5jZWQlMjBIUyUyQ01hdGglMkNKYXZhc2NyaXB0JTJDVHJpZ29ub21ldHJ5" data-listing-file-modified-sort="1751869717026" data-listing-reading-time-sort="2" data-listing-word-count-sort="253">
+<div class="g-col-1" data-index="16" data-categories="QWR2YW5jZWQlMjBIUyUyQ01hdGglMkNKYXZhc2NyaXB0JTJDVHJpZ29ub21ldHJ5" data-listing-file-modified-sort="1764294279617" data-listing-reading-time-sort="2" data-listing-word-count-sort="253">
 <a href="./projects/laser2.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -830,20 +762,17 @@ Use your knowledge of programming and linear functions to protect an airport fro
 Laser Defense Part 2
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">
-Advanced HS
+
+<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">Advanced HS</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('TWF0aA=='); return false;">Math</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">Javascript</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('VHJpZ29ub21ldHJ5'); return false;">Trigonometry</div>
+
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('TWF0aA=='); return false;">
-Math
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">
-Javascript
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('VHJpZ29ub21ldHJ5'); return false;">
-Trigonometry
-</div>
-</div>
-<div class="card-text listing-description">
+<div class="card-text listing-description delink">
 Use your knowledge of programming, linear functions and trigonometry to protect an airport from drones. Similar to an old Atari game called missile command
 </div>
 <div class="card-attribution card-text-small start">
@@ -852,10 +781,9 @@ Use your knowledge of programming, linear functions and trigonometry to protect 
 </div>
 </div>
 </div>
+</div></a>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="17" data-categories="QWR2YW5jZWQlMjBIUyUyQ1BoeXNpY3MlMkNKYXZhc2NyaXB0JTJDVHJpZ29ub21ldHJ5" data-listing-file-modified-sort="1749570054731" data-listing-reading-time-sort="1" data-listing-word-count-sort="136">
+<div class="g-col-1" data-index="17" data-categories="QWR2YW5jZWQlMjBIUyUyQ1BoeXNpY3MlMkNKYXZhc2NyaXB0JTJDVHJpZ29ub21ldHJ5" data-listing-file-modified-sort="1764294279617" data-listing-reading-time-sort="1" data-listing-word-count-sort="136">
 <a href="./projects/lunar.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -866,20 +794,17 @@ Use your knowledge of programming, linear functions and trigonometry to protect 
 Lunar Descent
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">
-Advanced HS
+
+<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">Advanced HS</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">Physics</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">Javascript</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('VHJpZ29ub21ldHJ5'); return false;">Trigonometry</div>
+
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">
-Physics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">
-Javascript
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('VHJpZ29ub21ldHJ5'); return false;">
-Trigonometry
-</div>
-</div>
-<div class="card-text listing-description">
+<div class="card-text listing-description delink">
 If you have finished tinkering with the Planetoids lab you can continue with this lab where we will now add gravity to the game! You have a little ship that you must fly…
 </div>
 <div class="card-attribution card-text-small start">
@@ -888,10 +813,9 @@ If you have finished tinkering with the Planetoids lab you can continue with thi
 </div>
 </div>
 </div>
+</div></a>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="18" data-categories="QWR2YW5jZWQlMjBIUyUyQ1BoeXNpY3MlMkNFbGVjdHJvbWFnbmV0aXNtJTJDSmF2YXNjcmlwdA==" data-listing-file-modified-sort="1750986336348" data-listing-reading-time-sort="2" data-listing-word-count-sort="262">
+<div class="g-col-1" data-index="18" data-categories="QWR2YW5jZWQlMjBIUyUyQ1BoeXNpY3MlMkNFbGVjdHJvbWFnbmV0aXNtJTJDSmF2YXNjcmlwdA==" data-listing-file-modified-sort="1764294279617" data-listing-reading-time-sort="2" data-listing-word-count-sort="262">
 <a href="./projects/magneticforce.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -902,20 +826,17 @@ If you have finished tinkering with the Planetoids lab you can continue with thi
 Magnetic Force
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">
-Advanced HS
+
+<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">Advanced HS</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">Physics</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RWxlY3Ryb21hZ25ldGlzbQ=='); return false;">Electromagnetism</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">Javascript</div>
+
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">
-Physics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('RWxlY3Ryb21hZ25ldGlzbQ=='); return false;">
-Electromagnetism
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">
-Javascript
-</div>
-</div>
-<div class="card-text listing-description">
+<div class="card-text listing-description delink">
 You may recall the last programming exercise that involved a particle being accelerated through two charged plates. In this exercise we will add a magnetic field to the…
 </div>
 <div class="card-attribution card-text-small start">
@@ -924,10 +845,9 @@ You may recall the last programming exercise that involved a particle being acce
 </div>
 </div>
 </div>
+</div></a>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="19" data-categories="QWR2YW5jZWQlMjBIUyUyQ01hdGglMkNKYXZhc2NyaXB0JTJDVHJpZ29ub21ldHJ5" data-listing-file-modified-sort="1751870294888" data-listing-reading-time-sort="1" data-listing-word-count-sort="46">
+<div class="g-col-1" data-index="19" data-categories="QWR2YW5jZWQlMjBIUyUyQ01hdGglMkNKYXZhc2NyaXB0JTJDVHJpZ29ub21ldHJ5" data-listing-file-modified-sort="1764294279617" data-listing-reading-time-sort="1" data-listing-word-count-sort="46">
 <a href="./projects/flower.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -938,20 +858,17 @@ You may recall the last programming exercise that involved a particle being acce
 Mathematical Flower Activity
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">
-Advanced HS
+
+<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">Advanced HS</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('TWF0aA=='); return false;">Math</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">Javascript</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('VHJpZ29ub21ldHJ5'); return false;">Trigonometry</div>
+
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('TWF0aA=='); return false;">
-Math
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">
-Javascript
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('VHJpZ29ub21ldHJ5'); return false;">
-Trigonometry
-</div>
-</div>
-<div class="card-text listing-description">
+<div class="card-text listing-description delink">
 Let’s make our own flowers using mathematical functions and polar coordinates
 </div>
 <div class="card-attribution card-text-small start">
@@ -960,10 +877,9 @@ Let’s make our own flowers using mathematical functions and polar coordinates
 </div>
 </div>
 </div>
+</div></a>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="20" data-categories="TWlkZGxlJTIwU2Nob29sJTJDSW50cm8lMjBIUyUyQ1BoeXNpY2FsJTIwU2NpZW5jZSUyQ0phdmFzY3JpcHQ=" data-listing-file-modified-sort="1750647172599" data-listing-reading-time-sort="1" data-listing-word-count-sort="132">
+<div class="g-col-1" data-index="20" data-categories="TWlkZGxlJTIwU2Nob29sJTJDSW50cm8lMjBIUyUyQ1BoeXNpY2FsJTIwU2NpZW5jZSUyQ0phdmFzY3JpcHQ=" data-listing-file-modified-sort="1764294279617" data-listing-reading-time-sort="1" data-listing-word-count-sort="132">
 <a href="./projects/movetheblob.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -974,20 +890,17 @@ Let’s make our own flowers using mathematical functions and polar coordinates
 Move the Blob
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('TWlkZGxlJTIwU2Nob29s'); return false;">
-Middle School
+
+<div class="listing-category" onclick="window.quartoListingCategory('TWlkZGxlJTIwU2Nob29s'); return false;">Middle School</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW50cm8lMjBIUw=='); return false;">Intro HS</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljYWwlMjBTY2llbmNl'); return false;">Physical Science</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">Javascript</div>
+
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('SW50cm8lMjBIUw=='); return false;">
-Intro HS
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljYWwlMjBTY2llbmNl'); return false;">
-Physical Science
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">
-Javascript
-</div>
-</div>
-<div class="card-text listing-description">
+<div class="card-text listing-description delink">
 On the internet there are some fun games where you control a circle-looking-thing that you can move around and interact (and potentially destroy or absorb!) other…
 </div>
 <div class="card-attribution card-text-small start">
@@ -996,10 +909,9 @@ On the internet there are some fun games where you control a circle-looking-thin
 </div>
 </div>
 </div>
+</div></a>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="21" data-categories="QWR2YW5jZWQlMjBIUyUyQ0FzdHJvbm9teSUyQ0RhdGElMjBTY2llbmNlJTJDU3ByZWFkc2hlZXRzJTJDSmF2YXNjcmlwdA==" data-listing-file-modified-sort="1751870462546" data-listing-reading-time-sort="1" data-listing-word-count-sort="168">
+<div class="g-col-1" data-index="21" data-categories="QWR2YW5jZWQlMjBIUyUyQ0FzdHJvbm9teSUyQ0RhdGElMjBTY2llbmNlJTJDU3ByZWFkc2hlZXRzJTJDSmF2YXNjcmlwdA==" data-listing-file-modified-sort="1764294279617" data-listing-reading-time-sort="1" data-listing-word-count-sort="168">
 <a href="./projects/nightsky.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1010,23 +922,19 @@ On the internet there are some fun games where you control a circle-looking-thin
 Night Sky Simulator
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">
-Advanced HS
+
+<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">Advanced HS</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QXN0cm9ub215'); return false;">Astronomy</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFNjaWVuY2U='); return false;">Data Science</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U3ByZWFkc2hlZXRz'); return false;">Spreadsheets</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">Javascript</div>
+
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('QXN0cm9ub215'); return false;">
-Astronomy
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFNjaWVuY2U='); return false;">
-Data Science
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('U3ByZWFkc2hlZXRz'); return false;">
-Spreadsheets
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">
-Javascript
-</div>
-</div>
-<div class="card-text listing-description">
+<div class="card-text listing-description delink">
 Use some basic facts and equations about stars to randomly generate a realistic-looking starfield
 </div>
 <div class="card-attribution card-text-small start">
@@ -1035,10 +943,9 @@ Use some basic facts and equations about stars to randomly generate a realistic-
 </div>
 </div>
 </div>
+</div></a>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="22" data-categories="SW50cm8lMjBIUyUyQ0FkdmFuY2VkJTIwSFMlMkNNYXRoJTJDUGh5c2ljcyUyQ1BoeXNpY2FsJTIwU2NpZW5jZSUyQ0RhdGElMjBTY2llbmNlJTJDU3ByZWFkc2hlZXRzJTJDSmF2YXNjcmlwdA==" data-listing-file-modified-sort="1750997334877" data-listing-reading-time-sort="1" data-listing-word-count-sort="98">
+<div class="g-col-1" data-index="22" data-categories="SW50cm8lMjBIUyUyQ0FkdmFuY2VkJTIwSFMlMkNNYXRoJTJDUGh5c2ljcyUyQ1BoeXNpY2FsJTIwU2NpZW5jZSUyQ0RhdGElMjBTY2llbmNlJTJDU3ByZWFkc2hlZXRzJTJDSmF2YXNjcmlwdA==" data-listing-file-modified-sort="1764294279617" data-listing-reading-time-sort="1" data-listing-word-count-sort="98">
 <a href="./projects/objecttracker.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1049,32 +956,25 @@ Use some basic facts and equations about stars to randomly generate a realistic-
 Object Tracker
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('SW50cm8lMjBIUw=='); return false;">
-Intro HS
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW50cm8lMjBIUw=='); return false;">Intro HS</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">Advanced HS</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('TWF0aA=='); return false;">Math</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">Physics</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljYWwlMjBTY2llbmNl'); return false;">Physical Science</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFNjaWVuY2U='); return false;">Data Science</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U3ByZWFkc2hlZXRz'); return false;">Spreadsheets</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">Javascript</div>
+
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">
-Advanced HS
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('TWF0aA=='); return false;">
-Math
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">
-Physics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljYWwlMjBTY2llbmNl'); return false;">
-Physical Science
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFNjaWVuY2U='); return false;">
-Data Science
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('U3ByZWFkc2hlZXRz'); return false;">
-Spreadsheets
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">
-Javascript
-</div>
-</div>
-<div class="card-text listing-description">
+<div class="card-text listing-description delink">
 Now you can record your own direct measurement videos and analyze them with p5.js.
 </div>
 <div class="card-attribution card-text-small start">
@@ -1083,10 +983,9 @@ Now you can record your own direct measurement videos and analyze them with p5.j
 </div>
 </div>
 </div>
+</div></a>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="23" data-categories="QWR2YW5jZWQlMjBIUyUyQ0FzdHJvbm9teSUyQ1BoeXNpY3MlMkNKYXZhc2NyaXB0" data-listing-file-modified-sort="1751946014636" data-listing-reading-time-sort="1" data-listing-word-count-sort="24">
+<div class="g-col-1" data-index="23" data-categories="QWR2YW5jZWQlMjBIUyUyQ0FzdHJvbm9teSUyQ1BoeXNpY3MlMkNKYXZhc2NyaXB0" data-listing-file-modified-sort="1764294279617" data-listing-reading-time-sort="1" data-listing-word-count-sort="24">
 <a href="./projects/eccentricity.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1097,20 +996,17 @@ Now you can record your own direct measurement videos and analyze them with p5.j
 Orbital Motion: Eccentricity
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">
-Advanced HS
+
+<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">Advanced HS</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QXN0cm9ub215'); return false;">Astronomy</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">Physics</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">Javascript</div>
+
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('QXN0cm9ub215'); return false;">
-Astronomy
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">
-Physics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">
-Javascript
-</div>
-</div>
-<div class="card-text listing-description">
+<div class="card-text listing-description delink">
 Learn how to measure the eccentricity of an orbit from a gravity simulation
 </div>
 <div class="card-attribution card-text-small start">
@@ -1119,10 +1015,9 @@ Learn how to measure the eccentricity of an orbit from a gravity simulation
 </div>
 </div>
 </div>
+</div></a>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="24" data-categories="QWR2YW5jZWQlMjBIUyUyQ0ludHJvJTIwSFMlMkNQaHlzaWNzJTJDQXN0cm9ub215JTJDVHJpZ29ub21ldHJ5" data-listing-file-modified-sort="1749570054731" data-listing-reading-time-sort="2" data-listing-word-count-sort="341">
+<div class="g-col-1" data-index="24" data-categories="QWR2YW5jZWQlMjBIUyUyQ0ludHJvJTIwSFMlMkNQaHlzaWNzJTJDQXN0cm9ub215JTJDVHJpZ29ub21ldHJ5" data-listing-file-modified-sort="1764294279617" data-listing-reading-time-sort="2" data-listing-word-count-sort="341">
 <a href="./projects/keplers.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1133,23 +1028,19 @@ Learn how to measure the eccentricity of an orbit from a gravity simulation
 Orbital Motion: Kepler’s Second Law
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">
-Advanced HS
+
+<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">Advanced HS</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW50cm8lMjBIUw=='); return false;">Intro HS</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">Physics</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QXN0cm9ub215'); return false;">Astronomy</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('VHJpZ29ub21ldHJ5'); return false;">Trigonometry</div>
+
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('SW50cm8lMjBIUw=='); return false;">
-Intro HS
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">
-Physics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('QXN0cm9ub215'); return false;">
-Astronomy
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('VHJpZ29ub21ldHJ5'); return false;">
-Trigonometry
-</div>
-</div>
-<div class="card-text listing-description">
+<div class="card-text listing-description delink">
 This activity involves taking the code at the end of the Slingshot with Gravity exercise and doing some experiments with that code to learn more about the special properties…
 </div>
 <div class="card-attribution card-text-small start">
@@ -1158,10 +1049,9 @@ This activity involves taking the code at the end of the Slingshot with Gravity 
 </div>
 </div>
 </div>
+</div></a>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="25" data-categories="TWlkZGxlJTIwU2Nob29sJTJDSW50cm8lMjBIUyUyQ1BoeXNpY2FsJTIwU2NpZW5jZSUyQ1BoeXNpY3MlMkNFbGVjdHJvbWFnbmV0aXNtJTJDSmF2YXNjcmlwdA==" data-listing-file-modified-sort="1751871008314" data-listing-reading-time-sort="1" data-listing-word-count-sort="128">
+<div class="g-col-1" data-index="25" data-categories="TWlkZGxlJTIwU2Nob29sJTJDSW50cm8lMjBIUyUyQ1BoeXNpY2FsJTIwU2NpZW5jZSUyQ1BoeXNpY3MlMkNFbGVjdHJvbWFnbmV0aXNtJTJDSmF2YXNjcmlwdA==" data-listing-file-modified-sort="1764294279617" data-listing-reading-time-sort="1" data-listing-word-count-sort="128">
 <a href="./projects/particleaccelerator.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1172,26 +1062,21 @@ This activity involves taking the code at the end of the Slingshot with Gravity 
 Particle Accelerator
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('TWlkZGxlJTIwU2Nob29s'); return false;">
-Middle School
+
+<div class="listing-category" onclick="window.quartoListingCategory('TWlkZGxlJTIwU2Nob29s'); return false;">Middle School</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW50cm8lMjBIUw=='); return false;">Intro HS</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljYWwlMjBTY2llbmNl'); return false;">Physical Science</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">Physics</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RWxlY3Ryb21hZ25ldGlzbQ=='); return false;">Electromagnetism</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">Javascript</div>
+
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('SW50cm8lMjBIUw=='); return false;">
-Intro HS
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljYWwlMjBTY2llbmNl'); return false;">
-Physical Science
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">
-Physics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('RWxlY3Ryb21hZ25ldGlzbQ=='); return false;">
-Electromagnetism
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">
-Javascript
-</div>
-</div>
-<div class="card-text listing-description">
+<div class="card-text listing-description delink">
 In this exercise we will make a simulation of a charged particle being accelerated between two plates.
 </div>
 <div class="card-attribution card-text-small start">
@@ -1200,10 +1085,9 @@ In this exercise we will make a simulation of a charged particle being accelerat
 </div>
 </div>
 </div>
+</div></a>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="26" data-categories="TWlkZGxlJTIwU2Nob29sJTJDSW50cm8lMjBIUyUyQ1BoeXNpY2FsJTIwU2NpZW5jZSUyQ1BoeXNpY3MlMkNFbGVjdHJvbWFnbmV0aXNtJTJDSmF2YXNjcmlwdA==" data-listing-file-modified-sort="1751871122452" data-listing-reading-time-sort="1" data-listing-word-count-sort="104">
+<div class="g-col-1" data-index="26" data-categories="TWlkZGxlJTIwU2Nob29sJTJDSW50cm8lMjBIUyUyQ1BoeXNpY2FsJTIwU2NpZW5jZSUyQ1BoeXNpY3MlMkNFbGVjdHJvbWFnbmV0aXNtJTJDSmF2YXNjcmlwdA==" data-listing-file-modified-sort="1764294279617" data-listing-reading-time-sort="1" data-listing-word-count-sort="104">
 <a href="./projects/particleacceleratorpotential.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1214,26 +1098,21 @@ In this exercise we will make a simulation of a charged particle being accelerat
 Particle Accelerator with Potential
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('TWlkZGxlJTIwU2Nob29s'); return false;">
-Middle School
+
+<div class="listing-category" onclick="window.quartoListingCategory('TWlkZGxlJTIwU2Nob29s'); return false;">Middle School</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW50cm8lMjBIUw=='); return false;">Intro HS</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljYWwlMjBTY2llbmNl'); return false;">Physical Science</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">Physics</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RWxlY3Ryb21hZ25ldGlzbQ=='); return false;">Electromagnetism</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">Javascript</div>
+
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('SW50cm8lMjBIUw=='); return false;">
-Intro HS
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljYWwlMjBTY2llbmNl'); return false;">
-Physical Science
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">
-Physics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('RWxlY3Ryb21hZ25ldGlzbQ=='); return false;">
-Electromagnetism
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">
-Javascript
-</div>
-</div>
-<div class="card-text listing-description">
+<div class="card-text listing-description delink">
 After completing Particle Accelerator, check out this activity where we consider what happens if the “Electric Potential” is kept the same even as we change the Electric…
 </div>
 <div class="card-attribution card-text-small start">
@@ -1242,10 +1121,9 @@ After completing Particle Accelerator, check out this activity where we consider
 </div>
 </div>
 </div>
+</div></a>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="27" data-categories="SmF2YXNjcmlwdCUyQ01hdGglMkNHZW9tZXRyeSUyQ01pZGRsZSUyMFNjaG9vbCUyQ0ludHJvJTIwSFM=" data-listing-file-modified-sort="1752468836042" data-listing-reading-time-sort="1" data-listing-word-count-sort="46">
+<div class="g-col-1" data-index="27" data-categories="SmF2YXNjcmlwdCUyQ01hdGglMkNHZW9tZXRyeSUyQ01pZGRsZSUyMFNjaG9vbCUyQ0ludHJvJTIwSFM=" data-listing-file-modified-sort="1764294279617" data-listing-reading-time-sort="1" data-listing-word-count-sort="46">
 <a href="./projects/piday1.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1256,23 +1134,19 @@ After completing Particle Accelerator, check out this activity where we consider
 Pi Day Part 1
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">
-Javascript
+
+<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">Javascript</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('TWF0aA=='); return false;">Math</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('R2VvbWV0cnk='); return false;">Geometry</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('TWlkZGxlJTIwU2Nob29s'); return false;">Middle School</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW50cm8lMjBIUw=='); return false;">Intro HS</div>
+
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('TWF0aA=='); return false;">
-Math
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('R2VvbWV0cnk='); return false;">
-Geometry
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('TWlkZGxlJTIwU2Nob29s'); return false;">
-Middle School
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('SW50cm8lMjBIUw=='); return false;">
-Intro HS
-</div>
-</div>
-<div class="card-text listing-description">
+<div class="card-text listing-description delink">
 Calculate the digits of pi with a random number generator and some code!
 </div>
 <div class="card-attribution card-text-small start">
@@ -1281,10 +1155,9 @@ Calculate the digits of pi with a random number generator and some code!
 </div>
 </div>
 </div>
+</div></a>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="28" data-categories="QWR2YW5jZWQlMjBIUyUyQ1RyaWdvbm9tZXRyeSUyQ1ByZWNhbGN1bHVzJTJDSmF2YXNjcmlwdA==" data-listing-file-modified-sort="1751703559497" data-listing-reading-time-sort="1" data-listing-word-count-sort="69">
+<div class="g-col-1" data-index="28" data-categories="QWR2YW5jZWQlMjBIUyUyQ1RyaWdvbm9tZXRyeSUyQ1ByZWNhbGN1bHVzJTJDSmF2YXNjcmlwdA==" data-listing-file-modified-sort="1764294279617" data-listing-reading-time-sort="1" data-listing-word-count-sort="69">
 <a href="./projects/piday2.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1295,20 +1168,17 @@ Calculate the digits of pi with a random number generator and some code!
 Pi Day Part 2
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">
-Advanced HS
+
+<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">Advanced HS</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('VHJpZ29ub21ldHJ5'); return false;">Trigonometry</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UHJlY2FsY3VsdXM='); return false;">Precalculus</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">Javascript</div>
+
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('VHJpZ29ub21ldHJ5'); return false;">
-Trigonometry
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UHJlY2FsY3VsdXM='); return false;">
-Precalculus
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">
-Javascript
-</div>
-</div>
-<div class="card-text listing-description">
+<div class="card-text listing-description delink">
 If you completed the Pi day activity and were surprised at how long it took to calculate the digits of π there is good news! There is a better way to calculate the digits of…
 </div>
 <div class="card-attribution card-text-small start">
@@ -1317,10 +1187,9 @@ If you completed the Pi day activity and were surprised at how long it took to c
 </div>
 </div>
 </div>
+</div></a>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="29" data-categories="QWR2YW5jZWQlMjBIUyUyQ01hdGglMkNHZW9tZXRyeSUyQ0NvbXB1dGVyJTIwU2NpZW5jZSUyQ0phdmFzY3JpcHQ=" data-listing-file-modified-sort="1750986394082" data-listing-reading-time-sort="1" data-listing-word-count-sort="68">
+<div class="g-col-1" data-index="29" data-categories="QWR2YW5jZWQlMjBIUyUyQ01hdGglMkNHZW9tZXRyeSUyQ0NvbXB1dGVyJTIwU2NpZW5jZSUyQ0phdmFzY3JpcHQ=" data-listing-file-modified-sort="1764294279617" data-listing-reading-time-sort="1" data-listing-word-count-sort="68">
 <a href="./projects/pidayparallel.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1331,23 +1200,19 @@ If you completed the Pi day activity and were surprised at how long it took to c
 Pi Day in Parallel
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">
-Advanced HS
+
+<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">Advanced HS</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('TWF0aA=='); return false;">Math</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('R2VvbWV0cnk='); return false;">Geometry</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Q29tcHV0ZXIlMjBTY2llbmNl'); return false;">Computer Science</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">Javascript</div>
+
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('TWF0aA=='); return false;">
-Math
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('R2VvbWV0cnk='); return false;">
-Geometry
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Q29tcHV0ZXIlMjBTY2llbmNl'); return false;">
-Computer Science
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">
-Javascript
-</div>
-</div>
-<div class="card-text listing-description">
+<div class="card-text listing-description delink">
 In an earlier activity, you were able to approximate <span class="math inline">\(\pi\)</span> to two or three decimal places; however, it took quite a while for the computer to get to that level of precision.
 </div>
 <div class="card-attribution card-text-small start">
@@ -1356,10 +1221,9 @@ In an earlier activity, you were able to approximate <span class="math inline">\
 </div>
 </div>
 </div>
+</div></a>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="30" data-categories="QWR2YW5jZWQlMjBIUyUyQ1BoeXNpY3MlMkNKYXZhc2NyaXB0JTJDVHJpZ29ub21ldHJ5" data-listing-file-modified-sort="1750647894811" data-listing-reading-time-sort="1" data-listing-word-count-sort="113">
+<div class="g-col-1" data-index="30" data-categories="QWR2YW5jZWQlMjBIUyUyQ1BoeXNpY3MlMkNKYXZhc2NyaXB0JTJDVHJpZ29ub21ldHJ5" data-listing-file-modified-sort="1764294279617" data-listing-reading-time-sort="1" data-listing-word-count-sort="113">
 <a href="./projects/planetoids.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1370,20 +1234,17 @@ In an earlier activity, you were able to approximate <span class="math inline">\
 Planetoids
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">
-Advanced HS
+
+<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">Advanced HS</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">Physics</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">Javascript</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('VHJpZ29ub21ldHJ5'); return false;">Trigonometry</div>
+
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">
-Physics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">
-Javascript
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('VHJpZ29ub21ldHJ5'); return false;">
-Trigonometry
-</div>
-</div>
-<div class="card-text listing-description">
+<div class="card-text listing-description delink">
 This lab will guide you through coding up a web-based implementation of the classic video game asteroids.
 </div>
 <div class="card-attribution card-text-small start">
@@ -1392,10 +1253,9 @@ This lab will guide you through coding up a web-based implementation of the clas
 </div>
 </div>
 </div>
+</div></a>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="31" data-categories="UGh5c2ljcyUyQ0FkdmFuY2VkJTIwSFMlMkNKYXZhc2NyaXB0" data-listing-file-modified-sort="1751704399914" data-listing-reading-time-sort="1" data-listing-word-count-sort="153">
+<div class="g-col-1" data-index="31" data-categories="UGh5c2ljcyUyQ0FkdmFuY2VkJTIwSFMlMkNKYXZhc2NyaXB0" data-listing-file-modified-sort="1764294279617" data-listing-reading-time-sort="1" data-listing-word-count-sort="153">
 <a href="./projects/planetoidsmomentum.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1406,17 +1266,15 @@ This lab will guide you through coding up a web-based implementation of the clas
 Planetoids with Momentum
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">
-Physics
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">Physics</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">Advanced HS</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">Javascript</div>
+
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">
-Advanced HS
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">
-Javascript
-</div>
-</div>
-<div class="card-text listing-description">
+<div class="card-text listing-description delink">
 In a typical college physics course you will at some point encounter the idea of conservation of momentum. Momentum conservation is very important! In situations where two…
 </div>
 <div class="card-attribution card-text-small start">
@@ -1425,10 +1283,9 @@ In a typical college physics course you will at some point encounter the idea of
 </div>
 </div>
 </div>
+</div></a>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="32" data-categories="QWR2YW5jZWQlMjBIUyUyQ1BoeXNpY3MlMkNKYXZhc2NyaXB0JTJDVHJpZ29ub21ldHJ5" data-listing-file-modified-sort="1750647960266" data-listing-reading-time-sort="1" data-listing-word-count-sort="178">
+<div class="g-col-1" data-index="32" data-categories="QWR2YW5jZWQlMjBIUyUyQ1BoeXNpY3MlMkNKYXZhc2NyaXB0JTJDVHJpZ29ub21ldHJ5" data-listing-file-modified-sort="1764294279617" data-listing-reading-time-sort="1" data-listing-word-count-sort="178">
 <a href="./projects/planetoidstorque.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1439,20 +1296,17 @@ In a typical college physics course you will at some point encounter the idea of
 Planetoids with Torque
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">
-Advanced HS
+
+<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">Advanced HS</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">Physics</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">Javascript</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('VHJpZ29ub21ldHJ5'); return false;">Trigonometry</div>
+
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">
-Physics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">
-Javascript
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('VHJpZ29ub21ldHJ5'); return false;">
-Trigonometry
-</div>
-</div>
-<div class="card-text listing-description">
+<div class="card-text listing-description delink">
 In this lab we will make the planetoids game more realistic by allowing the space craft to spin around as it would if it were really traveling in space. So in addition to a…
 </div>
 <div class="card-attribution card-text-small start">
@@ -1461,10 +1315,9 @@ In this lab we will make the planetoids game more realistic by allowing the spac
 </div>
 </div>
 </div>
+</div></a>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="33" data-categories="QWR2YW5jZWQlMjBIUyUyQ0ludHJvJTIwSFMlMkNQaHlzaWNhbCUyMFNjaWVuY2UlMkNKYXZhc2NyaXB0" data-listing-file-modified-sort="1750647922775" data-listing-reading-time-sort="1" data-listing-word-count-sort="177">
+<div class="g-col-1" data-index="33" data-categories="QWR2YW5jZWQlMjBIUyUyQ0ludHJvJTIwSFMlMkNQaHlzaWNhbCUyMFNjaWVuY2UlMkNKYXZhc2NyaXB0" data-listing-file-modified-sort="1764294279617" data-listing-reading-time-sort="1" data-listing-word-count-sort="177">
 <a href="./projects/planetoidsspring.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1475,20 +1328,17 @@ In this lab we will make the planetoids game more realistic by allowing the spac
 Planetoids with a Spring
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">
-Advanced HS
+
+<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">Advanced HS</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW50cm8lMjBIUw=='); return false;">Intro HS</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljYWwlMjBTY2llbmNl'); return false;">Physical Science</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">Javascript</div>
+
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('SW50cm8lMjBIUw=='); return false;">
-Intro HS
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljYWwlMjBTY2llbmNl'); return false;">
-Physical Science
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">
-Javascript
-</div>
-</div>
-<div class="card-text listing-description">
+<div class="card-text listing-description delink">
 Think back to the momentum exercise. The little ship can collide with a “blob” and stick to it. Now imagine that this blob is attached to a spring. Wouldn’t it be…
 </div>
 <div class="card-attribution card-text-small start">
@@ -1497,10 +1347,9 @@ Think back to the momentum exercise. The little ship can collide with a “blob�
 </div>
 </div>
 </div>
+</div></a>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="34" data-categories="TWlkZGxlJTIwU2Nob29sJTJDSW50cm8lMjBIUyUyQ1BoeXNpY2FsJTIwU2NpZW5jZSUyQ1BoeXNpY3MlMkNKYXZhc2NyaXB0" data-listing-file-modified-sort="1749570054735" data-listing-reading-time-sort="1" data-listing-word-count-sort="78">
+<div class="g-col-1" data-index="34" data-categories="TWlkZGxlJTIwU2Nob29sJTJDSW50cm8lMjBIUyUyQ1BoeXNpY2FsJTIwU2NpZW5jZSUyQ1BoeXNpY3MlMkNKYXZhc2NyaXB0" data-listing-file-modified-sort="1764294279617" data-listing-reading-time-sort="1" data-listing-word-count-sort="78">
 <a href="./projects/pong.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1511,23 +1360,19 @@ Think back to the momentum exercise. The little ship can collide with a “blob�
 Pong
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('TWlkZGxlJTIwU2Nob29s'); return false;">
-Middle School
+
+<div class="listing-category" onclick="window.quartoListingCategory('TWlkZGxlJTIwU2Nob29s'); return false;">Middle School</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW50cm8lMjBIUw=='); return false;">Intro HS</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljYWwlMjBTY2llbmNl'); return false;">Physical Science</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">Physics</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">Javascript</div>
+
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('SW50cm8lMjBIUw=='); return false;">
-Intro HS
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljYWwlMjBTY2llbmNl'); return false;">
-Physical Science
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">
-Physics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">
-Javascript
-</div>
-</div>
-<div class="card-text listing-description">
+<div class="card-text listing-description delink">
 In the classic game of Pong, there is a little ball that bounces around off various walls and objects. Importantly, the ball changes direction when it bounces but it never…
 </div>
 <div class="card-attribution card-text-small start">
@@ -1536,10 +1381,9 @@ In the classic game of Pong, there is a little ball that bounces around off vari
 </div>
 </div>
 </div>
+</div></a>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="35" data-categories="TWlkZGxlJTIwU2Nob29sJTJDSW50cm8lMjBIUyUyQ1BoeXNpY2FsJTIwU2NpZW5jZSUyQ1BoeXNpY3MlMkNBc3Ryb25vbXklMkNTcGFjZSUyQ0hpZGRlbiUyMEZpZ3VyZXMlMkNKYXZhc2NyaXB0" data-listing-file-modified-sort="1751155174126" data-listing-reading-time-sort="1" data-listing-word-count-sort="174">
+<div class="g-col-1" data-index="35" data-categories="TWlkZGxlJTIwU2Nob29sJTJDSW50cm8lMjBIUyUyQ1BoeXNpY2FsJTIwU2NpZW5jZSUyQ1BoeXNpY3MlMkNBc3Ryb25vbXklMkNTcGFjZSUyQ0hpZGRlbiUyMEZpZ3VyZXMlMkNKYXZhc2NyaXB0" data-listing-file-modified-sort="1764294279617" data-listing-reading-time-sort="1" data-listing-word-count-sort="174">
 <a href="./projects/projectmercury1.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1550,32 +1394,25 @@ In the classic game of Pong, there is a little ball that bounces around off vari
 Project Mercury Part 1
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('TWlkZGxlJTIwU2Nob29s'); return false;">
-Middle School
+
+<div class="listing-category" onclick="window.quartoListingCategory('TWlkZGxlJTIwU2Nob29s'); return false;">Middle School</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW50cm8lMjBIUw=='); return false;">Intro HS</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljYWwlMjBTY2llbmNl'); return false;">Physical Science</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">Physics</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QXN0cm9ub215'); return false;">Astronomy</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U3BhY2U='); return false;">Space</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SGlkZGVuJTIwRmlndXJlcw=='); return false;">Hidden Figures</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">Javascript</div>
+
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('SW50cm8lMjBIUw=='); return false;">
-Intro HS
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljYWwlMjBTY2llbmNl'); return false;">
-Physical Science
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">
-Physics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('QXN0cm9ub215'); return false;">
-Astronomy
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('U3BhY2U='); return false;">
-Space
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('SGlkZGVuJTIwRmlndXJlcw=='); return false;">
-Hidden Figures
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">
-Javascript
-</div>
-</div>
-<div class="card-text listing-description">
+<div class="card-text listing-description delink">
 Mathematician Katherine Johnson is famous for calculating trajectories of America’s first manned space missions for Project Mercury as depicted in the movie Hidden Figures.
 </div>
 <div class="card-attribution card-text-small start">
@@ -1584,10 +1421,9 @@ Mathematician Katherine Johnson is famous for calculating trajectories of Americ
 </div>
 </div>
 </div>
+</div></a>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="36" data-categories="QWR2YW5jZWQlMjBIUyUyQ1BoeXNpY3MlMkNBc3Ryb25vbXklMkNTcGFjZSUyQ1ByZWNhbGN1bHVzJTJDVHJpZ29ub21ldHJ5JTJDSGlkZGVuJTIwRmlndXJlcyUyQ0phdmFzY3JpcHQ=" data-listing-file-modified-sort="1751155438515" data-listing-reading-time-sort="1" data-listing-word-count-sort="155">
+<div class="g-col-1" data-index="36" data-categories="QWR2YW5jZWQlMjBIUyUyQ1BoeXNpY3MlMkNBc3Ryb25vbXklMkNTcGFjZSUyQ1ByZWNhbGN1bHVzJTJDVHJpZ29ub21ldHJ5JTJDSGlkZGVuJTIwRmlndXJlcyUyQ0phdmFzY3JpcHQ=" data-listing-file-modified-sort="1764294279617" data-listing-reading-time-sort="1" data-listing-word-count-sort="155">
 <a href="./projects/projectmercury2.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1598,32 +1434,25 @@ Mathematician Katherine Johnson is famous for calculating trajectories of Americ
 Project Mercury Part 2
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">
-Advanced HS
+
+<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">Advanced HS</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">Physics</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QXN0cm9ub215'); return false;">Astronomy</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U3BhY2U='); return false;">Space</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UHJlY2FsY3VsdXM='); return false;">Precalculus</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('VHJpZ29ub21ldHJ5'); return false;">Trigonometry</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SGlkZGVuJTIwRmlndXJlcw=='); return false;">Hidden Figures</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">Javascript</div>
+
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">
-Physics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('QXN0cm9ub215'); return false;">
-Astronomy
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('U3BhY2U='); return false;">
-Space
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UHJlY2FsY3VsdXM='); return false;">
-Precalculus
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('VHJpZ29ub21ldHJ5'); return false;">
-Trigonometry
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('SGlkZGVuJTIwRmlndXJlcw=='); return false;">
-Hidden Figures
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">
-Javascript
-</div>
-</div>
-<div class="card-text listing-description">
+<div class="card-text listing-description delink">
 Mathematician Katherine Johnson is famous for calculating trajectories of America’s first manned space missions for Project Mercury as depicted in the movie Hidden Figures.
 </div>
 <div class="card-attribution card-text-small start">
@@ -1632,10 +1461,9 @@ Mathematician Katherine Johnson is famous for calculating trajectories of Americ
 </div>
 </div>
 </div>
+</div></a>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="37" data-categories="SmF2YXNjcmlwdCUyQ0FkdmFuY2VkJTIwSFMlMkNQaHlzaWNzJTJDRWxlY3Ryb21hZ25ldGlzbQ==" data-listing-file-modified-sort="1753499391271" data-listing-reading-time-sort="1" data-listing-word-count-sort="98">
+<div class="g-col-1" data-index="37" data-categories="SmF2YXNjcmlwdCUyQ0FkdmFuY2VkJTIwSFMlMkNQaHlzaWNzJTJDRWxlY3Ryb21hZ25ldGlzbQ==" data-listing-file-modified-sort="1764294279618" data-listing-reading-time-sort="1" data-listing-word-count-sort="98">
 <a href="./projects/rc.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1646,20 +1474,17 @@ Mathematician Katherine Johnson is famous for calculating trajectories of Americ
 RC Circuits
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">
-Javascript
+
+<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">Javascript</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">Advanced HS</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">Physics</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RWxlY3Ryb21hZ25ldGlzbQ=='); return false;">Electromagnetism</div>
+
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">
-Advanced HS
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">
-Physics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('RWxlY3Ryb21hZ25ldGlzbQ=='); return false;">
-Electromagnetism
-</div>
-</div>
-<div class="card-text listing-description">
+<div class="card-text listing-description delink">
 This programming lab is unlike the previous ones in that it involves circuits. Specifically it involves circuits with a battery, a capacitor and one or two resistors.
 </div>
 <div class="card-attribution card-text-small start">
@@ -1668,10 +1493,9 @@ This programming lab is unlike the previous ones in that it involves circuits. S
 </div>
 </div>
 </div>
+</div></a>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="38" data-categories="SW50cm8lMjBIUyUyQ0FkdmFuY2VkJTIwSFMlMkNQaHlzaWNzJTJDRWxlY3Ryb21hZ25ldGlzbSUyQ0phdmFzY3JpcHQ=" data-listing-file-modified-sort="1753501591872" data-listing-reading-time-sort="1" data-listing-word-count-sort="146">
+<div class="g-col-1" data-index="38" data-categories="SW50cm8lMjBIUyUyQ0FkdmFuY2VkJTIwSFMlMkNQaHlzaWNzJTJDRWxlY3Ryb21hZ25ldGlzbSUyQ0phdmFzY3JpcHQ=" data-listing-file-modified-sort="1764294279618" data-listing-reading-time-sort="1" data-listing-word-count-sort="146">
 <a href="./projects/repulsion.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1682,23 +1506,19 @@ This programming lab is unlike the previous ones in that it involves circuits. S
 Repulsion Between Two Charges
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('SW50cm8lMjBIUw=='); return false;">
-Intro HS
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW50cm8lMjBIUw=='); return false;">Intro HS</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">Advanced HS</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">Physics</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RWxlY3Ryb21hZ25ldGlzbQ=='); return false;">Electromagnetism</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">Javascript</div>
+
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">
-Advanced HS
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">
-Physics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('RWxlY3Ryb21hZ25ldGlzbQ=='); return false;">
-Electromagnetism
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">
-Javascript
-</div>
-</div>
-<div class="card-text listing-description">
+<div class="card-text listing-description delink">
 Ever since scientists realized that the sun is powered by nuclear fusion reactions, people have been thinking about causing these reactions to occur in the laboratory in…
 </div>
 <div class="card-attribution card-text-small start">
@@ -1707,10 +1527,9 @@ Ever since scientists realized that the sun is powered by nuclear fusion reactio
 </div>
 </div>
 </div>
+</div></a>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="39" data-categories="QWR2YW5jZWQlMjBIUyUyQ0FzdHJvbm9teSUyQ1BoeXNpY3MlMkNKYXZhc2NyaXB0JTJDVHJpZ29ub21ldHJ5" data-listing-file-modified-sort="1749570054735" data-listing-reading-time-sort="1" data-listing-word-count-sort="31">
+<div class="g-col-1" data-index="39" data-categories="QWR2YW5jZWQlMjBIUyUyQ0FzdHJvbm9teSUyQ1BoeXNpY3MlMkNKYXZhc2NyaXB0JTJDVHJpZ29ub21ldHJ5" data-listing-file-modified-sort="1764294279618" data-listing-reading-time-sort="1" data-listing-word-count-sort="31">
 <a href="./projects/slingshotgravity.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1721,23 +1540,19 @@ Ever since scientists realized that the sun is powered by nuclear fusion reactio
 Slingshot With Gravity
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">
-Advanced HS
+
+<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">Advanced HS</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QXN0cm9ub215'); return false;">Astronomy</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">Physics</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">Javascript</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('VHJpZ29ub21ldHJ5'); return false;">Trigonometry</div>
+
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('QXN0cm9ub215'); return false;">
-Astronomy
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">
-Physics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">
-Javascript
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('VHJpZ29ub21ldHJ5'); return false;">
-Trigonometry
-</div>
-</div>
-<div class="card-text listing-description">
+<div class="card-text listing-description delink">
 
 
 <ul>
@@ -1752,10 +1567,9 @@ Trigonometry
 </div>
 </div>
 </div>
+</div></a>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="40" data-categories="SW50cm8lMjBIUyUyQ0RhdGElMjBTY2llbmNlJTJDU3VzdGFpbmFiaWxpdHklMkNTcHJlYWRzaGVldHM=" data-listing-file-modified-sort="1751154182273" data-listing-reading-time-sort="1" data-listing-word-count-sort="14">
+<div class="g-col-1" data-index="40" data-categories="SW50cm8lMjBIUyUyQ0RhdGElMjBTY2llbmNlJTJDU3VzdGFpbmFiaWxpdHklMkNTcHJlYWRzaGVldHM=" data-listing-file-modified-sort="1764294279618" data-listing-reading-time-sort="1" data-listing-word-count-sort="14">
 <a href="./projects/solarcell.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1766,20 +1580,17 @@ Trigonometry
 Solar Cell Data Analysis
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('SW50cm8lMjBIUw=='); return false;">
-Intro HS
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW50cm8lMjBIUw=='); return false;">Intro HS</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFNjaWVuY2U='); return false;">Data Science</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U3VzdGFpbmFiaWxpdHk='); return false;">Sustainability</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U3ByZWFkc2hlZXRz'); return false;">Spreadsheets</div>
+
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFNjaWVuY2U='); return false;">
-Data Science
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('U3VzdGFpbmFiaWxpdHk='); return false;">
-Sustainability
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('U3ByZWFkc2hlZXRz'); return false;">
-Spreadsheets
-</div>
-</div>
-<div class="card-text listing-description">
+<div class="card-text listing-description delink">
 Solar cell data repository
 </div>
 <div class="card-attribution card-text-small start">
@@ -1788,10 +1599,9 @@ Solar cell data repository
 </div>
 </div>
 </div>
+</div></a>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="41" data-categories="SW50cm8lMjBIUyUyQ0FzdHJvbm9teSUyQ1NwYWNlJTJDRGF0YSUyMFNjaWVuY2UlMkNTcHJlYWRzaGVldHM=" data-listing-file-modified-sort="1753659018060" data-listing-reading-time-sort="2" data-listing-word-count-sort="313">
+<div class="g-col-1" data-index="41" data-categories="SW50cm8lMjBIUyUyQ0FzdHJvbm9teSUyQ1NwYWNlJTJDRGF0YSUyMFNjaWVuY2UlMkNTcHJlYWRzaGVldHM=" data-listing-file-modified-sort="1764294279618" data-listing-reading-time-sort="2" data-listing-word-count-sort="313">
 <a href="./projects/solarsystem.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1802,23 +1612,19 @@ Solar cell data repository
 Solar System Model
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('SW50cm8lMjBIUw=='); return false;">
-Intro HS
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW50cm8lMjBIUw=='); return false;">Intro HS</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QXN0cm9ub215'); return false;">Astronomy</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U3BhY2U='); return false;">Space</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFNjaWVuY2U='); return false;">Data Science</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U3ByZWFkc2hlZXRz'); return false;">Spreadsheets</div>
+
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('QXN0cm9ub215'); return false;">
-Astronomy
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('U3BhY2U='); return false;">
-Space
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFNjaWVuY2U='); return false;">
-Data Science
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('U3ByZWFkc2hlZXRz'); return false;">
-Spreadsheets
-</div>
-</div>
-<div class="card-text listing-description">
+<div class="card-text listing-description delink">
 Use a spreadsheet to design a model solar system
 </div>
 <div class="card-attribution card-text-small start">
@@ -1827,10 +1633,9 @@ Use a spreadsheet to design a model solar system
 </div>
 </div>
 </div>
+</div></a>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="42" data-categories="RGF0YSUyMFNjaWVuY2UlMkNBc3Ryb25vbXklMkNTcGFjZSUyQ1NwcmVhZHNoZWV0cw==" data-listing-file-modified-sort="1753380774663" data-listing-reading-time-sort="8" data-listing-word-count-sort="1494">
+<div class="g-col-1" data-index="42" data-categories="RGF0YSUyMFNjaWVuY2UlMkNBc3Ryb25vbXklMkNTcGFjZSUyQ1NwcmVhZHNoZWV0cw==" data-listing-file-modified-sort="1764294279618" data-listing-reading-time-sort="8" data-listing-word-count-sort="1494">
 <a href="./projects/sunspots.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1841,20 +1646,17 @@ Use a spreadsheet to design a model solar system
 Sunspots
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFNjaWVuY2U='); return false;">
-Data Science
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFNjaWVuY2U='); return false;">Data Science</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QXN0cm9ub215'); return false;">Astronomy</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U3BhY2U='); return false;">Space</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U3ByZWFkc2hlZXRz'); return false;">Spreadsheets</div>
+
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('QXN0cm9ub215'); return false;">
-Astronomy
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('U3BhY2U='); return false;">
-Space
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('U3ByZWFkc2hlZXRz'); return false;">
-Spreadsheets
-</div>
-</div>
-<div class="card-text listing-description">
+<div class="card-text listing-description delink">
 People have been observing the sun for centuries. Let’s look at the data and see what we can learn!
 </div>
 <div class="card-attribution card-text-small start">
@@ -1863,10 +1665,9 @@ People have been observing the sun for centuries. Let’s look at the data and s
 </div>
 </div>
 </div>
+</div></a>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="43" data-categories="QWR2YW5jZWQlMjBIUyUyQ1BoeXNpY3MlMkNFbGVjdHJvbWFnbmV0aXNtJTJDSmF2YXNjcmlwdCUyQ1RyaWdvbm9tZXRyeQ==" data-listing-file-modified-sort="1753498442982" data-listing-reading-time-sort="1" data-listing-word-count-sort="160">
+<div class="g-col-1" data-index="43" data-categories="QWR2YW5jZWQlMjBIUyUyQ1BoeXNpY3MlMkNFbGVjdHJvbWFnbmV0aXNtJTJDSmF2YXNjcmlwdCUyQ1RyaWdvbm9tZXRyeQ==" data-listing-file-modified-sort="1764294279618" data-listing-reading-time-sort="1" data-listing-word-count-sort="160">
 <a href="./projects/waveinterference.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1877,23 +1678,19 @@ People have been observing the sun for centuries. Let’s look at the data and s
 Wave Interference
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">
-Advanced HS
+
+<div class="listing-category" onclick="window.quartoListingCategory('QWR2YW5jZWQlMjBIUw=='); return false;">Advanced HS</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">Physics</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RWxlY3Ryb21hZ25ldGlzbQ=='); return false;">Electromagnetism</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">Javascript</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('VHJpZ29ub21ldHJ5'); return false;">Trigonometry</div>
+
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">
-Physics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('RWxlY3Ryb21hZ25ldGlzbQ=='); return false;">
-Electromagnetism
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('SmF2YXNjcmlwdA=='); return false;">
-Javascript
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('VHJpZ29ub21ldHJ5'); return false;">
-Trigonometry
-</div>
-</div>
-<div class="card-text listing-description">
+<div class="card-text listing-description delink">
 This programming lab is designed to illustrate the idea of wave interference. This happens because of the principle of “superposition”. For sound waves, this 20 dollar word…
 </div>
 <div class="card-attribution card-text-small start">
@@ -1902,248 +1699,252 @@ This programming lab is designed to illustrate the idea of wave interference. Th
 </div>
 </div>
 </div>
+</div></a>
 </div>
-</a>
 </div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
+<div class="listing-no-matching d-none">No matching items</div>
 <nav id="listing-pagination" class="listing-pagination" aria-label="Page Navigation">
   <ul class="pagination"></ul>
 </nav>
 </div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
-window.document.addEventListener("DOMContentLoaded", function (event) {
-  const toggleBodyColorMode = (bsSheetEl) => {
-    const mode = bsSheetEl.getAttribute("data-mode");
-    const bodyEl = window.document.querySelector("body");
-    if (mode === "dark") {
-      bodyEl.classList.add("quarto-dark");
-      bodyEl.classList.remove("quarto-light");
-    } else {
-      bodyEl.classList.add("quarto-light");
-      bodyEl.classList.remove("quarto-dark");
-    }
-  }
-  const toggleBodyColorPrimary = () => {
-    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-    if (bsSheetEl) {
-      toggleBodyColorMode(bsSheetEl);
-    }
-  }
-  toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
       }
+      return false;
     }
-    return false;
-  }
-  const onCopySuccess = function(e) {
-    // button target
-    const button = e.trigger;
-    // don't keep focus
-    button.blur();
-    // flash "checked"
-    button.classList.add('code-copy-button-checked');
-    var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
-    let tooltip;
-    if (window.bootstrap) {
-      button.setAttribute("data-bs-toggle", "tooltip");
-      button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
-          customClass: "code-copy-button-tooltip",
-          offset: [0, -8]});
-      tooltip.show();    
-    }
-    setTimeout(function() {
-      if (tooltip) {
-        tooltip.hide();
-        button.removeAttribute("data-bs-title");
-        button.removeAttribute("data-bs-toggle");
-        button.removeAttribute("data-bs-placement");
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
       }
-      button.setAttribute("title", currentTitle);
-      button.classList.remove('code-copy-button-checked');
-    }, 1000);
-    // clear code selection
-    e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
       for (const childEl of codeEl.children) {
         if (isCodeAnnotation(childEl)) {
           childEl.remove();
         }
       }
       return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
-  });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
     });
-    clipboardModal.on('success', onCopySuccess);
-  }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
     }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
-    }
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-    const config = {
-      allowHTML: true,
-      maxWidth: 500,
-      delay: 100,
-      arrow: false,
-      appendTo: function(el) {
-          return el.parentElement;
-      },
-      interactive: true,
-      interactiveBorder: 10,
-      theme: 'quarto',
-      placement: 'bottom-start',
-    };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
-    window.tippy(el, config); 
-  }
-  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-  for (var i=0; i<noterefs.length; i++) {
-    const ref = noterefs[i];
-    tippyHover(ref, function() {
-      // use id or data attribute instead here
-      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-      try { href = new URL(href).hash; } catch {}
-      const id = href.replace(/^#\/?/, "");
-      const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
-        }
-      }
-    }
-    stripColumnClz(note)
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
           }
         }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
         }
-        return container.innerHTML
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
       } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
         if (window.Quarto?.typesetMath) {
           window.Quarto.typesetMath(note);
         }
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
       }
     }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
           }
         } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
           .then(res => res.text())
           .then(html => {
             const parser = new DOMParser();
             const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
+            const note = htmlDoc.querySelector('main.content');
             if (note !== null) {
-              const html = processXRef(id, note);
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
               instance.setContent(html);
             } 
           }).finally(() => {
@@ -2151,185 +1952,161 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             instance.show();
           });
         }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
-    });
-  }
-      let selectedAnnoteEl;
-      const selectorForAnnotation = ( cell, annotation) => {
-        let cellAttr = 'data-code-cell="' + cell + '"';
-        let lineAttr = 'data-code-annotation="' +  annotation + '"';
-        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-        return selector;
-      }
-      const selectCodeLines = (annoteEl) => {
-        const doc = window.document;
-        const targetCell = annoteEl.getAttribute("data-target-cell");
-        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-        const lineIds = lines.map((line) => {
-          return targetCell + "-" + line;
-        })
-        let top = null;
-        let height = null;
-        let parent = null;
-        if (lineIds.length > 0) {
-            //compute the position of the single el (top and bottom and make a div)
-            const el = window.document.getElementById(lineIds[0]);
-            top = el.offsetTop;
-            height = el.offsetHeight;
-            parent = el.parentElement.parentElement;
-          if (lineIds.length > 1) {
-            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-            height = bottom - top;
-          }
-          if (top !== null && height !== null && parent !== null) {
-            // cook up a div (if necessary) and position it 
-            let div = window.document.getElementById("code-annotation-line-highlight");
-            if (div === null) {
-              div = window.document.createElement("div");
-              div.setAttribute("id", "code-annotation-line-highlight");
-              div.style.position = 'absolute';
-              parent.appendChild(div);
-            }
-            div.style.top = top - 2 + "px";
-            div.style.height = height + 4 + "px";
-            div.style.left = 0;
-            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-            if (gutterDiv === null) {
-              gutterDiv = window.document.createElement("div");
-              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-              gutterDiv.style.position = 'absolute';
-              const codeCell = window.document.getElementById(targetCell);
-              const gutter = codeCell.querySelector('.code-annotation-gutter');
-              gutter.appendChild(gutterDiv);
-            }
-            gutterDiv.style.top = top - 2 + "px";
-            gutterDiv.style.height = height + 4 + "px";
-          }
-          selectedAnnoteEl = annoteEl;
-        }
-      };
-      const unselectCodeLines = () => {
-        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-        elementsIds.forEach((elId) => {
-          const div = window.document.getElementById(elId);
-          if (div) {
-            div.remove();
-          }
-        });
-        selectedAnnoteEl = undefined;
-      };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
-      // Attach click handler to the DT
-      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-      for (const annoteDlNode of annoteDls) {
-        annoteDlNode.addEventListener('click', (event) => {
-          const clickedEl = event.target;
-          if (clickedEl !== selectedAnnoteEl) {
-            unselectCodeLines();
-            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-            if (activeEl) {
-              activeEl.classList.remove('code-annotation-active');
-            }
-            selectCodeLines(clickedEl);
-            clickedEl.classList.add('code-annotation-active');
-          } else {
-            // Unselect the line
-            unselectCodeLines();
-            clickedEl.classList.remove('code-annotation-active');
-          }
-        });
-      }
-  const findCites = (el) => {
-    const parentEl = el.parentElement;
-    if (parentEl) {
-      const cites = parentEl.dataset.cites;
-      if (cites) {
-        return {
-          el,
-          cites: cites.split(' ')
-        };
-      } else {
-        return findCites(el.parentElement)
-      }
-    } else {
-      return undefined;
-    }
-  };
-  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-  for (var i=0; i<bibliorefs.length; i++) {
-    const ref = bibliorefs[i];
-    const citeInfo = findCites(ref);
-    if (citeInfo) {
-      tippyHover(citeInfo.el, function() {
-        var popup = window.document.createElement('div');
-        citeInfo.cites.forEach(function(cite) {
-          var citeDiv = window.document.createElement('div');
-          citeDiv.classList.add('hanging-indent');
-          citeDiv.classList.add('csl-entry');
-          var biblioDiv = window.document.getElementById('ref-' + cite);
-          if (biblioDiv) {
-            citeDiv.innerHTML = biblioDiv.innerHTML;
-          }
-          popup.appendChild(citeDiv);
-        });
-        return popup.innerHTML;
+      }, function(instance) {
       });
     }
-  }
-});
-</script>
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
 </div> <!-- /content -->
 
 
