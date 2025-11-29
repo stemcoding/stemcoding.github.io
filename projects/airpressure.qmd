@@ -27,6 +27,22 @@ Instructions for the activity, both data collection and data analysis, are given
 * [How do a trendline with Google Sheets and Excel](https://www.asc.ohio-state.edu/orban.14/stemcoding/pressure/lin_reg_instructions.pdf)
 * [Example data (pdf)](https://www.asc.ohio-state.edu/orban.14/stemcoding/pressure/pressure_sample_data.pdf) [Example data (csv)](https://www.asc.ohio-state.edu/orban.14/stemcoding/pressure/sample_data.csv)
 
+## Equipment
+
+One of the following is sufficient for this activity:
+
+* A smartphone (iPhone or android) with a built-in pressure sensor (nearly all smartphones have this)
+* A tablet (iPad or Android) with a built-in pressure sensor (nearly all tablets have this)
+* A digital altimeter for hiking, we recommend [this model](https://www.amazon.com/dp/B0F485VTBJ) or similar
+* A pressure sensor from adafruit or ardunio  (requires familiarity with adafruit or arduino)
+* A wireless or USB pressure sensor from an educational vendor like Vernier or Pasco (may require other equipment from these vendors to work)
+
+## Software
+
+We recommend the [Arduino Science Journal app](https://www.arduino.cc/education/science-journal) for iOS or Android
+
+Other physics apps that use and display smartphone sensor data would also work fine (let us know if you have a favorite!)
+
 ## Air Pressure Versus Height Playlist
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=5eEP4kuDg8pHe3rV&amp;list=PLISRe8GegO8T-sA9RDNylWGWa7MX8E4s3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

@@ -12,6 +12,10 @@ categories:
 
 Use a CO<sub>2</sub> sensor to measure air quality in your building
 
+## Equipment
+
+We recommend the [Temtop home CO2 air quality sensor](https://temtopus.com/collections/temtop-co2-monitor/products/temtop-c1-co2-monitor-indoor-air-quality-monitor-portable-co2-detector-co2-temperature-humidity-home-office-or-school) or similar
+
 ## Links to Activity
 
 * [Google Slide Deck](http://go.osu.edu/co2)

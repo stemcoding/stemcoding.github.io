@@ -1727,5 +1727,26 @@
     "title": "WeTeach_CS 2025 Summer Teacher Training Schedule",
     "section": "Week 2, Wednesday",
     "text": "Week 2, Wednesday\n\nAny extra questions about activities covered, or activities we did not have time to go over (1 hour)\nZoom breakouts / check ins / individual plans to do more data science and CS in their classes + any extra questions about any activities covered (2.5 hours)"
+  },
+  {
+    "objectID": "projects/co2.html#equipment",
+    "href": "projects/co2.html#equipment",
+    "title": "CO2 Survey",
+    "section": "Equipment",
+    "text": "Equipment\nWe recommend the Temtop home CO2 air quality sensor or similar"
+  },
+  {
+    "objectID": "projects/airpressure.html#equipment",
+    "href": "projects/airpressure.html#equipment",
+    "title": "Air Pressure Versus Height: 1. Smartphone Data",
+    "section": "Equipment",
+    "text": "Equipment\nOne of the following is sufficient for this activity:\n\nA smartphone (iPhone or android) with a built-in pressure sensor (nearly all smartphones have this)\nA tablet (iPad or Android) with a built-in pressure sensor (nearly all tablets have this)\nA digital altimeter for hiking, we recommend this model or similar\nA pressure sensor from adafruit or ardunio (requires familiarity with adafruit or arduino)\nA wireless or USB pressure sensor from an educational vendor like Vernier or Pasco (may require other equipment from these vendors to work)"
+  },
+  {
+    "objectID": "projects/airpressure.html#software",
+    "href": "projects/airpressure.html#software",
+    "title": "Air Pressure Versus Height: 1. Smartphone Data",
+    "section": "Software",
+    "text": "Software\nWe recommend the Arduino Science Journal app for iOS or Android\nOther physics apps that use and display smartphone sensor data would also work fine (let us know if you have a favorite!)"
   }
 ]
