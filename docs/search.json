@@ -1733,7 +1733,7 @@
     "href": "projects/co2.html#equipment",
     "title": "CO2 Survey",
     "section": "Equipment",
-    "text": "Equipment\nWe recommend the Temtop home CO2 air quality sensor or similar"
+    "text": "Equipment\nWe recommend the Temtop home CO2 air quality sensor or similar\nIn principle, one can also use an adafruit or arudino CO2 sensor if you are comfortable using adafruit or ardino devices"
   },
   {
     "objectID": "projects/airpressure.html#equipment",
@@ -1748,5 +1748,12 @@
     "title": "Air Pressure Versus Height: 1. Smartphone Data",
     "section": "Software",
     "text": "Software\nWe recommend the Arduino Science Journal app for iOS or Android\nOther physics apps that use and display smartphone sensor data would also work fine (let us know if you have a favorite!)"
+  },
+  {
+    "objectID": "projects/co2.html#news-articles-to-discuss",
+    "href": "projects/co2.html#news-articles-to-discuss",
+    "title": "CO2 Survey",
+    "section": "News articles to discuss",
+    "text": "News articles to discuss\n\nVirus transmission is a concern for national and international conferences. In 2025, a conference set up a sophisticated system for monitoring CO2 as discussed in an article at this link. If the link is broken you can download this pdf"
   }
 ]

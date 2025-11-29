@@ -16,8 +16,13 @@ Use a CO<sub>2</sub> sensor to measure air quality in your building
 
 We recommend the [Temtop home CO2 air quality sensor](https://temtopus.com/collections/temtop-co2-monitor/products/temtop-c1-co2-monitor-indoor-air-quality-monitor-portable-co2-detector-co2-temperature-humidity-home-office-or-school) or similar
 
+In principle, one can also use an [adafruit](https://learn.adafruit.com/matrix-portal-room-co2-monitor/overview) or [arudino](https://www.youtube.com/watch?v=xT5-V_ebO3g) CO<sub>2</sub> sensor if you are comfortable using adafruit or ardino devices
+
 ## Links to Activity
 
 * [Google Slide Deck](http://go.osu.edu/co2)
 * [Random CO2 data generator with p5.js](https://editor.p5js.org/ChrisOrban/sketches/M0iRTK6_x)
 
+## News articles to discuss
+
+* Virus transmission is a concern for national and international conferences. In 2025, a conference set up a sophisticated system for monitoring CO<sub>2</sub> as discussed in an article at [this link](https://www.wired.com/story/this-hacker-conference-installed-a-literal-anti-virus-monitoring-system/). If the link is broken you can download [this pdf](co2_conference.pdf)
