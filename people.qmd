@@ -8,7 +8,7 @@ title: "Meet the STEMcoding Team!"
 | |  |
 |----------|----------|
 | <img width=225 alt="Chris Orban" src="img/orban.jpeg"> | <img width=225 alt="Scott Zimmerman" src="img/zimmerman.jpeg">  |
-| **Chris Orban** Prof. of Physics at OSU Marion| **Scott Zimmerman** Prof of Mathematics at OSU Marion|
+| **Chris Orban** Prof. of Physics at OSU Marion!| **Scott Zimmerman** Prof of Mathematics at OSU Marion|
 | <img width=250 alt="Jessica Kulp" src="img/kulp.jpeg">  | <img width=225 alt="Julie Butler" src="img/butler.png">   |  
 | **Jessica Kulp** Grad student OSU EHE | **Julie Butler** University of Mount Union| |
 
