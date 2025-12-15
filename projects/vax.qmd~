@@ -1,0 +1,22 @@
+---
+title: "VAX game"
+image: ../img/co2.png
+categories:
+    - Public Health
+---
+
+![](../img/co2.png){width=400 fig-align="center"}
+
+Play a video game to learn about viruses and epidemics
+
+## About the activity
+
+WE DID NOT CREATE THIS ACTIVITY!!! It was originally created by Prof. Marcel Salathe and collaborators at a Swiss university called ETH Zurich. Prof. Salathe and others study how diseases spread as a kind of mathematical problem (in other words they study a field called "epidemiology"). They originally created this game in 2013 and it worked great for a while but by 2022, it had stopped working. Thankfully they released their source code on <a href="https://github.com/digitalepidemiologylab/VaxGame/">github</a>. Individuals associated with STEMcoding were able to simplify the code and get it running again.
+
+## Links to Activity
+
+Note: these links point to the same activity. We are providing multiple links in case one of them is blocked by your school.
+
+* [VAX game hosted from github.io](http://stemcodingohio.github.io/vaxgame/)
+* [VAX game hosted from OSU servers](https://www.asc.ohio-state.edu/orban.14/vaxgame/)
+* [VAX game hosted from stemcoding.org](http://stemcodingohio.github.io/vaxgame/)

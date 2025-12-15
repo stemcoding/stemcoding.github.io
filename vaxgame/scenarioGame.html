@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <!--Magic dot-->.
+
+    <script src=" https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js "></script>
+    <script src="assets/javascripts/footerMenu.js"></script>
+    <script src="assets/javascripts/staticNets.js"></script>
+    <script src="assets/javascripts/scenarioGame.js"></script>
+
+    <link href="assets/css/style.css" media="all" rel="stylesheet" />
+
+    <title>Scenario</title>
+  </head>
+
+  <body>
+    <audio id="audio">
+      <source src="assets/images/pop.wav" type="audio/wav" />
+    </audio>
+
+    <div class="actionVax" onclick=activateGameVaccinationMode()>
+      <div class="vaccineDepressedState"></div>
+      <text id = "vaxShieldText"> VACCINES </text>
+      <img id="vaxShieldIcon" src="assets/images/vaxShield.svg" alt="shield icon" onclick=activateGameVaccinationMode() />
+    </div>
+
+    <div class="actionQuarantine" onclick=activateGameQuarantineMode()>
+      <div class="quarantineDepressedState"></div>
+      <text id = "quarantineText"> QUARANTINE </text>
+      <img id="quarantineIcon" src="assets/images/quarantine.svg" alt="quarantine icon" onclick=activateGameQuarantineMode() />
+    </div>
+  </body>
+</html>

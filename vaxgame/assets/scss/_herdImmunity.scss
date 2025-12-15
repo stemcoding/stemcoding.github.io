@@ -1,0 +1,84 @@
+#hiNav {
+  position:absolute;
+  background: #85bc99;
+  float:right;
+  color: "white";
+  width:200px;
+  height: 35px;
+  line-height: 0px;
+  bottom: 10px;
+  padding-top: 30px;
+  padding-left: 12px;
+  text-align: center;
+  right:-5px;
+  visibility: visible;
+  display: inline;
+  box-shadow:5px 7px #838383;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+#vaxLogoDiv {
+  position:absolute;
+  background: #85bc99;
+  float:left;
+  width: 120px;
+  height: 50px;
+  bottom: 10px;
+  padding-top: 30px;
+  padding-left: 12px;
+  text-align: center;
+  left:0px;
+  visibility: visible;
+  display: inline;
+  font-family: "Nunito";
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 300;
+  box-shadow:5px 7px #838383;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+#hiGuideText {
+  position: absolute;
+  width: 80%;
+  margin: 0 auto;
+  margin-left: 100px;
+  margin-top: 50px;
+  line-height: 25px;
+  vertical-align: middle;
+  text-align: center;
+  font-family: "Nunito";
+  color: #707070;
+  font-size: 24px;
+  font-weight: 300;
+
+}
+
+.xAxis path,
+.xAxis line,
+.yAxis path,
+.yAxis line,
+.yAxis text,
+.xAxis text,
+.domain {
+  font-family:"Nunito";
+  font-size: 22px;
+  color: #707070;
+  fill: #707070;
+  stroke-width: 1px;
+}
+
+
+.bar {
+  fill: #ef5555;
+}
+
+.x.axis path {
+  display: none;
+}
