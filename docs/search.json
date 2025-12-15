@@ -378,501 +378,508 @@
     "text": "Fluid Mechanics Interactive Video"
   },
   {
-    "objectID": "projects/laser2.html",
-    "href": "projects/laser2.html",
-    "title": "Laser Defense Part 2",
+    "objectID": "projects/balloon.html",
+    "href": "projects/balloon.html",
+    "title": "Air Pressure Versus Height: 2. Balloon Data",
     "section": "",
-    "text": "Use your knowledge of programming, linear functions and trigonometry to protect an airport from drones. Similar to an old Atari game called missile command\nHopefully you completed Laser Defense (The Basic Game) and were able to add a laser to a simple code to damage an incoming drone. In this activity we are going to add code to catch the drone after it falls (explained in a moment). We are also going to add code to automate the targeting of the drone.\nAirport security is really happy with what you’ve done. The only problem is that when the drones hit the ground they are so mangled that it is hard to figure out who owns it or where it came from. They designed a rolling platform with a net to catch the drone before it can hit the ground. That is going to be a new challenge for the game. Ideally, there would be an automated system to catch the falling drone, so that is something to think about.\nThe other change in this activity is that we are going to use the arrow keys to change the angle of the laser instead of the x,y position of the focus. This is a bit more realistic. This also makes the game a bit harder. Later in the activity we will add code to automatically aim the laser at the drone so it is easier to damage the drones that are encroaching on our airspace."
+    "text": "Analyze air pressure data from weather balloons\nImage adapted from National Weather Service Forth Worth youtube channel"
   },
   {
-    "objectID": "projects/laser2.html#links-to-activity",
-    "href": "projects/laser2.html#links-to-activity",
-    "title": "Laser Defense Part 2",
+    "objectID": "projects/balloon.html#weather-balloon-data",
+    "href": "projects/balloon.html#weather-balloon-data",
+    "title": "Air Pressure Versus Height: 2. Balloon Data",
+    "section": "Weather Balloon Data",
+    "text": "Weather Balloon Data\nEarlier in Air Pressure Versus Height: Smartphone data we learned how to use smartphones to measure air pressure and how these devices are sensitive enough to detect the pressure change from even small changes in height. You can take measurements from your phone as you go up and down a stairwell. You can even attach your phone to a drone! This can be used to obtain pressure measurements as high as about 250 m above the ground, but how would we get pressure measurements from even higher than this? Answer: Weather balloons"
+  },
+  {
+    "objectID": "projects/balloon.html#how-to-obtain-the-data",
+    "href": "projects/balloon.html#how-to-obtain-the-data",
+    "title": "Air Pressure Versus Height: 2. Balloon Data",
+    "section": "How to obtain the data",
+    "text": "How to obtain the data\n\nWeather balloon data from across the world is freely available to analyze thanks to the National Oceanographic and Atmospheric Administration which has a public database at this link\nIt is important to figure out the code name for the weather station near you. For example, Wilmington, Ohio is USM00072426 and Amarillo, Texas is USM00072363. To find a weather station near you, look through this list of US station names with recent data. If you can’t find your city there you may be able to find it in the full list however note that for some cities the latest data available could be decades old which could be a problem because there may not be a height estimate for each pressure reading\nLook for the data for your station on https://www.ncei.noaa.gov/data/integrated-global-radiosonde-archive/access/data-y2d/ You will find a zip file with the name of the station (for example: USM00072363-data-beg2025.txt.zip) Download that file and figure out a way to unzip or extract the file so that it looks like USM00072363-data.txt This file contains many ballon measurements at that location. You only need one measurement!\nHere is what one measurement of pressure versus height looks like\n\n#USM00072363 2025 01 01 00 2306  324 ncdc-nws ncdc-gts  352331 -1017091\n21     0  89482B 1095    67B  420   120    92    15 \n20     7  89005  1139B   60B  362   138    40    29 \n20    20  88282  1204B   50B  387   129    59    26 \n20    28  87861  1244B   46B  397   125    60    26 \n20    45  86986  1325B   37B  418   117    83    26 \n20   105  85891  1428B   27B  440   110    65    16 \n20   121  85123  1500B   20B  457   104    70    19 \n10   123  85000  1512B   19B  460   103    70    20 \n20   203  82901  1714B    0B  504    90   180    29 \n20   205  82763  1727B   -1B  507    89   185    30 \n20   220  82001  1800B   -8B  527    84   179    14 \n20   245  80633  1934B  -22B  564    75   109    17 \n20   311  78968  2100B  -37B  610    64   136    31 \n20   325  78244  2172B  -43B  633    59   153    26 \n20   355  76772  2322B  -56B  668    52   179    28 \n20   514  72790  2738B  -71B  471    93   241    92 \n20   529  72108  2811B  -70B  449    99   250   111 \n20   543  71538  2873B  -71B  467    94   256   127 \n10   615  70000  3043B  -39B  425   108   273   150 \n20   621  69732  3074B  -39B  411   112   275   151 \n20   645  68604  3202B  -44B  360   127   279   174 \n20   705  67608  3317B  -47B  314   143   273   217 \n20   717  67080  3379B  -49B  306   146   274   225 \n20   745  65870  3522B  -56B  338   133   279   234 \n20   805  65015  3624B  -64B  355   127   279   216 \n20   824  64302  3710B  -70B  363   124   278   212 \n20   845  63357  3823B  -74B  344   129   276   210 \n20   917  61972  3997B  -81B  279   152   271   225 \n20   925  61636  4039B  -84B  283   150   270   230 \n20   953  60378  4200B  -92B  323   134   273   250 \n20   957  60206  4222B  -94B  326   133   274   251 \n20  1037  58461  4447B  -99B  150   216   281   299 \n20  1105  57281  4605B -106B  158   192   283   352 \n20  1125  56540  4705B -113B  124   214   283   377 \n20  1145  55859  4798B -121B  100   232   281   375 \n20  1225  54432  4995B -136B   72   260   284   387 \n20  1305  52862  5217B -146B   13   401   287   365 \n20  1318  52448  5276B -151B   12   402   286   364 \n............Many more lines of data!!!.............\n20  9705   1100 30177B -500B   11   315    32    85 \n20  9725   1079 30305B -499B   11   316    25    96 \n20  9805   1038 30557B -494B   10   319    50    86 \n10  9843   1000 30804B -490B   10   321    43    83 \n20  9845    998 30817B -490B   10   321    42    82 \n20  9905    978 30948B -488B   10   321    51    81 \n20  9945    939 31214B -486B   10   321    34   103 \n20 10005    921 31344B -487B   11   320    28   101 \n20 10025    902 31481B -486B   10   320    30    91 \n20 10105    867 31744B -486B   10   320    49    88 \n20 10125    849 31882B -485B   11   319    36    82 \n20 10127    847 31894B -485B   11   319    35    83 \n20 10147    830 32030B -485B   11   319    22    91 \n20 10221    807 32249B -486B   10   320    20    93 \n30 -9999  -9999  1200 -9999 -9999 -9999    60    26 \n30 -9999  -9999  1500 -9999 -9999 -9999    65    15 \n30 -9999  -9999  1800 -9999 -9999 -9999   185    15 \n30 -9999  -9999  2100 -9999 -9999 -9999   135    36 \n30 -9999  -9999  2400 -9999 -9999 -9999   185    26 \n30 -9999  -9999  2700 -9999 -9999 -9999   235    82 \n30 -9999  -9999  3300 -9999 -9999 -9999   275   216 \n30 -9999  -9999  3600 -9999 -9999 -9999   280   221 \n30 -9999  -9999  3900 -9999 -9999 -9999   270   231 \n30 -9999  -9999  4200 -9999 -9999 -9999   275   247 \n30 -9999  -9999  4500 -9999 -9999 -9999   285   350 \n30 -9999  -9999  4800 -9999 -9999 -9999   280   376 \n\nWe need to extract the third and fourth columns in order to plot the pressure versus height but this is a messy dataset that needs to be cleaned! For example, the fourth and fifth column includes the letter B next to the number which would be very confusing for any spreadsheet program to read in. If you are curious what these symbols mean it is explained in this file"
+  },
+  {
+    "objectID": "projects/balloon.html#example-data",
+    "href": "projects/balloon.html#example-data",
+    "title": "Air Pressure Versus Height: 2. Balloon Data",
+    "section": "Example data",
+    "text": "Example data\nHere are some examples of cleaned data where the extra symbols have been removed and all the lines that contain -9999 have been removed\n\nAmarillo TX data\nWilmington OH data"
+  },
+  {
+    "objectID": "projects/balloon.html#what-do-to-with-the-data",
+    "href": "projects/balloon.html#what-do-to-with-the-data",
+    "title": "Air Pressure Versus Height: 2. Balloon Data",
+    "section": "What do to with the data",
+    "text": "What do to with the data\nEarlier in Air Pressure Versus Height: Smartphone data we found that the air pressure decreases linearly with height, but we were only looking at data that was within 100 meters of the ground. Does the pressure versus height trendline continue to be linear above 100 meters? What mathematical function does it look like? Try plotting the pressure axis using a “log” scale."
+  },
+  {
+    "objectID": "projects/laser1.html",
+    "href": "projects/laser1.html",
+    "title": "Laser Defense Part 1",
+    "section": "",
+    "text": "Use your knowledge of programming and linear functions to protect an airport from drones. Similar to an old Atari game galled missle command.\nDrones have become cheaper and cheaper which is increasingly a problem at airports because people sometimes fly them in the airspace near the planes. If a plane wre to run into a drone, bad things could happen\nThere are not a ton of choices to take down drones that wander into the air space of an airport. One could try to snare the drone with a net, but that can be complicated. One could try to shoot it down with a machine gun, but the bullets that miss eventually land somewhere.\nA promising option is to use a laser to shoot down the drone. Right now the technology is primarily used by the military but eventually it will be something that civilian airports can use.\nIn this activity we will consider drones that are moving in a straight line ner an air port. We will need to aim a laser system at the drone and get the focusing of the laser right to shoot down the drone. If we are pointing in the right direction, but the focal point is off then the intensity of the light won’t be high enough to damage the drone. This is a real effect."
+  },
+  {
+    "objectID": "projects/laser1.html#links-to-activity",
+    "href": "projects/laser1.html#links-to-activity",
+    "title": "Laser Defense Part 1",
     "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Laser Defense Part 2\nLaser Defense Part 2 Code Editor"
+    "text": "Links to Activity\n\nInstructions for Laser Defense Part 1\nLaser Defense Part 1 Code Editor"
   },
   {
-    "objectID": "projects/airpressure.html",
-    "href": "projects/airpressure.html",
-    "title": "Air Pressure Versus Height: 1. Smartphone Data",
+    "objectID": "projects/bonk.html",
+    "href": "projects/bonk.html",
+    "title": "Bonk.io Clone",
     "section": "",
-    "text": "Analyze air pressure data from a smartphone or tablet\nIt turns out nearly all smartphones (iPhones and Android models) and nearly all iPads have air pressure sensors (a.k.a. barometers). There are a couple of apps you can use to get a pressure reading but the one that seems to work best on all platforms is the Arduino Science Journal app. The goal of this activity is to use the air pressure sensor in a smartphone to collect pressure data at different heights and compare the data to known physical models."
+    "text": "If you liked the Pong activity you’ll love this activity which is based on a real game called Bonk.io\nOne of the most popular and entertaining .io games out there right now is bonk.io If you’ve not played it you should definitely check it out. The game is pretty simple. You’re a little ball and you bounce off the ground and various objects. You have some ability to affect your motion, but if you get bounced by some object or some other player so that you fly off the board you lose the game. It’s a little bit like sumo wrestling that way."
   },
   {
-    "objectID": "projects/airpressure.html#links-to-activity",
-    "href": "projects/airpressure.html#links-to-activity",
-    "title": "Air Pressure Versus Height: 1. Smartphone Data",
+    "objectID": "projects/bonk.html#links-to-activity",
+    "href": "projects/bonk.html#links-to-activity",
+    "title": "Bonk.io Clone",
     "section": "Links to Activity",
-    "text": "Links to Activity\nInstructions for the activity, both data collection and data analysis, are given in the playlist shown below.\n\nDownload the Arduino Science Journal app\nStudent Worksheet\nHow do a trendline with Google Sheets and Excel\nExample data (pdf) Example data (csv)"
+    "text": "Links to Activity\n\nInstructions for Bonk.io Clone\nCode Editor for Bonk.io Clone"
   },
   {
-    "objectID": "projects/airpressure.html#equipment",
-    "href": "projects/airpressure.html#equipment",
-    "title": "Air Pressure Versus Height: 1. Smartphone Data",
-    "section": "Equipment",
-    "text": "Equipment\nOne of the following is sufficient for this activity:\n\nA smartphone (iPhone or android) with a built-in pressure sensor (nearly all smartphones have this)\nA tablet (iPad or Android) with a built-in pressure sensor (nearly all tablets have this)\nA digital altimeter for hiking, we recommend this model or similar\nA pressure sensor from adafruit or ardunio (requires familiarity with adafruit or arduino)\nA wireless or USB pressure sensor from an educational vendor like Vernier or Pasco (may require other equipment from these vendors to work)"
+    "objectID": "projects/bonk.html#pong-and-bonk.io-playlist",
+    "href": "projects/bonk.html#pong-and-bonk.io-playlist",
+    "title": "Bonk.io Clone",
+    "section": "Pong and Bonk.io Playlist",
+    "text": "Pong and Bonk.io Playlist"
   },
   {
-    "objectID": "projects/airpressure.html#software",
-    "href": "projects/airpressure.html#software",
-    "title": "Air Pressure Versus Height: 1. Smartphone Data",
-    "section": "Software",
-    "text": "Software\nWe recommend the Arduino Science Journal app for iOS or Android\nOther physics apps that use and display smartphone sensor data would also work fine (let us know if you have a favorite!)"
-  },
-  {
-    "objectID": "projects/airpressure.html#air-pressure-versus-height-playlist",
-    "href": "projects/airpressure.html#air-pressure-versus-height-playlist",
-    "title": "Air Pressure Versus Height: 1. Smartphone Data",
-    "section": "Air Pressure Versus Height Playlist",
-    "text": "Air Pressure Versus Height Playlist"
-  },
-  {
-    "objectID": "projects/solarsystem.html",
-    "href": "projects/solarsystem.html",
-    "title": "Solar System Model",
+    "objectID": "projects/pidayparallel.html",
+    "href": "projects/pidayparallel.html",
+    "title": "Pi Day in Parallel",
     "section": "",
-    "text": "Use a spreadsheet to design a model solar system"
+    "text": "In an earlier activity, you were able to approximate \\(\\pi\\) to two or three decimal places; however, it took quite a while for the computer to get to that level of precision.\nWe are going to try to find a faster way to estimate and, at the same time, reveal how many core processors our computer has."
   },
   {
-    "objectID": "projects/solarsystem.html#instructions",
-    "href": "projects/solarsystem.html#instructions",
-    "title": "Solar System Model",
-    "section": "Instructions",
-    "text": "Instructions\nAn important spreadsheet skill is to multiply the values in a particular column by a constant and have the result appear in the next column. Using $ in a spreadsheet can be helpful for this as discussed in the link. A situation where this is required is if you are making a scale model.\nImagine that your town or school has asked you to design a solar system model.\nStep 1. Decide how big your solar system model will be. For example, you can choose a football field, basketball court, classroom, a long straight sidewalk, etc. Each group should choose something different.\nDownload this CSV file with the planets and their distances to the sun and open it in a spreadsheet program\nNote: This CSV file uses solar system data from this NASA website\nStep 2. Configure columnn C in the spreadsheet so that it takes the distance in column B and divides it by the scale (Advice: This youtube video that was mentioned earlier is helpful for this task )\nStep 3. Change the scale to make sure that the model distance to Pluto is roughly the same as your solar system model (Advice: the scale should be much larger than 1)"
-  },
-  {
-    "objectID": "projects/solarsystem.html#optional-extensions",
-    "href": "projects/solarsystem.html#optional-extensions",
-    "title": "Solar System Model",
-    "section": "Optional Extensions",
-    "text": "Optional Extensions\n\nAsk the students to go and construct the model solar system. For example, use chalk to mark the planets on a sidewalk, or different sized balls on a basketball court or some other sports field, or go smaller with making the solar system model in a hallway or inside the classroom, or mark the planets on a meter stick, etc.\nTake the project a step further and use the same scale to determine the diameter of the balls in the model. You can find the diameter of each planet from these links. Which sized balls should be used for which planets?"
-  },
-  {
-    "objectID": "projects/nightsky.html",
-    "href": "projects/nightsky.html",
-    "title": "Night Sky Simulator",
-    "section": "",
-    "text": "Use some basic facts and equations about stars to randomly generate a realistic-looking starfield\nThe image above is not an actual picture of the night sky or any real star field (maybe you’ve already noticed that its a fake!). It is a randomly-generated night sky from a computer program we are going to build. We are going to learn a little bit about stars and then we are going to think about why some stars appear brighter in the sky than others and what it means.\nAn interesting thing about this activity is that you will be able to download a spreadsheet with the list of randomly generated stars. In the directions here we will use Google sheets to analyze that data but you can use any spreadsheet program you are comfortable with (Excel, Libreoffice, Apple – Numbers)"
-  },
-  {
-    "objectID": "projects/nightsky.html#links-to-activity",
-    "href": "projects/nightsky.html#links-to-activity",
-    "title": "Night Sky Simulator",
+    "objectID": "projects/pidayparallel.html#links-to-activity",
+    "href": "projects/pidayparallel.html#links-to-activity",
+    "title": "Pi Day in Parallel",
     "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Night Sky Simulator\nNight Sky Simulator Code Editor"
+    "text": "Links to Activity\n\nInstructions for Pi Day in Parallel\nPi Day in Parallel Code Editor"
   },
   {
-    "objectID": "projects/nightsky.html#night-sky-simulator-playlist",
-    "href": "projects/nightsky.html#night-sky-simulator-playlist",
-    "title": "Night Sky Simulator",
-    "section": "Night Sky Simulator Playlist",
-    "text": "Night Sky Simulator Playlist"
+    "objectID": "projects/keplers.html",
+    "href": "projects/keplers.html",
+    "title": "Orbital Motion: Kepler’s Second Law",
+    "section": "",
+    "text": "This activity involves taking the code at the end of the Slingshot with Gravity exercise and doing some experiments with that code to learn more about the special properties of objects that are experiencing the gravitational pull from a central object. This central object can be a star or a black hole or a neutron star, etc. and the object in orbit can be a comet or an asteroid or a space capsule or even a whole planet. Usually this topic is connected to discussions of the motion of planets around a star.\nKepler made a number of important discoveries about the motion of the planets in the solar system. In the Slingshot with Gravity activity we created a code that demonstrated that 1/r2 forces like gravity naturally produce elliptical orbits. Hopefully you played around with that code to try to see if you could make orbits other than an ellipse. It turns out that as long as the object does not have enough kinetic energy to totally escape the gravitational field of the star it will produce some kind of elliptical orbit. Not only will the trajectory be an ellipse, the object will follow this same path every time it moves around the star. This result is often referred to as Kepler’s first law. Kepler was an astronomer who looked closely at the orbits of planets like Venus and Mars.\nIn this activity we will consider Kepler’s second law. Kepler’s second law has to do with how quickly the planet moves in its elliptical orbit. Kepler showed that the area that the planet “sweeps out” over some interval of time is the same regardless what part of the orbit the planet is in. If you’ve never heard of Kepler’s laws the sentence you just read about planets sweeping things out will probably not make much sense"
   },
   {
-    "objectID": "projects/projectmercury2.html",
-    "href": "projects/projectmercury2.html",
-    "title": "Project Mercury Part 2",
+    "objectID": "projects/keplers.html#links-to-activity",
+    "href": "projects/keplers.html#links-to-activity",
+    "title": "Orbital Motion: Kepler’s Second Law",
+    "section": "Links to Activity",
+    "text": "Links to Activity\n\nInstructions for Ortbital Motion: Kepler’s Second Law *Orbital Motion: Kepler’s Second Law Code Editor"
+  },
+  {
+    "objectID": "projects/keplers.html#orbital-motion-keplers-second-law-playlist",
+    "href": "projects/keplers.html#orbital-motion-keplers-second-law-playlist",
+    "title": "Orbital Motion: Kepler’s Second Law",
+    "section": "Orbital Motion: Kepler’s Second Law Playlist",
+    "text": "Orbital Motion: Kepler’s Second Law Playlist"
+  },
+  {
+    "objectID": "projects/solarcell.html#links-to-activity",
+    "href": "projects/solarcell.html#links-to-activity",
+    "title": "Solar Cell Data Analysis",
+    "section": "Links to Activity",
+    "text": "Links to Activity\nSolar cell data repository\nTeacher Guide (PDF)\nTeacher Guide (MS Word)\nSolar Edge Public Solar Data"
+  },
+  {
+    "objectID": "projects/flower.html",
+    "href": "projects/flower.html",
+    "title": "Mathematical Flower Activity",
+    "section": "",
+    "text": "Let’s make our own flowers using mathematical functions and polar coordinates\nGreatly inspired by an episode of the Coding Train by Dan Shiffman"
+  },
+  {
+    "objectID": "projects/flower.html#links-to-activity",
+    "href": "projects/flower.html#links-to-activity",
+    "title": "Mathematical Flower Activity",
+    "section": "Links to Activity",
+    "text": "Links to Activity\n*Instructions for Mathematical Flower Activity"
+  },
+  {
+    "objectID": "projects/flower.html#mathematical-flower-activity-playlist",
+    "href": "projects/flower.html#mathematical-flower-activity-playlist",
+    "title": "Mathematical Flower Activity",
+    "section": "Mathematical Flower Activity Playlist",
+    "text": "Mathematical Flower Activity Playlist"
+  },
+  {
+    "objectID": "projects/acceleratetheblob.html",
+    "href": "projects/acceleratetheblob.html",
+    "title": "Accelerate the Blob",
+    "section": "",
+    "text": "Your browser does not support the video tag.\nCreate a simple game where an object can accelerate in the x and y directions depending on which arrow keys that are pressed\nIn real life, objects accelerate up to a particlar velocity. This exercise will show you how to modify the move the blob exercise so that the blob accelerates in response to the arrow keys, instead of the arrow keys directly controlling the velocity."
+  },
+  {
+    "objectID": "projects/acceleratetheblob.html#links-to-activity",
+    "href": "projects/acceleratetheblob.html#links-to-activity",
+    "title": "Accelerate the Blob",
+    "section": "Links to Activity",
+    "text": "Links to Activity\n\nInstructions for Accelerate the Blob\nCode Editor for Accelerate the Blob"
+  },
+  {
+    "objectID": "projects/acceleratetheblob.html#learning-objectives",
+    "href": "projects/acceleratetheblob.html#learning-objectives",
+    "title": "Accelerate the Blob",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAt the end of this lesson students will…\n\nUnderstand basic p5.js syntax, specifically the difference between “+=” and “=”.\nCompare and contrast acceleration and velocity pertaining to objects moving along a straight line path.\nAnalyze an object’s motion using multiple representations, specifically graphical, pictorial, vector, and algebraic."
+  },
+  {
+    "objectID": "projects/acceleratetheblob.html#accelerate-the-blob-videos",
+    "href": "projects/acceleratetheblob.html#accelerate-the-blob-videos",
+    "title": "Accelerate the Blob",
+    "section": "Accelerate the Blob Videos",
+    "text": "Accelerate the Blob Videos"
+  },
+  {
+    "objectID": "projects/conductor.html",
+    "href": "projects/conductor.html",
+    "title": "Conductor Interactive",
+    "section": "",
+    "text": "How do electrons move inside of a conductor? Play with a web interactive to find out!"
+  },
+  {
+    "objectID": "projects/conductor.html#links-to-activity",
+    "href": "projects/conductor.html#links-to-activity",
+    "title": "Conductor Interactive",
+    "section": "Links to Activity",
+    "text": "Links to Activity"
+  },
+  {
+    "objectID": "projects/conductor.html#conductor-interactive-video",
+    "href": "projects/conductor.html#conductor-interactive-video",
+    "title": "Conductor Interactive",
+    "section": "Conductor Interactive Video",
+    "text": "Conductor Interactive Video"
+  },
+  {
+    "objectID": "projects/figures.html#central-question",
+    "href": "projects/figures.html#central-question",
+    "title": "Good Figures vs. Bad Figures",
+    "section": "Central Question:",
+    "text": "Central Question:\nWhat makes for a good figure? What makes for a bad figure? Let’s look at some examples and discuss\nExamples of Bad Figures\nMore examples of Bad Figures from viz.wtf\nExamples of Good Figures"
+  },
+  {
+    "objectID": "projects/piday2.html",
+    "href": "projects/piday2.html",
+    "title": "Pi Day Part 2",
+    "section": "",
+    "text": "If you completed the Pi day activity and were surprised at how long it took to calculate the digits of π there is good news! There is a better way to calculate the digits of Pi!"
+  },
+  {
+    "objectID": "projects/piday2.html#links-to-activity",
+    "href": "projects/piday2.html#links-to-activity",
+    "title": "Pi Day Part 2",
+    "section": "Links to Activity",
+    "text": "Links to Activity\n\nInstructions for Pi Day Part 2\nPi Day Part 2 Code Editor"
+  },
+  {
+    "objectID": "projects/piday2.html#pi-day-part-2-playlist",
+    "href": "projects/piday2.html#pi-day-part-2-playlist",
+    "title": "Pi Day Part 2",
+    "section": "Pi Day Part 2 Playlist",
+    "text": "Pi Day Part 2 Playlist"
+  },
+  {
+    "objectID": "projects/projectmercury1.html",
+    "href": "projects/projectmercury1.html",
+    "title": "Project Mercury Part 1",
     "section": "",
     "text": "Mathematician Katherine Johnson is famous for calculating trajectories of America’s first manned space missions for Project Mercury as depicted in the movie Hidden Figures.\nThe big concern at that point in the history of the space program was accurately predicting where a spacecraft would land in the ocean after re-entering the earth’s atmosphere. Any miscalculation could send the mercury capsule hundreds of miles from where the Navy was expecting to recover the spacecraft and the astronaut inside.\nThe calculation that Katherine Johnson did had to consider many different effects on the trajectory of the mercury capsule. For this activity we are going to keep it simple and start with putting the capsule in a circular orbit. In the second part, we will consider how the mercury capsule comes back to earth. This part of the space mission is referred to as “re-entry”."
   },
   {
-    "objectID": "projects/projectmercury2.html#links-to-activity",
-    "href": "projects/projectmercury2.html#links-to-activity",
-    "title": "Project Mercury Part 2",
+    "objectID": "projects/projectmercury1.html#links-to-activity",
+    "href": "projects/projectmercury1.html#links-to-activity",
+    "title": "Project Mercury Part 1",
     "section": "Links to Activity",
-    "text": "Links to Activity\n\nPart 2\n\nInstructions for Project Mercury (Part 2)\nProject Mercury (Part 2) Code Editor"
+    "text": "Links to Activity\n\nPart 1\n\nInstructions for Project Mercury (Part 1)\nProject Mercury (Part 1) Code Editor"
   },
   {
-    "objectID": "projects/movetheblob.html",
-    "href": "projects/movetheblob.html",
-    "title": "Move the Blob",
+    "objectID": "projects/projectmercury1.html#project-mercury-playlist",
+    "href": "projects/projectmercury1.html#project-mercury-playlist",
+    "title": "Project Mercury Part 1",
+    "section": "Project Mercury Playlist",
+    "text": "Project Mercury Playlist"
+  },
+  {
+    "objectID": "projects/co2.html",
+    "href": "projects/co2.html",
+    "title": "CO2 Survey",
     "section": "",
-    "text": "On the internet there are some fun games where you control a circle-looking-thing that you can move around and interact (and potentially destroy or absorb!) other circle-looking things controlled by other people. Two games that come to mind are diep.io and agar.io. There are plenty of others like them out there"
+    "text": "Use a CO2 sensor to measure air quality in your building"
   },
   {
-    "objectID": "projects/movetheblob.html#links-to-activity",
-    "href": "projects/movetheblob.html#links-to-activity",
-    "title": "Move the Blob",
+    "objectID": "projects/co2.html#equipment",
+    "href": "projects/co2.html#equipment",
+    "title": "CO2 Survey",
+    "section": "Equipment",
+    "text": "Equipment\nWe recommend the Temtop home CO2 air quality sensor or similar\nIn principle, one can also use an adafruit or arudino CO2 sensor if you are comfortable using adafruit or ardino devices"
+  },
+  {
+    "objectID": "projects/co2.html#links-to-activity",
+    "href": "projects/co2.html#links-to-activity",
+    "title": "CO2 Survey",
     "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Move the Blob\nCode Editor for Move the Blob"
+    "text": "Links to Activity\n\nGoogle Slide Deck\nRandom CO2 data generator with p5.js"
   },
   {
-    "objectID": "projects/movetheblob.html#learning-objectives",
-    "href": "projects/movetheblob.html#learning-objectives",
-    "title": "Move the Blob",
+    "objectID": "projects/co2.html#news-articles-to-discuss",
+    "href": "projects/co2.html#news-articles-to-discuss",
+    "title": "CO2 Survey",
+    "section": "News articles to discuss",
+    "text": "News articles to discuss\n\nVirus transmission is a concern for national and international conferences. In 2025, a conference set up a sophisticated system for monitoring CO2 as discussed in an article at this link. If the link is broken you can download this pdf"
+  },
+  {
+    "objectID": "projects/apollo.html",
+    "href": "projects/apollo.html",
+    "title": "Apollo Moon Landing",
+    "section": "",
+    "text": "Your browser does not support the video tag.\nLand a rocket on the moon, but be careful not to land too hard!"
+  },
+  {
+    "objectID": "projects/apollo.html#links-to-activity",
+    "href": "projects/apollo.html#links-to-activity",
+    "title": "Apollo Moon Landing",
+    "section": "Links to Activity",
+    "text": "Links to Activity\n\nInstructions for Apollo Moon Landing\nApollo Moon Landing Code Editor"
+  },
+  {
+    "objectID": "projects/apollo.html#apollo-moon-landing-playlist",
+    "href": "projects/apollo.html#apollo-moon-landing-playlist",
+    "title": "Apollo Moon Landing",
+    "section": "Apollo Moon Landing Playlist",
+    "text": "Apollo Moon Landing Playlist"
+  },
+  {
+    "objectID": "projects/sunspots.html",
+    "href": "projects/sunspots.html",
+    "title": "Sunspots",
+    "section": "",
+    "text": "People have been observing the sun for centuries. Let’s look at the data and see what we can learn!"
+  },
+  {
+    "objectID": "projects/sunspots.html#background-information",
+    "href": "projects/sunspots.html#background-information",
+    "title": "Sunspots",
+    "section": "Background information",
+    "text": "Background information\nThe sun might seem like a simple place where hot plasma radiates and everything stays about the same, but there is quite a bit more to it than that.\nThe surface of the sun is magnetically active. You can see this in the image above from the Solar Dynamics Observatory. At high or low latitudes you can notice the phenomenon of ``aurora borealis”, as many people did in 2024. You can also observe this yourself witha telescope, or a pin-hole solar viewer. Here is an image of the sun from the same day as the image above but at a wavelength that is something you could potentially observe with a solar filter on a small telescope.\n\n\n\n\n\nThe dark areas are called “sun spots”. These areas are dark because the magnetic field in those regions is so strong that the magnetic pressure is larger than the gas pressure. Ultimately this causes the region to be slightly colder than othe regions. These dark spots are still blindingly bright, but they are not quite as bright as the surrounding areas so they appear dark when viewed by a telescope with a solar filter.\nThe sun is magnetically active because the plasma in the sun is always moving and this tends to stretch out magnetic field lines and tie them in knots as discussed in this video"
+  },
+  {
+    "objectID": "projects/sunspots.html#go-safely-observe-the-sun",
+    "href": "projects/sunspots.html#go-safely-observe-the-sun",
+    "title": "Sunspots",
+    "section": "Go (safely) observe the sun!",
+    "text": "Go (safely) observe the sun!\nFind a small telescope, buy a cheap solar filter, and go (safely) observe the sun. KEY OBJECTIVE: How many sunspots can you see!\nAdvice:\n\nConsider asking a local astronomy club for a volunteer to help with this. Odds are they will already have the equipment you need. Or ask a science teacher friend to help.\nThe more expensive solar filters as just as safe as the cheap solar filters. The expensive solar filters show slightly more detail with the sunspots, so they are better if you were going to try to take photographs, but for just looking at the sun and counting the number of sunspots the expensive solar filters aren’t that much better than the inexpensive ones.\nUse the largest (widest diameter, heaviest) eyepiece that you have because these eyepieces zoom out the most, thus making it much easier to put the sun in view. The smaller eyepieces are for zooming in, but because of this it is difficult to use these eyepieces unless you are already precisely aimed at the sun. So maybe just stick with the zoomed out eyepieces for this activity.\nDo NOT use the spotting scope attached to the telescope to help align the telescope with the sun. Instead, look closely at the shadow that your telescope makes, and use that to align the telescope with the sun.\nPut the solar filter on the telescope at the beginning and leave it there until the observing is over. You can align the telescope with the sun even with the solar filter on.\nIf you are worried about aligning the telescope with the sun, you can practice in the evenings by aligning the telescope with the moon (with the solar filter off, obviously). If the moon is bright enough you can use the shadow trick to align the telescope with the moon without the spotting scope.\nIt is possible that the sun will not be very magnetically active on the day that you observe it and perhaps only one or zero sunspots will be visible\n\nAlternative ways to observe sunspots\n\nIf you are less crafty, or it turns out to be cloudy on the day you planned to do all this, then check out the website for NASA’s Solar Dynamics Observatory, look at “The Sun Now” and click through all the different images of the sun\nAnother way to observe the sun is something that people do to observe eclipses called a “box pinhole projector”. Get a cardboard box (larger is better), cut out part of it and place aluminum foil on that part and then use a needle or a paperclip to put a small hole in the aluminum foil. This will produce an image of the sun on the opposite side of the box. It helps to put regular office paper on the side where the image of the sun appears. If the sunspot is large enough, you may be able to see it with this method\nStill another way to observe the sun is using a small telescope and something that some call a “light bucket” or “sun funnel”\n\n\n\n\n\n\nA random OSU Marion professor is projecting the sun onto a thin piece of rubber that is attached to a funnel purchased from an auto parts store.\nAn advantage of the light bucket / sun funnel is that students don’t need to look into an eyepiece, consequently you don’t need to worry about the focus being correct for each student (since they will all have different eyesight). A disadvantage is that you can see sunspots but not as clearly as you can with an optical solar filter and an eyepiece. Note that when you use the sun funnel, you do not use a solar filter (which is true of the image above)."
+  },
+  {
+    "objectID": "projects/sunspots.html#download-historical-sunspot-data-and-make-a-chart",
+    "href": "projects/sunspots.html#download-historical-sunspot-data-and-make-a-chart",
+    "title": "Sunspots",
+    "section": "Download historical sunspot data and make a chart",
+    "text": "Download historical sunspot data and make a chart\nAfter giving students a context for what sunspots are, and how many sunspots are on the sun right now, we can now focus on how the number of sunspots vary over time. It turns out that the Royal Observatory of Belgium has been observing the sun since the 1700s.\n\nHere is a link to the Royal Observatory of Belgium Historical Solar Data Page, note that it automatically keeps the files up to date so you can always get measurements from as recently as a few weeks ago\n\nBecause the Royal Observatory of Belgium website keeps the data up to date, we are not going to provide a downloadable data file here that will quickly go out of date.\nAdvice:\n\nFocus on the “Monthly mean total sunspot number” data. Although daily data is available, there are often days when no measurement was taken, or no sunspots were observed which appear as -1 in the file. The monthly data does not have this issue because there is always at least one sun spot observed.\n\nSteps\n\nClick to download the CSV of the “Monthly mean total sunspot number” or just click this link https://www.sidc.be/SILSO/INFO/snmtotcsv.php\nLoad the CSV file into a spreadsheet program. For the delimiter, specify a custom delimiter of ;\nIdentify the column for time and the column for the number of sunspots observed, and add a chart\n\nThe chart should look something like this:"
+  },
+  {
+    "objectID": "projects/sunspots.html#explore-and-analyze-the-data",
+    "href": "projects/sunspots.html#explore-and-analyze-the-data",
+    "title": "Sunspots",
+    "section": "Explore and analyze the data!",
+    "text": "Explore and analyze the data!\nHere are some questions to consider\n\nWhat are the patterns in the data?\nWhat evidence is there for a solar “cycle”? How long is this cycle? Is the length of this cycle always the same or does it change?\nAccording to the data, what is the average number of sunspots per month?\nIs there a particularly large or small number of sunspots on the sun right now compared to the average?\nThe aurora in 2024 was an epic sight that many people in the midwest and northern US states enjoyed. According to the number of sunspots observed, how unusual was the magnetic activity during 2024 compared to the magnetic activity that your parents or grandparents may have been able to see when they were growing up?\nWhat do you think the sunspot data will look like over the next few years? Will it be increasing or decreasing?\nIt turns out that when the sun is more active (i.e. when more sunspots are observed) that the earth is slightly hotter, and when the sun is less active (i.e. fewer sunspots are observed) the earth is slightly cooler. For example when there was low sunspot activity in the early 1800s, according to historical records, the earth was slightly cooler than normal. over the past two decades, the earth has been few degrees farenheit warmer than it has typically been compred to data from more than two decades ago. Is it possible that increased solar activity is the cause of the increased temperature of the earth? Has the solar activity over the past two decades been significantly higher, lower or roughly the same as earlier periods of time?"
+  },
+  {
+    "objectID": "projects/sunspots.html#optional-extension-upload-the-data-to-an-ai-model",
+    "href": "projects/sunspots.html#optional-extension-upload-the-data-to-an-ai-model",
+    "title": "Sunspots",
+    "section": "Optional extension: Upload the data to an AI model",
+    "text": "Optional extension: Upload the data to an AI model\nAI models like ChatGPT have the ability to read in data and create plots using python. Upload your data set to your favorite AI model and have a dialogue with it about what patterns you think might be in the data and ways that these patterns can be analyzed.\nNote: There may be limits on the number of “premium” queries. Note that students get free access to Github pro, and teachers can get a verified Github Education account which provides lots of free AI queries to Github copilot – much more than what you can currently get from most AI models."
+  },
+  {
+    "objectID": "projects/planetoids.html",
+    "href": "projects/planetoids.html",
+    "title": "Planetoids",
+    "section": "",
+    "text": "Your browser does not support the video tag.\nThis lab will guide you through coding up a web-based implementation of the classic video game asteroids."
+  },
+  {
+    "objectID": "projects/planetoids.html#links-to-activity",
+    "href": "projects/planetoids.html#links-to-activity",
+    "title": "Planetoids",
+    "section": "Links to Activity",
+    "text": "Links to Activity\n\nInstructions for Planetoids\nCode Editor for Planetoids"
+  },
+  {
+    "objectID": "projects/planetoids.html#learning-objectives",
+    "href": "projects/planetoids.html#learning-objectives",
+    "title": "Planetoids",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\nAt the end of this lesson students will…\n\nUnderstand basic p5.js syntax, specifically the difference between “+=” and “=”.\nExplain how position and velocity are related using visual evidence from the game.\nCreate a simple “Move the Blob” game which allows them to move a circle using arrow keys."
+    "text": "Learning Objectives\nAt the end of this lesson students will…\n\nApply kinematic equations to code an object’s motion when force is applied\nApply Newton’s laws of motion to code how an object behaves under different net force conditions\nEvaluate how changing mass can optimize spacecraft maneuverability"
   },
   {
-    "objectID": "projects/movetheblob.html#move-the-blob-video",
-    "href": "projects/movetheblob.html#move-the-blob-video",
-    "title": "Move the Blob",
-    "section": "Move the Blob Video",
-    "text": "Move the Blob Video"
+    "objectID": "projects/planetoids.html#planetoids-playlist",
+    "href": "projects/planetoids.html#planetoids-playlist",
+    "title": "Planetoids",
+    "section": "Planetoids Playlist",
+    "text": "Planetoids Playlist"
   },
   {
-    "objectID": "projects/birdslauncher.html",
-    "href": "projects/birdslauncher.html",
-    "title": "Bird Launcher",
+    "objectID": "projects/eccentricity.html",
+    "href": "projects/eccentricity.html",
+    "title": "Orbital Motion: Eccentricity",
     "section": "",
-    "text": "Create an angry birds game where the arrow keys control the launch velocity"
+    "text": "Learn how to measure the eccentricity of an orbit from a gravity simulation"
   },
   {
-    "objectID": "projects/birdslauncher.html#links-to-activity",
-    "href": "projects/birdslauncher.html#links-to-activity",
-    "title": "Bird Launcher",
+    "objectID": "projects/eccentricity.html#links-to-activity",
+    "href": "projects/eccentricity.html#links-to-activity",
+    "title": "Orbital Motion: Eccentricity",
     "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for the Bird Launcher\nCode Editor for the Bird Launcher"
+    "text": "Links to Activity\n\nInstructions for Orbital Motion: Eccentricity\nOrbital Motion: Eccentricity Code Editor"
   },
   {
-    "objectID": "projects/birdslauncher.html#bird-launcher-playlist",
-    "href": "projects/birdslauncher.html#bird-launcher-playlist",
-    "title": "Bird Launcher",
-    "section": "Bird Launcher Playlist",
-    "text": "Bird Launcher Playlist"
-  },
-  {
-    "objectID": "projects/planetoidstorque.html",
-    "href": "projects/planetoidstorque.html",
-    "title": "Planetoids with Torque",
+    "objectID": "projects/planetoidsmomentum.html",
+    "href": "projects/planetoidsmomentum.html",
+    "title": "Planetoids with Momentum",
     "section": "",
-    "text": "Your browser does not support the video tag.\nIn this lab we will make the planetoids game more realistic by allowing the space craft to spin around as it would if it were really traveling in space. So in addition to a rocket engine that can propel the space craft forward, the ship will have thrusters on the front and back that can provide torque to spin the ship either the clockwise or counter-clockwise direction."
+    "text": "In a typical college physics course you will at some point encounter the idea of conservation of momentum. Momentum conservation is very important! In situations where two objects collide, we often don’t know the force or acceleration as a function of time, but we do know the initial velocities. If we know the type of collision that occurs, it turns out that the initial velocities and the masses of the objects are all we need to figure out the final velocities."
   },
   {
-    "objectID": "projects/planetoidstorque.html#links-to-activity",
-    "href": "projects/planetoidstorque.html#links-to-activity",
-    "title": "Planetoids with Torque",
+    "objectID": "projects/planetoidsmomentum.html#links-to-activity",
+    "href": "projects/planetoidsmomentum.html#links-to-activity",
+    "title": "Planetoids with Momentum",
     "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Planetoids with Torque\nPlanetouds with Torque Code Editor"
+    "text": "Links to Activity\n\nInstructions for Planetoids with Momentum\nCode Editor for Planetoids with Momentum"
   },
   {
-    "objectID": "projects/planetoidstorque.html#learning-objectives",
-    "href": "projects/planetoidstorque.html#learning-objectives",
-    "title": "Planetoids with Torque",
+    "objectID": "projects/planetoidsmomentum.html#learning-objectives",
+    "href": "projects/planetoidsmomentum.html#learning-objectives",
+    "title": "Planetoids with Momentum",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\nAt the end of this lesson students will…\n\nApply rotational kinematic equations to code an object’s motion when force is applied at a distance from a fulcrum\nApply Newton’s laws of motion to code how an object behaves under different net torque conditions\nEvaluate how changing mass, length, and thrust force can optimize spacecraft maneuverability"
+    "text": "Learning Objectives\nAt the end of this lesson students will…\n\nApply conservation of momentum equations in 1-D to properly code a perfectly inelastic collision.\nApply conservation of momentum equations in 2-D along with basic geometry to properly code a perfectly inelastic collision."
   },
   {
-    "objectID": "projects/planetoidstorque.html#planetoids-with-torque-playlist",
-    "href": "projects/planetoidstorque.html#planetoids-with-torque-playlist",
-    "title": "Planetoids with Torque",
-    "section": "Planetoids with Torque Playlist",
-    "text": "Planetoids with Torque Playlist"
+    "objectID": "projects/planetoidsmomentum.html#planetoids-with-momentum-playlist",
+    "href": "projects/planetoidsmomentum.html#planetoids-with-momentum-playlist",
+    "title": "Planetoids with Momentum",
+    "section": "Planetoids with Momentum Playlist",
+    "text": "Planetoids with Momentum Playlist"
   },
   {
-    "objectID": "projects/piday1.html",
-    "href": "projects/piday1.html",
-    "title": "Pi Day Part 1",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "STEMcoding",
     "section": "",
-    "text": "Calculate the digits of pi with a random number generator and some code!"
+    "text": "The STEMcoding project is a partnership between faculty members and students at Ohio State University and the University of Mount Union\nThe STEMcoding project exists to re-imagine introductory STEM courses like math and science with computer science and data science in mind. Our activities are used in intro level college courses and high school courses.\nWe love to create activities that each align with relevant math, science and computer science standards. Some of our physical science activities appear on the “model curriculum” examples distributed by the Ohio Department of Education and Workforce. We are also working to create a year-long data science curriculum.\nWe are very proud of the STEMcoding youtube channel! We have released over 100 videos featuring faculty and students at Ohio State University and the University of Mount Union.\n\n\nWe hope you enjoy this site! Check out our Social Media Feed to see what we’ve been up to lately, or our Calendar to see upcoming events and trainings. Please join our Discord to reach out or ask questions!"
   },
   {
-    "objectID": "projects/piday1.html#links-to-activity",
-    "href": "projects/piday1.html#links-to-activity",
-    "title": "Pi Day Part 1",
-    "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Pi Day Part 1\nPi Day Part 1 Code Editor"
-  },
-  {
-    "objectID": "projects/piday1.html#pi-day-part-1-playlist",
-    "href": "projects/piday1.html#pi-day-part-1-playlist",
-    "title": "Pi Day Part 1",
-    "section": "Pi Day Part 1 Playlist",
-    "text": "Pi Day Part 1 Playlist"
-  },
-  {
-    "objectID": "projects/waveinterference.html",
-    "href": "projects/waveinterference.html",
-    "title": "Wave Interference",
+    "objectID": "index.html#welcome-to-the-stemcoding-landing-page",
+    "href": "index.html#welcome-to-the-stemcoding-landing-page",
+    "title": "STEMcoding",
     "section": "",
-    "text": "Your browser does not support the video tag.\nThis programming lab is designed to illustrate the idea of wave interference. This happens because of the principle of “superposition”. For sound waves, this 20 dollar word just means that if there are two speakers in a large room or open space, the amplitude of the sound waves at a particular point in that room are the sum of the waves of the two speakers."
+    "text": "The STEMcoding project is a partnership between faculty members and students at Ohio State University and the University of Mount Union\nThe STEMcoding project exists to re-imagine introductory STEM courses like math and science with computer science and data science in mind. Our activities are used in intro level college courses and high school courses.\nWe love to create activities that each align with relevant math, science and computer science standards. Some of our physical science activities appear on the “model curriculum” examples distributed by the Ohio Department of Education and Workforce. We are also working to create a year-long data science curriculum.\nWe are very proud of the STEMcoding youtube channel! We have released over 100 videos featuring faculty and students at Ohio State University and the University of Mount Union.\n\n\nWe hope you enjoy this site! Check out our Social Media Feed to see what we’ve been up to lately, or our Calendar to see upcoming events and trainings. Please join our Discord to reach out or ask questions!"
   },
   {
-    "objectID": "projects/waveinterference.html#links-to-activity",
-    "href": "projects/waveinterference.html#links-to-activity",
-    "title": "Wave Interference",
-    "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Wave Interferece\nWave Interference Code Editor"
-  },
-  {
-    "objectID": "projects/waveinterference.html#learning-objectives",
-    "href": "projects/waveinterference.html#learning-objectives",
-    "title": "Wave Interference",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nBy the end of this activity students will…\n\nUnderstand how wave interference affects the observed volume at various locations in a room.\nCreate a simulation to observe where waves have constructive and destructive interference in a room with two speakers."
-  },
-  {
-    "objectID": "projects/waveinterference.html#wave-interference-playlist",
-    "href": "projects/waveinterference.html#wave-interference-playlist",
-    "title": "Wave Interference",
-    "section": "Wave Interference Playlist",
-    "text": "Wave Interference Playlist"
-  },
-  {
-    "objectID": "projects/magneticforce.html",
-    "href": "projects/magneticforce.html",
-    "title": "Magnetic Force",
+    "objectID": "standards.html",
+    "href": "standards.html",
+    "title": "Standards",
     "section": "",
-    "text": "Your browser does not support the video tag.\nYou may recall the last programming exercise that involved a particle being accelerated through two charged plates. In this exercise we will add a magnetic field to the right hand side of the simulation. The particle only experiences this field when it passes into the right-hand side. This example is loosely based on the idea of a “mass spectrometer”. It turns out that if you vaporize a little bit of a sample with some unknown molecules there tends to be alot of molecules that lose ONE electron. Since the molecule has lost an electron it has a +1 charge. The mass of the molecule is essentially the same even if it is missing an electron because electrons make up a very, very small fraction of the mass of atoms. As you will learn about in this lab, the trajectory of the particle in the magnetic field tells us something about the mass of the particle (if you already know q, v, and B for example)."
+    "text": "Under Construction!"
   },
   {
-    "objectID": "projects/magneticforce.html#links-to-activity",
-    "href": "projects/magneticforce.html#links-to-activity",
-    "title": "Magnetic Force",
-    "section": "Links to Activity",
-    "text": "Links to Activity\nInstructions for Magnetic Force Magnetic Force Code Editor"
-  },
-  {
-    "objectID": "projects/magneticforce.html#learning-objectives",
-    "href": "projects/magneticforce.html#learning-objectives",
-    "title": "Magnetic Force",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nAt the end of this lesson students will…\n\nApply the magnetic force relationship with Newton’s 2nd law to code the trajectory of a moving, positive particle in a magnetic field\nUnderstand how changes in charge, mass, and magnetic field direction affect the trajectory of the particle."
-  },
-  {
-    "objectID": "projects/magneticforce.html#magnetic-force-playlist",
-    "href": "projects/magneticforce.html#magnetic-force-playlist",
-    "title": "Magnetic Force",
-    "section": "Magnetic Force Playlist",
-    "text": "Magnetic Force Playlist"
-  },
-  {
-    "objectID": "projects/particleacceleratorpotential.html",
-    "href": "projects/particleacceleratorpotential.html",
-    "title": "Particle Accelerator with Potential",
+    "objectID": "tags/data_science.html",
+    "href": "tags/data_science.html",
+    "title": "Data Science",
     "section": "",
-    "text": "After completing Particle Accelerator, check out this activity where we consider what happens if the “Electric Potential” is kept the same even as we change the Electric field and the separation between the plates"
+    "text": "Earth Day"
   },
   {
-    "objectID": "projects/particleacceleratorpotential.html#links-to-activity",
-    "href": "projects/particleacceleratorpotential.html#links-to-activity",
-    "title": "Particle Accelerator with Potential",
-    "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Particle Accelerator with Potential\nParticle Accelerator with Potential Code Editor"
-  },
-  {
-    "objectID": "projects/particleacceleratorpotential.html#learning-objectives",
-    "href": "projects/particleacceleratorpotential.html#learning-objectives",
-    "title": "Particle Accelerator with Potential",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nAt the end of this lesson students will…\n\nUnderstand that electric potential can appropriately model how electric fields affect charged particles.\nUnderstand how a charged particle’s motion is affected by the electric potential of a field.\nAnalyze the situation to calculate the final velocity of a particle after experiencing an electric field using electric potential relationships."
-  },
-  {
-    "objectID": "projects/lunar.html",
-    "href": "projects/lunar.html",
-    "title": "Lunar Descent",
+    "objectID": "tags/enviro.html",
+    "href": "tags/enviro.html",
+    "title": "Environmental Science",
     "section": "",
-    "text": "If you have finished tinkering with the Planetoids lab you can continue with this lab where we will now add gravity to the game! You have a little ship that you must fly around and land safely on the moon. If you approach the landing too fast you will crash the ship."
+    "text": "Earth Day"
   },
   {
-    "objectID": "projects/lunar.html#links-to-activity",
-    "href": "projects/lunar.html#links-to-activity",
-    "title": "Lunar Descent",
-    "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Lunar Descent\nCode Editor for Lunar Descent"
-  },
-  {
-    "objectID": "projects/lunar.html#learning-objecties",
-    "href": "projects/lunar.html#learning-objecties",
-    "title": "Lunar Descent",
-    "section": "Learning Objecties",
-    "text": "Learning Objecties\nAt the end of this lesson students will…\n\nApply kinematic equations to code a ships descent through a gravitational field.\nApply Newton’s laws of motion to code how an object behaves under different force conditions.\nApply gravitational field strength to the base planetoids game.\nEvaluate the free fall time displayed on the simulation for realism."
-  },
-  {
-    "objectID": "projects/lunar.html#lunar-descent-playlist",
-    "href": "projects/lunar.html#lunar-descent-playlist",
-    "title": "Lunar Descent",
-    "section": "Lunar Descent Playlist",
-    "text": "Lunar Descent Playlist"
-  },
-  {
-    "objectID": "projects/particleaccelerator.html",
-    "href": "projects/particleaccelerator.html",
-    "title": "Particle Accelerator",
+    "objectID": "tags/electro.html",
+    "href": "tags/electro.html",
+    "title": "Electromagnetism",
     "section": "",
-    "text": "Your browser does not support the video tag.\nIn this exercise we will make a simulation of a charged particle being accelerated between two plates."
+    "text": "Electromagnetism Units"
   },
   {
-    "objectID": "projects/particleaccelerator.html#links-to-activity",
-    "href": "projects/particleaccelerator.html#links-to-activity",
-    "title": "Particle Accelerator",
-    "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Particle Accelerator\nParticle Accelerator Code Editor"
-  },
-  {
-    "objectID": "projects/particleaccelerator.html#learning-objectives",
-    "href": "projects/particleaccelerator.html#learning-objectives",
-    "title": "Particle Accelerator",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nAt the end of this lesson students will…\n\nExplain how force and acceleration are related using visual evidence from the game.\nUnderstand how a charged particle’s motion is affected by its mass and charge while in an electric field.\nAnalyze the situation to calculate the final velocity of a particle after being immersed in an electric field."
-  },
-  {
-    "objectID": "projects/particleaccelerator.html#particle-accelerator-playlist",
-    "href": "projects/particleaccelerator.html#particle-accelerator-playlist",
-    "title": "Particle Accelerator",
-    "section": "Particle Accelerator Playlist",
-    "text": "Particle Accelerator Playlist"
-  },
-  {
-    "objectID": "projects/rc.html",
-    "href": "projects/rc.html",
-    "title": "RC Circuits",
+    "objectID": "flowchart.html",
+    "href": "flowchart.html",
+    "title": "Activity Flowcharts / Prerequisites",
     "section": "",
-    "text": "This programming lab is unlike the previous ones in that it involves circuits. Specifically it involves circuits with a battery, a capacitor and one or two resistors."
+    "text": "flowchart LR\n  A[Move the Blob] --&gt; B[Accelerate the Blob]\n  click A \"projects/movetheblob.html\" \"Move the Blob\"\n  B --&gt; C[Apollo Moon Landing]\n  click C \"projects/apollo.html\" \"Apollo Moon Landing\"\n  B --&gt; D[Bird Launcher]\n  click B \"projects/acceleratetheblob.html\" \"Accelerate the Blob\"\n  click D \"projects/birdlauncher.html\" \"Bird Launcher\"\n\n\n\n\n\n\n\n\n\n\n\nflowchart LR\n  A[Pong] --&gt; B[Bonk.io Clone]\n  click A \"projects/pong.html\" \"Pong\"\n  click B \"projects/bonk.html\" \"Bonk.io\""
   },
   {
-    "objectID": "projects/rc.html#links-to-activity",
-    "href": "projects/rc.html#links-to-activity",
-    "title": "RC Circuits",
-    "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for RC Circuits\nRC Circuits Code Editor"
-  },
-  {
-    "objectID": "projects/rc.html#learning-objectives",
-    "href": "projects/rc.html#learning-objectives",
-    "title": "RC Circuits",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nAt the end of this lesson students will…\n\nApply Ohm’s law to code a RC circuit so it behaves in a physically accurate way.\nEvaluate how changing various values of a circuit (Capacitance, resistance) affects the dissipation time of a capacitor."
-  },
-  {
-    "objectID": "projects/rc.html#rc-circuits-playlist",
-    "href": "projects/rc.html#rc-circuits-playlist",
-    "title": "RC Circuits",
-    "section": "RC Circuits Playlist",
-    "text": "RC Circuits Playlist"
-  },
-  {
-    "objectID": "projects/slingshotgravity.html",
-    "href": "projects/slingshotgravity.html",
-    "title": "Slingshot With Gravity",
+    "objectID": "flowchart.html#physics-of-video-games-intro-level-no-trigonometry",
+    "href": "flowchart.html#physics-of-video-games-intro-level-no-trigonometry",
+    "title": "Activity Flowcharts / Prerequisites",
     "section": "",
-    "text": "Instructions for Slingshot with Gravity\nSlingshot with Gravity Code Editor"
+    "text": "flowchart LR\n  A[Move the Blob] --&gt; B[Accelerate the Blob]\n  click A \"projects/movetheblob.html\" \"Move the Blob\"\n  B --&gt; C[Apollo Moon Landing]\n  click C \"projects/apollo.html\" \"Apollo Moon Landing\"\n  B --&gt; D[Bird Launcher]\n  click B \"projects/acceleratetheblob.html\" \"Accelerate the Blob\"\n  click D \"projects/birdlauncher.html\" \"Bird Launcher\"\n\n\n\n\n\n\n\n\n\n\n\nflowchart LR\n  A[Pong] --&gt; B[Bonk.io Clone]\n  click A \"projects/pong.html\" \"Pong\"\n  click B \"projects/bonk.html\" \"Bonk.io\""
   },
   {
-    "objectID": "projects/slingshotgravity.html#links-to-activity",
-    "href": "projects/slingshotgravity.html#links-to-activity",
-    "title": "Slingshot With Gravity",
+    "objectID": "flowchart.html#stemcoding-object-tracker",
+    "href": "flowchart.html#stemcoding-object-tracker",
+    "title": "Activity Flowcharts / Prerequisites",
+    "section": "STEMcoding Object Tracker",
+    "text": "STEMcoding Object Tracker\n\n\n\n\n\nflowchart LR\n  A[Object Tracker Part 1. Track the Object] --&gt; B[Object Tracker Part 2. Analyze Height vs Time] --&gt; C[Object Tracker Part 3. Analyze Velocity vs Time]"
+  },
+  {
+    "objectID": "flowchart.html#physics-of-video-games-some-trigonometry",
+    "href": "flowchart.html#physics-of-video-games-some-trigonometry",
+    "title": "Activity Flowcharts / Prerequisites",
+    "section": "Physics of video games (some trigonometry)",
+    "text": "Physics of video games (some trigonometry)\n\n\n\n\n\nflowchart LR\n  A[Planetoids] --&gt; B[Lunar Descent]\n  click A \"projects/planetoids.html\" \"Planetoids\"\n  B --&gt; C[Bellicose Birds]\n  click B \"projects/lunardescent.html\" \"Lunar Descent\"\n  click C \"projects/bellicosebirds.html\" \"Bellicose Birds\"\n  C --&gt; D[Planetoids with Momentum]\n  click D \"projects/momentum.html\" \"Planetoids with Momentum\"\n  D --&gt; E[Planetoids with a Spring]\n  click E \"projects/spring.html\" \"Planetoids with a Spring\"\n\n\n\n\n\n\nNote that Planetoids with Momentum considers perfectly inelastic collisions in 2D. Pong is often paired with Planetoids with Momentum because Pong considers elastic collisions in 2D where a ball collides with a wall."
+  },
+  {
+    "objectID": "flowchart.html#astronomy-activities",
+    "href": "flowchart.html#astronomy-activities",
+    "title": "Activity Flowcharts / Prerequisites",
+    "section": "Astronomy activities",
+    "text": "Astronomy activities\nSlingshot with gravity is a demonstration of Kepler’s 1st law (Law of Ellipses). Orbital Motion: Kepler’s 2nd law includes a challenge relating to Kepler’s 3rd law (Law of Periods)\n\n\n\n\n\nflowchart LR\n  A[Slingshot with Gravity!] --&gt; B[\"Orbital Motion: &lt;br&gt;Kepler's 2nd law\"]\n  click A \"projects/slingshotgravity.html\" \"Slingshot with Gravity!\"\n  click B \"projects/keplers.html\" \"Orbital Motion: Kepler's 2nd law\"\n  A --&gt; C[Orbital Motion: Eccentricity]\n  click C \"projects/eccentricity.html\" \"Orbital Motion: Eccentricity\"\n  A --&gt; D[Exoplanets!]\n  click D \"projects/exoplanets.html\" \"Exoplanets!\"\n\n\n\n\n\n\nNote: Slingshot with Gravity contains some trigonometry, but the activities that follow it do not\n\nProject Mercury (Hidden Figures celebration)\nProject Mercury (Part 1. Circular Orbit) contains much of the same code as Slingshot with Gravity, but the tasks only involve changing the parameters. The main math concept required is some algebra and taking a square root, so it can be used in less advanced classes. By contrast, Project Mercury (Part 2. Reentry) is significantly more difficult with changes to the code and algebra 2 or pre-calculus level calculations.\n\n\n\n\n\nflowchart LR\n  A[\"Project Mercury &lt;br&gt; (Part 1. Circular Orbit)\"] --&gt; B[\"Project Mercury &lt;br&gt;(Part 2. Reentry)\"]\n  click A \"projects/projectmercury1.html\" \"Project Mercury (Part 1. Circular Orbit)\"\n  click B \"projects/projectmercury2.html\" \"Project Mercury (Part 2. Reentry)\"\n\n\n\n\n\n\n\n\nOther Astronomy activities\nEscape Velocity / Newtonian Black Holes uses much of the same code as Slingshot with Gravity, but arguably one can skip Slingshot with Gravity and jump into Escape Velocity / Newtonian Black Holes.\nNight sky simulator is not a gravity simulation so there are no pre-requisites for that activity other than some familiarity with programming and p5.js"
+  },
+  {
+    "objectID": "flowchart.html#math-activities",
+    "href": "flowchart.html#math-activities",
+    "title": "Activity Flowcharts / Prerequisites",
+    "section": "Math activities",
+    "text": "Math activities\n\n\n\n\n\nflowchart LR\n  A[\"Pi day (Part 1)\"] --&gt; B[\"Pi day (Part 2)\"]\n  click A \"projects/piday1.html\" \"Pi day (Part 1)\"\n  click B \"projects/piday2.html\" \"Pi day (Part 2)\"\n  A --&gt; C[Pi day in parallel]\n  click C \"projects/pidayparallel.html\" \"Pi day in parallel\"\n\n\n\n\n\n\n\n\n\n\n\nflowchart LR\n  A[Laser Defense Part 1] --&gt; B[Laser Defense Part 2]\n  click A \"projects/laser1.html\" \"Laser Defense Part 1\"\n  click B \"projects/laser2.html\" \"Laser Defense Part 2\""
+  },
+  {
+    "objectID": "flowchart.html#electromagnetism-activities",
+    "href": "flowchart.html#electromagnetism-activities",
+    "title": "Activity Flowcharts / Prerequisites",
+    "section": "Electromagnetism activities",
+    "text": "Electromagnetism activities\n\n\n\n\n\nflowchart LR\n  A[Particle Accelerator] --&gt; B[Particle Accelerator with Potential]\n  click A \"projects/particleaccelerator.html\" \"Particle Accelerator\"\n  B --&gt; C[Point charge repulsion]\n  click B \"projects/particleacceleratorpotential.html\" \"Particle Accelerator with Potential\"\n  click C \"projects/repulsion.html\" \"Point charge repulsion\"\n  B --&gt; D[Magnetic force]\n  click D \"projects/magneticforce.html\" \"Magnetic Force\"\n\n\n\n\n\n\nOther electromagnetism labs that do not have prerequisites are RC circuit and Wave Interference"
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
     "section": "",
-    "text": "Instructions for Slingshot with Gravity\nSlingshot with Gravity Code Editor"
+    "text": "2025\n\nNutwell, E. and Badger, K. “Public Data in the Public Interest: A Spreadsheet-Based Project for High School Computing”, Association for Computing Machinery (2025)\n\nBadger, K., Nutwell, E. and Kulp, Jessica K. “Spreadsheet Data Science in K-12: An On-Ramp for the Future Data Literate Citizen” Harvard Data Science Review (2025)\n\n\n2024\n\nOrban, C. “Blurring the Boundaries between Science, Math, and Computer Science” Proceedings of the 55th ACM Technical Symposium on Computer Science Education (2024)\n\nNutwell, E., Badger, K. and Kulp, J. T. “Data for Healthy Communities: A Public Interest Pilot Course Designed to Develop K-12 Data Literacy” Proceedings of the 55th ACM Technical Symposium on Computer Science (2024)\n\n\n2023\n\nOrban, C., Zimmerman, S., Kulp, J. T., Boughton, J., Perrico, Z., Rapp, B., Teeling-Smith, R. “Methods to Simplify Object Tracking in Video Data” The Physics Teacher, 61, 576-579 (2023)\n\n\n2020\n\nOrban, C. and Teeling-Smith, R. ``Computational Thinking in Introductory Physics’’ The Physics Teacher (2020)\n\n\n2018\n\nOrban, C., Teeling-Smith, R. M., Smith, J. R. H., and Porter, C. D. “A Hybrid Approach for Using Programming Exercises in Introductory Physics”, 2018, American Journal of Physics \n\n\n2017\n\nOrban, C., Porter, C. D., Brecht, N. K., Teeling-Smith, R. M., Harper, K. A., “A novel approach for using programming exercises in electromagnetism coursework” PERC 2017"
   },
   {
-    "objectID": "projects/slingshotgravity.html#slingshot-with-gravity-playlist",
-    "href": "projects/slingshotgravity.html#slingshot-with-gravity-playlist",
-    "title": "Slingshot With Gravity",
-    "section": "Slingshot With Gravity Playlist",
-    "text": "Slingshot With Gravity Playlist"
-  },
-  {
-    "objectID": "projects/fractal.html",
-    "href": "projects/fractal.html",
-    "title": "Fractal Puzzle",
+    "objectID": "datascience.html",
+    "href": "datascience.html",
+    "title": "Data Science",
     "section": "",
-    "text": "Download a pdf of a fractal puzzle, print it out on a regular office printer and see if you can put it together!"
+    "text": "More info about our data science initiative coming soon!\nIn the mean time check out our Data Science and Spreadsheet activities"
   },
   {
-    "objectID": "projects/fractal.html#links-to-activity",
-    "href": "projects/fractal.html#links-to-activity",
-    "title": "Fractal Puzzle",
-    "section": "Links to Activity",
-    "text": "Links to Activity\nStudent Worksheets/Print Outs"
-  },
-  {
-    "objectID": "projects/fractal.html#fun-fact",
-    "href": "projects/fractal.html#fun-fact",
-    "title": "Fractal Puzzle",
-    "section": "Fun fact",
-    "text": "Fun fact\nThis is an example of a dragon curve, 13th order"
-  },
-  {
-    "objectID": "projects/black.html",
-    "href": "projects/black.html",
-    "title": "Escape Velocity and Newtonian Black Holes",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "That activity explores the behavior of objects like planets or comets interacting with a massive object like the sun."
-  },
-  {
-    "objectID": "projects/black.html#links-to-activity",
-    "href": "projects/black.html#links-to-activity",
-    "title": "Escape Velocity and Newtonian Black Holes",
-    "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Escape Velocity and Newtonain Black Holes\nCode Editor for Escape Velocity and Newtonian Black Holes"
-  },
-  {
-    "objectID": "projects/black.html#escape-velocity-and-black-holes-playlist",
-    "href": "projects/black.html#escape-velocity-and-black-holes-playlist",
-    "title": "Escape Velocity and Newtonian Black Holes",
-    "section": "Escape Velocity and Black Holes Playlist",
-    "text": "Escape Velocity and Black Holes Playlist"
-  },
-  {
-    "objectID": "weteachcssummertraining2025schedule.html",
-    "href": "weteachcssummertraining2025schedule.html",
-    "title": "WeTeach_CS 2025 Summer Teacher Training Schedule",
-    "section": "",
-    "text": "We plan to do the 28 hours of professional development over 8 days with 3.5 hours per day. We will meet weekdays from June 23 - July 2\nNote: Tentative Schedule does not include periodic breaks."
-  },
-  {
-    "objectID": "weteachcssummertraining2025schedule.html#week-1-monday",
-    "href": "weteachcssummertraining2025schedule.html#week-1-monday",
-    "title": "WeTeach_CS 2025 Summer Teacher Training Schedule",
-    "section": "Week 1, Monday",
-    "text": "Week 1, Monday\n\nIntroducing the instructors (Orban – physics, Butler – physics, data science, Zimmerman – math), Introduce the STEMcoding project (15 minutes)\nBriefly explain expectations and how the workshop will work, stipends, schedule (10 minutes)\nGroup teachers into breakout rooms by discipline and let them introduce each other and what they hope to get out of the course (20 mins)\nBig picture talk on data science / data literacy / computational thinking and computer science and “computational” science (15 minutes)\nRead the first chapter of Effective Data Visualization by Stephanie Evergreen (15 minutes)\nZoom breakouts – how do you already implement data literacy into your courses? What could you improve or emphasize? Any thoughts on the “big picture”? (20 min)\nIntroducing the CO2 air quality measurement activity and its connection to public health (15 minutes)\nIn zoom breakouts, use your CO2 sensor to measure CO2 levels in each room of your dwelling as well as outside, record that data in a spreadsheet, and figure out how to configure the “conditional formatting” so the color of each cell reflects the air quality (1 hour)\nPresentation and activity on “data cleaning” and the “data cycle” (40 min)"
-  },
-  {
-    "objectID": "weteachcssummertraining2025schedule.html#week-1-tuesday-air-pressure",
-    "href": "weteachcssummertraining2025schedule.html#week-1-tuesday-air-pressure",
-    "title": "WeTeach_CS 2025 Summer Teacher Training Schedule",
-    "section": "Week 1, Tuesday (Air Pressure)",
-    "text": "Week 1, Tuesday (Air Pressure)\n\nInteractive discussion of data collection with smartphones, useful apps (including Arduino science journal) and sensors built into most smartphones(30 mins)\nIntroduction to Air Pressure versus height Activity (15 mins)\nTime for Participants to Collect Air Pressure Data Around House (Have Example Data if Unable to) (45 mins)\nDemonstration of Air Pressure Activity, Graphing, Line Fitting, Extracting Relevant Constants (1.5 hr)\nDiscuss extensions to the air pressure activity including drone and balloon measurements, and how curve fitting relates to artificial intelligence (30 min)"
-  },
-  {
-    "objectID": "weteachcssummertraining2025schedule.html#week-1-wednesday-object-tracker",
-    "href": "weteachcssummertraining2025schedule.html#week-1-wednesday-object-tracker",
-    "title": "WeTeach_CS 2025 Summer Teacher Training Schedule",
-    "section": "Week 1, Wednesday (Object Tracker)",
-    "text": "Week 1, Wednesday (Object Tracker)\n\nIntroduction to Object Tracker Activity, Explanation of Data Collection (30 mins)\nTime for Participants to collect videos to process (45 mins)\nObject Tracker Demonstration, Processing Collected Videos, Downloading CSV Files (30 mins) Analyzing Object Tracker Data in Excel, Data Cleaning, Extracting Relevant Physical Constants (30 mins)\nAdditional Excel Activity to Practice Data Cleaning, Graphing, Equation Fitting (1.25 hr)"
-  },
-  {
-    "objectID": "weteachcssummertraining2025schedule.html#week-1-thursday-pi-day-activities",
-    "href": "weteachcssummertraining2025schedule.html#week-1-thursday-pi-day-activities",
-    "title": "WeTeach_CS 2025 Summer Teacher Training Schedule",
-    "section": "Week 1, Thursday (Pi Day Activities)",
-    "text": "Week 1, Thursday (Pi Day Activities)\n\nIntroduction to p5.js, STEMcoding learning management system (30 min)\nPi Day Hour of Code Activity (Serial) (1 Hours)\nPi Day Activity (Parallel), Introduction to Parallel Computing (1.5 hr)\nOther STEMcoding resources for connecting math and CS (30 mins)"
-  },
-  {
-    "objectID": "weteachcssummertraining2025schedule.html#week-1-friday-environmental-atmospheric-data-analysis",
-    "href": "weteachcssummertraining2025schedule.html#week-1-friday-environmental-atmospheric-data-analysis",
-    "title": "WeTeach_CS 2025 Summer Teacher Training Schedule",
-    "section": "Week 1, Friday (Environmental / Atmospheric Data Analysis)",
-    "text": "Week 1, Friday (Environmental / Atmospheric Data Analysis)\n\nSolar Cell data analysis (seasonal variation + long term decline) (1 hour)\nEarth Day Activity (using climate data from your location) (1 hour)\nOzone layer healing vs year analysis using NASA data (1 hour)\nPossibilities with other data sets (Concrete Island effect, Pacific Garbage Patch) (30 minutes)"
-  },
-  {
-    "objectID": "weteachcssummertraining2025schedule.html#week-2-monday-physics-of-video-games-activities-hidden-figures-activity",
-    "href": "weteachcssummertraining2025schedule.html#week-2-monday-physics-of-video-games-activities-hidden-figures-activity",
-    "title": "WeTeach_CS 2025 Summer Teacher Training Schedule",
-    "section": "Week 2, Monday (Physics of Video Games Activities + Hidden Figures activity)",
-    "text": "Week 2, Monday (Physics of Video Games Activities + Hidden Figures activity)\n\nIntroduction to Activities (30 mins)\nIntroduction to Relevant Equations (30 mins)\nMove the Blob Demonstration (30 mins)\nTime for Participants to Experiment with Accelerate the Blob, Apollo Moon Lander (1 hr)\nIntroduction to “Project Mercury” activities that includes calculations relevant to the Hidden Figures movie (1 hr)\nWrap up and Possible Extensions on Activities to the Classroom (15 mins)"
-  },
-  {
-    "objectID": "weteachcssummertraining2025schedule.html#week-2-tuesday-probability-with-the-random-number-generator-in-p5.js",
-    "href": "weteachcssummertraining2025schedule.html#week-2-tuesday-probability-with-the-random-number-generator-in-p5.js",
-    "title": "WeTeach_CS 2025 Summer Teacher Training Schedule",
-    "section": "Week 2, Tuesday (Probability with the random number generator in p5.js)",
-    "text": "Week 2, Tuesday (Probability with the random number generator in p5.js)\n\nExplain how the random function can take different types of arguments in p5.js (a.k.a. function overloading) (15 min)\n“That was totally random (part 1)” p5.js activity (30 min)\n“That was totally random (part 2)” p5.js activity which considers dice throws (1 hour)\nGame of Risk p5.js activities Part 1 & 2 (105 minutes)"
-  },
-  {
-    "objectID": "weteachcssummertraining2025schedule.html#week-2-wednesday",
-    "href": "weteachcssummertraining2025schedule.html#week-2-wednesday",
-    "title": "WeTeach_CS 2025 Summer Teacher Training Schedule",
-    "section": "Week 2, Wednesday",
-    "text": "Week 2, Wednesday\n\nAny extra questions about activities covered, or activities we did not have time to go over (1 hour)\nZoom breakouts / check ins / individual plans to do more data science and CS in their classes + any extra questions about any activities covered (2.5 hours)"
-  },
-  {
-    "objectID": "calendar.html",
-    "href": "calendar.html",
-    "title": "Calendar",
-    "section": "",
-    "text": "Would you like to invite us to speak to your group or event? Would you like us to run a workshop? We can do in person or online* as we are able. Email Chris Orban at chris.m.orban@gmail.com to reach out.\n*In online presentations we can do a green screen within zoom. It’s pretty cool."
+    "text": "The “STEMcoding project” is an initiatve at Ohio State University and the University of Mount Union that collaborates with teachers and researchers across the US\nSome of the professors associated with the STEMcoding project help to lead “STEMcoding Education Ohio” which is a 501c3 non-profit. The primary function of this non-profit is to run and maintain stemcoding.herokuapp.com which is a learning management system that can be used in high schools in the US. The site stemcoding.herokuapp.com is not managed by Ohio State University or the University of Mount Union.\nSTEMcoding Education Ohio has status with Ohio State University as a University Technology Commercialization Company (UTCC). UTCC status allows stemcoding.herokuapp.com to be used with teacher professional development that is affiliated with OSU. UTCC status does not allow any data on stemcoding.herokuapp.com to be shared with OSU.\nFor more information about STEMcoding Education Ohio, email stemcodingohio@gmail.com"
   },
   {
     "objectID": "learningobjectives.html",
@@ -980,508 +987,522 @@
     "text": "Wave Interference\nBy the end of this activity students will…\n\nUnderstand how wave interference affects the observed volume at various locations in a room.\nCreate a simulation to observe where waves have constructive and destructive interference in a room with two speakers."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "calendar.html",
+    "href": "calendar.html",
+    "title": "Calendar",
     "section": "",
-    "text": "The “STEMcoding project” is an initiatve at Ohio State University and the University of Mount Union that collaborates with teachers and researchers across the US\nSome of the professors associated with the STEMcoding project help to lead “STEMcoding Education Ohio” which is a 501c3 non-profit. The primary function of this non-profit is to run and maintain stemcoding.herokuapp.com which is a learning management system that can be used in high schools in the US. The site stemcoding.herokuapp.com is not managed by Ohio State University or the University of Mount Union.\nSTEMcoding Education Ohio has status with Ohio State University as a University Technology Commercialization Company (UTCC). UTCC status allows stemcoding.herokuapp.com to be used with teacher professional development that is affiliated with OSU. UTCC status does not allow any data on stemcoding.herokuapp.com to be shared with OSU.\nFor more information about STEMcoding Education Ohio, email stemcodingohio@gmail.com"
+    "text": "Would you like to invite us to speak to your group or event? Would you like us to run a workshop? We can do in person or online* as we are able. Email Chris Orban at chris.m.orban@gmail.com to reach out.\n*In online presentations we can do a green screen within zoom. It’s pretty cool."
   },
   {
-    "objectID": "datascience.html",
-    "href": "datascience.html",
-    "title": "Data Science",
+    "objectID": "weteachcssummertraining2025schedule.html",
+    "href": "weteachcssummertraining2025schedule.html",
+    "title": "WeTeach_CS 2025 Summer Teacher Training Schedule",
     "section": "",
-    "text": "More info about our data science initiative coming soon!\nIn the mean time check out our Data Science and Spreadsheet activities"
+    "text": "We plan to do the 28 hours of professional development over 8 days with 3.5 hours per day. We will meet weekdays from June 23 - July 2\nNote: Tentative Schedule does not include periodic breaks."
   },
   {
-    "objectID": "publications.html",
-    "href": "publications.html",
-    "title": "Publications",
+    "objectID": "weteachcssummertraining2025schedule.html#week-1-monday",
+    "href": "weteachcssummertraining2025schedule.html#week-1-monday",
+    "title": "WeTeach_CS 2025 Summer Teacher Training Schedule",
+    "section": "Week 1, Monday",
+    "text": "Week 1, Monday\n\nIntroducing the instructors (Orban – physics, Butler – physics, data science, Zimmerman – math), Introduce the STEMcoding project (15 minutes)\nBriefly explain expectations and how the workshop will work, stipends, schedule (10 minutes)\nGroup teachers into breakout rooms by discipline and let them introduce each other and what they hope to get out of the course (20 mins)\nBig picture talk on data science / data literacy / computational thinking and computer science and “computational” science (15 minutes)\nRead the first chapter of Effective Data Visualization by Stephanie Evergreen (15 minutes)\nZoom breakouts – how do you already implement data literacy into your courses? What could you improve or emphasize? Any thoughts on the “big picture”? (20 min)\nIntroducing the CO2 air quality measurement activity and its connection to public health (15 minutes)\nIn zoom breakouts, use your CO2 sensor to measure CO2 levels in each room of your dwelling as well as outside, record that data in a spreadsheet, and figure out how to configure the “conditional formatting” so the color of each cell reflects the air quality (1 hour)\nPresentation and activity on “data cleaning” and the “data cycle” (40 min)"
+  },
+  {
+    "objectID": "weteachcssummertraining2025schedule.html#week-1-tuesday-air-pressure",
+    "href": "weteachcssummertraining2025schedule.html#week-1-tuesday-air-pressure",
+    "title": "WeTeach_CS 2025 Summer Teacher Training Schedule",
+    "section": "Week 1, Tuesday (Air Pressure)",
+    "text": "Week 1, Tuesday (Air Pressure)\n\nInteractive discussion of data collection with smartphones, useful apps (including Arduino science journal) and sensors built into most smartphones(30 mins)\nIntroduction to Air Pressure versus height Activity (15 mins)\nTime for Participants to Collect Air Pressure Data Around House (Have Example Data if Unable to) (45 mins)\nDemonstration of Air Pressure Activity, Graphing, Line Fitting, Extracting Relevant Constants (1.5 hr)\nDiscuss extensions to the air pressure activity including drone and balloon measurements, and how curve fitting relates to artificial intelligence (30 min)"
+  },
+  {
+    "objectID": "weteachcssummertraining2025schedule.html#week-1-wednesday-object-tracker",
+    "href": "weteachcssummertraining2025schedule.html#week-1-wednesday-object-tracker",
+    "title": "WeTeach_CS 2025 Summer Teacher Training Schedule",
+    "section": "Week 1, Wednesday (Object Tracker)",
+    "text": "Week 1, Wednesday (Object Tracker)\n\nIntroduction to Object Tracker Activity, Explanation of Data Collection (30 mins)\nTime for Participants to collect videos to process (45 mins)\nObject Tracker Demonstration, Processing Collected Videos, Downloading CSV Files (30 mins) Analyzing Object Tracker Data in Excel, Data Cleaning, Extracting Relevant Physical Constants (30 mins)\nAdditional Excel Activity to Practice Data Cleaning, Graphing, Equation Fitting (1.25 hr)"
+  },
+  {
+    "objectID": "weteachcssummertraining2025schedule.html#week-1-thursday-pi-day-activities",
+    "href": "weteachcssummertraining2025schedule.html#week-1-thursday-pi-day-activities",
+    "title": "WeTeach_CS 2025 Summer Teacher Training Schedule",
+    "section": "Week 1, Thursday (Pi Day Activities)",
+    "text": "Week 1, Thursday (Pi Day Activities)\n\nIntroduction to p5.js, STEMcoding learning management system (30 min)\nPi Day Hour of Code Activity (Serial) (1 Hours)\nPi Day Activity (Parallel), Introduction to Parallel Computing (1.5 hr)\nOther STEMcoding resources for connecting math and CS (30 mins)"
+  },
+  {
+    "objectID": "weteachcssummertraining2025schedule.html#week-1-friday-environmental-atmospheric-data-analysis",
+    "href": "weteachcssummertraining2025schedule.html#week-1-friday-environmental-atmospheric-data-analysis",
+    "title": "WeTeach_CS 2025 Summer Teacher Training Schedule",
+    "section": "Week 1, Friday (Environmental / Atmospheric Data Analysis)",
+    "text": "Week 1, Friday (Environmental / Atmospheric Data Analysis)\n\nSolar Cell data analysis (seasonal variation + long term decline) (1 hour)\nEarth Day Activity (using climate data from your location) (1 hour)\nOzone layer healing vs year analysis using NASA data (1 hour)\nPossibilities with other data sets (Concrete Island effect, Pacific Garbage Patch) (30 minutes)"
+  },
+  {
+    "objectID": "weteachcssummertraining2025schedule.html#week-2-monday-physics-of-video-games-activities-hidden-figures-activity",
+    "href": "weteachcssummertraining2025schedule.html#week-2-monday-physics-of-video-games-activities-hidden-figures-activity",
+    "title": "WeTeach_CS 2025 Summer Teacher Training Schedule",
+    "section": "Week 2, Monday (Physics of Video Games Activities + Hidden Figures activity)",
+    "text": "Week 2, Monday (Physics of Video Games Activities + Hidden Figures activity)\n\nIntroduction to Activities (30 mins)\nIntroduction to Relevant Equations (30 mins)\nMove the Blob Demonstration (30 mins)\nTime for Participants to Experiment with Accelerate the Blob, Apollo Moon Lander (1 hr)\nIntroduction to “Project Mercury” activities that includes calculations relevant to the Hidden Figures movie (1 hr)\nWrap up and Possible Extensions on Activities to the Classroom (15 mins)"
+  },
+  {
+    "objectID": "weteachcssummertraining2025schedule.html#week-2-tuesday-probability-with-the-random-number-generator-in-p5.js",
+    "href": "weteachcssummertraining2025schedule.html#week-2-tuesday-probability-with-the-random-number-generator-in-p5.js",
+    "title": "WeTeach_CS 2025 Summer Teacher Training Schedule",
+    "section": "Week 2, Tuesday (Probability with the random number generator in p5.js)",
+    "text": "Week 2, Tuesday (Probability with the random number generator in p5.js)\n\nExplain how the random function can take different types of arguments in p5.js (a.k.a. function overloading) (15 min)\n“That was totally random (part 1)” p5.js activity (30 min)\n“That was totally random (part 2)” p5.js activity which considers dice throws (1 hour)\nGame of Risk p5.js activities Part 1 & 2 (105 minutes)"
+  },
+  {
+    "objectID": "weteachcssummertraining2025schedule.html#week-2-wednesday",
+    "href": "weteachcssummertraining2025schedule.html#week-2-wednesday",
+    "title": "WeTeach_CS 2025 Summer Teacher Training Schedule",
+    "section": "Week 2, Wednesday",
+    "text": "Week 2, Wednesday\n\nAny extra questions about activities covered, or activities we did not have time to go over (1 hour)\nZoom breakouts / check ins / individual plans to do more data science and CS in their classes + any extra questions about any activities covered (2.5 hours)"
+  },
+  {
+    "objectID": "projects/black.html",
+    "href": "projects/black.html",
+    "title": "Escape Velocity and Newtonian Black Holes",
     "section": "",
-    "text": "2025\n\nNutwell, E. and Badger, K. “Public Data in the Public Interest: A Spreadsheet-Based Project for High School Computing”, Association for Computing Machinery (2025)\n\nBadger, K., Nutwell, E. and Kulp, Jessica K. “Spreadsheet Data Science in K-12: An On-Ramp for the Future Data Literate Citizen” Harvard Data Science Review (2025)\n\n\n2024\n\nOrban, C. “Blurring the Boundaries between Science, Math, and Computer Science” Proceedings of the 55th ACM Technical Symposium on Computer Science Education (2024)\n\nNutwell, E., Badger, K. and Kulp, J. T. “Data for Healthy Communities: A Public Interest Pilot Course Designed to Develop K-12 Data Literacy” Proceedings of the 55th ACM Technical Symposium on Computer Science (2024)\n\n\n2023\n\nOrban, C., Zimmerman, S., Kulp, J. T., Boughton, J., Perrico, Z., Rapp, B., Teeling-Smith, R. “Methods to Simplify Object Tracking in Video Data” The Physics Teacher, 61, 576-579 (2023)\n\n\n2020\n\nOrban, C. and Teeling-Smith, R. ``Computational Thinking in Introductory Physics’’ The Physics Teacher (2020)\n\n\n2018\n\nOrban, C., Teeling-Smith, R. M., Smith, J. R. H., and Porter, C. D. “A Hybrid Approach for Using Programming Exercises in Introductory Physics”, 2018, American Journal of Physics \n\n\n2017\n\nOrban, C., Porter, C. D., Brecht, N. K., Teeling-Smith, R. M., Harper, K. A., “A novel approach for using programming exercises in electromagnetism coursework” PERC 2017"
+    "text": "That activity explores the behavior of objects like planets or comets interacting with a massive object like the sun."
   },
   {
-    "objectID": "flowchart.html",
-    "href": "flowchart.html",
-    "title": "Activity Flowcharts / Prerequisites",
-    "section": "",
-    "text": "flowchart LR\n  A[Move the Blob] --&gt; B[Accelerate the Blob]\n  click A \"projects/movetheblob.html\" \"Move the Blob\"\n  B --&gt; C[Apollo Moon Landing]\n  click C \"projects/apollo.html\" \"Apollo Moon Landing\"\n  B --&gt; D[Bird Launcher]\n  click B \"projects/acceleratetheblob.html\" \"Accelerate the Blob\"\n  click D \"projects/birdlauncher.html\" \"Bird Launcher\"\n\n\n\n\n\n\n\n\n\n\n\nflowchart LR\n  A[Pong] --&gt; B[Bonk.io Clone]\n  click A \"projects/pong.html\" \"Pong\"\n  click B \"projects/bonk.html\" \"Bonk.io\""
-  },
-  {
-    "objectID": "flowchart.html#physics-of-video-games-intro-level-no-trigonometry",
-    "href": "flowchart.html#physics-of-video-games-intro-level-no-trigonometry",
-    "title": "Activity Flowcharts / Prerequisites",
-    "section": "",
-    "text": "flowchart LR\n  A[Move the Blob] --&gt; B[Accelerate the Blob]\n  click A \"projects/movetheblob.html\" \"Move the Blob\"\n  B --&gt; C[Apollo Moon Landing]\n  click C \"projects/apollo.html\" \"Apollo Moon Landing\"\n  B --&gt; D[Bird Launcher]\n  click B \"projects/acceleratetheblob.html\" \"Accelerate the Blob\"\n  click D \"projects/birdlauncher.html\" \"Bird Launcher\"\n\n\n\n\n\n\n\n\n\n\n\nflowchart LR\n  A[Pong] --&gt; B[Bonk.io Clone]\n  click A \"projects/pong.html\" \"Pong\"\n  click B \"projects/bonk.html\" \"Bonk.io\""
-  },
-  {
-    "objectID": "flowchart.html#stemcoding-object-tracker",
-    "href": "flowchart.html#stemcoding-object-tracker",
-    "title": "Activity Flowcharts / Prerequisites",
-    "section": "STEMcoding Object Tracker",
-    "text": "STEMcoding Object Tracker\n\n\n\n\n\nflowchart LR\n  A[Object Tracker Part 1. Track the Object] --&gt; B[Object Tracker Part 2. Analyze Height vs Time] --&gt; C[Object Tracker Part 3. Analyze Velocity vs Time]"
-  },
-  {
-    "objectID": "flowchart.html#physics-of-video-games-some-trigonometry",
-    "href": "flowchart.html#physics-of-video-games-some-trigonometry",
-    "title": "Activity Flowcharts / Prerequisites",
-    "section": "Physics of video games (some trigonometry)",
-    "text": "Physics of video games (some trigonometry)\n\n\n\n\n\nflowchart LR\n  A[Planetoids] --&gt; B[Lunar Descent]\n  click A \"projects/planetoids.html\" \"Planetoids\"\n  B --&gt; C[Bellicose Birds]\n  click B \"projects/lunardescent.html\" \"Lunar Descent\"\n  click C \"projects/bellicosebirds.html\" \"Bellicose Birds\"\n  C --&gt; D[Planetoids with Momentum]\n  click D \"projects/momentum.html\" \"Planetoids with Momentum\"\n  D --&gt; E[Planetoids with a Spring]\n  click E \"projects/spring.html\" \"Planetoids with a Spring\"\n\n\n\n\n\n\nNote that Planetoids with Momentum considers perfectly inelastic collisions in 2D. Pong is often paired with Planetoids with Momentum because Pong considers elastic collisions in 2D where a ball collides with a wall."
-  },
-  {
-    "objectID": "flowchart.html#astronomy-activities",
-    "href": "flowchart.html#astronomy-activities",
-    "title": "Activity Flowcharts / Prerequisites",
-    "section": "Astronomy activities",
-    "text": "Astronomy activities\nSlingshot with gravity is a demonstration of Kepler’s 1st law (Law of Ellipses). Orbital Motion: Kepler’s 2nd law includes a challenge relating to Kepler’s 3rd law (Law of Periods)\n\n\n\n\n\nflowchart LR\n  A[Slingshot with Gravity!] --&gt; B[\"Orbital Motion: &lt;br&gt;Kepler's 2nd law\"]\n  click A \"projects/slingshotgravity.html\" \"Slingshot with Gravity!\"\n  click B \"projects/keplers.html\" \"Orbital Motion: Kepler's 2nd law\"\n  A --&gt; C[Orbital Motion: Eccentricity]\n  click C \"projects/eccentricity.html\" \"Orbital Motion: Eccentricity\"\n  A --&gt; D[Exoplanets!]\n  click D \"projects/exoplanets.html\" \"Exoplanets!\"\n\n\n\n\n\n\nNote: Slingshot with Gravity contains some trigonometry, but the activities that follow it do not\n\nProject Mercury (Hidden Figures celebration)\nProject Mercury (Part 1. Circular Orbit) contains much of the same code as Slingshot with Gravity, but the tasks only involve changing the parameters. The main math concept required is some algebra and taking a square root, so it can be used in less advanced classes. By contrast, Project Mercury (Part 2. Reentry) is significantly more difficult with changes to the code and algebra 2 or pre-calculus level calculations.\n\n\n\n\n\nflowchart LR\n  A[\"Project Mercury &lt;br&gt; (Part 1. Circular Orbit)\"] --&gt; B[\"Project Mercury &lt;br&gt;(Part 2. Reentry)\"]\n  click A \"projects/projectmercury1.html\" \"Project Mercury (Part 1. Circular Orbit)\"\n  click B \"projects/projectmercury2.html\" \"Project Mercury (Part 2. Reentry)\"\n\n\n\n\n\n\n\n\nOther Astronomy activities\nEscape Velocity / Newtonian Black Holes uses much of the same code as Slingshot with Gravity, but arguably one can skip Slingshot with Gravity and jump into Escape Velocity / Newtonian Black Holes.\nNight sky simulator is not a gravity simulation so there are no pre-requisites for that activity other than some familiarity with programming and p5.js"
-  },
-  {
-    "objectID": "flowchart.html#math-activities",
-    "href": "flowchart.html#math-activities",
-    "title": "Activity Flowcharts / Prerequisites",
-    "section": "Math activities",
-    "text": "Math activities\n\n\n\n\n\nflowchart LR\n  A[\"Pi day (Part 1)\"] --&gt; B[\"Pi day (Part 2)\"]\n  click A \"projects/piday1.html\" \"Pi day (Part 1)\"\n  click B \"projects/piday2.html\" \"Pi day (Part 2)\"\n  A --&gt; C[Pi day in parallel]\n  click C \"projects/pidayparallel.html\" \"Pi day in parallel\"\n\n\n\n\n\n\n\n\n\n\n\nflowchart LR\n  A[Laser Defense Part 1] --&gt; B[Laser Defense Part 2]\n  click A \"projects/laser1.html\" \"Laser Defense Part 1\"\n  click B \"projects/laser2.html\" \"Laser Defense Part 2\""
-  },
-  {
-    "objectID": "flowchart.html#electromagnetism-activities",
-    "href": "flowchart.html#electromagnetism-activities",
-    "title": "Activity Flowcharts / Prerequisites",
-    "section": "Electromagnetism activities",
-    "text": "Electromagnetism activities\n\n\n\n\n\nflowchart LR\n  A[Particle Accelerator] --&gt; B[Particle Accelerator with Potential]\n  click A \"projects/particleaccelerator.html\" \"Particle Accelerator\"\n  B --&gt; C[Point charge repulsion]\n  click B \"projects/particleacceleratorpotential.html\" \"Particle Accelerator with Potential\"\n  click C \"projects/repulsion.html\" \"Point charge repulsion\"\n  B --&gt; D[Magnetic force]\n  click D \"projects/magneticforce.html\" \"Magnetic Force\"\n\n\n\n\n\n\nOther electromagnetism labs that do not have prerequisites are RC circuit and Wave Interference"
-  },
-  {
-    "objectID": "tags/electro.html",
-    "href": "tags/electro.html",
-    "title": "Electromagnetism",
-    "section": "",
-    "text": "Electromagnetism Units"
-  },
-  {
-    "objectID": "tags/enviro.html",
-    "href": "tags/enviro.html",
-    "title": "Environmental Science",
-    "section": "",
-    "text": "Earth Day"
-  },
-  {
-    "objectID": "tags/data_science.html",
-    "href": "tags/data_science.html",
-    "title": "Data Science",
-    "section": "",
-    "text": "Earth Day"
-  },
-  {
-    "objectID": "standards.html",
-    "href": "standards.html",
-    "title": "Standards",
-    "section": "",
-    "text": "Under Construction!"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "STEMcoding",
-    "section": "",
-    "text": "The STEMcoding project is a partnership between faculty members and students at Ohio State University and the University of Mount Union\nThe STEMcoding project exists to re-imagine introductory STEM courses like math and science with computer science and data science in mind. Our activities are used in intro level college courses and high school courses.\nWe love to create activities that each align with relevant math, science and computer science standards. Some of our physical science activities appear on the “model curriculum” examples distributed by the Ohio Department of Education and Workforce. We are also working to create a year-long data science curriculum.\nWe are very proud of the STEMcoding youtube channel! We have released over 100 videos featuring faculty and students at Ohio State University and the University of Mount Union.\n\n\nWe hope you enjoy this site! Check out our Social Media Feed to see what we’ve been up to lately, or our Calendar to see upcoming events and trainings. Please join our Discord to reach out or ask questions!"
-  },
-  {
-    "objectID": "index.html#welcome-to-the-stemcoding-landing-page",
-    "href": "index.html#welcome-to-the-stemcoding-landing-page",
-    "title": "STEMcoding",
-    "section": "",
-    "text": "The STEMcoding project is a partnership between faculty members and students at Ohio State University and the University of Mount Union\nThe STEMcoding project exists to re-imagine introductory STEM courses like math and science with computer science and data science in mind. Our activities are used in intro level college courses and high school courses.\nWe love to create activities that each align with relevant math, science and computer science standards. Some of our physical science activities appear on the “model curriculum” examples distributed by the Ohio Department of Education and Workforce. We are also working to create a year-long data science curriculum.\nWe are very proud of the STEMcoding youtube channel! We have released over 100 videos featuring faculty and students at Ohio State University and the University of Mount Union.\n\n\nWe hope you enjoy this site! Check out our Social Media Feed to see what we’ve been up to lately, or our Calendar to see upcoming events and trainings. Please join our Discord to reach out or ask questions!"
-  },
-  {
-    "objectID": "projects/planetoidsmomentum.html",
-    "href": "projects/planetoidsmomentum.html",
-    "title": "Planetoids with Momentum",
-    "section": "",
-    "text": "In a typical college physics course you will at some point encounter the idea of conservation of momentum. Momentum conservation is very important! In situations where two objects collide, we often don’t know the force or acceleration as a function of time, but we do know the initial velocities. If we know the type of collision that occurs, it turns out that the initial velocities and the masses of the objects are all we need to figure out the final velocities."
-  },
-  {
-    "objectID": "projects/planetoidsmomentum.html#links-to-activity",
-    "href": "projects/planetoidsmomentum.html#links-to-activity",
-    "title": "Planetoids with Momentum",
+    "objectID": "projects/black.html#links-to-activity",
+    "href": "projects/black.html#links-to-activity",
+    "title": "Escape Velocity and Newtonian Black Holes",
     "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Planetoids with Momentum\nCode Editor for Planetoids with Momentum"
+    "text": "Links to Activity\n\nInstructions for Escape Velocity and Newtonain Black Holes\nCode Editor for Escape Velocity and Newtonian Black Holes"
   },
   {
-    "objectID": "projects/planetoidsmomentum.html#learning-objectives",
-    "href": "projects/planetoidsmomentum.html#learning-objectives",
-    "title": "Planetoids with Momentum",
+    "objectID": "projects/black.html#escape-velocity-and-black-holes-playlist",
+    "href": "projects/black.html#escape-velocity-and-black-holes-playlist",
+    "title": "Escape Velocity and Newtonian Black Holes",
+    "section": "Escape Velocity and Black Holes Playlist",
+    "text": "Escape Velocity and Black Holes Playlist"
+  },
+  {
+    "objectID": "projects/fractal.html",
+    "href": "projects/fractal.html",
+    "title": "Fractal Puzzle",
+    "section": "",
+    "text": "Download a pdf of a fractal puzzle, print it out on a regular office printer and see if you can put it together!"
+  },
+  {
+    "objectID": "projects/fractal.html#links-to-activity",
+    "href": "projects/fractal.html#links-to-activity",
+    "title": "Fractal Puzzle",
+    "section": "Links to Activity",
+    "text": "Links to Activity\nStudent Worksheets/Print Outs"
+  },
+  {
+    "objectID": "projects/fractal.html#fun-fact",
+    "href": "projects/fractal.html#fun-fact",
+    "title": "Fractal Puzzle",
+    "section": "Fun fact",
+    "text": "Fun fact\nThis is an example of a dragon curve, 13th order"
+  },
+  {
+    "objectID": "projects/slingshotgravity.html",
+    "href": "projects/slingshotgravity.html",
+    "title": "Slingshot With Gravity",
+    "section": "",
+    "text": "Instructions for Slingshot with Gravity\nSlingshot with Gravity Code Editor"
+  },
+  {
+    "objectID": "projects/slingshotgravity.html#links-to-activity",
+    "href": "projects/slingshotgravity.html#links-to-activity",
+    "title": "Slingshot With Gravity",
+    "section": "",
+    "text": "Instructions for Slingshot with Gravity\nSlingshot with Gravity Code Editor"
+  },
+  {
+    "objectID": "projects/slingshotgravity.html#slingshot-with-gravity-playlist",
+    "href": "projects/slingshotgravity.html#slingshot-with-gravity-playlist",
+    "title": "Slingshot With Gravity",
+    "section": "Slingshot With Gravity Playlist",
+    "text": "Slingshot With Gravity Playlist"
+  },
+  {
+    "objectID": "projects/rc.html",
+    "href": "projects/rc.html",
+    "title": "RC Circuits",
+    "section": "",
+    "text": "This programming lab is unlike the previous ones in that it involves circuits. Specifically it involves circuits with a battery, a capacitor and one or two resistors."
+  },
+  {
+    "objectID": "projects/rc.html#links-to-activity",
+    "href": "projects/rc.html#links-to-activity",
+    "title": "RC Circuits",
+    "section": "Links to Activity",
+    "text": "Links to Activity\n\nInstructions for RC Circuits\nRC Circuits Code Editor"
+  },
+  {
+    "objectID": "projects/rc.html#learning-objectives",
+    "href": "projects/rc.html#learning-objectives",
+    "title": "RC Circuits",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\nAt the end of this lesson students will…\n\nApply conservation of momentum equations in 1-D to properly code a perfectly inelastic collision.\nApply conservation of momentum equations in 2-D along with basic geometry to properly code a perfectly inelastic collision."
+    "text": "Learning Objectives\nAt the end of this lesson students will…\n\nApply Ohm’s law to code a RC circuit so it behaves in a physically accurate way.\nEvaluate how changing various values of a circuit (Capacitance, resistance) affects the dissipation time of a capacitor."
   },
   {
-    "objectID": "projects/planetoidsmomentum.html#planetoids-with-momentum-playlist",
-    "href": "projects/planetoidsmomentum.html#planetoids-with-momentum-playlist",
-    "title": "Planetoids with Momentum",
-    "section": "Planetoids with Momentum Playlist",
-    "text": "Planetoids with Momentum Playlist"
+    "objectID": "projects/rc.html#rc-circuits-playlist",
+    "href": "projects/rc.html#rc-circuits-playlist",
+    "title": "RC Circuits",
+    "section": "RC Circuits Playlist",
+    "text": "RC Circuits Playlist"
   },
   {
-    "objectID": "projects/eccentricity.html",
-    "href": "projects/eccentricity.html",
-    "title": "Orbital Motion: Eccentricity",
+    "objectID": "projects/particleaccelerator.html",
+    "href": "projects/particleaccelerator.html",
+    "title": "Particle Accelerator",
     "section": "",
-    "text": "Learn how to measure the eccentricity of an orbit from a gravity simulation"
+    "text": "Your browser does not support the video tag.\nIn this exercise we will make a simulation of a charged particle being accelerated between two plates."
   },
   {
-    "objectID": "projects/eccentricity.html#links-to-activity",
-    "href": "projects/eccentricity.html#links-to-activity",
-    "title": "Orbital Motion: Eccentricity",
+    "objectID": "projects/particleaccelerator.html#links-to-activity",
+    "href": "projects/particleaccelerator.html#links-to-activity",
+    "title": "Particle Accelerator",
     "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Orbital Motion: Eccentricity\nOrbital Motion: Eccentricity Code Editor"
+    "text": "Links to Activity\n\nInstructions for Particle Accelerator\nParticle Accelerator Code Editor"
   },
   {
-    "objectID": "projects/planetoids.html",
-    "href": "projects/planetoids.html",
-    "title": "Planetoids",
-    "section": "",
-    "text": "Your browser does not support the video tag.\nThis lab will guide you through coding up a web-based implementation of the classic video game asteroids."
-  },
-  {
-    "objectID": "projects/planetoids.html#links-to-activity",
-    "href": "projects/planetoids.html#links-to-activity",
-    "title": "Planetoids",
-    "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Planetoids\nCode Editor for Planetoids"
-  },
-  {
-    "objectID": "projects/planetoids.html#learning-objectives",
-    "href": "projects/planetoids.html#learning-objectives",
-    "title": "Planetoids",
+    "objectID": "projects/particleaccelerator.html#learning-objectives",
+    "href": "projects/particleaccelerator.html#learning-objectives",
+    "title": "Particle Accelerator",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\nAt the end of this lesson students will…\n\nApply kinematic equations to code an object’s motion when force is applied\nApply Newton’s laws of motion to code how an object behaves under different net force conditions\nEvaluate how changing mass can optimize spacecraft maneuverability"
+    "text": "Learning Objectives\nAt the end of this lesson students will…\n\nExplain how force and acceleration are related using visual evidence from the game.\nUnderstand how a charged particle’s motion is affected by its mass and charge while in an electric field.\nAnalyze the situation to calculate the final velocity of a particle after being immersed in an electric field."
   },
   {
-    "objectID": "projects/planetoids.html#planetoids-playlist",
-    "href": "projects/planetoids.html#planetoids-playlist",
-    "title": "Planetoids",
-    "section": "Planetoids Playlist",
-    "text": "Planetoids Playlist"
+    "objectID": "projects/particleaccelerator.html#particle-accelerator-playlist",
+    "href": "projects/particleaccelerator.html#particle-accelerator-playlist",
+    "title": "Particle Accelerator",
+    "section": "Particle Accelerator Playlist",
+    "text": "Particle Accelerator Playlist"
   },
   {
-    "objectID": "projects/sunspots.html",
-    "href": "projects/sunspots.html",
-    "title": "Sunspots",
+    "objectID": "projects/lunar.html",
+    "href": "projects/lunar.html",
+    "title": "Lunar Descent",
     "section": "",
-    "text": "People have been observing the sun for centuries. Let’s look at the data and see what we can learn!"
+    "text": "If you have finished tinkering with the Planetoids lab you can continue with this lab where we will now add gravity to the game! You have a little ship that you must fly around and land safely on the moon. If you approach the landing too fast you will crash the ship."
   },
   {
-    "objectID": "projects/sunspots.html#background-information",
-    "href": "projects/sunspots.html#background-information",
-    "title": "Sunspots",
-    "section": "Background information",
-    "text": "Background information\nThe sun might seem like a simple place where hot plasma radiates and everything stays about the same, but there is quite a bit more to it than that.\nThe surface of the sun is magnetically active. You can see this in the image above from the Solar Dynamics Observatory. At high or low latitudes you can notice the phenomenon of ``aurora borealis”, as many people did in 2024. You can also observe this yourself witha telescope, or a pin-hole solar viewer. Here is an image of the sun from the same day as the image above but at a wavelength that is something you could potentially observe with a solar filter on a small telescope.\n\n\n\n\n\nThe dark areas are called “sun spots”. These areas are dark because the magnetic field in those regions is so strong that the magnetic pressure is larger than the gas pressure. Ultimately this causes the region to be slightly colder than othe regions. These dark spots are still blindingly bright, but they are not quite as bright as the surrounding areas so they appear dark when viewed by a telescope with a solar filter.\nThe sun is magnetically active because the plasma in the sun is always moving and this tends to stretch out magnetic field lines and tie them in knots as discussed in this video"
-  },
-  {
-    "objectID": "projects/sunspots.html#go-safely-observe-the-sun",
-    "href": "projects/sunspots.html#go-safely-observe-the-sun",
-    "title": "Sunspots",
-    "section": "Go (safely) observe the sun!",
-    "text": "Go (safely) observe the sun!\nFind a small telescope, buy a cheap solar filter, and go (safely) observe the sun. KEY OBJECTIVE: How many sunspots can you see!\nAdvice:\n\nConsider asking a local astronomy club for a volunteer to help with this. Odds are they will already have the equipment you need. Or ask a science teacher friend to help.\nThe more expensive solar filters as just as safe as the cheap solar filters. The expensive solar filters show slightly more detail with the sunspots, so they are better if you were going to try to take photographs, but for just looking at the sun and counting the number of sunspots the expensive solar filters aren’t that much better than the inexpensive ones.\nUse the largest (widest diameter, heaviest) eyepiece that you have because these eyepieces zoom out the most, thus making it much easier to put the sun in view. The smaller eyepieces are for zooming in, but because of this it is difficult to use these eyepieces unless you are already precisely aimed at the sun. So maybe just stick with the zoomed out eyepieces for this activity.\nDo NOT use the spotting scope attached to the telescope to help align the telescope with the sun. Instead, look closely at the shadow that your telescope makes, and use that to align the telescope with the sun.\nPut the solar filter on the telescope at the beginning and leave it there until the observing is over. You can align the telescope with the sun even with the solar filter on.\nIf you are worried about aligning the telescope with the sun, you can practice in the evenings by aligning the telescope with the moon (with the solar filter off, obviously). If the moon is bright enough you can use the shadow trick to align the telescope with the moon without the spotting scope.\nIt is possible that the sun will not be very magnetically active on the day that you observe it and perhaps only one or zero sunspots will be visible\n\nAlternative ways to observe sunspots\n\nIf you are less crafty, or it turns out to be cloudy on the day you planned to do all this, then check out the website for NASA’s Solar Dynamics Observatory, look at “The Sun Now” and click through all the different images of the sun\nAnother way to observe the sun is something that people do to observe eclipses called a “box pinhole projector”. Get a cardboard box (larger is better), cut out part of it and place aluminum foil on that part and then use a needle or a paperclip to put a small hole in the aluminum foil. This will produce an image of the sun on the opposite side of the box. It helps to put regular office paper on the side where the image of the sun appears. If the sunspot is large enough, you may be able to see it with this method\nStill another way to observe the sun is using a small telescope and something that some call a “light bucket” or “sun funnel”\n\n\n\n\n\n\nA random OSU Marion professor is projecting the sun onto a thin piece of rubber that is attached to a funnel purchased from an auto parts store.\nAn advantage of the light bucket / sun funnel is that students don’t need to look into an eyepiece, consequently you don’t need to worry about the focus being correct for each student (since they will all have different eyesight). A disadvantage is that you can see sunspots but not as clearly as you can with an optical solar filter and an eyepiece. Note that when you use the sun funnel, you do not use a solar filter (which is true of the image above)."
-  },
-  {
-    "objectID": "projects/sunspots.html#download-historical-sunspot-data-and-make-a-chart",
-    "href": "projects/sunspots.html#download-historical-sunspot-data-and-make-a-chart",
-    "title": "Sunspots",
-    "section": "Download historical sunspot data and make a chart",
-    "text": "Download historical sunspot data and make a chart\nAfter giving students a context for what sunspots are, and how many sunspots are on the sun right now, we can now focus on how the number of sunspots vary over time. It turns out that the Royal Observatory of Belgium has been observing the sun since the 1700s.\n\nHere is a link to the Royal Observatory of Belgium Historical Solar Data Page, note that it automatically keeps the files up to date so you can always get measurements from as recently as a few weeks ago\n\nBecause the Royal Observatory of Belgium website keeps the data up to date, we are not going to provide a downloadable data file here that will quickly go out of date.\nAdvice:\n\nFocus on the “Monthly mean total sunspot number” data. Although daily data is available, there are often days when no measurement was taken, or no sunspots were observed which appear as -1 in the file. The monthly data does not have this issue because there is always at least one sun spot observed.\n\nSteps\n\nClick to download the CSV of the “Monthly mean total sunspot number” or just click this link https://www.sidc.be/SILSO/INFO/snmtotcsv.php\nLoad the CSV file into a spreadsheet program. For the delimiter, specify a custom delimiter of ;\nIdentify the column for time and the column for the number of sunspots observed, and add a chart\n\nThe chart should look something like this:"
-  },
-  {
-    "objectID": "projects/sunspots.html#explore-and-analyze-the-data",
-    "href": "projects/sunspots.html#explore-and-analyze-the-data",
-    "title": "Sunspots",
-    "section": "Explore and analyze the data!",
-    "text": "Explore and analyze the data!\nHere are some questions to consider\n\nWhat are the patterns in the data?\nWhat evidence is there for a solar “cycle”? How long is this cycle? Is the length of this cycle always the same or does it change?\nAccording to the data, what is the average number of sunspots per month?\nIs there a particularly large or small number of sunspots on the sun right now compared to the average?\nThe aurora in 2024 was an epic sight that many people in the midwest and northern US states enjoyed. According to the number of sunspots observed, how unusual was the magnetic activity during 2024 compared to the magnetic activity that your parents or grandparents may have been able to see when they were growing up?\nWhat do you think the sunspot data will look like over the next few years? Will it be increasing or decreasing?\nIt turns out that when the sun is more active (i.e. when more sunspots are observed) that the earth is slightly hotter, and when the sun is less active (i.e. fewer sunspots are observed) the earth is slightly cooler. For example when there was low sunspot activity in the early 1800s, according to historical records, the earth was slightly cooler than normal. over the past two decades, the earth has been few degrees farenheit warmer than it has typically been compred to data from more than two decades ago. Is it possible that increased solar activity is the cause of the increased temperature of the earth? Has the solar activity over the past two decades been significantly higher, lower or roughly the same as earlier periods of time?"
-  },
-  {
-    "objectID": "projects/sunspots.html#optional-extension-upload-the-data-to-an-ai-model",
-    "href": "projects/sunspots.html#optional-extension-upload-the-data-to-an-ai-model",
-    "title": "Sunspots",
-    "section": "Optional extension: Upload the data to an AI model",
-    "text": "Optional extension: Upload the data to an AI model\nAI models like ChatGPT have the ability to read in data and create plots using python. Upload your data set to your favorite AI model and have a dialogue with it about what patterns you think might be in the data and ways that these patterns can be analyzed.\nNote: There may be limits on the number of “premium” queries. Note that students get free access to Github pro, and teachers can get a verified Github Education account which provides lots of free AI queries to Github copilot – much more than what you can currently get from most AI models."
-  },
-  {
-    "objectID": "projects/apollo.html",
-    "href": "projects/apollo.html",
-    "title": "Apollo Moon Landing",
-    "section": "",
-    "text": "Your browser does not support the video tag.\nLand a rocket on the moon, but be careful not to land too hard!"
-  },
-  {
-    "objectID": "projects/apollo.html#links-to-activity",
-    "href": "projects/apollo.html#links-to-activity",
-    "title": "Apollo Moon Landing",
+    "objectID": "projects/lunar.html#links-to-activity",
+    "href": "projects/lunar.html#links-to-activity",
+    "title": "Lunar Descent",
     "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Apollo Moon Landing\nApollo Moon Landing Code Editor"
+    "text": "Links to Activity\n\nInstructions for Lunar Descent\nCode Editor for Lunar Descent"
   },
   {
-    "objectID": "projects/apollo.html#apollo-moon-landing-playlist",
-    "href": "projects/apollo.html#apollo-moon-landing-playlist",
-    "title": "Apollo Moon Landing",
-    "section": "Apollo Moon Landing Playlist",
-    "text": "Apollo Moon Landing Playlist"
+    "objectID": "projects/lunar.html#learning-objecties",
+    "href": "projects/lunar.html#learning-objecties",
+    "title": "Lunar Descent",
+    "section": "Learning Objecties",
+    "text": "Learning Objecties\nAt the end of this lesson students will…\n\nApply kinematic equations to code a ships descent through a gravitational field.\nApply Newton’s laws of motion to code how an object behaves under different force conditions.\nApply gravitational field strength to the base planetoids game.\nEvaluate the free fall time displayed on the simulation for realism."
   },
   {
-    "objectID": "projects/co2.html",
-    "href": "projects/co2.html",
-    "title": "CO2 Survey",
+    "objectID": "projects/lunar.html#lunar-descent-playlist",
+    "href": "projects/lunar.html#lunar-descent-playlist",
+    "title": "Lunar Descent",
+    "section": "Lunar Descent Playlist",
+    "text": "Lunar Descent Playlist"
+  },
+  {
+    "objectID": "projects/particleacceleratorpotential.html",
+    "href": "projects/particleacceleratorpotential.html",
+    "title": "Particle Accelerator with Potential",
     "section": "",
-    "text": "Use a CO2 sensor to measure air quality in your building"
+    "text": "After completing Particle Accelerator, check out this activity where we consider what happens if the “Electric Potential” is kept the same even as we change the Electric field and the separation between the plates"
   },
   {
-    "objectID": "projects/co2.html#equipment",
-    "href": "projects/co2.html#equipment",
-    "title": "CO2 Survey",
-    "section": "Equipment",
-    "text": "Equipment\nWe recommend the Temtop home CO2 air quality sensor or similar\nIn principle, one can also use an adafruit or arudino CO2 sensor if you are comfortable using adafruit or ardino devices"
-  },
-  {
-    "objectID": "projects/co2.html#links-to-activity",
-    "href": "projects/co2.html#links-to-activity",
-    "title": "CO2 Survey",
+    "objectID": "projects/particleacceleratorpotential.html#links-to-activity",
+    "href": "projects/particleacceleratorpotential.html#links-to-activity",
+    "title": "Particle Accelerator with Potential",
     "section": "Links to Activity",
-    "text": "Links to Activity\n\nGoogle Slide Deck\nRandom CO2 data generator with p5.js"
+    "text": "Links to Activity\n\nInstructions for Particle Accelerator with Potential\nParticle Accelerator with Potential Code Editor"
   },
   {
-    "objectID": "projects/co2.html#news-articles-to-discuss",
-    "href": "projects/co2.html#news-articles-to-discuss",
-    "title": "CO2 Survey",
-    "section": "News articles to discuss",
-    "text": "News articles to discuss\n\nVirus transmission is a concern for national and international conferences. In 2025, a conference set up a sophisticated system for monitoring CO2 as discussed in an article at this link. If the link is broken you can download this pdf"
+    "objectID": "projects/particleacceleratorpotential.html#learning-objectives",
+    "href": "projects/particleacceleratorpotential.html#learning-objectives",
+    "title": "Particle Accelerator with Potential",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAt the end of this lesson students will…\n\nUnderstand that electric potential can appropriately model how electric fields affect charged particles.\nUnderstand how a charged particle’s motion is affected by the electric potential of a field.\nAnalyze the situation to calculate the final velocity of a particle after experiencing an electric field using electric potential relationships."
   },
   {
-    "objectID": "projects/projectmercury1.html",
-    "href": "projects/projectmercury1.html",
-    "title": "Project Mercury Part 1",
+    "objectID": "projects/magneticforce.html",
+    "href": "projects/magneticforce.html",
+    "title": "Magnetic Force",
+    "section": "",
+    "text": "Your browser does not support the video tag.\nYou may recall the last programming exercise that involved a particle being accelerated through two charged plates. In this exercise we will add a magnetic field to the right hand side of the simulation. The particle only experiences this field when it passes into the right-hand side. This example is loosely based on the idea of a “mass spectrometer”. It turns out that if you vaporize a little bit of a sample with some unknown molecules there tends to be alot of molecules that lose ONE electron. Since the molecule has lost an electron it has a +1 charge. The mass of the molecule is essentially the same even if it is missing an electron because electrons make up a very, very small fraction of the mass of atoms. As you will learn about in this lab, the trajectory of the particle in the magnetic field tells us something about the mass of the particle (if you already know q, v, and B for example)."
+  },
+  {
+    "objectID": "projects/magneticforce.html#links-to-activity",
+    "href": "projects/magneticforce.html#links-to-activity",
+    "title": "Magnetic Force",
+    "section": "Links to Activity",
+    "text": "Links to Activity\nInstructions for Magnetic Force Magnetic Force Code Editor"
+  },
+  {
+    "objectID": "projects/magneticforce.html#learning-objectives",
+    "href": "projects/magneticforce.html#learning-objectives",
+    "title": "Magnetic Force",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAt the end of this lesson students will…\n\nApply the magnetic force relationship with Newton’s 2nd law to code the trajectory of a moving, positive particle in a magnetic field\nUnderstand how changes in charge, mass, and magnetic field direction affect the trajectory of the particle."
+  },
+  {
+    "objectID": "projects/magneticforce.html#magnetic-force-playlist",
+    "href": "projects/magneticforce.html#magnetic-force-playlist",
+    "title": "Magnetic Force",
+    "section": "Magnetic Force Playlist",
+    "text": "Magnetic Force Playlist"
+  },
+  {
+    "objectID": "projects/waveinterference.html",
+    "href": "projects/waveinterference.html",
+    "title": "Wave Interference",
+    "section": "",
+    "text": "Your browser does not support the video tag.\nThis programming lab is designed to illustrate the idea of wave interference. This happens because of the principle of “superposition”. For sound waves, this 20 dollar word just means that if there are two speakers in a large room or open space, the amplitude of the sound waves at a particular point in that room are the sum of the waves of the two speakers."
+  },
+  {
+    "objectID": "projects/waveinterference.html#links-to-activity",
+    "href": "projects/waveinterference.html#links-to-activity",
+    "title": "Wave Interference",
+    "section": "Links to Activity",
+    "text": "Links to Activity\n\nInstructions for Wave Interferece\nWave Interference Code Editor"
+  },
+  {
+    "objectID": "projects/waveinterference.html#learning-objectives",
+    "href": "projects/waveinterference.html#learning-objectives",
+    "title": "Wave Interference",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy the end of this activity students will…\n\nUnderstand how wave interference affects the observed volume at various locations in a room.\nCreate a simulation to observe where waves have constructive and destructive interference in a room with two speakers."
+  },
+  {
+    "objectID": "projects/waveinterference.html#wave-interference-playlist",
+    "href": "projects/waveinterference.html#wave-interference-playlist",
+    "title": "Wave Interference",
+    "section": "Wave Interference Playlist",
+    "text": "Wave Interference Playlist"
+  },
+  {
+    "objectID": "projects/piday1.html",
+    "href": "projects/piday1.html",
+    "title": "Pi Day Part 1",
+    "section": "",
+    "text": "Calculate the digits of pi with a random number generator and some code!"
+  },
+  {
+    "objectID": "projects/piday1.html#links-to-activity",
+    "href": "projects/piday1.html#links-to-activity",
+    "title": "Pi Day Part 1",
+    "section": "Links to Activity",
+    "text": "Links to Activity\n\nInstructions for Pi Day Part 1\nPi Day Part 1 Code Editor"
+  },
+  {
+    "objectID": "projects/piday1.html#pi-day-part-1-playlist",
+    "href": "projects/piday1.html#pi-day-part-1-playlist",
+    "title": "Pi Day Part 1",
+    "section": "Pi Day Part 1 Playlist",
+    "text": "Pi Day Part 1 Playlist"
+  },
+  {
+    "objectID": "projects/planetoidstorque.html",
+    "href": "projects/planetoidstorque.html",
+    "title": "Planetoids with Torque",
+    "section": "",
+    "text": "Your browser does not support the video tag.\nIn this lab we will make the planetoids game more realistic by allowing the space craft to spin around as it would if it were really traveling in space. So in addition to a rocket engine that can propel the space craft forward, the ship will have thrusters on the front and back that can provide torque to spin the ship either the clockwise or counter-clockwise direction."
+  },
+  {
+    "objectID": "projects/planetoidstorque.html#links-to-activity",
+    "href": "projects/planetoidstorque.html#links-to-activity",
+    "title": "Planetoids with Torque",
+    "section": "Links to Activity",
+    "text": "Links to Activity\n\nInstructions for Planetoids with Torque\nPlanetouds with Torque Code Editor"
+  },
+  {
+    "objectID": "projects/planetoidstorque.html#learning-objectives",
+    "href": "projects/planetoidstorque.html#learning-objectives",
+    "title": "Planetoids with Torque",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAt the end of this lesson students will…\n\nApply rotational kinematic equations to code an object’s motion when force is applied at a distance from a fulcrum\nApply Newton’s laws of motion to code how an object behaves under different net torque conditions\nEvaluate how changing mass, length, and thrust force can optimize spacecraft maneuverability"
+  },
+  {
+    "objectID": "projects/planetoidstorque.html#planetoids-with-torque-playlist",
+    "href": "projects/planetoidstorque.html#planetoids-with-torque-playlist",
+    "title": "Planetoids with Torque",
+    "section": "Planetoids with Torque Playlist",
+    "text": "Planetoids with Torque Playlist"
+  },
+  {
+    "objectID": "projects/birdslauncher.html",
+    "href": "projects/birdslauncher.html",
+    "title": "Bird Launcher",
+    "section": "",
+    "text": "Create an angry birds game where the arrow keys control the launch velocity"
+  },
+  {
+    "objectID": "projects/birdslauncher.html#links-to-activity",
+    "href": "projects/birdslauncher.html#links-to-activity",
+    "title": "Bird Launcher",
+    "section": "Links to Activity",
+    "text": "Links to Activity\n\nInstructions for the Bird Launcher\nCode Editor for the Bird Launcher"
+  },
+  {
+    "objectID": "projects/birdslauncher.html#bird-launcher-playlist",
+    "href": "projects/birdslauncher.html#bird-launcher-playlist",
+    "title": "Bird Launcher",
+    "section": "Bird Launcher Playlist",
+    "text": "Bird Launcher Playlist"
+  },
+  {
+    "objectID": "projects/movetheblob.html",
+    "href": "projects/movetheblob.html",
+    "title": "Move the Blob",
+    "section": "",
+    "text": "On the internet there are some fun games where you control a circle-looking-thing that you can move around and interact (and potentially destroy or absorb!) other circle-looking things controlled by other people. Two games that come to mind are diep.io and agar.io. There are plenty of others like them out there"
+  },
+  {
+    "objectID": "projects/movetheblob.html#links-to-activity",
+    "href": "projects/movetheblob.html#links-to-activity",
+    "title": "Move the Blob",
+    "section": "Links to Activity",
+    "text": "Links to Activity\n\nInstructions for Move the Blob\nCode Editor for Move the Blob"
+  },
+  {
+    "objectID": "projects/movetheblob.html#learning-objectives",
+    "href": "projects/movetheblob.html#learning-objectives",
+    "title": "Move the Blob",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAt the end of this lesson students will…\n\nUnderstand basic p5.js syntax, specifically the difference between “+=” and “=”.\nExplain how position and velocity are related using visual evidence from the game.\nCreate a simple “Move the Blob” game which allows them to move a circle using arrow keys."
+  },
+  {
+    "objectID": "projects/movetheblob.html#move-the-blob-video",
+    "href": "projects/movetheblob.html#move-the-blob-video",
+    "title": "Move the Blob",
+    "section": "Move the Blob Video",
+    "text": "Move the Blob Video"
+  },
+  {
+    "objectID": "projects/projectmercury2.html",
+    "href": "projects/projectmercury2.html",
+    "title": "Project Mercury Part 2",
     "section": "",
     "text": "Mathematician Katherine Johnson is famous for calculating trajectories of America’s first manned space missions for Project Mercury as depicted in the movie Hidden Figures.\nThe big concern at that point in the history of the space program was accurately predicting where a spacecraft would land in the ocean after re-entering the earth’s atmosphere. Any miscalculation could send the mercury capsule hundreds of miles from where the Navy was expecting to recover the spacecraft and the astronaut inside.\nThe calculation that Katherine Johnson did had to consider many different effects on the trajectory of the mercury capsule. For this activity we are going to keep it simple and start with putting the capsule in a circular orbit. In the second part, we will consider how the mercury capsule comes back to earth. This part of the space mission is referred to as “re-entry”."
   },
   {
-    "objectID": "projects/projectmercury1.html#links-to-activity",
-    "href": "projects/projectmercury1.html#links-to-activity",
-    "title": "Project Mercury Part 1",
+    "objectID": "projects/projectmercury2.html#links-to-activity",
+    "href": "projects/projectmercury2.html#links-to-activity",
+    "title": "Project Mercury Part 2",
     "section": "Links to Activity",
-    "text": "Links to Activity\n\nPart 1\n\nInstructions for Project Mercury (Part 1)\nProject Mercury (Part 1) Code Editor"
+    "text": "Links to Activity\n\nPart 2\n\nInstructions for Project Mercury (Part 2)\nProject Mercury (Part 2) Code Editor"
   },
   {
-    "objectID": "projects/projectmercury1.html#project-mercury-playlist",
-    "href": "projects/projectmercury1.html#project-mercury-playlist",
-    "title": "Project Mercury Part 1",
-    "section": "Project Mercury Playlist",
-    "text": "Project Mercury Playlist"
-  },
-  {
-    "objectID": "projects/piday2.html",
-    "href": "projects/piday2.html",
-    "title": "Pi Day Part 2",
+    "objectID": "projects/nightsky.html",
+    "href": "projects/nightsky.html",
+    "title": "Night Sky Simulator",
     "section": "",
-    "text": "If you completed the Pi day activity and were surprised at how long it took to calculate the digits of π there is good news! There is a better way to calculate the digits of Pi!"
+    "text": "Use some basic facts and equations about stars to randomly generate a realistic-looking starfield\nThe image above is not an actual picture of the night sky or any real star field (maybe you’ve already noticed that its a fake!). It is a randomly-generated night sky from a computer program we are going to build. We are going to learn a little bit about stars and then we are going to think about why some stars appear brighter in the sky than others and what it means.\nAn interesting thing about this activity is that you will be able to download a spreadsheet with the list of randomly generated stars. In the directions here we will use Google sheets to analyze that data but you can use any spreadsheet program you are comfortable with (Excel, Libreoffice, Apple – Numbers)"
   },
   {
-    "objectID": "projects/piday2.html#links-to-activity",
-    "href": "projects/piday2.html#links-to-activity",
-    "title": "Pi Day Part 2",
+    "objectID": "projects/nightsky.html#links-to-activity",
+    "href": "projects/nightsky.html#links-to-activity",
+    "title": "Night Sky Simulator",
     "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Pi Day Part 2\nPi Day Part 2 Code Editor"
+    "text": "Links to Activity\n\nInstructions for Night Sky Simulator\nNight Sky Simulator Code Editor"
   },
   {
-    "objectID": "projects/piday2.html#pi-day-part-2-playlist",
-    "href": "projects/piday2.html#pi-day-part-2-playlist",
-    "title": "Pi Day Part 2",
-    "section": "Pi Day Part 2 Playlist",
-    "text": "Pi Day Part 2 Playlist"
+    "objectID": "projects/nightsky.html#night-sky-simulator-playlist",
+    "href": "projects/nightsky.html#night-sky-simulator-playlist",
+    "title": "Night Sky Simulator",
+    "section": "Night Sky Simulator Playlist",
+    "text": "Night Sky Simulator Playlist"
   },
   {
-    "objectID": "projects/figures.html#central-question",
-    "href": "projects/figures.html#central-question",
-    "title": "Good Figures vs. Bad Figures",
-    "section": "Central Question:",
-    "text": "Central Question:\nWhat makes for a good figure? What makes for a bad figure? Let’s look at some examples and discuss\nExamples of Bad Figures\nMore examples of Bad Figures from viz.wtf\nExamples of Good Figures"
-  },
-  {
-    "objectID": "projects/conductor.html",
-    "href": "projects/conductor.html",
-    "title": "Conductor Interactive",
+    "objectID": "projects/solarsystem.html",
+    "href": "projects/solarsystem.html",
+    "title": "Solar System Model",
     "section": "",
-    "text": "How do electrons move inside of a conductor? Play with a web interactive to find out!"
+    "text": "Use a spreadsheet to design a model solar system"
   },
   {
-    "objectID": "projects/conductor.html#links-to-activity",
-    "href": "projects/conductor.html#links-to-activity",
-    "title": "Conductor Interactive",
-    "section": "Links to Activity",
-    "text": "Links to Activity"
+    "objectID": "projects/solarsystem.html#instructions",
+    "href": "projects/solarsystem.html#instructions",
+    "title": "Solar System Model",
+    "section": "Instructions",
+    "text": "Instructions\nAn important spreadsheet skill is to multiply the values in a particular column by a constant and have the result appear in the next column. Using $ in a spreadsheet can be helpful for this as discussed in the link. A situation where this is required is if you are making a scale model.\nImagine that your town or school has asked you to design a solar system model.\nStep 1. Decide how big your solar system model will be. For example, you can choose a football field, basketball court, classroom, a long straight sidewalk, etc. Each group should choose something different.\nDownload this CSV file with the planets and their distances to the sun and open it in a spreadsheet program\nNote: This CSV file uses solar system data from this NASA website\nStep 2. Configure columnn C in the spreadsheet so that it takes the distance in column B and divides it by the scale (Advice: This youtube video that was mentioned earlier is helpful for this task )\nStep 3. Change the scale to make sure that the model distance to Pluto is roughly the same as your solar system model (Advice: the scale should be much larger than 1)"
   },
   {
-    "objectID": "projects/conductor.html#conductor-interactive-video",
-    "href": "projects/conductor.html#conductor-interactive-video",
-    "title": "Conductor Interactive",
-    "section": "Conductor Interactive Video",
-    "text": "Conductor Interactive Video"
+    "objectID": "projects/solarsystem.html#optional-extensions",
+    "href": "projects/solarsystem.html#optional-extensions",
+    "title": "Solar System Model",
+    "section": "Optional Extensions",
+    "text": "Optional Extensions\n\nAsk the students to go and construct the model solar system. For example, use chalk to mark the planets on a sidewalk, or different sized balls on a basketball court or some other sports field, or go smaller with making the solar system model in a hallway or inside the classroom, or mark the planets on a meter stick, etc.\nTake the project a step further and use the same scale to determine the diameter of the balls in the model. You can find the diameter of each planet from these links. Which sized balls should be used for which planets?"
   },
   {
-    "objectID": "projects/acceleratetheblob.html",
-    "href": "projects/acceleratetheblob.html",
-    "title": "Accelerate the Blob",
+    "objectID": "projects/airpressure.html",
+    "href": "projects/airpressure.html",
+    "title": "Air Pressure Versus Height: 1. Smartphone Data",
     "section": "",
-    "text": "Your browser does not support the video tag.\nCreate a simple game where an object can accelerate in the x and y directions depending on which arrow keys that are pressed\nIn real life, objects accelerate up to a particlar velocity. This exercise will show you how to modify the move the blob exercise so that the blob accelerates in response to the arrow keys, instead of the arrow keys directly controlling the velocity."
+    "text": "Analyze air pressure data from a smartphone or tablet\nIt turns out nearly all smartphones (iPhones and Android models) and nearly all iPads have air pressure sensors (a.k.a. barometers). There are a couple of apps you can use to get a pressure reading but the one that seems to work best on all platforms is the Arduino Science Journal app. The goal of this activity is to use the air pressure sensor in a smartphone to collect pressure data at different heights and compare the data to known physical models."
   },
   {
-    "objectID": "projects/acceleratetheblob.html#links-to-activity",
-    "href": "projects/acceleratetheblob.html#links-to-activity",
-    "title": "Accelerate the Blob",
+    "objectID": "projects/airpressure.html#links-to-activity",
+    "href": "projects/airpressure.html#links-to-activity",
+    "title": "Air Pressure Versus Height: 1. Smartphone Data",
     "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Accelerate the Blob\nCode Editor for Accelerate the Blob"
+    "text": "Links to Activity\nInstructions for the activity, both data collection and data analysis, are given in the playlist shown below.\n\nDownload the Arduino Science Journal app\nStudent Worksheet\nHow do a trendline with Google Sheets and Excel\nExample data (pdf) Example data (csv)"
   },
   {
-    "objectID": "projects/acceleratetheblob.html#learning-objectives",
-    "href": "projects/acceleratetheblob.html#learning-objectives",
-    "title": "Accelerate the Blob",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nAt the end of this lesson students will…\n\nUnderstand basic p5.js syntax, specifically the difference between “+=” and “=”.\nCompare and contrast acceleration and velocity pertaining to objects moving along a straight line path.\nAnalyze an object’s motion using multiple representations, specifically graphical, pictorial, vector, and algebraic."
+    "objectID": "projects/airpressure.html#equipment",
+    "href": "projects/airpressure.html#equipment",
+    "title": "Air Pressure Versus Height: 1. Smartphone Data",
+    "section": "Equipment",
+    "text": "Equipment\nOne of the following is sufficient for this activity:\n\nA smartphone (iPhone or android) with a built-in pressure sensor (nearly all smartphones have this)\nA tablet (iPad or Android) with a built-in pressure sensor (nearly all tablets have this)\nA digital altimeter for hiking, we recommend this model or similar\nA pressure sensor from adafruit or ardunio (requires familiarity with adafruit or arduino)\nA wireless or USB pressure sensor from an educational vendor like Vernier or Pasco (may require other equipment from these vendors to work)"
   },
   {
-    "objectID": "projects/acceleratetheblob.html#accelerate-the-blob-videos",
-    "href": "projects/acceleratetheblob.html#accelerate-the-blob-videos",
-    "title": "Accelerate the Blob",
-    "section": "Accelerate the Blob Videos",
-    "text": "Accelerate the Blob Videos"
+    "objectID": "projects/airpressure.html#software",
+    "href": "projects/airpressure.html#software",
+    "title": "Air Pressure Versus Height: 1. Smartphone Data",
+    "section": "Software",
+    "text": "Software\nWe recommend the Arduino Science Journal app for iOS or Android\nOther physics apps that use and display smartphone sensor data would also work fine (let us know if you have a favorite!)"
   },
   {
-    "objectID": "projects/flower.html",
-    "href": "projects/flower.html",
-    "title": "Mathematical Flower Activity",
+    "objectID": "projects/airpressure.html#air-pressure-versus-height-playlist",
+    "href": "projects/airpressure.html#air-pressure-versus-height-playlist",
+    "title": "Air Pressure Versus Height: 1. Smartphone Data",
+    "section": "Air Pressure Versus Height Playlist",
+    "text": "Air Pressure Versus Height Playlist"
+  },
+  {
+    "objectID": "projects/laser2.html",
+    "href": "projects/laser2.html",
+    "title": "Laser Defense Part 2",
     "section": "",
-    "text": "Let’s make our own flowers using mathematical functions and polar coordinates\nGreatly inspired by an episode of the Coding Train by Dan Shiffman"
+    "text": "Use your knowledge of programming, linear functions and trigonometry to protect an airport from drones. Similar to an old Atari game called missile command\nHopefully you completed Laser Defense (The Basic Game) and were able to add a laser to a simple code to damage an incoming drone. In this activity we are going to add code to catch the drone after it falls (explained in a moment). We are also going to add code to automate the targeting of the drone.\nAirport security is really happy with what you’ve done. The only problem is that when the drones hit the ground they are so mangled that it is hard to figure out who owns it or where it came from. They designed a rolling platform with a net to catch the drone before it can hit the ground. That is going to be a new challenge for the game. Ideally, there would be an automated system to catch the falling drone, so that is something to think about.\nThe other change in this activity is that we are going to use the arrow keys to change the angle of the laser instead of the x,y position of the focus. This is a bit more realistic. This also makes the game a bit harder. Later in the activity we will add code to automatically aim the laser at the drone so it is easier to damage the drones that are encroaching on our airspace."
   },
   {
-    "objectID": "projects/flower.html#links-to-activity",
-    "href": "projects/flower.html#links-to-activity",
-    "title": "Mathematical Flower Activity",
+    "objectID": "projects/laser2.html#links-to-activity",
+    "href": "projects/laser2.html#links-to-activity",
+    "title": "Laser Defense Part 2",
     "section": "Links to Activity",
-    "text": "Links to Activity\n*Instructions for Mathematical Flower Activity"
+    "text": "Links to Activity\n\nInstructions for Laser Defense Part 2\nLaser Defense Part 2 Code Editor"
   },
   {
-    "objectID": "projects/flower.html#mathematical-flower-activity-playlist",
-    "href": "projects/flower.html#mathematical-flower-activity-playlist",
-    "title": "Mathematical Flower Activity",
-    "section": "Mathematical Flower Activity Playlist",
-    "text": "Mathematical Flower Activity Playlist"
-  },
-  {
-    "objectID": "projects/solarcell.html#links-to-activity",
-    "href": "projects/solarcell.html#links-to-activity",
-    "title": "Solar Cell Data Analysis",
-    "section": "Links to Activity",
-    "text": "Links to Activity\nSolar cell data repository\nTeacher Guide (PDF)\nTeacher Guide (MS Word)\nSolar Edge Public Solar Data"
-  },
-  {
-    "objectID": "projects/keplers.html",
-    "href": "projects/keplers.html",
-    "title": "Orbital Motion: Kepler’s Second Law",
+    "objectID": "projects/vax.html",
+    "href": "projects/vax.html",
+    "title": "VAX game",
     "section": "",
-    "text": "This activity involves taking the code at the end of the Slingshot with Gravity exercise and doing some experiments with that code to learn more about the special properties of objects that are experiencing the gravitational pull from a central object. This central object can be a star or a black hole or a neutron star, etc. and the object in orbit can be a comet or an asteroid or a space capsule or even a whole planet. Usually this topic is connected to discussions of the motion of planets around a star.\nKepler made a number of important discoveries about the motion of the planets in the solar system. In the Slingshot with Gravity activity we created a code that demonstrated that 1/r2 forces like gravity naturally produce elliptical orbits. Hopefully you played around with that code to try to see if you could make orbits other than an ellipse. It turns out that as long as the object does not have enough kinetic energy to totally escape the gravitational field of the star it will produce some kind of elliptical orbit. Not only will the trajectory be an ellipse, the object will follow this same path every time it moves around the star. This result is often referred to as Kepler’s first law. Kepler was an astronomer who looked closely at the orbits of planets like Venus and Mars.\nIn this activity we will consider Kepler’s second law. Kepler’s second law has to do with how quickly the planet moves in its elliptical orbit. Kepler showed that the area that the planet “sweeps out” over some interval of time is the same regardless what part of the orbit the planet is in. If you’ve never heard of Kepler’s laws the sentence you just read about planets sweeping things out will probably not make much sense"
+    "text": "Play a video game to learn about viruses and epidemics"
   },
   {
-    "objectID": "projects/keplers.html#links-to-activity",
-    "href": "projects/keplers.html#links-to-activity",
-    "title": "Orbital Motion: Kepler’s Second Law",
+    "objectID": "projects/vax.html#about-the-activity",
+    "href": "projects/vax.html#about-the-activity",
+    "title": "VAX game",
+    "section": "About the Activity",
+    "text": "About the Activity\nWE DID NOT CREATE THIS ACTIVITY!!! It was originally created by a Ph.D. student named Ellsworth Campbell and other collaborators of Prof. Marcel Salathe. The creators of this activity this interactive study how diseases spread as a kind of mathematical problem (in other words they study a field called “epidemiology”).\nThey originally created this game in 2013 and it worked great for a while but by 2022, it had stopped working. Thankfully they released their source code on github. Individuals associated with STEMcoding were able to simplify the code and get it working again so that it no longer requires a server to run it."
+  },
+  {
+    "objectID": "projects/vax.html#links-to-activity",
+    "href": "projects/vax.html#links-to-activity",
+    "title": "VAX game",
     "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Ortbital Motion: Kepler’s Second Law *Orbital Motion: Kepler’s Second Law Code Editor"
-  },
-  {
-    "objectID": "projects/keplers.html#orbital-motion-keplers-second-law-playlist",
-    "href": "projects/keplers.html#orbital-motion-keplers-second-law-playlist",
-    "title": "Orbital Motion: Kepler’s Second Law",
-    "section": "Orbital Motion: Kepler’s Second Law Playlist",
-    "text": "Orbital Motion: Kepler’s Second Law Playlist"
-  },
-  {
-    "objectID": "projects/pidayparallel.html",
-    "href": "projects/pidayparallel.html",
-    "title": "Pi Day in Parallel",
-    "section": "",
-    "text": "In an earlier activity, you were able to approximate \\(\\pi\\) to two or three decimal places; however, it took quite a while for the computer to get to that level of precision.\nWe are going to try to find a faster way to estimate and, at the same time, reveal how many core processors our computer has."
-  },
-  {
-    "objectID": "projects/pidayparallel.html#links-to-activity",
-    "href": "projects/pidayparallel.html#links-to-activity",
-    "title": "Pi Day in Parallel",
-    "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Pi Day in Parallel\nPi Day in Parallel Code Editor"
-  },
-  {
-    "objectID": "projects/bonk.html",
-    "href": "projects/bonk.html",
-    "title": "Bonk.io Clone",
-    "section": "",
-    "text": "If you liked the Pong activity you’ll love this activity which is based on a real game called Bonk.io\nOne of the most popular and entertaining .io games out there right now is bonk.io If you’ve not played it you should definitely check it out. The game is pretty simple. You’re a little ball and you bounce off the ground and various objects. You have some ability to affect your motion, but if you get bounced by some object or some other player so that you fly off the board you lose the game. It’s a little bit like sumo wrestling that way."
-  },
-  {
-    "objectID": "projects/bonk.html#links-to-activity",
-    "href": "projects/bonk.html#links-to-activity",
-    "title": "Bonk.io Clone",
-    "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Bonk.io Clone\nCode Editor for Bonk.io Clone"
-  },
-  {
-    "objectID": "projects/bonk.html#pong-and-bonk.io-playlist",
-    "href": "projects/bonk.html#pong-and-bonk.io-playlist",
-    "title": "Bonk.io Clone",
-    "section": "Pong and Bonk.io Playlist",
-    "text": "Pong and Bonk.io Playlist"
-  },
-  {
-    "objectID": "projects/laser1.html",
-    "href": "projects/laser1.html",
-    "title": "Laser Defense Part 1",
-    "section": "",
-    "text": "Use your knowledge of programming and linear functions to protect an airport from drones. Similar to an old Atari game galled missle command.\nDrones have become cheaper and cheaper which is increasingly a problem at airports because people sometimes fly them in the airspace near the planes. If a plane wre to run into a drone, bad things could happen\nThere are not a ton of choices to take down drones that wander into the air space of an airport. One could try to snare the drone with a net, but that can be complicated. One could try to shoot it down with a machine gun, but the bullets that miss eventually land somewhere.\nA promising option is to use a laser to shoot down the drone. Right now the technology is primarily used by the military but eventually it will be something that civilian airports can use.\nIn this activity we will consider drones that are moving in a straight line ner an air port. We will need to aim a laser system at the drone and get the focusing of the laser right to shoot down the drone. If we are pointing in the right direction, but the focal point is off then the intensity of the light won’t be high enough to damage the drone. This is a real effect."
-  },
-  {
-    "objectID": "projects/laser1.html#links-to-activity",
-    "href": "projects/laser1.html#links-to-activity",
-    "title": "Laser Defense Part 1",
-    "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Laser Defense Part 1\nLaser Defense Part 1 Code Editor"
-  },
-  {
-    "objectID": "projects/balloon.html",
-    "href": "projects/balloon.html",
-    "title": "Air Pressure Versus Height: 2. Balloon Data",
-    "section": "",
-    "text": "Analyze air pressure data from weather balloons\nImage adapted from National Weather Service Forth Worth youtube channel"
-  },
-  {
-    "objectID": "projects/balloon.html#weather-balloon-data",
-    "href": "projects/balloon.html#weather-balloon-data",
-    "title": "Air Pressure Versus Height: 2. Balloon Data",
-    "section": "Weather Balloon Data",
-    "text": "Weather Balloon Data\nEarlier in Air Pressure Versus Height: Smartphone data we learned how to use smartphones to measure air pressure and how these devices are sensitive enough to detect the pressure change from even small changes in height. You can take measurements from your phone as you go up and down a stairwell. You can even attach your phone to a drone! This can be used to obtain pressure measurements as high as about 250 m above the ground, but how would we get pressure measurements from even higher than this? Answer: Weather balloons"
-  },
-  {
-    "objectID": "projects/balloon.html#how-to-obtain-the-data",
-    "href": "projects/balloon.html#how-to-obtain-the-data",
-    "title": "Air Pressure Versus Height: 2. Balloon Data",
-    "section": "How to obtain the data",
-    "text": "How to obtain the data\n\nWeather balloon data from across the world is freely available to analyze thanks to the National Oceanographic and Atmospheric Administration which has a public database at this link\nIt is important to figure out the code name for the weather station near you. For example, Wilmington, Ohio is USM00072426 and Amarillo, Texas is USM00072363. To find a weather station near you, look through this list of US station names with recent data. If you can’t find your city there you may be able to find it in the full list however note that for some cities the latest data available could be decades old which could be a problem because there may not be a height estimate for each pressure reading\nLook for the data for your station on https://www.ncei.noaa.gov/data/integrated-global-radiosonde-archive/access/data-y2d/ You will find a zip file with the name of the station (for example: USM00072363-data-beg2025.txt.zip) Download that file and figure out a way to unzip or extract the file so that it looks like USM00072363-data.txt This file contains many ballon measurements at that location. You only need one measurement!\nHere is what one measurement of pressure versus height looks like\n\n#USM00072363 2025 01 01 00 2306  324 ncdc-nws ncdc-gts  352331 -1017091\n21     0  89482B 1095    67B  420   120    92    15 \n20     7  89005  1139B   60B  362   138    40    29 \n20    20  88282  1204B   50B  387   129    59    26 \n20    28  87861  1244B   46B  397   125    60    26 \n20    45  86986  1325B   37B  418   117    83    26 \n20   105  85891  1428B   27B  440   110    65    16 \n20   121  85123  1500B   20B  457   104    70    19 \n10   123  85000  1512B   19B  460   103    70    20 \n20   203  82901  1714B    0B  504    90   180    29 \n20   205  82763  1727B   -1B  507    89   185    30 \n20   220  82001  1800B   -8B  527    84   179    14 \n20   245  80633  1934B  -22B  564    75   109    17 \n20   311  78968  2100B  -37B  610    64   136    31 \n20   325  78244  2172B  -43B  633    59   153    26 \n20   355  76772  2322B  -56B  668    52   179    28 \n20   514  72790  2738B  -71B  471    93   241    92 \n20   529  72108  2811B  -70B  449    99   250   111 \n20   543  71538  2873B  -71B  467    94   256   127 \n10   615  70000  3043B  -39B  425   108   273   150 \n20   621  69732  3074B  -39B  411   112   275   151 \n20   645  68604  3202B  -44B  360   127   279   174 \n20   705  67608  3317B  -47B  314   143   273   217 \n20   717  67080  3379B  -49B  306   146   274   225 \n20   745  65870  3522B  -56B  338   133   279   234 \n20   805  65015  3624B  -64B  355   127   279   216 \n20   824  64302  3710B  -70B  363   124   278   212 \n20   845  63357  3823B  -74B  344   129   276   210 \n20   917  61972  3997B  -81B  279   152   271   225 \n20   925  61636  4039B  -84B  283   150   270   230 \n20   953  60378  4200B  -92B  323   134   273   250 \n20   957  60206  4222B  -94B  326   133   274   251 \n20  1037  58461  4447B  -99B  150   216   281   299 \n20  1105  57281  4605B -106B  158   192   283   352 \n20  1125  56540  4705B -113B  124   214   283   377 \n20  1145  55859  4798B -121B  100   232   281   375 \n20  1225  54432  4995B -136B   72   260   284   387 \n20  1305  52862  5217B -146B   13   401   287   365 \n20  1318  52448  5276B -151B   12   402   286   364 \n............Many more lines of data!!!.............\n20  9705   1100 30177B -500B   11   315    32    85 \n20  9725   1079 30305B -499B   11   316    25    96 \n20  9805   1038 30557B -494B   10   319    50    86 \n10  9843   1000 30804B -490B   10   321    43    83 \n20  9845    998 30817B -490B   10   321    42    82 \n20  9905    978 30948B -488B   10   321    51    81 \n20  9945    939 31214B -486B   10   321    34   103 \n20 10005    921 31344B -487B   11   320    28   101 \n20 10025    902 31481B -486B   10   320    30    91 \n20 10105    867 31744B -486B   10   320    49    88 \n20 10125    849 31882B -485B   11   319    36    82 \n20 10127    847 31894B -485B   11   319    35    83 \n20 10147    830 32030B -485B   11   319    22    91 \n20 10221    807 32249B -486B   10   320    20    93 \n30 -9999  -9999  1200 -9999 -9999 -9999    60    26 \n30 -9999  -9999  1500 -9999 -9999 -9999    65    15 \n30 -9999  -9999  1800 -9999 -9999 -9999   185    15 \n30 -9999  -9999  2100 -9999 -9999 -9999   135    36 \n30 -9999  -9999  2400 -9999 -9999 -9999   185    26 \n30 -9999  -9999  2700 -9999 -9999 -9999   235    82 \n30 -9999  -9999  3300 -9999 -9999 -9999   275   216 \n30 -9999  -9999  3600 -9999 -9999 -9999   280   221 \n30 -9999  -9999  3900 -9999 -9999 -9999   270   231 \n30 -9999  -9999  4200 -9999 -9999 -9999   275   247 \n30 -9999  -9999  4500 -9999 -9999 -9999   285   350 \n30 -9999  -9999  4800 -9999 -9999 -9999   280   376 \n\nWe need to extract the third and fourth columns in order to plot the pressure versus height but this is a messy dataset that needs to be cleaned! For example, the fourth and fifth column includes the letter B next to the number which would be very confusing for any spreadsheet program to read in. If you are curious what these symbols mean it is explained in this file"
-  },
-  {
-    "objectID": "projects/balloon.html#example-data",
-    "href": "projects/balloon.html#example-data",
-    "title": "Air Pressure Versus Height: 2. Balloon Data",
-    "section": "Example data",
-    "text": "Example data\nHere are some examples of cleaned data where the extra symbols have been removed and all the lines that contain -9999 have been removed\n\nAmarillo TX data\nWilmington OH data"
-  },
-  {
-    "objectID": "projects/balloon.html#what-do-to-with-the-data",
-    "href": "projects/balloon.html#what-do-to-with-the-data",
-    "title": "Air Pressure Versus Height: 2. Balloon Data",
-    "section": "What do to with the data",
-    "text": "What do to with the data\nEarlier in Air Pressure Versus Height: Smartphone data we found that the air pressure decreases linearly with height, but we were only looking at data that was within 100 meters of the ground. Does the pressure versus height trendline continue to be linear above 100 meters? What mathematical function does it look like? Try plotting the pressure axis using a “log” scale."
+    "text": "Links to Activity\nNote: these links point to the same activity. We are providing multiple links in case one of them is blocked by your school.\n\nVAX game hosted from github.io\nVAX game hosted from OSU servers\nVAX game hosted from stemcoding.org"
   },
   {
     "objectID": "projects/earth.html",
@@ -1755,26 +1776,5 @@
     "title": "Training",
     "section": "",
     "text": "Schedule"
-  },
-  {
-    "objectID": "projects/vax.html",
-    "href": "projects/vax.html",
-    "title": "VAX game",
-    "section": "",
-    "text": "Play a video game to learn about viruses and epidemics"
-  },
-  {
-    "objectID": "projects/vax.html#about-the-activity",
-    "href": "projects/vax.html#about-the-activity",
-    "title": "VAX game",
-    "section": "About the activity",
-    "text": "About the activity\nWE DID NOT CREATE THIS ACTIVITY!!! It was originally created by Prof. Marcel Salathe and collaborators at a Swiss university called ETH Zurich. Prof. Salathe and others study how diseases spread as a kind of mathematical problem (in other words they study a field called “epidemiology”). They originally created this game in 2013 and it worked great for a while but by 2022, it had stopped working. Thankfully they released their source code on github. Individuals associated with STEMcoding were able to simplify the code and get it running again."
-  },
-  {
-    "objectID": "projects/vax.html#links-to-activity",
-    "href": "projects/vax.html#links-to-activity",
-    "title": "VAX game",
-    "section": "Links to Activity",
-    "text": "Links to Activity\nNote: these links point to the same activity. We are providing multiple links in case one of them is blocked by your school.\n\nVAX game hosted from github.io\nVAX game hosted from OSU servers\nVAX game hosted from stemcoding.org"
   }
 ]
