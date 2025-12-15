@@ -2,6 +2,8 @@ project:
   type: website
   output-dir: docs
   title: STEMcoding
+  resources:
+    - CNAME
 
 website:
   favicon: img/stemcoding_favicon_final.png
