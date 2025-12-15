@@ -4,6 +4,7 @@ project:
   title: STEMcoding
   resources:
     - CNAME
+    - vaxgame
 
 website:
   favicon: img/stemcoding_favicon_final.png

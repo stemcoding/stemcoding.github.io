@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--Magic dot-->.
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="assets/javascripts/d3.v3.min.js"></script>
+    <script src="assets/javascripts/netrics.js"></script>
+    <script src="assets/javascripts/sir.js"></script>
+    <script src="assets/javascripts/footerMenu.js"></script>
+    <script src="assets/javascripts/tutorial.js"></script>
+    <script src="assets/javascripts/tutorialAdvance.js"></script>
+    <script src="assets/javascripts/tutorialReverse.js"></script>
+
+    <link href="assets/css/style.css" media="all" rel="stylesheet" />
+
+    <title>Tour</title>
+  </head>
+
+  <body>
+    <div class="actionVax" onclick=activateVaccinationMode()>
+      <div class="vaccineDepressedState"></div>
+      <text id="vaxShieldText"> VACCINES </text>
+      <img id="vaxShieldIcon" src="assets/images/vaxShield.svg" alt="shield icon" onclick=activateVaccinationMode() />
+    </div>
+
+    <div class="actionQuarantine" onclick=activateQuarantineMode()>
+      <div class="quarantineDepressedState"></div>
+      <text id="quarantineText"> QUARANTINE </text>
+      <img id="quarantineIcon" src="assets/images/quarantine.svg" alt="quarantine icon" onclick=activateQuarantineMode() />
+    </div>
+  </body>
+</html>
