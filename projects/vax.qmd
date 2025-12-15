@@ -6,7 +6,7 @@ categories:
     - Discrete math
 ---
 
-![](../img/vax_logo.png){width=400 fig-align="center"}
+![](../img/vax_logo.png){width=500 fig-align="center"}
 
 Play a video game to learn about viruses and epidemics
 
