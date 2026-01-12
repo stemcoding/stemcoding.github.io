@@ -23,7 +23,7 @@ An important spreadsheet skill is to [multiply the values in a particular column
 
 [Download this CSV file with the planets and their distances to the sun and open it in a spreadsheet program](../solar_system.csv)
 
-<b>Note:</b> This CSV file uses solar system data from this [NASA website](https://nssdc.gsfc.nasa.gov/planetary/factsheet/planet_table_ratio.html)
+<b>Note:</b> This CSV file uses solar system data from this [NASA website](planet_table_ratio.html)
 
 <b>Step 2.</b> Configure columnn C in the spreadsheet so that it takes the distance in column B and divides it by the scale (Advice: [This youtube video that was mentioned earlier is helpful for this task](https://www.youtube.com/watch?v=HRzfHcgDvyk) )
 
