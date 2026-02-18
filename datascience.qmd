@@ -2,7 +2,7 @@
 title: "Data Science"
 ---
 
-Nationally there is a movement in high schools to offer "data science" as an alternative to algebra 2 level math, and to enhance traditional science courses with data-related tasks and spreadsheet skills. This is music to our ears in the STEMcoding project where we work to re-imagine introductory science and math courses.
+Nationally there is a movement in high schools to offer "data science" as an alternative to algebra 2 level math, and to enhance traditional science courses with data-related tasks and spreadsheet skills. This is music to our ears in the STEMcoding project where we work to re-imagine introductory science and math courses!
 
 <img src="/img/stemcoding_data_science_icon_2026.png" width=426 style="display: block; margin-left: auto; margin-right: auto;" >
 
@@ -12,7 +12,9 @@ Now we are ready to share [our curriculum](activities.html#category=Data\ Scienc
 
 <a href="https://reg-continuinged.osu.edu/search/publicCourseSearchDetails.do?method=load&amp;courseId=1585149&amp;sectionId=1585469&amp;showInternal=true#courseSectionDetails_1736619"><img style="margin-top: 0; margin-bottom: 0; position: relative; left: 50%; transform: translateX(-50%);" src="/img/stemcoding_continuing_ed.png" alt="" width="600" /></a>
 
-Our new [continuing education course](https://reg-continuinged.osu.edu/search/publicCourseSearchDetails.do?method=load&amp;courseId=1585149&amp;sectionId=1585469&amp;showInternal=true#courseSectionDetails_1736619) is open to teachers everywhere. The online only option will be through daily zoom meetings while the hybrid option will be in person at OSU Marion for July 7 &amp; 8 and online for July 9 - 17 (except for the weekend). The course is not free but there is an early bird discount and the cost includes software that you can use in your classroom. Participants will receive a certificate stating they have completed up to 3.0 Continuing Education Units (CEUs).
+Our new [continuing education course](https://reg-continuinged.osu.edu/search/publicCourseSearchDetails.do?method=load&amp;courseId=1585149&amp;sectionId=1585469&amp;showInternal=true#courseSectionDetails_1736619) is open to teachers everywhere. The online only option will meet daily via Zoom while the hybrid option will meet in person at OSU Marion for July 7 &amp; 8 and online for July 9 - 17 (except for the weekend). The cost of the course includes software for you to use in your classroom. There is an early bird discount, so sign up soon!  Upon completing the course, participants will receive a certificate stating they have completed up to 3.0 Continuing Education Units (CEUs).
+
+Our high school data science curriculum emphasizes spreadsheet skills with Google Sheets and Excel. Importantly, our activities align with the [intro level Excel industry credential](https://docs.microsoft.com/en-us/certifications/mos-excel-2019/#certification-exams) so that students in a year long data science course with our curriculum will be ready to take the certification exam (which is not as crushingly difficult as other industry credential exams).
 
 <b>Important note for Teachers in Texas:</b> You can get our online training for free in late June through our partnership with [WeTeach_CS](https://weteachcs.org/training-events/preferred-curriculum-and-pd-provider-workshops/2026/) at the University of Texas at Austin. For more info, email [stemcodingohio@gmail.com](mailto:stemcodingohio@gmail.com)
 
