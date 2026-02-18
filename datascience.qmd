@@ -2,10 +2,18 @@
 title: "Data Science"
 ---
 
-<img src="/img/datascience3.jpeg" width=800 style="display: block; margin-left: auto; margin-right: auto;" >
+Nationally there is a movement in high schools to offer "data science" as an alternative to algebra 2 level math, and to enhance traditional science courses with data-related tasks and spreadsheet skills. This is music to our ears in the STEMcoding project where we work to re-imagine introductory science and math courses.
 
-More info about our data science initiative coming soon!
+<img src="/img/stemcoding_data_science_icon_2026.png" width=800 style="display: block; margin-left: auto; margin-right: auto;" >
 
-In the mean time check out our [Data Science](activities.html#category=Data\ Science) and [Spreadsheet](activities.html#category=Spreadsheets) activities
+The first STEMcoding data science activity was released back in 2017 with what would eventually become our <a href="http://go.osu.edu/earthdaycoding">Earth Day Hour of Code</a> activity. We've been building data science content ever since with the help of [multiple](https://u.osu.edu/stemcoding/2021/10/29/stemcoding-data-science-selected-for-2021-aip-meggers-award/) [grants](https://u.osu.edu/stemcoding/2025/07/20/stemcoding-wins-20k-grant-for-data-science/) for curriculum development.
+
+Now we are ready to share [our curriculum](activities.html#category=Data\ Science) and [Spreadsheet](activities.html#category=Spreadsheets) with the world! For two weeks starting July 7, 2026 we will offer online and hybrid (in person + online) training to teach this curriculum.
+
+<a href="https://reg-continuinged.osu.edu/search/publicCourseSearchDetails.do?method=load&amp;courseId=1585149&amp;sectionId=1585469&amp;showInternal=true#courseSectionDetails_1736619"><img style="margin-top: 0; margin-bottom: 0; position: relative; left: 50%; transform: translateX(-50%);" src="/img/stemcoding_continuing_ed.png" alt="" width="426" height="389" /></a>
+
+Our new [continuing education course](https://reg-continuinged.osu.edu/search/publicCourseSearchDetails.do?method=load&amp;courseId=1585149&amp;sectionId=1585469&amp;showInternal=true#courseSectionDetails_1736619) is open to teachers everywhere. The online only option will be through daily zoom meetings while the hybrid option will be in person at OSU Marion for July 7 &amp; 8 and online for July 9 - 17 (except for the weekend). The course is not free but there is an early bird discount and the cost includes software that you can use in your classroom. Participants will receive a certificate stating they have completed up to 3.0 Continuing Education Units (CEUs).
+
+
 
 
