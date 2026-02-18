@@ -14,6 +14,6 @@ Now we are ready to share [our curriculum](activities.html#category=Data\ Scienc
 
 Our new [continuing education course](https://reg-continuinged.osu.edu/search/publicCourseSearchDetails.do?method=load&amp;courseId=1585149&amp;sectionId=1585469&amp;showInternal=true#courseSectionDetails_1736619) is open to teachers everywhere. The online only option will be through daily zoom meetings while the hybrid option will be in person at OSU Marion for July 7 &amp; 8 and online for July 9 - 17 (except for the weekend). The course is not free but there is an early bird discount and the cost includes software that you can use in your classroom. Participants will receive a certificate stating they have completed up to 3.0 Continuing Education Units (CEUs).
 
-<b>Important note for Teachers in Texas:</b> You can get our online training for free in late June through our partnership with [WeTeach_CS](https://weteachcs.org/) at the University of Texas at Austin. For more info, email [stemcodingohio@gmail.com](mailto:stemcodingohio@gmail.com)
+<b>Important note for Teachers in Texas:</b> You can get our online training for free in late June through our partnership with [WeTeach_CS](https://weteachcs.org/training-events/preferred-curriculum-and-pd-provider-workshops/2026/) at the University of Texas at Austin. For more info, email [stemcodingohio@gmail.com](mailto:stemcodingohio@gmail.com)
 
 
