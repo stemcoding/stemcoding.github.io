@@ -19,3 +19,4 @@ Our high school data science curriculum emphasizes spreadsheet skills with Googl
 <b>Important note for Teachers in Texas:</b> You can get our online training for free in late June through our partnership with [WeTeach_CS](https://weteachcs.org/training-events/preferred-curriculum-and-pd-provider-workshops/2026/) at the University of Texas at Austin. For more info, email [stemcodingohio@gmail.com](mailto:stemcodingohio@gmail.com)
 
 
+<a href="http://bit.ly/STEMcodingDS26"><img src="/img/Texas_flyer_2026.png" width=650 style="display: block; margin-left: auto; margin-right: auto;" ></a>
