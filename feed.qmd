@@ -28,5 +28,5 @@ title: "Social Media Feed"
    data-exclude-replies="true"
    >STEM Coding Mastodon feed</a>
 
-<script type="module" src="/assets/js/emfed.js"></script>
+<script type="module" src="/assets/js/emfed-bundle.js"></script>
 
