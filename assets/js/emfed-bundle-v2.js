@@ -1031,7 +1031,7 @@ function renderToot(toot) {
     };
     toot = toot.reblog;
   }
-  const date = new Date(toot.created_at).toLocaleString();
+  const date = new Date(toot.created_at).toLocaleDateString();
   const images = toot.media_attachments.filter((att) => att.type === "image");
   return html`<li class="toot">
     <a class="permalink" href="${toot.url}">

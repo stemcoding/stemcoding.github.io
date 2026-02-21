@@ -4,7 +4,7 @@ title: "Social Media Feed"
 
 
 
-<link rel="stylesheet" type="text/css" href="/assets/toots.css">
+<link rel="stylesheet" type="text/css" href="/assets/toots-v2.css">
 
 <style>
   /* Customize the overall width and text size of the feed */
@@ -20,6 +20,11 @@ title: "Social Media Feed"
     padding-bottom: 2rem !important; /* Increases the bottom padding */
     min-height: 1000px; Uncomment this if you want to force a specific minimum height */
   }
+
+  /* Hide the @username handle, leaving only the display name */
+  .toot .username {
+    display: none !important;
+  }
 </style>
 
 <a class="mastodon-feed"
@@ -28,5 +33,5 @@ title: "Social Media Feed"
    data-exclude-replies="true"
    >STEM Coding Mastodon feed</a>
 
-<script type="module" src="/assets/js/emfed-bundle.js"></script>
+<script type="module" src="/assets/js/emfed-bundle-v2.js"></script>
 

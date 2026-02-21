@@ -159,7 +159,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><link rel="stylesheet" type="text/css" href="./assets/toots.css"></p>
+<p><link rel="stylesheet" type="text/css" href="./assets/toots-v2.css"></p>
 <style>
   /* Customize the overall width and text size of the feed */
   .toots {
@@ -174,9 +174,14 @@ ul.task-list li input[type="checkbox"] {
     padding-bottom: 2rem !important; /* Increases the bottom padding */
     min-height: 1000px; Uncomment this if you want to force a specific minimum height */
   }
+
+  /* Hide the @username handle, leaving only the display name */
+  .toot .username {
+    display: none !important;
+  }
 </style>
 <p><a class="mastodon-feed" href="https://mastodon.social/@stemcoding" data-toot-limit="20" data-exclude-replies="true">STEM Coding Mastodon feed</a></p>
-<script type="module" src="./assets/js/emfed-bundle.js"></script>
+<script type="module" src="./assets/js/emfed-bundle-v2.js"></script>
 
 
 

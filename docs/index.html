@@ -160,8 +160,44 @@ ul.task-list li input[type="checkbox"] {
 <p>We hope you enjoy this site! Check out our <a href="./feed.html">Social Media Feed</a> to see what we’ve been up to lately, or our <a href="./calendar.html">Calendar</a> to see upcoming events and trainings. Please join our <a href="https://discord.gg/bsWgqcqwCE">Discord</a> to reach out or ask questions!!!</p>
 <div class="margin-sidebar-content">
 <p><br> <br> <br> <br> <br> <br> <br></p>
-<iframe allowfullscreen="" sandbox="allow-top-navigation allow-scripts allow-popups allow-popups-to-escape-sandbox" src="https://mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Fmastodon.social%2Fusers%2Fstemcoding&amp;theme=light&amp;size=100&amp;header=false&amp;replies=false&amp;boosts=true" style="width: 100%; height: 800px; border: 1px solid #ccc; border-radius: 8px;">
-</iframe>
+<p><link rel="stylesheet" type="text/css" href="./assets/toots-v2.css"></p>
+<style>
+  /* Customize the overall width and text size of the feed */
+  .toots {
+    max-width: 100%; /* Adjust this value (e.g., 600px, 80%) as needed */
+    margin: 0 auto !important; /* Centers the feed on the page */
+    font-size: 1.1rem; /* Increases the text size of the feed */
+  }
+
+  /* Customize the vertical size of each individual toot */
+  .toot {
+    padding-top: 2rem !important; /* Increases the top padding */
+    padding-bottom: 2rem !important; /* Increases the bottom padding */
+    min-height: 1000px; /*Uncomment this if you want to force a specific minimum height */
+  }
+
+  /* Hide the @username handle, leaving only the display name */
+  .toot .username {
+    display: none !important;
+  }
+
+  /* Container to make the feed scrollable */
+  .feed-container {
+    height: 2000px;
+    overflow-y: scroll !important; /* Force scrollbar */
+    overscroll-behavior: contain;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    pointer-events: auto; /* Ensure the container can receive scroll events */
+    position: relative;
+    z-index: 100;
+  }
+</style>
+<div class="feed-container">
+<p><a class="mastodon-feed" href="https://mastodon.social/@stemcoding" data-toot-limit="20" data-exclude-replies="true">STEM Coding Mastodon feed</a></p>
+<script type="module" src="./assets/js/emfed-bundle-v2.js"></script>
+</div>
 </div>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
