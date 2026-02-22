@@ -40,7 +40,7 @@ We hope you enjoy this site! Check out our [Social Media Feed](feed.qmd) to see 
   .toot {
     padding-top: 2rem !important; /* Increases the top padding */
     padding-bottom: 2rem !important; /* Increases the bottom padding */
-    min-height: 1000px; /*Uncomment this if you want to force a specific minimum height */
+/*    min-height: 1000px; Uncomment this if you want to force a specific minimum height */
   }
 
   /* Hide the @username handle, leaving only the display name */
