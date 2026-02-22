@@ -183,8 +183,8 @@ ul.task-list li input[type="checkbox"] {
 
   /* Container to make the feed scrollable */
   .feed-container {
-    height: 2000px;
-    overflow-y: scroll !important; /* Force scrollbar */
+    height: calc(100vh - 300px); /* Responsive height to avoid page scroll */
+    overflow-y: auto !important; /* Show scrollbar if feed is long */
     overscroll-behavior: contain;
     border: 1px solid #ccc;
     border-radius: 8px;

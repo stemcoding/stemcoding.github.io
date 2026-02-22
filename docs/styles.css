@@ -4,7 +4,8 @@
 #quarto-margin-sidebar {
     width: 400px !important;
     min-width: 400px !important;
-    overflow: hidden !important; /* Hide scrollbars */
+    overflow-y: auto !important;
+    /* Show scrollbars if needed */
 }
 
 /* Adjust the main content area to accommodate wider sidebar */
@@ -17,9 +18,10 @@
     #quarto-margin-sidebar {
         width: 400px !important;
         min-width: 400px !important;
-        overflow: hidden !important; /* Hide scrollbars */
+        overflow-y: auto !important;
+        /* Show scrollbars if needed */
     }
-    
+
     .page-columns .page-full {
         grid-template-columns: 1fr 500px !important;
     }
@@ -29,18 +31,4 @@
 .margin-sidebar-content iframe {
     width: 100% !important;
     max-width: none !important;
-}
-
-/* Hide scrollbars for the entire sidebar content */
-#quarto-margin-sidebar, 
-#quarto-margin-sidebar * {
-    overflow: hidden !important;
-    scrollbar-width: none !important; /* Firefox */
-    -ms-overflow-style: none !important; /* Internet Explorer 10+ */
-}
-
-/* Hide scrollbars for webkit browsers (Chrome, Safari, Edge) */
-#quarto-margin-sidebar::-webkit-scrollbar,
-#quarto-margin-sidebar *::-webkit-scrollbar {
-    display: none !important;
 }
