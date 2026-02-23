@@ -23,7 +23,7 @@ It can work in other browsers (safari, firefox, etc.) but it may run slower or n
 
 ### Part 1: Track the Object
 * [Instructions for Part 1](https://www.asc.ohio-state.edu/orban.14/stemcoding/datascience/objecttracker/part1/)
-* [Part 1 Code Editor]()
+* [Part 1 Code Editor](http://go.osu.edu/objecttracker)
 
 ### Part 2: Analyze Height vs. Time
 * [Instructions for Part 2](https://www.asc.ohio-state.edu/orban.14/stemcoding/datascience/objecttracker/part2/)
