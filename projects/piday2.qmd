@@ -3,6 +3,7 @@ title: "Pi Day Part 2"
 image: ../img/piday2.png
 categories:
     - Advanced HS
+    - Math
     - Trigonometry
     - Precalculus
     - Javascript
