@@ -220,7 +220,7 @@ window.Quarto = {
 </header>
 
 
-<p><a href="flowchart.q1">View a flowchart of all STEMcoding activities here.</a></p>
+<p><a href="./flowchart.html">View a flowchart of all STEMcoding activities here.</a></p>
 <div class="cc-license-badge">
 <p><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank"> <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc.png" alt="CC BY-NC License"> </a></p>
 </div>
@@ -241,9 +241,16 @@ window.Quarto = {
 }
 .cc-license-badge img {
   display: block;
-//  width: 88px;
+  /* width: 88px; */
   height: 80px;
 }
+
+@media (max-width: 1024px) {
+  .cc-license-badge {
+    display: none;
+  }
+}
+
 </style>
 
 
