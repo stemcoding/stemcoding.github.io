@@ -8,4 +8,32 @@ listing:
   type: grid
 ---
 
-[View a flowchart of all STEMcoding activities here.](flowchart.qmd)
+[View a flowchart of all STEMcoding activities here.](flowchart.q1)
+
+<div class="cc-license-badge">
+  <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">
+    <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc.png" alt="CC BY-NC License">
+  </a>
+</div>
+
+<style>
+.cc-license-badge {
+  position: fixed;
+  bottom: -15px;
+  left: 0px;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 1px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: opacity 0.3s;
+}
+.cc-license-badge:hover {
+  background: rgba(255, 255, 255, 1);
+}
+.cc-license-badge img {
+  display: block;
+//  width: 88px;
+  height: 80px;
+}
+</style>
