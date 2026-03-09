@@ -7,6 +7,8 @@ categories:
     - Geometry
     - Middle School
     - Intro HS
+aliases:
+  - /piday
 ---
 
 Calculate the digits of pi with a random number generator and some code!
