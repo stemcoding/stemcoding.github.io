@@ -7,6 +7,8 @@ categories:
   - Physical Science
   - Physics
   - Javascript
+aliases:
+  - /pong
 ---
 
 In the classic game of Pong, there is a little ball that bounces around off various walls and objects. Importantly, the ball changes direction when it bounces but it never really slows down in speed. This is a big hint that the collisions that the ball is experiencing are elastic collisions.
