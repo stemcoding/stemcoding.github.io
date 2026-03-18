@@ -9,6 +9,7 @@ categories:
   - Spreadsheets
   - Sustainability
   - Javascript
+  - Earth day
 ---
 
 ![](../img/earth.png)
