@@ -13,5 +13,9 @@ How do electrons move inside of a conductor? Play with a web interactive to find
 
 ## Links to Activity
 
+[Conductor Interactive](http://go.osu.edu/conductor)
+
+[Conductor with lower electric field strength so the trajectories are more randomized](http://go.osu.edu/realconductor)
+
 ## Conductor Interactive Video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/aktIvNWG9yk?si=czMLxJUjB-soMSA7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
