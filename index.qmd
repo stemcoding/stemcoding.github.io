@@ -12,7 +12,7 @@ The STEMcoding project exists to re-imagine introductory STEM courses like math 
 We love to create activities that <b>*each*</b> align with relevant math, [science](http://go.osu.edu/ngss) <b>*and*</b> computer science standards. Some of our physical science activities appear on the ["model curriculum" examples](https://web.archive.org/web/20221020133711/https://education.ohio.gov/getattachment/Topics/Learning-in-Ohio/Science/Ohios-Learning-Standards-and-MC/Final-Physical-Science-Instructional-Supports.pdf.aspx?lang=en-US) distributed by the Ohio Department of Education and Workforce. We are also working to create a year-long [data science curriculum](datascience.html).
 
 <video width="100%" controls autoplay muted loop>
-<source src="vid/welcome_to_stemcoding.mp4" type="video/mp4">
+<source src="vid/welcome_to_stemcoding2.mp4" type="video/mp4">
 </video>
 
 We are very proud of the [STEMcoding youtube channel!](http://youtube.com/STEMcoding)  We have released over 100 videos featuring faculty and students at Ohio State University and the University of Mount Union.
