@@ -7,7 +7,7 @@ project:
     - vaxgame
 
 website:
-  favicon: img/stemcoding_favicon_final.png
+  favicon: img/stemcoding_favicon_new2.png
   navbar:
     title: false
     left:
