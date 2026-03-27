@@ -18,4 +18,3 @@ categories:
 
 [Teacher Guide (MS Word)](solar_cells_teacher_guide.docx)
 
-[Solar Edge Public Solar Data](https://monitoringpublic.solaredge.com/solaredge-web/p/home/public?locale=en_US)
