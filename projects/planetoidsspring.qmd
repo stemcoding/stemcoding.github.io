@@ -19,8 +19,8 @@ categories:
 Think back to the momentum exercise. The little ship can collide with a "blob" and stick to it. Now imagine that this blob is attached to a spring. Wouldn't it be interesting if the ship could collide with the blob and then the spring would push and pull both around? This is what we will do in this exercise.
 
 ## Links to Activity
-* [Instructions for Planetoids with a Spring](https://www.asc.ohio-state.edu/orban.14//physics_coding/spring.html)
-* [Planetoids with a Spring Code Editor](https://editor.p5js.org/ChrisOrban/sketches/BJm9lxHC7)
+* [Instructions for Planetoids with a Spring](https://www.asc.ohio-state.edu/orban.14/stemcoding/milestones/spring/spring.html)
+* [Planetoids with a Spring Code Editor](https://editor.p5js.org/ChrisOrban/sketches/opFG-7xZp)
 
 ## Learning Objectives
 At the end of this lesson students will...
