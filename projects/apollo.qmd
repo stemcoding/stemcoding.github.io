@@ -6,6 +6,8 @@ categories:
   - Physical Science
   - Physics
   - Javascript
+aliases:
+  - /apollo
 ---
 
 <div style="margin-bottom: 20px;">

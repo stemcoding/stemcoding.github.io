@@ -6,6 +6,8 @@ categories:
   - Physics
   - Javascript
   - Trigonometry
+aliases:
+  - /lunardescent
 ---
 
 If you have finished tinkering with the Planetoids lab you can continue with this lab where we will now add gravity to the game! You have a little ship that you must fly around and land safely on the moon. If you approach the landing too fast you will crash the ship.
