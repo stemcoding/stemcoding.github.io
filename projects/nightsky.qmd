@@ -7,6 +7,8 @@ categories:
   - Data Science
   - Spreadsheets
   - Javascript
+aliases:
+  - /nightsky
 ---
 
 Use some basic facts and equations about stars to randomly generate a realistic-looking starfield
