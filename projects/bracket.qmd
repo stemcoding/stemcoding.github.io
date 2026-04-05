@@ -22,7 +22,7 @@ Notice on the [STEMcoding Bracket Builder](http://explore.stemcoding.org/bracket
 
 * Why is does the binary number have as many digits as it has?
 * Why is there 9.2 quadrillon possible brackets? Of the 9.2 quadrillon possible brackets, which number is your bracket according to the [STEMcoding Bracket Builder](http://explore.stemcoding.org/bracket.html)?
-* Why is the Base 10 and Hexadecimal code shorter than the binary code?
+* Of the three different codes (Binary, Base 10 and Hexadecimal) why is the length of those codes from longest to shortest: Binary, Base 10 and Hexadecimal?
 * How is the QR code storing the Share URL? How many different possible QR codes are there?
 
 Check your brackets later to see how you did!

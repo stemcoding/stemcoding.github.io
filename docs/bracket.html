@@ -266,12 +266,12 @@
                     <button onclick="navigator.clipboard.writeText('${binStr}'); let btn=this; btn.innerText='Copied!'; setTimeout(()=>btn.innerText='Copy Binary to the Clipboard', 2000);" style="cursor: pointer; padding: 4px 8px; border: 1px solid #ccc; border-radius: 4px; background: #eee; font-size: 12px;">Copy Binary to Clipboard</button>
                 </p>
                 <p style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 10px;">
-                    <strong>Hexadecimal:</strong> <span style="word-break: break-all; font-family: monospace;">${hexStr}</span>
-                    <button onclick="navigator.clipboard.writeText('${hexStr}'); let btn=this; btn.innerText='Copied!'; setTimeout(()=>btn.innerText='Copy Hexadecimal to the Clipboard', 2000);" style="cursor: pointer; padding: 4px 8px; border: 1px solid #ccc; border-radius: 4px; background: #eee; font-size: 12px;">Copy Hex to Clipboard</button>
-                </p>
-                <p style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 10px;">
                     <strong>Base 10:</strong> <span style="word-break: break-all; font-family: monospace;">${base10Str}</span>
                     <button onclick="navigator.clipboard.writeText('${base10Str}'); let btn=this; btn.innerText='Copied!'; setTimeout(()=>btn.innerText='Copy Base 10 number to the Clipboard', 2000);" style="cursor: pointer; padding: 4px 8px; border: 1px solid #ccc; border-radius: 4px; background: #eee; font-size: 12px;">Copy Base 10 number to Clipboard</button>
+                </p>
+                <p style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 10px;">
+                    <strong>Hexadecimal:</strong> <span style="word-break: break-all; font-family: monospace;">${hexStr}</span>
+                    <button onclick="navigator.clipboard.writeText('${hexStr}'); let btn=this; btn.innerText='Copied!'; setTimeout(()=>btn.innerText='Copy Hexadecimal to the Clipboard', 2000);" style="cursor: pointer; padding: 4px 8px; border: 1px solid #ccc; border-radius: 4px; background: #eee; font-size: 12px;">Copy Hex to Clipboard</button>
                 </p>
                 <p style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 10px;">
                     <strong>Share URL:</strong> <a href="${shareUrl}" target="_blank" style="word-break: break-all; font-size: 14px; max-width: 60%;">${shareUrl}</a>
