@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bracket Builder</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #004684;
+            margin-bottom: 20px;
+        }
+
+        .instructions {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .bracket-wrapper {
+            display: flex;
+            overflow-x: auto;
+            padding-bottom: 20px;
+            justify-content: center;
+        }
+
+        .bracket {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .half {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .round {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 180px;
+            margin: 0 10px;
+        }
+
+        .match {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 10px 0;
+            background: #fff;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .team {
+            padding: 8px 10px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            border-bottom: 1px solid #eee;
+            transition: background-color 0.2s, color 0.2s;
+            user-select: none;
+            min-height: 20px;
+        }
+
+        .team:last-child {
+            border-bottom: none;
+        }
+
+        .team:hover {
+            background-color: #e0f0ff;
+            color: #004684;
+        }
+
+        .team.empty {
+            color: #aaa;
+            cursor: default;
+        }
+
+        .team.empty:hover {
+            background-color: transparent;
+            color: #aaa;
+        }
+
+        /* Specific round styling */
+        .center-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 220px;
+            margin: 0 10px;
+            background-color: #ebf5fa;
+            border-radius: 8px;
+            padding: 20px 0;
+        }
+
+        .center-column h2 {
+            font-size: 18px;
+            color: #004684;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .champ-match {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .winner-box {
+            background: #ffd700;
+            border: 2px solid #daa520;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 16px;
+            border-radius: 4px;
+            width: 160px;
+            min-height: 24px;
+        }
+
+        @media print {
+            @page {
+                size: landscape;
+                margin: 0.5cm;
+            }
+
+            body {
+                zoom: 0.53;
+                -moz-transform: scale(0.53);
+                -moz-transform-origin: top center;
+            }
+
+            .bracket-wrapper {
+                overflow: visible !important;
+            }
+
+            button,
+            input {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div style="position: absolute; top: 10px; left: 10px; font-size: 12px; color: gray; cursor: help;"
+        title="No student data is collected by this site! No cookies are stored! No IP addresses are accessed or saved! There are no trackers of how many visitors are accessing this site! No database of any kind is storing information of any kind regarding this site. Feel free to ask an AI chatbot to analyze the source code of this page to verify. Enjoy your privacy!"
+        onclick="alert(this.title)">Privacy Information</div>
+
+    <h1>Bracket Builder</h1>
+    <div class="instructions">
+        Click on a team to advance them to the next round.
+        <div style="margin-top: 15px; display: flex; justify-content: center; gap: 10px; align-items: center;">
+            <input type="text" id="restore-code" placeholder="Paste Binary, Hex, or Base 10 Code"
+                style="padding: 6px; width: 300px; border: 1px solid #ccc; border-radius: 4px; font-family: monospace;">
+            <button onclick="restoreFromCode()"
+                style="padding: 6px 12px; border: 1px solid #004684; background: #004684; color: white; border-radius: 4px; cursor: pointer;">Load
+                Bracket</button>
+        </div>
+    </div>
+
+    <div class="bracket-wrapper">
+        <div class="bracket" id="bracket-container">
+        </div>
+    </div>
+
+    <script>
+        const regionsLeft = ['South', 'East'];
+        const regionsRight = ['Midwest', 'West'];
+        const seedOrder = [1, 16, 8, 9, 5, 12, 4, 13, 6, 11, 3, 14, 7, 10, 2, 15];
+
+        // Setup initial structure
+        const rounds = 5; // Rounds per half before Championship (R64, R32, S16, E8, F4)
+
+        window.matchChoices = new Array(63).fill(null);
+
+        function updateCode() {
+            let complete = true;
+            let missing = [];
+            for (let i = 0; i < 63; i++) {
+                if (window.matchChoices[i] === null) {
+                    complete = false;
+                    missing.push(i);
+                }
+            }
+
+            console.log("Checking if bracket is complete...");
+            console.log("Complete status:", complete);
+            console.log("Current choices Array:", window.matchChoices);
+
+            if (!complete) {
+                console.log("Missing choices for the following match indices (0-29 Left, 30-59 Right, 60-61 Final Four):", missing);
+                return;
+            }
+
+            let binStr = "";
+            for (let i = 0; i < 63; i++) {
+                binStr += (window.matchChoices[i] === null ? "0" : window.matchChoices[i]);
+            }
+
+            let padded = "0" + binStr;
+            let hexStr = "";
+            for (let i = 0; i < 64; i += 4) {
+                hexStr += parseInt(padded.substring(i, i + 4), 2).toString(16).toUpperCase();
+            }
+
+            let base10Str = BigInt("0b" + binStr).toString(10);
+
+            console.log("Bracket is complete! Generated Code:");
+            console.log("Binary:", binStr);
+            console.log("Hex:", hexStr);
+            console.log("Base 10:", base10Str);
+
+            let displayEl = document.getElementById("code-display");
+            if (!displayEl) {
+                displayEl = document.createElement("div");
+                displayEl.id = "code-display";
+                displayEl.style.textAlign = "center";
+                displayEl.style.marginBottom = "20px";
+                displayEl.style.padding = "20px";
+                displayEl.style.background = "#fff";
+                displayEl.style.border = "2px solid #ccc";
+                displayEl.style.borderRadius = "4px";
+                document.querySelector(".instructions").after(displayEl);
+            }
+            let dateTimeStr = "";
+            if (window.loadedDateStr) {
+                dateTimeStr = window.loadedDateStr;
+            } else {
+                let now = new Date();
+                dateTimeStr = now.toLocaleString();
+            }
+
+            let hexDate = Array.from(dateTimeStr).map(c => c.charCodeAt(0).toString(16).padStart(2, '0')).join('');
+            let shareUrl = `http://explore.stemcoding.org/bracket.html?code=${base10Str}&date=${hexDate}`;
+
+            displayEl.style.position = "relative";
+            displayEl.innerHTML = `
+                <div style="position: absolute; left: 20px; top: 20px; display: flex; flex-direction: column; align-items: center; gap: 5px;">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(shareUrl)}" style="width: 156px; height: 156px; border: 1px solid #ccc; border-radius: 4px;" alt="Share QR Code">
+                    <span style="font-size: 12px; font-weight: bold; color: #555;">QR code to Share URL</span>
+                </div>
+                <div style="position: relative; margin-bottom: 20px;">
+                    <h3 style="color:#004684; margin: 0; text-align: center; padding-top: 10px;">Your Bracket Code</h3>
+                    <button onclick="window.print()" style="position: absolute; right: 0; top: 10px; padding: 6px 16px; background: #004684; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">Print Bracket</button>
+                </div>
+                <div style="margin: 15px auto; padding: 15px; border: 1px dashed #999; border-radius: 4px; width: fit-content; min-width: 50%; display: flex; justify-content: space-between; align-items: center; background: #fafafa; font-size: 16px; gap: 40px;">
+                    <div><strong>Name:</strong> ___________________________________</div>
+                    <div><strong>Date / Time:</strong> ${dateTimeStr}</div>
+                </div>
+                <p style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 10px;">
+                    <strong>Binary:</strong> <span style="word-break: break-all; font-family: monospace;">${binStr}</span>
+                    <button onclick="navigator.clipboard.writeText('${binStr}'); let btn=this; btn.innerText='Copied!'; setTimeout(()=>btn.innerText='Copy Binary to the Clipboard', 2000);" style="cursor: pointer; padding: 4px 8px; border: 1px solid #ccc; border-radius: 4px; background: #eee; font-size: 12px;">Copy Binary to Clipboard</button>
+                </p>
+                <p style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 10px;">
+                    <strong>Hexadecimal:</strong> <span style="word-break: break-all; font-family: monospace;">${hexStr}</span>
+                    <button onclick="navigator.clipboard.writeText('${hexStr}'); let btn=this; btn.innerText='Copied!'; setTimeout(()=>btn.innerText='Copy Hexadecimal to the Clipboard', 2000);" style="cursor: pointer; padding: 4px 8px; border: 1px solid #ccc; border-radius: 4px; background: #eee; font-size: 12px;">Copy Hex to Clipboard</button>
+                </p>
+                <p style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 10px;">
+                    <strong>Base 10:</strong> <span style="word-break: break-all; font-family: monospace;">${base10Str}</span>
+                    <button onclick="navigator.clipboard.writeText('${base10Str}'); let btn=this; btn.innerText='Copied!'; setTimeout(()=>btn.innerText='Copy Base 10 number to the Clipboard', 2000);" style="cursor: pointer; padding: 4px 8px; border: 1px solid #ccc; border-radius: 4px; background: #eee; font-size: 12px;">Copy Base 10 number to Clipboard</button>
+                </p>
+                <p style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 10px;">
+                    <strong>Share URL:</strong> <a href="${shareUrl}" target="_blank" style="word-break: break-all; font-size: 14px; max-width: 60%;">${shareUrl}</a>
+                    <button onclick="navigator.clipboard.writeText('${shareUrl}'); let btn=this; btn.innerText='Copied!'; setTimeout(()=>btn.innerText='Copy URL to Clipboard', 2000);" style="cursor: pointer; padding: 4px 8px; border: 1px solid #ccc; border-radius: 4px; background: #eee; font-size: 12px;">Copy URL to Clipboard</button>
+                </p>
+            `;
+
+            // Automatically scroll safely up to view generated codes
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function generateInitialMatches(regions) {
+            let matches = [];
+            regions.forEach(region => {
+                for (let i = 0; i < seedOrder.length; i += 2) {
+                    matches.push([
+                        `${region} ${seedOrder[i]}`,
+                        `${region} ${seedOrder[i + 1]}`
+                    ]);
+                }
+            });
+            return matches;
+        }
+
+        function buildHalf(side, regions) {
+            let html = `<div class="half" id="${side}-half">`;
+
+            // Build columns based on side (Left goes L->R, Right goes R->L)
+            let roundOrder = side === 'left' ? [0, 1, 2, 3, 4] : [4, 3, 2, 1, 0];
+
+            roundOrder.forEach(roundIndex => {
+                let numMatches = 16 / Math.pow(2, roundIndex);
+                html += `<div class="round round-${roundIndex}" id="${side}-round-${roundIndex}">`;
+
+                for (let i = 0; i < numMatches; i++) {
+                    let team1 = "TBD";
+                    let team2 = "TBD";
+                    let classes = "team empty";
+
+                    if (roundIndex === 0) {
+                        let initialMatches = generateInitialMatches(regions);
+                        team1 = initialMatches[i][0];
+                        team2 = initialMatches[i][1];
+                        classes = "team";
+                    }
+
+                    // Determine the target match and slot in the next round
+                    let nextRound = roundIndex + 1;
+                    let nextMatch = Math.floor(i / 2);
+                    let slot = i % 2 === 0 ? 0 : 1; // 0 for top slot, 1 for bottom slot
+
+                    html += `
+                        <div class="match">
+                            <div class="${classes}" onclick="advance('${side}', ${roundIndex}, ${i}, 0, '${team1}', ${nextRound}, ${nextMatch}, ${slot})" id="${side}-r${roundIndex}-m${i}-t0">${team1}</div>
+                            <div class="${classes}" onclick="advance('${side}', ${roundIndex}, ${i}, 1, '${team2}', ${nextRound}, ${nextMatch}, ${slot})" id="${side}-r${roundIndex}-m${i}-t1">${team2}</div>
+                        </div>
+                    `;
+                }
+                html += `</div>`;
+            });
+
+            html += `</div>`;
+            return html;
+        }
+
+        function buildCenter() {
+            return `
+                <div class="center-column">
+                    <h2>Final Four & Championship</h2>
+                    <div class="round" style="width: 100%; align-items: center;">
+                        <div class="match champ-match">
+                            <div class="team empty" onclick="advanceToWinner('left')" id="final-left">Left Region Winner</div>
+                            <div class="team empty" onclick="advanceToWinner('right')" id="final-right">Right Region Winner</div>
+                        </div>
+                        <h2>Champion</h2>
+                        <div class="winner-box" id="champion">TBD</div>
+                    </div>
+                </div>
+            `;
+        }
+
+        let resizeListenerAdded = false;
+        function renderBracket() {
+            const container = document.getElementById('bracket-container');
+            container.innerHTML = buildHalf('left', regionsLeft) + buildCenter() + buildHalf('right', regionsRight);
+
+            const scaleBracket = () => {
+                // Approximate raw pixel width of full bracket map is 2280px + margins
+                const scale = Math.min(1, (window.innerWidth - 40) / 2280);
+                if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+                    container.style.transform = `scale(${scale})`;
+                    container.style.transformOrigin = 'top center';
+                } else {
+                    container.style.zoom = scale;
+                }
+            };
+
+            scaleBracket();
+            if (!resizeListenerAdded) {
+                window.addEventListener('resize', scaleBracket);
+                resizeListenerAdded = true;
+            }
+        }
+
+        // Logic to advance a team
+        function advance(side, currentRound, currentMatch, currentSlot, teamName, nextRound, nextMatch, nextSlot) {
+            if (!window.isRestoring) window.loadedDateStr = null;
+            // Get the current element text in case it's been updated
+            let currentEl = document.getElementById(`${side}-r${currentRound}-m${currentMatch}-t${currentSlot}`);
+            let actualTeamName = currentEl.innerText;
+
+            if (actualTeamName === "TBD") return; // Cannot advance an empty slot
+
+            let sideOffset = side === 'left' ? 0 : 30;
+            let roundOffsets = [0, 16, 24, 28];
+            if (currentRound < 4) {
+                let mIndex = sideOffset + roundOffsets[currentRound] + currentMatch;
+                window.matchChoices[mIndex] = currentSlot;
+            } else if (currentRound === 4) {
+                let ffIndex = side === 'left' ? 60 : 61;
+                window.matchChoices[ffIndex] = currentSlot;
+            }
+
+            // If advancing to the Championship (Round 5)
+            if (nextRound === 5) {
+                let finalEl = document.getElementById(`final-${side}`);
+                finalEl.innerText = actualTeamName;
+                finalEl.classList.remove('empty');
+                updateCode();
+                return;
+            }
+
+            // Normal advancement
+            let targetId = `${side}-r${nextRound}-m${nextMatch}-t${nextSlot}`;
+            let targetEl = document.getElementById(targetId);
+
+            if (targetEl) {
+                targetEl.innerText = actualTeamName;
+                targetEl.classList.remove('empty');
+            }
+            updateCode();
+        }
+
+        function advanceToWinner(side) {
+            let finalEl = document.getElementById(`final-${side}`);
+            let actualTeamName = finalEl.innerText;
+
+            if (actualTeamName === "Left Region Winner" || actualTeamName === "Right Region Winner" || actualTeamName === "TBD") {
+                return;
+            }
+
+            let champEl = document.getElementById('champion');
+            champEl.innerText = actualTeamName;
+
+            window.matchChoices[62] = side === 'left' ? 0 : 1;
+            updateCode();
+        }
+
+        function restoreFromCode() {
+            window.isRestoring = true;
+            let input = document.getElementById('restore-code').value.trim();
+            if (!input) {
+                window.isRestoring = false;
+                return;
+            }
+
+            let binStr = "";
+            if (/^[01]{63,64}$/.test(input)) {
+                binStr = input.length === 64 ? input.substring(1) : input;
+            } else if (/^[0-9A-Fa-f]{16}$/.test(input)) {
+                for (let i = 0; i < input.length; i++) {
+                    binStr += parseInt(input[i], 16).toString(2).padStart(4, '0');
+                }
+                binStr = binStr.substring(1);
+            } else if (/^\d+$/.test(input)) {
+                try {
+                    binStr = BigInt(input).toString(2).padStart(63, '0');
+                    if (binStr.length > 64) throw new Error("Number too large");
+                    if (binStr.length === 64) binStr = binStr.substring(1);
+                } catch (e) {
+                    alert("Invalid Base 10 Code.");
+                    return;
+                }
+            } else {
+                alert("Invalid code format. Please provide a valid 63/64-bit binary string, 16-character hex string, or Base 10 integer.");
+                window.isRestoring = false;
+                return;
+            }
+
+            window.matchChoices = new Array(63).fill(null);
+            renderBracket();
+
+            let choices = binStr.split('').map(Number);
+            let roundOffsets = [0, 16, 24, 28];
+            let matchesPerSide = [16, 8, 4, 2, 1];
+
+            for (let roundIndex = 0; roundIndex <= 4; roundIndex++) {
+                for (let i = 0; i < matchesPerSide[roundIndex]; i++) {
+                    let mIndex = roundIndex === 4 ? 60 : (0 + roundOffsets[roundIndex] + i);
+                    let teamEl = document.getElementById(`left-r${roundIndex}-m${i}-t${choices[mIndex]}`);
+                    if (teamEl && teamEl.innerText !== "TBD") teamEl.click();
+                }
+                for (let i = 0; i < matchesPerSide[roundIndex]; i++) {
+                    let mIndex = roundIndex === 4 ? 61 : (30 + roundOffsets[roundIndex] + i);
+                    let teamEl = document.getElementById(`right-r${roundIndex}-m${i}-t${choices[mIndex]}`);
+                    if (teamEl && teamEl.innerText !== "TBD") teamEl.click();
+                }
+            }
+
+            if (choices[62] === 0 || choices[62] === 1) {
+                let finalEl = document.getElementById(`final-${choices[62] === 0 ? 'left' : 'right'}`);
+                if (finalEl) finalEl.click();
+            }
+            window.isRestoring = false;
+        }
+
+        // Initialize the bracket
+        renderBracket();
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.has('code')) {
+                document.getElementById('restore-code').value = urlParams.get('code');
+                if (urlParams.has('date')) {
+                    let hexDate = urlParams.get('date');
+                    let str = "";
+                    for (let i = 0; i < hexDate.length; i += 2) {
+                        str += String.fromCharCode(parseInt(hexDate.substr(i, 2), 16));
+                    }
+                    window.loadedDateStr = str;
+                }
+                restoreFromCode();
+            }
+        });
+    </script>
+</body>
+
+</html>
