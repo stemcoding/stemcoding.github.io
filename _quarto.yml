@@ -6,6 +6,7 @@ project:
     - CNAME
     - vaxgame
     - bracket.html
+    - qrcode.min.js
 
 website:
   favicon: img/stemcoding_favicon_final.png
