@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bracket Builder</title>
+    <script src="qrcode.min.js"></script>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -249,7 +250,7 @@
             displayEl.style.position = "relative";
             displayEl.innerHTML = `
                 <div style="position: absolute; left: 20px; top: 20px; display: flex; flex-direction: column; align-items: center; gap: 5px;">
-                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(shareUrl)}" style="width: 156px; height: 156px; border: 1px solid #ccc; border-radius: 4px;" alt="Share QR Code">
+                    <div id="qrcode-container" style="width: 156px; height: 156px; border: 1px solid #ccc; border-radius: 4px; padding: 4px; background: white; box-sizing: border-box; display: flex; justify-content: center; align-items: center;"></div>
                     <span style="font-size: 12px; font-weight: bold; color: #555;">QR code to Share URL</span>
                 </div>
                 <div style="position: relative; margin-bottom: 20px;">
@@ -277,6 +278,20 @@
                     <button onclick="navigator.clipboard.writeText('${shareUrl}'); let btn=this; btn.innerText='Copied!'; setTimeout(()=>btn.innerText='Copy URL to Clipboard', 2000);" style="cursor: pointer; padding: 4px 8px; border: 1px solid #ccc; border-radius: 4px; background: #eee; font-size: 12px;">Copy URL to Clipboard</button>
                 </p>
             `;
+
+            if (typeof QRCode !== 'undefined') {
+                document.getElementById("qrcode-container").innerHTML = "";
+                new QRCode(document.getElementById("qrcode-container"), {
+                    text: shareUrl,
+                    width: 146,
+                    height: 146,
+                    colorDark: "#000000",
+                    colorLight: "#ffffff",
+                    correctLevel: QRCode.CorrectLevel.L
+                });
+            } else {
+                document.getElementById("qrcode-container").innerText = "QR library failed to load.";
+            }
 
             // Automatically scroll safely up to view generated codes
             window.scrollTo({ top: 0, behavior: 'smooth' });
