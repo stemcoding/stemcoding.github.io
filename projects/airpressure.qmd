@@ -23,7 +23,7 @@ seems to work best on all platforms is the Arduino Science Journal app. The goal
 Instructions for the activity, both data collection and data analysis, are given in the playlist shown below.
 
 * [Download the Arduino Science Journal app](https://www.arduino.cc/education/science-journal)
-* [Student Worksheet](https://www.asc.ohio-state.edu/orban.14/stemcoding/pressure/barometer_lab.pdf)
+* [Student Worksheet](barometer_lab_2026.pdf)
 * [How do a trendline with Google Sheets and Excel](https://www.asc.ohio-state.edu/orban.14/stemcoding/pressure/lin_reg_instructions.pdf)
 * [Example data (pdf)](https://www.asc.ohio-state.edu/orban.14/stemcoding/pressure/pressure_sample_data.pdf) [Example data (csv)](https://www.asc.ohio-state.edu/orban.14/stemcoding/pressure/sample_data.csv)
 
