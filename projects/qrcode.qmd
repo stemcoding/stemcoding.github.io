@@ -8,6 +8,16 @@ categories:
 
 ![](../img/multigrain_cheerios_cropped.png){width=400 fig-align="center"}
 
+### Required materials
+
+-- A basic printer to print some black and white pdf files
+
+-- A ruler (metric or standard)
+
+-- Some method to scan QR codes and barcodes:
+
+###### On a chromebook the default camera application has [an option to scan QR codes](https://support.google.com/chromebook/thread/207682161/how-do-i-scan-qr-codes-on-chromebook?hl=en) OR from a browser using any device you can use [this site](https://www.the-qrcode-generator.com/scan)  OR using a smartphone and you can use the default camera application
+
 ## Central Question:
 
 ### Which contains more information: a QR code, or a barcode?
