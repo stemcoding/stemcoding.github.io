@@ -49,7 +49,42 @@ It turns out that ocean currents often have a circulating pattern which is calle
 What is interesting and not particularly obvious is that floating garbage would collect in the North Pacific gyre and stay there for decades or more.  Think about an individual piece of floating trash in the Great Pacific Garbage Patch. Why doesn't this trash end up on a beach somewhere after a year or two, or three? <b>This is something that a p5.js computer simulation can help us understand!</b>
 (Note: sometimes trash from the Great Pacific Garbage patch does end up on a beach but it is rare and most of the trash just floats there year after year.)
 
-<iframe width="100%" height="445" src="https://editor.p5js.org/ChrisOrban/full/K9YEn7ru-"></iframe>
+<iframe class="p5-lazy-iframe" width="100%" height="445" data-src="https://editor.p5js.org/ChrisOrban/full/K9YEn7ru-" src="about:blank"></iframe>
+
+<script>
+(function() {
+  function initObserver() {
+    const iframes = document.querySelectorAll(".p5-lazy-iframe");
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const iframe = entry.target;
+        const targetSrc = iframe.getAttribute("data-src");
+        if (entry.isIntersecting) {
+          if (iframe.getAttribute("src") !== targetSrc) {
+            iframe.setAttribute("src", targetSrc);
+          }
+        } else {
+          // Set to about:blank to stop p5.js sketch execution and free CPU
+          if (iframe.getAttribute("src") !== "about:blank") {
+            iframe.setAttribute("src", "about:blank");
+          }
+        }
+      });
+    }, {
+      rootMargin: "100px" // Load slightly before it comes into view for a smoother experience
+    });
+    
+    iframes.forEach(iframe => observer.observe(iframe));
+  }
+
+  if (document.readyState !== 'loading') {
+    initObserver();
+  } else {
+    document.addEventListener("DOMContentLoaded", initObserver);
+  }
+})();
+</script>
 
 The simulation above contains a mathematical model for an ocean gyre that comes from [Section 6 of this research paper](gyre_model.pdf). The little white dots are supposed to be pieces of garbage. The black arrows show the direction of ocean currents.
 It's not important that you understand the model or the paper. What is important is that the simulation above includes this code:

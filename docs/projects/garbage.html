@@ -237,8 +237,42 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="the-great-pacific-garbage-patch">The Great Pacific Garbage Patch</h2>
 <p>It turns out that ocean currents often have a circulating pattern which is called a <a href="https://www.merriam-webster.com/dictionary/gyre">“gyre”</a>. In the 1990s scientists and boaters began to notice that floating plastic trash was strewn throughout a large area of the Pacific Ocean called the <a href="https://en.wikipedia.org/wiki/North_Pacific_Gyre">North Pacific gyre</a>. Groups like <a href="https://www.youtube.com/@theoceancleanup/videos">The Ocean Cleanup</a> are working to remove the trash but it remains a problem and there are “microplastics” that are difficult to remove with nets.</p>
 <p>What is interesting and not particularly obvious is that floating garbage would collect in the North Pacific gyre and stay there for decades or more. Think about an individual piece of floating trash in the Great Pacific Garbage Patch. Why doesn’t this trash end up on a beach somewhere after a year or two, or three? <b>This is something that a p5.js computer simulation can help us understand!</b> (Note: sometimes trash from the Great Pacific Garbage patch does end up on a beach but it is rare and most of the trash just floats there year after year.)</p>
-<iframe width="100%" height="445" src="https://editor.p5js.org/ChrisOrban/full/K9YEn7ru-">
+<iframe class="p5-lazy-iframe" width="100%" height="445" data-src="https://editor.p5js.org/ChrisOrban/full/K9YEn7ru-" src="about:blank">
 </iframe>
+<script>
+(function() {
+  function initObserver() {
+    const iframes = document.querySelectorAll(".p5-lazy-iframe");
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const iframe = entry.target;
+        const targetSrc = iframe.getAttribute("data-src");
+        if (entry.isIntersecting) {
+          if (iframe.getAttribute("src") !== targetSrc) {
+            iframe.setAttribute("src", targetSrc);
+          }
+        } else {
+          // Set to about:blank to stop p5.js sketch execution and free CPU
+          if (iframe.getAttribute("src") !== "about:blank") {
+            iframe.setAttribute("src", "about:blank");
+          }
+        }
+      });
+    }, {
+      rootMargin: "100px" // Load slightly before it comes into view for a smoother experience
+    });
+    
+    iframes.forEach(iframe => observer.observe(iframe));
+  }
+
+  if (document.readyState !== 'loading') {
+    initObserver();
+  } else {
+    document.addEventListener("DOMContentLoaded", initObserver);
+  }
+})();
+</script>
 <p>The simulation above contains a mathematical model for an ocean gyre that comes from <a href="gyre_model.pdf">Section 6 of this research paper</a>. The little white dots are supposed to be pieces of garbage. The black arrows show the direction of ocean currents. It’s not important that you understand the model or the paper. What is important is that the simulation above includes this code:</p>
 <pre>x[i] += vx(x[i],y[i],t)*dt;
 y[i] += vy(x[i],y[i],t)*dt;
