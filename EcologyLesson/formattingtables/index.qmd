@@ -92,6 +92,8 @@ Broman KW, Woo KH. 2018. Data organization in spreadsheets. PeerJ Preprints 6:e3
 * Keep track of all of the steps you take to clean your data in a plain text file.
 * Organize your data according to tidy data principles.
 
+Continue to the next lesson: [Formatting problems](../formattingproblems/index.qmd)
+
 Licensed under [CC-BY 4.0 2018–2022](https://datacarpentry.org/spreadsheet-ecology-lesson/00-intro/index.html) by [The Carpentries](https://carpentries.org/)
 
 Licensed under [CC-BY 4.0 2016–2018](https://datacarpentry.org/spreadsheet-ecology-lesson/00-intro/index.html) by [Data Carpentry](http://datacarpentry.org/)

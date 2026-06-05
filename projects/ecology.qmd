@@ -1,0 +1,15 @@
+---
+title: "Data Organization in Spreadsheets for Ecologists"
+image: ../img/ecology.png
+categories:
+  - Spreadsheets
+  - Data Science
+  - Environmental Science
+---
+
+![](../img/ecology.png){width=600 fig-align=center}
+
+This activity was developed by [Data Carpentry](https://datacarpentry.org/) and has been adapted for use by STEMcoding.
+
+## Links to Activity
+* [Activity Landing Page](../EcologyLesson/landing/index.qmd)

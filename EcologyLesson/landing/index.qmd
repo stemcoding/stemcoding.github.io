@@ -21,7 +21,7 @@ In this lesson, however, you will not learn about data analysis with spreadsheet
 Data Carpentry’s teaching is hands-on, so participants are encouraged to use their own computers to insure the proper setup of tools for an efficient workflow.
 **These lessons assume no prior knowledge of the skills or tools.**
 
-To get started, follow the directions in the “[Setup](../setuppage/index.qmd]” tab to download data to your computer and follow any installation instructions.
+To get started, follow the directions in the “[Setup](../setuppage/index.qmd)” tab to download data to your computer and follow any installation instructions.
 
 
 ### Prerequisites
@@ -34,13 +34,15 @@ If you are teaching this lesson in a workshop, please see the [Instructor notes]
 
 ## Schedule
 
+|Time| Activitiy | Description |
+|--|---------------------------------|----------------------------------------|
 |  | [Setup](../setuppage/index.qmd) | Download files required for the lesson |
-| 00:00 | 1. [Introduction](../intro/index.qmd) | What are basic principles for using spreadsheets for good data organization? |
-| 00:18 | 2. [Formatting data tables in spreadsheets](../formattingtables/index.qmd) | How do we format data in spreadsheets for effective data use? |
-| 00:53 | 3. [Formatting problems](../formattingproblems/index.qmd) | What are some common challenges with formatting data in spreadsheets and how can we avoid them? |
-| 01:13 | 4. [Dates as data](../datesasdata/index.qmd) | What are good approaches for handling dates in spreadsheets? |
-| 01:26 | 5. [Quality Control](../qualitycontrol/index.qmd) | How can we carry out basic quality control and quality assurance in spreadsheets? |
-| 01:46 | 6. [Exporting Data](../exporting/index.qmd) | How can we export data from spreadsheets in a way that is useful for downstream applications? |
+| 00:00 | [Introduction](../Intro/index.qmd) | What are basic principles for using spreadsheets for good data organization? |
+| 00:18 | [Formatting data tables in spreadsheets](../formattingtables/index.qmd) | How do we format data in spreadsheets for effective data use? |
+| 00:53 | [Formatting problems](../formattingproblems/index.qmd) | What are some common challenges with formatting data in spreadsheets and how can we avoid them? |
+| 01:13 | [Dates as data](../datesasdata/index.qmd) | What are good approaches for handling dates in spreadsheets? |
+| 01:26 | [Quality Control](../qualitycontrol/index.qmd) | How can we carry out basic quality control and quality assurance in spreadsheets? |
+| 01:46 | [Exporting Data](../exporting/index.qmd) | How can we export data from spreadsheets in a way that is useful for downstream applications? |
 | 01:56 | Finish | |
 
 The actual schedule may vary slightly depending on the topics and exercises chosen by the instructor.

@@ -76,7 +76,7 @@ Whatever the reason, it’s a problem if unknown or missing data is recorded as 
 
 **Example**: highlighting cells, rows or columns that should be excluded from an analysis, leaving blank rows to indicate separations in data.
 
-![](formatting.png)
+![](index3_files/formatting.png)
 
 **Solution**: create a new field to encode which data should be excluded.
 
@@ -109,7 +109,7 @@ Underscores (`_`) are a good alternative to spaces. Consider writing names in ca
 **Examples**
 
 | Good Name |Good Alternative| Avoid |
-|******|*******|*******|
+|-----------|----------------|-------|
 | Max_temp_C | MaxTemp | Maximum Temp (°C) |
 | Precipitation_mm | Precipitation | precmm |
 | Mean_year_growth | MeanYearGrowth | Mean growth/year |
@@ -153,6 +153,8 @@ Additionally, file or database level metadata describes how files that make up t
 * Avoid spaces, numbers and special characters in column headers.
 * Avoid special characters in your data.
 * Record metadata in a separate plain text file.
+
+Continue to next lesson: [Dates as data](../datesasdata/index.qmd)
 
 Licensed under [CC-BY 4.0 2018–2022](https://datacarpentry.org/spreadsheet-ecology-lesson/00-intro/index.html) by [The Carpentries](https://carpentries.org/)
 

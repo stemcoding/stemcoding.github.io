@@ -37,7 +37,7 @@ Let’s try this out by setting the plot column in our spreadsheet to only allow
 3. In the `Allow` box select `Whole number`
 4. Set the minimum and maximum values to 1 and 24.
 
-![](index5_files/plot_valiation.png)
+![](index5_files/plot_validation.png)
 
 
 Now let’s try entering a new value in the plot column that isn’t a valid plot. The spreadsheet stops us from entering the wrong value and asks us if we would like to try again.
@@ -95,6 +95,8 @@ It is nice to be able to do these scans in spreadsheets, but we also can do thes
 * Use data validation to prevent accidentally entering invalid data.
 * Use sorting to check for invalid data.
 * Use conditional formatting (cautiously) to check for invalid data.
+
+Continue to the next section: [Exporting Data](../exporting/index.qmd)
 
 Licensed under [CC-BY 4.0 2018–2022](https://datacarpentry.org/spreadsheet-ecology-lesson/00-intro/index.html) by [The Carpentries](https://carpentries.org/)
 

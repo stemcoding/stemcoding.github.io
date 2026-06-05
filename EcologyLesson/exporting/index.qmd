@@ -43,7 +43,7 @@ As such, when exporting to CSV using Excel, your data in text format will look l
 
 When opening your CSV file in Excel again, it will parse it as follows:
 
-![](ndex6_files/db4a5786-1643-11e7-931a-ca2c72336878.png)
+![](index6_files/db4a5786-1643-11e7-931a-ca2c72336878.png)
 
 However, if you open your CSV file on a different system that does not parse the CR character it will interpret your CSV file differently:
 
@@ -86,3 +86,9 @@ If you are working with data that contains commas, you likely will need to use a
 ## Key Points
 * Data stored in common spreadsheet formats will often not be read correctly into data analysis software, introducing errors into your data.
 * Exporting data from spreadsheets to formats like CSV or TSV puts it in a format that can be used consistently by most programs.
+
+[Back to landing page.](../landing/index.qmd)
+
+Licensed under [CC-BY 4.0 2018–2022](https://datacarpentry.org/spreadsheet-ecology-lesson/00-intro/index.html) by [The Carpentries](https://carpentries.org/)
+
+Licensed under [CC-BY 4.0 2016–2018](https://datacarpentry.org/spreadsheet-ecology-lesson/00-intro/index.html) by [Data Carpentry](http://datacarpentry.org/)

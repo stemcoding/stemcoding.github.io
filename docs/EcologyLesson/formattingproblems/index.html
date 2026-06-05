@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.26">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Formatting problems – STEMcoding</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -33,15 +36,14 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../img/stemcoding_favicon_final.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-784cc24b6735f4fbd54fe98f47f34423.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-158031087360bce0ff56dc785ce39e06.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -247,7 +249,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="using-formatting-to-convey-information" class="level2">
 <h2 class="anchored" data-anchor-id="using-formatting-to-convey-information">Using formatting to convey information</h2>
 <p><strong>Example</strong>: highlighting cells, rows or columns that should be excluded from an analysis, leaving blank rows to indicate separations in data.</p>
-<p><img src="formatting.png" class="img-fluid"></p>
+<p><img src="index3_files/formatting.png" class="img-fluid"></p>
 <p><strong>Solution</strong>: create a new field to encode which data should be excluded.</p>
 <p><img src="index3_files/good_formatting.png" class="img-fluid"></p>
 </section>
@@ -271,8 +273,52 @@ ul.task-list li input[type="checkbox"] {
 <p>Choose descriptive field names, but be careful not to include spaces, numbers, or special characters of any kind. Spaces can be misinterpreted by parsers that use whitespace as delimiters and some programs don’t like field names that are text strings that start with numbers.</p>
 <p>Underscores (<code>_</code>) are a good alternative to spaces. Consider writing names in camel case (like this: ExampleFileName) to improve readability. Remember that abbreviations that make sense at the moment may not be so obvious in 6 months, but don’t overdo it with names that are excessively long. Including the units in the field names avoids confusion and enables others to readily interpret your fields.</p>
 <p><strong>Examples</strong></p>
-<div class="line-block">Good Name |Good Alternative| Avoid |</div>
-<p>|******|*******|*******| | Max_temp_C | MaxTemp | Maximum Temp (°C) | | Precipitation_mm | Precipitation | precmm | | Mean_year_growth | MeanYearGrowth | Mean growth/year | | sex | sex | M/F | | weight | weight | w. | | cell_type | CellType | Cell Type | | Observation_01 | first_observation | 1st Obs |</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Good Name</th>
+<th>Good Alternative</th>
+<th>Avoid</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Max_temp_C</td>
+<td>MaxTemp</td>
+<td>Maximum Temp (°C)</td>
+</tr>
+<tr class="even">
+<td>Precipitation_mm</td>
+<td>Precipitation</td>
+<td>precmm</td>
+</tr>
+<tr class="odd">
+<td>Mean_year_growth</td>
+<td>MeanYearGrowth</td>
+<td>Mean growth/year</td>
+</tr>
+<tr class="even">
+<td>sex</td>
+<td>sex</td>
+<td>M/F</td>
+</tr>
+<tr class="odd">
+<td>weight</td>
+<td>weight</td>
+<td>w.</td>
+</tr>
+<tr class="even">
+<td>cell_type</td>
+<td>CellType</td>
+<td>Cell Type</td>
+</tr>
+<tr class="odd">
+<td>Observation_01</td>
+<td>first_observation</td>
+<td>1st Obs</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="using-special-characters-in-data" class="level2">
 <h2 class="anchored" data-anchor-id="using-special-characters-in-data">Using special characters in data</h2>
@@ -304,6 +350,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Avoid special characters in your data.</li>
 <li>Record metadata in a separate plain text file.</li>
 </ul>
+<p>Continue to next lesson: <a href="../../EcologyLesson/datesasdata/index.html">Dates as data</a></p>
 <p>Licensed under <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/00-intro/index.html">CC-BY 4.0 2018–2022</a> by <a href="https://carpentries.org/">The Carpentries</a></p>
 <p>Licensed under <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/00-intro/index.html">CC-BY 4.0 2016–2018</a> by <a href="http://datacarpentry.org/">Data Carpentry</a></p>
 

@@ -48,11 +48,11 @@ Current time and date are best retrieved using the functions `NOW()`, which retu
 
 ## Preferred date format
 
-It is much safer to store dates with [YEAR, MONTH, DAY](https://datacarpentry.org/spreadsheet-ecology-lesson/03-dates-as-data/index.html#day) in separate columns or as [YEAR and DAY-OF-YEAR](https://datacarpentry.org/spreadsheet-ecology-lesson/03-dates-as-data/index.html#doy) in separate columns.
+It is much safer to store dates with YEAR, MONTH, DAY in separate columns or as YEAR and DAY-OF-YEAR in separate columns.
 
 Note: Excel is unable to parse dates from before 1899-12-31, and will thus leave these untouched. If you’re mixing historic data from before and after this date, Excel will translate only the post-1900 dates into its internal format, thus resulting in mixed data. If you’re working with historic data, be extremely careful with your dates!
 
-Excel also entertains a second date system, the 1904 date system, as the default in Excel for Macintosh. This system will assign a different serial number than the [1900 date system](https://support.microsoft.com/en-us/help/214330/differences-between-the-1900-and-the-1904-date-system-in-excel). Because of this, [dates must be checked for accuracy when exporting data from Excel](http://uc3.cdlib.org/2014/04/09/abandon-all-hope-ye-who-enter-dates-in-excel/) (look for dates that are ~4 years off).
+Excel also entertains a second date system, the 1904 date system, as the default in Excel for Macintosh. This system will assign a different serial number than the [1900 date system](https://support.microsoft.com/en-us/office/date-systems-in-excel-e7fe7167-48a9-4b96-bb53-5612a800b487). Because of this, [dates must be checked for accuracy when exporting data from Excel](http://uc3.cdlib.org/2014/04/09/abandon-all-hope-ye-who-enter-dates-in-excel/) (look for dates that are ~4 years off).
 
 ## Date formats in spreadsheets
 
@@ -135,6 +135,8 @@ Such strings will be correctly sorted in ascending or descending order, and by k
 
 ## Key Points
 * Treating dates as multiple pieces of data rather than one makes them easier to handle.
+
+Continue to the next section: [Quality Control](../qualitycontrol/index.qmd)
 
 Licensed under [CC-BY 4.0 2018–2022](https://datacarpentry.org/spreadsheet-ecology-lesson/00-intro/index.html) by [The Carpentries](https://carpentries.org/)
 
