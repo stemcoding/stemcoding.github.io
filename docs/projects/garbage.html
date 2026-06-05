@@ -175,6 +175,7 @@ window.Quarto = {
   <li><a href="#density" id="toc-density" class="nav-link" data-scroll-target="#density">Density</a></li>
   </ul></li>
   <li><a href="#the-great-pacific-garbage-patch" id="toc-the-great-pacific-garbage-patch" class="nav-link" data-scroll-target="#the-great-pacific-garbage-patch">The Great Pacific Garbage Patch</a></li>
+  <li><a href="#optional-hands-on-activity" id="toc-optional-hands-on-activity" class="nav-link" data-scroll-target="#optional-hands-on-activity">Optional hands on activity</a></li>
   <li><a href="#questions-to-consider" id="toc-questions-to-consider" class="nav-link" data-scroll-target="#questions-to-consider">Questions to consider</a>
   <ul class="collapse">
   <li><a href="#advanced-questions" id="toc-advanced-questions" class="nav-link" data-scroll-target="#advanced-questions">Advanced Questions</a></li>
@@ -192,6 +193,7 @@ window.Quarto = {
     <div class="quarto-category">All Ages</div>
     <div class="quarto-category">Advanced HS</div>
     <div class="quarto-category">Environmental Science</div>
+    <div class="quarto-category">Sustainability</div>
   </div>
   </div>
 
@@ -224,11 +226,11 @@ window.Quarto = {
 </p>
 <section id="density" class="level3">
 <h3 class="anchored" data-anchor-id="density">Density</h3>
-<p>The density of a material is a measure of how much mass there is compared to how much volume there is of that material. For example, styrofoam is a low density material because you can have a lot of syrofoam and is not very heavy. So its mass is small compared to its volume. Whereas lead or gold are high density materials because one brick of lead or gold would be very heavy. So its mass is large compared to its volume.</p>
+<p>The density of a material is a measure of how much mass there is compared to how much volume there is of that material. For example, styrofoam is a low density material because you can have a lot of Styrofoam and it is not very heavy. So its mass is small compared to its volume. Whereas lead or gold are high density materials because one brick of lead or gold would be very heavy. So its mass is large compared to its volume.</p>
 <p>In general, density (<span class="math inline">\(\rho\)</span>) is the ratio of the mass of an object to the volume of that object.</p>
 <p><span class="math display">\[ \rho = \frac{m}{V} \]</span></p>
 <p>We use the symbol <span class="math inline">\(\rho\)</span> to represent the density. It looks like the letter p but it is actually a greek symbol that is pronounced <a href="https://upload.wikimedia.org/wikipedia/commons/transcoded/d/d7/LL-Q1860_%28eng%29-Flame%2C_not_lame-Rho.wav/LL-Q1860_%28eng%29-Flame%2C_not_lame-Rho.wav.mp3">“rho” or “row”</a>. Objects of a particular material will generally have the same density of other objects made from that material. Density can be reported in terms of grams per cubic centimeter (g/cm<sup>3</sup>), grams per milliLiter (g/mL), or kilograms per meter cubed (kg/m<sup>3</sup>). Grams per cubic centimeter and grams per cubic milliLiter are the same because a cubic centimeter is the same volume as a milliLiter.</p>
-<p>Fresh water has a density of 1 gram per cubic centimeter (1 gram per milliLiter)while sea water has a density of 1.02 grams per cubic centimeter (1.02 grams per milliLiter).</p>
+<p>Fresh water has a density of 1 gram per cubic centimeter (1 gram per milliLiter) while sea water has a density of 1.02 grams per cubic centimeter (1.02 grams per milliLiter).</p>
 <p style="text-align: right;">
 <b>Key science fact:</b><br> The density of fresh water is 1 gram per cubic centimter
 </p>
@@ -237,7 +239,8 @@ window.Quarto = {
 </section>
 <section id="the-great-pacific-garbage-patch" class="level2">
 <h2 class="anchored" data-anchor-id="the-great-pacific-garbage-patch">The Great Pacific Garbage Patch</h2>
-<p>It turns out that ocean currents often have a circulating pattern which is called a <a href="https://www.merriam-webster.com/dictionary/gyre">“gyre”</a>. In the 1990s scientists and boaters began to notice that floating plastic trash was strewn throughout a large area of the Pacific Ocean called the <a href="https://en.wikipedia.org/wiki/North_Pacific_Gyre">North Pacific gyre</a>. Groups like <a href="https://www.youtube.com/@theoceancleanup/videos">The Ocean Cleanup</a> are working to remove the trash but it remains a problem and there are “microplastics” that are difficult to remove with nets.</p>
+<p>It turns out that ocean currents often have a circulating pattern which is called a <a href="https://www.merriam-webster.com/dictionary/gyre">“gyre”</a>. Ocean currents circulate and form gyres because water gets heated by the sun near the equator and that warm water travels away from the equator where it will cool down.</p>
+<p>In the 1990s scientists and boaters began to notice that floating plastic trash was strewn throughout a large area of the Pacific Ocean called the <a href="https://en.wikipedia.org/wiki/North_Pacific_Gyre">North Pacific gyre</a>. Don’t imagine floating islands of trash. Instead imagine a piece of trash here and a piece of trash there over a very large area. Groups like <a href="https://www.youtube.com/@theoceancleanup/videos">The Ocean Cleanup</a> are working to remove the trash (as you can see in the image at the top of this page) but it remains a problem and there are also “microplastics” that are too small to remove with nets.</p>
 <p>What is interesting and not particularly obvious is that floating garbage would collect in the North Pacific gyre and stay there for decades or more. Think about an individual piece of floating trash in the Great Pacific Garbage Patch. Why doesn’t this trash end up on a beach somewhere after a year or two, or three? <b>This is something that a p5.js computer simulation can help us understand!</b> (Note: sometimes trash from the Great Pacific Garbage patch does end up on a beach but it is rare and most of the trash just floats there year after year.)</p>
 <iframe class="p5-lazy-iframe" width="100%" height="445" data-src="https://editor.p5js.org/ChrisOrban/full/K9YEn7ru-" src="about:blank">
 </iframe>
@@ -284,8 +287,12 @@ y[i] += vy(x[i],y[i],t)*dt;
  y += vy*dt;
 </pre>
 <p>In the simulation above, (x,y) is the position of a piece of garbage. That position changes according to the velocity of the ocean currents in the x direction (<code>vx</code>) and in the y direction (<code>vy</code>) multiplied by the time during each step (<code>dt</code>)</p>
-<p><b>THE IMPORTANT THING IS THAT THE LITTLE WHITE PIECES OF TRASH KEEP CIRCULATING!!!</b> There is actually some code in the simulation that checks if the piece of trash leaves the rectangle, then don’t let it come back. But, remarkably, if you run the simulation for a long time and maybe one piece of trash out of 100 will leave the simulation and not come back. This is true even though the ocean currents are changing with time as you can see from the changing arrows!</p>
+<p><b>THE IMPORTANT THING IS THAT THE LITTLE WHITE PIECES OF TRASH KEEP CIRCULATING!!!</b> There is actually some code in the simulation that checks if a piece of trash leaves the rectangle and if it does leave it is prevented from coming back. Remarkably, if you run the simulation for a long time, maybe one piece of trash out of 100 will leave the rectangle and not come back. This is true even though the ocean currents are changing with time as you can see from the changing arrows!</p>
 <p>Interestingly, it only takes some simple code to update the x and y position of the trash to come to this conclusion. Sometimes a little bit of code can answer questions that would otherwise be very difficult to answer!</p>
+</section>
+<section id="optional-hands-on-activity" class="level2">
+<h2 class="anchored" data-anchor-id="optional-hands-on-activity">Optional hands on activity</h2>
+<p>Take as many different kinds of plastic as you can find and check to see which types of plastic (for example #1, #2, #3, #4, #5 or #6 plastic) will float and which will sink. Bear in mind that sea water is slightly more dense that fresh water. To be more precise you can dissolve table salt in the water and do the test again.</p>
 </section>
 <section id="questions-to-consider" class="level2">
 <h2 class="anchored" data-anchor-id="questions-to-consider">Questions to consider</h2>
