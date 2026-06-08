@@ -7,7 +7,7 @@ project:
     - vaxgame
     - bracket.html
     - qrcode.min.js
-    - fifa.html
+    - soccer.html
     - img/stemcoding_data_science_icon_2026.png
     - img/Ohio_State_University_at_Marion_Logo.png
 
@@ -26,8 +26,8 @@ website:
         text: Feed
       - calendar.qmd
       - datascience.qmd
-      - href: fifa.html
-        text: World Cup!
+      - href: soccer.html
+        text: Soccer 2026
       - publications.qmd
     tools:
       - icon: youtube

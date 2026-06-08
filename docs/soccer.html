@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STEMcoding World Cup Bracket Builder</title>
+    <title>STEMcoding Bracket Builder</title>
     <script src="qrcode.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -308,13 +308,15 @@
         <img src="img/Ohio_State_University_at_Marion_Logo.png" alt="Ohio State University at Marion"
             style="position: absolute; top: 15px; right: 15px; height: 200px; width: auto; object-fit: contain;"></a>
 
-    <h1>STEMcoding World Cup Bracket Builder</h1>
+    <h1>STEMcoding Bracket Builder</h1>
     <div class="instructions">
         Click on a team to advance them to the next round
         <div style="margin-top: 20px; display: flex; justify-content: center; gap: 10px; align-items: center;">
             <input type="text" id="restore-code" placeholder="Paste Binary, Hex, or Base 10 Code">
             <button onclick="restoreFromCode()">Load Bracket</button>
         </div>
+        Disclaimer! This site is for educational use only! This site is not affiliated with, endorsed by, or associated
+        with FIFA or any official soccer federation
     </div>
 
     <div class="bracket-wrapper">
@@ -528,7 +530,7 @@
             container.innerHTML = buildHalf('left', leftHalfMatches) + buildCenter() + buildHalf('right', rightHalfMatches);
 
             const scaleBracket = () => {
-                const scale = Math.min(1, (window.innerWidth - 40) / 1200);
+                const scale = Math.min(1, (window.innerWidth - 40) / 2100);
                 if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
                     container.style.transform = `scale(${scale})`;
                     container.style.transformOrigin = 'top center';
