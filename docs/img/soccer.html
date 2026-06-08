@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEMcoding Bracket Builder</title>
+    <script src="qrcode.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --bg: #f8f9fa;
+            --surface: #ffffff;
+            --gold-color: #b8860b;
+            --gold-light: #d4af37;
+            --green-accent: #1a5c38;
+            --green-light: #e8f5ee;
+            --text-dark: #1a1a2e;
+            --text-muted: #5a6472;
+            --border: #dde2ea;
+            --border-hover: #1a5c38;
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.07);
+            --shadow-md: 0 4px 18px rgba(0, 0, 0, 0.10);
+            --transition: all 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: #f8f9fa;
+            margin: 0;
+            padding: 30px 20px;
+            color: #1a1a2e;
+            min-height: 100vh;
+        }
+
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            text-align: center;
+            font-size: 42px;
+            font-weight: 800;
+            background: gray;
+            color: black;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 5px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .instructions {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 16px;
+            color: #5a6472;
+            line-height: 1.6;
+        }
+
+        .instructions input[type="text"] {
+            padding: 8px 12px;
+            border: 1px solid #dde2ea;
+            border-radius: 6px;
+            font-family: monospace;
+            font-size: 14px;
+            width: 300px;
+            background: #ffffff;
+            color: #1a1a2e;
+            outline: none;
+        }
+
+        .instructions button {
+            padding: 8px 18px;
+            background: rgb(188, 31, 67);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .instructions button:hover {
+            background: rgb(150, 24, 53);
+        }
+
+        .bracket-wrapper {
+            display: flex;
+            overflow-x: auto;
+            padding-bottom: 40px;
+            justify-content: center;
+        }
+
+        .bracket {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .half {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .round {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 200px;
+            margin: 0 10px;
+        }
+
+        .match {
+            background: #ffffff;
+            border: 1px solid #dde2ea;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+            overflow: hidden;
+            margin: 15px 0;
+            transition: all 0.25s ease;
+        }
+
+        .match:hover {
+            border-color: #1a5c38;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.10);
+            transform: translateY(-1px);
+        }
+
+        .team {
+            padding: 10px 12px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 500;
+            border-bottom: 1px solid #dde2ea;
+            transition: all 0.25s ease;
+            user-select: none;
+            min-height: 20px;
+            display: flex;
+            align-items: center;
+            color: #1a1a2e;
+        }
+
+        .team:last-child {
+            border-bottom: none;
+        }
+
+        .team:hover {
+            background-color: #e8f5ee;
+            color: #1a5c38;
+        }
+
+        .team.empty {
+            color: #bcc4ce;
+            font-style: italic;
+            cursor: default;
+        }
+
+        .team.empty:hover {
+            background-color: transparent;
+            color: #bcc4ce;
+        }
+
+        /* Specific round styling */
+        .center-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 270px;
+            margin: 0 20px;
+            background: #ffffff;
+            border: 2px solid #1a5c38;
+            border-radius: 12px;
+            padding: 25px 10px;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.10);
+        }
+
+        .center-column h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 13px;
+            color: gray;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .champ-match {
+            width: 90%;
+            margin-bottom: 25px;
+        }
+
+        .winner-box {
+            background: linear-gradient(135deg, #fce97a 0%, #d4af37 100%);
+            border: 2px solid #b8860b;
+            color: #3d2b00;
+            padding: 14px;
+            text-align: center;
+            font-weight: 800;
+            font-size: 15px;
+            font-family: 'Outfit', sans-serif;
+            border-radius: 8px;
+            width: 180px;
+            min-height: 24px;
+            box-shadow: 0 6px 20px rgba(184, 134, 11, 0.2);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.25s ease;
+        }
+
+        .privacy-link {
+            //            position: absolute;
+            text-align: center;
+            //            top: 10px;
+            //            left: 15px;
+            font-size: 17px;
+            color: #5a6472;
+            cursor: help;
+            transition: all 0.25s ease;
+        }
+
+        .privacy-link:hover {
+            color: #1a5c38;
+        }
+
+        @media print {
+            @page {
+                size: landscape;
+                margin: 0.5cm;
+            }
+
+            body {
+                background: white !important;
+                color: black !important;
+                zoom: 0.75;
+                -moz-transform: scale(0.75);
+                -moz-transform-origin: top center;
+                padding: 0;
+            }
+
+            .bracket-wrapper {
+                overflow: visible !important;
+            }
+
+            button,
+            input {
+                display: none !important;
+            }
+
+            .center-column {
+                background: white !important;
+                border: 1px solid #ccc !important;
+            }
+
+            .match {
+                background: white !important;
+                border: 1px solid #aaa !important;
+                box-shadow: none !important;
+            }
+
+            .team {
+                color: black !important;
+                border-bottom: 1px solid #eee !important;
+            }
+
+            .team:hover {
+                background: none !important;
+                color: black !important;
+            }
+
+            .winner-box {
+                background: #ffd700 !important;
+                color: black !important;
+                border: 1px solid #daa520 !important;
+                box-shadow: none !important;
+            }
+
+            #code-display {
+                background: white !important;
+                border: 1px solid #ccc !important;
+                color: black !important;
+            }
+
+            #code-display p,
+            #code-display span,
+            #code-display strong {
+                color: black !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="privacy-link"
+        title="No student data is collected by this site! No cookies are stored! No IP addresses are accessed or saved! There are no trackers of how many visitors are accessing this site! No database of any kind is storing information of any kind regarding this site. Feel free to ask an AI chatbot to analyze the source code of this page to verify. Enjoy your privacy!"
+        onclick="alert(this.title)">Privacy Information</div>
+    <a href="http://go.osu.edu/stemcoding" target="_blank">
+        <img src="img/stemcoding_data_science_icon_2026.png" alt="STEMcoding Data Science"
+            style="position: absolute; top: 15px; left: 15px; height: 200px; width: auto; object-fit: contain;"></a>
+
+    <a href="http://osumarion.osu.edu" target="_blank">
+        <img src="img/OSU_Marion_logo.png" alt="Ohio State University at Marion"
+            style="position: absolute; top: 15px; right: 15px; height: 200px; width: auto; object-fit: contain;"></a>
+
+    <h1>STEMcoding Bracket Builder</h1>
+    <div class="instructions">
+        Click on a team to advance them to the next round
+        <div style="margin-top: 20px; display: flex; justify-content: center; gap: 10px; align-items: center;">
+            <input type="text" id="restore-code" placeholder="Paste Binary, Hex, or Base 10 Code">
+            <button onclick="restoreFromCode()">Load Bracket</button>
+        </div>
+        <br>
+        Disclaimer: This site is for educational use only! This site is not affiliated with, endorsed by, or associated
+        with FIFA or any official soccer federation
+    </div>
+
+    <div class="bracket-wrapper">
+        <div class="bracket" id="bracket-container">
+        </div>
+    </div>
+
+    <script>
+        const leftHalfMatches = [
+            ["🇩🇪 1E Germany", "🇦🇺 3D Australia"],
+            ["🇫🇷 1I France", "🏴󠁧󠁢󠁳󠁣󠁴󠁿 3C Scotland"],
+            ["🇰🇷 2A S. Korea", "🇨🇭 2B Switzerland"],
+            ["🇳🇱 1F Netherlands", "🇲🇦 2C Morocco"],
+            ["🇨🇴 2K Colombia", "🇭🇷 2L Croatia"],
+            ["🇪🇸 1H Spain", "🇦🇹 2J Austria"],
+            ["🇺🇸 1D USA", "🇪🇨 3E Ecuador"],
+            ["🇧🇪 1G Belgium", "🇿🇦 3A S. Africa"]
+        ];
+
+        const rightHalfMatches = [
+            ["🇧🇷 1C Brazil", "🇯🇵 2F Japan"],
+            ["🇨🇮 2E Côte d'Ivoire", "🇸🇳 2I Senegal"],
+            ["🇲🇽 1A Mexico", "🇸🇪 3F Sweden"],
+            ["🏴󠁧󠁢󠁥󠁮󠁧󠁿 1L England", "🇩🇿 3J Algeria"],
+            ["🇦🇷 1J Argentina", "🇺🇾 2H Uruguay"],
+            ["🇵🇾 2D Paraguay", "🇪🇬 2G Egypt"],
+            ["🇨🇦 1B Canada", "🇳🇴 3I Norway"],
+            ["🇵🇹 1K Portugal", "🇺🇿 3K Uzbekistan"]
+        ];
+
+        const rounds = 4; // Rounds per half (R32, R16, QF, SF)
+
+        window.matchChoices = new Array(32).fill(null);
+
+        function updateCode() {
+            let complete = true;
+            let missing = [];
+            for (let i = 0; i < 32; i++) {
+                if (window.matchChoices[i] === null) {
+                    complete = false;
+                    missing.push(i);
+                }
+            }
+
+            console.log("Checking if bracket is complete...");
+            console.log("Complete status:", complete);
+            console.log("Current choices Array:", window.matchChoices);
+
+            if (!complete) {
+                console.log("Missing choices for the following match indices:", missing);
+                return;
+            }
+
+            let binStr = "";
+            for (let i = 0; i < 32; i++) {
+                binStr += (window.matchChoices[i] === null ? "0" : window.matchChoices[i]);
+            }
+
+            let hexStr = "";
+            for (let i = 0; i < 32; i += 4) {
+                hexStr += parseInt(binStr.substring(i, i + 4), 2).toString(16).toUpperCase();
+            }
+
+            let base10Str = BigInt("0b" + binStr).toString(10);
+
+            console.log("Bracket is complete! Generated Code:");
+            console.log("Binary:", binStr);
+            console.log("Hex:", hexStr);
+            console.log("Base 10:", base10Str);
+
+            let displayEl = document.getElementById("code-display");
+            if (!displayEl) {
+                displayEl = document.createElement("div");
+                displayEl.id = "code-display";
+                displayEl.style.textAlign = "center";
+                displayEl.style.marginBottom = "30px";
+                displayEl.style.padding = "24px";
+                displayEl.style.background = "#ffffff";
+                displayEl.style.border = "1px solid #dde2ea";
+                displayEl.style.borderRadius = "10px";
+                displayEl.style.boxShadow = "0 4px 18px rgba(0,0,0,0.08)";
+                document.querySelector(".instructions").after(displayEl);
+            }
+            let dateTimeStr = "";
+            if (window.loadedDateStr) {
+                dateTimeStr = window.loadedDateStr;
+            } else {
+                let now = new Date();
+                dateTimeStr = now.toLocaleString();
+            }
+
+            let hexDate = Array.from(dateTimeStr).map(c => c.charCodeAt(0).toString(16).padStart(2, '0')).join('');
+            let shareUrl = `${window.location.origin}${window.location.pathname}?code=${base10Str}&date=${hexDate}`;
+
+            displayEl.style.position = "relative";
+            displayEl.innerHTML = `
+                <div style="position: absolute; left: 20px; top: 20px; display: flex; flex-direction: column; align-items: center; gap: 5px;">
+                    <div id="qrcode-container" style="width: 156px; height: 156px; border: 1px solid #dde2ea; border-radius: 6px; padding: 6px; background: white; box-sizing: border-box; display: flex; justify-content: center; align-items: center;"></div>
+                    <span style="font-size: 11px; font-weight: bold; color: #1a5c38; letter-spacing: 0.5px;">QR to Share URL</span>
+                </div>
+                <div style="position: relative; margin-bottom: 20px;">
+                    <h3 style="color: #1a5c38; margin: 0; text-align: center; padding-top: 10px; font-size: 20px; font-family: 'Outfit', sans-serif; text-transform: uppercase; letter-spacing: 1px;">Your World Cup Bracket Code</h3>
+                    <button onclick="window.print()" style="position: absolute; right: 0; top: 10px; padding: 8px 18px; background: #1a5c38; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; font-family: 'Outfit', sans-serif;">Print Bracket</button>
+                </div>
+                <div style="margin: 15px auto; padding: 15px; border: 1px dashed #bcc4ce; border-radius: 6px; width: fit-content; min-width: 50%; display: flex; justify-content: space-between; align-items: center; background: #f8f9fa; font-size: 15px; gap: 40px; color: #1a1a2e;">
+                    <div><strong>Name:</strong> ___________________________________</div>
+                    <div><strong>Date / Time:</strong> ${dateTimeStr}</div>
+                </div>
+                <div style="margin-left: 170px; display: flex; flex-direction: column; gap: 10px;">
+                    <p style="margin: 0; display: flex; align-items: center; justify-content: flex-start; gap: 10px; color: #1a1a2e;">
+                        <strong style="width: 100px; text-align: right;">Binary:</strong> <span style="word-break: break-all; font-family: monospace; color: #1a5c38;">${binStr}</span>
+                        <button onclick="navigator.clipboard.writeText('${binStr}'); let btn=this; btn.innerText='Copied!'; setTimeout(()=>btn.innerText='Copy', 2000);" style="cursor: pointer; padding: 4px 10px; border: 1px solid #dde2ea; border-radius: 4px; background: #f1f4f8; color: #1a1a2e; font-size: 11px;">Copy</button>
+                    </p>
+                    <p style="margin: 0; display: flex; align-items: center; justify-content: flex-start; gap: 10px; color: #1a1a2e;">
+                        <strong style="width: 100px; text-align: right;">Base 10:</strong> <span style="word-break: break-all; font-family: monospace; color: #b8860b;">${base10Str}</span>
+                        <button onclick="navigator.clipboard.writeText('${base10Str}'); let btn=this; btn.innerText='Copied!'; setTimeout(()=>btn.innerText='Copy', 2000);" style="cursor: pointer; padding: 4px 10px; border: 1px solid #dde2ea; border-radius: 4px; background: #f1f4f8; color: #1a1a2e; font-size: 11px;">Copy</button>
+                    </p>
+                    <p style="margin: 0; display: flex; align-items: center; justify-content: flex-start; gap: 10px; color: #1a1a2e;">
+                        <strong style="width: 100px; text-align: right;">Hexadecimal:</strong> <span style="word-break: break-all; font-family: monospace; color: #1a4a7c;">${hexStr}</span>
+                        <button onclick="navigator.clipboard.writeText('${hexStr}'); let btn=this; btn.innerText='Copied!'; setTimeout(()=>btn.innerText='Copy', 2000);" style="cursor: pointer; padding: 4px 10px; border: 1px solid #dde2ea; border-radius: 4px; background: #f1f4f8; color: #1a1a2e; font-size: 11px;">Copy</button>
+                    </p>
+                    <p style="margin: 0; display: flex; align-items: center; justify-content: flex-start; gap: 10px; color: #1a1a2e;">
+                        <strong style="width: 100px; text-align: right;">Share URL:</strong> <a href="${shareUrl}" target="_blank" style="word-break: break-all; font-size: 13.5px; max-width: 60%; color: #1a4a7c; text-decoration: none; border-bottom: 1px dashed #85c1e9;">${shareUrl}</a>
+                        <button onclick="navigator.clipboard.writeText('${shareUrl}'); let btn=this; btn.innerText='Copied!'; setTimeout(()=>btn.innerText='Copy URL', 2000);" style="cursor: pointer; padding: 4px 10px; border: 1px solid #dde2ea; border-radius: 4px; background: #f1f4f8; color: #1a1a2e; font-size: 11px;">Copy URL</button>
+                    </p>
+                </div>
+            `;
+
+            if (typeof QRCode !== 'undefined') {
+                document.getElementById("qrcode-container").innerHTML = "";
+                new QRCode(document.getElementById("qrcode-container"), {
+                    text: shareUrl,
+                    width: 144,
+                    height: 144,
+                    colorDark: "#000000",
+                    colorLight: "#ffffff",
+                    correctLevel: QRCode.CorrectLevel.L
+                });
+            } else {
+                document.getElementById("qrcode-container").innerText = "QR library failed to load.";
+            }
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function buildHalf(side, matchesData) {
+            let html = `<div class="half" id="${side}-half">`;
+
+            let roundOrder = side === 'left' ? [0, 1, 2, 3] : [3, 2, 1, 0];
+
+            roundOrder.forEach(roundIndex => {
+                let numMatches = 8 / Math.pow(2, roundIndex);
+                html += `<div class="round round-${roundIndex}" id="${side}-round-${roundIndex}">`;
+
+                for (let i = 0; i < numMatches; i++) {
+                    let team1 = "TBD";
+                    let team2 = "TBD";
+                    let classes = "team empty";
+
+                    if (roundIndex === 0) {
+                        team1 = matchesData[i][0];
+                        team2 = matchesData[i][1];
+                        classes = "team";
+                    }
+
+                    let nextRound = roundIndex + 1;
+                    let nextMatch = Math.floor(i / 2);
+                    let slot = i % 2 === 0 ? 0 : 1;
+
+                    html += `
+                        <div class="match">
+                            <div class="${classes}" onclick="advance('${side}', ${roundIndex}, ${i}, 0, '${team1.replace(/'/g, "\\'")}', ${nextRound}, ${nextMatch}, ${slot})" id="${side}-r${roundIndex}-m${i}-t0">${team1}</div>
+                            <div class="${classes}" onclick="advance('${side}', ${roundIndex}, ${i}, 1, '${team2.replace(/'/g, "\\'")}', ${nextRound}, ${nextMatch}, ${slot})" id="${side}-r${roundIndex}-m${i}-t1">${team2}</div>
+                        </div>
+                    `;
+                }
+                html += `</div>`;
+            });
+
+            html += `</div>`;
+            return html;
+        }
+
+        function buildCenter() {
+            return `
+                <div class="center-column">
+                    <h2>World Cup Final</h2>
+                    <div class="round" style="width: 100%; align-items: center; justify-content: center;">
+                        <div class="match champ-match">
+                            <div class="team empty" onclick="advanceToWinner('left')" id="final-left">Left Semifinalist</div>
+                            <div class="team empty" onclick="advanceToWinner('right')" id="final-right">Right Semifinalist</div>
+                        </div>
+                        <h2 style="margin-top: 15px; color: var(--gold-color);">Champion</h2>
+                        <div class="winner-box" id="champion" style="margin-bottom: 25px;">TBD</div>
+
+                        <h2 style="color: var(--gold-color);">Bronze Match</h2>
+                        <div class="match champ-match">
+                            <div class="team empty" onclick="advanceToThirdPlace('left')" id="bronze-left">Left SF Loser</div>
+                            <div class="team empty" onclick="advanceToThirdPlace('right')" id="bronze-right">Right SF Loser</div>
+                        </div>
+                        <h2 style="margin-top: 15px; color: var(--gold-color);">Third Place</h2>
+                        <div class="winner-box" id="third-place" style="background: linear-gradient(135deg, #cd7f32 0%, #b87333 100%); border: 1px solid #dcb590; box-shadow: 0 8px 25px rgba(184, 115, 51, 0.25);">TBD</div>
+                    </div>
+                </div>
+            `;
+        }
+
+        let resizeListenerAdded = false;
+        function renderBracket() {
+            const container = document.getElementById('bracket-container');
+            container.innerHTML = buildHalf('left', leftHalfMatches) + buildCenter() + buildHalf('right', rightHalfMatches);
+
+            const scaleBracket = () => {
+                const scale = Math.min(1, (window.innerWidth - 40) / 2100);
+                if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+                    container.style.transform = `scale(${scale})`;
+                    container.style.transformOrigin = 'top center';
+                } else {
+                    container.style.zoom = scale;
+                }
+            };
+
+            scaleBracket();
+            if (!resizeListenerAdded) {
+                window.addEventListener('resize', scaleBracket);
+                resizeListenerAdded = true;
+            }
+        }
+
+        function advance(side, currentRound, currentMatch, currentSlot, teamName, nextRound, nextMatch, nextSlot) {
+            if (!window.isRestoring) window.loadedDateStr = null;
+            let currentEl = document.getElementById(`${side}-r${currentRound}-m${currentMatch}-t${currentSlot}`);
+            let actualTeamName = currentEl.innerText;
+
+            if (actualTeamName === "TBD") return;
+
+            let sideOffset = side === 'left' ? 0 : 15;
+            let roundOffsets = [0, 8, 12, 14];
+            if (currentRound < 3) {
+                let mIndex = sideOffset + roundOffsets[currentRound] + currentMatch;
+                window.matchChoices[mIndex] = currentSlot;
+            } else if (currentRound === 3) {
+                let ffIndex = side === 'left' ? 14 : 29;
+                window.matchChoices[ffIndex] = currentSlot;
+            }
+
+            if (nextRound === 4) {
+                let finalEl = document.getElementById(`final-${side}`);
+                finalEl.innerText = actualTeamName;
+                finalEl.classList.remove('empty');
+
+                let loserSlot = 1 - currentSlot;
+                let loserEl = document.getElementById(`${side}-r3-m0-t${loserSlot}`);
+                let loserTeamName = loserEl ? loserEl.innerText : "TBD";
+
+                let bronzeEl = document.getElementById(`bronze-${side}`);
+                if (bronzeEl) {
+                    bronzeEl.innerText = loserTeamName;
+                    bronzeEl.classList.remove('empty');
+                }
+
+                updateCode();
+                return;
+            }
+
+            let targetId = `${side}-r${nextRound}-m${nextMatch}-t${nextSlot}`;
+            let targetEl = document.getElementById(targetId);
+
+            if (targetEl) {
+                targetEl.innerText = actualTeamName;
+                targetEl.classList.remove('empty');
+            }
+            updateCode();
+        }
+
+        function advanceToWinner(side) {
+            let finalEl = document.getElementById(`final-${side}`);
+            let actualTeamName = finalEl.innerText;
+
+            if (actualTeamName === "Left Semifinalist" || actualTeamName === "Right Semifinalist" || actualTeamName === "TBD") {
+                return;
+            }
+
+            let champEl = document.getElementById('champion');
+            champEl.innerText = actualTeamName;
+
+            window.matchChoices[30] = side === 'left' ? 0 : 1;
+            updateCode();
+        }
+
+        function advanceToThirdPlace(side) {
+            let bronzeEl = document.getElementById(`bronze-${side}`);
+            let actualTeamName = bronzeEl.innerText;
+
+            if (actualTeamName === "Left SF Loser" || actualTeamName === "Right SF Loser" || actualTeamName === "TBD") {
+                return;
+            }
+
+            let thirdEl = document.getElementById('third-place');
+            thirdEl.innerText = actualTeamName;
+
+            window.matchChoices[31] = side === 'left' ? 0 : 1;
+            updateCode();
+        }
+
+        function restoreFromCode() {
+            window.isRestoring = true;
+            let input = document.getElementById('restore-code').value.trim();
+            if (!input) {
+                window.isRestoring = false;
+                return;
+            }
+
+            let binStr = "";
+            if (/^[01]{32}$/.test(input)) {
+                binStr = input;
+            } else if (/^[0-9A-Fa-f]{8}$/.test(input)) {
+                for (let i = 0; i < input.length; i++) {
+                    binStr += parseInt(input[i], 16).toString(2).padStart(4, '0');
+                }
+            } else if (/^\d+$/.test(input)) {
+                try {
+                    binStr = BigInt(input).toString(2).padStart(32, '0');
+                    if (binStr.length > 32) throw new Error("Number too large");
+                } catch (e) {
+                    alert("Invalid Base 10 Code.");
+                    window.isRestoring = false;
+                    return;
+                }
+            } else {
+                alert("Invalid code format. Please provide a valid 32-bit binary string, 8-character hex string, or Base 10 integer.");
+                window.isRestoring = false;
+                return;
+            }
+
+            window.matchChoices = new Array(32).fill(null);
+            renderBracket();
+
+            let choices = binStr.split('').map(Number);
+            let roundOffsets = [0, 8, 12, 14];
+            let matchesPerSide = [8, 4, 2, 1];
+
+            for (let roundIndex = 0; roundIndex <= 3; roundIndex++) {
+                for (let i = 0; i < matchesPerSide[roundIndex]; i++) {
+                    let mIndex = roundIndex === 3 ? 14 : (0 + roundOffsets[roundIndex] + i);
+                    let teamEl = document.getElementById(`left-r${roundIndex}-m${i}-t${choices[mIndex]}`);
+                    if (teamEl && teamEl.innerText !== "TBD") teamEl.click();
+                }
+                for (let i = 0; i < matchesPerSide[roundIndex]; i++) {
+                    let mIndex = roundIndex === 3 ? 29 : (15 + roundOffsets[roundIndex] + i);
+                    let teamEl = document.getElementById(`right-r${roundIndex}-m${i}-t${choices[mIndex]}`);
+                    if (teamEl && teamEl.innerText !== "TBD") teamEl.click();
+                }
+            }
+
+            if (choices[30] === 0 || choices[30] === 1) {
+                let finalEl = document.getElementById(`final-${choices[30] === 0 ? 'left' : 'right'}`);
+                if (finalEl) finalEl.click();
+            }
+
+            if (choices[31] === 0 || choices[31] === 1) {
+                let bronzeEl = document.getElementById(`bronze-${choices[31] === 0 ? 'left' : 'right'}`);
+                if (bronzeEl) bronzeEl.click();
+            }
+            window.isRestoring = false;
+        }
+
+        // Initialize the bracket
+        renderBracket();
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.has('code')) {
+                document.getElementById('restore-code').value = urlParams.get('code');
+                if (urlParams.has('date')) {
+                    let hexDate = urlParams.get('date');
+                    let str = "";
+                    for (let i = 0; i < hexDate.length; i += 2) {
+                        str += String.fromCharCode(parseInt(hexDate.substr(i, 2), 16));
+                    }
+                    window.loadedDateStr = str;
+                }
+                restoreFromCode();
+            }
+        });
+    </script>
+</body>
+
+</html>
