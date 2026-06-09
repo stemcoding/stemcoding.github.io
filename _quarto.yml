@@ -10,6 +10,8 @@ project:
     - soccer.html
     - img/stemcoding_data_science_icon_2026.png
     - img/Ohio_State_University_at_Marion_Logo.png
+    - dimorphism.html
+    - dimorphism2.html
 
 website:
   favicon: img/stemcoding_favicon_final.png

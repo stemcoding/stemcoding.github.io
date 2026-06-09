@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dimorphism Data Generator</title>
+  <meta name="description"
+    content="Generate a random dataset containing gender (M/F) and size measurements to demonstrate sexual size dimorphism">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Mono&display=swap"
+    rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-gradient: linear-gradient(135deg, #090d16 0%, #111428 50%, #200b2e 100%);
+      --card-bg: rgba(20, 26, 46, 0.6);
+      --card-border: rgba(255, 255, 255, 0.07);
+      --primary-gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+      --primary-hover: linear-gradient(135deg, #4f46e5 0%, #9333ea 100%);
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #f43f5e;
+      --input-bg: rgba(10, 14, 28, 0.75);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: var(--bg-gradient);
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Ambient background glow elements */
+    body::before,
+    body::after {
+      content: '';
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      filter: blur(140px);
+      z-index: -1;
+      opacity: 0.35;
+    }
+
+    body::before {
+      top: 10%;
+      left: 15%;
+      background: #4f46e5;
+    }
+
+    body::after {
+      bottom: 10%;
+      right: 15%;
+      background: #c084fc;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 500px;
+      z-index: 10;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 0.5rem;
+      background: linear-gradient(135deg, #ffffff 10%, #cbd5e1 50%, #a855f7 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: -0.03em;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      color: var(--text-muted);
+      text-align: center;
+      margin-bottom: 2rem;
+      font-weight: 300;
+      line-height: 1.5;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 28px;
+      padding: 2.5rem;
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      box-shadow: 0 40px 80px rgba(0, 0, 0, 0.5),
+        inset 0 1px 0 rgba(255, 255, 255, 0.12);
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      margin-bottom: 1.5rem;
+    }
+
+    label {
+      font-size: 0.825rem;
+      font-weight: 600;
+      color: #94a3b8;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    select {
+      width: 100%;
+      padding: 0.85rem 1.1rem;
+      background: var(--input-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      color: var(--text-main);
+      font-family: 'Outfit', sans-serif;
+      font-size: 1rem;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      cursor: pointer;
+      appearance: none;
+      -webkit-appearance: none;
+      background-image: url("data:image/svg+xml;utf8,<svg fill='%23cbd5e1' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+      background-repeat: no-repeat;
+      background-position: right 1rem center;
+    }
+
+    select:focus {
+      outline: none;
+      border-color: #6366f1;
+      box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.45);
+      background-color: rgba(15, 23, 42, 0.85);
+    }
+
+    input[type="number"] {
+      width: 100%;
+      padding: 0.85rem 1.1rem;
+      background: var(--input-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      color: var(--text-main);
+      font-family: 'Outfit', sans-serif;
+      font-size: 1rem;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    input[type="number"]:focus {
+      outline: none;
+      border-color: #6366f1;
+      box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.45);
+      background-color: rgba(15, 23, 42, 0.85);
+    }
+
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    input[type="number"] {
+      -moz-appearance: textfield;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      width: 100%;
+      padding: 1.1rem;
+      background: var(--primary-gradient);
+      border: none;
+      border-radius: 16px;
+      color: #ffffff;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 6px 20px rgba(99, 102, 241, 0.35);
+    }
+
+    .btn:hover {
+      background: var(--primary-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(99, 102, 241, 0.45);
+    }
+
+    .btn:active {
+      transform: translateY(1px);
+      box-shadow: 0 2px 10px rgba(99, 102, 241, 0.25);
+    }
+
+    .btn svg {
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+      transition: transform 0.2s ease;
+    }
+
+    .btn:hover svg {
+      transform: translateY(2px);
+    }
+
+    /* Preview Area */
+    .preview-container {
+      margin-top: 2rem;
+      border-top: 1px solid var(--card-border);
+      padding-top: 1.5rem;
+      display: none;
+      animation: fadeIn 0.4s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .preview-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.75rem;
+    }
+
+    .preview-title {
+      font-size: 0.825rem;
+      font-weight: 600;
+      color: #cbd5e1;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .preview-badge {
+      font-size: 0.75rem;
+      background: rgba(99, 102, 241, 0.2);
+      border: 1px solid rgba(99, 102, 241, 0.3);
+      color: #a5b4fc;
+      padding: 0.25rem 0.6rem;
+      border-radius: 8px;
+      font-weight: 600;
+    }
+
+    .preview-box {
+      background: var(--input-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      padding: 1.25rem;
+      font-family: 'Space Mono', monospace;
+      font-size: 0.95rem;
+      color: #38bdf8;
+      white-space: pre-wrap;
+      word-break: break-all;
+      line-height: 1.6;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 3rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      text-align: center;
+      font-weight: 300;
+      letter-spacing: 0.02em;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        padding: 1.75rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <header>
+      <h1 id="main-heading">Dimorphism Data</h1>
+      <p class="subtitle">Download animal size dimorphism dataset for a fictional species</p>
+    </header>
+
+    <main class="card">
+      <div class="form-group">
+        <label for="species-select">Select Fictional Species</label>
+        <select id="species-select">
+          <option value="vermicious_knids" selected>Vermicious Knids</option>
+          <option value="snozzwangers">Snozzwangers</option>
+          <option value="hornswogglers">Hornswogglers</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="lines-input">Number of Measurements (10 - 10000)</label>
+        <input type="number" id="lines-input" min="10" max="10000" value="100">
+      </div>
+
+      <div
+        style="background: rgba(255, 255, 255, 0.03); border: 1px dashed rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 0.85rem; margin-bottom: 1.5rem; font-size: 0.85rem; color: var(--text-muted); display: flex; align-items: center; gap: 0.5rem;">
+        <svg viewBox="0 0 24 24" style="width: 18px; height: 18px; fill: #a855f7; flex-shrink: 0;" aria-hidden="true">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" />
+        </svg>
+        <span>Note: Animal sizes are in centimeters (cm)</span>
+      </div>
+
+      <button id="generate-btn" class="btn">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z" />
+        </svg>
+        Download Dataset
+      </button>
+
+      <section class="preview-container" id="preview-container" aria-label="Preview of generated dataset">
+        <div class="preview-header">
+          <h2 class="preview-title" style="font-size: 0.825rem; font-weight: 600;">Dataset Preview</h2>
+          <span class="preview-badge" id="preview-count">8 lines generated</span>
+        </div>
+        <div class="preview-box" id="preview-box"></div>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    &copy; 2026 Dimorphism. All Rights Reserved.
+  </footer>
+
+  <script>
+    const generateBtn = document.getElementById('generate-btn');
+    const speciesSelect = document.getElementById('species-select');
+    const linesInput = document.getElementById('lines-input');
+    const previewContainer = document.getElementById('preview-container');
+    const previewBox = document.getElementById('preview-box');
+    const previewCount = document.getElementById('preview-count');
+
+    // Species size generation parameters & logic
+    // (Separate functions so parameters can be customized per-species later)
+    function generateVermiciousKnidSize(gender) {
+      if (gender === 'M') {
+        return (Math.random() - 0.5) * 30 + 100;
+      } else { // Female
+        return (Math.random() - 0.5) * 30 + 110;
+      }
+    }
+
+    function generateSnozzwangerSize(gender) {
+      if (gender === 'M') {
+        return (Math.random() - 0.5) * 15 + 55;
+      } else { // Female
+        return (Math.random() - 0.5) * 15 + 50;
+      }
+    }
+
+    function generateHornswogglerSize(gender) {
+      if (gender === 'M') {
+        return (Math.random() - 0.5) * 30 + 200;
+      } else { // Female
+        return (Math.random() - 0.5) * 30 + 210;
+      }
+    }
+
+    linesInput.addEventListener('change', () => {
+      let val = parseInt(linesInput.value, 10);
+      if (isNaN(val)) {
+        linesInput.value = 100;
+      } else if (val < 10) {
+        linesInput.value = 10;
+      } else if (val > 10000) {
+        linesInput.value = 10000;
+      }
+    });
+
+    generateBtn.addEventListener('click', () => {
+      let numLines = parseInt(linesInput.value, 10);
+      if (isNaN(numLines) || numLines < 10) {
+        numLines = 10;
+        linesInput.value = 10;
+      } else if (numLines > 10000) {
+        numLines = 10000;
+        linesInput.value = 10000;
+      }
+
+      let lines = [];
+      let allM = true;
+      let allF = true;
+      const species = speciesSelect.value;
+
+      while (allM || allF) {
+        lines = [];
+        allM = true;
+        allF = true;
+
+        for (let i = 0; i < numLines; i++) {
+          // 50% chance for Male (M) or Female (F)
+          const gender = Math.random() < 0.5 ? 'M' : 'F';
+          if (gender === 'M') {
+            allF = false;
+          } else {
+            allM = false;
+          }
+
+          let size;
+          if (species === 'vermicious_knids') {
+            size = generateVermiciousKnidSize(gender);
+          } else if (species === 'snozzwangers') {
+            size = generateSnozzwangerSize(gender);
+          } else if (species === 'hornswogglers') {
+            size = generateHornswogglerSize(gender);
+          }
+
+          // Format size to 0 decimal places
+          const formattedSize = size.toFixed(0);
+          lines.push(`${gender},${formattedSize}`);
+        }
+      }
+
+      // Create output content
+      const outputText = lines.join('\n');
+
+      // Create text file download
+      const blob = new Blob([outputText], { type: 'text/plain;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+
+      const timestamp = new Date().toISOString().slice(11, 19).replace(/:/g, '-');
+      a.href = url;
+      a.download = `${species}_dataset_${timestamp}.txt`;
+
+      document.body.appendChild(a);
+      a.click();
+
+      // Cleanup
+      setTimeout(() => {
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+      }, 0);
+
+      // Update Preview (show at most first 100 lines so page doesn't lag/freeze)
+      const maxPreviewLines = 100;
+      let previewText = lines.slice(0, maxPreviewLines).join('\n');
+      if (lines.length > maxPreviewLines) {
+        previewText += `\n... and ${lines.length - maxPreviewLines} more lines`;
+      }
+      previewBox.textContent = previewText;
+      previewCount.textContent = `${lines.length} lines generated`;
+      previewContainer.style.display = 'block';
+    });
+  </script>
+</body>
+
+</html>
