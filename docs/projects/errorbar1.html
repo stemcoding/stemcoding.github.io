@@ -70,6 +70,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -146,6 +175,8 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#error-bars" id="toc-error-bars" class="nav-link active" data-scroll-target="#error-bars">Error Bars</a>
   <ul class="collapse">
   <li><a href="#estimating-uncertainty" id="toc-estimating-uncertainty" class="nav-link" data-scroll-target="#estimating-uncertainty">Estimating uncertainty</a></li>
+  <li><a href="#why-this-matters" id="toc-why-this-matters" class="nav-link" data-scroll-target="#why-this-matters">Why this matters</a></li>
+  <li><a href="#how-much-disagreement-is-a-lot" id="toc-how-much-disagreement-is-a-lot" class="nav-link" data-scroll-target="#how-much-disagreement-is-a-lot">How much disagreement is a lot?</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -191,7 +222,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Let’s take an example of a measurement of the pressure in a car or a bike tire.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../img/tire_pressure_sensor_lowres.png" class="quarto-figure quarto-figure-center figure-img" height="400"></p>
+<p><img src="../img/tire_pressure_sensor_lowres2.png" class="quarto-figure quarto-figure-center figure-img" height="400"></p>
 </figure>
 </div>
 <p>You can see in the image above that the tire pressure sensor is indicating 38.5 PSI which stands for pounds per square inch. This is a pretty typical value for the pressure of a car tire. It certainly seems like there is no error bar on this measurement. It’s just 38.5 PSI. But if you think about it, because there are only three digits of precision shown, that says something about how precise the measurement is. It’s not just 38.5 PSI. It is reasonable to conclude that the measurement is 38.5 PSI +/- 0.05 PSI. In other words the measured value is 38.5 PSI but the uncertainty on that measurement is about 0.05 PSI.</p>
@@ -199,8 +230,33 @@ ul.task-list li input[type="checkbox"] {
 <p>If we were measuring PSI for a science project, for example measuring the PSI of a tire or a ball versus temperature, for example, you could plot both the measured value (a dot) and show the uncertainty with an error bar (the thing that looks like an I).</p>
 <p>You can see from this example, that even in a situation where the uncertainty is not mentioned that we can infer what the uncertainty might be.</p>
 <p style="text-align: right;">
-<b>Science fair tip:</b><br> A common mistake in science fair projects is to not estimate the uncertainty or visualize that uncertainty with an error bar
+<b>Science fair tip:</b><br> A common mistake in science fair projects is to not estimate the<br> uncertainty or visualize that uncertainty with an error bar
 </p>
+</section>
+<section id="why-this-matters" class="level3">
+<h3 class="anchored" data-anchor-id="why-this-matters">Why this matters</h3>
+<p>There are many reasons why error bars are important but here are a few salient ones:</p>
+<p><b>1. Error bars are important because it forces you the experimenter to think about your uncertainties</b></p>
+<p>If you are thinking about uncertainties before you do your experiment then you are probably going to do a much more careful experiment than you would without thinking about uncertainty at all or only thinking about uncertainty after the experiment was performed. Error bars are a visual reminder of this important habit of mind.</p>
+<p><b>2. Error bars are important for data storytelling </b></p>
+<p>Stephanie Evergreen says in her book Effective Data Visualization that <b>“We visualize data to tell a story”</b>. Uncertainty is an important part of that story and error bars are a way to visualize that uncertainty. Sometimes the story you are telling is to yourself (I measured this and got these results and maybe this is why). Sometimes the story you are telling is to someone else (I measured this and got these results and I’m pretty sure this is why but tell me what you think). Either way, error bars are an important part of that story.</p>
+<p><b> 3. Anomalies </b></p>
+<p>In some ways the purpose of doing a science experiment is to identify anomalies. Anomalies are repeated measurements that disagree with a theoretical model that has worked well for other experiments. Scientists are always very interested in anomalies. Some anomalies are resolved by realizing that the measurements were flawed. Some anomalies are resolved by improving the theoretical model. Some anomalies have never been convincingly explained and maybe one of you reading this will be the person to resolve it!</p>
+<p><b>Error bars are EXTREMELY important for anomalies!</b> The only difference between the two plots below is that the size of the error bars are much larger on the left.</p>
+<div style="display: flex; justify-content: center; gap: 15px;">
+<p><img src="../img/errorbar_big.png" style="width: 48%; height: auto;"> <img src="../img/errorbar_small.png" style="width: 48%; height: auto;"></p>
+</div>
+<p>With the plot on the left, there are measurements that disagree with the model but the error bars are large so the feeling is that the measurements and the model are still consistent with each other.</p>
+<p>But with the plot on the right, even though the measurements are the same, the error bars are so small that it really seems like something is wrong with the model, or wrong with the measurements, or wrong with the error bars (specifically that the error bars are too small). It will take more work to figure out which of those three possibilities is the most important one. <b>If the disagreement remains then maybe you’ve made a discovery!</b> The detection of the Higgs Boson, which won the Nobel Prize in physics in 2013, involved results that looked a lot like the plot on the right.</p>
+</section>
+<section id="how-much-disagreement-is-a-lot" class="level3">
+<h3 class="anchored" data-anchor-id="how-much-disagreement-is-a-lot">How much disagreement is a lot?</h3>
+<p>There is no strict rule about how different your measurements and the model need to be before its time to get excited. But there is a tradition in science that <b>if</b> the difference between your measurement and the model <b>divided by the uncertainty</b> is greater than five then maybe something really interesting is going on. This is often called the <a href="https://cerncourier.com/a/five-sigma-revisited">5<span class="math inline">\(\sigma\)</span> threshold</a></p>
+<p style="text-align: right;">
+<b>Science tradition:</b><br> The 5<span class="math inline">\(\sigma\)</span> threshold is a tradition where scientists hesitate to declare that<br> a discovery has been made unless the measurements and the<br> model disagree by more than five times the uncertainty
+</p>
+<p>An important detail is that the error bar visualizes the uncertainty both up and down. In other words the error bar shows the possibility both that the measured value could have been larger and the uncertainty that the measured value could have been smaller. We only need to divide by the uncertainty so you would divide the difference by <b>half</b> of the vertical height of the error bar.</p>
+<p>To give a concrete example, earlier we discussed that a tire pressure gauge is measuring 38.5 PSI +/- 0.5 PSI. So if we visualized the error bar for that measurement it would be centered at 38.5 PSI and it would go up +0.5 PSI and down -0.5 PSI. The vertical height of the error bar would be 1.0 PSI. If we compared the 38.5 PSI measurement to some kind of model and there was a difference, we would divide that difference by 0.5 PSI (and not 1.0 PSI) to get an idea for how different the measurement is from the model.</p>
 
 
 </section>
