@@ -19,7 +19,7 @@ Are you sure? How sure are you? These are two of the most important questions th
 
 Let's take an example of a measurement of the pressure in a car or a bike tire.
 
-![](../img/tire_pressure_sensor_lowres2.png){height=400 fig-align="center"}
+![](../img/tire_pressure_sensor_lowres3.png){height=400 fig-align="center"}
 
 You can see in the image above that the tire pressure sensor is indicating 38.5 PSI which stands for pounds per square inch. This is a pretty typical value for the pressure of a car tire. It certainly seems like there is no error bar on this measurement. It's just 38.5 PSI. But if you think about it, because there are only three digits of precision shown, that says something about how precise the measurement is. It's not just 38.5 PSI. It is reasonable to conclude that the measurement is 38.5 PSI  +/- 0.05 PSI. In other words the measured value is 38.5 PSI but the uncertainty on that measurement is about 0.05 PSI. 
 
