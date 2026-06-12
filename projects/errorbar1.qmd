@@ -72,7 +72,7 @@ The 5$\sigma$ threshold is a tradition where scientists hesitate to declare that
 
 An important detail is that the error bar visualizes the uncertainty both up and down. In other words the error bar shows the possibility both that the measured value could have been larger and the uncertainty that the measured value could have been smaller. We only need to divide by the uncertainty so you would divide the difference by <b>half</b> of the vertical height of the error bar.
 
-To give a concrete example, earlier we discussed that a tire pressure gauge is measuring 38.5 PSI +/- 0.5 PSI. So if we visualized the error bar for that measurement it would be centered at 38.5 PSI and it would go up +0.5 PSI and down -0.5 PSI. The vertical height of the error bar would be 1.0 PSI. If we compared the 38.5 PSI measurement to some kind of model and there was a difference, we would divide that difference by 0.5 PSI (and not 1.0 PSI) to get an idea for how different the measurement is from the model.
+To give a concrete example, earlier we discussed that a tire pressure gauge is measuring 38.5 PSI +/- 0.05 PSI. So if we visualized the error bar for that measurement it would be centered at 38.5 PSI and it would go up +0.05 PSI and down -0.05 PSI. The vertical height of the error bar would be 1.0 PSI. If we compared the 38.5 PSI measurement to some kind of model and there was a difference, we would divide that difference by 0.5 PSI (and not 1.0 PSI) to get an idea for how different the measurement is from the model.
 
 
 
