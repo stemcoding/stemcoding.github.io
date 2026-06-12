@@ -56,7 +56,7 @@ The average distance would be 37.9 feet.
 
 If you do the procedure in the previous section and take the measurement minus the average and square it and do that for each number and add it all up you would get 72.9. Then divide by the number of measurements which is 10 so then you have 7.29 and then take the square root which would give 2.7 feet.
 
-So the average distance would be 37.9 feet +/- 2.7 feet
+So the average distance would be 37.9 feet +/- 2.7 feet, which seems resonable given that the range of values is from 34 feet to 42 feet and that we only did 10 trials.
 
 ### Things to notice
 
