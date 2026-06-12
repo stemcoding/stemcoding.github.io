@@ -57,6 +57,8 @@ In some ways the purpose of doing a science experiment is to identify anomalies.
   <img src="../img/errorbar_small.png" style="width: 48%; height: auto;">
 </div>
 
+<b>Task:</b> Replicate either plot using Google Sheets or Excel with this [sample data](sample.csv)
+
 With the plot on the left, there are measurements that disagree with the model but the error bars are large so the feeling is that the measurements and the model are still consistent with each other.
 
 But with the plot on the right, even though the measurements are the same, the error bars are so small that it really seems like something is wrong with the model, or wrong with the measurements, or wrong with the error bars (specifically that the error bars are too small). It will take more work to figure out which of those three possibilities is the most important one. <b>If the disagreement remains then maybe you've made a discovery!</b> The detection of the Higgs Boson, which won the Nobel Prize in physics in 2013, involved results that looked a lot like the plot on the right.
