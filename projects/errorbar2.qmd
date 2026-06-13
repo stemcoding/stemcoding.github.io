@@ -56,15 +56,15 @@ The average distance would be 37.9 feet.
 
 If you do the procedure in the previous section and take the measurement minus the average and square it and do that for each number and add it all up you would get 72.9. Then divide by the number of measurements which is 10 so then you have 7.29 and then take the square root which would give 2.7 feet.
 
-So the average distance would be 37.9 feet +/- 2.7 feet, which seems resonable given that the range of values is from 34 feet to 42 feet and that we only did 10 trials.
+So the average distance would be 37.9 feet +/- 2.7 feet, which seems resonable given that the range of values is from 34 feet to 42 feet and that we only did 10 trials. Specifically the uncertainty of 2.7 feet is the uncertainty "on the mean"
 
 Here is another set of data -- let's say that your friend kicked the ball and they can kick further than you. Here is the data:
 
 45 feet, 47 feet, 38 feet, 39 feet, 47 feet, 51 feet, 40 feet, 41 feet, 46 feet, 50 feet
 
-<b> Verify that the average distance</b> is 44.4 feet with an uncertainty of +/- 4.4 feet
+<b> Verify that the average distance</b> is 44.4 feet with an uncertainty on the mean of +/- 4.4 feet
 
-<b>Generate a set of measurements and calculate the mean and the uncertainty</b> and give them to your friend to see that you came up with the same values
+<b>Generate a set of measurements (just make up some data!) and calculate the mean and the uncertainty</b> and give them to your friend to see that you came up with the same values
 
 ## Things to notice
 
