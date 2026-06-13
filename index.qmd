@@ -1,11 +1,29 @@
 ---
 execute:
   freeze: auto  # re-render only when source changes
+pagetitle: "STEMcoding"
+toc: false
+page-layout: full
+sidebar: false
+title: ""
+title-block-banner: false
 ---
 
-## Welcome to the STEMcoding Landing Page!
+<div class="sc-hero">
+<video controls autoplay loop muted playsinline class="sc-hero-video">
+<source src="vid/welcome_to_stemcoding2.mp4" type="video/mp4">
+</video>
+<div class="sc-hero-inner">
+<p class="sc-hero-lead">Activities, curriculum, and a thriving community — built by <a href="http://osu.edu">Ohio State</a> and <a href="http://mountunion.edu">Mount Union</a> faculty &amp; students to bring <strong>computer science</strong> and <strong>data science</strong> into intro math and science courses.</p>
+<a href="activities.qmd" class="sc-hero-cta">Browse activities →</a>
+</div>
+</div>
 
-The STEMcoding project is a partnership between [faculty members and students](people.qmd) at [Ohio State University](http://osu.edu) and the [University of Mount Union](http://mountunion.edu)
+::: {.sc-home}
+
+## The STEMcoding Project
+
+The STEMcoding project is a partnership between [faculty members and students](people.qmd) at [Ohio State University](http://osu.edu) and the [University of Mount Union](http://mountunion.edu).
 
 The STEMcoding project exists to re-imagine introductory STEM courses like math and science with computer science and data science in mind. Our [activities](activities.qmd) are used in intro level college courses and high school courses.
 
@@ -23,48 +41,26 @@ We are very proud of the [STEMcoding youtube channel!](http://youtube.com/STEMco
 
 We hope you enjoy this site! Check out our [Social Media Feed](feed.qmd) to see what we've been up to lately, or our [Calendar](calendar.qmd) to see upcoming events and trainings. Please join our [Discord](https://discord.gg/bsWgqcqwCE) to reach out or ask questions!!!
 
-<div class="margin-sidebar-content">
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+## Latest from our Social Feed
 
 <link rel="stylesheet" type="text/css" href="/assets/toots-v2.css">
 
 <style>
-  /* Customize the overall width and text size of the feed */
   .toots {
-    max-width: 100%; /* Adjust this value (e.g., 600px, 80%) as needed */
-    margin: 0 auto !important; /* Centers the feed on the page */
-    font-size: 1.1rem; /* Increases the text size of the feed */
+    max-width: 100%;
+    margin: 0 auto !important;
+    font-size: 1.05rem;
   }
-
-  /* Customize the vertical size of each individual toot */
   .toot {
-    padding-top: 2rem !important; /* Increases the top padding */
-    padding-bottom: 2rem !important; /* Increases the bottom padding */
-/*    min-height: 1000px; Uncomment this if you want to force a specific minimum height */
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
   }
-
-  /* Hide the @username handle, leaving only the display name */
-  .toot .username {
-    display: none !important;
-  }
-
-  /* Container to make the feed scrollable */
+  .toot .username { display: none !important; }
   .feed-container {
-    height: calc(100vh - 300px); /* Responsive height to avoid page scroll */
-    overflow-y: auto !important; /* Show scrollbar if feed is long */
+    max-height: 600px;
+    overflow-y: auto !important;
     overscroll-behavior: contain;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 10px;
-    pointer-events: auto; /* Ensure the container can receive scroll events */
-    position: relative;
-    z-index: 100;
+    padding: 10px 16px;
   }
 </style>
 
@@ -78,7 +74,7 @@ We hope you enjoy this site! Check out our [Social Media Feed](feed.qmd) to see 
   <script type="module" src="/assets/js/emfed-bundle-v2.js"></script>
 </div>
 
-</div>
+
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {

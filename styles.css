@@ -1,34 +1,863 @@
-/* css styles */
+/* ============================================================
+   STEMcoding – Modern Global Styles
+   ============================================================ */
 
-/* Make the margin sidebar wider */
+/* ---------- Design tokens ---------- */
+:root {
+  /* Brand */
+  --sc-red: #d32f2f;
+  --sc-red-dark: #9a0007;
+  --sc-red-glow: rgba(211, 47, 47, 0.35);
+
+  /* Accent gradient palette */
+  --sc-accent-1: #ff6b6b;
+  --sc-accent-2: #845ec2;
+  --sc-accent-3: #00c9a7;
+  --sc-accent-4: #ffc75f;
+
+  --sc-grad-hero: radial-gradient(circle at 30% 20%, #d94747, #b52424 60%, #7a0005 110%);
+  --sc-grad-card: linear-gradient(135deg, #ffffff 0%, #f3f5fb 100%);
+  --sc-grad-text: linear-gradient(90deg, #d32f2f, #845ec2);
+
+  /* Neutrals */
+  --sc-ink: #1a1d29;
+  --sc-ink-soft: #4a4f5e;
+  --sc-mute: #6b7280;
+  --sc-gray: #4a4a4a;
+  --sc-light: #f7f8fa;
+  --sc-bg-soft: #fafbfd;
+  --sc-border: #e6e8ee;
+
+  /* Surfaces & effects */
+  --sc-radius: 14px;
+  --sc-radius-sm: 10px;
+  --sc-radius-lg: 22px;
+  --sc-shadow-sm: 0 1px 3px rgba(20, 22, 30, 0.06), 0 1px 2px rgba(20, 22, 30, 0.04);
+  --sc-shadow: 0 6px 18px rgba(20, 22, 30, 0.08), 0 2px 4px rgba(20, 22, 30, 0.04);
+  --sc-shadow-lg: 0 18px 40px rgba(20, 22, 30, 0.12), 0 4px 10px rgba(20, 22, 30, 0.05);
+
+  /* Type */
+  --sc-font: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --sc-font-display: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+}
+
+/* ---------- Base & background ---------- */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--sc-font);
+  color: var(--sc-ink);
+  background:
+    radial-gradient(1200px 600px at 90% -10%, rgba(132, 94, 194, 0.06), transparent 60%),
+    radial-gradient(900px 500px at -10% 10%, rgba(211, 47, 47, 0.05), transparent 60%),
+    #ffffff;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--sc-red);
+  color: #fff;
+}
+
+/* ---------- Typography ---------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--sc-font-display);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--sc-ink);
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: clamp(2rem, 3vw, 2.6rem);
+}
+
+h2 {
+  font-size: clamp(1.4rem, 2vw, 1.75rem);
+  margin-top: 2.4rem;
+  padding-bottom: 0.4rem;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 4px;
+  margin-top: 0.5rem;
+  border-radius: 2px;
+  background: var(--sc-grad-text);
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: var(--sc-ink-soft);
+}
+
+p {
+  margin-bottom: 1.1rem;
+  color: var(--sc-ink-soft);
+}
+
+a {
+  color: var(--sc-red);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--sc-red-dark);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Gradient text utility */
+.gradient-text {
+  background: var(--sc-grad-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  background: rgba(255, 255, 255, 0.78) !important;
+  backdrop-filter: saturate(180%) blur(14px);
+  -webkit-backdrop-filter: saturate(180%) blur(14px);
+  border-bottom: 1px solid var(--sc-border) !important;
+  box-shadow: 0 1px 0 rgba(20, 22, 30, 0.04);
+  padding: 0.5rem 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+}
+
+.navbar .nav-link {
+  color: var(--sc-ink) !important;
+  font-weight: 600;
+  font-size: 0.92rem;
+  padding: 0.5rem 0.95rem !important;
+  border-radius: 999px;
+  transition: background 0.2s, color 0.2s, transform 0.15s;
+}
+
+.navbar .nav-link:not(:has(img)):hover,
+.navbar .nav-link:not(:has(img)):focus,
+.navbar .nav-link:not(:has(img)).active {
+  background: var(--sc-red) !important;
+  color: #fff !important;
+  transform: translateY(-1px);
+}
+
+.navbar-nav .nav-link:not(:has(img)):hover,
+.navbar-nav .nav-link:not(:has(img)):focus,
+.navbar-nav .nav-link:not(:has(img)).active {
+  color: #fff !important;
+}
+
+/* Logo link – no hover/focus/active style */
+.navbar .nav-link:has(img):hover,
+.navbar .nav-link:has(img):focus,
+.navbar .nav-link:has(img).active {
+  background: transparent !important;
+  color: inherit !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+.navbar-toggler {
+  border-color: var(--sc-red);
+}
+
+/* Social tool icons */
+.quarto-navbar-tools a {
+  color: var(--sc-mute) !important;
+  font-size: 1.1rem;
+  margin: 0 0.15rem;
+  transition: color 0.2s, transform 0.15s;
+}
+
+.quarto-navbar-tools a:hover {
+  color: var(--sc-red) !important;
+  transform: translateY(-2px);
+}
+
+/* ---------- Main content ---------- */
+body {
+  overflow-x: hidden !important;
+  position: relative;
+  width: 100%;
+}
+
+#quarto-content {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+  overflow-x: hidden !important;
+}
+
+main.content {
+  max-width: 100%;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Hide title block completely on homepage only */
+body:has(.sc-hero) #title-block-header,
+body:has(.sc-hero) .quarto-title-block {
+  display: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 0 !important;
+}
+
+/* Style title block as hero on subpages */
+#title-block-header {
+  position: relative;
+  max-width: 1200px;
+  margin: 1.5rem auto 2.5rem !important;
+  padding: 3rem 3rem 2.5rem;
+  background: var(--sc-grad-hero);
+  color: #fff;
+  overflow: hidden;
+  box-shadow: var(--sc-shadow-lg);
+  text-align: center;
+  border-radius: var(--sc-radius-lg);
+}
+
+#title-block-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(800px 400px at 20% 0%, rgba(255, 255, 255, 0.25), transparent 60%),
+    radial-gradient(600px 400px at 100% 100%, rgba(0, 0, 0, 0.18), transparent 60%);
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+#title-block-header>* {
+  position: relative;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.quarto-title h1.title {
+  font-family: var(--sc-font-display);
+  font-size: clamp(2rem, 3.5vw, 2.6rem);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  color: #fff !important;
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+#title-block-header .quarto-title-meta {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+#title-block-header .quarto-title-meta-heading {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 600;
+}
+
+/* Push page content down after hero - not needed with rounded design */
+/* #title-block-header + * {
+  margin-top: 2.5rem !important;
+} */
+
+/* Ensure sidebar starts after hero */
 #quarto-margin-sidebar {
-    width: 400px !important;
-    min-width: 400px !important;
-    overflow-y: auto !important;
-    /* Show scrollbars if needed */
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
 
-/* Adjust the main content area to accommodate wider sidebar */
+/* Adjust page layout to account for hero */
+.page-columns.page-full {
+  margin-top: 0 !important;
+}
+
+/* Remove any margin from first child of main */
+main.content> :first-child:not(#title-block-header) {
+  margin-top: 0 !important;
+}
+
+/* Responsive title block */
+@media (max-width: 768px) {
+  #title-block-header {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+    padding: 2.5rem 1.5rem 2rem;
+    border-radius: var(--sc-radius);
+  }
+}
+
+/* ---------- Hero section (used on index.qmd) ---------- */
+.sc-home {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.sc-hero {
+  position: relative;
+  width: 100vw;
+  height: 60vh;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  margin-top: 0 !important;
+  margin-bottom: 2.5rem;
+  padding: 4rem 2rem 3.5rem;
+  border-radius: 0;
+  background: var(--sc-grad-hero);
+  color: #fff;
+  overflow: hidden;
+  box-shadow: var(--sc-shadow-lg);
+}
+
+.sc-hero-inner {
+  max-width: 920px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+}
+
+.sc-hero-inner::before {
+  content: "Reimagining Intro STEM Through the Lens of Computer Science";
+  display: block;
+  font-family: var(--sc-font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin: 0 0 0.75rem;
+  line-height: 1.15;
+}
+
+.sc-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(800px 400px at 20% 0%, rgba(255, 255, 255, 0.15), transparent 60%),
+    radial-gradient(600px 400px at 100% 100%, rgba(0, 0, 0, 0.25), transparent 60%),
+    linear-gradient(135deg, rgba(211, 47, 47, 0.82) 0%, rgba(132, 94, 194, 0.82) 100%);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.sc-hero-video {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  //  height: 50%;
+  object-fit: cover;
+  z-index: 1;
+  pointer-events: none;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.sc-hero>* {
+  position: relative;
+}
+
+.sc-hero h1,
+.sc-hero h2 {
+  color: #fff;
+  font-family: var(--sc-font-display);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.75rem;
+}
+
+.sc-hero h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.sc-hero h2::after {
+  display: none;
+}
+
+.sc-hero-lead {
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 1.1rem;
+  max-width: 70ch;
+  line-height: 1.65;
+  margin-bottom: 1.5rem;
+}
+
+.sc-hero p {
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 1.1rem;
+  max-width: 70ch;
+}
+
+.sc-hero a {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 600;
+}
+
+.sc-hero a:hover {
+  color: var(--sc-accent-4);
+}
+
+.sc-hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.2rem;
+  padding: 0.75rem 1.4rem;
+  background: #fff;
+  color: var(--sc-red) !important;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none !important;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+  transition: transform 0.18s, box-shadow 0.18s;
+}
+
+.sc-hero-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+  color: var(--sc-red-dark) !important;
+}
+
+/* ---------- Sidebar ---------- */
+#quarto-margin-sidebar {
+  width: 400px !important;
+  min-width: 400px !important;
+  overflow-y: auto !important;
+}
+
 .page-columns .page-full {
-    grid-template-columns: 1fr 400px !important;
+  grid-template-columns: 1fr 400px !important;
 }
 
-/* For larger screens, make it even wider */
 @media (min-width: 1400px) {
-    #quarto-margin-sidebar {
-        width: 400px !important;
-        min-width: 400px !important;
-        overflow-y: auto !important;
-        /* Show scrollbars if needed */
-    }
+  #quarto-margin-sidebar {
+    width: 450px !important;
+    min-width: 450px !important;
+  }
 
-    .page-columns .page-full {
-        grid-template-columns: 1fr 500px !important;
-    }
+  .page-columns .page-full {
+    grid-template-columns: 1fr 450px !important;
+  }
 }
 
-/* Ensure the iframe fits nicely in the wider sidebar */
+/* ---------- Cards (activity grid) ---------- */
+.quarto-listing .card {
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius);
+  background: var(--sc-grad-card);
+  box-shadow: var(--sc-shadow-sm);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s;
+  overflow: hidden;
+  position: relative;
+}
+
+.quarto-listing .card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, transparent, transparent);
+  pointer-events: none;
+  transition: background 0.3s;
+}
+
+.quarto-listing .card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--sc-shadow-lg);
+  border-color: transparent;
+}
+
+.quarto-listing .card:hover::before {
+  background: linear-gradient(135deg, var(--sc-red), var(--sc-accent-2)) border-box;
+  -webkit-mask: linear-gradient(#000, #000) content-box, linear-gradient(#000, #000);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.quarto-listing .card .card-title {
+  font-family: var(--sc-font-display);
+  font-weight: 700;
+  color: var(--sc-ink);
+  letter-spacing: -0.01em;
+}
+
+.quarto-listing .card .card-img-top {
+  border-bottom: 1px solid var(--sc-border);
+  object-fit: cover;
+  height: 190px;
+  transition: transform 0.4s ease;
+}
+
+.quarto-listing .card:hover .card-img-top {
+  transform: scale(1.04);
+}
+
+.quarto-listing .card .card-body {
+  padding: 1.2rem 1.25rem;
+}
+
+/* ---------- Buttons ---------- */
+.btn-primary,
+a.btn-primary {
+  background: var(--sc-red);
+  border-color: var(--sc-red);
+  border-radius: 999px;
+  font-weight: 600;
+  padding: 0.6rem 1.3rem;
+  letter-spacing: 0.01em;
+  box-shadow: 0 4px 12px var(--sc-red-glow);
+  transition: background 0.2s, border-color 0.2s, transform 0.15s, box-shadow 0.2s;
+}
+
+.btn-primary:hover {
+  background: var(--sc-red-dark);
+  border-color: var(--sc-red-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px var(--sc-red-glow);
+}
+
+/* ---------- Video ---------- */
+video {
+  border-radius: var(--sc-radius);
+  box-shadow: var(--sc-shadow);
+  margin: 1.25rem 0;
+}
+
+/* ---------- Images ---------- */
+img {
+  border-radius: 6px;
+}
+
+.quarto-title-block img {
+  box-shadow: none;
+}
+
+/* ---------- Code blocks ---------- */
+pre {
+  background: #0f172a;
+  color: #e2e8f0;
+  border: 1px solid #1e293b;
+  border-radius: var(--sc-radius);
+  padding: 1rem 1.25rem;
+  font-size: 0.88rem;
+  box-shadow: var(--sc-shadow-sm);
+}
+
+code:not(pre code) {
+  background: #f3f4f8;
+  color: var(--sc-red-dark);
+  padding: 0.1em 0.45em;
+  border-radius: 6px;
+  font-size: 0.9em;
+}
+
+/* ---------- Callouts ---------- */
+.callout {
+  border-radius: var(--sc-radius);
+  border-left-width: 5px;
+  box-shadow: var(--sc-shadow-sm);
+}
+
+/* ---------- Tables ---------- */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: var(--sc-radius);
+  overflow: hidden;
+  box-shadow: var(--sc-shadow-sm);
+}
+
+table thead th {
+  background: var(--sc-bg-soft);
+  font-weight: 700;
+  color: var(--sc-ink);
+  border-bottom: 2px solid var(--sc-border) !important;
+}
+
+/* ---------- TOC ---------- */
+#TOC .nav-link {
+  font-size: 0.85rem;
+  color: var(--sc-mute);
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  border-left: 2px solid transparent;
+  transition: all 0.18s;
+}
+
+#TOC .nav-link:hover,
+#TOC .nav-link.active {
+  color: var(--sc-red);
+  background: rgba(211, 47, 47, 0.06);
+  border-left-color: var(--sc-red);
+}
+
+/* ---------- Footer ---------- */
+#quarto-footer,
+.nav-footer {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  border-top: 3px solid var(--sc-red);
+  color: rgba(255, 255, 255, 0.9);
+  padding: 3rem 2rem 2.5rem;
+  margin-top: 4rem;
+}
+
+.nav-footer .container,
+.nav-footer .container-fluid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4rem;
+  align-items: start;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.nav-footer-left,
+.nav-footer-right {
+  max-width: 100%;
+}
+
+.footer-left p,
+.footer-right p {
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.footer-left p {
+  font-size: 1.05rem;
+  max-width: none;
+}
+
+.footer-contact {
+  font-size: 0.95rem;
+  margin-bottom: 1rem !important;
+}
+
+.footer-copy {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 0 !important;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.nav-footer a,
+.footer-left a,
+.footer-right a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color 0.2s, text-decoration-color 0.2s;
+}
+
+.nav-footer a:hover,
+.footer-left a:hover,
+.footer-right a:hover {
+  color: var(--sc-accent-4);
+  text-decoration-color: var(--sc-accent-4);
+}
+
+/* Responsive footer - stack on mobile */
+@media (max-width: 768px) {
+
+  .nav-footer .container,
+  .nav-footer .container-fluid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .nav-footer-left,
+  .nav-footer-right {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .footer-copy {
+    border-top: none;
+    padding-top: 0;
+  }
+}
+
+/* ---------- Social feed container ---------- */
+.feed-container {
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius);
+  background: var(--sc-bg-soft);
+  box-shadow: var(--sc-shadow-sm);
+}
+
+.toot {
+  border-bottom: 1px solid var(--sc-border) !important;
+  transition: background 0.18s;
+}
+
+.toot:hover {
+  background: rgba(132, 94, 194, 0.04);
+}
+
+/* ---------- Margin sidebar iframe ---------- */
 .margin-sidebar-content iframe {
-    width: 100% !important;
-    max-width: none !important;
+  width: 100% !important;
+  max-width: none !important;
+  border-radius: var(--sc-radius);
+}
+
+/* ---------- Category badges ---------- */
+.quarto-category {
+  background: linear-gradient(135deg, var(--sc-red), var(--sc-accent-2)) !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 0.25em 0.85em;
+}
+
+/* ---------- Category sidebar (filter list) ---------- */
+.quarto-listing-category {
+  overflow-x: hidden;
+}
+
+.quarto-listing-category-title {
+  font-family: var(--sc-font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--sc-ink);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--sc-red);
+}
+
+.quarto-listing-category .category {
+  display: block;
+  padding: 0.6rem 1rem;
+  margin-bottom: 0.4rem;
+  border-radius: var(--sc-radius-sm);
+  background: var(--sc-light);
+  border: 1px solid var(--sc-border);
+  color: var(--sc-ink-soft);
+  font-weight: 500;
+  font-size: 0.92rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.quarto-listing-category .category::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--sc-grad-text);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.quarto-listing-category .category:hover {
+  background: #fff;
+  border-color: var(--sc-red);
+  color: var(--sc-red);
+  box-shadow: var(--sc-shadow-sm);
+  padding-left: 1.2rem;
+}
+
+.quarto-listing-category .category:hover::before {
+  opacity: 1;
+}
+
+.quarto-listing-category .category.active {
+  background: linear-gradient(135deg, var(--sc-red), var(--sc-accent-2));
+  color: #fff;
+  font-weight: 600;
+  border-color: transparent;
+  box-shadow: var(--sc-shadow);
+}
+
+.quarto-listing-category .category.active::before {
+  opacity: 0;
+}
+
+.quarto-listing-category .category .category-count {
+  float: right;
+  background: rgba(0, 0, 0, 0.1);
+  color: var(--sc-mute);
+  border-radius: 999px;
+  padding: 0.1em 0.6em;
+  font-size: 0.8em;
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+
+.quarto-listing-category .category:hover .category-count,
+.quarto-listing-category .category.active .category-count {
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+}
+
+/* ---------- Subtle entrance animation for content ---------- */
+@keyframes sc-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+main.content>*,
+.quarto-title-block {
+  animation: sc-fade-up 0.5s ease both;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .sc-hero {
+    padding: 2.5rem 1.25rem 2rem;
+  }
 }

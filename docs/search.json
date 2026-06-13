@@ -914,7 +914,7 @@
     "href": "index.html",
     "title": "STEMcoding",
     "section": "",
-    "text": "The STEMcoding project is a partnership between faculty members and students at Ohio State University and the University of Mount Union\nThe STEMcoding project exists to re-imagine introductory STEM courses like math and science with computer science and data science in mind. Our activities are used in intro level college courses and high school courses.\nWe love to create activities that each align with relevant math, science and computer science standards. Some of our physical science activities appear on the “model curriculum” examples distributed by the Ohio Department of Education and Workforce. We are also working to create a year-long data science curriculum.\n\n\n\nWe are very proud of the STEMcoding youtube channel! We have released over 100 videos featuring faculty and students at Ohio State University and the University of Mount Union.\n\nWe hope you enjoy this site! Check out our Social Media Feed to see what we’ve been up to lately, or our Calendar to see upcoming events and trainings. Please join our Discord to reach out or ask questions!!!\n\n      \n\n\n\nSTEM Coding Mastodon feed"
+    "text": "Activities, curriculum, and a thriving community — built by Ohio State and Mount Union faculty & students to bring computer science and data science into intro math and science courses.\n\nBrowse activities →"
   },
   {
     "objectID": "index.html#welcome-to-the-stemcoding-landing-page",
@@ -1972,5 +1972,19 @@
     "title": "Are my error bars big or small?",
     "section": "Advanced",
     "text": "Advanced\nWhat we have done is obtained the error bar from the measurements rather than obtaining the error bar from our knowledge of the measurement methods we are using. This is not the only way to obtain error bars from the measured data. Another more complicated approach is called “bootstrapping”.\nAnother related situation is when you are shopping on a site like Amazon and you see a seller that has 5/5 stars but only 10 reviews, and another seller that is 4.8/5 stars with 50 reviews and another with 4.65/5 stars with 200 reviews. This is addressed in an excellent video by 3Blue1Brown. In that video he provides some math to back up what most of us already know which is that a 100% rating with only 10 reviews is not very impressive (because with so few reviews the error on the mean is very large)."
+  },
+  {
+    "objectID": "index.html#the-stemcoding-project",
+    "href": "index.html#the-stemcoding-project",
+    "title": "STEMcoding",
+    "section": "The STEMcoding Project",
+    "text": "The STEMcoding Project\nThe STEMcoding project is a partnership between faculty members and students at Ohio State University and the University of Mount Union.\nThe STEMcoding project exists to re-imagine introductory STEM courses like math and science with computer science and data science in mind. Our activities are used in intro level college courses and high school courses.\nWe love to create activities that each align with relevant math, science and computer science standards. Some of our physical science activities appear on the “model curriculum” examples distributed by the Ohio Department of Education and Workforce. We are also working to create a year-long data science curriculum.\n\n\n\nWe are very proud of the STEMcoding youtube channel! We have released over 100 videos featuring faculty and students at Ohio State University and the University of Mount Union.\n\nWe hope you enjoy this site! Check out our Social Media Feed to see what we’ve been up to lately, or our Calendar to see upcoming events and trainings. Please join our Discord to reach out or ask questions!!!"
+  },
+  {
+    "objectID": "index.html#latest-from-our-social-feed",
+    "href": "index.html#latest-from-our-social-feed",
+    "title": "STEMcoding",
+    "section": "Latest from our Social Feed",
+    "text": "Latest from our Social Feed\n\n\n\nSTEM Coding Mastodon feed"
   }
 ]
