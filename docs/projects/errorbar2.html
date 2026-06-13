@@ -146,8 +146,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#calculating-error-bars" id="toc-calculating-error-bars" class="nav-link active" data-scroll-target="#calculating-error-bars">Calculating error bars</a>
   <ul class="collapse">
   <li><a href="#multiple-measurements" id="toc-multiple-measurements" class="nav-link" data-scroll-target="#multiple-measurements">Multiple measurements</a></li>
-  <li><a href="#how-to-calculate-the-error-on-the-mean" id="toc-how-to-calculate-the-error-on-the-mean" class="nav-link" data-scroll-target="#how-to-calculate-the-error-on-the-mean">How to calculate the error on the mean</a></li>
-  <li><a href="#an-example" id="toc-an-example" class="nav-link" data-scroll-target="#an-example">An example</a></li>
+  <li><a href="#how-to-calculate-the-error-on-the-mean" id="toc-how-to-calculate-the-error-on-the-mean" class="nav-link" data-scroll-target="#how-to-calculate-the-error-on-the-mean">How to calculate the error on the mean</a>
+  <ul class="collapse">
+  <li><a href="#task-example-data" id="toc-task-example-data" class="nav-link" data-scroll-target="#task-example-data">Task: Example data</a></li>
+  </ul></li>
   <li><a href="#things-to-notice" id="toc-things-to-notice" class="nav-link" data-scroll-target="#things-to-notice">Things to notice</a></li>
   <li><a href="#advanced" id="toc-advanced" class="nav-link" data-scroll-target="#advanced">Advanced</a></li>
   </ul></li>
@@ -187,21 +189,21 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 <p>How big are my error bars? Let’s talk about it</p>
-<section id="calculating-error-bars" class="level2">
-<h2 class="anchored" data-anchor-id="calculating-error-bars">Calculating error bars</h2>
+<section id="calculating-error-bars" class="level1">
+<h1>Calculating error bars</h1>
 <p>In <a href="errorbar1.html">Why we love error bars</a> we talked about a tire pressure sensor. The sensor shows three digits of precision on the pressure in PSI units. With some thought we can conclude that the uncertainty would be +/- 0.05 PSI because the uncertainty is the fourth digit that we can’t see on the digital gauge.</p>
 <p>Another situation where the uncertainty is straightforward is when the user manual for the sensor you are using states the uncertainty. For example the CO2 sensor mentioned in other activities on our website is, according to its manual, only accurate to +/- 20 parts per million whereas the CO2 concentration measurement might be between 400 parts per million and 2000 parts per million depending on whether you are outside or inside in a crowded area.</p>
 <p style="text-align: right;">
 <b>Key lesson:</b><br> Sometimes determining the uncertainty is as straightforward<br> as reading the user manual for the sensor
 </p>
-<section id="multiple-measurements" class="level3">
-<h3 class="anchored" data-anchor-id="multiple-measurements">Multiple measurements</h3>
+<section id="multiple-measurements" class="level2">
+<h2 class="anchored" data-anchor-id="multiple-measurements">Multiple measurements</h2>
 <p>It is always good to do multiple measurements! Everyone knows to take the average of those measurements but how do you figure out the error bar?</p>
 <p>A science fair project that many people do is inflate a soccer ball to different PSI pressure and then they do multiple trials of how far they can kick the ball. In these situations the uncertainty is not in the measurement tools. There is no reason to think that the distance the ball traveled was inaccurately measured.</p>
 <p>The key question here is whether the <em> average</em> distance changes with PSI pressure. For each value of PSI for the ball, the error bar we are interested in is the uncertainty on the measured average distance. In science we call this “the error on the mean” or “the standard error”.</p>
 </section>
-<section id="how-to-calculate-the-error-on-the-mean" class="level3">
-<h3 class="anchored" data-anchor-id="how-to-calculate-the-error-on-the-mean">How to calculate the error on the mean</h3>
+<section id="how-to-calculate-the-error-on-the-mean" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-calculate-the-error-on-the-mean">How to calculate the error on the mean</h2>
 <p>If you have multiple trials with THE SAME CONDITIONS (in the example the same PSI) then you can calculate the error on the mean as follows:</p>
 <ul>
 <li>Calculate the mean of all the trials</li>
@@ -213,22 +215,26 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p><b>Done!</b> You have calculated the error on the mean (a.k.a. <a href="https://youtu.be/Vm1NcJuJeeY?si=oBoA21bTB030B9Ix">the standard error</a>)</p>
 <p>Bear in mind that you <b>only do this when the conditions are the same</b>. In the soccer ball example you would not combine results from different PSI when you do the calculation above because different PSI means different conditions.</p>
-</section>
-<section id="an-example" class="level3">
-<h3 class="anchored" data-anchor-id="an-example">An example</h3>
+<section id="task-example-data" class="level3">
+<h3 class="anchored" data-anchor-id="task-example-data">Task: Example data</h3>
 <p>Let’s take the example of kicking the soccer ball. We try to kick it with the same effort for ten kicks and the measured distance comes out like this:</p>
 <p>35 feet, 39 feet, 40 feet, 42 feet, 37 feet, 34 feet, 41 feet, 35 feet, 36 feet, 40 feet</p>
 <p>The average distance would be 37.9 feet.</p>
 <p>If you do the procedure in the previous section and take the measurement minus the average and square it and do that for each number and add it all up you would get 72.9. Then divide by the number of measurements which is 10 so then you have 7.29 and then take the square root which would give 2.7 feet.</p>
 <p>So the average distance would be 37.9 feet +/- 2.7 feet, which seems resonable given that the range of values is from 34 feet to 42 feet and that we only did 10 trials.</p>
+<p>Here is another set of data – let’s say that your friend kicked the ball and they can kick further than you. Here is the data:</p>
+<p>45 feet, 47 feet, 38 feet, 39 feet, 47 feet, 51 feet, 40 feet, 41 feet, 46 feet, 50 feet</p>
+<p><b> Verify that the average distance</b> is 44.4 feet with an uncertainty of +/- 4.4 feet</p>
+<p><b>Generate a set of measurements and calculate the mean and the uncertainty</b> and give them to your friend to see that you came up with the same values</p>
 </section>
-<section id="things-to-notice" class="level3">
-<h3 class="anchored" data-anchor-id="things-to-notice">Things to notice</h3>
+</section>
+<section id="things-to-notice" class="level2">
+<h2 class="anchored" data-anchor-id="things-to-notice">Things to notice</h2>
 <p>Because we are dividing by the number of measurements, as we do more measurements the error on the mean (a.k.a. <a href="https://youtu.be/Vm1NcJuJeeY?si=oBoA21bTB030B9Ix">standard error</a>) should decrease, which makes sense because as we do more trials the mean from all those trials should get more and more accurate.</p>
 <p>That is why, if you do have an opportunity to work on a research project in college, and you show your advisor a result that disagrees with an established model, they are likely to tell you to do more trials!</p>
 </section>
-<section id="advanced" class="level3">
-<h3 class="anchored" data-anchor-id="advanced">Advanced</h3>
+<section id="advanced" class="level2">
+<h2 class="anchored" data-anchor-id="advanced">Advanced</h2>
 <p>What we have done is obtained the error bar from the measurements rather than obtaining the error bar from our knowledge of the measurement methods we are using. This is not the only way to obtain error bars from the measured data. Another more complicated approach is called “bootstrapping”.</p>
 <p>Another related situation is when you are shopping on a site like Amazon and you see a seller that has 5/5 stars but only 10 reviews, and another seller that is 4.8/5 stars with 50 reviews and another with 4.65/5 stars with 200 reviews. This is addressed in an <a href="https://www.youtube.com/watch?v=8idr1WZ1A7Q">excellent video</a> by 3Blue1Brown. In that video he provides some math to back up what most of us already know which is that a 100% rating with only 10 reviews is not very impressive (because with so few reviews the error on the mean is very large).</p>
 

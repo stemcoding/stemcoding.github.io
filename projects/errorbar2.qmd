@@ -11,7 +11,7 @@ categories:
 
 How big are my error bars? Let's talk about it
 
-## Calculating error bars
+# Calculating error bars
 
 In [Why we love error bars](errorbar1.html) we talked about a tire pressure sensor. The sensor shows three digits of precision on the pressure in PSI units. With some thought we can conclude that the uncertainty would be +/- 0.05 PSI because the uncertainty is the fourth digit that we can't see on the digital gauge. 
 
@@ -23,7 +23,7 @@ Sometimes determining the uncertainty is as straightforward<br> as reading the u
 </p>
 
 
-### Multiple measurements
+## Multiple measurements
 
 It is always good to do multiple measurements! Everyone knows to take the average of those measurements but how do you figure out the error bar? 
 
@@ -31,7 +31,7 @@ A science fair project that many people do is inflate a soccer ball to different
 
 The key question here is whether the <em> average</em> distance changes with PSI pressure. For each value of PSI for the ball, the error bar we are interested in is the uncertainty on the measured average distance. In science we call this “the error on the mean” or “the standard error”.
 
-### How to calculate the error on the mean
+## How to calculate the error on the mean
 
 If you have multiple trials with THE SAME CONDITIONS (in the example the same PSI) then you can calculate the error on the mean as follows:
 
@@ -46,7 +46,7 @@ If you have multiple trials with THE SAME CONDITIONS (in the example the same PS
 
 Bear in mind that you <b>only do this when the conditions are the same</b>. In the soccer ball example you would not combine results from different PSI when you do the calculation above because different PSI means different conditions.
 
-### An example
+### Task: Example data
 
 Let's take the example of kicking the soccer ball. We try to kick it with the same effort for ten kicks and the measured distance comes out like this:
 
@@ -58,13 +58,21 @@ If you do the procedure in the previous section and take the measurement minus t
 
 So the average distance would be 37.9 feet +/- 2.7 feet, which seems resonable given that the range of values is from 34 feet to 42 feet and that we only did 10 trials.
 
-### Things to notice
+Here is another set of data -- let's say that your friend kicked the ball and they can kick further than you. Here is the data:
+
+45 feet, 47 feet, 38 feet, 39 feet, 47 feet, 51 feet, 40 feet, 41 feet, 46 feet, 50 feet
+
+<b> Verify that the average distance</b> is 44.4 feet with an uncertainty of +/- 4.4 feet
+
+<b>Generate a set of measurements and calculate the mean and the uncertainty</b> and give them to your friend to see that you came up with the same values
+
+## Things to notice
 
 Because we are dividing by the number of measurements, as we do more measurements the error on the mean (a.k.a. [standard error](https://youtu.be/Vm1NcJuJeeY?si=oBoA21bTB030B9Ix)) should decrease, which makes sense because as we do more trials the mean from all those trials should get more and more accurate.
 
 That is why, if you do have an opportunity to work on a research project in college, and you show your advisor a result that disagrees with an established model, they are likely to tell you to do more trials!
 
-### Advanced
+## Advanced
 
 What we have done is obtained the error bar from the measurements rather than obtaining the error bar from our knowledge of the measurement methods we are using. This is not the only way to obtain error bars from the measured data. Another more complicated approach is called “bootstrapping”.
 
