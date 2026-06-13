@@ -427,228 +427,235 @@
     "text": "Earth Day Playlist"
   },
   {
-    "objectID": "projects/birds.html",
-    "href": "projects/birds.html",
-    "title": "Bellicose Birds",
+    "objectID": "projects/black.html",
+    "href": "projects/black.html",
+    "title": "Escape Velocity and Newtonian Black Holes",
     "section": "",
-    "text": "Create an angry birds game where the arrow keys control the launch angle"
+    "text": "That activity explores the behavior of objects like planets or comets interacting with a massive object like the sun."
   },
   {
-    "objectID": "projects/birds.html#links-to-activity",
-    "href": "projects/birds.html#links-to-activity",
-    "title": "Bellicose Birds",
+    "objectID": "projects/black.html#links-to-activity",
+    "href": "projects/black.html#links-to-activity",
+    "title": "Escape Velocity and Newtonian Black Holes",
     "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Bellicose Birds\nCode Editor for Bellicose Birds"
+    "text": "Links to Activity\n\nInstructions for Escape Velocity and Newtonain Black Holes\nCode Editor for Escape Velocity and Newtonian Black Holes"
   },
   {
-    "objectID": "projects/birds.html#learning-objectives",
-    "href": "projects/birds.html#learning-objectives",
-    "title": "Bellicose Birds",
+    "objectID": "projects/black.html#escape-velocity-and-black-holes-playlist",
+    "href": "projects/black.html#escape-velocity-and-black-holes-playlist",
+    "title": "Escape Velocity and Newtonian Black Holes",
+    "section": "Escape Velocity and Black Holes Playlist",
+    "text": "Escape Velocity and Black Holes Playlist"
+  },
+  {
+    "objectID": "projects/garbage.html",
+    "href": "projects/garbage.html",
+    "title": "Great Pacific Garbage Patch",
+    "section": "",
+    "text": "Why does trash in the Great Pacific Garbage Patch just keep swirling around and around instead of landing on a beach somewhere?"
+  },
+  {
+    "objectID": "projects/garbage.html#background-information",
+    "href": "projects/garbage.html#background-information",
+    "title": "Great Pacific Garbage Patch",
+    "section": "Background information",
+    "text": "Background information\nEver since there were humans, there was garbage left behind by humans. Some of that garbage would get into rivers which would take it out to the oceans.\nWhat is different in our age is (1) there are a lot of humans – over eight billion, and (2) a lot of the garbage that we produce is in the form of plastic. This latter fact is important because any material that has a lower density than water will float.\n\nKey science fact: Any material with a lower density than water will float\n\n\nDensity\nThe density of a material is a measure of how much mass there is compared to how much volume there is of that material. For example, styrofoam is a low density material because you can have a lot of Styrofoam and it is not very heavy. So its mass is small compared to its volume. Whereas lead or gold are high density materials because one brick of lead or gold would be very heavy. So its mass is large compared to its volume.\nIn general, density (\\(\\rho\\)) is the ratio of the mass of an object to the volume of that object.\n\\[ \\rho = \\frac{m}{V} \\]\nWe use the symbol \\(\\rho\\) to represent the density. It looks like the letter p but it is actually a greek symbol that is pronounced “rho” or “row”. Objects of a particular material will generally have the same density of other objects made from that material. Density can be reported in terms of grams per cubic centimeter (g/cm3), grams per milliLiter (g/mL), or kilograms per meter cubed (kg/m3). Grams per cubic centimeter and grams per cubic milliLiter are the same because a cubic centimeter is the same volume as a milliLiter.\nFresh water has a density of 1 gram per cubic centimeter (1 gram per milliLiter) while sea water has a density of 1.02 grams per cubic centimeter (1.02 grams per milliLiter).\n\nKey science fact: The density of fresh water is 1 gram per cubic centimter\n\nMany plastics have a density less than this. According to this pdf, which was fact checked by the Monterey Bay Aquarium foundation, many plastics have a density in the range of 0.9 grams per cubic centimeter to 0.96 grams per cubic centimeter. These plastics will therefore float in water unless it is attached to a denser material like a metal. Most metals have significantly larger densities than water. For example, aluminum is one of the least dense metals and it is still almost three times denser than water. Consequently, metals tend to sink."
+  },
+  {
+    "objectID": "projects/garbage.html#the-great-pacific-garbage-patch",
+    "href": "projects/garbage.html#the-great-pacific-garbage-patch",
+    "title": "Great Pacific Garbage Patch",
+    "section": "The Great Pacific Garbage Patch",
+    "text": "The Great Pacific Garbage Patch\nIt turns out that ocean currents often have a circulating pattern which is called a “gyre”. Ocean currents circulate and form gyres because water gets heated by the sun near the equator and that warm water travels away from the equator where it will cool down.\nIn the 1990s scientists and boaters began to notice that floating plastic trash was strewn throughout a large area of the Pacific Ocean called the North Pacific gyre. Don’t imagine floating islands of trash. Instead imagine a piece of trash here and a piece of trash there over a very large area. Groups like The Ocean Cleanup are working to remove the trash (as you can see in the image at the top of this page) but it remains a problem and there are also “microplastics” that are too small to remove with nets.\nWhat is interesting and not particularly obvious is that floating garbage would collect in the North Pacific gyre and stay there for decades or more. Think about an individual piece of floating trash in the Great Pacific Garbage Patch. Why doesn’t this trash end up on a beach somewhere after a year or two, or three? This is something that a p5.js computer simulation can help us understand! (Note: sometimes trash from the Great Pacific Garbage patch does end up on a beach but it is rare and most of the trash just floats there year after year.)\n\n\n\nThe simulation above contains a mathematical model for an ocean gyre that comes from Section 6 of this research paper. The little white dots are supposed to be pieces of garbage. The black arrows show the direction of ocean currents. It’s not important that you understand the model or the paper. What is important is that the simulation above includes this code:\nx[i] += vx(x[i],y[i],t)*dt;\ny[i] += vy(x[i],y[i],t)*dt;\n\nwhich is a very fancy version of the code below which you might recognize from Move the blob or many of the other p5.js Physics of Video games activities\n x += vx*dt;\n y += vy*dt;\n\nIn the simulation above, (x,y) is the position of a piece of garbage. That position changes according to the velocity of the ocean currents in the x direction (vx) and in the y direction (vy) multiplied by the time during each step (dt)\nTHE IMPORTANT THING IS THAT THE LITTLE WHITE PIECES OF TRASH KEEP CIRCULATING!!! There is actually some code in the simulation that checks if a piece of trash leaves the rectangle and if it does leave it is prevented from coming back. Remarkably, if you run the simulation for a long time, maybe one piece of trash out of 100 will leave the rectangle and not come back. This is true even though the ocean currents are changing with time as you can see from the changing arrows!\nInterestingly, it only takes some simple code to update the x and y position of the trash to come to this conclusion. Sometimes a little bit of code can answer questions that would otherwise be very difficult to answer!"
+  },
+  {
+    "objectID": "projects/garbage.html#optional-hands-on-activity",
+    "href": "projects/garbage.html#optional-hands-on-activity",
+    "title": "Great Pacific Garbage Patch",
+    "section": "Optional hands on activity",
+    "text": "Optional hands on activity\nTake as many different kinds of plastic as you can find and check to see which types of plastic (for example #1, #2, #3, #4, #5 or #6 plastic) will float and which will sink. Bear in mind that sea water is slightly more dense that fresh water. To be more precise you can dissolve table salt in the water and do the test again."
+  },
+  {
+    "objectID": "projects/garbage.html#questions-to-consider",
+    "href": "projects/garbage.html#questions-to-consider",
+    "title": "Great Pacific Garbage Patch",
+    "section": "Questions to consider",
+    "text": "Questions to consider\nWhat do you think about the approach of The Ocean Cleanup to remove trash from the oceans? What have been the difficulties they have run into? What is their approach now? What ideas do you have to remove or otherwise prevent trash from accumulating in the oceans?\nUnderstanding ocean currents saves lives! Listen to this podcast about Art Allen who developed a computer program for the US Coast Guard that is used in emergencies when people fall off of a boat or a ship so that rescuers can anticipate the location of a person who is floating in the water. Thanks to his work, many people have been saved who would otherwise have been lost at sea. As a society, are we doing enough to celebrate people like Art? What is a life or death issue in our society that would benefit from the kind of careful technical work that Art did? What is another example of how basic scientific understanding (like research on ocean currents) ultimately benefits our lives even if that was not the original goal?\n\nAdvanced Questions\nLook at the code that is running the simulation. How much of it can you make sense of? Which parts are you unable to make sense of? Can you simplify the code or make its syntax easier for another student to understand?\nLook at Section 6 of the research paper where the model for the gyre is presented. Do the plots in that section look familiar? How much of the model (Equations 71 - 76) contains math that you have seen before? If we didn’t have a computer, Equation 77 would be all we have to explain why trash just keeps circulating. What does the research paper say about Equation 77 and what does Equation 77 conclude?"
+  },
+  {
+    "objectID": "projects/particleaccelerator.html",
+    "href": "projects/particleaccelerator.html",
+    "title": "Particle Accelerator",
+    "section": "",
+    "text": "Your browser does not support the video tag.\nIn this exercise we will make a simulation of a charged particle being accelerated between two plates."
+  },
+  {
+    "objectID": "projects/particleaccelerator.html#links-to-activity",
+    "href": "projects/particleaccelerator.html#links-to-activity",
+    "title": "Particle Accelerator",
+    "section": "Links to Activity",
+    "text": "Links to Activity\n\nInstructions for Particle Accelerator\nParticle Accelerator Code Editor"
+  },
+  {
+    "objectID": "projects/particleaccelerator.html#learning-objectives",
+    "href": "projects/particleaccelerator.html#learning-objectives",
+    "title": "Particle Accelerator",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\nAt the end of this lesson students will…\n\nApply kinematic equations to code an object’s motion during and after being launched into the air.\nEvaluate optimal launch angles using the simulation."
+    "text": "Learning Objectives\nAt the end of this lesson students will…\n\nExplain how force and acceleration are related using visual evidence from the game.\nUnderstand how a charged particle’s motion is affected by its mass and charge while in an electric field.\nAnalyze the situation to calculate the final velocity of a particle after being immersed in an electric field."
   },
   {
-    "objectID": "projects/birds.html#bellicose-birds-playlist",
-    "href": "projects/birds.html#bellicose-birds-playlist",
-    "title": "Bellicose Birds",
-    "section": "Bellicose Birds Playlist",
-    "text": "Bellicose Birds Playlist"
+    "objectID": "projects/particleaccelerator.html#particle-accelerator-playlist",
+    "href": "projects/particleaccelerator.html#particle-accelerator-playlist",
+    "title": "Particle Accelerator",
+    "section": "Particle Accelerator Playlist",
+    "text": "Particle Accelerator Playlist"
   },
   {
-    "objectID": "projects/planetoidsspring.html",
-    "href": "projects/planetoidsspring.html",
-    "title": "Planetoids with a Spring",
+    "objectID": "projects/pidayparallel.html",
+    "href": "projects/pidayparallel.html",
+    "title": "Pi Day in Parallel",
     "section": "",
-    "text": "Your browser does not support the video tag.\nThink back to the momentum exercise. The little ship can collide with a “blob” and stick to it. Now imagine that this blob is attached to a spring. Wouldn’t it be interesting if the ship could collide with the blob and then the spring would push and pull both around? This is what we will do in this exercise."
+    "text": "In an earlier activity, you were able to approximate \\(\\pi\\) to two or three decimal places; however, it took quite a while for the computer to get to that level of precision.\nWe are going to try to find a faster way to estimate and, at the same time, reveal how many core processors our computer has."
   },
   {
-    "objectID": "projects/planetoidsspring.html#links-to-activity",
-    "href": "projects/planetoidsspring.html#links-to-activity",
-    "title": "Planetoids with a Spring",
+    "objectID": "projects/pidayparallel.html#links-to-activity",
+    "href": "projects/pidayparallel.html#links-to-activity",
+    "title": "Pi Day in Parallel",
     "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Planetoids with a Spring\nPlanetoids with a Spring Code Editor"
+    "text": "Links to Activity\n\nInstructions for Pi Day in Parallel\nPi Day in Parallel Code Editor"
   },
   {
-    "objectID": "projects/planetoidsspring.html#learning-objectives",
-    "href": "projects/planetoidsspring.html#learning-objectives",
-    "title": "Planetoids with a Spring",
+    "objectID": "projects/planetoids.html",
+    "href": "projects/planetoids.html",
+    "title": "Planetoids",
+    "section": "",
+    "text": "Your browser does not support the video tag.\nThis lab will guide you through coding up a web-based implementation of the classic video game asteroids."
+  },
+  {
+    "objectID": "projects/planetoids.html#links-to-activity",
+    "href": "projects/planetoids.html#links-to-activity",
+    "title": "Planetoids",
+    "section": "Links to Activity",
+    "text": "Links to Activity\n\nInstructions for Planetoids\nCode Editor for Planetoids"
+  },
+  {
+    "objectID": "projects/planetoids.html#learning-objectives",
+    "href": "projects/planetoids.html#learning-objectives",
+    "title": "Planetoids",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\nAt the end of this lesson students will…\n\nApply Hooke’s Law, Newton’s 2nd Law, and constant acceleration kinematic equations to code a blob on a spring to behave appropriately when it is collided by a spaceship.\nEvaluate the theoretical half-cycle time of the coded spring.\nCreate a code which accounts for the dampening effect of the spring with time."
+    "text": "Learning Objectives\nAt the end of this lesson students will…\n\nApply kinematic equations to code an object’s motion when force is applied\nApply Newton’s laws of motion to code how an object behaves under different net force conditions\nEvaluate how changing mass can optimize spacecraft maneuverability"
   },
   {
-    "objectID": "projects/planetoidsspring.html#planetoids-with-a-spring-playlist",
-    "href": "projects/planetoidsspring.html#planetoids-with-a-spring-playlist",
-    "title": "Planetoids with a Spring",
-    "section": "Planetoids with a Spring Playlist",
-    "text": "Planetoids with a Spring Playlist"
+    "objectID": "projects/planetoids.html#planetoids-playlist",
+    "href": "projects/planetoids.html#planetoids-playlist",
+    "title": "Planetoids",
+    "section": "Planetoids Playlist",
+    "text": "Planetoids Playlist"
   },
   {
-    "objectID": "projects/planetoidsmomentum.html",
-    "href": "projects/planetoidsmomentum.html",
-    "title": "Planetoids with Momentum",
+    "objectID": "projects/flower.html",
+    "href": "projects/flower.html",
+    "title": "Mathematical Flower Activity",
     "section": "",
-    "text": "In a typical college physics course you will at some point encounter the idea of conservation of momentum. Momentum conservation is very important! In situations where two objects collide, we often don’t know the force or acceleration as a function of time, but we do know the initial velocities. If we know the type of collision that occurs, it turns out that the initial velocities and the masses of the objects are all we need to figure out the final velocities."
+    "text": "Let’s make our own flowers using mathematical functions and polar coordinates\nGreatly inspired by an episode of the Coding Train by Dan Shiffman"
   },
   {
-    "objectID": "projects/planetoidsmomentum.html#links-to-activity",
-    "href": "projects/planetoidsmomentum.html#links-to-activity",
-    "title": "Planetoids with Momentum",
+    "objectID": "projects/flower.html#links-to-activity",
+    "href": "projects/flower.html#links-to-activity",
+    "title": "Mathematical Flower Activity",
     "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Planetoids with Momentum\nCode Editor for Planetoids with Momentum"
+    "text": "Links to Activity\n*Instructions for Mathematical Flower Activity"
   },
   {
-    "objectID": "projects/planetoidsmomentum.html#learning-objectives",
-    "href": "projects/planetoidsmomentum.html#learning-objectives",
-    "title": "Planetoids with Momentum",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nAt the end of this lesson students will…\n\nApply conservation of momentum equations in 1-D to properly code a perfectly inelastic collision.\nApply conservation of momentum equations in 2-D along with basic geometry to properly code a perfectly inelastic collision."
+    "objectID": "projects/flower.html#mathematical-flower-activity-playlist",
+    "href": "projects/flower.html#mathematical-flower-activity-playlist",
+    "title": "Mathematical Flower Activity",
+    "section": "Mathematical Flower Activity Playlist",
+    "text": "Mathematical Flower Activity Playlist"
   },
   {
-    "objectID": "projects/planetoidsmomentum.html#planetoids-with-momentum-playlist",
-    "href": "projects/planetoidsmomentum.html#planetoids-with-momentum-playlist",
-    "title": "Planetoids with Momentum",
-    "section": "Planetoids with Momentum Playlist",
-    "text": "Planetoids with Momentum Playlist"
-  },
-  {
-    "objectID": "projects/solarsystem.html",
-    "href": "projects/solarsystem.html",
-    "title": "Solar System Model",
+    "objectID": "projects/airpressure.html",
+    "href": "projects/airpressure.html",
+    "title": "Air Pressure Versus Height: 1. Smartphone Data",
     "section": "",
-    "text": "Use a spreadsheet to design a model solar system"
+    "text": "Analyze air pressure data from a smartphone or tablet\nIt turns out nearly all smartphones (iPhones and Android models) and nearly all iPads have air pressure sensors (a.k.a. barometers). There are a couple of apps you can use to get a pressure reading but the one that seems to work best on all platforms is the Arduino Science Journal app. The goal of this activity is to use the air pressure sensor in a smartphone to collect pressure data at different heights and compare the data to known physical models."
   },
   {
-    "objectID": "projects/solarsystem.html#instructions",
-    "href": "projects/solarsystem.html#instructions",
-    "title": "Solar System Model",
-    "section": "Instructions",
-    "text": "Instructions\nAn important spreadsheet skill is to multiply the values in a particular column by a constant and have the result appear in the next column. Using $ in a spreadsheet can be helpful for this as discussed in the link. A situation where this is required is if you are making a scale model.\nImagine that your town or school has asked you to design a solar system model.\nStep 1. Decide how big your solar system model will be. For example, you can choose a football field, basketball court, classroom, a long straight sidewalk, etc. Each group should choose something different.\nDownload this CSV file with the planets and their distances to the sun and open it in a spreadsheet program\nNote: This CSV file uses solar system data from this NASA website\nStep 2. Configure columnn C in the spreadsheet so that it takes the distance in column B and divides it by the scale (Advice: This youtube video that was mentioned earlier is helpful for this task )\nStep 3. Change the scale to make sure that the model distance to Pluto is roughly the same as your solar system model (Advice: the scale should be much larger than 1)"
-  },
-  {
-    "objectID": "projects/solarsystem.html#optional-extensions",
-    "href": "projects/solarsystem.html#optional-extensions",
-    "title": "Solar System Model",
-    "section": "Optional Extensions",
-    "text": "Optional Extensions\n\nAsk the students to go and construct the model solar system. For example, use chalk to mark the planets on a sidewalk, or different sized balls on a basketball court or some other sports field, or go smaller with making the solar system model in a hallway or inside the classroom, or mark the planets on a meter stick, etc.\nTake the project a step further and use the same scale to determine the diameter of the balls in the model. You can find the diameter of each planet from these links. Which sized balls should be used for which planets?"
-  },
-  {
-    "objectID": "projects/slingshotgravity.html",
-    "href": "projects/slingshotgravity.html",
-    "title": "Slingshot With Gravity",
-    "section": "",
-    "text": "Instructions for Slingshot with Gravity\nSlingshot with Gravity Code Editor"
-  },
-  {
-    "objectID": "projects/slingshotgravity.html#links-to-activity",
-    "href": "projects/slingshotgravity.html#links-to-activity",
-    "title": "Slingshot With Gravity",
-    "section": "",
-    "text": "Instructions for Slingshot with Gravity\nSlingshot with Gravity Code Editor"
-  },
-  {
-    "objectID": "projects/slingshotgravity.html#slingshot-with-gravity-playlist",
-    "href": "projects/slingshotgravity.html#slingshot-with-gravity-playlist",
-    "title": "Slingshot With Gravity",
-    "section": "Slingshot With Gravity Playlist",
-    "text": "Slingshot With Gravity Playlist"
-  },
-  {
-    "objectID": "projects/rc.html",
-    "href": "projects/rc.html",
-    "title": "RC Circuits",
-    "section": "",
-    "text": "This programming lab is unlike the previous ones in that it involves circuits. Specifically it involves circuits with a battery, a capacitor and one or two resistors."
-  },
-  {
-    "objectID": "projects/rc.html#links-to-activity",
-    "href": "projects/rc.html#links-to-activity",
-    "title": "RC Circuits",
+    "objectID": "projects/airpressure.html#links-to-activity",
+    "href": "projects/airpressure.html#links-to-activity",
+    "title": "Air Pressure Versus Height: 1. Smartphone Data",
     "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for RC Circuits\nRC Circuits Code Editor"
+    "text": "Links to Activity\nInstructions for the activity, both data collection and data analysis, are given in the playlist shown below.\n\nDownload the Arduino Science Journal app\nStudent Worksheet\nHow do a trendline with Google Sheets and Excel\nExample data (pdf) Example data (csv)"
   },
   {
-    "objectID": "projects/rc.html#learning-objectives",
-    "href": "projects/rc.html#learning-objectives",
-    "title": "RC Circuits",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nAt the end of this lesson students will…\n\nApply Ohm’s law to code a RC circuit so it behaves in a physically accurate way.\nEvaluate how changing various values of a circuit (Capacitance, resistance) affects the dissipation time of a capacitor."
+    "objectID": "projects/airpressure.html#equipment",
+    "href": "projects/airpressure.html#equipment",
+    "title": "Air Pressure Versus Height: 1. Smartphone Data",
+    "section": "Equipment",
+    "text": "Equipment\nOne of the following is sufficient for this activity:\n\nA smartphone (iPhone or android) with a built-in pressure sensor (nearly all smartphones have this)\nA tablet (iPad or Android) with a built-in pressure sensor (nearly all tablets have this)\nA digital altimeter for hiking, we recommend this model or similar\nA pressure sensor from adafruit or ardunio (requires familiarity with adafruit or arduino)\nA wireless or USB pressure sensor from an educational vendor like Vernier or Pasco (may require other equipment from these vendors to work)"
   },
   {
-    "objectID": "projects/rc.html#rc-circuits-playlist",
-    "href": "projects/rc.html#rc-circuits-playlist",
-    "title": "RC Circuits",
-    "section": "RC Circuits Playlist",
-    "text": "RC Circuits Playlist"
+    "objectID": "projects/airpressure.html#software",
+    "href": "projects/airpressure.html#software",
+    "title": "Air Pressure Versus Height: 1. Smartphone Data",
+    "section": "Software",
+    "text": "Software\nWe recommend the Arduino Science Journal app for iOS or Android\nOther physics apps that use and display smartphone sensor data would also work fine (let us know if you have a favorite!)"
   },
   {
-    "objectID": "projects/magneticforce.html",
-    "href": "projects/magneticforce.html",
-    "title": "Magnetic Force",
+    "objectID": "projects/airpressure.html#air-pressure-versus-height-playlist",
+    "href": "projects/airpressure.html#air-pressure-versus-height-playlist",
+    "title": "Air Pressure Versus Height: 1. Smartphone Data",
+    "section": "Air Pressure Versus Height Playlist",
+    "text": "Air Pressure Versus Height Playlist"
+  },
+  {
+    "objectID": "projects/projectmercury2.html",
+    "href": "projects/projectmercury2.html",
+    "title": "Project Mercury Part 2",
     "section": "",
-    "text": "Your browser does not support the video tag.\nYou may recall the last programming exercise that involved a particle being accelerated through two charged plates. In this exercise we will add a magnetic field to the right hand side of the simulation. The particle only experiences this field when it passes into the right-hand side. This example is loosely based on the idea of a “mass spectrometer”. It turns out that if you vaporize a little bit of a sample with some unknown molecules there tends to be alot of molecules that lose ONE electron. Since the molecule has lost an electron it has a +1 charge. The mass of the molecule is essentially the same even if it is missing an electron because electrons make up a very, very small fraction of the mass of atoms. As you will learn about in this lab, the trajectory of the particle in the magnetic field tells us something about the mass of the particle (if you already know q, v, and B for example)."
+    "text": "Mathematician Katherine Johnson is famous for calculating trajectories of America’s first manned space missions for Project Mercury as depicted in the movie Hidden Figures.\nThe big concern at that point in the history of the space program was accurately predicting where a spacecraft would land in the ocean after re-entering the earth’s atmosphere. Any miscalculation could send the mercury capsule hundreds of miles from where the Navy was expecting to recover the spacecraft and the astronaut inside.\nThe calculation that Katherine Johnson did had to consider many different effects on the trajectory of the mercury capsule. For this activity we are going to keep it simple and start with putting the capsule in a circular orbit. In the second part, we will consider how the mercury capsule comes back to earth. This part of the space mission is referred to as “re-entry”."
   },
   {
-    "objectID": "projects/magneticforce.html#links-to-activity",
-    "href": "projects/magneticforce.html#links-to-activity",
-    "title": "Magnetic Force",
+    "objectID": "projects/projectmercury2.html#links-to-activity",
+    "href": "projects/projectmercury2.html#links-to-activity",
+    "title": "Project Mercury Part 2",
     "section": "Links to Activity",
-    "text": "Links to Activity\nInstructions for Magnetic Force Magnetic Force Code Editor"
+    "text": "Links to Activity\n\nPart 2\n\nInstructions for Project Mercury (Part 2)\nProject Mercury (Part 2) Code Editor"
   },
   {
-    "objectID": "projects/magneticforce.html#learning-objectives",
-    "href": "projects/magneticforce.html#learning-objectives",
-    "title": "Magnetic Force",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nAt the end of this lesson students will…\n\nApply the magnetic force relationship with Newton’s 2nd law to code the trajectory of a moving, positive particle in a magnetic field\nUnderstand how changes in charge, mass, and magnetic field direction affect the trajectory of the particle."
-  },
-  {
-    "objectID": "projects/magneticforce.html#magnetic-force-playlist",
-    "href": "projects/magneticforce.html#magnetic-force-playlist",
-    "title": "Magnetic Force",
-    "section": "Magnetic Force Playlist",
-    "text": "Magnetic Force Playlist"
-  },
-  {
-    "objectID": "projects/exo.html",
-    "href": "projects/exo.html",
-    "title": "Exoplanets",
+    "objectID": "projects/piday1.html",
+    "href": "projects/piday1.html",
+    "title": "Pi Day Part 1",
     "section": "",
-    "text": "Planets exert a gravitational tug on the star that they orbit. Let’s study how this happens!\nAs an extention ot the Slingshot with Gravity! activity, instead of keeping one object fixed (the sun) and letting the other move around it we are going to let BOTH objects move and see what happens. Letting both objects move is important, because many of the extra-solar planets (a.k.a. exoplanets) that we know about we only discovered because of the motion of the star that they are orbiting! So we will talk about the little white circle as a planet orbiting the sun instead of being something much smaller, like a comet or a satellite."
+    "text": "Calculate the digits of pi with a random number generator and some code!"
   },
   {
-    "objectID": "projects/exo.html#links-to-activity",
-    "href": "projects/exo.html#links-to-activity",
-    "title": "Exoplanets",
+    "objectID": "projects/piday1.html#links-to-activity",
+    "href": "projects/piday1.html#links-to-activity",
+    "title": "Pi Day Part 1",
     "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Exoplanets\nCode for Exoplanets"
+    "text": "Links to Activity\n\nInstructions for Pi Day Part 1\nPi Day Part 1 Code Editor"
   },
   {
-    "objectID": "projects/exo.html#exoplanets-playlist",
-    "href": "projects/exo.html#exoplanets-playlist",
-    "title": "Exoplanets",
-    "section": "Exoplanets Playlist",
-    "text": "Exoplanets Playlist"
+    "objectID": "projects/piday1.html#pi-day-part-1-playlist",
+    "href": "projects/piday1.html#pi-day-part-1-playlist",
+    "title": "Pi Day Part 1",
+    "section": "Pi Day Part 1 Playlist",
+    "text": "Pi Day Part 1 Playlist"
   },
   {
-    "objectID": "projects/nightsky.html",
-    "href": "projects/nightsky.html",
-    "title": "Night Sky Simulator",
+    "objectID": "projects/errorbar1.html",
+    "href": "projects/errorbar1.html",
+    "title": "Why we love error bars!",
     "section": "",
-    "text": "Use some basic facts and equations about stars to randomly generate a realistic-looking starfield\nThe image above is not an actual picture of the night sky or any real star field (maybe you’ve already noticed that its a fake!). It is a randomly-generated night sky from a computer program we are going to build. We are going to learn a little bit about stars and then we are going to think about why some stars appear brighter in the sky than others and what it means.\nAn interesting thing about this activity is that you will be able to download a spreadsheet with the list of randomly generated stars. In the directions here we will use Google sheets to analyze that data but you can use any spreadsheet program you are comfortable with (Excel, Libreoffice, Apple – Numbers)"
+    "text": "Error bars are great and why we are highly confident about it!"
   },
   {
-    "objectID": "projects/nightsky.html#links-to-activity",
-    "href": "projects/nightsky.html#links-to-activity",
-    "title": "Night Sky Simulator",
-    "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Night Sky Simulator\nNight Sky Simulator Code Editor"
-  },
-  {
-    "objectID": "projects/nightsky.html#night-sky-simulator-playlist",
-    "href": "projects/nightsky.html#night-sky-simulator-playlist",
-    "title": "Night Sky Simulator",
-    "section": "Night Sky Simulator Playlist",
-    "text": "Night Sky Simulator Playlist"
+    "objectID": "projects/errorbar1.html#error-bars",
+    "href": "projects/errorbar1.html#error-bars",
+    "title": "Why we love error bars!",
+    "section": "Error Bars",
+    "text": "Error Bars\nAre you sure? How sure are you? These are two of the most important questions that human beings can ask. An error bar is a visual representation of the uncertainty of some measurement. In other words an error bar is a visual representation of how sure or how unsure you are about that measurement.\n\nEstimating uncertainty\nLet’s take an example of a measurement of the pressure in a car or a bike tire.\n\n\n\n\n\nYou can see in the image above that the tire pressure sensor is indicating 38.5 PSI which stands for pounds per square inch. This is a pretty typical value for the pressure of a car tire. It certainly seems like there is no error bar on this measurement. It’s just 38.5 PSI. But if you think about it, because there are only three digits of precision shown, that says something about how precise the measurement is. It’s not just 38.5 PSI. It is reasonable to conclude that the measurement is 38.5 PSI +/- 0.05 PSI. In other words the measured value is 38.5 PSI but the uncertainty on that measurement is about 0.05 PSI.\nHow did we get 0.05 PSI for the uncertainty? Well, if the measured value was 38.56 PSI then the device would probably round it to 38.6 PSI, or if the measured value was 38.44 PSI then the device might round it to 38.4 PSI. But it didn’t, instead the value shown is 38.5 PSI.\nIf we were measuring PSI for a science project, for example measuring the PSI of a tire or a ball versus temperature, for example, you could plot both the measured value (a dot) and show the uncertainty with an error bar (the thing that looks like an I).\nYou can see from this example, that even in a situation where the uncertainty is not mentioned that we can infer what the uncertainty might be.\n\nScience fair tip: A common mistake in science fair projects is to not estimate the uncertainty or visualize that uncertainty with an error bar\n\n\n\nWhy this matters\nThere are many reasons why error bars are important but here are a few salient ones:\n1. Error bars are important because it forces you the experimenter to think about your uncertainties\nIf you are thinking about uncertainties before you do your experiment then you are probably going to do a much more careful experiment than you would without thinking about uncertainty at all or only thinking about uncertainty after the experiment was performed. Error bars are a visual reminder of this important habit of mind.\n2. Error bars are important for data storytelling \nStephanie Evergreen says in her book Effective Data Visualization that “We visualize data to tell a story”. Uncertainty is an important part of that story and error bars are a way to visualize that uncertainty. Sometimes the story you are telling is to yourself (I measured this and got these results and maybe this is why). Sometimes the story you are telling is to someone else (I measured this and got these results and I’m pretty sure this is why but tell me what you think). Either way, error bars are an important part of that story.\n 3. Anomalies \nIn some ways the purpose of doing a science experiment is to identify anomalies. Anomalies are repeated measurements that disagree with a theoretical model that has worked well for other experiments. Scientists are always very interested in anomalies. Some anomalies are resolved by realizing that the measurements were flawed. Some anomalies are resolved by improving the theoretical model. Some anomalies have never been convincingly explained and maybe one of you reading this will be the person to resolve it!\nError bars are EXTREMELY important for anomalies! The only difference between the two plots below is that the size of the error bars are much larger on the left.\n\n \n\nTask: Replicate either plot using Google Sheets or Excel with this sample data\nWith the plot on the left, there are measurements that disagree with the model but the error bars are large so the feeling is that the measurements and the model are still consistent with each other.\nBut with the plot on the right, even though the measurements are the same, the error bars are so small that it really seems like something is wrong with the model, or wrong with the measurements, or wrong with the error bars (specifically that the error bars are too small). It will take more work to figure out which of those three possibilities is the most important one. If the disagreement remains then maybe you’ve made a discovery! The detection of the Higgs Boson, which won the Nobel Prize in physics in 2013, involved results that looked a lot like the plot on the right.\n\n\nHow much disagreement is a lot?\nThere is no strict rule about how different your measurements and the model need to be before its time to get excited. But there is a tradition in science that if the difference between your measurement and the model divided by the uncertainty is greater than five then maybe something really interesting is going on. This is often called the 5\\(\\sigma\\) threshold\n\nScience tradition: The 5\\(\\sigma\\) threshold is a tradition where scientists hesitate to declare that a discovery has been made unless the measurements and the model disagree by more than five times the uncertainty\n\nAn important detail is that the error bar visualizes the uncertainty both up and down. In other words the error bar shows the possibility both that the measured value could have been larger and the uncertainty that the measured value could have been smaller. We only need to divide by the uncertainty so you would divide the difference by half of the vertical height of the error bar.\nTo give a concrete example, earlier we discussed that a tire pressure gauge is measuring 38.5 PSI +/- 0.05 PSI. So if we visualized the error bar for that measurement it would be centered at 38.5 PSI and it would go up +0.05 PSI and down -0.05 PSI. The vertical height of the error bar would be 1.0 PSI. If we compared the 38.5 PSI measurement to some kind of model and there was a difference, we would divide that difference by 0.5 PSI (and not 1.0 PSI) to get an idea for how different the measurement is from the model."
   },
   {
     "objectID": "projects/laser2.html",
@@ -917,11 +924,18 @@
     "text": "Activities, curriculum, and a thriving community — built by Ohio State and Mount Union faculty & students to bring computer science and data science into intro math and science courses.\n\nBrowse activities →"
   },
   {
-    "objectID": "index.html#welcome-to-the-stemcoding-landing-page",
-    "href": "index.html#welcome-to-the-stemcoding-landing-page",
+    "objectID": "index.html#the-stemcoding-project",
+    "href": "index.html#the-stemcoding-project",
     "title": "STEMcoding",
-    "section": "",
-    "text": "The STEMcoding project is a partnership between faculty members and students at Ohio State University and the University of Mount Union\nThe STEMcoding project exists to re-imagine introductory STEM courses like math and science with computer science and data science in mind. Our activities are used in intro level college courses and high school courses.\nWe love to create activities that each align with relevant math, science and computer science standards. Some of our physical science activities appear on the “model curriculum” examples distributed by the Ohio Department of Education and Workforce. We are also working to create a year-long data science curriculum.\n\n\n\nWe are very proud of the STEMcoding youtube channel! We have released over 100 videos featuring faculty and students at Ohio State University and the University of Mount Union.\n\nWe hope you enjoy this site! Check out our Social Media Feed to see what we’ve been up to lately, or our Calendar to see upcoming events and trainings. Please join our Discord to reach out or ask questions!!!\n\n      \n\n\n\nSTEM Coding Mastodon feed"
+    "section": "The STEMcoding Project",
+    "text": "The STEMcoding Project\nThe STEMcoding project is a partnership between faculty members and students at Ohio State University and the University of Mount Union.\nThe STEMcoding project exists to re-imagine introductory STEM courses like math and science with computer science and data science in mind. Our activities are used in intro level college courses and high school courses.\nWe love to create activities that each align with relevant math, science and computer science standards. Some of our physical science activities appear on the “model curriculum” examples distributed by the Ohio Department of Education and Workforce. We are also working to create a year-long data science curriculum.\n\nWe are very proud of the STEMcoding youtube channel! We have released over 100 videos featuring faculty and students at Ohio State University and the University of Mount Union.\n\nWe hope you enjoy this site! Check out our Social Media Feed to see what we’ve been up to lately, or our Calendar to see upcoming events and trainings. Please join our Discord to reach out or ask questions!!!"
+  },
+  {
+    "objectID": "index.html#latest-from-our-social-feed",
+    "href": "index.html#latest-from-our-social-feed",
+    "title": "STEMcoding",
+    "section": "Latest from our Social Feed",
+    "text": "Latest from our Social Feed\n\n\n\nSTEM Coding Mastodon feed"
   },
   {
     "objectID": "EcologyLesson/formattingproblems/index.html",
@@ -1323,221 +1337,263 @@
     "text": "Accelerate the Blob Videos"
   },
   {
-    "objectID": "projects/piday1.html",
-    "href": "projects/piday1.html",
-    "title": "Pi Day Part 1",
+    "objectID": "projects/nightsky.html",
+    "href": "projects/nightsky.html",
+    "title": "Night Sky Simulator",
     "section": "",
-    "text": "Calculate the digits of pi with a random number generator and some code!"
+    "text": "Use some basic facts and equations about stars to randomly generate a realistic-looking starfield\nThe image above is not an actual picture of the night sky or any real star field (maybe you’ve already noticed that its a fake!). It is a randomly-generated night sky from a computer program we are going to build. We are going to learn a little bit about stars and then we are going to think about why some stars appear brighter in the sky than others and what it means.\nAn interesting thing about this activity is that you will be able to download a spreadsheet with the list of randomly generated stars. In the directions here we will use Google sheets to analyze that data but you can use any spreadsheet program you are comfortable with (Excel, Libreoffice, Apple – Numbers)"
   },
   {
-    "objectID": "projects/piday1.html#links-to-activity",
-    "href": "projects/piday1.html#links-to-activity",
-    "title": "Pi Day Part 1",
+    "objectID": "projects/nightsky.html#links-to-activity",
+    "href": "projects/nightsky.html#links-to-activity",
+    "title": "Night Sky Simulator",
     "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Pi Day Part 1\nPi Day Part 1 Code Editor"
+    "text": "Links to Activity\n\nInstructions for Night Sky Simulator\nNight Sky Simulator Code Editor"
   },
   {
-    "objectID": "projects/piday1.html#pi-day-part-1-playlist",
-    "href": "projects/piday1.html#pi-day-part-1-playlist",
-    "title": "Pi Day Part 1",
-    "section": "Pi Day Part 1 Playlist",
-    "text": "Pi Day Part 1 Playlist"
+    "objectID": "projects/nightsky.html#night-sky-simulator-playlist",
+    "href": "projects/nightsky.html#night-sky-simulator-playlist",
+    "title": "Night Sky Simulator",
+    "section": "Night Sky Simulator Playlist",
+    "text": "Night Sky Simulator Playlist"
   },
   {
-    "objectID": "projects/projectmercury2.html",
-    "href": "projects/projectmercury2.html",
-    "title": "Project Mercury Part 2",
+    "objectID": "projects/exo.html",
+    "href": "projects/exo.html",
+    "title": "Exoplanets",
     "section": "",
-    "text": "Mathematician Katherine Johnson is famous for calculating trajectories of America’s first manned space missions for Project Mercury as depicted in the movie Hidden Figures.\nThe big concern at that point in the history of the space program was accurately predicting where a spacecraft would land in the ocean after re-entering the earth’s atmosphere. Any miscalculation could send the mercury capsule hundreds of miles from where the Navy was expecting to recover the spacecraft and the astronaut inside.\nThe calculation that Katherine Johnson did had to consider many different effects on the trajectory of the mercury capsule. For this activity we are going to keep it simple and start with putting the capsule in a circular orbit. In the second part, we will consider how the mercury capsule comes back to earth. This part of the space mission is referred to as “re-entry”."
+    "text": "Planets exert a gravitational tug on the star that they orbit. Let’s study how this happens!\nAs an extention ot the Slingshot with Gravity! activity, instead of keeping one object fixed (the sun) and letting the other move around it we are going to let BOTH objects move and see what happens. Letting both objects move is important, because many of the extra-solar planets (a.k.a. exoplanets) that we know about we only discovered because of the motion of the star that they are orbiting! So we will talk about the little white circle as a planet orbiting the sun instead of being something much smaller, like a comet or a satellite."
   },
   {
-    "objectID": "projects/projectmercury2.html#links-to-activity",
-    "href": "projects/projectmercury2.html#links-to-activity",
-    "title": "Project Mercury Part 2",
+    "objectID": "projects/exo.html#links-to-activity",
+    "href": "projects/exo.html#links-to-activity",
+    "title": "Exoplanets",
     "section": "Links to Activity",
-    "text": "Links to Activity\n\nPart 2\n\nInstructions for Project Mercury (Part 2)\nProject Mercury (Part 2) Code Editor"
+    "text": "Links to Activity\n\nInstructions for Exoplanets\nCode for Exoplanets"
   },
   {
-    "objectID": "projects/airpressure.html",
-    "href": "projects/airpressure.html",
-    "title": "Air Pressure Versus Height: 1. Smartphone Data",
+    "objectID": "projects/exo.html#exoplanets-playlist",
+    "href": "projects/exo.html#exoplanets-playlist",
+    "title": "Exoplanets",
+    "section": "Exoplanets Playlist",
+    "text": "Exoplanets Playlist"
+  },
+  {
+    "objectID": "projects/magneticforce.html",
+    "href": "projects/magneticforce.html",
+    "title": "Magnetic Force",
     "section": "",
-    "text": "Analyze air pressure data from a smartphone or tablet\nIt turns out nearly all smartphones (iPhones and Android models) and nearly all iPads have air pressure sensors (a.k.a. barometers). There are a couple of apps you can use to get a pressure reading but the one that seems to work best on all platforms is the Arduino Science Journal app. The goal of this activity is to use the air pressure sensor in a smartphone to collect pressure data at different heights and compare the data to known physical models."
+    "text": "Your browser does not support the video tag.\nYou may recall the last programming exercise that involved a particle being accelerated through two charged plates. In this exercise we will add a magnetic field to the right hand side of the simulation. The particle only experiences this field when it passes into the right-hand side. This example is loosely based on the idea of a “mass spectrometer”. It turns out that if you vaporize a little bit of a sample with some unknown molecules there tends to be alot of molecules that lose ONE electron. Since the molecule has lost an electron it has a +1 charge. The mass of the molecule is essentially the same even if it is missing an electron because electrons make up a very, very small fraction of the mass of atoms. As you will learn about in this lab, the trajectory of the particle in the magnetic field tells us something about the mass of the particle (if you already know q, v, and B for example)."
   },
   {
-    "objectID": "projects/airpressure.html#links-to-activity",
-    "href": "projects/airpressure.html#links-to-activity",
-    "title": "Air Pressure Versus Height: 1. Smartphone Data",
+    "objectID": "projects/magneticforce.html#links-to-activity",
+    "href": "projects/magneticforce.html#links-to-activity",
+    "title": "Magnetic Force",
     "section": "Links to Activity",
-    "text": "Links to Activity\nInstructions for the activity, both data collection and data analysis, are given in the playlist shown below.\n\nDownload the Arduino Science Journal app\nStudent Worksheet\nHow do a trendline with Google Sheets and Excel\nExample data (pdf) Example data (csv)"
+    "text": "Links to Activity\nInstructions for Magnetic Force Magnetic Force Code Editor"
   },
   {
-    "objectID": "projects/airpressure.html#equipment",
-    "href": "projects/airpressure.html#equipment",
-    "title": "Air Pressure Versus Height: 1. Smartphone Data",
-    "section": "Equipment",
-    "text": "Equipment\nOne of the following is sufficient for this activity:\n\nA smartphone (iPhone or android) with a built-in pressure sensor (nearly all smartphones have this)\nA tablet (iPad or Android) with a built-in pressure sensor (nearly all tablets have this)\nA digital altimeter for hiking, we recommend this model or similar\nA pressure sensor from adafruit or ardunio (requires familiarity with adafruit or arduino)\nA wireless or USB pressure sensor from an educational vendor like Vernier or Pasco (may require other equipment from these vendors to work)"
-  },
-  {
-    "objectID": "projects/airpressure.html#software",
-    "href": "projects/airpressure.html#software",
-    "title": "Air Pressure Versus Height: 1. Smartphone Data",
-    "section": "Software",
-    "text": "Software\nWe recommend the Arduino Science Journal app for iOS or Android\nOther physics apps that use and display smartphone sensor data would also work fine (let us know if you have a favorite!)"
-  },
-  {
-    "objectID": "projects/airpressure.html#air-pressure-versus-height-playlist",
-    "href": "projects/airpressure.html#air-pressure-versus-height-playlist",
-    "title": "Air Pressure Versus Height: 1. Smartphone Data",
-    "section": "Air Pressure Versus Height Playlist",
-    "text": "Air Pressure Versus Height Playlist"
-  },
-  {
-    "objectID": "projects/flower.html",
-    "href": "projects/flower.html",
-    "title": "Mathematical Flower Activity",
-    "section": "",
-    "text": "Let’s make our own flowers using mathematical functions and polar coordinates\nGreatly inspired by an episode of the Coding Train by Dan Shiffman"
-  },
-  {
-    "objectID": "projects/flower.html#links-to-activity",
-    "href": "projects/flower.html#links-to-activity",
-    "title": "Mathematical Flower Activity",
-    "section": "Links to Activity",
-    "text": "Links to Activity\n*Instructions for Mathematical Flower Activity"
-  },
-  {
-    "objectID": "projects/flower.html#mathematical-flower-activity-playlist",
-    "href": "projects/flower.html#mathematical-flower-activity-playlist",
-    "title": "Mathematical Flower Activity",
-    "section": "Mathematical Flower Activity Playlist",
-    "text": "Mathematical Flower Activity Playlist"
-  },
-  {
-    "objectID": "projects/planetoids.html",
-    "href": "projects/planetoids.html",
-    "title": "Planetoids",
-    "section": "",
-    "text": "Your browser does not support the video tag.\nThis lab will guide you through coding up a web-based implementation of the classic video game asteroids."
-  },
-  {
-    "objectID": "projects/planetoids.html#links-to-activity",
-    "href": "projects/planetoids.html#links-to-activity",
-    "title": "Planetoids",
-    "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Planetoids\nCode Editor for Planetoids"
-  },
-  {
-    "objectID": "projects/planetoids.html#learning-objectives",
-    "href": "projects/planetoids.html#learning-objectives",
-    "title": "Planetoids",
+    "objectID": "projects/magneticforce.html#learning-objectives",
+    "href": "projects/magneticforce.html#learning-objectives",
+    "title": "Magnetic Force",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\nAt the end of this lesson students will…\n\nApply kinematic equations to code an object’s motion when force is applied\nApply Newton’s laws of motion to code how an object behaves under different net force conditions\nEvaluate how changing mass can optimize spacecraft maneuverability"
+    "text": "Learning Objectives\nAt the end of this lesson students will…\n\nApply the magnetic force relationship with Newton’s 2nd law to code the trajectory of a moving, positive particle in a magnetic field\nUnderstand how changes in charge, mass, and magnetic field direction affect the trajectory of the particle."
   },
   {
-    "objectID": "projects/planetoids.html#planetoids-playlist",
-    "href": "projects/planetoids.html#planetoids-playlist",
-    "title": "Planetoids",
-    "section": "Planetoids Playlist",
-    "text": "Planetoids Playlist"
+    "objectID": "projects/magneticforce.html#magnetic-force-playlist",
+    "href": "projects/magneticforce.html#magnetic-force-playlist",
+    "title": "Magnetic Force",
+    "section": "Magnetic Force Playlist",
+    "text": "Magnetic Force Playlist"
   },
   {
-    "objectID": "projects/pidayparallel.html",
-    "href": "projects/pidayparallel.html",
-    "title": "Pi Day in Parallel",
+    "objectID": "projects/rc.html",
+    "href": "projects/rc.html",
+    "title": "RC Circuits",
     "section": "",
-    "text": "In an earlier activity, you were able to approximate \\(\\pi\\) to two or three decimal places; however, it took quite a while for the computer to get to that level of precision.\nWe are going to try to find a faster way to estimate and, at the same time, reveal how many core processors our computer has."
+    "text": "This programming lab is unlike the previous ones in that it involves circuits. Specifically it involves circuits with a battery, a capacitor and one or two resistors."
   },
   {
-    "objectID": "projects/pidayparallel.html#links-to-activity",
-    "href": "projects/pidayparallel.html#links-to-activity",
-    "title": "Pi Day in Parallel",
+    "objectID": "projects/rc.html#links-to-activity",
+    "href": "projects/rc.html#links-to-activity",
+    "title": "RC Circuits",
     "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Pi Day in Parallel\nPi Day in Parallel Code Editor"
+    "text": "Links to Activity\n\nInstructions for RC Circuits\nRC Circuits Code Editor"
   },
   {
-    "objectID": "projects/particleaccelerator.html",
-    "href": "projects/particleaccelerator.html",
-    "title": "Particle Accelerator",
-    "section": "",
-    "text": "Your browser does not support the video tag.\nIn this exercise we will make a simulation of a charged particle being accelerated between two plates."
-  },
-  {
-    "objectID": "projects/particleaccelerator.html#links-to-activity",
-    "href": "projects/particleaccelerator.html#links-to-activity",
-    "title": "Particle Accelerator",
-    "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Particle Accelerator\nParticle Accelerator Code Editor"
-  },
-  {
-    "objectID": "projects/particleaccelerator.html#learning-objectives",
-    "href": "projects/particleaccelerator.html#learning-objectives",
-    "title": "Particle Accelerator",
+    "objectID": "projects/rc.html#learning-objectives",
+    "href": "projects/rc.html#learning-objectives",
+    "title": "RC Circuits",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\nAt the end of this lesson students will…\n\nExplain how force and acceleration are related using visual evidence from the game.\nUnderstand how a charged particle’s motion is affected by its mass and charge while in an electric field.\nAnalyze the situation to calculate the final velocity of a particle after being immersed in an electric field."
+    "text": "Learning Objectives\nAt the end of this lesson students will…\n\nApply Ohm’s law to code a RC circuit so it behaves in a physically accurate way.\nEvaluate how changing various values of a circuit (Capacitance, resistance) affects the dissipation time of a capacitor."
   },
   {
-    "objectID": "projects/particleaccelerator.html#particle-accelerator-playlist",
-    "href": "projects/particleaccelerator.html#particle-accelerator-playlist",
-    "title": "Particle Accelerator",
-    "section": "Particle Accelerator Playlist",
-    "text": "Particle Accelerator Playlist"
+    "objectID": "projects/rc.html#rc-circuits-playlist",
+    "href": "projects/rc.html#rc-circuits-playlist",
+    "title": "RC Circuits",
+    "section": "RC Circuits Playlist",
+    "text": "RC Circuits Playlist"
   },
   {
-    "objectID": "projects/garbage.html",
-    "href": "projects/garbage.html",
-    "title": "Great Pacific Garbage Patch",
+    "objectID": "projects/slingshotgravity.html",
+    "href": "projects/slingshotgravity.html",
+    "title": "Slingshot With Gravity",
     "section": "",
-    "text": "Why does trash in the Great Pacific Garbage Patch just keep swirling around and around instead of landing on a beach somewhere?"
+    "text": "Instructions for Slingshot with Gravity\nSlingshot with Gravity Code Editor"
   },
   {
-    "objectID": "projects/garbage.html#background-information",
-    "href": "projects/garbage.html#background-information",
-    "title": "Great Pacific Garbage Patch",
-    "section": "Background information",
-    "text": "Background information\nEver since there were humans, there was garbage left behind by humans. Some of that garbage would get into rivers which would take it out to the oceans.\nWhat is different in our age is (1) there are a lot of humans – over eight billion, and (2) a lot of the garbage that we produce is in the form of plastic. This latter fact is important because any material that has a lower density than water will float.\n\nKey science fact: Any material with a lower density than water will float\n\n\nDensity\nThe density of a material is a measure of how much mass there is compared to how much volume there is of that material. For example, styrofoam is a low density material because you can have a lot of Styrofoam and it is not very heavy. So its mass is small compared to its volume. Whereas lead or gold are high density materials because one brick of lead or gold would be very heavy. So its mass is large compared to its volume.\nIn general, density (\\(\\rho\\)) is the ratio of the mass of an object to the volume of that object.\n\\[ \\rho = \\frac{m}{V} \\]\nWe use the symbol \\(\\rho\\) to represent the density. It looks like the letter p but it is actually a greek symbol that is pronounced “rho” or “row”. Objects of a particular material will generally have the same density of other objects made from that material. Density can be reported in terms of grams per cubic centimeter (g/cm3), grams per milliLiter (g/mL), or kilograms per meter cubed (kg/m3). Grams per cubic centimeter and grams per cubic milliLiter are the same because a cubic centimeter is the same volume as a milliLiter.\nFresh water has a density of 1 gram per cubic centimeter (1 gram per milliLiter) while sea water has a density of 1.02 grams per cubic centimeter (1.02 grams per milliLiter).\n\nKey science fact: The density of fresh water is 1 gram per cubic centimter\n\nMany plastics have a density less than this. According to this pdf, which was fact checked by the Monterey Bay Aquarium foundation, many plastics have a density in the range of 0.9 grams per cubic centimeter to 0.96 grams per cubic centimeter. These plastics will therefore float in water unless it is attached to a denser material like a metal. Most metals have significantly larger densities than water. For example, aluminum is one of the least dense metals and it is still almost three times denser than water. Consequently, metals tend to sink."
-  },
-  {
-    "objectID": "projects/garbage.html#the-great-pacific-garbage-patch",
-    "href": "projects/garbage.html#the-great-pacific-garbage-patch",
-    "title": "Great Pacific Garbage Patch",
-    "section": "The Great Pacific Garbage Patch",
-    "text": "The Great Pacific Garbage Patch\nIt turns out that ocean currents often have a circulating pattern which is called a “gyre”. Ocean currents circulate and form gyres because water gets heated by the sun near the equator and that warm water travels away from the equator where it will cool down.\nIn the 1990s scientists and boaters began to notice that floating plastic trash was strewn throughout a large area of the Pacific Ocean called the North Pacific gyre. Don’t imagine floating islands of trash. Instead imagine a piece of trash here and a piece of trash there over a very large area. Groups like The Ocean Cleanup are working to remove the trash (as you can see in the image at the top of this page) but it remains a problem and there are also “microplastics” that are too small to remove with nets.\nWhat is interesting and not particularly obvious is that floating garbage would collect in the North Pacific gyre and stay there for decades or more. Think about an individual piece of floating trash in the Great Pacific Garbage Patch. Why doesn’t this trash end up on a beach somewhere after a year or two, or three? This is something that a p5.js computer simulation can help us understand! (Note: sometimes trash from the Great Pacific Garbage patch does end up on a beach but it is rare and most of the trash just floats there year after year.)\n\n\n\nThe simulation above contains a mathematical model for an ocean gyre that comes from Section 6 of this research paper. The little white dots are supposed to be pieces of garbage. The black arrows show the direction of ocean currents. It’s not important that you understand the model or the paper. What is important is that the simulation above includes this code:\nx[i] += vx(x[i],y[i],t)*dt;\ny[i] += vy(x[i],y[i],t)*dt;\n\nwhich is a very fancy version of the code below which you might recognize from Move the blob or many of the other p5.js Physics of Video games activities\n x += vx*dt;\n y += vy*dt;\n\nIn the simulation above, (x,y) is the position of a piece of garbage. That position changes according to the velocity of the ocean currents in the x direction (vx) and in the y direction (vy) multiplied by the time during each step (dt)\nTHE IMPORTANT THING IS THAT THE LITTLE WHITE PIECES OF TRASH KEEP CIRCULATING!!! There is actually some code in the simulation that checks if a piece of trash leaves the rectangle and if it does leave it is prevented from coming back. Remarkably, if you run the simulation for a long time, maybe one piece of trash out of 100 will leave the rectangle and not come back. This is true even though the ocean currents are changing with time as you can see from the changing arrows!\nInterestingly, it only takes some simple code to update the x and y position of the trash to come to this conclusion. Sometimes a little bit of code can answer questions that would otherwise be very difficult to answer!"
-  },
-  {
-    "objectID": "projects/garbage.html#optional-hands-on-activity",
-    "href": "projects/garbage.html#optional-hands-on-activity",
-    "title": "Great Pacific Garbage Patch",
-    "section": "Optional hands on activity",
-    "text": "Optional hands on activity\nTake as many different kinds of plastic as you can find and check to see which types of plastic (for example #1, #2, #3, #4, #5 or #6 plastic) will float and which will sink. Bear in mind that sea water is slightly more dense that fresh water. To be more precise you can dissolve table salt in the water and do the test again."
-  },
-  {
-    "objectID": "projects/garbage.html#questions-to-consider",
-    "href": "projects/garbage.html#questions-to-consider",
-    "title": "Great Pacific Garbage Patch",
-    "section": "Questions to consider",
-    "text": "Questions to consider\nWhat do you think about the approach of The Ocean Cleanup to remove trash from the oceans? What have been the difficulties they have run into? What is their approach now? What ideas do you have to remove or otherwise prevent trash from accumulating in the oceans?\nUnderstanding ocean currents saves lives! Listen to this podcast about Art Allen who developed a computer program for the US Coast Guard that is used in emergencies when people fall off of a boat or a ship so that rescuers can anticipate the location of a person who is floating in the water. Thanks to his work, many people have been saved who would otherwise have been lost at sea. As a society, are we doing enough to celebrate people like Art? What is a life or death issue in our society that would benefit from the kind of careful technical work that Art did? What is another example of how basic scientific understanding (like research on ocean currents) ultimately benefits our lives even if that was not the original goal?\n\nAdvanced Questions\nLook at the code that is running the simulation. How much of it can you make sense of? Which parts are you unable to make sense of? Can you simplify the code or make its syntax easier for another student to understand?\nLook at Section 6 of the research paper where the model for the gyre is presented. Do the plots in that section look familiar? How much of the model (Equations 71 - 76) contains math that you have seen before? If we didn’t have a computer, Equation 77 would be all we have to explain why trash just keeps circulating. What does the research paper say about Equation 77 and what does Equation 77 conclude?"
-  },
-  {
-    "objectID": "projects/black.html",
-    "href": "projects/black.html",
-    "title": "Escape Velocity and Newtonian Black Holes",
+    "objectID": "projects/slingshotgravity.html#links-to-activity",
+    "href": "projects/slingshotgravity.html#links-to-activity",
+    "title": "Slingshot With Gravity",
     "section": "",
-    "text": "That activity explores the behavior of objects like planets or comets interacting with a massive object like the sun."
+    "text": "Instructions for Slingshot with Gravity\nSlingshot with Gravity Code Editor"
   },
   {
-    "objectID": "projects/black.html#links-to-activity",
-    "href": "projects/black.html#links-to-activity",
-    "title": "Escape Velocity and Newtonian Black Holes",
+    "objectID": "projects/slingshotgravity.html#slingshot-with-gravity-playlist",
+    "href": "projects/slingshotgravity.html#slingshot-with-gravity-playlist",
+    "title": "Slingshot With Gravity",
+    "section": "Slingshot With Gravity Playlist",
+    "text": "Slingshot With Gravity Playlist"
+  },
+  {
+    "objectID": "projects/solarsystem.html",
+    "href": "projects/solarsystem.html",
+    "title": "Solar System Model",
+    "section": "",
+    "text": "Use a spreadsheet to design a model solar system"
+  },
+  {
+    "objectID": "projects/solarsystem.html#instructions",
+    "href": "projects/solarsystem.html#instructions",
+    "title": "Solar System Model",
+    "section": "Instructions",
+    "text": "Instructions\nAn important spreadsheet skill is to multiply the values in a particular column by a constant and have the result appear in the next column. Using $ in a spreadsheet can be helpful for this as discussed in the link. A situation where this is required is if you are making a scale model.\nImagine that your town or school has asked you to design a solar system model.\nStep 1. Decide how big your solar system model will be. For example, you can choose a football field, basketball court, classroom, a long straight sidewalk, etc. Each group should choose something different.\nDownload this CSV file with the planets and their distances to the sun and open it in a spreadsheet program\nNote: This CSV file uses solar system data from this NASA website\nStep 2. Configure columnn C in the spreadsheet so that it takes the distance in column B and divides it by the scale (Advice: This youtube video that was mentioned earlier is helpful for this task )\nStep 3. Change the scale to make sure that the model distance to Pluto is roughly the same as your solar system model (Advice: the scale should be much larger than 1)"
+  },
+  {
+    "objectID": "projects/solarsystem.html#optional-extensions",
+    "href": "projects/solarsystem.html#optional-extensions",
+    "title": "Solar System Model",
+    "section": "Optional Extensions",
+    "text": "Optional Extensions\n\nAsk the students to go and construct the model solar system. For example, use chalk to mark the planets on a sidewalk, or different sized balls on a basketball court or some other sports field, or go smaller with making the solar system model in a hallway or inside the classroom, or mark the planets on a meter stick, etc.\nTake the project a step further and use the same scale to determine the diameter of the balls in the model. You can find the diameter of each planet from these links. Which sized balls should be used for which planets?"
+  },
+  {
+    "objectID": "projects/planetoidsmomentum.html",
+    "href": "projects/planetoidsmomentum.html",
+    "title": "Planetoids with Momentum",
+    "section": "",
+    "text": "In a typical college physics course you will at some point encounter the idea of conservation of momentum. Momentum conservation is very important! In situations where two objects collide, we often don’t know the force or acceleration as a function of time, but we do know the initial velocities. If we know the type of collision that occurs, it turns out that the initial velocities and the masses of the objects are all we need to figure out the final velocities."
+  },
+  {
+    "objectID": "projects/planetoidsmomentum.html#links-to-activity",
+    "href": "projects/planetoidsmomentum.html#links-to-activity",
+    "title": "Planetoids with Momentum",
     "section": "Links to Activity",
-    "text": "Links to Activity\n\nInstructions for Escape Velocity and Newtonain Black Holes\nCode Editor for Escape Velocity and Newtonian Black Holes"
+    "text": "Links to Activity\n\nInstructions for Planetoids with Momentum\nCode Editor for Planetoids with Momentum"
   },
   {
-    "objectID": "projects/black.html#escape-velocity-and-black-holes-playlist",
-    "href": "projects/black.html#escape-velocity-and-black-holes-playlist",
-    "title": "Escape Velocity and Newtonian Black Holes",
-    "section": "Escape Velocity and Black Holes Playlist",
-    "text": "Escape Velocity and Black Holes Playlist"
+    "objectID": "projects/planetoidsmomentum.html#learning-objectives",
+    "href": "projects/planetoidsmomentum.html#learning-objectives",
+    "title": "Planetoids with Momentum",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAt the end of this lesson students will…\n\nApply conservation of momentum equations in 1-D to properly code a perfectly inelastic collision.\nApply conservation of momentum equations in 2-D along with basic geometry to properly code a perfectly inelastic collision."
+  },
+  {
+    "objectID": "projects/planetoidsmomentum.html#planetoids-with-momentum-playlist",
+    "href": "projects/planetoidsmomentum.html#planetoids-with-momentum-playlist",
+    "title": "Planetoids with Momentum",
+    "section": "Planetoids with Momentum Playlist",
+    "text": "Planetoids with Momentum Playlist"
+  },
+  {
+    "objectID": "projects/planetoidsspring.html",
+    "href": "projects/planetoidsspring.html",
+    "title": "Planetoids with a Spring",
+    "section": "",
+    "text": "Your browser does not support the video tag.\nThink back to the momentum exercise. The little ship can collide with a “blob” and stick to it. Now imagine that this blob is attached to a spring. Wouldn’t it be interesting if the ship could collide with the blob and then the spring would push and pull both around? This is what we will do in this exercise."
+  },
+  {
+    "objectID": "projects/planetoidsspring.html#links-to-activity",
+    "href": "projects/planetoidsspring.html#links-to-activity",
+    "title": "Planetoids with a Spring",
+    "section": "Links to Activity",
+    "text": "Links to Activity\n\nInstructions for Planetoids with a Spring\nPlanetoids with a Spring Code Editor"
+  },
+  {
+    "objectID": "projects/planetoidsspring.html#learning-objectives",
+    "href": "projects/planetoidsspring.html#learning-objectives",
+    "title": "Planetoids with a Spring",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAt the end of this lesson students will…\n\nApply Hooke’s Law, Newton’s 2nd Law, and constant acceleration kinematic equations to code a blob on a spring to behave appropriately when it is collided by a spaceship.\nEvaluate the theoretical half-cycle time of the coded spring.\nCreate a code which accounts for the dampening effect of the spring with time."
+  },
+  {
+    "objectID": "projects/planetoidsspring.html#planetoids-with-a-spring-playlist",
+    "href": "projects/planetoidsspring.html#planetoids-with-a-spring-playlist",
+    "title": "Planetoids with a Spring",
+    "section": "Planetoids with a Spring Playlist",
+    "text": "Planetoids with a Spring Playlist"
+  },
+  {
+    "objectID": "projects/birds.html",
+    "href": "projects/birds.html",
+    "title": "Bellicose Birds",
+    "section": "",
+    "text": "Create an angry birds game where the arrow keys control the launch angle"
+  },
+  {
+    "objectID": "projects/birds.html#links-to-activity",
+    "href": "projects/birds.html#links-to-activity",
+    "title": "Bellicose Birds",
+    "section": "Links to Activity",
+    "text": "Links to Activity\n\nInstructions for Bellicose Birds\nCode Editor for Bellicose Birds"
+  },
+  {
+    "objectID": "projects/birds.html#learning-objectives",
+    "href": "projects/birds.html#learning-objectives",
+    "title": "Bellicose Birds",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAt the end of this lesson students will…\n\nApply kinematic equations to code an object’s motion during and after being launched into the air.\nEvaluate optimal launch angles using the simulation."
+  },
+  {
+    "objectID": "projects/birds.html#bellicose-birds-playlist",
+    "href": "projects/birds.html#bellicose-birds-playlist",
+    "title": "Bellicose Birds",
+    "section": "Bellicose Birds Playlist",
+    "text": "Bellicose Birds Playlist"
+  },
+  {
+    "objectID": "projects/errorbar2.html",
+    "href": "projects/errorbar2.html",
+    "title": "Are my error bars big or small?",
+    "section": "",
+    "text": "How big are my error bars? Let’s talk about it"
+  },
+  {
+    "objectID": "projects/errorbar2.html#multiple-measurements",
+    "href": "projects/errorbar2.html#multiple-measurements",
+    "title": "Are my error bars big or small?",
+    "section": "Multiple measurements",
+    "text": "Multiple measurements\nIt is always good to do multiple measurements! Everyone knows to take the average of those measurements but how do you figure out the error bar?\nA science fair project that many people do is inflate a soccer ball to different PSI pressure and then they do multiple trials of how far they can kick the ball. In these situations the uncertainty is not in the measurement tools. There is no reason to think that the distance the ball traveled was inaccurately measured.\nThe key question here is whether the  average distance changes with PSI pressure. For each value of PSI for the ball, the error bar we are interested in is the uncertainty on the measured average distance. In science we call this “the error on the mean” or “the standard error”."
+  },
+  {
+    "objectID": "projects/errorbar2.html#how-to-calculate-the-error-on-the-mean",
+    "href": "projects/errorbar2.html#how-to-calculate-the-error-on-the-mean",
+    "title": "Are my error bars big or small?",
+    "section": "How to calculate the error on the mean",
+    "text": "How to calculate the error on the mean\nIf you have multiple trials with THE SAME CONDITIONS (in the example the same PSI) then you can calculate the error on the mean as follows:\n\nCalculate the mean of all the trials\nFor each trial, subtract that specific number from the mean you just calculated. Take that result and square it.\nDo this step of subtracting the result of each trial from the mean and square it for all your meausrements.\nTake all of these values where you have subtracted the measurement and the mean and squared it and add them all together.\nTake the result of that adding these values together and divide by the number of measurements\nTake the result from dividing by the number of measurements and take the square root\n\nDone! You have calculated the error on the mean (a.k.a. the standard error)\nBear in mind that you only do this when the conditions are the same. In the soccer ball example you would not combine results from different PSI when you do the calculation above because different PSI means different conditions.\n\nTask: Example data\nLet’s take the example of kicking the soccer ball. We try to kick it with the same effort for ten kicks and the measured distance comes out like this:\n35 feet, 39 feet, 40 feet, 42 feet, 37 feet, 34 feet, 41 feet, 35 feet, 36 feet, 40 feet\nThe average distance would be 37.9 feet.\nIf you do the procedure in the previous section and take the measurement minus the average and square it and do that for each number and add it all up you would get 72.9. Then divide by the number of measurements which is 10 so then you have 7.29 and then take the square root which would give 2.7 feet.\nSo the average distance would be 37.9 feet +/- 2.7 feet, which seems resonable given that the range of values is from 34 feet to 42 feet and that we only did 10 trials. Specifically the uncertainty of 2.7 feet is the uncertainty “on the mean”\nHere is another set of data – let’s say that your friend kicked the ball and they can kick further than you. Here is the data:\n45 feet, 47 feet, 38 feet, 39 feet, 47 feet, 51 feet, 40 feet, 41 feet, 46 feet, 50 feet\n Verify that the average distance is 44.4 feet with an uncertainty on the mean of +/- 4.4 feet\nGenerate a set of measurements (just make up some data!) and calculate the mean and the uncertainty and give them to your friend to see that you came up with the same values"
+  },
+  {
+    "objectID": "projects/errorbar2.html#things-to-notice",
+    "href": "projects/errorbar2.html#things-to-notice",
+    "title": "Are my error bars big or small?",
+    "section": "Things to notice",
+    "text": "Things to notice\nBecause we are dividing by the number of measurements, as we do more measurements the error on the mean (a.k.a. standard error) should decrease, which makes sense because as we do more trials the mean from all those trials should get more and more accurate.\nThat is why, if you do have an opportunity to work on a research project in college, and you show your advisor a result that disagrees with an established model, they are likely to tell you to do more trials!"
+  },
+  {
+    "objectID": "projects/errorbar2.html#advanced",
+    "href": "projects/errorbar2.html#advanced",
+    "title": "Are my error bars big or small?",
+    "section": "Advanced",
+    "text": "Advanced\nWhat we have done is obtained the error bar from the measurements rather than obtaining the error bar from our knowledge of the measurement methods we are using. This is not the only way to obtain error bars from the measured data. Another more complicated approach is called “bootstrapping”.\nAnother related situation is when you are shopping on a site like Amazon and you see a seller that has 5/5 stars but only 10 reviews, and another seller that is 4.8/5 stars with 50 reviews and another with 4.65/5 stars with 200 reviews. This is addressed in an excellent video by 3Blue1Brown. In that video he provides some math to back up what most of us already know which is that a 100% rating with only 10 reviews is not very impressive (because with so few reviews the error on the mean is very large)."
   },
   {
     "objectID": "projects/waveinterference.html",
@@ -1909,82 +1965,5 @@
     "title": "WeTeach_CS 2025 Summer Teacher Training Schedule",
     "section": "Week 2, Wednesday",
     "text": "Week 2, Wednesday\n\nAny extra questions about activities covered, or activities we did not have time to go over (1 hour)\nZoom breakouts / check ins / individual plans to do more data science and CS in their classes + any extra questions about any activities covered (2.5 hours)"
-  },
-  {
-    "objectID": "projects/errorbar1.html",
-    "href": "projects/errorbar1.html",
-    "title": "Why we love error bars!",
-    "section": "",
-    "text": "Error bars are great and why we are highly confident about it!"
-  },
-  {
-    "objectID": "projects/errorbar1.html#links-to-activity",
-    "href": "projects/errorbar1.html#links-to-activity",
-    "title": "Why we love error bars!",
-    "section": "Links to Activity",
-    "text": "Links to Activity"
-  },
-  {
-    "objectID": "projects/errorbar1.html#error-bars",
-    "href": "projects/errorbar1.html#error-bars",
-    "title": "Why we love error bars!",
-    "section": "Error Bars",
-    "text": "Error Bars\nAre you sure? How sure are you? These are two of the most important questions that human beings can ask. An error bar is a visual representation of the uncertainty of some measurement. In other words an error bar is a visual representation of how sure or how unsure you are about that measurement.\n\nEstimating uncertainty\nLet’s take an example of a measurement of the pressure in a car or a bike tire.\n\n\n\n\n\nYou can see in the image above that the tire pressure sensor is indicating 38.5 PSI which stands for pounds per square inch. This is a pretty typical value for the pressure of a car tire. It certainly seems like there is no error bar on this measurement. It’s just 38.5 PSI. But if you think about it, because there are only three digits of precision shown, that says something about how precise the measurement is. It’s not just 38.5 PSI. It is reasonable to conclude that the measurement is 38.5 PSI +/- 0.05 PSI. In other words the measured value is 38.5 PSI but the uncertainty on that measurement is about 0.05 PSI.\nHow did we get 0.05 PSI for the uncertainty? Well, if the measured value was 38.56 PSI then the device would probably round it to 38.6 PSI, or if the measured value was 38.44 PSI then the device might round it to 38.4 PSI. But it didn’t, instead the value shown is 38.5 PSI.\nIf we were measuring PSI for a science project, for example measuring the PSI of a tire or a ball versus temperature, for example, you could plot both the measured value (a dot) and show the uncertainty with an error bar (the thing that looks like an I).\nYou can see from this example, that even in a situation where the uncertainty is not mentioned that we can infer what the uncertainty might be.\n\nScience fair tip: A common mistake in science fair projects is to not estimate the uncertainty or visualize that uncertainty with an error bar\n\n\n\nWhy this matters\nThere are many reasons why error bars are important but here are a few salient ones:\n1. Error bars are important because it forces you the experimenter to think about your uncertainties\nIf you are thinking about uncertainties before you do your experiment then you are probably going to do a much more careful experiment than you would without thinking about uncertainty at all or only thinking about uncertainty after the experiment was performed. Error bars are a visual reminder of this important habit of mind.\n2. Error bars are important for data storytelling \nStephanie Evergreen says in her book Effective Data Visualization that “We visualize data to tell a story”. Uncertainty is an important part of that story and error bars are a way to visualize that uncertainty. Sometimes the story you are telling is to yourself (I measured this and got these results and maybe this is why). Sometimes the story you are telling is to someone else (I measured this and got these results and I’m pretty sure this is why but tell me what you think). Either way, error bars are an important part of that story.\n 3. Anomalies \nIn some ways the purpose of doing a science experiment is to identify anomalies. Anomalies are repeated measurements that disagree with a theoretical model that has worked well for other experiments. Scientists are always very interested in anomalies. Some anomalies are resolved by realizing that the measurements were flawed. Some anomalies are resolved by improving the theoretical model. Some anomalies have never been convincingly explained and maybe one of you reading this will be the person to resolve it!\nError bars are EXTREMELY important for anomalies! The only difference between the two plots below is that the size of the error bars are much larger on the left.\n\n \n\nTask: Replicate either plot using Google Sheets or Excel with this sample data\nWith the plot on the left, there are measurements that disagree with the model but the error bars are large so the feeling is that the measurements and the model are still consistent with each other.\nBut with the plot on the right, even though the measurements are the same, the error bars are so small that it really seems like something is wrong with the model, or wrong with the measurements, or wrong with the error bars (specifically that the error bars are too small). It will take more work to figure out which of those three possibilities is the most important one. If the disagreement remains then maybe you’ve made a discovery! The detection of the Higgs Boson, which won the Nobel Prize in physics in 2013, involved results that looked a lot like the plot on the right.\n\n\nHow much disagreement is a lot?\nThere is no strict rule about how different your measurements and the model need to be before its time to get excited. But there is a tradition in science that if the difference between your measurement and the model divided by the uncertainty is greater than five then maybe something really interesting is going on. This is often called the 5\\(\\sigma\\) threshold\n\nScience tradition: The 5\\(\\sigma\\) threshold is a tradition where scientists hesitate to declare that a discovery has been made unless the measurements and the model disagree by more than five times the uncertainty\n\nAn important detail is that the error bar visualizes the uncertainty both up and down. In other words the error bar shows the possibility both that the measured value could have been larger and the uncertainty that the measured value could have been smaller. We only need to divide by the uncertainty so you would divide the difference by half of the vertical height of the error bar.\nTo give a concrete example, earlier we discussed that a tire pressure gauge is measuring 38.5 PSI +/- 0.05 PSI. So if we visualized the error bar for that measurement it would be centered at 38.5 PSI and it would go up +0.05 PSI and down -0.05 PSI. The vertical height of the error bar would be 1.0 PSI. If we compared the 38.5 PSI measurement to some kind of model and there was a difference, we would divide that difference by 0.5 PSI (and not 1.0 PSI) to get an idea for how different the measurement is from the model."
-  },
-  {
-    "objectID": "projects/errorbar2.html",
-    "href": "projects/errorbar2.html",
-    "title": "Are my error bars big or small?",
-    "section": "",
-    "text": "How big are my error bars? Let’s talk about it"
-  },
-  {
-    "objectID": "projects/errorbar2.html#calculating-error-bars",
-    "href": "projects/errorbar2.html#calculating-error-bars",
-    "title": "Are my error bars big or small?",
-    "section": "Calculating error bars",
-    "text": "Calculating error bars\nIn Why we love error bars we talked about a tire pressure sensor. The sensor shows three digits of precision on the pressure in PSI units. With some thought we can conclude that the uncertainty would be +/- 0.05 PSI because the uncertainty is the fourth digit that we can’t see on the digital gauge.\nAnother situation where the uncertainty is straightforward is when the user manual for the sensor you are using states the uncertainty. For example the CO2 sensor mentioned in other activities on our website is, according to its manual, only accurate to +/- 20 parts per million whereas the CO2 concentration measurement might be between 400 parts per million and 2000 parts per million depending on whether you are outside or inside in a crowded area.\n\nKey lesson: Sometimes determining the uncertainty is as straightforward as reading the user manual for the sensor\n\n\nMultiple measurements\nIt is always good to do multiple measurements! Everyone knows to take the average of those measurements but how do you figure out the error bar?\nA science fair project that many people do is inflate a soccer ball to different PSI pressure and then they do multiple trials of how far they can kick the ball. In these situations the uncertainty is not in the measurement tools. There is no reason to think that the distance the ball traveled was inaccurately measured.\nThe key question here is whether the  average distance changes with PSI pressure. For each value of PSI for the ball, the error bar we are interested in is the uncertainty on the measured average distance. In science we call this “the error on the mean” or “the standard error”.\n\n\nHow to calculate the error on the mean\nIf you have multiple trials with THE SAME CONDITIONS (in the example the same PSI) then you can calculate the error on the mean as follows:\n\nCalculate the mean of all the trials\nFor each trial, subtract that specific number from the mean you just calculated. Take that result and square it.\nDo this step of subtracting the result of each trial from the mean and square it for all your meausrements.\nTake all of these values where you have subtracted the measurement and the mean and squared it and add them all together.\nTake the result of that adding these values together and divide by the number of measurements\nTake the result from dividing by the number of measurements and take the square root\n\nDone! You have calculated the error on the mean (a.k.a. the standard error)\nBear in mind that you only do this when the conditions are the same. In the soccer ball example you would not combine results from different PSI when you do the calculation above because different PSI means different conditions.\n\n\nAn example\nLet’s take the example of kicking the soccer ball. We try to kick it with the same effort for ten kicks and the measured distance comes out like this:\n35 feet, 39 feet, 40 feet, 42 feet, 37 feet, 34 feet, 41 feet, 35 feet, 36 feet, 40 feet\nThe average distance would be 37.9 feet.\nIf you do the procedure in the previous section and take the measurement minus the average and square it and do that for each number and add it all up you would get 72.9. Then divide by the number of measurements which is 10 so then you have 7.29 and then take the square root which would give 2.7 feet.\nSo the average distance would be 37.9 feet +/- 2.7 feet, which seems resonable given that the range of values is from 34 feet to 42 feet and that we only did 10 trials.\n\nTask\n\n\n\nThings to notice\nBecause we are dividing by the number of measurements, as we do more measurements the error on the mean (a.k.a. standard error) should decrease, which makes sense because as we do more trials the mean from all those trials should get more and more accurate.\nThat is why, if you do have an opportunity to work on a research project in college, and you show your advisor a result that disagrees with an established model, they are likely to tell you to do more trials!\n\n\nAdvanced\nWhat we have done is obtained the error bar from the measurements rather than obtaining the error bar from our knowledge of the measurement methods we are using. This is not the only way to obtain error bars from the measured data. Another more complicated approach is called “bootstrapping”.\nAnother related situation is when you are shopping on a site like Amazon and you see a seller that has 5/5 stars but only 10 reviews, and another seller that is 4.8/5 stars with 50 reviews and another with 4.65/5 stars with 200 reviews. This is addressed in an excellent video by 3Blue1Brown. In that video he provides some math to back up what most of us already know which is that a 100% rating with only 10 reviews is not very impressive (because with so few reviews the error on the mean is very large)."
-  },
-  {
-    "objectID": "projects/errorbar2.html#multiple-measurements",
-    "href": "projects/errorbar2.html#multiple-measurements",
-    "title": "Are my error bars big or small?",
-    "section": "Multiple measurements",
-    "text": "Multiple measurements\nIt is always good to do multiple measurements! Everyone knows to take the average of those measurements but how do you figure out the error bar?\nA science fair project that many people do is inflate a soccer ball to different PSI pressure and then they do multiple trials of how far they can kick the ball. In these situations the uncertainty is not in the measurement tools. There is no reason to think that the distance the ball traveled was inaccurately measured.\nThe key question here is whether the  average distance changes with PSI pressure. For each value of PSI for the ball, the error bar we are interested in is the uncertainty on the measured average distance. In science we call this “the error on the mean” or “the standard error”."
-  },
-  {
-    "objectID": "projects/errorbar2.html#how-to-calculate-the-error-on-the-mean",
-    "href": "projects/errorbar2.html#how-to-calculate-the-error-on-the-mean",
-    "title": "Are my error bars big or small?",
-    "section": "How to calculate the error on the mean",
-    "text": "How to calculate the error on the mean\nIf you have multiple trials with THE SAME CONDITIONS (in the example the same PSI) then you can calculate the error on the mean as follows:\n\nCalculate the mean of all the trials\nFor each trial, subtract that specific number from the mean you just calculated. Take that result and square it.\nDo this step of subtracting the result of each trial from the mean and square it for all your meausrements.\nTake all of these values where you have subtracted the measurement and the mean and squared it and add them all together.\nTake the result of that adding these values together and divide by the number of measurements\nTake the result from dividing by the number of measurements and take the square root\n\nDone! You have calculated the error on the mean (a.k.a. the standard error)\nBear in mind that you only do this when the conditions are the same. In the soccer ball example you would not combine results from different PSI when you do the calculation above because different PSI means different conditions.\n\nTask: Example data\nLet’s take the example of kicking the soccer ball. We try to kick it with the same effort for ten kicks and the measured distance comes out like this:\n35 feet, 39 feet, 40 feet, 42 feet, 37 feet, 34 feet, 41 feet, 35 feet, 36 feet, 40 feet\nThe average distance would be 37.9 feet.\nIf you do the procedure in the previous section and take the measurement minus the average and square it and do that for each number and add it all up you would get 72.9. Then divide by the number of measurements which is 10 so then you have 7.29 and then take the square root which would give 2.7 feet.\nSo the average distance would be 37.9 feet +/- 2.7 feet, which seems resonable given that the range of values is from 34 feet to 42 feet and that we only did 10 trials. Specifically the uncertainty of 2.7 feet is the uncertainty “on the mean”\nHere is another set of data – let’s say that your friend kicked the ball and they can kick further than you. Here is the data:\n45 feet, 47 feet, 38 feet, 39 feet, 47 feet, 51 feet, 40 feet, 41 feet, 46 feet, 50 feet\n Verify that the average distance is 44.4 feet with an uncertainty on the mean of +/- 4.4 feet\nGenerate a set of measurements (just make up some data!) and calculate the mean and the uncertainty and give them to your friend to see that you came up with the same values"
-  },
-  {
-    "objectID": "projects/errorbar2.html#things-to-notice",
-    "href": "projects/errorbar2.html#things-to-notice",
-    "title": "Are my error bars big or small?",
-    "section": "Things to notice",
-    "text": "Things to notice\nBecause we are dividing by the number of measurements, as we do more measurements the error on the mean (a.k.a. standard error) should decrease, which makes sense because as we do more trials the mean from all those trials should get more and more accurate.\nThat is why, if you do have an opportunity to work on a research project in college, and you show your advisor a result that disagrees with an established model, they are likely to tell you to do more trials!"
-  },
-  {
-    "objectID": "projects/errorbar2.html#advanced",
-    "href": "projects/errorbar2.html#advanced",
-    "title": "Are my error bars big or small?",
-    "section": "Advanced",
-    "text": "Advanced\nWhat we have done is obtained the error bar from the measurements rather than obtaining the error bar from our knowledge of the measurement methods we are using. This is not the only way to obtain error bars from the measured data. Another more complicated approach is called “bootstrapping”.\nAnother related situation is when you are shopping on a site like Amazon and you see a seller that has 5/5 stars but only 10 reviews, and another seller that is 4.8/5 stars with 50 reviews and another with 4.65/5 stars with 200 reviews. This is addressed in an excellent video by 3Blue1Brown. In that video he provides some math to back up what most of us already know which is that a 100% rating with only 10 reviews is not very impressive (because with so few reviews the error on the mean is very large)."
-  },
-  {
-    "objectID": "index.html#the-stemcoding-project",
-    "href": "index.html#the-stemcoding-project",
-    "title": "STEMcoding",
-    "section": "The STEMcoding Project",
-    "text": "The STEMcoding Project\nThe STEMcoding project is a partnership between faculty members and students at Ohio State University and the University of Mount Union.\nThe STEMcoding project exists to re-imagine introductory STEM courses like math and science with computer science and data science in mind. Our activities are used in intro level college courses and high school courses.\nWe love to create activities that each align with relevant math, science and computer science standards. Some of our physical science activities appear on the “model curriculum” examples distributed by the Ohio Department of Education and Workforce. We are also working to create a year-long data science curriculum.\n\nWe are very proud of the STEMcoding youtube channel! We have released over 100 videos featuring faculty and students at Ohio State University and the University of Mount Union.\n\nWe hope you enjoy this site! Check out our Social Media Feed to see what we’ve been up to lately, or our Calendar to see upcoming events and trainings. Please join our Discord to reach out or ask questions!!!"
-  },
-  {
-    "objectID": "index.html#latest-from-our-social-feed",
-    "href": "index.html#latest-from-our-social-feed",
-    "title": "STEMcoding",
-    "section": "Latest from our Social Feed",
-    "text": "Latest from our Social Feed\n\n\n\nSTEM Coding Mastodon feed"
   }
 ]
