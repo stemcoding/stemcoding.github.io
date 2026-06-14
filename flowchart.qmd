@@ -4,6 +4,7 @@ format:
   html:
     mermaid:
       theme: forest
+    include-after-body: projects/cc-badge.html
 ---
 
 Some activities have an intended sequence, while others stand alone. Below are the activities that have an intended sequence.
@@ -135,4 +136,3 @@ flowchart LR
 ```
 
 Other electromagnetism labs that do not have prerequisites are RC circuit and Wave Interference
-
