@@ -4,6 +4,7 @@ image: ../img/Male_and_female_appensa.jpg
 categories:
     - All Ages
     - Data Science
+    - Environmental Science
     - Spreadsheets
 ---
 
