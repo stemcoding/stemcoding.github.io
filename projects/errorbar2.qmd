@@ -77,3 +77,5 @@ That is why, if you do have an opportunity to work on a research project in coll
 What we have done is obtained the error bar from the measurements rather than obtaining the error bar from our knowledge of the measurement methods we are using. This is not the only way to obtain error bars from the measured data. Another more complicated approach is called “bootstrapping”.
 
 Another related situation is when you are shopping on a site like Amazon and you see a seller that has 5/5 stars but only 10 reviews, and another seller that is 4.8/5 stars with 50 reviews and another with 4.65/5 stars with 200 reviews. This is addressed in an [excellent video](https://www.youtube.com/watch?v=8idr1WZ1A7Q) by 3Blue1Brown. In that video he provides some math to back up what most of us already know which is that a 100% rating with only 10 reviews is not very impressive (because with so few reviews the error on the mean is very large). 
+
+## Up next: [Error bars and animal sizes](errorbar3.html)

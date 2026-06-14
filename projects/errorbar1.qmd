@@ -76,5 +76,5 @@ An important detail is that the error bar visualizes the uncertainty both up and
 
 To give a concrete example, earlier we discussed that a tire pressure gauge is measuring 38.5 PSI +/- 0.05 PSI. So if we visualized the error bar for that measurement it would be centered at 38.5 PSI and it would go up +0.05 PSI and down -0.05 PSI. The vertical height of the error bar would be 1.0 PSI. If we compared the 38.5 PSI measurement to some kind of model and there was a difference, we would divide that difference by 0.5 PSI (and not 1.0 PSI) to get an idea for how different the measurement is from the model.
 
-
+## Up next: [Are my error bars big or small?](errorbar2.html)
 
