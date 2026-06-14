@@ -37,3 +37,100 @@ If you have multiple specimens that are either all male or all female then you c
 * Take the result from dividing by the number of measurements and take the square root
 
 <b>Done!</b> You have calculated the error on the mean! If you just did this calculation for the male specimens, now do the calculation for the female specimens!
+
+## New species: Vermicious Knids
+
+Let's imagine that in the forest someone has stumbled across 8 individuals of a new species called Vermicious Knids (which is a totally fictional name). If you click the button below, it will save a CSV file that you can load into a spreadsheet with information about these 8 individuals. The data has two columns: One for Male or Female, and the other for size. You can assume that the size is in centimeters.
+
+<div style="text-align: center; margin: 1.5rem 0;">
+  <button id="download-knids-btn">Download Vermicious Knids Data</button>
+</div>
+
+Note that your data from clicking the button above will be different from other people's data and that's ok.
+
+### Task: Calculate the average size and the error on the mean
+
+There are only 8 rows in the data set. Separate the data into male and female (for example using different tabs in the spreadsheet or different parts of he spreadsheet). Then go ahead and calculate the mean, and then calculate the error on the mean by following the directions in the previous sections.
+
+Here are some questions to consider:
+
+* Is there a size difference between male and female with Vermicious Knids? 
+* If yes, are the males larger or the females larger and by how much? 
+* Based on your result for the error on the mean, is it possible that the size difference can be explained by having so few individuals to measure?
+
+## Two new species: Snozzwanglers and Hornswagglers
+
+There are now three new species: Vermicious Knids, Snozzwanglers and Hornswagglers. Obviously these are all fictional names. You can click on the link below to open up a new window where you can download data about these species. The species are not related so the average size difference between male and female should be treated separately for each species.
+
+<div style="text-align: center;">
+<a href="../dimorphism2.html" target="_blank">Click here to download data about all three species in a new tab</a>
+</div> 
+
+In the link above, you can specify how many individuals of a particular species that you would like. But <b>in real life it would be quite an effort to find 10,000 examples of a brand new species.</b> So think about how many examples you might actually need.
+
+Here are some questions to answer for all three species:
+
+* Which is larger on average? Male or female?
+* How much bigger or smaller are male or female individuals on average?
+* What is the minimum number of individuals that you would recommend be measured in order to feel like the conclusions about the average size were not being affected by having a small number of measurements.
+
+### Advice
+
+There are a couple of ways to accomplish these tasks. Generally the biggest challenge will be dealing with the larger datasets and separating the male rows from the female rows.
+
+One way (but not the only way) to separate the male rows from the female rows would be to highlight all the data and click "Sort" and then select a Sort on Column A because Column A will be where it says M or F.
+
+
+
+
+<script>
+document.getElementById('download-knids-btn').addEventListener('click', () => {
+  function generateVermiciousKnidSize(gender) {
+    if (gender === 'M') {
+      return (Math.random() - 0.5) * 30 + 100;
+    } else { // Female
+      return (Math.random() - 0.5) * 30 + 110;
+    }
+  }
+
+  let lines = [];
+  let allM = true;
+  let allF = true;
+
+  while (allM || allF) {
+    lines = [];
+    allM = true;
+    allF = true;
+
+    for (let i = 0; i < 8; i++) {
+      const gender = Math.random() < 0.5 ? 'M' : 'F';
+      if (gender === 'M') {
+        allF = false;
+      } else {
+        allM = false;
+      }
+
+      const size = generateVermiciousKnidSize(gender);
+      const formattedSize = size.toFixed(0);
+      lines.push(`${gender},${formattedSize}`);
+    }
+  }
+
+  const outputText = lines.join('\n');
+  const blob = new Blob([outputText], { type: 'text/csv;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+
+  const timestamp = new Date().toISOString().slice(11, 19).replace(/:/g, '-');
+  a.href = url;
+  a.download = `vermicious_knids_dataset_${timestamp}.csv`;
+
+  document.body.appendChild(a);
+  a.click();
+
+  setTimeout(() => {
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  }, 0);
+});
+</script>
