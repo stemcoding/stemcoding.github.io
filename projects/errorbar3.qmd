@@ -1,0 +1,39 @@
+---
+title: "Error bars and animal sizes"
+image: ../img/Male_and_female_appensa.jpg
+categories:
+    - All Ages
+    - Data Science
+    - Spreadsheets
+---
+
+[![](../img/Male_and_female_appensa.jpg){fig-align="center" height=400}](https://commons.wikimedia.org/wiki/File:Male_and_female_A._appensa.jpg)
+
+In some species, the males have a different average size than the females
+
+# Animal dimorphism
+
+The image above shows an example of size dimorphism in the spider species <i>Argiope appensa</i>. On the left is the female and on the right is the male. As you can see there the female (left) is much larger than the male (right).
+
+There are many species where the females are larger than the males (ex. cicadas, some species of Octopus), and there are many examples of species where the males are larger than the females (ex. lions, elephant seals, Orangutangs). In humans, for example, males are on average 7% taller than females. There are, of course, many examples of females who are taller than the average height of males and males who are shorter than the average height of females, but <i>on average</i> men tend to be 7% taller than women.
+
+In some species, like the <i>Argiope appensa</i> spider, the difference is pretty big whereas other species (like cicadas or humans) the difference is not as large as that. <b>How big or how small the difference in average sizes between male and female tells you something interesting about that species and their life cycle!</b> So if there was a new species discovered we would want to know what the size difference was and whether males or females tend to be larger on average.
+
+## The problem
+
+If a new species has been discovered we might only have a few specimens to determine the average sizes. If we have at least one male and at least one female we can estimate the difference in average sizes, but <b>how do we know if the few individuals we have to measure are unusually large or small?</b>
+
+## Solution: Calculate the error on the mean
+
+We discussed this exact situation in [Are my error bars big or small?](errorbar2.html). Specifically we discussed situations where we have some number of trials and we need to know not just the average value, but we also need to know the uncertainty in the average value (a.k.a. the error on the mean). Here is the procedure that we discussed where we have replaced measuring tire PSI with measuring animal sizes:
+
+If you have multiple specimens that are either all male or all female then you can calculate the error on the mean as follows:
+
+* Calculate the mean of all the male specimens (later do all these steps again for all the female specimens)
+* For each specimen, subtract that specific size from the mean you just calculated. Take that result and square it.
+* Do this step of subtracting the result of each specimen size from the mean and square it for all your meausrements
+* Take all of these values where you have subtracted the measurement and the mean and squared it and add them all together
+* Take the result of that adding these values together and divide by the number of measurements 
+* Take the result from dividing by the number of measurements and take the square root
+
+<b>Done!</b> You have calculated the error on the mean! If you just did this calculation for the male specimens, now do the calculation for the female specimens!
