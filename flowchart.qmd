@@ -6,6 +6,32 @@ format:
       theme: forest
 ---
 
+Some activities have an intended sequence, while others stand alone. Below are the activities that have an intended sequence.
+
+## Data science
+
+### Error bar activities
+
+```{mermaid}
+flowchart LR
+  A[Why we love error bars!] --> B[Are my error bars big or small?]
+  click A "projects/errorbar1.html" "Why we love error bars!"
+  B --> C[Error bars and animal sizes]
+  click B "projects/errorbar2.html" "Are my error bars big or small?"
+  click C "projects/errorbar3.html" "Error bars and animal sizes"
+```
+
+### STEMcoding Object Tracker
+
+```{mermaid}
+flowchart LR
+  A[Object Tracker Part 1. Track the Object] --> B[Object Tracker Part 2. Analyze Height vs Time] 
+  click A "projects/objecttracker.html" "Object Tracker Part 1. Track the Object"
+  B --> C[Object Tracker Part 3. Analyze Velocity vs Time]
+  click B "projects/objecttracker.html" "Object Tracker Part 2. Analyze Height vs Time"
+  click C "projects/objecttracker.html" "Object Tracker Part 3. Analyze Velocity vs Time"
+```
+
 ## Physics of video games (intro level, no trigonometry)
 ```{mermaid}
 flowchart LR
@@ -25,12 +51,6 @@ flowchart LR
   click B "projects/bonk.html" "Bonk.io"
 ```
 
-## STEMcoding Object Tracker
-
-```{mermaid}
-flowchart LR
-  A[Object Tracker Part 1. Track the Object] --> B[Object Tracker Part 2. Analyze Height vs Time] --> C[Object Tracker Part 3. Analyze Velocity vs Time]
-```
 
 ## Physics of video games (some trigonometry)
 ```{mermaid}

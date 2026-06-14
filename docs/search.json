@@ -109,14 +109,14 @@
     "href": "flowchart.html",
     "title": "Activity Flowcharts / Prerequisites",
     "section": "",
-    "text": "flowchart LR\n  A[Move the Blob] --&gt; B[Accelerate the Blob]\n  click A \"projects/movetheblob.html\" \"Move the Blob\"\n  B --&gt; C[Apollo Moon Landing]\n  click C \"projects/apollo.html\" \"Apollo Moon Landing\"\n  B --&gt; D[Bird Launcher]\n  click B \"projects/acceleratetheblob.html\" \"Accelerate the Blob\"\n  click D \"projects/birdlauncher.html\" \"Bird Launcher\"\n\n\n\n\n\n\n\n\n\n\n\nflowchart LR\n  A[Pong] --&gt; B[Bonk.io Clone]\n  click A \"projects/pong.html\" \"Pong\"\n  click B \"projects/bonk.html\" \"Bonk.io\""
+    "text": "Some activities have an intended sequence, while others stand alone. Below are the activities that have an intended sequence."
   },
   {
     "objectID": "flowchart.html#physics-of-video-games-intro-level-no-trigonometry",
     "href": "flowchart.html#physics-of-video-games-intro-level-no-trigonometry",
     "title": "Activity Flowcharts / Prerequisites",
-    "section": "",
-    "text": "flowchart LR\n  A[Move the Blob] --&gt; B[Accelerate the Blob]\n  click A \"projects/movetheblob.html\" \"Move the Blob\"\n  B --&gt; C[Apollo Moon Landing]\n  click C \"projects/apollo.html\" \"Apollo Moon Landing\"\n  B --&gt; D[Bird Launcher]\n  click B \"projects/acceleratetheblob.html\" \"Accelerate the Blob\"\n  click D \"projects/birdlauncher.html\" \"Bird Launcher\"\n\n\n\n\n\n\n\n\n\n\n\nflowchart LR\n  A[Pong] --&gt; B[Bonk.io Clone]\n  click A \"projects/pong.html\" \"Pong\"\n  click B \"projects/bonk.html\" \"Bonk.io\""
+    "section": "Physics of video games (intro level, no trigonometry)",
+    "text": "Physics of video games (intro level, no trigonometry)\n\n\n\n\n\nflowchart LR\n  A[Move the Blob] --&gt; B[Accelerate the Blob]\n  click A \"projects/movetheblob.html\" \"Move the Blob\"\n  B --&gt; C[Apollo Moon Landing]\n  click C \"projects/apollo.html\" \"Apollo Moon Landing\"\n  B --&gt; D[Bird Launcher]\n  click B \"projects/acceleratetheblob.html\" \"Accelerate the Blob\"\n  click D \"projects/birdlauncher.html\" \"Bird Launcher\"\n\n\n\n\n\n\n\n\n\n\n\nflowchart LR\n  A[Pong] --&gt; B[Bonk.io Clone]\n  click A \"projects/pong.html\" \"Pong\"\n  click B \"projects/bonk.html\" \"Bonk.io\""
   },
   {
     "objectID": "flowchart.html#stemcoding-object-tracker",
@@ -284,7 +284,7 @@
     "href": "projects/objecttracker.html#links-to-activity",
     "title": "Object Tracker",
     "section": "Links to Activity",
-    "text": "Links to Activity\n\nPart 1: Track the Object\n\nInstructions for Part 1\nPart 1 Code Editor\n\n\n\nPart 2: Analyze Height vs. Time\n\nInstructions for Part 2\n\n\n\nPart 2: Analyze Velocity vs. Time\n\nInstructions for Part 3"
+    "text": "Links to Activity\n\nPart 1: Track the Object\n\nInstructions for Part 1\nPart 1 Code Editor\n\n\n\nPart 2: Analyze Height vs. Time\n\nInstructions for Part 2\n\n\n\nPart 3: Analyze Velocity vs. Time\n\nInstructions for Part 3"
   },
   {
     "objectID": "projects/objecttracker.html#object-tracker-playlist",
@@ -1993,5 +1993,19 @@
     "title": "Error bars and animal sizes",
     "section": "Solution: Calculate the error on the mean",
     "text": "Solution: Calculate the error on the mean\nWe discussed this exact situation in Are my error bars big or small?. Specifically we discussed situations where we have some number of trials and we need to know not just the average value, but we also need to know the uncertainty in the average value (a.k.a. the error on the mean). Here is the procedure that we discussed where we have replaced measuring tire PSI with measuring animal sizes:\nIf you have multiple specimens that are either all male or all female then you can calculate the error on the mean as follows:\n\nCalculate the mean of all the male specimens (later do all these steps again for all the female specimens)\nFor each specimen, subtract that specific size from the mean you just calculated. Take that result and square it.\nDo this step of subtracting the result of each specimen size from the mean and square it for all your meausrements\nTake all of these values where you have subtracted the measurement and the mean and squared it and add them all together\nTake the result of that adding these values together and divide by the number of measurements\nTake the result from dividing by the number of measurements and take the square root\n\nDone! You have calculated the error on the mean! If you just did this calculation for the male specimens, now do the calculation for the female specimens!"
+  },
+  {
+    "objectID": "flowchart.html#data-science",
+    "href": "flowchart.html#data-science",
+    "title": "Activity Flowcharts / Prerequisites",
+    "section": "Data science",
+    "text": "Data science\n\nError bar activities\n\n\n\n\n\nflowchart LR\n  A[Why we love error bars!] --&gt; B[Are my error bars big or small?]\n  click A \"projects/errorbar1.html\" \"Why we love error bars!\"\n  B --&gt; C[Error bars and animal sizes]\n  click B \"projects/errorbar2.html\" \"Are my error bars big or small?\"\n  click C \"projects/errorbar3.html\" \"Error bars and animal sizes\"\n\n\n\n\n\n\n\n\nSTEMcoding Object Tracker\n\n\n\n\n\nflowchart LR\n  A[Object Tracker Part 1. Track the Object] --&gt; B[Object Tracker Part 2. Analyze Height vs Time] \n  click A \"projects/objecttracker.html\" \"Object Tracker Part 1. Track the Object\"\n  B --&gt; C[Object Tracker Part 3. Analyze Velocity vs Time]\n  click B \"projects/objecttracker.html\" \"Object Tracker Part 2. Analyze Height vs Time\"\n  click C \"projects/objecttracker.html\" \"Object Tracker Part 3. Analyze Velocity vs Time\""
+  },
+  {
+    "objectID": "flowchart.html#stemcoding-object-tracker-1",
+    "href": "flowchart.html#stemcoding-object-tracker-1",
+    "title": "Activity Flowcharts / Prerequisites",
+    "section": "STEMcoding Object Tracker",
+    "text": "STEMcoding Object Tracker"
   }
 ]

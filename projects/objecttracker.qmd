@@ -28,7 +28,7 @@ It can work in other browsers (safari, firefox, etc.) but it may run slower or n
 ### Part 2: Analyze Height vs. Time
 * [Instructions for Part 2](https://www.asc.ohio-state.edu/orban.14/stemcoding/datascience/objecttracker/part2/)
 
-### Part 2: Analyze Velocity vs. Time
+### Part 3: Analyze Velocity vs. Time
 * [Instructions for Part 3](https://www.asc.ohio-state.edu/orban.14/stemcoding/datascience/objecttracker/part3/)
 
 ## Object Tracker Playlist
