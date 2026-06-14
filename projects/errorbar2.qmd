@@ -46,7 +46,7 @@ If you have multiple trials with THE SAME CONDITIONS (in the example the same PS
 
 Bear in mind that you <b>only do this when the conditions are the same</b>. In the soccer ball example you would not combine results from different PSI when you do the calculation above because different PSI means different conditions.
 
-### Task: Example data
+## Task: Example data
 
 Let's take the example of kicking the soccer ball. We try to kick it with the same effort for ten kicks and the measured distance comes out like this:
 
@@ -62,7 +62,7 @@ Here is another set of data -- let's say that your friend kicked the ball and th
 
 45 feet, 47 feet, 38 feet, 39 feet, 47 feet, 51 feet, 40 feet, 41 feet, 46 feet, 50 feet
 
-<b> Verify that the average distance</b> is 44.4 feet with an uncertainty on the mean of +/- 4.4 feet
+<b> Verify that the average distance</b> is 44.4 feet with an uncertainty on the mean of +/- 4.4 feet. After you can confirm this with a calculator (or maybe [desmos](http://desmos.com)) confirm it using a spreadsheet!
 
 <b>Generate a set of measurements (just make up some data!) and calculate the mean and the uncertainty</b> and give them to your friend to see that you came up with the same values
 
