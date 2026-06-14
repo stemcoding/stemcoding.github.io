@@ -81,8 +81,9 @@ There are a couple of ways to accomplish these tasks. Generally the biggest chal
 
 One way (but not the only way) to separate the male rows from the female rows would be to highlight all the data and click "Sort" and then select a Sort on Column A because Column A will be where it says M or F.
 
+## Other resources
 
-
+[Go to dataclassroom.com and search for Cicada data](https://about.dataclassroom.com/ready-to-teach/)
 
 <script>
 document.getElementById('download-knids-btn').addEventListener('click', () => {

@@ -2035,5 +2035,12 @@
     "title": "Error bars and animal sizes",
     "section": "Two new species: Snozzwanglers and Hornswagglers",
     "text": "Two new species: Snozzwanglers and Hornswagglers\nThere are now three new species: Vermicious Knids, Snozzwanglers and Hornswagglers. Obviously these are all fictional names. You can click on the link below to open up a new window where you can download data about these species. The species are not related so the average size difference between male and female should be treated separately for each species.\n\nClick here to download data about all three species in a new tab\n\nIn the link above, you can specify how many individuals of a particular species that you would like. But in real life it would be quite an effort to find 10,000 examples of a brand new species. So think about how many examples you might actually need.\nHere are some questions to answer for all three species:\n\nWhich is larger on average? Male or female?\nHow much bigger or smaller are male or female individuals on average?\nWhat is the minimum number of individuals that you would recommend be measured in order to feel like the conclusions about the average size were not being affected by having a small number of measurements.\n\n\nAdvice\nThere are a couple of ways to accomplish these tasks. Generally the biggest challenge will be dealing with the larger datasets and separating the male rows from the female rows.\nOne way (but not the only way) to separate the male rows from the female rows would be to highlight all the data and click “Sort” and then select a Sort on Column A because Column A will be where it says M or F."
+  },
+  {
+    "objectID": "projects/errorbar3.html#other-resources",
+    "href": "projects/errorbar3.html#other-resources",
+    "title": "Error bars and animal sizes",
+    "section": "Other resources",
+    "text": "Other resources\nGo to dataclassroom.com and search for Cicada data"
   }
 ]
