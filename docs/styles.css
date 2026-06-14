@@ -860,3 +860,35 @@ main.content>*,
     padding: 2.5rem 1.25rem 2rem;
   }
 }
+
+/* ---------- Creative Commons License Badge ---------- */
+.cc-license-badge {
+  position: fixed;
+  bottom: 1px;
+  left: 0px;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 1px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s;
+}
+
+.cc-license-badge p {
+  margin: 0;
+}
+
+.cc-license-badge:hover {
+  background: rgba(255, 255, 255, 1);
+}
+
+.cc-license-badge img {
+  display: block;
+  height: 80px;
+}
+
+@media (max-width: 1024px) {
+  .cc-license-badge {
+    display: none;
+  }
+}
