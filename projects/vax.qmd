@@ -2,6 +2,7 @@
 title: "VAX game"
 image: ../img/vax.png
 categories:
+    - All Ages
     - Public Health
     - Discrete math
 ---
