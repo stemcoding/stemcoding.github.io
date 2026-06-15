@@ -747,6 +747,9 @@ table thead th {
 /* ---------- Category sidebar (filter list) ---------- */
 .quarto-listing-category {
   overflow-x: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.4rem;
 }
 
 .quarto-listing-category-title {
@@ -761,14 +764,14 @@ table thead th {
 
 .quarto-listing-category .category {
   display: block;
-  padding: 0.6rem 1rem;
-  margin-bottom: 0.4rem;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 0;
   border-radius: var(--sc-radius-sm);
   background: var(--sc-light);
   border: 1px solid var(--sc-border);
   color: var(--sc-ink-soft);
   font-weight: 500;
-  font-size: 0.92rem;
+  font-size: 0.88rem;
   text-decoration: none;
   transition: all 0.2s ease;
   position: relative;
