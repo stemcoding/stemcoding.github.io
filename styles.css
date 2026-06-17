@@ -921,8 +921,8 @@ main.content>*,
   height: 80px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1366px) {
   .cc-license-badge {
-    display: none;
+    display: none !important;
   }
 }
