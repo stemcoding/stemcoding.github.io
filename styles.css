@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 /* ============================================================
    STEMcoding – Modern Global Styles
    ============================================================ */
@@ -38,7 +42,23 @@
 
   /* Type */
   --sc-font: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --sc-font-display: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+  //  --sc-font-display: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --sc-font-display: 'Roboto', 'Inter', system-ui, sans-serif;
+
+  //  --sc-font-display: 'Roboto Mono', monospace;
+  //--sc-font-display: 'Roboto Mono', monospace;
+  //  --sc-font-display: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+  //  --sc-font-display: 'Bricolage Grotesque', 'Inter', system-ui, sans-serif;
+  //  --sc-font-display: 'Sora', 'Inter', system-ui, sans-serif;
+  //  --sc-font-display: 'Outfit', 'Inter', system-ui, sans-serif;
+  // --sc-font-display: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+  //  --sc-font-display: 'Syne', 'Inter', system-ui, sans-serif;
+  // --sc-font-display: 'Orbitron', 'Inter', system-ui, sans-serif;
+  //  --sc-font-display: 'Syncopate', 'Inter', system-ui, sans-serif;
+  //  --sc-font-display: 'Rajdhani', 'Inter', system-ui, sans-serif;
+  //  --sc-font-display: 'Bruno Ace', 'Inter', system-ui, sans-serif;
+  //  --sc-font-display: 'Share Tech', 'Inter', system-ui, sans-serif;
+
 }
 
 /* ---------- Base & background ---------- */
