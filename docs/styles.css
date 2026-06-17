@@ -776,7 +776,7 @@ table thead th {
   gap: 0.4rem;
 }
 
-@media (max-width: 1366px) {
+@media (max-width: 1500px) {
   .quarto-listing-category {
     grid-template-columns: 1fr !important;
   }
@@ -921,7 +921,7 @@ main.content>*,
   height: 80px;
 }
 
-@media (max-width: 1366px) {
+@media (max-width: 1500px) {
   .cc-license-badge {
     display: none !important;
   }
