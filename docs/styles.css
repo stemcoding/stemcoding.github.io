@@ -788,6 +788,7 @@ table thead th {
   font-size: 1.1rem;
   font-weight: 700;
   color: var(--sc-ink);
+  margin-top: 25px;
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid var(--sc-red);
