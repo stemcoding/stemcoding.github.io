@@ -243,7 +243,7 @@ body:has(.sc-hero) .quarto-title-block {
 #title-block-header {
   position: relative;
   max-width: 1200px;
-  margin: 1.5rem auto 2.5rem !important;
+  margin: 1.5rem auto 1rem !important;
   padding: 3rem 3rem 2.5rem;
   background: var(--sc-grad-hero);
   color: #fff;
