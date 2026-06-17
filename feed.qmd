@@ -2,11 +2,14 @@
 title: "Social Media Feed"
 ---
 
-
-
 <link rel="stylesheet" type="text/css" href="/assets/toots-v2.css">
 
 <style>
+  /* Reduce the gap below the title block header */
+  #title-block-header {
+    margin-bottom: -25px !important;
+  }
+
   /* Customize the overall width and text size of the feed */
   .toots {
     max-width: 100%; /* Adjust this value (e.g., 600px, 80%) as needed */
