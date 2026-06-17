@@ -776,9 +776,9 @@ table thead th {
   gap: 0.4rem;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1024px) {
   .quarto-listing-category {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
 }
 
