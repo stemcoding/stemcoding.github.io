@@ -464,13 +464,18 @@ main.content> :first-child:not(#title-block-header) {
 
 /* ---------- Sidebar ---------- */
 #quarto-margin-sidebar {
-  width: 400px !important;
-  min-width: 400px !important;
   overflow-y: auto !important;
 }
 
-.page-columns .page-full {
-  grid-template-columns: 1fr 400px !important;
+@media (min-width: 1300px) {
+  #quarto-margin-sidebar {
+    width: 400px !important;
+    min-width: 400px !important;
+  }
+
+  .page-columns .page-full {
+    grid-template-columns: 1fr 400px !important;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -483,6 +488,7 @@ main.content> :first-child:not(#title-block-header) {
     grid-template-columns: 1fr 450px !important;
   }
 }
+
 
 /* ---------- Cards (activity grid) ---------- */
 .quarto-listing .card {
@@ -769,6 +775,13 @@ table thead th {
   grid-template-columns: repeat(2, 1fr);
   gap: 0.4rem;
 }
+
+@media (max-width: 1300px) {
+  .quarto-listing-category {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 .quarto-listing-category-title {
   font-family: var(--sc-font-display);
