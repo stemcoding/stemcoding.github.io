@@ -13,7 +13,7 @@ categories:
 
 Is the Ozone layer recovering? Let's look at the data to find out!
 
-Our goal today (Part 1) is to obtain Ozone concentration data above the South Pole from the NASA Earth System Data Explorer. 
+Our goal today (Part 1) is to obtain Ozone concentration data above the South Pole from the NASA Earth System Data Explorer. Later in [Part 2](ozone2.html) we will analyze the data.
 
 <b>Dislcaimer:</b> This is not an "official" NASA data analysis activity. This is a STEMcoding activity that uses NASA data.
 
