@@ -74,7 +74,7 @@ Go ahead and put in the current year and month (or whatever is the most recent m
 
 [![](../img/ozone_data_table.png){height=400 fig-align="center"}](../img/ozone_data_table.png)
 
-## Step 5. Click the top right
+## Step 5. Click the top right to open the data into a new tab
 
 Now <b>click the top right icon</b> on the page like this:
 
