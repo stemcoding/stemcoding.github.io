@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Ozone layer recovery (Part 2) – STEMcoding</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../img/stemcoding_favicon_final.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-784cc24b6735f4fbd54fe98f47f34423.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text"><img src="../img/STEMcoding_logo_transparent.png" alt="STEMcoding Logo" style="height: 38px; margin-top: -10px;"></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../activities.html"> 
+<span class="menu-text">Activities</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../people.html"> 
+<span class="menu-text">People</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../feed.html"> 
+<span class="menu-text">Feed</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../calendar.html"> 
+<span class="menu-text">Calendar</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../datascience.html"> 
+<span class="menu-text">Data Science</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../soccer.html"> 
+<span class="menu-text">Soccer 2026</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../publications.html"> 
+<span class="menu-text">Publications</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools tools-wide">
+    <a href="https://www.youtube.com/STEMcoding" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-youtube"></i></a>
+    <a href="https://www.instagram.com/stemcoding/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-instagram"></i></a>
+    <a href="https://www.facebook.com/stemcodingproject" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-facebook"></i></a>
+    <a href="https://mastodon.social/@STEMcoding" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-mastodon"></i></a>
+    <a href="https://discord.gg/bsWgqcqwCE" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-discord"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#step-1.-load-the-nasa-earth-system-data-explorer-data-into-your-favorite-spreadsheet-program" id="toc-step-1.-load-the-nasa-earth-system-data-explorer-data-into-your-favorite-spreadsheet-program" class="nav-link active" data-scroll-target="#step-1.-load-the-nasa-earth-system-data-explorer-data-into-your-favorite-spreadsheet-program">Step 1. Load the NASA Earth System Data Explorer data into your favorite spreadsheet program</a></li>
+  <li><a href="#step-2.-look-at-the-data-before-you-plot-it" id="toc-step-2.-look-at-the-data-before-you-plot-it" class="nav-link" data-scroll-target="#step-2.-look-at-the-data-before-you-plot-it">Step 2. Look at the data before you plot it!</a></li>
+  <li><a href="#step-3.-plot-up-the-data" id="toc-step-3.-plot-up-the-data" class="nav-link" data-scroll-target="#step-3.-plot-up-the-data">Step 3. Plot up the data</a></li>
+  <li><a href="#step-4.-less-is-more" id="toc-step-4.-less-is-more" class="nav-link" data-scroll-target="#step-4.-less-is-more">Step 4. Less is more</a></li>
+  <li><a href="#step-5.-nasa-ozone-watch" id="toc-step-5.-nasa-ozone-watch" class="nav-link" data-scroll-target="#step-5.-nasa-ozone-watch">Step 5. NASA Ozone watch</a>
+  <ul class="collapse">
+  <li><a href="#task-1-on-the-right-side-click-print-version-and-download-annual_data.txt" id="toc-task-1-on-the-right-side-click-print-version-and-download-annual_data.txt" class="nav-link" data-scroll-target="#task-1-on-the-right-side-click-print-version-and-download-annual_data.txt">Task #1: On the right side click “Print version” and download annual_data.txt</a></li>
+  <li><a href="#task-2-open-annual_data.txt-in-your-favorite-spreadsheet-program-and-plot-concentration-y-axis-versus-year-x-axis" id="toc-task-2-open-annual_data.txt-in-your-favorite-spreadsheet-program-and-plot-concentration-y-axis-versus-year-x-axis" class="nav-link" data-scroll-target="#task-2-open-annual_data.txt-in-your-favorite-spreadsheet-program-and-plot-concentration-y-axis-versus-year-x-axis">Task #2: Open annual_data.txt in your favorite spreadsheet program and plot concentration (y-axis) versus year (x-axis)</a></li>
+  </ul></li>
+  <li><a href="#step-6.-look-at-the-nasa-ozone-watch-data" id="toc-step-6.-look-at-the-nasa-ozone-watch-data" class="nav-link" data-scroll-target="#step-6.-look-at-the-nasa-ozone-watch-data">Step 6. Look at the NASA Ozone Watch data</a></li>
+  <li><a href="#optional-extension-1" id="toc-optional-extension-1" class="nav-link" data-scroll-target="#optional-extension-1">Optional Extension #1</a></li>
+  <li><a href="#optional-extension-2" id="toc-optional-extension-2" class="nav-link" data-scroll-target="#optional-extension-2">Optional Extension #2</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Ozone layer recovery (Part 2)</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Atmospheric Science</div>
+    <div class="quarto-category">Environmental Science</div>
+    <div class="quarto-category">Sustainability</div>
+    <div class="quarto-category">Data Science</div>
+    <div class="quarto-category">Spreadsheets</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../img/ozone.jpg" class="quarto-figure quarto-figure-center figure-img" height="300"></p>
+</figure>
+</div>
+<p>Let’s look at the Ozone data from the NASA Earth System Data Explorer</p>
+<p>This is Part 2 of looking at the data for ourselves on whether the Ozone layer is recovering and how fast. <a href="ozone1.html">Part 1</a> was downloading data from the NASA Earth System Data Explorer</p>
+<p><b>Dislcaimer:</b> This is not an “official” NASA data analysis activity. This is a STEMcoding activity that uses NASA data.</p>
+<section id="step-1.-load-the-nasa-earth-system-data-explorer-data-into-your-favorite-spreadsheet-program" class="level2">
+<h2 class="anchored" data-anchor-id="step-1.-load-the-nasa-earth-system-data-explorer-data-into-your-favorite-spreadsheet-program">Step 1. Load the NASA Earth System Data Explorer data into your favorite spreadsheet program</h2>
+<p>In <a href="ozone1.html">Part 1</a> you hopefully downloaded a CSV data file very similar <a href="southpole2005_throughApril2026.csv">to this file</a>. It was worth going through the steps in <a href="ozone1.html">Part 1</a> because you might be able to get months or maybe a year of more recent data than the CSV data file provided.</p>
+<p>If you look at this file before opening it in a spreadsheet program you will see something like this:</p>
+<pre>Date,Monthly Air Column Concentration of Ozone (Dobson Units),Latitude,Longitude
+2005-01,255.9,-90,0
+2005-02,238.6,-90,0
+2005-03,244.9,-90,0
+2005-04,,-90,0
+2005-05,,-90,0
+2005-06,,-90,0
+2005-07,,-90,0
+2005-08,,-90,0
+2005-09,,-90,0
+2005-10,148.8,-90,0
+2005-11,263.8,-90,0
+</pre>
+<p>Notice that there are a lot of commas! The letters CSV stands for “Comma Separated Values”. Instead of spaces between the values there are commas.</p>
+<p style="text-align: right;">
+<b>Important Acronym:</b><br> CSV stands for “Comma Separated Values”
+</p>
+<p><b>Upload the CSV data file into your favorite spreadsheet program!</b></p>
+<p>You should be able to just “Open” the CSV data file. You may find that you need to “Import” the file.</p>
+</section>
+<section id="step-2.-look-at-the-data-before-you-plot-it" class="level2">
+<h2 class="anchored" data-anchor-id="step-2.-look-at-the-data-before-you-plot-it">Step 2. Look at the data before you plot it!</h2>
+<p>Take a look at the data! The data is weird!</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../img/ozone_in_sheets.png" class="quarto-figure quarto-figure-center figure-img" height="300"></p>
+</figure>
+</div>
+<p>What are the units? Are there measurements of Ozone for every month of the year? Is the Ozone concentration constant or does it change with time? What other questions do you have?</p>
+<p style="text-align: right;">
+<b>Important fact:</b><br> Because of the tilt of the earth’s rotation, when it is summer in the Northern<br> hemisphere it is winter in the southern hemisphere, and the south pole<br> receives no sunlight from April until September
+</p>
+<p>Ozone concentration is measured in “Dobson” units. 1 Dobson unit works out to <span class="math inline">\(2.7 \cdot 10^{16}\)</span> molecules of Ozone per square centimeter. More typically the Ozone concentration is around 300 Dobson units (look for example at the visualization at the <a href="ozone2.html#top">top of this page</a>), so about <span class="math inline">\(8.1 \cdot 10^{18}\)</span> molecules of Ozone per square centimeter.</p>
+<p>To understand what this means, remember that in the NASA Earth System Data Explorer we selected “Monthly Air Column Concentration of Ozone”. The key word there is “Column” which is a word that should make you think of something tall.</p>
+<p>Imagine that you built a very narrow but very tall tower that was 1 centimeter by 1 centimeter wide and it was so tall that it went from the ground all the way up to the top of the atmosphere. If the concentration of Ozone was 300 Dobson units, then this narrow but super tall tower would contain exactly <span class="math inline">\(8.1 \cdot 10^{18}\)</span> molecules of Ozone. This might seem like a lot of molecules of Ozone but it is actually <i>much</i> less than the number of water molecules in a glass of water (feel free to do that calculation!). The important thing is that these Ozone molecules absorb UV light from the sun so strongly that this is all it takes to protect us on the ground.</p>
+</section>
+<section id="step-3.-plot-up-the-data" class="level2">
+<h2 class="anchored" data-anchor-id="step-3.-plot-up-the-data">Step 3. Plot up the data</h2>
+<p>Add an XY scatterplot to your spreadsheet. Put the month on the x axis and the Ozone concentration on the y axis.</p>
+<p>This is a good opportunity to put the “Data cycle” in practice. There is no universally agreed upon series of steps in the data cycle, but generally you ask a question, take a quick look at the data, then you take a more detailed look at the data, then you do a bit of data storytelling, and then you maybe ask a new question, and so on.</p>
+<p>Here are some questions to consider at this point:</p>
+<ul>
+<li>The plot shows how the Ozone concentration changes month-by-month, by eye does it seem like the Ozone concentrations are getting larger from 2005 until now?</li>
+<li>By eye does it seem like the Ozone concentrations are getting smaller from 2005 until now?</li>
+<li>Is the highest measured Ozone concentration closer to today or is it closer to 2005?</li>
+<li>Is the lowest measured Ozone concentration closer to today or is it closer to 2005?</li>
+</ul>
+</section>
+<section id="step-4.-less-is-more" class="level2">
+<h2 class="anchored" data-anchor-id="step-4.-less-is-more">Step 4. Less is more</h2>
+<p>Instead of plotting the month-by-month data, what if you only showed one month of data per year? That’s right: we’re going to throw out all the data for each year except for one month. That way we can focus on the year-to-year changes instead of the month-to-month changes. You get to choose the month (October, November, December, January, February or March).</p>
+<p>Now return to the questions we discussed in <a href="ozone2.html#step-3.-plot-up-the-data">Step 3</a>. Is the Ozone concentration getting higher or lower with time?</p>
+<p>Note: Ozone is part of the atmosphere which means that it has weather and variability. The video below is a visualization of Ozone data from 2025 from a <a href="https://atmosphere.copernicus.eu/monitoring-ozone-layer">European Union satellite</a></p>
+<p><video src="../vid/ozone_hole_3d_2025_tco3_v08.mp4" class="img-fluid" controls=""><a href="../vid/ozone_hole_3d_2025_tco3_v08.mp4">Video</a></video></p>
+<p>The important thing to take away from this video is that there is a lot going on down there at the South Pole and we are just looking at one number from one specific location at one specific time for how the Ozone layer is doing.</p>
+</section>
+<section id="step-5.-nasa-ozone-watch" class="level2">
+<h2 class="anchored" data-anchor-id="step-5.-nasa-ozone-watch">Step 5. NASA Ozone watch</h2>
+<p>There is another website that has data for the public about the Ozone layer. Whereas the NASA Earth System Data Explorer starts reporting data in late 2004, NASA Ozone watch includes data that goes back to 1979.</p>
+<p>Check out <a href="https://ozonewatch.gsfc.nasa.gov/statistics/annual_data.html">this page from NASA Ozone Watch</a> which you can see below:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://ozonewatch.gsfc.nasa.gov/statistics/annual_data.html"><img src="../img/nasa_ozone_watch.png" class="quarto-figure quarto-figure-center figure-img" height="500"></a></p>
+</figure>
+</div>
+<p>There is a lot to take in on this page. It includes a size estimate for the area of the Ozone hole. And there are two different numbers for the Ozone concentration in Dobson Units (DU). The left side is “Minimum Daily Ozone concentration” which is the record lowest Ozone concentration for that year, while while the right side is the Ozone concentration during the time period from September 21 to October 16 for each year. <b>We recommend that you focus on the Ozone Concentration measurements on the right side.</b></p>
+<section id="task-1-on-the-right-side-click-print-version-and-download-annual_data.txt" class="level3">
+<h3 class="anchored" data-anchor-id="task-1-on-the-right-side-click-print-version-and-download-annual_data.txt">Task #1: On the right side click “Print version” and download annual_data.txt</h3>
+<p>After you click “Print version” you can download the file with Control + S or right click and select “Save Page As…” The file you download is called annual_data.txt and it should look alot like <a href="annual_data.txt">this file</a>. You can download annual_data.txt from the link in the previous sentence, but it may not have the most recent data available.</p>
+</section>
+<section id="task-2-open-annual_data.txt-in-your-favorite-spreadsheet-program-and-plot-concentration-y-axis-versus-year-x-axis" class="level3">
+<h3 class="anchored" data-anchor-id="task-2-open-annual_data.txt-in-your-favorite-spreadsheet-program-and-plot-concentration-y-axis-versus-year-x-axis">Task #2: Open annual_data.txt in your favorite spreadsheet program and plot concentration (y-axis) versus year (x-axis)</h3>
+<p>If it is easy to open up annual_data.txt in your spreadsheet program, that’s great! But you may run into difficulty because it is formatted with spaces instead of with commas. annual_data.txt is NOT a CSV file.</p>
+<p>One solution is to type the data into the spreadsheet manually. If that seems tedious another solution (if you are allowed to use AI) is to load annual_data.txt into an AI chatbot and ask it to convert annual_data.txt into CSV format. IF YOU DO THIS YOU WILL NEED TO CHECK THE NUMBERS!!! After you load the CSV file into your spreadsheet, make sure to check that the Ozone concentration versus year matches up with the numbers in annual_data.txt</p>
+</section>
+</section>
+<section id="step-6.-look-at-the-nasa-ozone-watch-data" class="level2">
+<h2 class="anchored" data-anchor-id="step-6.-look-at-the-nasa-ozone-watch-data">Step 6. Look at the NASA Ozone Watch data</h2>
+<p>The NASA Ozone watch data includes data from 1979 to 2004. What was happening to the Ozone layer then?</p>
+<p>Go back and ask all the same questions as before:</p>
+<ul>
+<li>When was the Ozone concentration the highest?</li>
+<li>When was the Ozone concentration the lowest?</li>
+<li>Is the highest measured Ozone concentration near the beginning of the data in 1979 or the end of the data (circa 2025) or in the middle?</li>
+<li>Is the lowest measured Ozone concentration near the beginning of the data in 1979 or the end of the data (circa 2025) or in the middle?</li>
+</ul>
+<p>Here is a new question:</p>
+<ul>
+<li>In 1987, a United Nations <a href="https://en.wikipedia.org/wiki/Montreal_Protocol">treaty</a> was signed to phase out globally the manufacturing of chemicals that deplete the Ozone layer. If you were alive in 1987 and could see NASA’s Ozone measurements from 1979 to 1987, what would you have been worried about for what the future might be like?</li>
+</ul>
+</section>
+<section id="optional-extension-1" class="level2">
+<h2 class="anchored" data-anchor-id="optional-extension-1">Optional Extension #1</h2>
+<p>How does the NASA Ozone watch data compare to the NASA Earth System Data Explorer Monthly column Ozone data? Bear in mind that the NASA Ozone watch data is not measuring exactly the same thing as the NASA Earth System Data Explorer Monthly Column Ozone.</p>
+</section>
+<section id="optional-extension-2" class="level2">
+<h2 class="anchored" data-anchor-id="optional-extension-2">Optional Extension #2</h2>
+<p>In the NASA Ozone watch data, is there a relationship between the size of the Ozone Hole Area and the Minimum concentration of Ozone? If you plot Ozone concentration on the x-axis and Ozone Hole Area on the y-axis, what does it look like? If the Minimum Ozone concentration is higher, is the Ozone Hole Area larger or smaller, and why?</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<div class="cc-license-badge">
+  <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">
+    <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc.png" alt="CC BY-NC License">
+  </a>
+</div>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
