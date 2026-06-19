@@ -128,6 +128,8 @@ Here is a new question:
 
 * In 1987, a United Nations [treaty](https://en.wikipedia.org/wiki/Montreal_Protocol) was signed to phase out globally the manufacturing of chemicals that deplete the Ozone layer. If you were alive in 1987 and could see NASA's Ozone measurements from 1979 to 1987, what would you have been worried about for what the future might be like?
 
+Sidebar: The [European Space Agency](https://atmosphere.copernicus.eu/smallest-and-shortest-lived-ozone-hole-5-years-closes) has [a visualization](esa_ozone_hole.png) of the Ozone hole versus year from 1979 to the modern day.
+
 ## Optional Extension #1
 
 How does the NASA Ozone watch data compare to the NASA Earth System Data Explorer Monthly column Ozone data? Bear in mind that the NASA Ozone watch data is not measuring exactly the same thing as the NASA Earth System Data Explorer Monthly Column Ozone.
