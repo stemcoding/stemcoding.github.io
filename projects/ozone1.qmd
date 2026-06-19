@@ -38,7 +38,7 @@ There are some great websites and youtube videos to learn about the Ozone layer.
 
 The fine folks at NASA have made a great website where you can download data from different Earth-observing satellites. It's called the [Earth System Data Explorer](https://larc-mynasadata-2df7cce0.projects.earthengine.app/view/earth-system-data-explorer)  Go ahead and try it out!
 
-Ultimately we are going to download a data set from that site for Ozone data at the South Pole that is a lot like [this dataset](southpole2005_throughMay2026.csv).  In fact <b>you could just go on to the next activity with that dataset</b>, but why would you do that when you can get the very latest data from the Earth System Data Explorer?
+Ultimately we are going to download a data set from that site for Ozone data at the South Pole that is a lot like [this dataset](southpole2005_throughApril2026.csv).  In fact <b>you could just go on to the next activity with that dataset</b>, but why would you do that when you can get the very latest data from the Earth System Data Explorer?
 
 ## Getting South Pole Ozone layer data
 
@@ -86,6 +86,8 @@ When you click "Download CSV" it should download a file called ee-chart.csv
 
 <b>Go to your favorite spreadsheet program and import ee-chart.csv</b>
 
+<!--
 ## Optional: North Pole
 
 The Ozone layer is also depleted above the North Pole. How would you configure the NASA Earth System Data Explorer to get the concentration of Ozone versus time above the North Pole instead of the South Pole?
+-->
