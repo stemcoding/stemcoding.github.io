@@ -12,7 +12,9 @@ project:
     - img/Ohio_State_University_at_Marion_Logo.png
     - dimorphism.html
     - dimorphism2.html
-
+    - how_we_fixed_the_ozone_layer.html
+    - ozone-depleting-substances-index.csv
+    
 website:
   favicon: img/stemcoding_favicon_final.png
   navbar:

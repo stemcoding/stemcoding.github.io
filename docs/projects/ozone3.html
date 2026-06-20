@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Ozone layer recovery (Part 3) – STEMcoding</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../img/stemcoding_favicon_final.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-784cc24b6735f4fbd54fe98f47f34423.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text"><img src="../img/STEMcoding_logo_transparent.png" alt="STEMcoding Logo" style="height: 38px; margin-top: -10px;"></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../activities.html"> 
+<span class="menu-text">Activities</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../people.html"> 
+<span class="menu-text">People</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../feed.html"> 
+<span class="menu-text">Feed</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../calendar.html"> 
+<span class="menu-text">Calendar</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../datascience.html"> 
+<span class="menu-text">Data Science</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../soccer.html"> 
+<span class="menu-text">Soccer 2026</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../publications.html"> 
+<span class="menu-text">Publications</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools tools-wide">
+    <a href="https://www.youtube.com/STEMcoding" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-youtube"></i></a>
+    <a href="https://www.instagram.com/stemcoding/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-instagram"></i></a>
+    <a href="https://www.facebook.com/stemcodingproject" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-facebook"></i></a>
+    <a href="https://mastodon.social/@STEMcoding" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-mastodon"></i></a>
+    <a href="https://discord.gg/bsWgqcqwCE" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-discord"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#step-1.-read-about-the-montreal-protocol-and-the-history-behind-it" id="toc-step-1.-read-about-the-montreal-protocol-and-the-history-behind-it" class="nav-link active" data-scroll-target="#step-1.-read-about-the-montreal-protocol-and-the-history-behind-it">Step 1. Read about the Montreal Protocol and the history behind it</a></li>
+  <li><a href="#step-2.-plot-the-ozone-depleting-substances-data-alongside-the-ozone-concentration-data" id="toc-step-2.-plot-the-ozone-depleting-substances-data-alongside-the-ozone-concentration-data" class="nav-link" data-scroll-target="#step-2.-plot-the-ozone-depleting-substances-data-alongside-the-ozone-concentration-data">Step 2. Plot the “Ozone depleting substances” data alongside the Ozone concentration data</a>
+  <ul class="collapse">
+  <li><a href="#google-sheets" id="toc-google-sheets" class="nav-link" data-scroll-target="#google-sheets">Google Sheets</a></li>
+  <li><a href="#microsoft-excel" id="toc-microsoft-excel" class="nav-link" data-scroll-target="#microsoft-excel">Microsoft Excel</a></li>
+  </ul></li>
+  <li><a href="#step-3.-consider-the-results" id="toc-step-3.-consider-the-results" class="nav-link" data-scroll-target="#step-3.-consider-the-results">Step 3. Consider the results</a></li>
+  <li><a href="#optional-extension-what-does-the-ozone-levels-look-like-above-your-town" id="toc-optional-extension-what-does-the-ozone-levels-look-like-above-your-town" class="nav-link" data-scroll-target="#optional-extension-what-does-the-ozone-levels-look-like-above-your-town">Optional Extension: What does the Ozone levels look like above your town?</a>
+  <ul class="collapse">
+  <li><a href="#figure-out-the-latitude-and-longitude-of-your-town" id="toc-figure-out-the-latitude-and-longitude-of-your-town" class="nav-link" data-scroll-target="#figure-out-the-latitude-and-longitude-of-your-town">Figure out the latitude and longitude of your town</a></li>
+  <li><a href="#obtain-a-time-series-of-ozone-concentration" id="toc-obtain-a-time-series-of-ozone-concentration" class="nav-link" data-scroll-target="#obtain-a-time-series-of-ozone-concentration">Obtain a time series of Ozone concentration</a></li>
+  </ul></li>
+  <li><a href="#optional-extension-ground-level-ozone" id="toc-optional-extension-ground-level-ozone" class="nav-link" data-scroll-target="#optional-extension-ground-level-ozone">Optional Extension: Ground-level Ozone</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Ozone layer recovery (Part 3)</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Atmospheric Science</div>
+    <div class="quarto-category">Environmental Science</div>
+    <div class="quarto-category">Sustainability</div>
+    <div class="quarto-category">Data Science</div>
+    <div class="quarto-category">Spreadsheets</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../img/montreal_protocol.jpg" class="quarto-figure quarto-figure-center figure-img" height="300"></p>
+</figure>
+</div>
+<p>Let’s talk about what happened in 1987 in Montreal and why it matters for the Ozone layer</p>
+<p>This is Part 3 of looking at the data for ourselves on whether the Ozone layer is recovering and how fast. <a href="ozone2.html">Part 2</a> was looking at data from the NASA Earth System Data Explorer and NASA Ozone watch</p>
+<p><b>Dislcaimer:</b> This is not an “official” NASA data analysis activity. This is a STEMcoding activity that uses NASA data.</p>
+<section id="step-1.-read-about-the-montreal-protocol-and-the-history-behind-it" class="level2">
+<h2 class="anchored" data-anchor-id="step-1.-read-about-the-montreal-protocol-and-the-history-behind-it">Step 1. Read about the Montreal Protocol and the history behind it</h2>
+<p>We are going to read an article called <a href="../how_we_fixed_the_ozone_layer.html">How we fixed the Ozone layer</a> by a journalist and researcher named Hannah Richie which celebrates the 1987 Montreal Protocol which led to reductions in the production of chemicals that affect the Ozone layer.</p>
+<p>The original article <a href="https://worksinprogress.co/issue/how-we-fixed-the-ozone-layer">is here</a> but we are providing <a href="../how_we_fixed_the_ozone_layer.html">this link</a> just in case people can’t access that link or the link to the original article changes.</p>
+<p>Here are a couple of things to note about the article:</p>
+<ul>
+<li>One of the main data sources is NASA Ozone watch! We just looked at that data in <a href="ozone2.html">Part 2</a></li>
+<li>The journalist is outlining a case for optimism about the recovery of the Ozone layer, does the data support optimism? Is it really true that the Ozone is “fixed”? What do you think?</li>
+<li>The main new data we have not discussed yet is the reduction of “Ozone depleting substances”. This is really important!</li>
+</ul>
+<p>The article does mention that the kind of international cooperation that happened to address the Ozone layer is similar to the kind of international cooperation that would be needed to address climate change, but that is not the main focus of the article. Even if it were, climate change and global warming are still part of science standards in <a href="https://education.ohio.gov/getattachment/Topics/Learning-in-Ohio/Science/Ohios-Learning-Standards-and-MC/SciFinalStandardsMC060719.pdf">Ohio</a> and many other states.</p>
+</section>
+<section id="step-2.-plot-the-ozone-depleting-substances-data-alongside-the-ozone-concentration-data" class="level2">
+<h2 class="anchored" data-anchor-id="step-2.-plot-the-ozone-depleting-substances-data-alongside-the-ozone-concentration-data">Step 2. Plot the “Ozone depleting substances” data alongside the Ozone concentration data</h2>
+<p>If you go to the first interactive figure in the article and click the download icon in the bottom right, you can download the data and we recommend that you click “Download displayed data” which ultimately will give you the file <a href="../ozone-depleting-substances-index.csv">ozone-depleting-substances-index.csv</a></p>
+<p><img src="../img/ozone_depleting_substances.png" class="img-fluid"></p>
+<p>Note that this data set DOES INCLUDE 1995 whereas the NASA Ozone watch data does NOT include 1995. And note that this data set DOES NOT include 1987 or 1988 even though NASA Ozone watch DOES INCLUDE 1987 and 1988.</p>
+<p>An important thing to be able to do with a spreadsheet is to make a plot with a different y-axis on the left than on the right. This is helpful in situations where you are comparing two quantities as they change with time and that have different units. Here is some advice on how to do this:</p>
+<section id="google-sheets" class="level3">
+<h3 class="anchored" data-anchor-id="google-sheets">Google Sheets</h3>
+<p>If you open the Chart Editor and then click “Customize” and then click “Series”. By default it will select “Apply to all series” but you should change that to select the Ozone depleting substances series. Once you select the Ozone depleting substances series, in that menu it will say “Axis” and you should change that from its default which is “left axis” to “right axis”. You should immediately see numbers on the right side y-axis. You can adjust these values (for example the maximum and minimum) on a new area under “Customize” that says “Right vertical axis”.</p>
+</section>
+<section id="microsoft-excel" class="level3">
+<h3 class="anchored" data-anchor-id="microsoft-excel">Microsoft Excel</h3>
+<p>In the web version of Excel it seems not to be possible to have a different y-axis on the right side, however if you have Copilot enabled for web Excel you can ask it to create a “Vertical Secondary Axis” for a particular column of data.</p>
+<p>If you have the desktop version of Excel it should be possible to do this without Copilot</p>
+</section>
+</section>
+<section id="step-3.-consider-the-results" class="level2">
+<h2 class="anchored" data-anchor-id="step-3.-consider-the-results">Step 3. Consider the results</h2>
+<p>Here are some things to consider with the result</p>
+<ul>
+<li>According to the data, how many years have there been so far of negligible production of Ozone depleting substances have there been? 5 years? 10 years? 15 years?</li>
+<li>Some experts say that it might take another 40 years of negligible production of Ozone depleting substances before the Ozone layer above the South Pole fully recovers. Does 40 years seem like a reasonable estimate? What do you think?</li>
+</ul>
+</section>
+<section id="optional-extension-what-does-the-ozone-levels-look-like-above-your-town" class="level2">
+<h2 class="anchored" data-anchor-id="optional-extension-what-does-the-ozone-levels-look-like-above-your-town">Optional Extension: What does the Ozone levels look like above your town?</h2>
+<p>Earlier we used the <a href="https://larc-mynasadata-2df7cce0.projects.earthengine.app/view/earth-system-data-explorer">NASA Earth Systems Data Explorer</a> to download Ozone data from above the South Pole, but you can specify any latitude and longitude and download a time series of that data.</p>
+<section id="figure-out-the-latitude-and-longitude-of-your-town" class="level3">
+<h3 class="anchored" data-anchor-id="figure-out-the-latitude-and-longitude-of-your-town">Figure out the latitude and longitude of your town</h3>
+<p>The easiest way is probably to do a google search, or a wikipedia search.</p>
+</section>
+<section id="obtain-a-time-series-of-ozone-concentration" class="level3">
+<h3 class="anchored" data-anchor-id="obtain-a-time-series-of-ozone-concentration">Obtain a time series of Ozone concentration</h3>
+<p>Follow the directions in <a href="ozone1.html">Part 1</a> to obtain Time Series data for the “Monthly Air Column Concentration of Ozone”</p>
+<p>Plot up the data like you did in <a href="ozone2.html">Part 2</a>. What does it look like? Is there any trend for the Ozone concentration to be increasing or decreasing? If it is decreasing, then maybe we should wear more sunscreen!</p>
+</section>
+</section>
+<section id="optional-extension-ground-level-ozone" class="level2">
+<h2 class="anchored" data-anchor-id="optional-extension-ground-level-ozone">Optional Extension: Ground-level Ozone</h2>
+<p>Some factories and high voltage equipment produce Ozone. For example, if your science teacher has a <a href="https://en.wikipedia.org/wiki/Plasma_globe">plasma globe</a> you may have smelled Ozone being produced by the high voltage.</p>
+<p>Ozone near the ground can be a problem for humans, plants and animals because Ozone can react with molecules in our bodies. So although we want Ozone in the upper atmosphere, we do not want Ozone near the ground. Here is another <a href="../img/Ozone-zones-in-atmosphere-01.png">figure from Hannah Richie</a> that is helpful for understanding the difference between upper atmosphere Ozone and ground level Ozone</p>
+<p>The Environmental Protection Agency considers “ground-level ozone” to be a major air pollutant, and the <a href="https://www.airnow.gov/aqi/aqi-basics/">Air Quality Index (AQI)</a> does depend on the ground-level concentration of ozone if it is high enough.</p>
+<p>An interesting project that examines the effect of ground-level Ozone on plants is the <a href="https://research.cgd.ucar.edu/ozone-garden/">Ozone Garden Network</a>. Look at the map on that page. Maybe there is an Ozone garden near you!</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<div class="cc-license-badge">
+  <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">
+    <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc.png" alt="CC BY-NC License">
+  </a>
+</div>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
