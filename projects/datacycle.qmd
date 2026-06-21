@@ -1,6 +1,6 @@
 ---
 title: "The Data Cycle"
-image: ../img/gaiseII.png
+image: ../img/gaiseII_thumb.png
 categories:
     - Data Science
 ---
