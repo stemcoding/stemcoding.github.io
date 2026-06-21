@@ -2,6 +2,7 @@
 title: "The Data Cycle"
 image: ../img/gaiseII_thumb.png
 categories:
+    - All Ages
     - Data Science
 ---
 
