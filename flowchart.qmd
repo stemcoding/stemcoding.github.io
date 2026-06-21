@@ -22,6 +22,17 @@ flowchart LR
   click C "projects/errorbar3.html" "Error bars and animal sizes"
 ```
 
+### Ozone Layer Recovery
+
+```{mermaid}
+flowchart LR
+  A[Ozone Recovery Part 1] --> B[Ozone Recovery Part 2]
+  click A "projects/ozone1.html" "Ozone Recovery (Part 1)"
+  B --> C[Ozone Recovery Part 3]
+  click B "projects/ozone2.html" "Ozone Recovery (Part 2)"
+  click C "projects/ozone3.html" "Ozone Recovery (Part 3)"
+```
+
 ### STEMcoding Object Tracker
 
 ```{mermaid}
