@@ -91,7 +91,11 @@ Note: Ozone is part of the atmosphere which means that it has weather and variab
 
 ![](../vid/ozone_hole_3d_2025_tco3_v08.mp4)
 
-The important thing to take away from this video is that there is a lot going on down there at the South Pole and we are just looking at one number from one specific location at one specific time for how the Ozone layer is doing.
+The most important thing to take away from this video is that there is a lot going on down there at the South Pole and we are just looking at one number from one specific location at one specific time for how the Ozone layer is doing.
+
+The second most important thing about this video is that the "hole" in the Ozone layer only exists for part of the year. We are ignoring this month-to-month variability but here is a quote from an [article from climate.gov](https://www.climate.gov/news-features/understanding-climate/4-ways-ozone-hole-linked-climate-and-1-way-it-isn%E2%80%99t) about month-to-month changes in the Ozone layer:
+
+<i>"When the Sun rises at the end of Southern Hemisphere winter, sunlight degrades these reactive [CFC] gases, releasing 'free radicals' of chlorine. A single chlorine-containing free radical can catalyze the destruction of thousands and thousands of ozone molecules. Ozone destruction usually peaks in mid-October.  Ozone loss tapers off in late spring as the polar vortex weakens. Temperatures rise, and fewer clouds form. Ozone-rich air from lower latitudes mixes back into the polar stratosphere, and the ozone hole disappears until the next spring."</i>
 
 ## Step 5. NASA Ozone watch
 
