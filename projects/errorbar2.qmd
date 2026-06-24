@@ -39,8 +39,8 @@ If you have multiple trials with THE SAME CONDITIONS (in the example the same PS
 * For each trial, subtract that specific number from the mean you just calculated. Take that result and square it.
 * Do this step of subtracting the result of each trial from the mean and square it for all your meausrements.
 * Take all of these values where you have subtracted the measurement and the mean and squared it and add them all together.
-* Take the result of that adding these values together and divide by the number of measurements 
-* Take the result from dividing by the number of measurements and take the square root
+* Take the result of adding these numbers together and take the square root
+* Take the result of the square root and divide by the number of measurements 
 
 <b>Done!</b> You have calculated the error on the mean (a.k.a. [the standard error](https://youtu.be/Vm1NcJuJeeY?si=oBoA21bTB030B9Ix))
 
@@ -54,15 +54,15 @@ Let's take the example of kicking the soccer ball. We try to kick it with the sa
 
 The average distance would be 37.9 feet.
 
-If you do the procedure in the previous section and take the measurement minus the average and square it and do that for each number and add it all up you would get 72.9. Then divide by the number of measurements which is 10 so then you have 7.29 and then take the square root which would give 2.7 feet.
+If you do the procedure in the previous section and take the measurement minus the average and square it and do that for each number and add it all up you would get 72.9. Then take the square root of that number which gives you 8.53. Then divide that by the number of measurements which is 10 so then you have 0.85 feet as the error on the mean.
 
-So the average distance would be 37.9 feet +/- 2.7 feet, which seems resonable given that the range of values is from 34 feet to 42 feet and that we only did 10 trials. Specifically the uncertainty of 2.7 feet is the uncertainty "on the mean"
+So the average distance would be 37.9 feet +/- 0.85 feet, which seems resonable given that the range of values is from 34 feet to 42 feet and that we only did 10 trials. Specifically the uncertainty of 0.85 feet is the uncertainty "on the mean"
 
 Here is another set of data -- let's say that your friend kicked the ball and they can kick further than you. Here is the data:
 
 45 feet, 47 feet, 38 feet, 39 feet, 47 feet, 51 feet, 40 feet, 41 feet, 46 feet, 50 feet
 
-<b> Verify that the average distance</b> is 44.4 feet with an uncertainty on the mean of +/- 4.4 feet. After you can confirm this with a calculator (or maybe [desmos](http://desmos.com)) confirm it using a spreadsheet!
+<b> Verify that the average distance</b> is 44.4 feet with an uncertainty on the mean of +/- 1.4 feet. After you can confirm this with a calculator (or maybe [desmos](http://desmos.com)) confirm it using a spreadsheet!
 
 <b>Generate a set of measurements (just make up some data!) and calculate the mean and the uncertainty</b> and give them to your friend to see that you came up with the same values
 
