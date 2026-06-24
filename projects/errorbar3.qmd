@@ -34,8 +34,8 @@ If you have multiple specimens that are either all male or all female then you c
 * For each specimen, subtract that specific size from the mean you just calculated. Take that result and square it.
 * Do this step of subtracting the result of each specimen size from the mean and square it for all your meausrements
 * Take all of these values where you have subtracted the measurement and the mean and squared it and add them all together
-* Take the result of that adding these values together and divide by the number of measurements 
-* Take the result from dividing by the number of measurements and take the square root
+* Take the result of that adding these values together and take the square root
+* Take the result from the square root and divide by the number of measurements
 
 <b>Done!</b> You have calculated the error on the mean! If you just did this calculation for the male specimens, now do the calculation for the female specimens!
 
