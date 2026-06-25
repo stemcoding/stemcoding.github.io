@@ -256,6 +256,80 @@ window.Quarto = {
 }
 
 </style>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  // Find all category elements in the sidebar
+  const categoryElements = document.querySelectorAll(".quarto-listing-category .category");
+  if (categoryElements.length === 0) return;
+
+  // Create the container for the mobile dropdown
+  const dropdownContainer = document.createElement("div");
+  dropdownContainer.className = "mobile-category-filter-container";
+
+  // Create the label
+  const label = document.createElement("label");
+  label.htmlFor = "mobile-category-select";
+  label.textContent = "Filter by Category:";
+  label.className = "mobile-category-label";
+  dropdownContainer.appendChild(label);
+
+  // Create the select element
+  const select = document.createElement("select");
+  select.id = "mobile-category-select";
+  select.className = "mobile-category-select";
+
+  // Populate the select element with options from categoryElements
+  categoryElements.forEach((catEl) => {
+    const option = document.createElement("option");
+    // Extract full text content, e.g., "Advanced HS (26)" or "All (56)"
+    const catName = catEl.textContent.replace(/\s+/g, ' ').trim();
+    option.value = catEl.getAttribute("data-category") || "";
+    option.textContent = catName;
+    select.appendChild(option);
+  });
+
+  dropdownContainer.appendChild(select);
+
+  // Insert the dropdown container right before the activities grid
+  const listingContainer = document.querySelector("#listing-listing");
+  if (listingContainer) {
+    listingContainer.parentNode.insertBefore(dropdownContainer, listingContainer);
+  }
+
+  // Handle dropdown selection change
+  select.addEventListener("change", (e) => {
+    const selectedVal = e.target.value;
+    const targetCatEl = Array.from(categoryElements).find(
+      (el) => (el.getAttribute("data-category") || "") === selectedVal
+    );
+    if (targetCatEl) {
+      targetCatEl.click();
+    }
+  });
+
+  // Keep the select dropdown in sync if a category is clicked elsewhere (e.g. card badges)
+  const observer = new MutationObserver(() => {
+    const activeCatEl = document.querySelector(".quarto-listing-category .category.active");
+    if (activeCatEl) {
+      const activeVal = activeCatEl.getAttribute("data-category") || "";
+      if (select.value !== activeVal) {
+        select.value = activeVal;
+      }
+    } else {
+      select.value = "";
+    }
+  });
+
+  const categoriesContainer = document.querySelector(".quarto-listing-category");
+  if (categoriesContainer) {
+    observer.observe(categoriesContainer, {
+      attributes: true,
+      subtree: true,
+      attributeFilter: ["class"]
+    });
+  }
+});
+</script>
 
 
 
