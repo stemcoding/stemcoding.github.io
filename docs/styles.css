@@ -927,3 +927,56 @@ main.content>*,
     display: none !important;
   }
 }
+
+/* ---------- Mobile Category Filter Dropdown ---------- */
+.mobile-category-filter-container {
+  display: none; /* Hidden by default on computers and iPads */
+}
+
+@media (max-width: 767px) {
+  .mobile-category-filter-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 1rem 0 1.5rem 0;
+    padding: 1.2rem;
+    background: var(--sc-grad-card);
+    border: 1px solid var(--sc-border);
+    border-radius: var(--sc-radius);
+    box-shadow: var(--sc-shadow-sm);
+  }
+
+  .mobile-category-label {
+    font-family: var(--sc-font-display);
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--sc-ink);
+  }
+
+  .mobile-category-select {
+    font-family: var(--sc-font);
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--sc-ink-soft);
+    padding: 0.75rem 1.8rem 0.75rem 1rem;
+    border: 1px solid var(--sc-border);
+    border-radius: var(--sc-radius-sm);
+    background-color: #fff;
+    /* Custom SVG arrow colored with --sc-red (#d32f2f) */
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23d32f2f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1.1em;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+
+  .mobile-category-select:focus {
+    outline: none;
+    border-color: var(--sc-red);
+    box-shadow: 0 0 0 3px var(--sc-red-glow);
+  }
+}
