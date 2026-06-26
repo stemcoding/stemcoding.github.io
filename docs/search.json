@@ -1943,7 +1943,7 @@
     "href": "projects/objecttracker.html",
     "title": "Object Tracker",
     "section": "",
-    "text": "Now you can record your own direct measurement videos and analyze them with p5.js.\nNote: The STEMcoding Object Tracker works best in chrome and edge!\nIt can work in other browsers (safari, firefox, etc.) but it may run slower or not at all due to some memory problems.\nNo download or browser plugin is required!"
+    "text": "Your browser does not support the video tag.\nNow you can record your own direct measurement videos and analyze them with p5.js.\nNote: The STEMcoding Object Tracker works best in chrome and edge!\nIt can work in other browsers (safari, firefox, etc.) but it may run slower or not at all due to some memory problems.\nNo download or browser plugin is required!"
   },
   {
     "objectID": "projects/objecttracker.html#links-to-activity",
