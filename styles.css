@@ -386,7 +386,7 @@ main.content> :first-child:not(#title-block-header) {
   top: 0;
   left: 0;
   width: 100%;
-  //  height: 50%;
+  height: 100%;
   object-fit: cover;
   z-index: 1;
   pointer-events: none;
@@ -893,6 +893,7 @@ main.content>*,
 
   .sc-hero {
     padding: 2.5rem 1.25rem 2rem;
+    height: auto;
   }
 }
 
