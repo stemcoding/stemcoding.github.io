@@ -19,6 +19,29 @@ Note: The STEMcoding Object Tracker works best in chrome and edge!
 
 It can work in other browsers (safari, firefox, etc.) but it may run slower or not at all due to some memory problems.
 
+No download or browser plugin is required!
+
+## What the STEMcoding Object Tracker needs
+
+Here is what the STEMcoding Object Tracker needs to work:
+
+* You specify the color of an object that you wish to track
+* You specify the color of the background that the object is traveling in front of
+* Your video should include a solid colored background like a wall, or black curtains, or a green screen, etc. (but not brick, for example, which is a pattern of red and gray)
+* The object in your video should be a different solid color (not multi-colored or patterned like a soccer ball)
+
+## How it works
+
+Here is what the STEMcoding Object Tracker does with that information:
+
+* The STEMcoding Object Tracker will then scan through each frame of your video and it will look at the color of each pixel
+* If the color of the pixel is more similar to the background it will label that pixel as the background and if the color of the pixel is more similar to that of the object it will label that pixel as being part of the object
+* After it labels all the pixels, the object tracker will take all the pixels that are labeled as the object and figure out the center of the object
+* The object tracker will do this every frame so that it can track the position of the object as it moves
+* The object tracker then saves this information in a CSV file that is automatically downloaded to your computer
+
+This method of finding the object is similar to how other object tracking programs work but it is a little bit simpler, as discussed in [this paper](https://doi.org/10.1119/5.0103489) which is also available [here](https://arxiv.org/abs/2206.07909)
+
 ## Links to Activity
 
 ### Part 1: Track the Object

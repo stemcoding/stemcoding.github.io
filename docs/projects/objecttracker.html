@@ -143,7 +143,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#links-to-activity" id="toc-links-to-activity" class="nav-link active" data-scroll-target="#links-to-activity">Links to Activity</a>
+  <li><a href="#what-the-stemcoding-object-tracker-needs" id="toc-what-the-stemcoding-object-tracker-needs" class="nav-link active" data-scroll-target="#what-the-stemcoding-object-tracker-needs">What the STEMcoding Object Tracker needs</a></li>
+  <li><a href="#how-it-works" id="toc-how-it-works" class="nav-link" data-scroll-target="#how-it-works">How it works</a></li>
+  <li><a href="#links-to-activity" id="toc-links-to-activity" class="nav-link" data-scroll-target="#links-to-activity">Links to Activity</a>
   <ul class="collapse">
   <li><a href="#part-1-track-the-object" id="toc-part-1-track-the-object" class="nav-link" data-scroll-target="#part-1-track-the-object">Part 1: Track the Object</a></li>
   <li><a href="#part-2-analyze-height-vs.-time" id="toc-part-2-analyze-height-vs.-time" class="nav-link" data-scroll-target="#part-2-analyze-height-vs.-time">Part 2: Analyze Height vs.&nbsp;Time</a></li>
@@ -188,6 +190,29 @@ ul.task-list li input[type="checkbox"] {
 <p>Now you can record your own direct measurement videos and analyze them with p5.js.</p>
 <p>Note: The STEMcoding Object Tracker works best in chrome and edge!</p>
 <p>It can work in other browsers (safari, firefox, etc.) but it may run slower or not at all due to some memory problems.</p>
+<p>No download or browser plugin is required!</p>
+<section id="what-the-stemcoding-object-tracker-needs" class="level2">
+<h2 class="anchored" data-anchor-id="what-the-stemcoding-object-tracker-needs">What the STEMcoding Object Tracker needs</h2>
+<p>Here is what the STEMcoding Object Tracker needs to work:</p>
+<ul>
+<li>You specify the color of an object that you wish to track</li>
+<li>You specify the color of the background that the object is traveling in front of</li>
+<li>Your video should include a solid colored background like a wall, or black curtains, or a green screen, etc. (but not brick, for example, which is a pattern of red and gray)</li>
+<li>The object in your video should be a different solid color (not multi-colored or patterned like a soccer ball)</li>
+</ul>
+</section>
+<section id="how-it-works" class="level2">
+<h2 class="anchored" data-anchor-id="how-it-works">How it works</h2>
+<p>Here is what the STEMcoding Object Tracker does with that information:</p>
+<ul>
+<li>The STEMcoding Object Tracker will then scan through each frame of your video and it will look at the color of each pixel</li>
+<li>If the color of the pixel is more similar to the background it will label that pixel as the background and if the color of the pixel is more similar to that of the object it will label that pixel as being part of the object</li>
+<li>After it labels all the pixels, the object tracker will take all the pixels that are labeled as the object and figure out the center of the object</li>
+<li>The object tracker will do this every frame so that it can track the position of the object as it moves</li>
+<li>The object tracker then saves this information in a CSV file that is automatically downloaded to your computer</li>
+</ul>
+<p>This method of finding the object is similar to how other object tracking programs work but it is a little bit simpler, as discussed in <a href="https://doi.org/10.1119/5.0103489">this paper</a> which is also available <a href="https://arxiv.org/abs/2206.07909">here</a></p>
+</section>
 <section id="links-to-activity" class="level2">
 <h2 class="anchored" data-anchor-id="links-to-activity">Links to Activity</h2>
 <section id="part-1-track-the-object" class="level3">
