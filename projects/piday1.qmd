@@ -21,4 +21,7 @@ Calculate the digits of pi with a random number generator and some code!
 
 ## Pi Day Part 1 Playlist
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=18UJXcDyV8YigxAv&amp;list=PLISRe8GegO8TbpZK2qvOi6y0kphRI-3xw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[Pi Day Part 1 Playlist](https://www.youtube.com/playlist?list=PLISRe8GegO8TbpZK2qvOi6y0kphRI-3xw)
+
+[![](../img/pi_day_video.jpg)](https://youtu.be/9MHsjqrCGqY?si=JiQGCbPJZHQ1R23f)
+
