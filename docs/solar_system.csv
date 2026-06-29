@@ -1,4 +1,4 @@
-Name,Distance (m),Model distances (m),Data from https://nssdc.gsfc.nasa.gov/planetary/factsheet/planet_table_ratio.html
+Name,Distance (m),Model distances (m),Data from https://nssdc.gsfc.nasa.gov/planetary/factsheet/index.html
 Sun,0,,
 Mercury,57894375961,,Scale (this should be a number larger than 1):
 Venus,108159260516,,1
