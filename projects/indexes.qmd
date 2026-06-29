@@ -1,5 +1,5 @@
 ---
-title: "Indexes as a way to explain risk"
+title: "Indexes as a way to explain health risk"
 image: ../img/aqi_indicator.png
 categories:
     - Public Health
