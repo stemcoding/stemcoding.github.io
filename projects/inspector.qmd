@@ -1,0 +1,47 @@
+---
+title: "Building Inspector"
+image: ../img/co2.png
+categories:
+    - Public Health
+    - Data Science
+    - Spreadsheets
+---
+
+![](../img/co2.png){width=400 fig-align="center"}
+
+Take some sensors and explore your building
+
+## Sensors
+
+We recommend two affordable sensors and one measurement you can make with a smartphone
+
+* We recommend the [Temtop home CO<sub>2</sub> air quality sensor](https://temtopus.com/collections/temtop-co2-monitor/products/temtop-c1-co2-monitor-indoor-air-quality-monitor-portable-co2-detector-co2-temperature-humidity-home-office-or-school) or similar
+* We recommend the [Temtop home PM2.5](https://temtopus.com/products/temtop-s1-indoor-air-quality-monitor-aqi-pm2-5-temperature-humidity-detector-for-home-office-or-school) or similar
+* You can measure Sound levels in Decibels using a smartphone or tablet with [Arduino Science Journal](https://www.arduino.cc/education/science-journal)
+
+Note: If you don't have a CO2 sensor and you just need data for your students to use here is a [Random CO<sub>2</sub> data generator with p5.js](https://editor.p5js.org/ChrisOrban/sketches/M0iRTK6_x) that will save the data from a random number generator to a CSV file if you press spacebar
+
+## Task #1. Create a spreadsheet and collect the data
+
+In a spreadsheet make a list of rooms in your building. We are interested in the CO2 levels in each room, the particulate levels measured by PM2.5 (or the Air Quality Index which is derived from the PM2.5), and the sound levels. Maybe we are trying to select a room for a special meeting, or we are just curious about which classrooms are quieter and have better ventilation.
+
+Before collecting data please read through this [Google Slide Deck](http://go.osu.edu/co2) about CO2 and why it is a useful thing to measure, even though CO2 is an inert gas that does not harm people (which is why we use it in carbonated bevarages for example).
+
+Collect data from the three sensors in each room and fill in the table in the spreadsheet with your results. Each room is a row and each sensor is a column.
+
+## Task #2. Spreadsheet skills
+
+In the bottom left of the spreadsheet there should be a little + button to create a new sheet within your spreadsheet. This is kind of like creating a new tab except that the tab is a spreadsheet. <b>Create three new tabs, one for each of the sensors.</b>
+
+Instead of making a list of rooms with measurements as different columns, take each new sheet and write down the rooms in a pattern that makes sense for your building. To fill in the data into this sheet DO NOT just enter the numbers again. Insead use a "cross-sheet reference" like in [this video](https://www.youtube.com/watch?v=F5Y9cuTb5Iw). Ultimately you will want to write things like <code>=Sheet1!A1</code> to get the values from the first sheet into the other sheets.
+
+## Task #3. Conditional formatting
+
+In principle you could click each cell and click to assign a color to it to indicate how safe or concerning each value is. But it would be better if the color could be assigned automatically. Good news: there is a spreadsheet function called "conditional formatting" that can do this.
+
+Use conditional formatting so that the values turn the same color as the indicators. For sound just make a guess about what would make sense.
+
+
+## Interesting article
+
+* Virus transmission is a concern for national and international conferences. In 2025, a conference set up a sophisticated system for monitoring CO<sub>2</sub> as discussed in an article at [this link](https://www.wired.com/story/this-hacker-conference-installed-a-literal-anti-virus-monitoring-system/). If the link is broken you can download [this pdf](co2_conference.pdf)
