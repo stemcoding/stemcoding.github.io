@@ -78,13 +78,19 @@ Here are the scientific measurements that are used to calculate the AQI
 
 In most cities the PM2.5 and PM10 are the most significant cause for concern, but if you live close to a factory it may be one of the other items there that are the biggest concern for air quality. Another reason for air quality to be poor is smoke from a fire.
 
-Part of why the AQI was created is that there is a lot of information here about the quality of the air that needs to be summarized. Without the AQI you would have to remember what the danger values for five different quantities. Or maybe there would be an indicator like the picture at the very top of this page for all five, and you might still be overwhelmed by that information.
+Part of why the AQI was created is that there is a lot of information here about the quality of the air that needs to be summarized. Without the AQI you would have to remember the danger range for five different quantities. Or maybe there would be an indicator like the picture at the very top of this page for all five, and you might still be overwhelmed by that information.
 
-The AQI solves this problem by deciding on a danger range for each of the scientific measurements, then the measured value for each item is compared to that range and a number assigned. Of all of the items on that list, whichever has the highest number is determined to be the AQI.
+The AQI solves this problem like this by deciding on a danger range for each of the scientific measurements, and calculating an AQI for each item on the list -- specifically you have AQI<sub>PM2.5</sub> ,  AQI<sub>PM10</sub>, AQI<sub>O3</sub>, AQI<sub>CO</sub>, AQI<sub>SO2</sub>, and AQI<sub>NO2</sub>.
+
+To calculate the overall AQI you take the max of all of these numbers:
+
+$$ {\rm AQI} = {\rm max}({\rm AQI}_{\rm PM2.5}, \,  {\rm AQI}_{\rm PM10}, \, {\rm AQI}_{\rm O_3}, \, {\rm AQI}_{\rm CO}, \, {\rm AQI}_{\rm SO_2}, \, {\rm AQI}_{\rm NO_2}) $$
+
+where the max() function used above only returns the largest quantity. There is actually a spreadsheet function called MAX that works like this which you can find in both [Sheets](https://support.google.com/docs/answer/3094013?hl=en) and [Excel](https://support.microsoft.com/en-us/excel/functions/max-function).
+
+If you think deeply about the equation above, you may realize that there are situations where you might have high levels of dust/exhaust AND high levels of Ozone but if for example AQI<sub>PM2.5</sub> is larger than AQI<sub>O3</sub> then the overall AQI comes only from AQI<sub>P2.5</sub> ONLY. Having high levels of dust AND Ozone has the same overall AQI as having high levels of dust and no Ozone at all.
 
 ## Life is full of choices
 
-The AQI is determined by the item of most concern. This is an interesting choice because you might have high levels of dust/exhaust AND high levels of Ozone but if the dust is judged to be of higher concern then the AQI number comes from the dust ONLY. Having high levels of dust AND Ozone has the same AQI as having high levels of dust and no Ozone at all.
-
-Do you agree with this choice? What other ways could they have designed the AQI for situations like this?
+What other ways could they have designed the AQI? Do you agree with how the overall AQI is the same even if there are two risks that are similarly important? How would you have designed the air quality index?
  
