@@ -129,14 +129,14 @@ p {
 }
 
 a {
-  color: var(--sc-red);
+  color: #0000ee;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s;
 }
 
 a:hover {
-  color: var(--sc-red-dark);
+  color: #0000b3;
   text-decoration: underline;
   text-underline-offset: 3px;
 }
