@@ -1,13 +1,13 @@
 ---
 title: "Building Inspector"
-image: ../img/co2.png
+image: ../img/temtopPM.jpg
 categories:
     - Public Health
     - Data Science
     - Spreadsheets
 ---
 
-![](../img/co2.png){width=400 fig-align="center"}
+![](../img/temtopPM.jpg){width=400 fig-align="center"}
 
 Take some sensors and explore your building
 
@@ -33,13 +33,27 @@ Collect data from the three sensors in each room and fill in the table in the sp
 
 In the bottom left of the spreadsheet there should be a little + button to create a new sheet within your spreadsheet. This is kind of like creating a new tab except that the tab is a spreadsheet. <b>Create three new tabs, one for each of the sensors.</b>
 
-Instead of making a list of rooms with measurements as different columns, take each new sheet and write down the rooms in a pattern that makes sense for your building. To fill in the data into this sheet DO NOT just enter the numbers again. Insead use a "cross-sheet reference" like in [this video](https://www.youtube.com/watch?v=F5Y9cuTb5Iw). Ultimately you will want to write things like <code>=Sheet1!A1</code> to get the values from the first sheet into the other sheets.
+Instead of making a list of rooms with measurements as different columns, take each new sheet and write down the rooms in a pattern that makes sense for your building. To fill in the data into this sheet DO NOT just enter the numbers again. Insead use a "cross-sheet reference" like in [this video](https://www.youtube.com/watch?v=F5Y9cuTb5Iw). Ultimately you will want to write things like <code>=Sheet1!A1</code> to get the values from the first sheet into the other sheets. To accomplish the same task, you can also click a cell in Sheet1 and presss Control + C and then go to the next sheet and click a cell and press Control + V.
+
+## Thresholds for the sensor results
+
+The CO2 and PM2.5 sensors both have a specific range for what is "good" (labeled as green), "fair" (labeled as yellow) and "poor" (labeled as red) air quality.
+
+The CO2 sensor labels 0 - 1000 ppm as good (green), 1001 - 1500 ppm as fair (yellow), and 1501 ppm and above as poor.
+
+The PM2.5 sensor labels 0 - 12 $\mu$g/m$^3$ as good (green), 12.1 - 55.4 $\mu$g/m$^3$ as fair (yellow) and greater than 55.5 $\mu$g/m$^3$ as poor (red).
+
+There is no universally adopted range what is considered good, fair and poor sound intensity, but most references would definitely label > 120 decibels as dangerously high for human hearing, and arguably the threshold should be lower than that (perhaps > 110 decibels would make more sense). It is up to you to decide!
 
 ## Task #3. Conditional formatting
 
-In principle you could click each cell and click to assign a color to it to indicate how safe or concerning each value is. But it would be better if the color could be assigned automatically. Good news: there is a spreadsheet function called "conditional formatting" that can do this.
+We want each cell with a measurement in it to light up with the color that corresponds to what the sensor would indicate (as discussed in the previous section).
 
-Use conditional formatting so that the values turn the same color as the indicators. For sound just make a guess about what would make sense.
+In principle you could click each cell and click to assign a color to it to indicate how safe or concerning each value is. But it would be better if the color could be assigned automatically. Good news: there is a spreadsheet function called "conditional formatting" that can do this in both [Excel](https://www.w3schools.com/excel/excel_conditional_formatting.php) and [Google Sheets](https://support.google.com/docs/answer/78413)
+
+Use conditional formatting so that the values turn the same color as the indicators.
+
+For sound just make your own judgement about what would make sense, as discussed in the previous section.
 
 
 ## Interesting article
