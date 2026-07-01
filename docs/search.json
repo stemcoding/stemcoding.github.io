@@ -2329,5 +2329,12 @@
     "title": "Building Inspector",
     "section": "Thresholds for the sensor results",
     "text": "Thresholds for the sensor results\nThe CO2 and PM2.5 sensors both have a specific range for what is “good” (labeled as green), “fair” (labeled as yellow) and “poor” (labeled as red) air quality.\nThe CO2 sensor labels 0 - 1000 ppm as good (green), 1001 - 1500 ppm as fair (yellow), and 1501 ppm and above as poor.\nThe PM2.5 sensor labels 0 - 12 \\(\\mu\\)g/m\\(^3\\) as good (green), 12.1 - 55.4 \\(\\mu\\)g/m\\(^3\\) as fair (yellow) and greater than 55.5 \\(\\mu\\)g/m\\(^3\\) as poor (red).\nThere is no universally adopted range what is considered good, fair and poor sound intensity, but most references would definitely label &gt; 120 decibels as dangerously high for human hearing, and arguably the threshold should be lower than that (perhaps &gt; 110 decibels would make more sense). It is up to you to decide!"
+  },
+  {
+    "objectID": "projects/inspector.html#example-data",
+    "href": "projects/inspector.html#example-data",
+    "title": "Building Inspector",
+    "section": "Example data",
+    "text": "Example data\nIf you do not have sensors, here is some example data:\nExample Dataset for Building Inspector"
   }
 ]

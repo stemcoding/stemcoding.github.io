@@ -55,6 +55,11 @@ Use conditional formatting so that the values turn the same color as the indicat
 
 For sound just make your own judgement about what would make sense, as discussed in the previous section.
 
+## Example data
+
+If you do not have sensors, here is some example data:
+
+[Example Dataset for Building Inspector](https://docs.google.com/spreadsheets/d/1XSuqpvVWyL5SQzoSFkdVa2EJNi_YlUQ4olJRDDQ7jk8/edit?usp=sharing)
 
 ## Interesting article
 
