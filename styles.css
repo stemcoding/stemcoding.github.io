@@ -900,27 +900,31 @@ main.content>*,
 /* ---------- Creative Commons License Badge ---------- */
 .cc-license-badge {
   position: fixed;
-  bottom: 1px;
-  left: 0px;
+  bottom: 2px;
+  left: 1px;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.8);
-  padding: 1px;
-  border-radius: 4px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  opacity: 0.85;
   transition: opacity 0.3s;
+  display: flex;
+}
+
+.cc-license-badge a {
+  display: flex;
 }
 
 .cc-license-badge p {
   margin: 0;
+  display: flex;
 }
 
 .cc-license-badge:hover {
-  background: rgba(255, 255, 255, 1);
+  opacity: 1;
 }
 
 .cc-license-badge img {
   display: block;
   height: 80px;
+  border-radius: 4px;
 }
 
 @media (max-width: 1500px) {
@@ -931,7 +935,8 @@ main.content>*,
 
 /* ---------- Mobile Category Filter Dropdown ---------- */
 .mobile-category-filter-container {
-  display: none; /* Hidden by default on computers and iPads */
+  display: none;
+  /* Hidden by default on computers and iPads */
 }
 
 @media (max-width: 767px) {
