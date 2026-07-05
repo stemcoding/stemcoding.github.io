@@ -180,6 +180,7 @@ window.Quarto = {
   <li><a href="#uv-index" id="toc-uv-index" class="nav-link" data-scroll-target="#uv-index">UV index</a></li>
   <li><a href="#air-quality-index-aqi" id="toc-air-quality-index-aqi" class="nav-link" data-scroll-target="#air-quality-index-aqi">Air Quality Index (AQI)</a></li>
   </ul></li>
+  <li><a href="#task-example-data" id="toc-task-example-data" class="nav-link" data-scroll-target="#task-example-data">Task: Example data</a></li>
   <li><a href="#life-is-full-of-choices" id="toc-life-is-full-of-choices" class="nav-link" data-scroll-target="#life-is-full-of-choices">Life is full of choices</a></li>
   </ul>
 </nav>
@@ -281,8 +282,16 @@ window.Quarto = {
 <p><span class="math display">\[ {\rm AQI} = {\rm MAX}({\rm AQI}_{\rm PM2.5}, \,  {\rm AQI}_{\rm PM10}, \, {\rm AQI}_{\rm O_3}, \, {\rm AQI}_{\rm CO}, \, {\rm AQI}_{\rm SO_2}, \, {\rm AQI}_{\rm NO_2}) \]</span></p>
 <p>where the MAX() function used above only returns the largest quantity. There is actually a spreadsheet function called MAX that works like this which you can find in both <a href="https://support.google.com/docs/answer/3094013?hl=en">Sheets</a> and <a href="https://support.microsoft.com/en-us/excel/functions/max-function">Excel</a>.</p>
 <p>For more information about how AQI is determined, consult <a href="technical-assistance-document-for-the-reporting-of-daily-air-quailty.pdf">this EPA document</a></p>
-<p>If you think deeply about the equation above, you may realize that there are situations where you might have high levels of dust/exhaust AND high levels of Ozone but if for example AQI<sub>PM2.5</sub> is larger than AQI<sub>O3</sub> then the overall AQI comes only from AQI<sub>P2.5</sub> ONLY. Having high levels of dust AND Ozone has the same overall AQI as having high levels of dust and no Ozone at all.</p>
 </section>
+</section>
+<section id="task-example-data" class="level2">
+<h2 class="anchored" data-anchor-id="task-example-data">Task: Example data</h2>
+Here is some data from a fictional town with poor air quality called Coughington, USA. There is a week of data and the AQI for each source of poor air quality is listed for each day.
+<center>
+<a href="coughingtonUSA.csv">Click here to download Air Quality data for Coughington, USA</a>
+</center>
+<p>Load this data into a spreadsheet and use the MAX function to fill in the column under “Overall AQI”.</p>
+<p>Which day of the week has the worst air quality according to the Overall AQI? Is there another day that you might argue has worse air quality, but it does not end up being the worst day according to the way that the Overall AQI is designed?</p>
 </section>
 <section id="life-is-full-of-choices" class="level2">
 <h2 class="anchored" data-anchor-id="life-is-full-of-choices">Life is full of choices</h2>

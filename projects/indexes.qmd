@@ -90,7 +90,16 @@ where the MAX() function used above only returns the largest quantity. There is 
 
 For more information about how AQI is determined, consult [this EPA document](technical-assistance-document-for-the-reporting-of-daily-air-quailty.pdf)
 
-If you think deeply about the equation above, you may realize that there are situations where you might have high levels of dust/exhaust AND high levels of Ozone but if for example AQI<sub>PM2.5</sub> is larger than AQI<sub>O3</sub> then the overall AQI comes only from AQI<sub>P2.5</sub> ONLY. Having high levels of dust AND Ozone has the same overall AQI as having high levels of dust and no Ozone at all.
+## Task: Example data 
+
+Here is some data from a fictional town with poor air quality called Coughington, USA. There is a week of data and the AQI for each source of poor air quality is listed for each day.
+<center>
+[Click here to download Air Quality data for Coughington, USA](coughingtonUSA.csv)
+</center>
+
+Load this data into a spreadsheet and use the MAX function to fill in the column under "Overall AQI".
+
+Which day of the week has the worst air quality according to the Overall AQI? Is there another day that you might argue has worse air quality, but it does not end up being the worst day according to the way that the Overall AQI is designed?
 
 ## Life is full of choices
 
