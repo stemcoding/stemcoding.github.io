@@ -59,6 +59,37 @@ Here are some questions to consider:
 * If yes, are the males larger or the females larger and by how much? 
 * Based on your result for the error on the mean, is it possible that the size difference can be explained by having so few individuals to measure?
 
+## Compare results with your classmates
+
+Once you have measured the mean and the error on the mean for both the male and females in the sample of 8 individuals, compare to your classmates. How similar or different are their results from yours? Does everyone agree on whether males or females are larger? How much larger are they finding?
+
+Here is another button where you can download data for a larger sample of Vermicious Knids (100 individual). 
+
+<div style="text-align: center; margin: 1.5rem 0;">
+  <button id="download-knids2-btn">Download Vermicious Knids Data (100 individuals)</button>
+</div>
+
+### Advice: Sort the data by column A
+
+It is possible to take a spreadsheet with 100 rows and to go one by one and separate all the males in the data and the females in the data for analysis, but it would take a long time. This is a situation that happens a lot with spreadsheets. There is data in particular rows that you are interested in, but these rows are not all together. For these situations the answer is to "sort" the data according to the value in one of the columns. In this case we want to sort by male or female, and that information is in Column A. So we want to sort by Column A.
+
+<p style="text-align: right;">
+<b>Spreadsheet skill: Sort</b><br>
+When you need to re-arrange a table of data in a spreadsheet according to the value<br> in a specific column, then look for the option to "sort" the data
+</p>
+
+Highlight the data by holding shift and clicking on the A of Column A and the B of Column B. 
+
+In Google sheets, once you have highlighted the data like you just did, look at the top for the dropdown that says "Data" and look for "Sort sheet" and an option should allow you to "Sort sheet by Column A". You can sort ascending or descending. Either will do.
+
+In Excel, once you have highlighted the data like you just did, look at the top for the dropdown that says "Data" and just click "Sort Ascending" or "Sort Descending". Either will do.
+
+Look closely to find the row where the female data ends and the male data begins. When you calculate the average for the female and the average for the male, as well as the error on the mean, the range of the female data and the male data will be important to keep track of.
+
+### Analyze the larger data set
+
+Now that you know how to sort the data into male and female, how does your analysis of this data compare to your earlier conclusions?
+
 ## Two new species: Snozzwanglers and Hornswagglers
 
 There are now three new species: Vermicious Knids, Snozzwanglers and Hornswagglers. Obviously these are all fictional names. You can click on the link below to open up a new window where you can download data about these species. The species are not related so the average size difference between male and female should be treated separately for each species.
@@ -75,12 +106,6 @@ Here are some questions to answer for all three species:
 * How much bigger or smaller are male or female individuals on average?
 * What is the minimum number of individuals that you would recommend be measured in order to feel like the conclusions about the average size were not being affected by having a small number of measurements.
 
-### Advice
-
-There are a couple of ways to accomplish these tasks. Generally the biggest challenge will be dealing with the larger datasets and separating the male rows from the female rows.
-
-One way (but not the only way) to separate the male rows from the female rows would be to highlight all the data and click "Sort" and then select a Sort on Column A because Column A will be where it says M or F.
-
 ## Other resources
 
 [Go to dataclassroom.com and search for Cicada data](https://about.dataclassroom.com/ready-to-teach/)
@@ -95,27 +120,63 @@ document.getElementById('download-knids-btn').addEventListener('click', () => {
     }
   }
 
-  let lines = [];
-  let allM = true;
-  let allF = true;
+  let lines = []; 
+  let mCount = 0;
+  let fCount = 0;
 
-  while (allM || allF) {
+  while (mCount < 3 || fCount < 3) {
     lines = [];
-    allM = true;
-    allF = true;
+    mCount = 0;
+    fCount = 0;
 
     for (let i = 0; i < 8; i++) {
       const gender = Math.random() < 0.5 ? 'M' : 'F';
       if (gender === 'M') {
-        allF = false;
+        mCount++;
       } else {
-        allM = false;
+        fCount++;
       }
 
       const size = generateVermiciousKnidSize(gender);
       const formattedSize = size.toFixed(0);
       lines.push(`${gender},${formattedSize}`);
     }
+  }
+
+  const outputText = lines.join('\n');
+  const blob = new Blob([outputText], { type: 'text/csv;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+
+  const timestamp = new Date().toISOString().slice(11, 19).replace(/:/g, '-');
+  a.href = url;
+  a.download = `vermicious_knids_dataset_${timestamp}.csv`;
+
+  document.body.appendChild(a);
+  a.click();
+
+  setTimeout(() => {
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  }, 0);
+});
+
+document.getElementById('download-knids2-btn').addEventListener('click', () => {
+  function generateVermiciousKnidSize(gender) {
+    if (gender === 'M') {
+      return (Math.random() - 0.5) * 30 + 100;
+    } else { // Female
+      return (Math.random() - 0.5) * 30 + 110;
+    }
+  }
+
+  let lines = [];
+
+  for (let i = 0; i < 100; i++) {
+    const gender = Math.random() < 0.5 ? 'M' : 'F';
+    const size = generateVermiciousKnidSize(gender);
+    const formattedSize = size.toFixed(0);
+    lines.push(`${gender},${formattedSize}`);
   }
 
   const outputText = lines.join('\n');

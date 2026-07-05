@@ -151,10 +151,12 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#task-calculate-the-average-size-and-the-error-on-the-mean" id="toc-task-calculate-the-average-size-and-the-error-on-the-mean" class="nav-link" data-scroll-target="#task-calculate-the-average-size-and-the-error-on-the-mean">Task: Calculate the average size and the error on the mean</a></li>
   </ul></li>
-  <li><a href="#two-new-species-snozzwanglers-and-hornswagglers" id="toc-two-new-species-snozzwanglers-and-hornswagglers" class="nav-link" data-scroll-target="#two-new-species-snozzwanglers-and-hornswagglers">Two new species: Snozzwanglers and Hornswagglers</a>
+  <li><a href="#compare-results-with-your-classmates" id="toc-compare-results-with-your-classmates" class="nav-link" data-scroll-target="#compare-results-with-your-classmates">Compare results with your classmates</a>
   <ul class="collapse">
-  <li><a href="#advice" id="toc-advice" class="nav-link" data-scroll-target="#advice">Advice</a></li>
+  <li><a href="#advice-sort-the-data-by-column-a" id="toc-advice-sort-the-data-by-column-a" class="nav-link" data-scroll-target="#advice-sort-the-data-by-column-a">Advice: Sort the data by column A</a></li>
+  <li><a href="#analyze-the-larger-data-set" id="toc-analyze-the-larger-data-set" class="nav-link" data-scroll-target="#analyze-the-larger-data-set">Analyze the larger data set</a></li>
   </ul></li>
+  <li><a href="#two-new-species-snozzwanglers-and-hornswagglers" id="toc-two-new-species-snozzwanglers-and-hornswagglers" class="nav-link" data-scroll-target="#two-new-species-snozzwanglers-and-hornswagglers">Two new species: Snozzwanglers and Hornswagglers</a></li>
   <li><a href="#other-resources" id="toc-other-resources" class="nav-link" data-scroll-target="#other-resources">Other resources</a></li>
   </ul></li>
   </ul>
@@ -235,6 +237,29 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </section>
 </section>
+<section id="compare-results-with-your-classmates" class="level2">
+<h2 class="anchored" data-anchor-id="compare-results-with-your-classmates">Compare results with your classmates</h2>
+<p>Once you have measured the mean and the error on the mean for both the male and females in the sample of 8 individuals, compare to your classmates. How similar or different are their results from yours? Does everyone agree on whether males or females are larger? How much larger are they finding?</p>
+<p>Here is another button where you can download data for a larger sample of Vermicious Knids (100 individual).</p>
+<div style="text-align: center; margin: 1.5rem 0;">
+<p><button id="download-knids2-btn">Download Vermicious Knids Data (100 individuals)</button></p>
+</div>
+<section id="advice-sort-the-data-by-column-a" class="level3">
+<h3 class="anchored" data-anchor-id="advice-sort-the-data-by-column-a">Advice: Sort the data by column A</h3>
+<p>It is possible to take a spreadsheet with 100 rows and to go one by one and separate all the males in the data and the females in the data for analysis, but it would take a long time. This is a situation that happens a lot with spreadsheets. There is data in particular rows that you are interested in, but these rows are not all together. For these situations the answer is to “sort” the data according to the value in one of the columns. In this case we want to sort by male or female, and that information is in Column A. So we want to sort by Column A.</p>
+<p style="text-align: right;">
+<b>Spreadsheet skill: Sort</b><br> When you need to re-arrange a table of data in a spreadsheet according to the value<br> in a specific column, then look for the option to “sort” the data
+</p>
+<p>Highlight the data by holding shift and clicking on the A of Column A and the B of Column B.</p>
+<p>In Google sheets, once you have highlighted the data like you just did, look at the top for the dropdown that says “Data” and look for “Sort sheet” and an option should allow you to “Sort sheet by Column A”. You can sort ascending or descending. Either will do.</p>
+<p>In Excel, once you have highlighted the data like you just did, look at the top for the dropdown that says “Data” and just click “Sort Ascending” or “Sort Descending”. Either will do.</p>
+<p>Look closely to find the row where the female data ends and the male data begins. When you calculate the average for the female and the average for the male, as well as the error on the mean, the range of the female data and the male data will be important to keep track of.</p>
+</section>
+<section id="analyze-the-larger-data-set" class="level3">
+<h3 class="anchored" data-anchor-id="analyze-the-larger-data-set">Analyze the larger data set</h3>
+<p>Now that you know how to sort the data into male and female, how does your analysis of this data compare to your earlier conclusions?</p>
+</section>
+</section>
 <section id="two-new-species-snozzwanglers-and-hornswagglers" class="level2">
 <h2 class="anchored" data-anchor-id="two-new-species-snozzwanglers-and-hornswagglers">Two new species: Snozzwanglers and Hornswagglers</h2>
 <p>There are now three new species: Vermicious Knids, Snozzwanglers and Hornswagglers. Obviously these are all fictional names. You can click on the link below to open up a new window where you can download data about these species. The species are not related so the average size difference between male and female should be treated separately for each species.</p>
@@ -248,11 +273,6 @@ ul.task-list li input[type="checkbox"] {
 <li>How much bigger or smaller are male or female individuals on average?</li>
 <li>What is the minimum number of individuals that you would recommend be measured in order to feel like the conclusions about the average size were not being affected by having a small number of measurements.</li>
 </ul>
-<section id="advice" class="level3">
-<h3 class="anchored" data-anchor-id="advice">Advice</h3>
-<p>There are a couple of ways to accomplish these tasks. Generally the biggest challenge will be dealing with the larger datasets and separating the male rows from the female rows.</p>
-<p>One way (but not the only way) to separate the male rows from the female rows would be to highlight all the data and click “Sort” and then select a Sort on Column A because Column A will be where it says M or F.</p>
-</section>
 </section>
 <section id="other-resources" class="level2">
 <h2 class="anchored" data-anchor-id="other-resources">Other resources</h2>
@@ -267,27 +287,63 @@ document.getElementById('download-knids-btn').addEventListener('click', () => {
     }
   }
 
-  let lines = [];
-  let allM = true;
-  let allF = true;
+  let lines = []; 
+  let mCount = 0;
+  let fCount = 0;
 
-  while (allM || allF) {
+  while (mCount < 3 || fCount < 3) {
     lines = [];
-    allM = true;
-    allF = true;
+    mCount = 0;
+    fCount = 0;
 
     for (let i = 0; i < 8; i++) {
       const gender = Math.random() < 0.5 ? 'M' : 'F';
       if (gender === 'M') {
-        allF = false;
+        mCount++;
       } else {
-        allM = false;
+        fCount++;
       }
 
       const size = generateVermiciousKnidSize(gender);
       const formattedSize = size.toFixed(0);
       lines.push(`${gender},${formattedSize}`);
     }
+  }
+
+  const outputText = lines.join('\n');
+  const blob = new Blob([outputText], { type: 'text/csv;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+
+  const timestamp = new Date().toISOString().slice(11, 19).replace(/:/g, '-');
+  a.href = url;
+  a.download = `vermicious_knids_dataset_${timestamp}.csv`;
+
+  document.body.appendChild(a);
+  a.click();
+
+  setTimeout(() => {
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  }, 0);
+});
+
+document.getElementById('download-knids2-btn').addEventListener('click', () => {
+  function generateVermiciousKnidSize(gender) {
+    if (gender === 'M') {
+      return (Math.random() - 0.5) * 30 + 100;
+    } else { // Female
+      return (Math.random() - 0.5) * 30 + 110;
+    }
+  }
+
+  let lines = [];
+
+  for (let i = 0; i < 100; i++) {
+    const gender = Math.random() < 0.5 ? 'M' : 'F';
+    const size = generateVermiciousKnidSize(gender);
+    const formattedSize = size.toFixed(0);
+    lines.push(`${gender},${formattedSize}`);
   }
 
   const outputText = lines.join('\n');
