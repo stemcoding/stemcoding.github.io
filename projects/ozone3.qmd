@@ -49,7 +49,8 @@ If you open the Chart Editor and then click "Customize" and then click "Series".
 
 In the web version of Excel it seems not to be possible to have a different y-axis on the right side, however if you have Copilot enabled for web Excel you can ask it to create a "Vertical Secondary Axis" for a particular column of data.
 
-If you have the desktop version of Excel it should be possible to do this without Copilot
+If you have the desktop version of Excel then create the plot like normal but then click the plot and change the type to "combo" and select one of the data series to be the "Secondary Axis" as described in [this tutorial from microsoft](https://support.microsoft.com/en-us/office/excelexp/add-or-remove-a-secondary-axis-in-a-chart-in-excel)
+
 
 ## Step 3. Consider the results
 
