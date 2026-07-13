@@ -17,6 +17,3 @@ If you completed [the Pi day activity](piday1.qmd) and were surprised at how lon
 * [Instructions for Pi Day Part 2](https://www.asc.ohio-state.edu/orban.14/math_coding/pi_day2/index.html)
 * [Pi Day Part 2 Code Editor](https://editor.p5js.org/ChrisOrban/sketches/D0lYGw_s)
 
-## Pi Day Part 2 Playlist
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=18UJXcDyV8YigxAv&amp;list=PLISRe8GegO8TbpZK2qvOi6y0kphRI-3xw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
