@@ -4,6 +4,7 @@ image: ../img/earth.jpg
 categories:
   - Advanced HS
   - Trigonometry
+  - Atmospheric Science
   - Environmental Science
   - Data Science
   - Spreadsheets
