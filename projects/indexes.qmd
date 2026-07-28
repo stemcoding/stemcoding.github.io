@@ -1,12 +1,12 @@
 ---
 title: "Indexes as a way to explain health risk"
-image: ../img/aqi_indicator.png
+image: ../img/hazardousAQI.png
 categories:
     - Public Health
     - Data Science
 ---
 
-![](../img/aqi_indicator.png){height=300 fig-align="center"}
+![](../img/hazardousAQI.png){height=300 fig-align="center"}
 
 How can we help humans make decisions based on data and how to design systems that communicate dangers?
 
