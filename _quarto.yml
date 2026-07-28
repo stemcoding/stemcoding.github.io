@@ -33,8 +33,6 @@ website:
         text: Feed
       - calendar.qmd
       - datascience.qmd
-      - href: soccer.html
-        text: Soccer 2026
       - publications.qmd
     tools:
       - icon: youtube

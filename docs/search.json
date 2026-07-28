@@ -735,6 +735,13 @@
     "text": "Two examples: AQI and UV index\nLet’s talk about how the AQI and the UV index indicate danger, starting with the UV index.\n\nUV index\nCalculating the UV index involves a series of steps but ultimately it boils down to this:\n\\[ {\\rm UV \\, index} = ({\\rm Intensity \\, of \\, UV \\, light \\, from \\, the \\, sun}) \\cdot ({\\rm constant}) \\]\nThe people that created the UV index could have chosen that constant to be whatever they wanted. And they decided to use a constant so that the UV index ranges from 0 to 11 where 11 corresponds to the typical highest intensity UV light that occurs on the surface of the earth during the course of a year.\n\n\nAir Quality Index (AQI)\nThe AQI is different from the UV index in that there are multiple scientific measurements that go into the AQI.\nHere are the scientific measurements that are used to calculate the AQI\n\nTwo measurements of how much dust or exhaust there is in the air called PM2.5 and PM10\nGround level Ozone\nCarbon monoxide\nNitrogen dioxide\nSulfur dioxide\n\nIn most cities the PM2.5 and PM10 are the most significant cause for concern, but if you live close to a factory it may be one of the other items there that are the biggest concern for air quality. Another reason for air quality to be poor is smoke from a fire.\nPart of why the AQI was created is that there is a lot of information here about the quality of the air that needs to be summarized. Without the AQI you would have to remember the danger range for five different quantities. Or maybe there would be an indicator like the picture at the very top of this page for all five, and you might still be overwhelmed by that information.\nThe AQI solves this problem like this by deciding on a danger range for each of the scientific measurements, and calculating an AQI for each item on the list – specifically you have AQIPM2.5 , AQIPM10, AQIO3, AQICO, AQISO2, and AQINO2.\nTo calculate the overall AQI you take the max of all of these numbers:\n\\[ {\\rm AQI} = {\\rm MAX}({\\rm AQI}_{\\rm PM2.5}, \\,  {\\rm AQI}_{\\rm PM10}, \\, {\\rm AQI}_{\\rm O_3}, \\, {\\rm AQI}_{\\rm CO}, \\, {\\rm AQI}_{\\rm SO_2}, \\, {\\rm AQI}_{\\rm NO_2}) \\]\nwhere the MAX() function used above only returns the largest quantity. There is actually a spreadsheet function called MAX that works like this which you can find in both Sheets and Excel.\nFor more information about how AQI is determined, consult this EPA document"
   },
   {
+    "objectID": "projects/indexes.html#task-example-data",
+    "href": "projects/indexes.html#task-example-data",
+    "title": "Indexes as a way to explain health risk",
+    "section": "Task: Example data",
+    "text": "Task: Example data\nHere is some data from a fictional town with poor air quality called Coughington, USA. There is a week of data and the AQI for each source of poor air quality is listed for each day.\n\nClick here to download Air Quality data for Coughington, USA\n\nLoad this data into a spreadsheet and use the MAX function to fill in the column under “Overall AQI”.\nWhich day of the week has the worst air quality according to the Overall AQI? Is there another day that you might argue has worse air quality, but it does not end up being the worst day according to the way that the Overall AQI is designed?"
+  },
+  {
     "objectID": "projects/indexes.html#life-is-full-of-choices",
     "href": "projects/indexes.html#life-is-full-of-choices",
     "title": "Indexes as a way to explain health risk",
@@ -1442,13 +1449,6 @@
     "text": "Links to Activity\n\nInstructions for Pi Day Part 2\nPi Day Part 2 Code Editor"
   },
   {
-    "objectID": "projects/piday2.html#pi-day-part-2-playlist",
-    "href": "projects/piday2.html#pi-day-part-2-playlist",
-    "title": "Pi Day Part 2",
-    "section": "Pi Day Part 2 Playlist",
-    "text": "Pi Day Part 2 Playlist"
-  },
-  {
     "objectID": "projects/ozone3.html",
     "href": "projects/ozone3.html",
     "title": "Ozone layer recovery (Part 3)",
@@ -1519,6 +1519,13 @@
     "text": "New species: Vermicious Knids\nLet’s imagine that in the forest someone has stumbled across 8 individuals of a new species called Vermicious Knids (which is a totally fictional name). If you click the button below, it will save a CSV file that you can load into a spreadsheet with information about these 8 individuals. The data has two columns: One for Male or Female, and the other for size. You can assume that the size is in centimeters.\n\nDownload Vermicious Knids Data\n\nNote that your data from clicking the button above will be different from other people’s data and that’s ok.\n\nTask: Calculate the average size and the error on the mean\nThere are only 8 rows in the data set. Separate the data into male and female (for example using different tabs in the spreadsheet or different parts of he spreadsheet). Then go ahead and calculate the mean, and then calculate the error on the mean by following the directions in the previous sections.\nHere are some questions to consider:\n\nIs there a size difference between male and female with Vermicious Knids?\nIf yes, are the males larger or the females larger and by how much?\nBased on your result for the error on the mean, is it possible that the size difference can be explained by having so few individuals to measure?"
   },
   {
+    "objectID": "projects/errorbar3.html#compare-results-with-your-classmates",
+    "href": "projects/errorbar3.html#compare-results-with-your-classmates",
+    "title": "Error bars and animal sizes",
+    "section": "Compare results with your classmates",
+    "text": "Compare results with your classmates\nOnce you have measured the mean and the error on the mean for both the male and females in the sample of 8 individuals, compare to your classmates. How similar or different are their results from yours? Does everyone agree on whether males or females are larger? How much larger are they finding?\nHere is another button where you can download data for a larger sample of Vermicious Knids (100 individual).\n\nDownload Vermicious Knids Data (100 individuals)\n\n\nAdvice: Sort the data by column A\nIt is possible to take a spreadsheet with 100 rows and to go one by one and separate all the males in the data and the females in the data for analysis, but it would take a long time. This is a situation that happens a lot with spreadsheets. There is data in particular rows that you are interested in, but these rows are not all together. For these situations the answer is to “sort” the data according to the value in one of the columns. In this case we want to sort by male or female, and that information is in Column A. So we want to sort by Column A.\n\nSpreadsheet skill: Sort When you need to re-arrange a table of data in a spreadsheet according to the value in a specific column, then look for the option to “sort” the data\n\nHighlight the data by holding shift and clicking on the A of Column A and the B of Column B.\nIn Google sheets, once you have highlighted the data like you just did, look at the top for the dropdown that says “Data” and look for “Sort sheet” and an option should allow you to “Sort sheet by Column A”. You can sort ascending or descending. Either will do.\nIn Excel, once you have highlighted the data like you just did, look at the top for the dropdown that says “Data” and just click “Sort Ascending” or “Sort Descending”. Either will do.\nLook closely to find the row where the female data ends and the male data begins. When you calculate the average for the female and the average for the male, as well as the error on the mean, the range of the female data and the male data will be important to keep track of.\n\n\nAnalyze the larger data set\nNow that you know how to sort the data into male and female, how does your analysis of this data compare to your earlier conclusions?"
+  },
+  {
     "objectID": "projects/errorbar3.html#two-new-species-snozzwanglers-and-hornswagglers",
     "href": "projects/errorbar3.html#two-new-species-snozzwanglers-and-hornswagglers",
     "title": "Error bars and animal sizes",
@@ -1582,6 +1589,13 @@
     "text": "Sensors\nWe recommend two affordable sensors and one measurement you can make with a smartphone\n\nWe recommend the Temtop home CO2 air quality sensor or similar\nWe recommend the Temtop home PM2.5 or similar\nYou can measure Sound levels in Decibels using a smartphone or tablet with Arduino Science Journal\n\nNote: If you don’t have a CO2 sensor and you just need data for your students to use here is a Random CO2 data generator with p5.js that will save the data from a random number generator to a CSV file if you press spacebar"
   },
   {
+    "objectID": "projects/inspector.html#why-these-sensors",
+    "href": "projects/inspector.html#why-these-sensors",
+    "title": "Building Inspector",
+    "section": "Why these sensors?",
+    "text": "Why these sensors?\n\nCarbon dioxide (CO2) is a harmless gas that we exhale. It is useful to measure CO2 because it tells us about how many people have been breathing in a room and how good the ventilation is. This indicates the risk for transmission of airborne viruses like COVID-19 and the common cold. Read more in the CO2 information Google Slide Deck\nPM2.5 is a type of particle pollution. PM2.5 means “particulate matter” with diameters less than 2.5 micrometers. Because these particles are so tiny, they can be easily inhaled and may even enter the bloodstream, which can have an impact on health over time. In classrooms, it may come from outdoor pollution like car exhaust as well as from heating systems, chalk, and drywall and cement wear. You can read more about PM2.5 from the Environmental Protection Agency\nNoise can be considered a form of pollution. In the classroom, noise may originate from student chatter, nearby traffic, or loud HVAC systems. Over time, high noise pollution can contribute to stress related illnesses, high blood pressure, hearing loss, and lost productivity. High noise levels can interfere with learning as students have trouble hearing the teacher, concentrating, and remembering as discussed in this report. If an area has high noise levels, it may be possible to reduce the noise levels with acoustic tiles on the walls or ceiling or by adding carpet."
+  },
+  {
     "objectID": "projects/inspector.html#task-1.-create-a-spreadsheet-and-collect-the-data",
     "href": "projects/inspector.html#task-1.-create-a-spreadsheet-and-collect-the-data",
     "title": "Building Inspector",
@@ -1596,11 +1610,25 @@
     "text": "Task #2. Spreadsheet skills\nIn the bottom left of the spreadsheet there should be a little + button to create a new sheet within your spreadsheet. This is kind of like creating a new tab except that the tab is a spreadsheet. Create three new tabs, one for each of the sensors.\nInstead of making a list of rooms with measurements as different columns, take each new sheet and write down the rooms in a pattern that makes sense for your building. To fill in the data into this sheet DO NOT just enter the numbers again. Insead use a “cross-sheet reference” like in this video. Ultimately you will want to write things like =Sheet1!A1 to get the values from the first sheet into the other sheets. To accomplish the same task, you can also click a cell in Sheet1 and presss Control + C and then go to the next sheet and click a cell and press Control + V."
   },
   {
+    "objectID": "projects/inspector.html#thresholds-for-the-sensor-results",
+    "href": "projects/inspector.html#thresholds-for-the-sensor-results",
+    "title": "Building Inspector",
+    "section": "Thresholds for the sensor results",
+    "text": "Thresholds for the sensor results\nThe CO2 and PM2.5 sensors both have a specific range for what is “good” (labeled as green), “fair” (labeled as yellow) and “poor” (labeled as red) air quality.\nThe CO2 sensor labels 0 - 1000 ppm as good (green), 1001 - 1500 ppm as fair (yellow), and 1501 ppm and above as poor.\nThe PM2.5 sensor labels 0 - 12 \\(\\mu\\)g/m\\(^3\\) as good (green), 12.1 - 55.4 \\(\\mu\\)g/m\\(^3\\) as fair (yellow) and greater than 55.5 \\(\\mu\\)g/m\\(^3\\) as poor (red).\nThere is no universally adopted range what is considered good, fair and poor sound intensity, but most references would definitely label &gt; 120 decibels as dangerously high for human hearing, and arguably the threshold should be lower than that (perhaps &gt; 110 decibels would make more sense). It is up to you to decide!"
+  },
+  {
     "objectID": "projects/inspector.html#task-3.-conditional-formatting",
     "href": "projects/inspector.html#task-3.-conditional-formatting",
     "title": "Building Inspector",
     "section": "Task #3. Conditional formatting",
     "text": "Task #3. Conditional formatting\nWe want each cell with a measurement in it to light up with the color that corresponds to what the sensor would indicate (as discussed in the previous section).\nIn principle you could click each cell and click to assign a color to it to indicate how safe or concerning each value is. But it would be better if the color could be assigned automatically. Good news: there is a spreadsheet function called “conditional formatting” that can do this in both Excel and Google Sheets\nUse conditional formatting so that the values turn the same color as the indicators.\nFor sound just make your own judgement about what would make sense, as discussed in the previous section."
+  },
+  {
+    "objectID": "projects/inspector.html#example-data",
+    "href": "projects/inspector.html#example-data",
+    "title": "Building Inspector",
+    "section": "Example data",
+    "text": "Example data\nIf you do not have sensors, here is some example data:\nExample Dataset for Building Inspector"
   },
   {
     "objectID": "projects/inspector.html#interesting-article",
@@ -2315,47 +2343,5 @@
     "title": "WeTeach_CS 2025 Summer Teacher Training Schedule",
     "section": "Week 2, Wednesday",
     "text": "Week 2, Wednesday\n\nAny extra questions about activities covered, or activities we did not have time to go over (1 hour)\nZoom breakouts / check ins / individual plans to do more data science and CS in their classes + any extra questions about any activities covered (2.5 hours)"
-  },
-  {
-    "objectID": "projects/inspector.html#ranges-for-the-sensor-results",
-    "href": "projects/inspector.html#ranges-for-the-sensor-results",
-    "title": "Building Inspector",
-    "section": "Ranges for the sensor results",
-    "text": "Ranges for the sensor results\nThe CO2 and PM2.5 sensors both have a specific range for what is “good” (labeled as green), “fair” (labeled as yellow) and “poor” (labeled as red) air quality.\nThe CO2 sensor labels 0 - 1000 ppm as good (green), 1001 - 1500 ppm as fair (yellow), and 1501 ppm and above as poor.\nThe PM2.5 sensor labels 0 - 12 \\(\\mu\\)g/m\\(^3\\) as good (green), 12.1 - 55.4 \\(\\mu\\)g/m\\(^3\\) as fair (yellow) and greater than 55.5 \\(\\mu\\)g/m\\(^3\\) as poor (red).\nThere is no universally adopted range what is considered good, fair and poor sound intensity, but most references would definitely label &gt; 120 decibels as dangerously high for human hearing, and arguably the threshold should be lower than that (perhaps &gt; 110 decibels would make more sense). It is up to you to decide!"
-  },
-  {
-    "objectID": "projects/inspector.html#thresholds-for-the-sensor-results",
-    "href": "projects/inspector.html#thresholds-for-the-sensor-results",
-    "title": "Building Inspector",
-    "section": "Thresholds for the sensor results",
-    "text": "Thresholds for the sensor results\nThe CO2 and PM2.5 sensors both have a specific range for what is “good” (labeled as green), “fair” (labeled as yellow) and “poor” (labeled as red) air quality.\nThe CO2 sensor labels 0 - 1000 ppm as good (green), 1001 - 1500 ppm as fair (yellow), and 1501 ppm and above as poor.\nThe PM2.5 sensor labels 0 - 12 \\(\\mu\\)g/m\\(^3\\) as good (green), 12.1 - 55.4 \\(\\mu\\)g/m\\(^3\\) as fair (yellow) and greater than 55.5 \\(\\mu\\)g/m\\(^3\\) as poor (red).\nThere is no universally adopted range what is considered good, fair and poor sound intensity, but most references would definitely label &gt; 120 decibels as dangerously high for human hearing, and arguably the threshold should be lower than that (perhaps &gt; 110 decibels would make more sense). It is up to you to decide!"
-  },
-  {
-    "objectID": "projects/inspector.html#example-data",
-    "href": "projects/inspector.html#example-data",
-    "title": "Building Inspector",
-    "section": "Example data",
-    "text": "Example data\nIf you do not have sensors, here is some example data:\nExample Dataset for Building Inspector"
-  },
-  {
-    "objectID": "projects/inspector.html#why-these-sensors",
-    "href": "projects/inspector.html#why-these-sensors",
-    "title": "Building Inspector",
-    "section": "Why these sensors?",
-    "text": "Why these sensors?\n\nCarbon dioxide (CO2) is a harmless gas that we exhale. It is useful to measure CO2 because it tells us about how many people have been breathing in a room and how good the ventilation is. This indicates the risk for transmission of airborne viruses like COVID-19 and the common cold. Read more in the CO2 information Google Slide Deck\nPM2.5 is a type of particle pollution. PM2.5 means “particulate matter” with diameters less than 2.5 micrometers. Because these particles are so tiny, they can be easily inhaled and may even enter the bloodstream, which can have an impact on health over time. In classrooms, it may come from outdoor pollution like car exhaust as well as from heating systems, chalk, and drywall and cement wear. You can read more about PM2.5 from the Environmental Protection Agency\nNoise can be considered a form of pollution. In the classroom, noise may originate from student chatter, nearby traffic, or loud HVAC systems. Over time, high noise pollution can contribute to stress related illnesses, high blood pressure, hearing loss, and lost productivity. High noise levels can interfere with learning as students have trouble hearing the teacher, concentrating, and remembering as discussed in this report. If an area has high noise levels, it may be possible to reduce the noise levels with acoustic tiles on the walls or ceiling or by adding carpet."
-  },
-  {
-    "objectID": "projects/errorbar3.html#compare-results-with-your-classmates",
-    "href": "projects/errorbar3.html#compare-results-with-your-classmates",
-    "title": "Error bars and animal sizes",
-    "section": "Compare results with your classmates",
-    "text": "Compare results with your classmates\nOnce you have measured the mean and the error on the mean for both the male and females in the sample of 8 individuals, compare to your classmates. How similar or different are their results from yours? Does everyone agree on whether males or females are larger? How much larger are they finding?\nHere is another button where you can download data for a larger sample of Vermicious Knids (100 individual).\n\nDownload Vermicious Knids Data (100 individuals)\n\n\nAdvice: Sort the data by column A\nIt is possible to take a spreadsheet with 100 rows and to go one by one and separate all the males in the data and the females in the data for analysis, but it would take a long time. This is a situation that happens a lot with spreadsheets. There is data in particular rows that you are interested in, but these rows are not all together. For these situations the answer is to “sort” the data according to the value in one of the columns. In this case we want to sort by male or female, and that information is in Column A. So we want to sort by Column A.\n\nSpreadsheet skill: Sort When you need to re-arrange a table of data in a spreadsheet according to the value in a specific column, then look for the option to “sort” the data\n\nHighlight the data by holding shift and clicking on the A of Column A and the B of Column B.\nIn Google sheets, once you have highlighted the data like you just did, look at the top for the dropdown that says “Data” and look for “Sort sheet” and an option should allow you to “Sort sheet by Column A”. You can sort ascending or descending. Either will do.\nIn Excel, once you have highlighted the data like you just did, look at the top for the dropdown that says “Data” and just click “Sort Ascending” or “Sort Descending”. Either will do.\nLook closely to find the row where the female data ends and the male data begins. When you calculate the average for the female and the average for the male, as well as the error on the mean, the range of the female data and the male data will be important to keep track of.\n\n\nAnalyze the larger data set\nNow that you know how to sort the data into male and female, how does your analysis of this data compare to your earlier conclusions?"
-  },
-  {
-    "objectID": "projects/indexes.html#task-example-data",
-    "href": "projects/indexes.html#task-example-data",
-    "title": "Indexes as a way to explain health risk",
-    "section": "Task: Example data",
-    "text": "Task: Example data\nHere is some data from a fictional town with poor air quality called Coughington, USA. There is a week of data and the AQI for each source of poor air quality is listed for each day.\n\nClick here to download Air Quality data for Coughington, USA\n\nLoad this data into a spreadsheet and use the MAX function to fill in the column under “Overall AQI”.\nWhich day of the week has the worst air quality according to the Overall AQI? Is there another day that you might argue has worse air quality, but it does not end up being the worst day according to the way that the Overall AQI is designed?"
   }
 ]
