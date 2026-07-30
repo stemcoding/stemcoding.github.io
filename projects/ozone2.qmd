@@ -142,3 +142,6 @@ How does the NASA Ozone watch data compare to the NASA Earth System Data Explore
 
 In the NASA Ozone watch data, is there a relationship between the size of the Ozone Hole Area and the Minimum concentration of Ozone? If you plot Ozone concentration on the x-axis and Ozone Hole Area on the y-axis, what does it look like? If the Minimum Ozone concentration is higher, is the Ozone Hole Area larger or smaller, and why?
 
+# Ozone Layer Recovery Part 3
+
+The amount of chemicals being released into the atmosphere that break down Ozone is something that people have been measuring for many years. We have looked at the amount of Ozone above the south pole versus year but we have not actually compared it yet to how much the chemicals being released into the atmosphere have been reduced. In [Ozone Layer Recovery Part 3](ozone3.html) we will consider this very important data set and make our own conclusions about how long the Ozone recovery might take.
