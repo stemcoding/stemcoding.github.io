@@ -75,11 +75,11 @@ Plot up the data like you did in [Part 2](ozone2.html). What does it look like? 
 
 ## Optional Extension: Ground-level Ozone
 
-Some factories and high voltage equipment produce Ozone. For example, if your science teacher has a [plasma globe](https://en.wikipedia.org/wiki/Plasma_globe) you may have smelled Ozone being produced by the high voltage. 
+High voltage equipment produces Ozone. For example, if your science teacher has a [plasma globe](https://en.wikipedia.org/wiki/Plasma_globe) you may have smelled Ozone being produced by the high voltage. Ozone can also be produced when sunlight interacts with chemicals produced by automobile exhaust or factories and this is the [largest source of ground level Ozone](https://www.epa.gov/ground-level-ozone-pollution/ground-level-ozone-basics).
 
 Ozone near the ground can be a problem for humans, plants and animals because Ozone can react with molecules in our bodies. So although we want Ozone in the upper atmosphere, we do not want Ozone near the ground. Here is another [figure from Hannah Richie](../img/Ozone-zones-in-atmosphere-01.png)
 that is helpful for understanding the difference between upper atmosphere Ozone and ground level Ozone
 
-The Environmental Protection Agency considers "ground-level ozone" to be a major air pollutant, and the [Air Quality Index (AQI)](https://www.airnow.gov/aqi/aqi-basics/) does depend on the ground-level concentration of ozone if it is high enough.
+The Environmental Protection Agency considers [ground-level ozone](https://www.epa.gov/ground-level-ozone-pollution/ground-level-ozone-basics) to be a major air pollutant, and the [Air Quality Index (AQI)](https://www.airnow.gov/aqi/aqi-basics/) does depend on the ground-level concentration of ozone if it is high enough.
 
 An interesting project that examines the effect of ground-level Ozone on plants is the [Ozone Garden Network](https://research.cgd.ucar.edu/ozone-garden/). Look at the map on that page. Maybe there is an Ozone garden near you!
