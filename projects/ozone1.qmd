@@ -89,8 +89,6 @@ When you click "Download CSV" it should download a file called ee-chart.csv
 
 <b>Go to your favorite spreadsheet program and import ee-chart.csv</b>
 
-<!--
-## Optional: North Pole
+## Youtube video
 
-The Ozone layer is also depleted above the North Pole. How would you configure the NASA Earth System Data Explorer to get the concentration of Ozone versus time above the North Pole instead of the South Pole?
--->
+<iframe width=700 height=394 src="https://www.youtube.com/embed/2sQNdEx0WSA?si=EqXYpmQ8tuwzuWwq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
