@@ -104,4 +104,7 @@ Which day of the week has the worst air quality according to the Overall AQI? Is
 ## Life is full of choices
 
 What other ways could they have designed the AQI? Do you agree with how the overall AQI is the same even if there are two risks that are similarly important? How would you have designed the air quality index?
- 
+
+## Youtube video
+
+<iframe width=700 height=394 src="https://www.youtube.com/embed/Q7HvGKvTdUM?si=_R2xcL07d__rpQjs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
