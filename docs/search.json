@@ -235,7 +235,7 @@
     "href": "projects/bracket.html#links-to-activity",
     "title": "Bracket Builder",
     "section": "Links to Activity",
-    "text": "Links to Activity\n\nSTEMcoding Bracket Builder"
+    "text": "Links to Activity\n\nSTEMcoding Bracket Builder\nSTEMcoding Bracket Builder for World Cup Soccer 2026"
   },
   {
     "objectID": "projects/vax.html",
@@ -2348,6 +2348,13 @@
     "objectID": "projects/indexes.html#youtube-video",
     "href": "projects/indexes.html#youtube-video",
     "title": "Indexes as a way to explain health risk",
+    "section": "Youtube video",
+    "text": "Youtube video"
+  },
+  {
+    "objectID": "projects/bracket.html#youtube-video",
+    "href": "projects/bracket.html#youtube-video",
+    "title": "Bracket Builder",
     "section": "Youtube video",
     "text": "Youtube video"
   }

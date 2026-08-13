@@ -29,4 +29,8 @@ Check your brackets later to see how you did!
 
 ## Links to Activity
 * [STEMcoding Bracket Builder](http://explore.stemcoding.org/bracket.html)
+* [STEMcoding Bracket Builder for World Cup Soccer 2026](https://explore.stemcoding.org/soccer.html)
 
+## Youtube video
+
+<iframe width=700 height=394 src="https://www.youtube.com/embed/pwTSwbXR86o?si=XEsgXw4AInwxdGji" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
