@@ -6,6 +6,7 @@ categories:
     - Environmental Science
     - Public Health
     - Data Science
+    - Spreadsheets
 ---
 
 ![](../img/hazardousAQI.png){height=300 fig-align="center"}
