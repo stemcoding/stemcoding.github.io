@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spreadsheet AI Assistant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8 font-sans text-gray-800">
+    
+    <div class="w-full sm:w-fit sm:min-w-[42rem] max-w-full mx-auto bg-white rounded-lg shadow-md p-6">
+        
+        <div class="flex justify-between items-center mb-4">
+            <h2 class="text-2xl font-bold">Local Spreadsheet AI</h2>
+            <span id="gpu-badge" class="px-3 py-1 text-sm font-semibold rounded-full bg-gray-200 text-gray-700">
+                Checking Hardware...
+            </span>
+        </div>
+        
+        <!-- Updated Status Indicators -->
+        <div id="status" class="text-sm font-semibold text-blue-600 mb-1">Status: Waiting to start...</div>
+        <div id="technical-status" class="text-xs text-gray-400 mb-4 h-4 truncate"></div>
+        
+        <div id="chat-box" class="h-80 min-h-[150px] min-w-[100%] sm:min-w-[400px] max-w-full resize overflow-auto border border-gray-300 rounded p-4 mb-4 bg-gray-50 flex flex-col gap-3">
+        </div>
+        
+        <div class="flex gap-2 items-start">
+            <textarea id="prompt-input" rows="2"
+                   class="flex-1 resize border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:bg-gray-200 min-h-[44px]" 
+                   placeholder="Ask a formula question (Press Enter to send, Shift+Enter for new line)" disabled></textarea>
+            <button id="send-btn" 
+                    class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed" 
+                    disabled>Send</button>
+            <!-- New Stop Button -->
+            <button id="stop-btn" 
+                    class="hidden bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 disabled:opacity-50 disabled:cursor-not-allowed">
+                Stop
+            </button>
+        </div>
+    </div>
+
+    <script type="module">
+        import { CreateMLCEngine } from "https://esm.run/@mlc-ai/web-llm";
+
+        const statusText = document.getElementById("status");
+        const technicalStatus = document.getElementById("technical-status");
+        const chatBox = document.getElementById("chat-box");
+        const promptInput = document.getElementById("prompt-input");
+        const sendBtn = document.getElementById("send-btn");
+        const stopBtn = document.getElementById("stop-btn"); 
+        const gpuBadge = document.getElementById("gpu-badge");
+
+        let engine; 
+        const messages = []; // Start completely empty to track conversation history cleanly
+        let isGenerating = false; 
+      
+        function appendMessage(role, text) {
+            const msgDiv = document.createElement("div");
+            msgDiv.className = `p-3 rounded-lg max-w-[85%] ${role === 'user' ? 'bg-blue-100 self-end' : 'bg-white border border-gray-200 self-start'}`;
+            msgDiv.innerHTML = `<strong>${role === 'user' ? 'You' : 'AI'}:</strong> <span class="whitespace-pre-wrap">${text}</span>`;
+            chatBox.appendChild(msgDiv);
+            chatBox.scrollTop = chatBox.scrollHeight; 
+        }
+
+        async function checkWebGPU() {
+            if (!navigator.gpu) {
+                gpuBadge.className = "px-3 py-1 text-sm font-semibold rounded-full bg-red-100 text-red-700";
+                gpuBadge.innerText = "WebGPU: Not Supported";
+                return false;
+            }
+            const adapter = await navigator.gpu.requestAdapter();
+            if (!adapter) {
+                gpuBadge.className = "px-3 py-1 text-sm font-semibold rounded-full bg-red-100 text-red-700";
+                gpuBadge.innerText = "WebGPU: Adapter Missing";
+                return false;
+            }
+            gpuBadge.className = "px-3 py-1 text-sm font-semibold rounded-full bg-green-100 text-green-700";
+            gpuBadge.innerText = "WebGPU: Active ⚡";
+            return true;
+        }
+
+        async function initAI() {
+            try {
+                const hasGPU = await checkWebGPU();
+                if (!hasGPU) {
+                    statusText.innerText = "Cannot start: WebGPU hardware acceleration is required.";
+                    statusText.className = "text-sm font-semibold text-red-600 mb-1";
+                    return; 
+                }
+
+                engine = await CreateMLCEngine(
+                    "Qwen2.5-Coder-1.5B-Instruct-q4f16_1-MLC",
+                    {
+                        initProgressCallback: (info) => {
+                            const rawText = info.text.toLowerCase();
+                            
+                            if (rawText.includes("fetch") || rawText.includes("download")) {
+                                statusText.innerText = `☁️ Downloading from Internet: ${Math.round(info.progress * 100)}%`;
+                                statusText.className = "text-sm font-semibold text-orange-600 mb-1";
+                            } else {
+                                statusText.innerText = `⚡ Loading from Local Drive: ${Math.round(info.progress * 100)}%`;
+                                statusText.className = "text-sm font-semibold text-green-600 mb-1";
+                            }
+                            
+                            technicalStatus.innerText = info.text;
+                        }
+                    }
+                );
+                
+                statusText.innerText = "Model Loaded. Ready!";
+                statusText.className = "text-sm font-semibold text-blue-600 mb-1";
+                technicalStatus.innerText = ""; 
+                
+                promptInput.disabled = false;
+                sendBtn.disabled = false;
+                promptInput.focus();
+            } catch (error) {
+                statusText.innerText = "Error loading model: " + error.message;
+                statusText.className = "text-sm font-semibold text-red-600 mb-1";
+            }
+        }
+
+        async function handleStop() {
+            if (isGenerating && engine) {
+                statusText.innerText = "Stopping generation...";
+                await engine.interruptGenerate();
+            }
+        }
+
+        async function handleSend() {
+            const text = promptInput.value.trim();
+            if (!text || isGenerating) return;
+
+            appendMessage('user', text);
+            promptInput.value = '';
+            promptInput.disabled = true;
+            
+            // Toggle to Stop button
+            sendBtn.classList.add("hidden");
+            stopBtn.classList.remove("hidden");
+            stopBtn.disabled = false;
+
+            statusText.innerText = "Generating response...";
+            statusText.className = "text-sm font-semibold text-gray-600 mb-1";
+            isGenerating = true;
+
+            messages.push({ role: "user", content: text });
+
+            // Few-shot pattern combined with a post-pended rule for micro-model compliance
+            const apiMessages = [
+                { role: "user", content: "What is the formula for calculating gravitational potential energy?" },
+                { role: "assistant", content: "I am only a spreadsheet assistant. I cannot answer questions about other topics." },
+                ...messages
+            ];
+
+            const lastIndex = apiMessages.length - 1;
+            apiMessages[lastIndex] = { 
+                role: "user", 
+                content: `${text}\n\n[SYSTEM RULE: You are a spreadsheet expert. Google Sheets and Microsoft Excel are spreadsheets. Do NOT answer physics questions. If the prompt includes physics terms, output EXACTLY: "I am only a spreadsheet assistant. I cannot answer questions about other topics."]` 
+            };
+
+            const thinkingDiv = document.createElement("div");
+            thinkingDiv.className = "p-3 rounded-lg max-w-[85%] bg-white border border-gray-200 self-start animate-pulse";
+            thinkingDiv.innerHTML = `<strong>AI:</strong> <span class="text-gray-500 italic">Thinking...</span>`;
+            chatBox.appendChild(thinkingDiv);
+            chatBox.scrollTop = chatBox.scrollHeight;
+
+            let fullReply = "";
+
+            try {
+                const stream = await engine.chat.completions.create({
+                    messages: apiMessages,
+                    temperature: 0.1,
+                    stream: true 
+                });
+
+                thinkingDiv.remove();
+
+                const msgDiv = document.createElement("div");
+                msgDiv.className = "p-3 rounded-lg max-w-[85%] bg-white border border-gray-200 self-start";
+                
+                const header = document.createElement("strong");
+                header.textContent = "AI: ";
+                
+                const contentSpan = document.createElement("span");
+                contentSpan.className = "whitespace-pre-wrap";
+                
+                msgDiv.appendChild(header);
+                msgDiv.appendChild(contentSpan);
+                chatBox.appendChild(msgDiv);
+
+                for await (const chunk of stream) {
+                    const delta = chunk.choices[0]?.delta?.content || "";
+                    fullReply += delta;
+                    contentSpan.textContent = fullReply;
+                    chatBox.scrollTop = chatBox.scrollHeight;
+                }
+
+                messages.push({ role: "assistant", content: fullReply });
+
+                statusText.innerText = "Ready!";
+                statusText.className = "text-sm font-semibold text-blue-600 mb-1";
+            } catch (error) {
+                thinkingDiv.remove();
+                appendMessage('ai', "Error generating response: " + error.message);
+                statusText.innerText = "Error!";
+                statusText.className = "text-sm font-semibold text-red-600 mb-1";
+            } finally {
+                isGenerating = false;
+                stopBtn.classList.add("hidden");
+                sendBtn.classList.remove("hidden");
+                promptInput.disabled = false;
+                sendBtn.disabled = false;
+                promptInput.focus();
+            }
+        }
+      
+        sendBtn.addEventListener("click", handleSend);
+        stopBtn.addEventListener("click", handleStop);
+        
+        promptInput.addEventListener("keydown", (e) => {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault(); 
+                handleSend();
+            }
+        });
+
+        initAI();
+    </script>
+</body>
+</html>

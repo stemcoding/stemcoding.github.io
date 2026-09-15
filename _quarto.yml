@@ -17,6 +17,7 @@ project:
     - ozone-depleting-substances-index.csv
     - amarillo_TX_balloon_data.txt
     - wilmington_OH_balloon_data.txt
+    - webLLM.html
     
 website:
   favicon: img/stemcoding_favicon_final.png
