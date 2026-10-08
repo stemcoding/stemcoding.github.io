@@ -1,6 +1,6 @@
 ---
 title: "Solar Cell Data Analysis"
-image: ../img/solarcell.png
+image: ../img/solar_panels.jpg
 categories:
     - Intro HS
     - Data Science
@@ -9,9 +9,13 @@ categories:
     - Spreadsheets
 ---
 
-![](../img/solarcell.png){width=600 fig-align="center"}
+[![](../img/solar_panels.jpg){width=600 fig-align="center"}](https://commons.wikimedia.org/wiki/File:Photovoltaik_Dachanlage_Hannover_-_Schwarze_Heide_-_1_MW.jpg){target="_blank"}
 
 Let's look at some real data from solar panels!
+
+Here is an example of what you might find:
+
+![](../img/solarcell.png){width=700 fig-align="center"}
 
 ## Links to Activity
 
