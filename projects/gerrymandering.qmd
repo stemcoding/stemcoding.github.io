@@ -33,15 +33,14 @@ In most US states, redistricting happens every few years because, as people move
 
 ## The "Elect Horse" Activity
 
-[![](../img/electhorse.png){width=600 fig-align="center"}](http://elect.horse){target="_blank"}
+[![](../img/electhorse.png){width=600 fig-align="center"}](http://elect.horse/tutorial){target="_blank"}
 
-Disclaimer: The [Elect horse](http://elect.horse) activity was not developed by the STEMcoding project. We do not know the group involved. We're just mentioning it here because we think it's a great educational tool and it appears to us to be non-partisan and presently it does not have any ads.
+Disclaimer: The [Elect horse](http://elect.horse/tutorial) activity was not developed by the STEMcoding project. We do not know the group involved. We're just mentioning it here because we think it's a great educational tool and it appears to us to be non-partisan and presently it does not have any ads.
 
 Here is the premise: On a farm there is the horse party and the cow party. More voters associate with the cow party than the horse party. Your job is to click the hexagons to create five districts of 6 voters each so that the horse party can win three out of the five districts, which is a majority.
 
-Can you win a majority for the horse party on Normal mode? Can you win a majority for the horse party on Expert mode with two other parties?
+Can you win a majority for the horse party on [Normal mode](http://elect.horse)? Can you win a majority for the horse party on [Expert mode or Insane mode](https://elect.horse/practice) where there is more than one other party?
 
-If you are struggling to win Normal mode, consider [selecting Beginner mode](https://elect.horse/practice)
 
 ## Class discussion questions
 
