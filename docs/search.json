@@ -2384,14 +2384,14 @@
     "href": "projects/gerrymandering.html",
     "title": "Gerrymandering",
     "section": "",
-    "text": "What is Gerrymandering and how does it affect elections?"
+    "text": "What is Gerrymandering and how does it affect elections?\nThe following are some non-partisan class activities and discussions"
   },
   {
     "objectID": "projects/gerrymandering.html#what-is-gerrymandering",
     "href": "projects/gerrymandering.html#what-is-gerrymandering",
     "title": "Gerrymandering",
     "section": "What is Gerrymandering?",
-    "text": "What is Gerrymandering?\nAccording to the Washington Post, gerrymandering is “The process of re-drawing district lines to give an advnatage to one party over another.”\nIn the United States, both political parties use gerrymandering for their advantage.\nHere is a non-partisan video from a journalist at the Washington Post explaining how gerrymandering works. At the end of the video, they highlight examples of “gerrymandered” districts in Maryland, North Carolina, Florida, and Texas.\n\n\nData science is related to gerrymandering because the people who analyze the maps of district boundaries, and the people who design possible new maps of boundaries use spreadsheets and other statistical tools to understand how the maps favor one political party more than the other and by how much.\n\nNew vocab word: redistricting The task of drawing new maps is called “redistricting” \n\nIn most US states, redistricting happens every few years because some areas will have more or less people as people move in and move away, so it is appropriate to reconsider the district boundaries."
+    "text": "What is Gerrymandering?\nAccording to the Washington Post, gerrymandering is “The process of re-drawing district lines to give an advnatage to one party over another.”\nIn the United States, both political parties use gerrymandering for their advantage.\nHere is a non-partisan video from a journalist at the Washington Post explaining how gerrymandering works. At the end of the video, they highlight examples of “gerrymandered” districts in Maryland, North Carolina, Florida, and Texas.\n\n\nData science is related to gerrymandering because the people who analyze the maps of district boundaries, and the people who design possible new boundaries use spreadsheets and other statistical tools to understand how a particular map favors one political party more than the other and by how much.\n\nNew vocab word: redistricting The task of drawing new maps is called “redistricting” \n\nIn most US states, redistricting happens every few years because, as people move to and move away from an area, the total number of people living in that area may increase or decrease, so it is appropriate to reconsider the district boundaries so that each district contains approximately the same number of voters."
   },
   {
     "objectID": "projects/gerrymandering.html#links-to-activity",
@@ -2412,6 +2412,20 @@
     "href": "projects/gerrymandering.html#class-discussion-questions",
     "title": "Gerrymandering",
     "section": "Class discussion questions",
-    "text": "Class discussion questions\nHere are some questions to consider with your class:\n\nDoes it make you more or less interested to vote to know that in some of the races you are voting on the map strongly favors one candidate over the other? Do you feel like your vote on those races still sends a message even if the candidate you like will probably lose?\nWould you ever consider donating money to a candidate or spending your time helping a candidate running in a district that they are not likely to win because of the way the map is drawn? Does their chance of winning affect your interest in helping them?\nWould you ever consider running as a candidate in a district that would be very difficult for you to win with your political phiosophy because of the way the map of the district is drawn? Would you change parts of your political philosophy to make it easier for you to win? Which parts of your political philosophy would you refuse to change?\nAlthough data scientists and legal experts have tried to come up with statistical methods to draw fair political maps, there is no method that exists yet that everyone can agree on. How would you draw a political map? Would you group together communities based on geography, roads, schools or other considerations?"
+    "text": "Class discussion questions\nHere are some questions to consider with your class:\n\nDoes it make you more or less interested to vote to know that, in some of the races you are voting on, the map strongly favors one candidate over the other? Do you feel like your vote on those races still sends a message about what you care about even if the candidate you like will probably lose?\nWould you ever consider donating money to a candidate or spending your time helping a candidate running in a district where they are not likely to win because of the way the map is drawn? Does their chance of winning affect your interest in helping them?\nWould you ever consider running as a candidate in a district that would be very difficult for you to win because of your political phiosophy and the way the map of the district is drawn? What might it feel like to be the candidate who is unlikely to win? Would you run anyway?\nAlthough data scientists and legal experts have tried to come up with statistical methods to draw fair political maps, there is no method that exists yet that everyone can agree on. How would you draw a political map? Would you group together communities based on geography, roads, schools or other considerations?"
+  },
+  {
+    "objectID": "projects/gerrymandering.html#the-elect-horse-activity",
+    "href": "projects/gerrymandering.html#the-elect-horse-activity",
+    "title": "Gerrymandering",
+    "section": "The “Elect Horse” Activity",
+    "text": "The “Elect Horse” Activity\n\n\n\n\n\nDisclaimer: The Elect horse activity was not developed by the STEMcoding project. We do not know the group involved. We’re just mentioning it here because we think it’s a great educational tool and it appears to us to be non-partisan and presently it does not have any ads.\nHere is the premise: On a farm there is the horse party and the cow party. More voters associate with the cow party than the horse party. Your job is to click the hexagons to create five districts of 6 voters each so that the horse party can win three out of the five districts, which is a majority.\nCan you win a majority for the horse party on Normal mode? Can you win a majority for the horse party on Expert mode with two other parties?\nIf you are struggling to win Normal mode, consider selecting Beginner mode"
+  },
+  {
+    "objectID": "projects/gerrymandering.html#other-links",
+    "href": "projects/gerrymandering.html#other-links",
+    "title": "Gerrymandering",
+    "section": "Other links",
+    "text": "Other links\n\nNew York Times detailed ranking of the most to least Gerrymandered US states as of 2026"
   }
 ]
